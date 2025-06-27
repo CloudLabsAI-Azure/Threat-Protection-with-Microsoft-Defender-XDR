@@ -1,6 +1,4 @@
-# Lab 1 – Connect and Onboard a SaaS App to Microsoft Defender for Cloud Apps
-
-### Estimated Duration: 30–45 minutes
+# Exercise 2 – Connect and Onboard a SaaS App to Microsoft Defender for Cloud Apps
 
 ## Overview
 
@@ -47,6 +45,7 @@ You will complete the following tasks:
 ### Step 2: Enable Audit Logging in Microsoft Purview
 
 1. Go to [https://compliance.microsoft.com](https://compliance.microsoft.com)  
+
 2. If prompted, click **Switch to the new portal yourself** to enter Microsoft Purview.
 
    ![](./media/g-1-5.png)
