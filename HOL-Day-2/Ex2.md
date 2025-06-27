@@ -165,6 +165,8 @@ In this task, you will create a Conditional Access policy to route Microsoft 365
 1. On the **App Connectors** page, verify that Microsoft 365 shows a **Connected** status.
 
    ![](./media/g-1-12.png)
+   
+   > **Note:** It may take up to 30-60 minutes for the status to update and show as **Connected**.
 
 > ✅ Microsoft 365 is now fully integrated with Microsoft Defender for Cloud Apps and will begin sending user, file, and app activity logs.
 
