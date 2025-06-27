@@ -55,9 +55,9 @@ In this lab, you’ll enable Cloud Discovery in Microsoft Defender for Cloud App
 
 1. In the Upload section, click on **Browse** and browse to C:/Lab Files and select the  **bluecoat_sample.log** file.
 
-  ![Enter Your Password](./media/tr14.png)
+   ![Enter Your Password](./media/tr14.png)
 
-  ![Enter Your Password](./media/tr13.png)
+   ![Enter Your Password](./media/tr13.png)
 
 1. Once you have uploaded, click on **Upload Logs**. You will get a prompt stating that the snapshot report is being generated. Click on **CLose**.
    
@@ -85,7 +85,7 @@ In this lab, you’ll enable Cloud Discovery in Microsoft Defender for Cloud App
     
     - **Identify Top Users**: Check the “Top entities” section to see which users are generating the most traffic, especially to risky or unsanctioned apps.
     
-    - **Inspect Discovered Apps**: Review the list of apps in use, their traffic volume, and verify if they are approved (sanctioned) or need to be blocked or reviewed further.
+    - **Inspect Discovered Apps**: Review the list of apps in use, their traffic volume, and verify if they are approved or need to be blocked or reviewed further.
 
 1. In the dashboard, navigate to **Discovered Apps** section.
 
