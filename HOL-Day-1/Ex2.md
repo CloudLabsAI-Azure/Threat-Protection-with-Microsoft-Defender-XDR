@@ -8,7 +8,6 @@ In this exercise, you will investigate and remediate security incidents using Mi
 
 - Task 1: Investigate and remediate Incidents in Microsoft Defender XDR 
 - Task 2: Configure Anti-Phishing and Safe Links Policies 
-- Task 3: Implement and Monitor Defender for Office 365 Secure Posture
 
 ## Task 1: Investigate and remediate Incidents in Microsoft Defender XDR
 
@@ -21,7 +20,6 @@ In this exercise, you will investigate and remediate security incidents using Mi
 
 
 
-## Task 3: Implement and Monitor Defender for Office 365 Secure Posture
 
 
 ## Review
