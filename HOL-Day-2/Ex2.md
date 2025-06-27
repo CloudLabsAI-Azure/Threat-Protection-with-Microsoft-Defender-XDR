@@ -1,5 +1,8 @@
 # Exercise 1: Protecting Microsoft 365 SaaS Apps with Microsoft Defender for Cloud Apps
 
+=======
+# Exercise 2 – Connect and Onboard a SaaS App to Microsoft Defender for Cloud Apps
+
 ## Overview
 
 In this exercise, you will explore how to secure Microsoft 365 cloud services like SharePoint, OneDrive, and Exchange using Microsoft Defender for Cloud Apps. You'll connect Microsoft 365 as a cloud app, configure real-time session policies, and create custom activity detection rules to detect and block risky behavior.
@@ -61,6 +64,9 @@ In this lab, you will connect Microsoft 365 as a SaaS application to Microsoft D
 1. Open [https://compliance.microsoft.com](https://compliance.microsoft.com) in a browser.
 
 2. If prompted, click **Switch to the new portal yourself** to access **Microsoft Purview**.
+1. Go to [https://compliance.microsoft.com](https://compliance.microsoft.com)  
+
+2. If prompted, click **Switch to the new portal yourself** to enter Microsoft Purview.
 
    ![](./media/g-1-5.png)
 
