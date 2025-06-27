@@ -1,0 +1,24 @@
+[
+  {
+    "Name": "Securing Access to SaaS Apps with Microsoft Defender for Cloud Apps",
+    "Language": "English",
+    "Files": [
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Threat-Protection-with-Microsoft-Defender-XDR/refs/heads/main/HOL-Day-2/Getting%20Started.md",
+        "Order": 1
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Threat-Protection-with-Microsoft-Defender-XDR/refs/heads/main/HOL-Day-2/Ex1.md",
+        "Order": 2
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Threat-Protection-with-Microsoft-Defender-XDR/refs/heads/main/HOL-Day-2/Ex2.md",
+        "Order": 3
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Threat-Protection-with-Microsoft-Defender-XDR/refs/heads/main/HOL-Day-2/Ex3.md",
+        "Order": 4
+      }
+    ]
+  }
+]
