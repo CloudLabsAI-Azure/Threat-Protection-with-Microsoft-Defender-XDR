@@ -417,5 +417,8 @@ In this task, you will create a Conditional Access policy to route Microsoft 365
 
 ## Review
 
+- You learned how to connect and onboard a SaaS application to Microsoft Defender for Cloud Apps for visibility and control.
+- You configured session policies to monitor user activity and block risky behaviors in real time.
+- You explored how to investigate alerts and create custom detection policies to enhance threat detection and response.
 
 ## Click Next to continue
