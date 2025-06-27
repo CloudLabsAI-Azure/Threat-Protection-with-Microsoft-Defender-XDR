@@ -1,28 +1,28 @@
-# Day 2: Securing Access to SaaS Apps with Microsoft Defender for Cloud Apps
+# Day 1: Securing Collaboration with Microsoft Defender Solutions
 
 ### Overall Estimated Duration: 2 Hours
 
 ## Overview
 
-This lab provides hands-on experience with Microsoft Defender for Cloud Apps to detect and manage Shadow IT. You will configure Cloud Discovery, onboard SaaS apps, set session policies, and implement app governance for OAuth apps. Additionally, you’ll learn to investigate alerts and create custom detection policies to enhance cloud security.
+In this lab, you will explore how to enhance organizational security using Microsoft Defender for Office 365. You’ll configure threat protection policies, simulate phishing and malware attacks with the Attack Simulator, and analyze threats using Threat Explorer and real-time detections. The lab also covers investigating and remediating incidents in Microsoft Defender XDR, configuring anti-phishing and Safe Links policies, and implementing measures to monitor and maintain a strong security posture across Office 365.
 
 ## Objectives
 
-- Microsoft Defender for Cloud Apps-Configuring Cloud Discovery 
+- Configure Threat Policies in Microsoft Defender for Office 365 
 
-- Discover and Analyze Shadow IT Using Cloud Discovery 
+- Simulate Phishing and Malware Attacks Using Attack Simulator 
 
-- Connect and onboard a SaaS App to Defender for Cloud Apps 
+- Analyze Threats with Threat Explorer and Real-Time Detections 
 
-- Configure Session Policies to Monitor and Block Risky Behavior 
+- Investigate and remediate Incidents in Microsoft Defender XDR 
 
-- Implement App Governance and Risk Detection for OAuth Apps 
+- Configure Anti-Phishing and Safe Links Policies 
 
-- Investigate Alerts and Create Custom Detection Policies 
+- Implement and Monitor Defender for Office 365 Secure Posture  
 
 # Getting Started with the Lab
  
-Welcome to your Securing Access to SaaS Apps with Microsoft Defender for Cloud Apps workshop! We've prepared a seamless environment for you to familiarize yourself with the Microsoft security operations analyst, you monitor, identify, investigate, and respond to threats in multi-cloud environments and related Microsoft services. Let's begin by making the most of this experience:
+Welcome to your Securing Collaboration with Microsoft Defender Solutions workshop! We've prepared a seamless environment for you to familiarize yourself with the Microsoft security operations analyst, you monitor, identify, investigate, and respond to threats in multi-cloud environments and related Microsoft services. Let's begin by making the most of this experience:
  
 ## Accessing Your Lab Environment
  
