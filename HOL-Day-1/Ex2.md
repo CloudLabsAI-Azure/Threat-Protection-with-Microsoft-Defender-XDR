@@ -1,4 +1,4 @@
-## Exercise 2: Threat Investigation and Security Posture Management with Microsoft Defender
+# Exercise 2: Threat Investigation and Security Posture Management with Microsoft Defender
 
 ## Overview
 
