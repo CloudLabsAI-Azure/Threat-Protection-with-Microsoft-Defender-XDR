@@ -1,5 +1,14 @@
 # Exercise 1: Configuring Cloud Discovery in Microsoft Defender for Cloud Apps to Detect Shadow IT
 
+## Overview
+
+In this lab, you’ll enable Cloud Discovery in Microsoft Defender for Cloud Apps and upload a sample log to generate a Snapshot Report. You'll then analyze the dashboard to identify app usage, assess risks, and detect Shadow IT within the organization.
+
+## Objectives
+
+- Task 1: Microsoft Defender for Cloud Apps-Configuring Cloud Discovery
+- Task 2: Discover and Analyze Shadow IT Using Cloud Discovery 
+
 ## Task 1: Microsoft Defender for Cloud Apps-Configuring Cloud Discovery 
 
 1. In the Edge browser, log-in to Microsoft Defender portal using the following link: https://security.microsoft.com/ with the below username and password if prompted to sign in.
@@ -89,3 +98,11 @@
 1. Click on the elipsis next to any of the applications to mark the app as **Unsactioned**. This action labels the app as not approved for use, helping you monitor and report on its usage in the dashboard.
 
    ![Enter Your Password](./media/tr20.png)
+
+## Review
+
+1. In this exercise, you learnt how to set up Cloud Discovery and generate a snapshot report using sample logs.
+
+1. You also learnt to analyze app usage, risk levels, and detect unsanctioned apps from the dashboard.
+
+## Click Next to continue
