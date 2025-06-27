@@ -177,6 +177,21 @@ App Governance helps organizations:
    ![](./media/g-5-15.png)  
    ![](./media/g-5-16.png)
 
+1. Go to **Incidents & alerts** > **Incidents** from the left-hand menu.  
+   Look through the list of recent incidents and click on the incident named `Detect High-Permission OAuth Apps`.
+
+   ![](./media/a-1-1.png)
+
+1. In the incident pane, review the following:
+   - **Entity Name** (e.g., `AuditLogApp`)
+   - **Remediation status**
+   - **Verdict** (e.g., Suspicious)
+   - **Incident severity** (should be `High`)
+   - **Policy name** that triggered the alert
+
+   ![](./media/a-1-2.png)
+
+
 > ✅ You've now confirmed that your detection policy is functioning, and risky OAuth apps are being flagged and investigated as part of your cloud app security posture.
 
 ---
