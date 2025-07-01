@@ -11,8 +11,6 @@ In this exercise, you will investigate and remediate security incidents using Mi
 
 ## Task 1: Investigate and remediate Incidents in Microsoft Defender XDR
 
-## Task 1: Investigate and Remediate Incidents in Microsoft Defender XDR
-
 In this task, you’ll investigate a phishing email, take appropriate actions, submit it to Microsoft for review, and monitor the automated investigation and alerts triggered in Microsoft Defender XDR.
 
 ---
