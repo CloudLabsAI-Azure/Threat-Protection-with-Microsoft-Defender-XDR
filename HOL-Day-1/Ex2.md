@@ -11,7 +11,7 @@ In this exercise, you will investigate and remediate security incidents using Mi
 
 ---
 
-## Task 1: Investigate and remediate Incidents in Microsoft Defender XDR
+## Task 1: Investigate and Remediate Incidents in Microsoft Defender XDR
 
 In this task, you’ll investigate a phishing email, take appropriate actions, submit it to Microsoft for review, and monitor the automated investigation and alerts triggered in Microsoft Defender XDR.
 
@@ -19,28 +19,24 @@ In this task, you’ll investigate a phishing email, take appropriate actions, s
 
 Use Outlook or another email client to send a test phishing message with suspicious links to your lab user.
 
-![](./media/gk-1-0.png)
-
----
+![](./media/g25-1.png)
 
 ### Locate the Suspicious Email in Threat Explorer
 
 Go to the [Microsoft 365 Defender Portal](https://security.microsoft.com)  
 Navigate to:  
 **Email & collaboration** → **Explorer**  
-Find and click the suspicious message.
+Find and click the suspicious message titled **Test Phishing**.
 
-![](./media/gk-1-1.png)
+![](./media/g25-2.png)
 
----
+> ⚠️ It may take 2–3 minutes after the phishing email is delivered for it to appear in Threat Explorer.
 
 ### Take Action on the Email
 
-Review the email delivery details and click **Take action**.
+Click the message to view its details, then click **Take action** to initiate response actions.
 
-![](./media/gk-1-2.png)
-
----
+![](./media/g25-3.png)
 
 ### Configure Response Actions
 
@@ -51,27 +47,15 @@ Review the email delivery details and click **Take action**.
   - Choose **Phish** as the category  
 - Enable **Initiate automated investigation**
 
-Click **Next** to proceed.
+Click **Next** to continue.
 
-![](./media/gk-1-3.png)
-
----
+![](./media/g25-4.png)
 
 ### Choose Target Entities
 
 Set a name like `report-phish` and confirm impacted users and actions.
 
-![](./media/gk-1-3-1.png)
-
----
-
-### Submit the Action
-
-Review and submit the response action.
-
-![](./media/gk-1-3-2.png)
-
----
+![](./media/g25-5.png)
 
 ### View Triggered Alert
 
@@ -79,33 +63,37 @@ Navigate to:
 **Incidents & alerts** → **Alerts**  
 Look for the alert titled **Administrative action submitted by an Administrator**.
 
-![](./media/gk-1-4.png)
-
----
+![](./media/g25-6.png)
 
 ### Manage and Classify the Alert
 
-Open the alert and click **Manage alert**. Set the status, assign to your user, and classify the alert as **True positive - Phishing**.
+Click the alert to open details, then click **Manage alert**.
 
-![](./media/gk-1-5.png)
+![](./media/g25-7.png)
 
----
+In the Manage alert pane:  
+- Set **Status** to `In progress`  
+- Assign to your lab user  
+- Set **Classification** to `True positive – Phishing`  
+- Click **Save**
+
+![](./media/g25-8.png)
 
 ### View the Automated Investigation
 
 Go to:  
 **Email & collaboration** → **Investigations**  
-Open the investigation triggered by your action.
+Click on the newly triggered investigation linked to your phishing test.
 
-![](./media/gk-1-3-3.png)
-
----
+![](./media/g25-9.png)
 
 ### Analyze the Investigation Graph
 
-Review the timeline, graph, and entities analyzed.
+Review the investigation graph showing the alert path, analyzed entities, and final result.
 
-![](./media/gk-1-6.png)
+![](./media/g25-10.png)
+
+> ⏳ **Note:** It may take **10–15 minutes** for the automated investigation to complete and display results.
 
 > ✅ You've successfully investigated and responded to a phishing incident using Microsoft Defender XDR.
 
@@ -113,99 +101,140 @@ Review the timeline, graph, and entities analyzed.
 
 ## Task 2: Configure Anti-Phishing and Safe Links Policies
 
+---
+
+### Open Anti-Phishing Policies
+
 Go to the [Microsoft 365 Defender Portal](https://security.microsoft.com)  
 Navigate to:  
-**Email & collaboration** → **Policies & rules** → **Threat policies**
+**Email & collaboration** → **Policies & rules** → **Threat policies**  
+Click on **Anti-phishing** under the Policies section.
 
-Click **Safe Links** under the Policies section.
+![](./media/g25-11.png)
 
-![](./media/gk-2-1.png)
+### Create a New Anti-Phishing Policy
 
----
+Click **+ Create** to start configuring a custom anti-phishing policy.
 
-### Create a Safe Links Policy
+![](./media/g25-12.png)
 
-Click **+ Create** or **New policy**, and provide a name like `Anti-Safe`.
+### Name the Policy
 
-![](./media/gk-2-2.png)
+Enter a name such as `Anti-Phish` and click **Next**.
 
----
+![](./media/g25-13.png)
 
 ### Assign Users to the Policy
 
-Assign your lab user (e.g., `ODL_User`) as the recipient for this policy.
+Add your lab user under **Users**, then click **Next**.
 
-![](./media/gk-2-3.png)
+![](./media/g25-14.png)
 
----
+### Configure Threshold and Protection
 
-### Configure URL & Click Protection
+Set **Phishing email threshold** to `4 - Most Aggressive` for strict detection.  
+(Other impersonation settings can be skipped for now.)
 
-Enable all recommended options including:  
-- Real-time scanning of URLs  
-- Apply Safe Links to email, Teams, and Office apps  
-- Track user clicks
+![](./media/g25-15.png)
+
+### Enable Intelligence and Spoof Protection
+
+Enable all recommended options under trusted senders and spoofing intelligence:  
+- ✅ Enable mailbox intelligence  
+- ✅ Enable impersonation intelligence  
+- ✅ Enable spoof intelligence  
 
 Click **Next** to continue.
 
-![](./media/gk-2-4.png)
+![](./media/g25-16.png)
 
----
+### Configure Message Actions
 
-### Finalize the Policy
+Set the following actions for detected spoofing and impersonation:
+- Move impersonated messages to **Junk Email**
+- Honor DMARC policies:
+  - If `p=quarantine` → move to Junk
+  - If `p=reject` → quarantine
+  - If spoof intelligence triggers → move to Junk
 
-Review the settings and finish the wizard to apply the Safe Links policy.
+Click **Next** to continue.
 
-![](./media/gk-2-5.png)
+![](./media/g25-17.png)
 
----
+### Open Safe Links Policies
+
+Go to:  
+**Email & collaboration** → **Policies & rules** → **Threat policies**  
+Click on **Safe Links** under the Policies section.
+
+![](./media/g25-18.png)
+
+### Create a New Safe Links Policy
+
+Click **+ Create**, name the policy (e.g., `Anti-Safe`), then click **Next**.
+
+![](./media/g25-19.png)
+
+### Assign Users to the Policy
+
+Add your lab user (e.g., `ODL_User 1777538`) under **Users** and proceed.
+
+![](./media/g25-20.png)
+
+### Configure URL & Click Protection
+
+Enable all recommended protection settings:
+- ✅ Real-time URL scanning  
+- ✅ Safe Links for email, Teams, and Office apps  
+- ✅ Track user clicks  
+- ✅ Wait for URL scanning before delivery  
+
+Click **Next**.
+
+![](./media/g25-21.png)
 
 ### Simulate a Phishing Attack
 
-Open the phishing email received by the lab user and click the malicious link.
+Open the test phishing email received by the lab user and click the link.
 
-![](./media/gk-2-6.png)
+![](./media/g25-22.png)
 
-Copy the link address from the browser.
+### Copy the Link
 
-![](./media/gk-2-7.png)
+Copy the link address from the browser's address bar.
 
----
+![](./media/g25-23.png)
 
-### Create a Phishing Email
+### Create a New Phishing Email
 
-Use Outlook to send a new email to the lab user containing the copied phishing link.
+Compose a new email to your lab user and paste the malicious link.  
+Subject: `Test-Phishing`
 
-![](./media/gk-2-7-1.png)
-
----
+![](./media/g25-24.png)
 
 ### Investigate the Email in Explorer
 
-Go to:  
-**Email & collaboration** → **Explorer**
+Navigate to:  
+**Email & collaboration** → **Explorer**  
+Locate and open the email titled **Test Phishing**.
 
-Locate and open the phishing email you just sent.
+![](./media/g25-25.png)
 
-![](./media/gk-2-9.png)
+### Review Email Entity and Actions
 
----
+Click **Open email entity** to view detailed delivery information and actions.  
+Check if the message was blocked or quarantined.
 
-### Review Email Details and Actions Taken
-
-Click **Open email entity** to view full email details, delivery action, and policy results.
-
-![](./media/gk-2-10.png)
-
----
+![](./media/g25-26.png)
 
 ### Analyze Detection and Headers
 
-Review the detection technology and authentication results (DMARC, DKIM) to understand the trustworthiness of the sender.
+Review the full detection and header analysis, including SPF, DKIM, and DMARC results.
 
-![](./media/gk-2-11-1.png)
+![](./media/g25-27.png)
 
----
+> ✅ You’ve successfully configured Safe Links protection and simulated a phishing attack, tracking the detection and response using Microsoft Defender.
+
 
 > ✅ You’ve now configured Safe Links protection and successfully simulated and tracked a phishing attack using Defender’s real-time threat policies.
 
