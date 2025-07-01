@@ -6,9 +6,9 @@
 
 In this task, you will onboard a device to Microsoft Defender for Endpoint using an onboarding script.
 
-1. If you are not already at the Microsoft 365 Defender portal in your browser, start the Microsoft Edge browser go to (https://security.microsoft.com).
+1. Start the Microsoft Edge browser go to (https://security.microsoft.com) to go to Microsoft 365 Defender portal
 
-1. On the **Sign into Microsoft Azure** tab, you will see the login screen. Enter the following **Email/Username**, and then click on **Next**.
+1. If you see **Sign into Microsoft Azure** tab, enter the following **Email/Username**, and then click on **Next**.
 
    * Email/Username: <inject key="AzureAdUserEmail"></inject>
 
@@ -72,52 +72,6 @@ to access the endpoint resource
 1. Paste the script by right-clicking in the **Administrator: Command Prompt** window and press **Enter** to run it. **Note:** The window closes automatically after running the script.
 
 1. In the Microsoft 365 Defender portal, navigate to **Endpoints** and select **Onboarding**. If the status is **Incomplete**, proceed with the next task and check back later, as it may take 24–48 hours to update.
-
-### Task 1: Connect the Windows security event connector
-
-1. In the Search bar of the Azure portal, type *Microsft Sentinel (1)*, then select **Microsoft Sentinel (2)**.
-
-    ![](./media/09.png) 
-
-1. Select the pre-created Sentinel **loganalyticworkspace** from the available list.
-
-    ![](./media/Lab01-task2-loganalyticworkspace.png) 
-
-1. Navigate to the left menu and go to the *Content Management* section, below that select **Content Hub (1)**. On the Content Hub page, locate **Windows Security Events (2)**, and then **select (3)** it. Finally, click on **Install (4)**.
-
-    ![Picture 1](./media/Lab02-task1-contenthub.png)  
-
-1. After receiving the notification of a successful installation, return to the **Data connectors** page under *Configuration* and click on the refresh button to ensure that the changes take effect.
-
-1. You should observe two options: **Security Events Via Legacy Agent** and **Windows Security Event Via AMA**.
-
-1. Choose **Security Events Via Legacy Agent (1)**, and then click on **Open Connector Page (2)**.
-
-    ![Picture 1](./media/xdr8.png) 
-   
-8. In the configuration section, opt for **Install Agent on Azure Windows Virtual Machine (1)**, and then choose **Download & Install Agent for Azure Windows Virtual Machines (2)**.
-
-    ![Picture 1](./media/xdr9.png) 
-
-9. Select the **svm-<inject key="DeploymentID" enableCopy="false" />** virtual machine. 
-
-    ![Picture 1](./media/xdr10.png) 
-        
-10. Click on **Connect (1)**. Once **connected**, select the **Virtual Machine (2)** link from the top.
-
-    ![Picture 1](./media/xdr11.png) 
-
-11. On the virtual machine page select the **s2vm-<inject key="DeploymentID" enableCopy="false" />** virtual machine and click on connect. wait until get connected.
-
-    ![Picture 1](./media/xdr12.png)
-
-11. Then, come back to the Configuration and scroll down a bit. You can find **Select which events to stream**. Select **All Events (1)** and then click on **Apply changes (2).**
-
-    ![Picture 1](./media/xdr13.png) 
-
-12. If you refresh the data connector page, you can see the status Connected for **Security Events Via Legacy Agent**.
-
-    ![Picture 1](./media/xdr14.png) 
 
 ### Task 2: Enable Microsoft Defender for Cloud
 
@@ -318,7 +272,7 @@ In this task, you will update the new playbook you created with the proper conne
    
    ![Lab overview.](./media/xdr39.png)
 
-### Task 1: Persistence Attack with Registry Key Add 
+### Task 6: Persistence Attack with Registry Key Add 
 
 >**Note:** Perform this task in your LAB-VM (svm).
 
@@ -347,7 +301,7 @@ In this task, you will update the new playbook you created with the proper conne
  
    <validation step="8f13852e-0b9e-4064-babe-3918fddfd6c3" />
    
-### Task 2: Command and Control Attack with DNS
+### Task 7: Command and Control Attack with DNS
 
 >**Note:** Perform this task in your LAB-VM (svm).
 
@@ -417,7 +371,7 @@ In this task, you will update the new playbook you created with the proper conne
 
       >**Important**: Do not close these windows. Let this PowerShell script run in the background. The command needs to generate log entries for some hours. You can proceed to the next task and next exercises while this script runs. The data created by this task will be used in the Threat Hunting lab later. This process will not create substantial amounts of data or processing.
 
-### Task 2: Persistence Attack Detection
+### Task 8: Persistence Attack Detection
 
 In this task, you will create a detection for the first attack of the previous exercise.
 1. In the Search bar of the Azure portal, type *Microsft Sentinel (1)*, then select **Microsoft Sentinel (2)**.
@@ -487,7 +441,7 @@ In this task, you will create a detection for the first attack of the previous e
   
 1. On the *Review and create* tab, select the **Save** button to create the new Scheduled Analytics rule.
 
-### Task 1: Investigate an incident
+### Task 9: Investigate an incident
 
 In this task, you will investigate an incident.
 
