@@ -20,6 +20,7 @@ In this exercise, you will configure threat protection policies in Microsoft Def
 
    ![](./media/gg-1-1.png)  
    ![](./media/gg-1-2.png)
+   > **Note:** If you don’t see the pop-up prompt, simply continue and follow the lab guide steps as shown below.
 
 > ✅ This enables advanced posture capabilities like attack path analysis and permissions management.
 
@@ -55,7 +56,7 @@ In this exercise, you will configure threat protection policies in Microsoft Def
 
 ### Configure Threat Protection Policies
 
-1. Open [Microsoft 365 Defender Portal](https://security.microsoft.com)
+1. Open the [Microsoft 365 Defender Portal](https://security.microsoft.com)
 
 2. Navigate to:  
    **Email & collaboration** → **Policies & rules** → **Threat policies**
@@ -85,7 +86,7 @@ In this exercise, you will configure threat protection policies in Microsoft Def
 
 1. On the protection profile page, go to **Strict Protection** and click **Manage protection settings**.
 
-   ![](./media/gg-2-6-gg.png)
+   ![](./media/gg-2-6.png)
 
 2. Like before, assign your lab user under **Specific recipients** for both Exchange and Defender for Office 365.
 
