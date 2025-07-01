@@ -115,9 +115,6 @@ In this exercise, you will configure threat protection policies in Microsoft Def
 
 > ✅ Your threat policies are now fully configured with layered protection for both general and high-risk users.
 
-
-## Task 2: Simulate Phishing and Malware Attacks Using Attack Simulator
-
 ## Task 2: Simulate Phishing and Malware Attacks Using Attack Simulator
 
 In this task, you'll simulate phishing and malware attacks using Microsoft Defender's built-in **Attack Simulation Training**. These simulations help you evaluate user vulnerability and response to social engineering techniques.
@@ -228,15 +225,6 @@ In this task, you'll simulate phishing and malware attacks using Microsoft Defen
    ![](./media/gg-5-7.png)
 
 > 🛡️ This test mimics malware-laden email attachments and assesses user interaction with potentially harmful files.
-
----
-
-
-
-
-
-
-## Task 3: Analyze Threats with Threat Explorer and Real-Time Detections
 
 ## Task 3: Analyze Threats with Threat Explorer and Real-Time Detections
 
