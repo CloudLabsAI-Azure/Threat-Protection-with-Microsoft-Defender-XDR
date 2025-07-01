@@ -204,7 +204,7 @@ In this task, you'll simulate phishing and malware attacks using Microsoft Defen
 
 4. Select a payload like **HR notification on update of contract**.
 
-   ![](./media/gg-5-4.png)
+   ![](./media/gkk-1-1.png)
 
 5. Repeat the notification and training steps:
    - Use Microsoft defaults  
