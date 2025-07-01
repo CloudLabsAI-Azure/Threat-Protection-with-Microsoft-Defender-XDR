@@ -193,50 +193,88 @@ Click **Next**.
 
 ![](./media/g25-21.png)
 
-### Simulate a Phishing Attack
 
-Open the test phishing email received by the lab user and click the link.
+### Configure an Alert Policy
 
-![](./media/g25-22.png)
+Go to **Email & collaboration** → **Policies & rules** → **Alert policy**.
 
-### Copy the Link
+![](./media/tbh-1-1.png)
 
-Copy the link address from the browser's address bar.
+Click **+ New Alert Policy**.
 
-![](./media/g25-23.png)
+![](./media/tbh-1-2.png)
 
-### Create a New Phishing Email
+Fill in the following details:
+- **Name**: `Alert-Safe`
+- **Severity**: `High`
+- **Category**: `Threat management`
 
-Compose a new email to your lab user and paste the malicious link.  
-Subject: `Test-Phishing`
+Click **Next**.
 
-![](./media/g25-24.png)
+![](./media/tbh-1-3.png)
+
+Set the alert logic:
+- **Activity**: `Detected malware in an email message`
+- **Mail direction**: `Inbound`
+- **Trigger**: `Every time an activity matches the rule`
+
+Click **Next**.
+
+![](./media/tbh-1-4.png)
+
+Add the email recipient to get notified about the alert.
+
+Click **Next**.
+
+![](./media/tbh-1-5.png)
+
+Enable the alert immediately and click **Submit** to create the policy.
+
+![](./media/tbh-1-6.png)
+
+---
+
+### Simulate a Malicious Email
+
+Send an email to the lab user with the following links:
+
+- [https://www.amtso.org/check-desktop-phishing-page/](https://www.amtso.org/check-desktop-phishing-page/)
+- [https://malware.wicar.org/data/eicar.com.txt](https://malware.wicar.org/data/eicar.com.txt)
+
+> 🧪 These are safe test links designed to simulate phishing and malware detection.
+
+![](./media/tbh-1-7.png)
+
+---
 
 ### Investigate the Email in Explorer
 
-Navigate to:  
+Go to:  
 **Email & collaboration** → **Explorer**  
-Locate and open the email titled **Test Phishing**.
+Locate the **Test-safe** email.
 
-![](./media/g25-25.png)
+![](./media/tbh-1-8.png)
 
-### Review Email Entity and Actions
+Click **Open email entity** to inspect the detection and delivery information.
 
-Click **Open email entity** to view detailed delivery information and actions.  
-Check if the message was blocked or quarantined.
+Check details like quarantine status and detection technologies used.
 
-![](./media/g25-26.png)
+![](./media/tbh-1-9.png)
 
-### Analyze Detection and Headers
+---
 
-Review the full detection and header analysis, including SPF, DKIM, and DMARC results.
+### Explore the Alert Incident
 
-![](./media/g25-27.png)
+Navigate to:  
+**Investigation & response** → **Incidents**
 
-> ✅ You’ve successfully configured Safe Links protection and simulated a phishing attack, tracking the detection and response using Microsoft Defender.
+Open the incident titled **Alert-Link**.
 
+![](./media/tbh-1-10.png)
 
-> ✅ You’ve now configured Safe Links protection and successfully simulated and tracked a phishing attack using Defender’s real-time threat policies.
+> 🔍 Dive deep into the incident: review alerts, evidence, entities involved, and the automated investigation trail.
+
+> ✅ You’ve now created an alert policy, triggered it with test emails, and followed the investigation trail using Defender XDR.
 
 ---
 
