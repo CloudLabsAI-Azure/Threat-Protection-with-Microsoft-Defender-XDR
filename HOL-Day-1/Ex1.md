@@ -229,103 +229,138 @@ In this task, you'll simulate phishing and malware attacks using Microsoft Defen
 
 ## Task 3: Analyze Threats with Threat Explorer and Real-Time Detections
 
-In this task, you’ll analyze the simulated phishing attack launched in Task 2. You’ll explore user interactions, examine click telemetry in Threat Explorer, and review simulation impact to assess compromise.
+### Create a Custom Role in Microsoft Defender XDR
 
-> ⚠️ Since this was a simulation, detailed threat data such as malware indicators or incident correlation is not available.
+In this task, you'll create a custom role in Microsoft Defender to manage access and permissions for specific users or groups.
 
 ---
 
-### Review Phishing Email in Outlook
+### Navigate to Permissions
 
-Open the lab user’s mailbox and locate the email titled:
+1. In the [Microsoft 365 Defender Portal](https://security.microsoft.com), go to  
+   **System** → **Permissions**
 
-**"File inloop Expenses Report.xlsx Has Been Shared with ODL_User"**
+2. Click **Create a custom role**.
 
-![](./media/gp-1-1.png)
+   ![](./media/gp-1-1.png)
 
-Clicking **Open** simulates a phishing link click and may trigger a credential submission event.
+---
+
+### Start Role Creation
+
+Click **Create custom role** under **Microsoft Defender XDR**.
 
 ![](./media/gp-1-2.png)
 
-> ✅ Interaction with this email will reflect in both the simulation report and Threat Explorer.
-
 ---
 
-### Track Clicks in Threat Explorer
+### Set Role Basics
 
-Go to **Microsoft 365 Defender Portal** →  
-**Email & collaboration** → **Explorer**
+Name the role (e.g., `Test-role`) and optionally add a description.  
+Click **Next**.
 
 ![](./media/gp-1-3.png)
 
-Use the **URL clicks** tab to filter results by recipient and timeframe.
+---
+
+### Assign Permissions
+
+Select **Select custom permissions**, then:
+
+- Under **Security data**, choose **Select all permissions**
+- Under **Raw data**, select custom permissions and check **Email & collaboration content (read)**
+
+Click **Apply**.
 
 ![](./media/gp-1-4.png)
 
-Click on the suspicious entry to review detailed telemetry.
+---
+
+In the **Security operations** tab, choose **All read and manage permissions**, then click **Apply**.
 
 ![](./media/gp-1-4-1.png)
 
-The full malicious URL is displayed, along with metadata and click status.
+---
+
+### Assign the Role
+
+1. Name the assignment (e.g., `Test-assignment`)
+2. Add your lab user (e.g., `ODL_User`)
+3. For data sources, choose **Microsoft Defender for Office 365**
+
+Click **Add**.
 
 ![](./media/gp-1-5.png)
 
-> 🔍 This confirms that the user interacted with the phishing URL used in the simulation.
-
 ---
 
-### View Simulation Report
+### Review and Submit
 
-Go to **Attack simulation training** → **Simulations**
-
-Select the simulation titled `Test1`.
+Check the permissions and assignments summary, then click **Submit**.
 
 ![](./media/gp-1-6.png)
 
-The report indicates that **100% of users were compromised**, and **0% reported** the attack.
+> ✅ You've successfully created a custom role and assigned it to a user in Microsoft Defender XDR.
 
-![](./media/gp-1-7.png)
+### Review Phishing Email in Outlook
 
-> ✅ This visibility helps admins evaluate how users responded to social engineering attacks.
+Open the lab user's mailbox and locate the phishing email titled:
+
+**"File inloop Expenses Report.xlsx Has Been Shared with ODL_User 1781683"**
+
+![](./media/gt-1-1.png)
+
+Clicking **Open** simulates a phishing link click and may trigger a credential submission event.
+
+![](./media/gt-1-2.png)
+
+> ✅ This interaction will reflect in the **simulation report** and under **URL clicks** in **Threat Explorer**.
 
 ---
 
-### Review User Activity
 
-Select the compromised user from the simulation details.
+### Track URL Clicks in Threat Explorer
+
+Go to the **Microsoft 365 Defender Portal** →  
+**Email & collaboration** → **Explorer** → **URL clicks**
+
+Filter by time and user to find the phishing email interaction.
 
 ![](./media/gp-2-1.png)
 
-You’ll see all activity captured during the simulation:
-
-- Clicked message link  
-- Read message  
-- Supplied credentials
+Click on the URL entry to view detailed information.
 
 ![](./media/gp-2-2.png)
 
-> 🛡️ Defender provides granular insight into user behavior during the simulated threat.
+> 🔍 This shows the full URL, click metadata, and confirms the phishing interaction.
 
 ---
 
-### Explore Message Trace and Alert Data
+### View Simulation Results
 
-In **Threat Explorer**, you can also trace the attack flow:
+Navigate to:  
+**Email & collaboration** → **Attack simulation training** → **Simulations**
 
-- Email origin and delivery  
-- Phishing payload  
-- Policy actions applied (if any)
+Select the simulation titled `Test1`.
 
-![](./media/gp2-3.png)  
-![](./media/gp2-4.png)
+![](./media/gt5-3.png)
 
-To investigate further, click on related alerts or campaign details.
+The simulation report reveals that **100% of users were compromised**, and **0% reported** the email.
 
-![](./media/gp2-5.png)
+![](./media/gt5-2.png)
 
-> ✅ Threat Explorer enables deep-dive analysis even for simulated campaigns.
+> ✅ Helps assess end-user awareness and effectiveness of security training.
 
+---
 
+### Review Compromised User Activity
+
+Select the user from the simulation results to see specific actions.
+You'll see the sequence of actions like reading the message, clicking the link, and submitting credentials.
+
+![](./media/gt5-1.png)
+
+> 🛡️ These insights help evaluate user behavior and response during simulated phishing attacks.
 
 
 
