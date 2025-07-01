@@ -238,6 +238,103 @@ In this task, you'll simulate phishing and malware attacks using Microsoft Defen
 
 ## Task 3: Analyze Threats with Threat Explorer and Real-Time Detections
 
+## Task 3: Analyze Threats with Threat Explorer and Real-Time Detections
+
+In this task, you’ll analyze the simulated phishing attack launched in Task 2. You’ll explore user interactions, examine click telemetry in Threat Explorer, and review simulation impact to assess compromise.
+
+> ⚠️ Since this was a simulation, detailed threat data such as malware indicators or incident correlation is not available.
+
+---
+
+### Review Phishing Email in Outlook
+
+Open the lab user’s mailbox and locate the email titled:
+
+**"File inloop Expenses Report.xlsx Has Been Shared with ODL_User"**
+
+![](./media/gp-1-1.png)
+
+Clicking **Open** simulates a phishing link click and may trigger a credential submission event.
+
+![](./media/gp-1-2.png)
+
+> ✅ Interaction with this email will reflect in both the simulation report and Threat Explorer.
+
+---
+
+### Track Clicks in Threat Explorer
+
+Go to **Microsoft 365 Defender Portal** →  
+**Email & collaboration** → **Explorer**
+
+![](./media/gp-1-3.png)
+
+Use the **URL clicks** tab to filter results by recipient and timeframe.
+
+![](./media/gp-1-4.png)
+
+Click on the suspicious entry to review detailed telemetry.
+
+![](./media/gp-1-4-1.png)
+
+The full malicious URL is displayed, along with metadata and click status.
+
+![](./media/gp-1-5.png)
+
+> 🔍 This confirms that the user interacted with the phishing URL used in the simulation.
+
+---
+
+### View Simulation Report
+
+Go to **Attack simulation training** → **Simulations**
+
+Select the simulation titled `Test1`.
+
+![](./media/gp-1-6.png)
+
+The report indicates that **100% of users were compromised**, and **0% reported** the attack.
+
+![](./media/gp-1-7.png)
+
+> ✅ This visibility helps admins evaluate how users responded to social engineering attacks.
+
+---
+
+### Review User Activity
+
+Select the compromised user from the simulation details.
+
+![](./media/gp-2-1.png)
+
+You’ll see all activity captured during the simulation:
+
+- Clicked message link  
+- Read message  
+- Supplied credentials
+
+![](./media/gp-2-2.png)
+
+> 🛡️ Defender provides granular insight into user behavior during the simulated threat.
+
+---
+
+### Explore Message Trace and Alert Data
+
+In **Threat Explorer**, you can also trace the attack flow:
+
+- Email origin and delivery  
+- Phishing payload  
+- Policy actions applied (if any)
+
+![](./media/gp2-3.png)  
+![](./media/gp2-4.png)
+
+To investigate further, click on related alerts or campaign details.
+
+![](./media/gp2-5.png)
+
+> ✅ Threat Explorer enables deep-dive analysis even for simulated campaigns.
 
 
 
