@@ -69,7 +69,7 @@ App Governance helps organizations:
 
 1. Click **+ Create policy**.
    
-   ![](./media/g-5-1.png)
+   ![](./media/g-5-5.png)
 
 1. In the **Create policy** window:
    - Category: `Custom`  
@@ -77,7 +77,7 @@ App Governance helps organizations:
 
 1. Click **Next**.
 
-   ![](./media/g-5-2.png)
+   ![](./media/g-5-6.png)
 
 1. Fill in the policy details:
    - Policy Name: `Detect High-Permission OAuth Apps`  
@@ -86,13 +86,15 @@ App Governance helps organizations:
 
 1. Click **Next**.
 
-   ![](./media/g-5-3.png)
+   ![](./media/g-5-7.png)
 
 1. When prompted, select **No, I'll customize the policy** and click **Next**.
 
+   ![](./media/g-5-8.png)
+
 1. For **Scope**, select `All apps` and click **Next**.
 
-   ![](./media/g-5-4.png)
+   ![](./media/g-5-9.png)
 
 1. Under **Conditions**, configure the following:
    - Highly privileged = `Yes`  
@@ -100,15 +102,19 @@ App Governance helps organizations:
 
 1. Click **Save**.
 
-    ![](./media/g-5-5.png)
+   ![](./media/g-5-10.png)
 
 1. Leave **Disable app** unchecked (optional).
 
+   ![](./media/g-5-11.png)
+
 1. Set **Policy status** to `Active`.
 
-1. Review the settings and click **Save** to create the policy.
+   ![](./media/g-5-12.png)
 
-    ![](./media/g-5-8.png)
+1. Review the settings and click **Submit** to create the policy.
+
+   ![](./media/g-5-13.png)
 
    > The detection policy is now active and will monitor all onboarded OAuth apps for risky permissions and unverified publishers.
 
@@ -117,7 +123,7 @@ App Governance helps organizations:
 1. In the [Microsoft Defender Portal](https://security.microsoft.com), navigate to:  
    **Cloud apps** → **App governance** → **Governance log**.
 
-   ![](./media/g-5-10.png)
+   ![](./media/g-5-14.png)
 
 1. Look for apps that are marked:
    - Highly privileged = `Yes`  
@@ -125,7 +131,7 @@ App Governance helps organizations:
 
 1. Click on the app (e.g., `AuditLogApp`) to open the details view.
  
-   ![](./media/g-5-11.png)
+   ![](./media/g-5-15.png)
 
 1. In the app pane, review:
    - Permissions tab  
@@ -136,7 +142,7 @@ App Governance helps organizations:
 
 1. Go to the **Policies** tab and confirm the policy `Detect High-Permission OAuth Apps` is listed with **Status = Active**.
 
-   ![](./media/g-5-12.png)
+   ![](./media/g-5-16.png)
 
 1. From the left menu, navigate to:  
    **Incidents & alerts** → **Incidents**
@@ -164,9 +170,9 @@ App Governance helps organizations:
     ![](./media/a-1-1.png)
 
 1. In the incident pane, review:
-    - Entity Name (e.g., `AuditLogApp`)  
+    - Entity Name (`AuditLogApp`)  
     - Remediation status  
-    - Verdict (e.g., Suspicious)  
+    - Verdict (Suspicious)  
     - Incident severity (should be High)  
     - Policy name that triggered the alert
    
@@ -184,4 +190,3 @@ In this exercise:
   - You reviewed policy results and investigated generated incidents.
 
 ## Congratulations you have successfully completed the lab
-
