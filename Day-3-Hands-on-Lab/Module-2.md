@@ -63,19 +63,21 @@ In this exercise, you will connect the Windows security event connector, enable 
 
 In this task, you will enable and configure Microsoft Defender for Cloud.
 
-1. In the search bar of the Azure portal, type *Defender*, then select **Microsoft Defender for Cloud**.
+1. Go to the [Azure Portal](https://portal.azure.com), and search for **Microsoft Defender for Cloud**.
 
-    ![Picture 1](./media/Lab-02-task2-search.png) 
+1. When prompted, click **Enable** to activate Defender CSPM.
 
-1. Click the left menu, and then click on **Getting Started**.
+   ![](./media/gg-1-1.png)
+     
+   ![](./media/gg-1-2.png)
 
-1. On the **Getting Started** page, under the **Upgrade** tab, ensure your subscription is selected, and then click the **Upgrade** button at the bottom of the page. Please wait for 2-5 minutes for the process to complete, as it may take some time.
+   > **Note:** If you don’t see the pop-up prompt, simply continue and follow the lab guide steps as shown below.
 
-    ![Picture 1](./media/Lab-02-task2-upgrade.png) 
+   >**Note:** This enables advanced posture capabilities like attack path analysis and permissions management.
 
-4. In the left menu for Microsoft Defender for Cloud, under Management, select **Environment settings**.
+1. Go to **Environment settings** > select your subscription.
 
-1. Click on the subscription (or its equivalent name in your language). 
+   ![](./media/gg-1-3.png)
 
 1. Review the Azure resources that are now protected with the Defender for Cloud plans.
 
@@ -100,48 +102,6 @@ In this task, you will enable and configure Microsoft Defender for Cloud.
 1. Close the Defender plans page by selecting the 'X' in the upper right corner of the page to return to the **Environment settings**.
 
     ![Picture 1](./media/Lab-02-task2-save.png) 
-
-### Task 3: Protect an On-Premises Server.
-
-In this task, you will manually install the required agent on the Windows Server.
-
-1. Navigate to **Microsoft Defender for Cloud** and choose the **Getting Started** page.
-
-1. Choose the **Get Started** tab.
-
-1. Scroll down and click on **Configure** under the *Add non-Azure servers* section.
-
-      >**Note:** Non-Azure servers use the Log Analytics agent to extend Microsoft Defender for Cloud capabilities to servers running outside of Azure. This includes resources running on-premises and in other clouds.
-
-    ![Picture 1](./media/lab02-task03-config.png) 
-
-1. Choose **Upgrade** next to the workspace you created earlier. This process may take a few minutes, so please wait until you see the notification *"Defender plans for the workspace were saved successfully."*
-
-    ![Picture 1](./media/lab-3xdr.png)
-
-1. Select **+ Add Servers** next to the workspace you created earlier.
-
-    ![Picture 1](./media/lab-2xdr.png)
-
-1. Choose **Log Analytics agent instructions**.
-
-1. Choose **Download Windows Agent (64-bit)**.
-
-1. Choose **Open file** to execute the downloaded *MMASetup-AMD64.exe* file.
-
-   >**Note** If it is already installed and prompts for "Repair" or "Remove," select **Repair**. Then, click on Next and proceed to click on **Install**. The installation process may take 2-3 minutes.
-
-1. Continue with the installation process. Once the installation is complete, select **Finish**.
-
-1. Go to the "Microsoft Defender for Cloud" portal and select **Inventory** from the general section.
-
-1. The server should appear in the list. You may need to select **Refresh** to see the update, and it might take a few minutes.
-
-   > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-    > - Click the Lab Validation tab located at the upper right corner of the lab guide section and navigate to the Lab Validation tab.
-    > - Hit the Validate button for the corresponding task.
-    > - If you receive a success message, you can proceed to the next task. If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-    > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
     
 ### Task 4: Persistence Attack with Registry Key Add 
 
@@ -259,6 +219,8 @@ In this task, you will create a detection for the first attack of the previous e
     ```
     ![Lab overview.](./media/Lab06-task02-query2.png)
 
+    >**Note:** It may take **5 to 10 minutes** for the SecurityEvent data to become available after onboarding or activity generation.  
+
 1. It is important to help the Security Operations Center Analyst by providing as much context about the alert as you can. This includes projecting Entities for use in the investigation graph. **Run** the following query:
 
     ```KQL
@@ -339,14 +301,6 @@ In this task, you will investigate an incident.
     ![Lab overview.](./media/comment.png)
 
 1. Hide the left blade by selecting the **<<** icon next to the owner.
-
-1. Review the **Incident timeline** window. For the *Startup RegKey* alert, select the ellipsis **(...) (1)** icon and then **Run playbook (2)**. You will see the *Alert playbooks*. This option helps you to run playbooks manually.
-
-    ![Lab overview.](./media/7-4.png)
-
-    >**Note**: If you did not see any playbook no need to worry there might be the case where sentinel does not reflect the playbook, we can proceed with the next step
-
-1. Close the *Alert playbooks* blade by selecting the **x** icon in the top right.
 
 1. Review the **Entities** window. At least the *Host* entity that we mapped within the KQL query from the previous exercise should appear. **Hint:** If no entities are shown, refresh the page.
 
