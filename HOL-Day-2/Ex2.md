@@ -20,7 +20,7 @@ In this exercise, you will explore how to secure Microsoft 365 cloud services li
 1. In the **Overview** pane, select **Users** under the **Manage** section.  
    ![](./media/g-1-2.png)
 
-1. From the list of users, click on your assigned user (e.g., `ODL_User 1777538`).  
+1. From the list of users, click on your assigned user (`ODL_User******`).  
    ![](./media/g-1-3.png)
 
 1. In the user blade, click on **Licenses** and ensure **Microsoft 365 E5 (no Teams)** or an equivalent license is assigned and active.  
