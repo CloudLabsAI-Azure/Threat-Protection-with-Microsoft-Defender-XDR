@@ -1,4 +1,4 @@
-# Day 3: Threat Detection, Investigation, and Response with Microsoft Security Solutions
+# Day 3: Microsoft 365 Defender for Identity and Sentinel for Advanced Threat Protection
 
 ### Overall Estimated Duration: 2 Hours
 
@@ -24,7 +24,7 @@ In this lab, you will strengthen organizational security by deploying Microsoft 
 
 # Getting Started with the Lab
  
-Welcome to your Threat Detection, Investigation, and Response with Microsoft Security Solutions workshop! We've prepared a seamless environment for you to familiarize yourself with the Microsoft security operations analyst, you monitor, identify, investigate, and respond to threats in multi-cloud environments and related Microsoft services. Let's begin by making the most of this experience:
+Welcome to your Microsoft 365 Defender for Identity and Sentinel for Advanced Threat Protection workshop! We've prepared a seamless environment for you to familiarize yourself with the Microsoft security operations analyst, you monitor, identify, investigate, and respond to threats in multi-cloud environments and related Microsoft services. Let's begin by making the most of this experience:
  
 ## Accessing Your Lab Environment
  
