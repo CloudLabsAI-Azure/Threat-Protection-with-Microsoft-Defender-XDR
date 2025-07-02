@@ -20,6 +20,9 @@ In this exercise, you will onboard a device and deploy Microsoft Defender for Id
 
     ![](./media/lab01-task3-settings.png)
 
+    > **Note:** The **Endpoints** option under **Settings** may take a few moments to appear after the initial setup.  
+    > If you don't see it right away, wait a minute and try refreshing the page.
+
 1. Navigate to the **Onboarding** option in the Device Management section.
 
     >**Note:** Device onboarding can also be initiated from the **Assets** section on the left menu bar. Expand 'Assets' and choose 'Devices.' On the Device Inventory page, with 'Computers & Mobile' selected, scroll down to find the option for **Onboard devices.** Clicking on this option will direct you to the **Settings > Endpoints** page.
