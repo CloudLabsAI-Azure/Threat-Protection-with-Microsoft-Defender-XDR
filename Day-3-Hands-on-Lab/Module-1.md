@@ -1,6 +1,18 @@
-# Hands on Labs - Day 3 
-## Estimated Duration: 90 Minutes
-### Exercise: 1
+## Exercise 1: Microsoft Defender for Identity for Advanced Threat Detection and Response
+### Estimated Duration: 60 Minutes
+
+## Overview
+
+In this exercise, you will onboard a device and deploy Microsoft Defender for Identity sensors on domain controllers to enable identity threat detection. You will simulate lateral movement attack. Additionally, you will investigate identity-based threats and user activity timelines, integrate Defender for Identity with the Microsoft 365 Defender portal, and explore identity-related signals using advanced hunting queries to enhance your threat detection and response capabilities.
+
+## Objectives
+
+- Task 1: Onboard a Devic 
+- Task 2: Deploy Microsoft Defender for Identity Sensor on Domain Controllers 
+- Task 3: Simulate and Detect Lateral Movement Attacks (Read-Only)
+- Task 4: Investigate Threats and User Timelines 
+- Task 5: Integrate Defender for Identity with Microsoft 365 Defender Portal
+- Task 6: Review and Run Advanced Hunting Queries for Identity Signals
 
 ### Task 1: Onboard a Device
 
@@ -146,7 +158,7 @@ Install the AD DS role to enable the server to function as a domain controller.
 1. A pop-up will display a **Download installer** button and an **Access key**. Click **Download installer** to download `Azure ATP Sensor Setup.zip` and copy the **Access key** to your clipboard which will be used during the installation.
 
       ![](./media/E1T0S12.png)
-      > **Note:** If you do not see that the file is downloading, click on the pop-up window button and then select Always allow pop-ups and redirects from `https://security.microsoft.com`and click on **Done** 
+      > **Note:** If you do not see that the file is downloading, click on the pop-up window button and then select Always allow pop-ups and redirects from `https://security.microsoft.com`and click on **Done** and **download** the file again
 
       ![](./media/E1T0S12a.png)
 
@@ -164,11 +176,12 @@ Install the AD DS role to enable the server to function as a domain controller.
 
 1. Return to the Microsoft Defender portal, go to **Settings** > **Identities** > **Sensors**, find the sensor for `defenderxdr.internal`, and verify that the **Status** shows **running** within 5–10 minutes.
 
-      ![](./media/E1T0S15.png)
+      ![Image](./media/E1T0S15.png)
 
-### Task 2: Simulate and Detect Lateral Movement Attacks (Read-Only)
+### Task 3: Simulate and Detect Lateral Movement Attacks (Read-Only)
 
 In this task you will simulate DC Sync attacks and detect them using Defender for Identity.
+
 1. Open **PowerShell (Admin)** and navigate to the below mentioned directory.
 
       ```powershell
@@ -182,19 +195,18 @@ In this task you will simulate DC Sync attacks and detect them using Defender fo
 
 1. Now you can check your alerts in the Microsoft Defender portal, navigate to **Incidents & alerts** in the left-hand navigation pane.
 
-      ![](./media/E1T3S3.png)
+      ![](./media/E1T3S3upd.png)
 
 1. Click **Alerts** to view the alerts queue.
 
-      ![](./media/E1T3S4.png)
-
 1. You will find alerts with the below names
-     - **Suspected Pass-the-Hash attack (NTLM)** for the Pass-the-Hash simulation.
-     - **Suspected DCSync attack** for the DC Sync simulation.
+     - **Lateral movement using remote logon by contained user blocked**
+     - **Lateral movement using RDP blocked**
 
-      ![](./media/E1T3S5.png)
+      ![](./media/E1T3S4.png)
+      > **Note:** The user will be logged out of the virtual machine as part of the containment measures initiated by the Defender in response to the user's attempted lateral movement attack.
 
-### Task 3: Investigate Threats and User Timelines 
+### Task 4: Investigate Threats and User Timelines 
 
 In this task you will analyze using user timelines and alert details in the Defender portal.
 
@@ -210,7 +222,7 @@ In this task you will analyze using user timelines and alert details in the Defe
 
       ![](./media/E1T3S3.png)
 
-### Task 4: Integrate Defender for Identity with Microsoft 365 Defender Portal
+### Task 5: Integrate Defender for Identity with Microsoft 365 Defender Portal
 
 In this task you will enable integration to view Defender for Identity incidents in the unified Microsoft 365 Defender portal and Microsoft Sentinel.
 
@@ -234,7 +246,7 @@ In this task you will enable integration to view Defender for Identity incidents
 
       ![](./media/E1T4S5.png)
 
-### Task 5: Review and Run Advanced Hunting Queries for Identity Signals
+### Task 6: Review and Run Advanced Hunting Queries for Identity Signals
 
 In this task you will use advanced hunting queries in the Defender portal to detect identity-based threats.
 

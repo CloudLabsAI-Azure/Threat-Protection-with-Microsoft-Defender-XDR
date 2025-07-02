@@ -1,6 +1,6 @@
-# Exercise 2 - Review and explore sentinel workspace
+# Exercise 2: Review and explore sentinel workspace
 
-## Estimated timing: 45 minutes
+## Estimated timing: 90 minutes
 
 ### Task 1: Connect the Windows security event connector
 

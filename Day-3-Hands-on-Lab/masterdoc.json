@@ -14,7 +14,15 @@
       {
         "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Threat-Protection-with-Microsoft-Defender-XDR/refs/heads/main/Day-3-Hands-on-Lab/Module-2.md",
         "Order": 3
-      }
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Threat-Protection-with-Microsoft-Defender-XDR/refs/heads/main/Day-3-Hands-on-Lab/Module-3.md",
+        "Order": 4
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Threat-Protection-with-Microsoft-Defender-XDR/refs/heads/main/Day-3-Hands-on-Lab/Module-4.md",
+        "Order": 5
+      }      
     ]
   }
 ]
