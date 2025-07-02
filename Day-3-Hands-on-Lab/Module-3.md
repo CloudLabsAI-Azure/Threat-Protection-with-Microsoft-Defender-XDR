@@ -1,5 +1,6 @@
-
 # Exercise 3: Threat Hunting using Notebooks with Microsoft Sentinel
+
+### Estimated timing: 30 minutes
 
 ## Overview
 
@@ -12,8 +13,6 @@ You are a Security Operations Analyst working at a company that implemented Micr
  - Task 2: Create a NRT query rule
  - Task 3: Create a Search
  - Task 4: Explore Notebooks
-
-## Estimated timing: 30 minutes
 
 ### Task 1: Create a hunting query
 

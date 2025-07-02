@@ -1,18 +1,17 @@
-# Exercise 3: Mitigate threats using Microsoft 365 Defender 
+# Exercise 4: Mitigate threats using Microsoft 365 Defender 
 
+### Estimated timing: 60 minutes
 ## Overview
 
 You're a Security Operations Analyst working at a company that implemented Microsoft Defender XDR solutions. You need to see the alerts in an incident to see the incident's full impact do a root cause investigation and mitigate these alerts using M365 Defender tools.
 
-## Lab objectives
+## Objectives
  In this exercise, you will perform the following in the M365 Defender portal:
 - Task 1: Create a Group
 - Task 2: Apply Microsoft Defender for Office 365 preset security policies
 - Task 3: Activate a Microsoft Security Rule
 - Task 4: Manage Incidents
 - Task 5: Investigate Alerts
-
-## Estimated timing: 60 minutes
 
 ### Task 1: Create a Group 
 
@@ -205,8 +204,8 @@ In this task, you will investigate and mitigate the alerts through recommendatio
 
 ## Review
 In this lab, you have completed the following tasks:
-- Create a Group
-- Apply Microsoft Defender for Office 365 preset security policies
-- Activate a Microsoft Security Rule
-- Manage Incidents
-- Investigate Alerts
+- Created a Group
+- Applied Microsoft Defender for Office 365 preset security policies
+- Activated a Microsoft Security Rule
+- Managed Incidents
+- Investigated Alerts

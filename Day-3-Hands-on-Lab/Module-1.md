@@ -272,3 +272,6 @@ In this task you will use advanced hunting queries in the Defender portal to det
    - Select **Save**.
 
       ![](./media/E1T5S4.png)
+
+## Review
+In this lab, you have completed the following tasks:

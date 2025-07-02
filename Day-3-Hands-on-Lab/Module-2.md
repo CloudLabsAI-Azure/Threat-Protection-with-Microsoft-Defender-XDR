@@ -1,6 +1,19 @@
 # Exercise 2: Review and explore sentinel workspace
 
-## Estimated timing: 90 minutes
+### Estimated timing: 90 minutes
+## Overview
+
+In this exercise, you will connect the Windows security event connector, enable Microsoft Defender for Cloud, and protect an on-premises server. You’ll simulate persistence and command-and-control attacks, detect malicious activity, and investigate the resulting incident to understand how Defender for Cloud responds to advanced threats.
+
+## Objectives
+ In this exercise, you will perform the following in the M365 Defender portal:
+- Task 1: Connect the Windows security event connector
+- Task 2: Enable Microsoft Defender for Cloud
+- Task 3: Protect an On-Premises Server.
+- Task 4: Persistence Attack with Registry Key Add 
+- Task 5: Command and Control Attack with DNS
+- Task 6: Persistence Attack Detection
+- Task 7: Investigate an incident
 
 ### Task 1: Connect the Windows security event connector
 
@@ -130,9 +143,7 @@ In this task, you will manually install the required agent on the Windows Server
     > - If you receive a success message, you can proceed to the next task. If not, carefully read the error message and retry the step, following the instructions in the lab guide.
     > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
     
-### Task 6: Persistence Attack with Registry Key Add 
-
->**Note:** Perform this task in your LAB-VM (svm).
+### Task 4: Persistence Attack with Registry Key Add 
 
 1. In the search of the taskbar, enter *Command*. A Command Prompt will be displayed in the search results. Right-click on the Command Prompt and select **Run as Administrator**. Select **Yes** in the User Account Control window that allows the app to run.
 
@@ -159,9 +170,7 @@ In this task, you will manually install the required agent on the Windows Server
  
    <validation step="8f13852e-0b9e-4064-babe-3918fddfd6c3" />
    
-### Task 7: Command and Control Attack with DNS
-
->**Note:** Perform this task in your LAB-VM (svm).
+### Task 5: Command and Control Attack with DNS
 
 1. Copy and run this command to create a script that will simulate a DNS query to a C2 server:
 
@@ -229,7 +238,7 @@ In this task, you will manually install the required agent on the Windows Server
 
       >**Important**: Do not close these windows. Let this PowerShell script run in the background. The command needs to generate log entries for some hours. You can proceed to the next task and next exercises while this script runs. The data created by this task will be used in the Threat Hunting lab later. This process will not create substantial amounts of data or processing.
 
-### Task 8: Persistence Attack Detection
+### Task 6: Persistence Attack Detection
 
 In this task, you will create a detection for the first attack of the previous exercise.
 1. In the Search bar of the Azure portal, type *Microsft Sentinel (1)*, then select **Microsoft Sentinel (2)**.
@@ -299,7 +308,7 @@ In this task, you will create a detection for the first attack of the previous e
   
 1. On the *Review and create* tab, select the **Save** button to create the new Scheduled Analytics rule.
 
-### Task 9: Investigate an incident
+### Task 7: Investigate an incident
 
 In this task, you will investigate an incident.
 
@@ -390,3 +399,6 @@ In this task, you will investigate an incident.
 1. Back in the incident page, in the left pane select **Active Status (1)** and select **Closed (2)**. In the *Select classification* drop-down review the different options. After that, select **True positive - suspicious activity (3)** and then select **Apply (4)**.
 
    ![Lab overview.](./media/7-13.png)
+
+## Review
+In this lab, you have completed the following tasks:
