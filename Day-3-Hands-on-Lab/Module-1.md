@@ -2,7 +2,57 @@
 ## Estimated Duration: 90 Minutes
 ### Exercise: 1
 
-### Task 1: Deploy Microsoft Defender for Identity Sensor on Domain Controllers
+### Task 1: Onboard a Device
+
+1. Navigate to **Settings** in the left menu bar, and then, on the Settings page, choose **Endpoints**.
+
+    ![](./media/lab01-task3-settings.png)
+
+1. Navigate to the **Onboarding** option in the Device Management section.
+
+    >**Note:** Device onboarding can also be initiated from the **Assets** section on the left menu bar. Expand 'Assets' and choose 'Devices.' On the Device Inventory page, with 'Computers & Mobile' selected, scroll down to find the option for **Onboard devices.** Clicking on this option will direct you to the **Settings > Endpoints** page.
+
+1. In the '1. Onboard a device' section, ensure that 'Local Script (for up to 10 devices)' is visible in the Deployment method drop-down, then click the **Download onboarding package** button.
+
+    ![](./media/lab01-task3-localscript.png) 
+
+1. In the *Downloads* pop-up, use your mouse to select the 'WindowsDefenderATPOnboardingPackage.zip' file, and then click on the folder icon for **Show in folder**. **Hint:** If you can't locate it, the file should be in the 'c:\users\admin\downloads' directory.
+
+    ![](./media/lab01-task3-downloadspopup.png)
+
+1. Right-click on the downloaded zip file, choose **Extract All...**, ensure that **Show extracted files when complete** is checked, and then click **Extract**.
+
+    ![](./media/lab01-task3-zipfile.png) 
+
+1. Right-click on the extracted file 'WindowsDefenderATPLocalOnboardingScript.cmd' and choose **Properties**. Tick the **Unblock** checkbox located in the bottom right of the Properties window, and then click **OK**.
+
+    ![](./media/sc200-mod2-unblock.png) 
+
+1. Once again, right-click on the extracted file **WindowsDefenderATPLocalOnboardingScript.cmd** and opt for **Run as Administrator**. **Hint:** If the Windows SmartScreen window appears, click on **More info**, and then select **Run anyway**.
+    
+1. When the "User Account Control" window appears, select **Yes** to allow the script to run, answer **Y** to the question presented by the script, and press **Enter**. Once complete, you should see a message in the command screen that says *Successfully onboarded machine to Microsoft Defender for Endpoint*.
+
+1. Press any key to continue. This action will close the Command Prompt window.
+
+    ![](./media/SC-200-img25.png)
+
+1. Back on the Onboarding page within the Microsoft 365 Defender portal, navigate to the "2. Run a detection test" section, and copy the detection test script by clicking the **Copy** button.
+
+    ![](./media/lab01-task3-runscript.png) 
+
+1. In the Windows search bar of the virtual machine, type **CMD**, and choose **Run as Administrator** from the right pane for the Command Prompt app.
+
+1. When the "User Account Control" window appears, select **Yes** to allow the app to run. 
+
+1. Paste the script by right-clicking in the **Administrator: Command Prompt** window and press **Enter** to run it. **Note:** The window closes automatically after running the script.
+
+1. In the Microsoft 365 Defender portal, navigate to the left-hand menu, and under the **Assets** area, select **Devices**. If the device is not shown, proceed with the next task and return to check it later. It can take up to 60 minutes for the first device to be displayed in the portal.
+
+    ![](./media/Onboard.png) 
+
+    >**Note:** If you have completed the onboarding process and don't see devices in the Devices list after an hour, it might indicate an onboarding or connectivity problem.
+
+### Task 2: Deploy Microsoft Defender for Identity Sensor on Domain Controllers
 
 In this task you will install and configure the Defender for Identity sensor on a domain controller to monitor identity-based threats.
 
@@ -20,30 +70,26 @@ Install the AD DS role to enable the server to function as a domain controller.
 
 3. Configure the Wizard:
    - Select **Role-based or feature-based installation**, then click **Next**.
-   - Choose your server (e.g., `DC01`) from the server pool, then click **Next**.
+   - Choose your server from the server pool, then click **Next**.
    - In the "Server Roles" list, check **Active Directory Domain Services**.
+
+      ![](../media/E1T0S3a.png)
+
    - When prompted, click **Add Features** to include required tools, then click **Next**.
-
-      ![](../media/E1T0S3.png)
-
-4. Complete the Installation:
    - Skip the "Features" page by clicking **Next**.
    - Review the AD DS information page, then click **Next**.
    - Confirm your selections and click **Install**.
-   - Wait for the installation to complete (this may take a few minutes).
+   - Wait for the installation to complete and click on **Close**.
 
       ![](../media/E1T0S4.png)
 
    > **Note:** Do not close Server Manager after installation; the next step begins from there.
 
-1. Start the Promotion Process:
-   - In Server Manager, click the yellow notification flag and select **Promote this server to a domain controller**.
+1. In Server Manager, click the yellow notification flag and select **Promote this server to a domain controller**.
 
       ![](../media/E1T0S5.png)
 
-1. Configure the Deployment:
-   - In the wizard, select **Add a new forest**.
-   - Enter a root domain name `defenderxdr.internal`, then click **Next**.
+1. In the wizard, select **Add a new forest** and enter the root domain name as `defenderxdr.internal`, then click **Next**.
 
       ![](../media/E1T0S6.png)
 
@@ -54,21 +100,22 @@ Install the AD DS role to enable the server to function as a domain controller.
 
       ![](../media/E1T0S7.png)
 
-1. Proceed Through Additional Options:
-   - Ignore DNS delegation warnings (safe for lab environments), then click **Next**.
+   - Ignore DNS delegation warnings, click on **Next**.
    - Accept the default **NetBIOS domain name** `DEFENDERXDR`, then click **Next**.
-   - Use default paths for the AD DS database, logs, and SYSVOL (e.g., `C:\Windows\NTDS`), then click **Next**.
+
+      ![](../media/E1T0S7a.png)
+
+   - Use default paths for the AD DS database, logs, and SYSVOL, then click **Next**.
 
       ![](../media/E1T0S8.png)
 
-1. Finalize and Install:
    - Review your selections, then click **Next**.
-   - Run the prerequisites check. Resolve any critical errors, then click **Install**.
+   - Wait for the prerequisites check to complete, then click **Install**.
    - Wait for the process to complete; the server will restart automatically.
 
-      ![](../media/E1T0S9.png)
+   > **Note:** The VM will restart now, wait for 5 minutes and **Reconnect** to the VM.
 
-   > **Note:** The restart is required to apply the domain controller configuration.
+      ![](../media/E1T0S9.png)
 
 1. Sign in to the Microsoft Defender Portal, open a Edge browser and navigate to `security.microsoft.com`.
 
@@ -88,41 +135,36 @@ Install the AD DS role to enable the server to function as a domain controller.
       
 1. On the Microsoft Defender page, select **Settings** and select **Identities** and you will be navigated to **Microsoft Defender for Identity** page.
 
-      ![](../media/E1T1S10.png)
+      ![](../media/E1T0S10.png)
 
       >**Note:** Please wait while the **identities** page loads—this may take a few minutes.
 
-1. To create a Sensor, in the **Identities** section, click **Sensors** at the top, then select **Add sensor** in the top-right corner.
+1. Click on **Sensors** at the top, then select **Add sensor** in the top-right corner. On the **Simplify your installation process** pop-up, click **Continue with classic sensor**.
 
-      ![](../media/E1T1S11.png)
+      ![](../media/E1T0S11.png)
 
-1. On the **Simplify your installation process** pop-up, click **Continue with classic sensor**.
+1. A pop-up will display a **Download installer** button and an **Access key**. Click **Download installer** to download `Azure ATP Sensor Setup.zip` and copy the **Access key** to your clipboard which will be used during the installation.
 
-      ![](../media/E1T1S12.png)
+      ![](../media/E1T0S12.png)
+      > **Note:** If you do not see that the file is downloading, click on the pop-up window button and then select Always allow pop-ups and redirects from `https://security.microsoft.com`and click on **Done** 
 
-1. A pop-up will display a **Download installer** button and an **Access key**. Click **Download installer** to download `Azure ATP Sensor Setup.zip`.
-
-      ![](../media/E1T1S13.png)
-
-1. Copy the **Access key** to your clipboard which will be used during the installation.
-
-      ![](../media/E1T1S14.png)
+      ![](../media/E1T0S12a.png)
 
 1. From your VM, navigate to the downloaded `Azure ATP Sensor Setup.zip` file in the Downloads folder, extract it to `C:\ATP`, and run `Azure ATP Sensor Setup.exe` as administrator.
 
-      ![](../media/E1T1S15.png)
+      ![](../media/E1T0S13.png)
 
 1. On the Setup wizard follow the below steps:
      - Accept the license terms and click **Next**.
      - Enter the **Access key** copied earlier and click **Next**.
-         ![](../media/E1T1S116a.png)
+         ![](../media/E1T0S14.png)
 
      - Choose the default installation path (e.g., `C:\Program Files\Azure Advanced Threat Protection Sensor`) and click **Install**.
    - Wait for the installation to complete.
 
 1. Return to the Microsoft Defender portal, go to **Settings** > **Identities** > **Sensors**, find the sensor for `defenderxdr.internal`, and verify that the **Status** shows **running** within 5–10 minutes.
 
-      ![](../media/E1T1S17.png)
+      ![](../media/E1T0S15.png)
 
 ### Task 2: Simulate and Detect Lateral Movement Attacks (Read-Only)
 
@@ -140,17 +182,17 @@ In this task you will simulate DC Sync attacks and detect them using Defender fo
 
 1. Now you can check your alerts in the Microsoft Defender portal, navigate to **Incidents & alerts** in the left-hand navigation pane.
 
-      ![](../media/E1T2S3.png)
+      ![](../media/E1T3S3.png)
 
 1. Click **Alerts** to view the alerts queue.
 
-      ![](../media/E1T2S4.png)
+      ![](../media/E1T3S4.png)
 
 1. You will find alerts with the below names
      - **Suspected Pass-the-Hash attack (NTLM)** for the Pass-the-Hash simulation.
      - **Suspected DCSync attack** for the DC Sync simulation.
 
-      ![](../media/E1T2S5.png)
+      ![](../media/E1T3S5.png)
 
 ### Task 3: Investigate Threats and User Timelines 
 
@@ -172,29 +214,25 @@ In this task you will analyze using user timelines and alert details in the Defe
 
 In this task you will enable integration to view Defender for Identity incidents in the unified Microsoft 365 Defender portal and Microsoft Sentinel.
 
-1. Navigate to `portal.azure.com` from your browser and Sign in with the default user.
+1. Navigate to `portal.azure.com` and navigate to **Microsoft Sentinel** and select `loganalyticworkspace`.
 
       ![](../media/E1T4S1.png)
 
-1. Navigate to **Microsoft Sentinel** and select `loganalyticworkspace`.
+1. In the left-hand pane, click **Content hub**. 
 
       ![](../media/E1T4S2.png)
 
-1. In the left-hand pane, click **Data connectors**.
+1. Search for **Defender for XDR** and select it and click on **Install** and wait for the installation to be complete
 
       ![](../media/E1T4S3.png)
 
-1. Search for **Microsoft Defender XDR** and make sure that the status is **Connected**.
+1. Return to the Sentinel workspace and navigate to **Data Connectors** and click on  **Defender for XDR** and select **Open connector page**.
 
       ![](../media/E1T4S4.png)
 
-1. Return to the Defender portal and navigate to **Incidents & alerts** > **Incidents** in the left-hand pane.
+1. Click on **Connect incidents & alerts** and navigate back to Data connectors page and make sure that **Defender for XDR** shows as connected
 
       ![](../media/E1T4S5.png)
-
-1. Filter incidents by **Data source** = **Microsoft Defender for Identity** and verify that incidents from the simulated attacks are visible.
-
-      ![](../media/E1T4S6.png)
 
 ### Task 5: Review and Run Advanced Hunting Queries for Identity Signals
 
@@ -208,20 +246,17 @@ In this task you will use advanced hunting queries in the Defender portal to det
 
    ```kql
    AlertInfo
-   | where Category == "LateralMovement"
-   | summarize AlertCount = count() by Title, DetectionSource, bin(Timestamp, 1h)
+   | summarize AlertCount = count() by Title, DetectionSource
    | order by AlertCount desc
    ```
    - Click **Run query** to execute.
 
       ![](../media/E1T5S2.png)
 
-1. Review the results table for Lateral Movement attacks, 
-
-      ![](../media/E1T5S3.png)
+1. Review the results table for all the alerts, 
 
 1. Click **Save** in the top-right corner.
-   - Name the query as `Lateralmovementattacks`.
-   - Select **Save as query** and click **Save**.
+   - Name the query as `Alert1`.
+   - Select **Save**.
 
       ![](../media/E1T5S4.png)

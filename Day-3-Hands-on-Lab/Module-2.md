@@ -2,276 +2,134 @@
 
 ## Estimated timing: 45 minutes
 
-### Task 1: Onboard a Device
+### Task 1: Connect the Windows security event connector
 
-In this task, you will onboard a device to Microsoft Defender for Endpoint using an onboarding script.
-
-1. Start the Microsoft Edge browser go to (https://security.microsoft.com) to go to Microsoft 365 Defender portal
-
-1. If you see **Sign into Microsoft Azure** tab, enter the following **Email/Username**, and then click on **Next**.
-
-   * Email/Username: <inject key="AzureAdUserEmail"></inject>
-
-     ![](./media/login2.png)
-
-1. Enter the following **Password** and click on **Sign in**. 
-   
-   * Password: <inject key="AzureAdUserPassword"></inject>
-
-     ![](./media/Lab-01-task1-password.png) 
-
-      >**Note:** Take a moment to allow the option panel to fully load on the security portal.
-
-1. Navigate to **Settings (1)** in the left menu bar, and then, on the Settings page, choose **Endpoints (2)**.
-
-    ![](./media/settings-01.png)
-
-   >**Note:** If you face any issues while opening the Endpoint. follow the url: **https://security.microsoft.com/securitysettings/endpoints/onboarding**
-to access the endpoint resource
-   
-1. Navigate to the **Onboarding (1)** option in the *Device Management section.*
-
-1. Under **Select operating system to start onboarding process:** make sure to select the **Windows Server 2019, 2022, and 2025**.
-
-   ![](./media/windows-server-2019-2025.png)
-
-1. In the **1. Onboard a device** section, ensure that **Local Script (for up to 10 devices) (2)** is visible in the Deployment method drop-down, then click the **Download onboarding package (3)** button.
-
-    ![](./media/lab01-task3-localscript.png) 
-
-1. In the *Downloads* pop-up, use your mouse to select the **WindowsDefenderATPOnboardingPackage.zip** file, and then click on the folder icon for **Show in folder**. **Hint:** If you can't locate it, the file should be in the 'c:\users\admin\downloads' directory.
-
-    ![](./media/xdr5.png)
-
-1. Right-click on the downloaded zip file, choose **Extract All...**, ensure that **Show extracted files when complete** is checked, and then click **Extract**.
-
-    ![](./media/lab01-task3-zipfile.png) 
-
-1. Right-click on the extracted file **WindowsDefenderATPLocalOnboardingScript.cmd** and choose **Properties**. Tick the **Unblock (1)** checkbox located in the bottom right of the Properties window, and then click **OK (2)**.
-
-    ![](./media/xdr7.png) 
-
-1. Once again, right-click on the extracted file **WindowsDefenderATPLocalOnboardingScript.cmd** and opt for **Run as Administrator**. **Hint:** If the Windows SmartScreen window appears, click on **More info**, and then select **Run anyway**.
-    
-1. When the "User Account Control" window appears, select **Yes** to allow the script to run, answer **Y** to the question presented by the script, and press **Enter**. Once complete, you should see a message in the command screen that says *Successfully onboarded machine to Microsoft Defender for Endpoint*.
-
-1. Press any key to continue. This action will close the Command Prompt window.
-
-    ![](./media/SC-200-img25.png)
-
-1. Back on the Onboarding page within the Microsoft 365 Defender portal, navigate to the **2. Run a detection test** section, and copy the detection test script by clicking the **Copy** button.
-
-    ![](./media/lab01-task3-runscript.png) 
-
-1. In the Windows search bar of the virtual machine, type **CMD (1)**, and choose **Run as Administrator (2)** from the right pane for the Command Prompt app.
-
-    ![](./media/xdr6.png) 
-
-1. When the "User Account Control" window appears, select **Yes** to allow the app to run. 
-
-1. Paste the script by right-clicking in the **Administrator: Command Prompt** window and press **Enter** to run it. **Note:** The window closes automatically after running the script.
-
-1. In the Microsoft 365 Defender portal, navigate to **Endpoints** and select **Onboarding**. If the status is **Incomplete**, proceed with the next task and check back later, as it may take 24–48 hours to update.
-
-### Task 2: Enable Microsoft Defender for Cloud
-
-In this task, you will enable and configure Microsoft Defender for Cloud.
-
-1. In the search bar of the Azure portal, type *Defender (1)*, then select **Microsoft Defender for Cloud (2)**.
-
-    ![Picture 1](./media/xdr15.png) 
-
-1. On the **Overview** page, select the **Azure subscriptions**.
-
-    ![Picture 1](./media/subscription-01.png)
-
-1. On the **Environment Settings (1)** page, select **Subscription > Log Analytics Workspace (3)**, then toggle **Foundational CSPM** to **On(4)** and Click on **Save button**. Please wait 2-5 minutes for the process to complete.
-
-    ![Picture 1](./media/envsettings-01.png)
-
-    ![Picture 1](./media/foundationalcspm.png)
-
-1. Navigate back to the **Environment settings (1)** then click on the subscription (or its equivalent name in your language). **(2)**
-
-    ![Picture 1](./media/moc-hol-3001.png) 
-
-1. Review the Azure resources that are now protected with the Defender for Cloud plans.
-
-1. Select the **Settings & Monitoring** tab from the Settings area (next to Save).
-
-    ![Picture 1](./media/Lab-02-task2-reviewplans.png)
-
-1. Review the monitoring extensions and confirm that **Log Analytics agent** is by-default **On**.
-
-    ![Picture 1](./media/loganalytics-agent.png) 
-
-
-### Task 3: Create a Security Operations Center Team in Microsoft Teams.
-
-In this task, you will create a team in Microsoft Teams for use in the lab.  
-
-1. Access File Explorer and navigate to the directory **C:\LabFiles (1)**. Then, double-click on the named **MSTeams-86 (2)**. Allow a moment for the installation process to commence. Once installed, proceed to log in using the following credentials:
-
-   - **Email/Username:** <inject key="AzureAdUserEmail"></inject>
-   - **Password:** <inject key="AzureAdUserPassword"></inject>
-
-        ![Lab overview.](./media/lab2.10.png)
-
-        >**Note:** If you come up with the popup stay signed in to all your apps click on **No, sign in to this app only**.
-
-1. Close any other popup opened and do not switch from classic teams, teams might automatically switch to new version after reopening the teams. please perform the below steps in the classic version as there might be steps vary in new version. 
-
-1. Select **Teams (2)** on the left menu, then select **Join or create a team (2)**.
-
-    ![Lab overview.](./media/xdr40.png) 
-
-1. Select the **Create Team** button from the drop-down.
-
-1. Select the **From scratch** button.
-
-    ![Lab overview.](./media/lab03-task01-privatebutton.png)  
-       
-1. Select the **Private** button.
-
-    ![Lab overview.](./media/lab03-task01-private2.png) 
-
-1. Give the team the name: **SOC (1)** and select the **Create (2)** button.
-
-    ![Lab overview.](./media/xdr41.png)  
-
-1. In the Add members to SOC screen, select the **Skip** button. 
-
-1. Scroll down the Teams blade to locate the newly created SOC team, select the ellipsis **(...) (1)** on the right side of the name and select **Add channel (2)**.
-   
-    ![Lab overview.](./media/xdr42.png) 
-
-1. Enter a channel name as **New Alerts (1)** then select the **Add (2)** button.
-
-    ![Lab overview.](./media/xdr30.png) 
-
-   > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-   - If you receive a success message, you can proceed to the next task.
-   - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-   - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
- 
-   <validation step="5e120148-dee3-45fe-8e37-6cbed679379f" />
-
-### Task 4: Create a Playbook in Microsoft Sentinel.
-
-In this task, you will create a Logic App that is used as a Playbook in Microsoft Sentinel.
-
-1. In the Microsoft Edge browser, open a new tab and paste https://github.com/Azure/Azure-Sentinel to navigate to Microsoft Sentinel on GitHub.
-
-1. Scroll down and select the **Solutions** folder.
-
-1. Next select the **SentinelSOARessentials** folder, then the **Playbooks** folder.
-
-1. Select the **Post-Message-Teams** folder.
-
-1. In the readme.md box, scroll down to the **Quick Deployment (1)** section, **Deploy with incident trigger (recommended) (2)** and select the **Deploy to Azure (3)** button.
-
-    ![Lab overview.](./media/xdr46.png) 
-
-1. On the **Custom deployment** page provide the following details.
-
-    - Make sure your Azure Subscription is selected. **(1)**
-
-    - For Resource Group, select **threat-xdr** **(2)** 
-
-    - Leave **(US) East US** as the default value for *Region*. **(3)**
-
-    - Rename the *Playbook Name* to **PostMessageTeams-OnIncident (4)**. 
-
-    - Provide the **Teams Group Id(5)** and **Teams Channel ID(6)** in order to get these values navigate back to the MS teams.
-
-        i.  For **Teams Group Id** click on **SOC Ellipse(1)** then click on **Get  link to team(2)**.
-
-        ![Lab overview.](./media/L2T4S6-i.png)
-
-        ii. For **Teams Channel Id** click on **New Alerts Ellipse(1)** then click on **Get  link to Channel(2)**.
-
-        ![Lab overview.](./media/L2T4S6-ii.png)
-
-        iii. Copy the values to the **Notepad**.
-
-        ![Lab overview.](./media/L2T4S6-iii.png)
-
-1. Select **Review + create (7)** and then click **Create**.
-
-      ![Lab overview.](./media/L2T4S7.png) 
-
-    >**Note:** Wait for the deployment to finish before proceeding to the next task. It may take a couple of minutes to deploy.
-
-### Task 5: Update a Playbook in Microsoft Sentinel.
-
-In this task, you will update the new playbook you created with the proper connection information.
-
-1. In the Search bar of the Azure portal, type *Microsft Sentinel (1)*, then select **Microsoft Sentinel (2)**.
+1. In the Search bar of the Azure portal, type *Microsft Sentinel*, then select **Microsoft Sentinel**.
 
     ![](./media/09.png) 
 
 1. Select the pre-created Sentinel **loganalyticworkspace** from the available list.
 
-    ![](./media/Lab01-task2-loganalyticworkspace.png)
+    ![](./media/Lab01-task2-loganalyticworkspace.png) 
 
-1. Select the **Automation (1)** from the Configuration area and then select the **Active Playbooks (2)** tab, If **PostMessageTeams-OnIncident (3)** is not visiable refresh the page and check.
+1. Navigate to the left menu and go to the Content Management section; there, select **Content Hub (1)**. On the Content Hub page, locate **Windows Security Events (2)**, and then **select (3)** it. Finally, click on **Install (4)**.
 
-1. Select the **PostMessageTeams-OnIncident** playbook and click on it to go to the logic App page.
+    ![Picture 1](./media/Lab02-task1-contenthub.png)  
 
-    ![Lab overview.](./media/Lab03-task03-activeplaybook.png) 
+1. After receiving the notification of a successful installation, return to the Data Connector page and click on the refresh button to ensure that the changes take effect.
 
-1. On the Logic App page for *PostMessageTeams-OnIncident*, in the center menu, select **Edit**.
+1. You should observe two options: **Security Events Via Legacy Agent** and **Windows Security Event Via AMA**.
+
+1. Choose **Security Events Via Legacy Agent**, and then click on **Open Connector Page**.
+
+    ![Picture 1](./media/lab02-task01-events.png) 
    
-    ![Lab overview.](./media/Lab03-task1-001.png) 
+8. In the configuration section, opt for **Install Agent on Azure Windows Virtual Machine (1)**, and then choose **Download & Install Agent for Azure Windows Virtual Machines (2)**.
 
-1. Select the *first* block **Microsoft Sentinel Incident**.
+    ![Picture 1](./media/lab02-task01-installagent.png) 
 
-    ![Lab overview.](./media/xdr32.png) 
+9. Select the **svm-<inject key="DeploymentID" enableCopy="false" />** virtual machine and click on connect.
 
-1. Select the **Change connection** link.
-   
-   ![Lab overview.](./media/xdr33.png) 
+    ![Picture 1](./media/lab2-task1-svm.png) 
+        
+10. Once **connected (1)**, select the **Virtual Machine (2)** link from the top.
 
-1. Select **Add new.**
+    ![Picture 1](./media/lab2-task1-svm1.png) 
 
-   ![Lab overview.](./media/xdr34.png) 
+11. On the virtual machine page select the **s2vm-<inject key="DeploymentID" enableCopy="false" />** virtual machine and click on connect. wait until get connected.
 
-1. Select **Sign in**. In the new window, select your Azure subscription admin credentials when prompted. The last line of the block should now read “Connected to your-admin-username”.  
+    ![Picture 1](./media/lab2-task1-s2vm.png)
 
-    ![Lab overview.](./media/incident-01.png) 
+11. Then, come back to the Configuration and scroll down a bit. You can find **Select which events to stream**. Click on **All Events**.
 
-1. Now select the *second block*, **Connections**.
+    ![Picture 1](./media/lab2-task1-streamevents.png) 
 
-   ![Lab overview.](./media/xdr35.png) 
+12. Click on Apply Changes now. If you refresh the data connector page, you can see the status Connected for **Security Events Via Legacy Agent**.
 
-1. Click on **Change connection.**  
+### Task 2: Enable Microsoft Defender for Cloud
 
-   ![Lab overview.](./media/xdr36.png) 
+In this task, you will enable and configure Microsoft Defender for Cloud.
 
-1. Select **Add new** then **Sign in** and select your Azure admin credentials when prompted. The last line of the block should now read “Connected to your-admin-username”.
+1. In the search bar of the Azure portal, type *Defender*, then select **Microsoft Defender for Cloud**.
 
-    ![Lab overview.](./media/incidnet-02.png)
-   
-1. The block has now been renamed to **Post a message (V3)**, at the end of the Team field, select the X to clear the contents. The field is changed to a drop-down with a listing of the available Teams from Microsoft Teams. Select **SOC (1)**.
+    ![Picture 1](./media/Lab-02-task2-search.png) 
 
-1. Do the same for the Channel field, select the **X** at the end of the field to clear the contents. The field is changed to a drop-down with a listing of the Channels of the SOC Teams. Select **New Alerts (2)**. 
+1. Click the left menu, and then click on **Getting Started**.
 
-    ![Lab overview.](./media/xdr37.png)    
+1. On the **Getting Started** page, under the **Upgrade** tab, ensure your subscription is selected, and then click the **Upgrade** button at the bottom of the page. Please wait for 2-5 minutes for the process to complete, as it may take some time.
 
-1. Under the **Message** section, type **Entities: (1)** and click on the **dynamic content (2)** icon.
+    ![Picture 1](./media/Lab-02-task2-upgrade.png) 
 
-   ![Lab overview.](./media/xdr43.png)    
+4. In the left menu for Microsoft Defender for Cloud, under Management, select **Environment settings**.
 
-1. Search and select **Entities (2)** dynamic content from the right panel.
+1. Click on the subscription (or its equivalent name in your language). 
 
-   ![Lab overview.](./media/xdr38.png)
+1. Review the Azure resources that are now protected with the Defender for Cloud plans.
 
-   >**Note:** Click in the **Thunder Icon** to check fir the entities field content.
+1. Select the **Settings & Monitoring** tab from the Settings area (next to Save).
+ 
+    ![Picture 1](./media/Lab-02-task2-reviewplans.png) 
 
-1. Select **Save** on the command bar. The Logic App will be used in a future lab.
-   
-   ![Lab overview.](./media/xdr39.png)
+1. Review the monitoring extensions and confirm that **Log Analytics agent/Azure Monitor agent** is **Off**. Click Continue or close the Settings & Monitoring page by selecting the 'X' on the upper right of the page.
 
+    ![Picture 1](./media/Lab-02-task2-agentoff.png) 
+
+1. Close the settings page by selecting the 'X' on the upper right of the page to return to the **Environment settings**. Then, click on the '>' to the left of your subscription.
+
+1. Select the Log Analytics workspace named **loganalyticworkspace** to review the available options and pricing.
+
+    ![Picture 1](./media/Lab-02-task2-subscription.png) 
+
+1. Select **Enable all** (to the right of Select Defender plan), and then choose **Save**. Wait for the *"Microsoft Defender plan for workspace loganalyticworkspace was saved successfully!"* notification to appear.
+
+    >**Note:** If the page is not being displayed, refresh your Edge browser and try again.  
+
+1. Close the Defender plans page by selecting the 'X' in the upper right corner of the page to return to the **Environment settings**.
+
+    ![Picture 1](./media/Lab-02-task2-save.png) 
+
+### Task 3: Protect an On-Premises Server.
+
+In this task, you will manually install the required agent on the Windows Server.
+
+1. Navigate to **Microsoft Defender for Cloud** and choose the **Getting Started** page.
+
+1. Choose the **Get Started** tab.
+
+1. Scroll down and click on **Configure** under the *Add non-Azure servers* section.
+
+      >**Note:** Non-Azure servers use the Log Analytics agent to extend Microsoft Defender for Cloud capabilities to servers running outside of Azure. This includes resources running on-premises and in other clouds.
+
+    ![Picture 1](./media/lab02-task03-config.png) 
+
+1. Choose **Upgrade** next to the workspace you created earlier. This process may take a few minutes, so please wait until you see the notification *"Defender plans for the workspace were saved successfully."*
+
+    ![Picture 1](./media/lab-3xdr.png)
+
+1. Select **+ Add Servers** next to the workspace you created earlier.
+
+    ![Picture 1](./media/lab-2xdr.png)
+
+1. Choose **Log Analytics agent instructions**.
+
+1. Choose **Download Windows Agent (64-bit)**.
+
+1. Choose **Open file** to execute the downloaded *MMASetup-AMD64.exe* file.
+
+   >**Note** If it is already installed and prompts for "Repair" or "Remove," select **Repair**. Then, click on Next and proceed to click on **Install**. The installation process may take 2-3 minutes.
+
+1. Continue with the installation process. Once the installation is complete, select **Finish**.
+
+1. Go to the "Microsoft Defender for Cloud" portal and select **Inventory** from the general section.
+
+1. The server should appear in the list. You may need to select **Refresh** to see the update, and it might take a few minutes.
+
+   > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+    > - Click the Lab Validation tab located at the upper right corner of the lab guide section and navigate to the Lab Validation tab.
+    > - Hit the Validate button for the corresponding task.
+    > - If you receive a success message, you can proceed to the next task. If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+    > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+    
 ### Task 6: Persistence Attack with Registry Key Add 
 
 >**Note:** Perform this task in your LAB-VM (svm).
