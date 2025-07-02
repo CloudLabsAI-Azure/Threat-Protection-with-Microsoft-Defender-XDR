@@ -86,14 +86,23 @@ In this exercise, you will explore how to secure Microsoft 365 cloud services li
   
     ![](./media/g-1-9.png)
 
-1. Click **Connect an app**, and select the following:
+1. Click **Connect an app**, and select **Microsoft 365** from the list.
+
+    ![](./media/rt-test1.png)
+
+1. In the configuration panel, select the following event types:
 
     - Microsoft Entra ID Management events  
     - Microsoft Entra ID Sign-in events  
     - Microsoft Entra ID Apps  
     - Microsoft 365 activities  
     - Microsoft 365 files  
+
     ![](./media/g-1-10.png)
+
+1. Once selected, the app will appear in the list. Select the checkbox next to **Microsoft 365** and click **Connect Microsoft Azure instance**.
+
+    ![](./media/rt-test2.png)
 
 1. Click **Connect Microsoft 365** and complete the authentication.
 
