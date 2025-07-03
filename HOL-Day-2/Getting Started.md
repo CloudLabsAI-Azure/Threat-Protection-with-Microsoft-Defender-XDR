@@ -20,6 +20,10 @@ This lab provides hands-on experience with Microsoft Defender for Cloud Apps to 
 
 - Investigate Alerts and Create Custom Detection Policies 
 
+## Architecture Diagram
+
+ ![Access Your VM and Lab Guide](./media/arch2.png)
+
 # Getting Started with the Lab
  
 Welcome to your Securing Access to SaaS Apps with Microsoft Defender for Cloud Apps workshop! We've prepared a seamless environment for you to familiarize yourself with the Microsoft security operations analyst, you monitor, identify, investigate, and respond to threats in multi-cloud environments and related Microsoft services. Let's begin by making the most of this experience:
