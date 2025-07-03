@@ -119,6 +119,31 @@ In this exercise, you will explore how to secure Microsoft 365 cloud services li
 
    > Note: It may take up to 30–60 minutes for the connection status to update.
 
+1. In the [Microsoft Defender Portal](https://security.microsoft.com), go to **Settings** → **Cloud Apps**.
+
+   ![](./media/22-g-1.png)
+
+1. Under **Connected apps**, select **Conditional Access App Control apps**.
+
+1. Locate and click the ellipsis (**⋮**) next to **Microsoft SharePoint Online – General**, then choose **View settings in Microsoft Entra ID**.
+
+   ![](./media/22-g-2.png)
+
+1. In the **Enterprise applications** blade, click **Microsoft Graph Command Line Tools**.
+
+   ![](./media/22-g-3.png)
+
+1. On the overview page, under **3. Conditional Access**, click **Create a policy**.
+
+   ![](./media/22-g-4.png)
+
+1. Click **+ New policy** to define a custom access rule for the application.
+
+   ![](./media/22-g-5.png)
+
+> **Note:** After completing this configuration, go back and repeat steps **13–16** from Task 1 to ensure your Conditional Access App Control policy is correctly applied to **Microsoft Graph Command Line Tools** as well.
+
+
 ## Task 2: Configure Session Policies to Monitor and Block Risky Behavior
 
 1. In the [Microsoft Defender Portal](https://security.microsoft.com), go to **Cloud Apps** → **Policy management**.
