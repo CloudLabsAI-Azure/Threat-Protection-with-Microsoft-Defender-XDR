@@ -57,7 +57,7 @@ In this task, you will create a hunting query, bookmark a result, and create a L
 
 1. Go back to the Add bookmark blade, and the select **Create**. We will map this bookmark to an incident later.
 
-   ![Picture 1](./media/L6T1S11-01-11.png)
+   ![Picture 1](./media/ter-1-1.png)
 
 1. Close the Logs window by selecting the **X** in the top-right of the window and select **OK** to discard the changes. 
 
@@ -91,7 +91,7 @@ In this task, you will create a hunting query, bookmark a result, and create a L
 
 1. Scroll down and under *Tactics & Techniques* select **Command and Control** and then select **Create** to create the hunting query.
 
-    ![Picture 1](./media/L6T1S18-01-11.png)
+    ![Picture 1](./media/ter-1-2.png)
 
 1. In the Microsoft Sentinel - Hunting blade, search for the query you just created in the list, PowerShell Hunt.
 
