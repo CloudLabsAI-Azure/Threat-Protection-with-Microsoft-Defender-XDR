@@ -9,11 +9,10 @@ In this exercise, you will connect the Windows security event connector, enable 
  In this exercise, you will perform the following in the M365 Defender portal:
 - Task 1: Connect the Windows security event connector
 - Task 2: Enable Microsoft Defender for Cloud
-- Task 3: Protect an On-Premises Server.
-- Task 4: Persistence Attack with Registry Key Add 
-- Task 5: Command and Control Attack with DNS
-- Task 6: Persistence Attack Detection
-- Task 7: Investigate an incident
+- Task 3: Persistence Attack with Registry Key Add 
+- Task 4: Command and Control Attack with DNS
+- Task 5: Persistence Attack Detection
+- Task 6: Investigate an incident
 
 ### Task 1: Connect the Windows security event connector
 
@@ -308,11 +307,7 @@ In this task, you will investigate an incident.
 
 1. Select the **Tasks** button from the command bar.
 
-   ![Lab overview.](./media/tasks-01.png)
-
 1. Select **+ Add task (1)**, type **Review who owns the machine (2)** in the Title box and select **Save (3)**.
-
-   ![Lab overview.](./media/incidenttask-01.png)
 
 1. Close the *Incident tasks* blade by selecting the **x** icon in the top right.
 
@@ -356,3 +351,9 @@ In this task, you will investigate an incident.
 
 ## Review
 In this lab, you have completed the following tasks:
+- Connected the Windows security event connector
+- Enabled Microsoft Defender for Cloud
+- Conducted Persistence Attack with Registry Key Add 
+- Conducted Command and Control Attack with DNS
+- Conducted Persistence Attack Detection
+- Investigated an incident

@@ -7,7 +7,7 @@ In this exercise, you will onboard a device and deploy Microsoft Defender for Id
 
 ## Objectives
 
-- Task 1: Onboard a Devic 
+- Task 1: Onboard a Device 
 - Task 2: Deploy Microsoft Defender for Identity Sensor on Domain Controllers 
 - Task 3: Simulate and Detect Lateral Movement Attacks (Read-Only)
 - Task 4: Investigate Threats and User Timelines 
@@ -177,28 +177,32 @@ Install the AD DS role to enable the server to function as a domain controller.
      - Choose the default installation path (e.g., `C:\Program Files\Azure Advanced Threat Protection Sensor`) and click **Install**.
    - Wait for the installation to complete.
 
-1. Return to the Microsoft Defender portal, go to **Settings** > **Identities** > **Sensors**, find the sensor for `defenderxdr.internal`, and verify that the **Status** shows **running** within 5–10 minutes.
+1. Return to the Microsoft Defender portal, go to **Settings** > **Identities** > **Sensors**, find the sensor for `defenderxdr.internal`, and verify that the **Status** shows **Running** within 5–10 minutes.
 
-      ![Image](./media/E1T0S15.png)
+### Task 3: Simulate and Detect Lateral Movement Attacks `(Read-Only)`
 
-### Task 3: Simulate and Detect Lateral Movement Attacks (Read-Only)
-
-In this task you will simulate DC Sync attacks and detect them using Defender for Identity.
+In this task, you will simulate a Lateral Movement attack and detect it using Microsoft Defender for Identity. Please note that this is a `read-only` task, as you will be logged out of your virtual machine during the attack simulation—this is a security measure enforced by Defender for Identity.
 
 1. Open **PowerShell (Admin)** and navigate to the below mentioned directory.
 
       ```powershell
-      cd 
+      cd C:\MimikatzLab\mimikatz-master\mimikatz-master\x64
       ```
-1. In the same PowerShell session, run the below command to simulate a DC Sync attack and extract the credentials of the krbtgt account.
+1. In the same PowerShell session, run the below command to run the mimikatz application
 
      ```powershell
-     mimikatz.exe "lsadump::dcsync /domain:yourdomain.com /user:krbtgt" exit
+     mimikatz.exe 
      ```
+
+1. Simulate a DC Sync attack and extract the credentials of the krbtgt account.
+
+      ```shell
+      lsadump::dcsync /domain:yourdomain.com /user:krbtgt
+      ```
 
 1. Now you can check your alerts in the Microsoft Defender portal, navigate to **Incidents & alerts** in the left-hand navigation pane.
 
-      ![](./media/E1T3S3upd.png)
+      ![](./media/E1T3S3upd1.png)
 
 1. Click **Alerts** to view the alerts queue.
 
@@ -206,7 +210,7 @@ In this task you will simulate DC Sync attacks and detect them using Defender fo
      - **Lateral movement using remote logon by contained user blocked**
      - **Lateral movement using RDP blocked**
 
-      ![](./media/E1T3S4.png)
+      ![](./media/E1T3S3upd.png)
       > **Note:** The user will be logged out of the virtual machine as part of the containment measures initiated by the Defender in response to the user's attempted lateral movement attack.
 
 ### Task 4: Investigate Threats and User Timelines 
@@ -235,7 +239,7 @@ In this task you will enable integration to view Defender for Identity incidents
 
 1. In the left-hand pane, click **Content hub**. 
 
-      ![](./media/E1T4S2.png)
+      ![](./media/Lab02-task1-contenthub1.png)
 
 1. Search for **Defender for XDR** and select it and click on **Install** and wait for the installation to be complete
 
@@ -278,3 +282,10 @@ In this task you will use advanced hunting queries in the Defender portal to det
 
 ## Review
 In this lab, you have completed the following tasks:
+
+- Onboarded a Device 
+- Deployed Microsoft Defender for Identity Sensor on Domain Controllers 
+- Simulated and Detected Lateral Movement Attacks (Read-Only)
+- Investigated Threats and User Timelines 
+- Integrated Defender for Identity with Microsoft 365 Defender Portal
+- Run Advanced Hunting Queries for Identity Signals
