@@ -18,8 +18,6 @@ In this lab, you will explore how to enhance organizational security using Micro
 
 - Configure Anti-Phishing and Safe Links Policies 
 
-- Implement and Monitor Defender for Office 365 Secure Posture  
-
 # Getting Started with the Lab
  
 Welcome to your Securing Collaboration with Microsoft Defender Solutions workshop! We've prepared a seamless environment for you to familiarize yourself with the Microsoft security operations analyst, you monitor, identify, investigate, and respond to threats in multi-cloud environments and related Microsoft services. Let's begin by making the most of this experience:
