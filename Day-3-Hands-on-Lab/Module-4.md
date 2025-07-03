@@ -123,7 +123,10 @@ In this task, you will activate a Microsoft Security rule.
 
 1. Onboard the **s2vm-<inject key="DeploymentID" enableCopy="false">** using device onboard using the microsoft defender endpoint onboarding portal.
 
-   >**Note**: You can refer the **Lab01 > Task 3** to onboard the device to Microsoft Defender.
+   >**Note:** You can refer the **Lab01 > Task 3** to onboard the device to Microsoft Defender.
+
+   >**Note:** Username is `demouser` and the password is the **Lab VM Admin Password**, which you can find in the **Environment** section of the lab guide.
+
 
 ### Task 4: Manage Incidents
 
