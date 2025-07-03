@@ -22,6 +22,10 @@ In this lab, you will strengthen organizational security by deploying Microsoft 
 
 - Mitigate threats using Microsoft Defender for Cloud 
 
+## Architecture Diagram
+
+ ![Access Your VM and Lab Guide](./media/arch3.png)
+
 # Getting Started with the Lab
  
 Welcome to your Microsoft 365 Defender for Identity and Sentinel for Advanced Threat Protection workshop! We've prepared a seamless environment for you to familiarize yourself with the Microsoft security operations analyst, you monitor, identify, investigate, and respond to threats in multi-cloud environments and related Microsoft services. Let's begin by making the most of this experience:
