@@ -102,7 +102,7 @@ In this task, you will enable and configure Microsoft Defender for Cloud.
 
     ![Picture 1](./media/Lab-02-task2-save.png) 
     
-### Task 4: Persistence Attack with Registry Key Add 
+### Task 3: Persistence Attack with Registry Key Add 
 
 1. In the search of the taskbar, enter *Command*. A Command Prompt will be displayed in the search results. Right-click on the Command Prompt and select **Run as Administrator**. Select **Yes** in the User Account Control window that allows the app to run.
 
@@ -129,7 +129,7 @@ In this task, you will enable and configure Microsoft Defender for Cloud.
  
    <validation step="8f13852e-0b9e-4064-babe-3918fddfd6c3" />
    
-### Task 5: Command and Control Attack with DNS
+### Task 4: Command and Control Attack with DNS
 
 1. Copy and run this command to create a script that will simulate a DNS query to a C2 server:
 
@@ -197,7 +197,7 @@ In this task, you will enable and configure Microsoft Defender for Cloud.
 
       >**Important**: Do not close these windows. Let this PowerShell script run in the background. The command needs to generate log entries for some hours. You can proceed to the next task and next exercises while this script runs. The data created by this task will be used in the Threat Hunting lab later. This process will not create substantial amounts of data or processing.
 
-### Task 6: Persistence Attack Detection
+### Task 5: Persistence Attack Detection
 
 In this task, you will create a detection for the first attack of the previous exercise.
 1. In the Search bar of the Azure portal, type *Microsft Sentinel (1)*, then select **Microsoft Sentinel (2)**.
@@ -269,7 +269,7 @@ In this task, you will create a detection for the first attack of the previous e
   
 1. On the *Review and create* tab, select the **Save** button to create the new Scheduled Analytics rule.
 
-### Task 7: Investigate an incident
+### Task 6: Investigate an incident
 
 In this task, you will investigate an incident.
 
