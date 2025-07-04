@@ -165,10 +165,12 @@ Install the AD DS role to enable the server to function as a domain controller.
 
       ![](./media/E1T0S12a.png)
 
-1. From your VM, navigate to the downloaded `Azure ATP Sensor Setup.zip` file in the Downloads folder, extract it to `C:\ATP`, and run `Azure ATP Sensor Setup.exe` as administrator.
+1. From your VM, navigate to the downloaded `Azure ATP Sensor Setup.zip` file in the **Downloads** folder, extract it to `C:\ATP`, and run `Azure ATP Sensor Setup.exe` as administrator.
 
       ![](./media/E1T0S13.png)
-      > **Note:** If the `ATP` folder does not exist in `C:\`, click on **New** > **Create new folder**, name it **ATP**, and then extract the files.
+    > **Note:** If the `ATP` folder does not exist in `C:\`, click on **New** > **Create new folder**, name it **ATP**, and then extract the files.
+
+      ![](./media/fol-1-1.png)
 
 1. On the Setup wizard follow the below steps:
      - Accept the license terms and click **Next**.
