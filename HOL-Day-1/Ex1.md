@@ -201,6 +201,12 @@ In this task, you'll simulate phishing and malware attacks using Microsoft Defen
 
    >**Note:** This test mimics malware-laden email attachments and assesses user interaction with potentially harmful files.
 
+> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+> - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
+> - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+> - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
+<validation step="9651d02f-b318-4cd4-afbd-18b5995e38dc" />
+
 ## Task 3: Analyze Threats with Threat Explorer and Real-Time Detections
 
 In this task, you'll create a custom role in Microsoft Defender to manage access and permissions for specific users or groups.
