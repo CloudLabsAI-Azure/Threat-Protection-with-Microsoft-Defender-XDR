@@ -100,7 +100,13 @@ In this task, you will enable and configure Microsoft Defender for Cloud.
 
 1. Close the Defender plans page by selecting the 'X' in the upper right corner of the page to return to the **Environment settings**.
 
-    ![Picture 1](./media/Lab-02-task2-save.png) 
+    ![Picture 1](./media/Lab-02-task2-save.png)
+
+> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+> - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
+> - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+> - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
+<validation step="ea9784ef-a103-41e0-859f-f673a96cf886" />
     
 ### Task 3: Persistence Attack with Registry Key Add 
 
