@@ -62,6 +62,8 @@ In this exercise, you will explore how to secure Microsoft 365 cloud services li
   
     ![](./media/g-4-4.png)
 
+    > **Note:** If **Windows Azure Active Directory** is already listed under **Select resources**, click on it and then add **Office 365** to ensure both applications are targeted by the Conditional Access policy.
+
 1. Under **Access controls > Session**, enable **Use Conditional Access App Control**, and select **Use custom policy**.
   
     ![](./media/g-4-5.png)
