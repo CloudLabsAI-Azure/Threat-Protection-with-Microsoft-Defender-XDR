@@ -12,8 +12,6 @@ By the end of this lab, you’ll have a holistic view of how to detect, investig
 
 ## Objectives
 
-## Objectives
-
 - Configure threat protection policies in Microsoft Defender for Office 365
 
 - Simulate phishing and malware attacks using Attack Simulator
