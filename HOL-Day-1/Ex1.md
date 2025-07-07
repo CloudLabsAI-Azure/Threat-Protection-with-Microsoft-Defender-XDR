@@ -53,7 +53,7 @@ In this exercise, you will configure threat protection policies in Microsoft Def
 
 1. Select **Standard Protection**, then click **Manage protection settings**.
 
-1. In each section, choose **Specific recipients** and assign your lab user (e.g., `ODL_User@...`).
+1. In each section, choose **Specific recipients** and assign your lab user (`ODL_User@...`).
 
    ![](./media/gg-2-2.png)  
    
