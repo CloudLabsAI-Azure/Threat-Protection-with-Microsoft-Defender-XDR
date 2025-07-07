@@ -174,6 +174,10 @@ In this exercise, you will explore how to secure Microsoft 365 cloud services li
 
    > Note: Ensure your Conditional Access policy is routing sessions through Microsoft Defender for Cloud.
 
+1. Right-click the **Microsoft Edge** shortcut on the **Desktop**, select **Send to (2)** → **Documents (3)** to send a copy of the shortcut to the Documents folder.
+
+   ![](./media/tgs-1-3.png)
+
 1. Open an incognito browser and go to [https://www.office.com](https://www.office.com).
 
 1. Sign in using your lab credentials.
@@ -193,6 +197,8 @@ In this exercise, you will explore how to secure Microsoft 365 cloud services li
     ![](./media/g-3-6.png)
   
     ![](./media/g-3-7.png)
+
+> **Note**: If `msedge.exe` is not available in the **Documents** folder, navigate to `C:\Program Files (x86)\Microsoft\Edge\Application`, locate `msedge` (the executable file), and upload it from there.
 
 1. After uploading, click the file and select **Download**.
   
