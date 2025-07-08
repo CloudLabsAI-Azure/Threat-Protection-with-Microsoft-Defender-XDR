@@ -159,20 +159,29 @@ In this exercise, you will explore how to secure Microsoft 365 cloud services li
   
    ![](./media/g-1-13.png)
 
-1. Configure the fields:
+1. Configure the policy settings:
+   - **Policy template**: `No template`
+   - **Policy name**: `Block-All-Download`
+   - **Policy severity**: Choose high (red)
+   - **Category**: `Threat detection`
+   - **Session control type**: `Control file download (with inspection)`
+   - **Filters**:  
+     - Device tag `does not equal` → `Intune compliant, Microsoft Entra Hybrid joined`  
+     - App `equals` → `Microsoft SharePoint Online`
 
-   - Policy template: `Block download based on real-time content inspection`  
-   - Policy name: `Block-All-Download`  
-   - Category: `DLP`  
-   - Session control type: `Control file download (with inspection)`
-     
-   ![](./media/g-3-1.png)
+   ![](./media/gftix-1-1.png)
 
-1. Under **Actions**, select **Block**, enable **Send alert as email**, and enter the lab email address.
-     
-   ![](./media/g-3-2.png)
+1. Scroll to **Files matching all of the following** and configure the following:
+   - Filter by **Extension** → `exe` OR `apk`
+   - Under **Actions**, select **Block**
 
-1. Click **Create** to activate the policy.
+   ![](./media/gftix-1-2.png)
+
+1. Under **Alerts**, enable **Send alert as email**, and enter the lab user email.
+
+1. Click **Create** to save and activate the policy.
+
+   ![](./media/gftix-1-3.png)
 
    > Note: Ensure your Conditional Access policy is routing sessions through Microsoft Defender for Cloud.
 
