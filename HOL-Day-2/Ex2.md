@@ -203,6 +203,24 @@ In this exercise, you will explore how to secure Microsoft 365 cloud services li
   
    ![](./media/g-3-5.png)
 
+   > **Note**: If no default Communication site is visible, follow these steps to create one:
+
+   > Click the **+ (Create)** icon.
+
+   > Select **Site**.
+
+   ![](./media/ggtt-1-1.png)
+
+   > Choose **Communication site**.
+
+   > Click **Standard communication (template)** and then select **Use template**.
+
+   > Give the site any name.
+
+   > Leave the site address as default and click **Next**.
+
+   > Choose the language as **English**, then click **Create site**.
+
 1. Go to the **Documents** library and upload `msedge.exe` via **Upload** → **Files**.
   
     ![](./media/g-3-6.png)
