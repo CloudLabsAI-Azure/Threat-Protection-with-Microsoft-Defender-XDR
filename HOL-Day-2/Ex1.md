@@ -62,6 +62,12 @@ In this lab, you’ll enable Cloud Discovery in Microsoft Defender for Cloud App
 1. Once you have uploaded, click on **Upload Logs**. You will get a prompt stating that the snapshot report is being generated. Click on **CLose**.
    
    ![Enter Your Password](./media/tr15.png)
+   
+   > **Note:** If you **don’t see the `bluecoat_sample.log` file** in the `C:\Lab Files` folder, you can download it from the following link:
+
+   > [https://github.com/CloudLabsAI-Azure/Threat-Protection-with-Microsoft-Defender-XDR/blob/main/bluecoat_sample.log](https://github.com/CloudLabsAI-Azure/Threat-Protection-with-Microsoft-Defender-XDR/blob/main/bluecoat_sample.log)
+
+   > Click **Download**, save the file to your VM, and then upload it manually in the Snapshot Report wizard.
 
 1. You will be navigated to the **Snapshot Reports** page and notice that your report is being processed.
 
