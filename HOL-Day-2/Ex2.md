@@ -246,16 +246,12 @@ In this exercise, you will explore how to secure Microsoft 365 cloud services li
 ## Task 3: Investigate Alerts and Create Custom Detection Policies
 
 1. In the Microsoft Defender Portal, go to **Cloud Apps** → **Activity log**.
+
+1. Under the **App** filter, click on **Select apps** (3), select **Microsoft SharePoint Online**
   
    ![](./media/p-0-1.png)
 
-1. Filter for:
-
-   - App: `Microsoft SharePoint Online`  
-   - Activity type: `Download file`  
-   - File name: `msedge.exe`
-
-   ![](./media/p-0-2.png)
+   > **Note:** Once selected, all user activities performed in SharePoint—such as file uploads, downloads, edits, and access attempts—will be visible in the activity log.
 
 1. Go to **Incidents & alerts** → **Alerts**, and look for `Block-All-Download`.
 
