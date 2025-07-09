@@ -21,13 +21,24 @@ In this lab, you’ll enable Cloud Discovery in Microsoft Defender for Cloud App
 
        ![Enter Your Password](./media/tr2.png)
 
-1.  In the Microsoft Defender portal, from the left navigation pane, select **Settings** and choose **Endpoints**.
+1.  In the Microsoft Defender portal, navigate and click on **System**, then click on **Settings**.
 
-     ![Enter Your Password](./media/tr3.png)
+     ![Enter Your Password](./media/corg-1-1.png)
 
-1.  Under **General**, select **Advanced features** and toggle the option for **Microsoft Defender for Cloud Apps**
+1.  On the **Settings** page, click on **Endpoints**.
 
-    ![Enter Your Password](./media/tr4.png)
+     ![Enter Your Password](./media/corg-1-2.png)
+    > **Note:** In case you do not see **Defender for Endpoint**, then open a new tab in Edge browser and enter the following URL and wait for the configuration to be completed:
+ 
+    > [https://security.microsoft.com/securitysettings/endpoints/integration?tid=](https://security.microsoft.com/securitysettings/endpoints/integration?tid=)
+
+     ![Enter Your Password](./media/corg-1-3.png)
+
+1.  On the **Endpoints** page, under the **General** section, click on **Advanced features**.
+
+1.  Turn on the toggle for **Microsoft Defender for Cloud Apps**, then click on the **Save preferences** button.
+
+    ![Enter Your Password](./media/corg-1-4.png)
 
 1. Navigate back to **Settings** and choose **Cloud Apps**
 
