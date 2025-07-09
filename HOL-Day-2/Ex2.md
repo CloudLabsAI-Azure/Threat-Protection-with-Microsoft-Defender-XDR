@@ -12,7 +12,9 @@ In this exercise, you will explore how to secure Microsoft 365 cloud services li
 
 ## Task 1: Connect and Onboard a SaaS App to Microsoft Defender for Cloud Apps
 
-1. Go to the [Azure Portal](https://portal.azure.com).
+1. Open the **Microsoft Edge** browser and go to the following URL in the address bar: 
+
+   [https://portal.azure.com](https://portal.azure.com)
 
 1. In the search bar, type **Microsoft Entra ID** and select it.
 
@@ -30,100 +32,100 @@ In this exercise, you will explore how to secure Microsoft 365 cloud services li
   
    ![](./media/g-1-4.png)
 
-1. Open [https://compliance.microsoft.com](https://compliance.microsoft.com) in the browser.
+1. Open another tab in the **Microsoft Edge** browser and enter the following URL in the address bar to open the **Microsoft Purview** portal:  
+   [https://purview.microsoft.com](https://purview.microsoft.com), then press **Enter**.
+
+   ![](./media/corg-1-5.png)
 
 1. If prompted, click **Switch to the new portal yourself** to access Microsoft Purview.
   
    ![](./media/g-1-5.png)
 
-1. On the Microsoft Purview homepage, select the **Audit** tile.
+1. On the **Welcome to the new Microsoft Purview portal** dialog box, click on the **Get started** button.
   
-   ![](./media/g-1-6.png)
+   ![](./media/corg-1-6.png)
 
-1. If audit logging is not enabled, click **Start recording user and admin activity**.
+1. On the Microsoft Purview homepage, navigate and click on the **View all solutions** tile.
+  
+   ![](./media/corg-1-7.png)
 
-   > Note: This may take a few hours to activate. You may proceed with the rest of the exercise while it initializes.
+1. Under the **Core** section, click on the **Audit** tile.
+  
+   ![](./media/corg-1-10.png)
 
-1. Go back to the [Azure Portal](https://portal.azure.com), search for **Windows Azure Active Directory**, and select it.
+1. Click on **Start recording user and admin activity**.
+  
+   ![](./media/corg-1-8.png)
+
+1. Click on **Start recording user and admin activity**.
+  
+   ![](./media/corg-1-9.png)
+   
+   > **Note:** This may take a few hours to activate. You may proceed with the rest of the exercise while it initializes.
+
+1. Go back to the **Azure portal** tab. In the search bar at the top, enter **Windows Azure Active Directory**, and then select it from the search results.
   
     ![](./media/g-4-1.png)
 
-1. From the left navigation, select **Conditional Access** and Click on **+ New policy**.
+1. On the **Windows Azure Active Directory** page, click on **Security**, then select **Conditional Access**, and on the Conditional Access page, click on **+ New policy**.
   
-    ![](./media/g-4-2.png)
+    ![](./media/corg-1-14.png)
 
-1. Name the policy: `MCAS – M365 Session Control`.
+1. Name the policy: `MCAS – M365 Session Control`
 
-1. Under **Assignments > Users**, choose **Select users and groups** and add your lab user.
+1. Under the **Assignments** section, click on **Users**, then select the **Select users and groups** radio button.
+
+1. Check the box beside **Users and groups**, then click on **0 users and groups selected**.
   
-    ![](./media/g-4-3.png)
+    ![](./media/corg-1-15.png)
 
-1. Under **Assignments > Target resources**, choose **Cloud apps** → **Office 365**.
+1. In the **Select users and groups** window, search for your lab user (`ODL_User`), check the box beside the user, and click **Select**.
   
-    ![](./media/g-4-4.png)
+    ![](./media/corg-1-16.png)
 
-    > **Note:** If **Windows Azure Active Directory** is already listed under **Select resources**, click on it and then add **Office 365** to ensure both applications are targeted by the Conditional Access policy.
-
-1. Under **Access controls > Session**, enable **Use Conditional Access App Control**, and select **Use custom policy**.
+1. You’ll now see your selected user listed under **Users**.
   
-    ![](./media/g-4-5.png)
+    ![](./media/corg-1-17.png)
+
+1. Under **Assignments > Target resources**, click on the **0 resource included** link and ensure the radio button beside **Select resources** is selected.
+
+1. Click on **Windows Azure Active Directory**, then in the **Select** pane, check the box for **Office 365**, and click **Select**.
+  
+    ![](./media/corg-1-18.png)
+
+1. Under **Access controls > Session**, click on the **0 controls selected** link.
+
+1. In the Session pane, check the box for **Use Conditional Access App Control**, ensure **Use custom policy** is selected from the dropdown, then click **Select**.
+  
+    ![](./media/corg-1-19.png)
 
 1. Scroll down, toggle **Enable policy** to **On**, and click **Create**.
   
-    ![](./media/g-4-6.png)
+    ![](./media/corg-1-20.png)
 
-1. Open [Microsoft Defender Portal](https://security.microsoft.com) and select **Settings** from the left menu.
+1. Go back to the **Microsoft Defender portal** tab and select **Settings** from the left-sided menu.
 
-1. Under **Settings**, select **Cloud Apps**.
+1. Navigate to the **Information Protection** section and select **Files**.
+
+1. Select the checkbox beside **Enable file monitoring**, then click on the **Save** button.
   
-    ![](./media/g-1-7.png)
+    ![](./media/corg-1-21.png)
 
-1. Expand **Information Protection** and select **Files**.
+    ![](./media/corg-1-22.png)
 
-1. Enable the checkbox for **Enable file monitoring**, then click **Save**.
+1. Under the **Connected apps** section, click on **App Connectors**. On the **App connectors** page, select the checkbox beside **Microsoft 365**, then click on **+ Connect Microsoft Azure instance**.
   
-    ![](./media/g-1-8.png)
-
-1. Navigate to **Settings** → **Cloud Apps** → **App Connectors**.
-  
-    ![](./media/g-1-9.png)
-
-1. Click **Connect an app**, and select **Microsoft 365** from the list.
-
-    ![](./media/rt-test1.png)
-
-1. In the configuration panel, select the following event types:
-
-    - Microsoft Entra ID Management events  
-    - Microsoft Entra ID Sign-in events  
-    - Microsoft Entra ID Apps  
-    - Microsoft 365 activities  
-    - Microsoft 365 files  
-
-    ![](./media/g-1-10.png)
-
-1. Once selected, the app will appear in the list. Select the checkbox next to **Microsoft 365** and click **Connect Microsoft Azure instance**.
-
-    ![](./media/rt-test2.png)
+    ![](./media/corg-1-23.png)
 
 1. Click **Connect Microsoft 365** and complete the authentication.
 
-1. After successful connection, you will see the confirmation message:  
-    **“Great, Microsoft 365 is connected.”**
+1. After successful connection, you will see the confirmation message: **“Great, Microsoft 365 is connected.”**, Click **Done**
  
     ![](./media/g-1-11.png)
 
-1. Click **Done** to complete onboarding.
-
-1. On the **App Connectors** page, verify that Microsoft 365 shows a **Connected** status.
+1. On the **App Connectors** page, verify that Microsoft 365 and Microsoft Azure shows **Connected** status.
   
     ![](./media/g-1-12.png)
-
-   > Note: It may take up to 30–60 minutes for the connection status to update.
-
-1. In the [Microsoft Defender Portal](https://security.microsoft.com), go to **Settings** → **Cloud Apps**.
-
-   ![](./media/22-g-1.png)
 
 1. Under **Connected apps**, select **Conditional Access App Control apps**.
 
@@ -143,7 +145,7 @@ In this exercise, you will explore how to secure Microsoft 365 cloud services li
 
    ![](./media/22-g-5.png)
 
-> **Note:** After completing this configuration, go back and repeat steps **13–16** from Task 1 to ensure your Conditional Access App Control policy is correctly applied to **Microsoft Graph Command Line Tools** as well.
+> **Note:** After completing this configuration, go back and repeat steps **17–24** from Task 1 to ensure your Conditional Access App Control policy is correctly applied to **Microsoft Graph Command Line Tools** as well.
 
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
 > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
@@ -153,11 +155,11 @@ In this exercise, you will explore how to secure Microsoft 365 cloud services li
 
 ## Task 2: Configure Session Policies to Monitor and Block Risky Behavior
 
-1. In the [Microsoft Defender Portal](https://security.microsoft.com), go to **Cloud Apps** → **Policy management**.
+1. In Microsoft Defender portal go to **Cloud Apps** → **Policy management**.
 
-1. Click **Create policy** → **Session policy**.
+1. On the **Policy management** page, in the **All policies** section click on **+ Create policy**, then select **Session policy**.
   
-   ![](./media/g-1-13.png)
+   ![](./media/corg-1-24.png)
 
 1. Configure the policy settings:
    - **Policy template**: `No template`
@@ -170,6 +172,7 @@ In this exercise, you will explore how to secure Microsoft 365 cloud services li
      - App `equals` → `Microsoft SharePoint Online`
 
    ![](./media/gftix-1-1.png)
+   > **Note**: On the **Apply template?** dialog box, click on the **Cancel** button.
 
 1. Scroll to **Files matching all of the following** and configure the following:
    - Filter by **Extension** → `exe` OR `apk`
@@ -177,9 +180,7 @@ In this exercise, you will explore how to secure Microsoft 365 cloud services li
 
    ![](./media/gftix-1-2.png)
 
-1. Under **Alerts**, enable **Send alert as email**, and enter the lab user email.
-
-1. Click **Create** to save and activate the policy.
+1. Under **Alerts**, enable **Send alert as email**, and enter the lab user email and Click **Create** to save and activate the policy.
 
    ![](./media/gftix-1-3.png)
 
@@ -189,49 +190,53 @@ In this exercise, you will explore how to secure Microsoft 365 cloud services li
 
    ![](./media/tgs-1-3.png)
 
-1. Open an incognito browser and go to [https://www.office.com](https://www.office.com).
+1. Open an incognito browser and go to https://www.office.com.
 
-1. Sign in using your lab credentials.
+1. Sign in using your lab credentials and from the left pane, go to **Apps** → **SharePoint**.
+
+1. Click on **+ Create site**.
+
+   ![](./media/corg-1-25.png)
+
+1. Then select **Communication site**.
+
+   ![](./media/corg-1-26.png)
+
+1. Click **Standard communication (template)** and then select **Use template**.
+
+1. Enter the **Site name** as `Demo` or any name of your choice, then click on the **Next** button.
+
+   ![](./media/corg-1-27.png)
+
+1. Under the **Select a language** field, ensure that **English** is selected, then click on the **Create site** button.
+
+   ![](./media/corg-1-28.png)
+
+1. On the **Demo** site, click on the **three horizontal bars** (☰) on the top-left corner.
+
+   ![](./media/corg-1-29.png)
+
+1. Navigate the left-hand menu and click on **Documents**.
+
+   ![](./media/corg-1-30.png)
+
+1. Click on **Upload**, then select **Files**.
+
+   ![](./media/corg-1-31.png)
+
+1. Navigate and click on **Documents**, then select **Microsoft Edge** application. Now, click on the **Open** button.
+
+   ![](./media/corg-1-32.png)
+   
+   > **Note**: If `msedge.exe` is not available in the **Documents** folder, navigate to `C:\Program Files (x86)\Microsoft\Edge\Application`, locate `msedge` (the executable file), and upload it from there.
+
+1. `msedge.exe` is successfully uploaded. Now, click on it.
+
+   ![](./media/corg-1-33.png)
+
+1. Click on the **Download** button.
   
-   ![](./media/g-3-3.png)
-
-1. From the left pane, go to **Apps** → **SharePoint**.
-  
-   ![](./media/g-3-4.png)
-
-1. Select the **Communication site** under **Frequent sites**.
-  
-   ![](./media/g-3-5.png)
-
-   > **Note**: If no default Communication site is visible, follow these steps to create one:
-
-   > Click the **+ (Create)** icon.
-
-   > Select **Site**.
-
-   ![](./media/ggtt-1-1.png)
-
-   > Choose **Communication site**.
-
-   > Click **Standard communication (template)** and then select **Use template**.
-
-   > Give the site any name.
-
-   > Leave the site address as default and click **Next**.
-
-   > Choose the language as **English**, then click **Create site**.
-
-1. Go to the **Documents** library and upload `msedge.exe` via **Upload** → **Files**.
-  
-    ![](./media/g-3-6.png)
-  
-    ![](./media/g-3-7.png)
-
-> **Note**: If `msedge.exe` is not available in the **Documents** folder, navigate to `C:\Program Files (x86)\Microsoft\Edge\Application`, locate `msedge` (the executable file), and upload it from there.
-
-1. After uploading, click the file and select **Download**.
-  
-    ![](./media/g-3-8.png)
+   ![](./media/corg-1-34.png)
 
 1. The download should be blocked with a message:  
     **"Download blocked – Downloading msedge.exe is blocked by your organization’s security policy."**
@@ -240,7 +245,7 @@ In this exercise, you will explore how to secure Microsoft 365 cloud services li
 
 ## Task 3: Investigate Alerts and Create Custom Detection Policies
 
-1. In the [Microsoft Defender Portal](https://security.microsoft.com), go to **Cloud Apps** → **Activity log**.
+1. In the Microsoft Defender Portal, go to **Cloud Apps** → **Activity log**.
   
    ![](./media/p-0-1.png)
 
