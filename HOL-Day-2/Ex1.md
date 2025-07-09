@@ -44,6 +44,9 @@ In this lab, you’ll enable Cloud Discovery in Microsoft Defender for Cloud App
 
    ![Enter Your Password](./media/tr5.png)
 
+    > **Note:** It may take a few minutes for the **Cloud Apps** section to appear. If you don’t see it immediately, wait and refresh the page.
+
+
 1. Under Cloud Discovery, choose **Microsoft Defender for Endpoint** and enable **Enforce App Access**
 
    ![Enter Your Password](./media/tr6.png)
