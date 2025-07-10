@@ -271,13 +271,14 @@ In this exercise, you will explore how to secure Microsoft 365 cloud services li
 
 1. Configure the following:
 
-   - Policy name: `Detect Suspicious File Download – msedge.exe`  
-   - Severity: `High`  
-   - Category: `Threat detection`  
-   - Act on: `Single activity`  
-   - Activity type: `Download file`  
-   - File name: `msedge.exe`  
-   - App: `Microsoft SharePoint Online`
+   - **Policy template:** `No template`
+   - **Policy name:** `Detect Suspicious File Download – msedge.exe`  
+   - **Severity:** `High`  
+   - **Category:** `Threat detection`  
+   - **Act on:** `Single activity`  
+   - **Activity type:** `Download file`  
+   - **Files and folders:** `msedge.exe`  
+   - **App:** `Microsoft SharePoint Online`
    
    ![](./media/p-1-2.png)
 
@@ -291,7 +292,7 @@ In this exercise, you will explore how to secure Microsoft 365 cloud services li
 
     ![](./media/p-1-4.png)
 
-12. Simulate a download again from [https://www.office.com](https://www.office.com) by logging in, opening SharePoint, and downloading `msedge.exe`.
+12. Simulate a download again in SharePoint, and downloading `msedge.exe`.
     
     ![](./media/g-3-6.png)
 
@@ -299,10 +300,10 @@ In this exercise, you will explore how to secure Microsoft 365 cloud services li
 
     ![](./media/g-3-8.png)
 
-1. Open your email inbox and locate the alert email titled:  
-    `Alert - Detect Suspicious File Download – msedge.exe`
+1. Open your Outlook email inbox and locate the alert email titled `Alert - Detect Suspicious File Download – msedge.exe`.
    
     ![](./media/p-1-5.png)
+    > **Note:** If you do not see the alert email, wait for 5–10 minutes and refresh your inbox.
 
 1. In the portal, go to **Incidents & alerts** → **Alerts**, and open the custom alert.
    
@@ -314,7 +315,7 @@ In this exercise, you will explore how to secure Microsoft 365 cloud services li
 
     ![](./media/p-1-8.png)
 
-1. Review the event details:
+1. Carefully review the event details:
 
     - User name  
     - File name  
