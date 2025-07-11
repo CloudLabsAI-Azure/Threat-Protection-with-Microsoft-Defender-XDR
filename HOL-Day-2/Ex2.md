@@ -180,9 +180,9 @@ In this exercise, you will explore how to secure Microsoft 365 cloud services li
 
    ![](./media/gftix-1-2.png)
 
-1. Under **Alerts**, enable **Send alert as email**, and enter the lab user email and Click **Create** to save and activate the policy.
+1. Click **Create** to save and activate the policy.
 
-   ![](./media/gftix-1-3.png)
+   ![](./media/grpg-1-1.png)
 
    > Note: Ensure your Conditional Access policy is routing sessions through Microsoft Defender for Cloud.
 
@@ -255,15 +255,17 @@ In this exercise, you will explore how to secure Microsoft 365 cloud services li
 
 1. Go to **Incidents & alerts** → **Alerts**, and look for `Block-All-Download`.
 
+   ![](./media/grpg-1-3.png)
+
 1. Click the alert, then select **Open alert page**.
    
-   ![](./media/p-1-6.png)
-
    ![](./media/p-1-7.png)
 
 1. Click **Investigate in activity log**.
  
    ![](./media/p-1-8.png)
+
+   ![](./media/p-1-9.png
 
 1. Go to **Cloud Apps** → **Policy management**, and click **Create policy** → **Activity policy**.
 
@@ -305,15 +307,13 @@ In this exercise, you will explore how to secure Microsoft 365 cloud services li
     ![](./media/p-1-5.png)
     > **Note:** If you do not see the alert email, wait for 5–10 minutes and refresh your inbox.
 
-1. In the portal, go to **Incidents & alerts** → **Alerts**, and open the custom alert.
+1. In the portal, go to **Incidents & alerts** → **Alerts**, and open the alert.
    
-    ![](./media/p-1-6.png)
+    ![](./media/grpg-1-3.png)
 
-1. Click **Open alert page** → **Investigate in activity log**.
-   
-    ![](./media/p-1-7.png)
+1. Click **Open alert page** → **view incident page**.
 
-    ![](./media/p-1-8.png)
+    ![](./media/grpg-1-4.png)
 
 1. Carefully review the event details:
 
@@ -324,7 +324,7 @@ In this exercise, you will explore how to secure Microsoft 365 cloud services li
     - Device info  
     - Triggered policy
    
-    ![](./media/p-1-9.png)
+    ![](./media/grpg-1-5.png)
 
 ## Review
 
