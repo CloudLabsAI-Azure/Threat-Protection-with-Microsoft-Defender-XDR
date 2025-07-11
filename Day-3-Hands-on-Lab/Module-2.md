@@ -133,7 +133,7 @@ In this task, you will enable and configure Microsoft Defender for Cloud.
    - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
    - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
  
-   <validation step="8f13852e-0b9e-4064-babe-3918fddfd6c3" />
+   <validation step="4308381b-c9df-4237-b612-a6aa4f974757" />
    
 ### Task 4: Command and Control Attack with DNS
 
