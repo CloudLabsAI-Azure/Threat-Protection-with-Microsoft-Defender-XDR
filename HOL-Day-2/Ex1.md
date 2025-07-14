@@ -28,6 +28,7 @@ In this lab, you’ll enable Cloud Discovery in Microsoft Defender for Cloud App
 1.  On the **Settings** page, click on **Endpoints**.
 
      ![Enter Your Password](./media/corg-1-2.png)
+
     > **Note:** In case you do not see **Defender for Endpoint**, then open a new tab in Edge browser and enter the following URL and wait for the configuration to be completed:
  
     > [https://security.microsoft.com/securitysettings/endpoints/integration?tid=](https://security.microsoft.com/securitysettings/endpoints/integration?tid=)
@@ -77,12 +78,6 @@ In this lab, you’ll enable Cloud Discovery in Microsoft Defender for Cloud App
    
    ![Enter Your Password](./media/tr15.png)
    
-   > **Note:** If you **don’t see the `bluecoat_sample.log` file** in the `C:\Lab Files` folder, you can download it from the following link:
-
-   > [https://github.com/CloudLabsAI-Azure/Threat-Protection-with-Microsoft-Defender-XDR/blob/main/bluecoat_sample.log](https://github.com/CloudLabsAI-Azure/Threat-Protection-with-Microsoft-Defender-XDR/blob/main/bluecoat_sample.log)
-
-   > Click **Download**, save the file to your VM, and then upload it manually in the Snapshot Report wizard.
-
 1. You will be navigated to the **Snapshot Reports** page and notice that your report is being processed.
 
 1. Wait until the status turns to **Ready**. This can take upto 10 minutes.
