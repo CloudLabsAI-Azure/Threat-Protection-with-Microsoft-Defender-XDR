@@ -76,7 +76,7 @@ In this task, you will enable Microsoft Defender CSPM for your environment and c
     ![rd_day1_ex1_t1_13](./media/rd_day1_ex1_t1_13.png)
 
 16. Add a domain to the flag for impersonation detection:
-    - Enter the domain (1), click **Add (2)**, and click **Next (3)**
+    - Enter the **domain (1)**, click **Add (2)**, and click **Next (3)**
 
     ![rd_day1_ex1_t1_14](./media/rd_day1_ex1_t1_14.png)
 
