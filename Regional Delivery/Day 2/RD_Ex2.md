@@ -91,15 +91,15 @@ In this task, you'll create a custom policy using App Governance in Microsoft De
 
    ![](./media/rd_day2_ex2_t1_16.png)
 
-23. ⚠️ **(MISSING STEP)**: Ideally, include a screenshot that shows the **Permissions**, **Activity**, and **Risk indicators** tabs for the flagged app, to complete the validation.
+23. **(MISSING STEP)**: Ideally, include a screenshot that shows the **Permissions**, **Activity**, and **Risk indicators** tabs for the flagged app, to complete the validation.
 
    > If available, please capture a screenshot of the app detail view showing risk indicators, and permissions usage.
 
-24. ⚠️ **(MISSING STEP)**: Optionally validate the **Policy list** to ensure the created policy is listed as **Active** under **App Governance > Policies**.
+24. **(MISSING STEP)**: Optionally validate the **Policy list** to ensure the created policy is listed as **Active** under **App Governance > Policies**.
 
    > Screenshot needed for completeness of policy validation.
 
-25. ✅ You have now implemented a custom App Governance policy, triggered an alert, and reviewed the incident tied to risky OAuth behavior.
+25. You have now implemented a custom App Governance policy, triggered an alert, and reviewed the incident tied to risky OAuth behavior.
 
 ---
 
