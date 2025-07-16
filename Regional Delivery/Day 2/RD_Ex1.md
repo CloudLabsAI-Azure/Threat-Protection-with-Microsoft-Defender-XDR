@@ -200,7 +200,6 @@ In this task, you’ll create a session policy in Microsoft Defender for Cloud A
 
    ![](./media/rd_day2_ex1_t2_19.png)
 
-
 25. Verify that both **Microsoft 365** and **Microsoft Azure** show status as **Connected**.
 
     ![](./media/rd_day2_ex1_t1_23.png)
