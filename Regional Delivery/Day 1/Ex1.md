@@ -4,7 +4,7 @@
 
 In this task, you will enable Microsoft Defender CSPM for your environment and configure standard and strict threat protection policies using Microsoft Defender XDR.
 
-1. On the **Azure Portal** home page, search for **Microsoft Defender for Cloud (1)** and select it from the results (2).
+1. On the **Azure Portal** home page, search for **Microsoft Defender for Cloud (1)** and select it from the **results (2)**.
 
    ![rd_day1_ex1_t1_1](./media/rd_day1_ex1_t1_1.png)
 
@@ -16,7 +16,7 @@ In this task, you will enable Microsoft Defender CSPM for your environment and c
  
    ![rd_day1_ex1_t1_3](./media/rd_day1_ex1_t1_3.png)
 
-7. In the **Management (1)** section, select **Environment settings (2)**. Expand **Azure (3)** > **Tenant Root Group (4)** and select the subscription (5).
+7. In the **Management (1)** section, select **Environment settings (2)**. Expand **Azure (3)** > **Tenant Root Group (4)** and select the **subscription (5)**.
 
    ![rd_day1_ex1_t1_4](./media/rd_day1_ex1_t1_4.png)
 
@@ -56,8 +56,10 @@ In this task, you will enable Microsoft Defender CSPM for your environment and c
   
     ![rd_day1_ex1_t1_13](./media/rd_day1_ex1_t1_13.png)
 
-27. Add a domain to be flagged for impersonation detection (1), click **Add (2)**, and proceed by clicking **Next (3)**.  
+27. Add a domain to be flagged for impersonation detection (1), click **Add (2)**, and proceed by clicking **Next (3)**.
+
     ![rd_day1_ex1_t1_14](./media/rd_day1_ex1_t1_14.png)
 
-28. Confirm that **Standard protection is on** and **Strict protection is on** as shown.  
+29. Confirm that **Standard protection is on** and **Strict protection is on** as shown.
+ 
     ![rd_day1_ex1_t1_15](./media/rd_day1_ex1_t1_15.png)
