@@ -2,7 +2,7 @@
 
 In this task, you will enable Microsoft Defender CSPM for your environment and configure both standard and strict protection policies using Microsoft Defender XDR.
 
-1. Go to the [Azure Portal](https://portal.azure.com), and search for **Microsoft Defender for Cloud (1)**, Select it from the **results (2)**.
+1. 1. Go to the Azure Portal and search for **Microsoft Defender for Cloud (1)**, select it from the **results (2)**.
 
    ![rd_day1_ex1_t1_1](./media/rd_day1_ex1_t1_1.png)
 
@@ -87,3 +87,109 @@ In this task, you will enable Microsoft Defender CSPM for your environment and c
     ![rd_day1_ex1_t1_15](./media/rd_day1_ex1_t1_15.png)
 
     > **Note:** You have now successfully configured multi-layered threat policies for both general and high-risk users.
+
+## Task 2: Simulate Phishing and Malware Attacks Using Attack Simulator
+
+In this task, you'll simulate phishing and malware attacks using Microsoft Defender's built-in **Attack Simulation Training**. These simulations help you evaluate user vulnerability and response to social engineering techniques.
+
+1. On the **Microsoft 365 Defender portal**, go to **Email & collaboration (1)** and select **Attack simulation training (2)**.
+
+   ![rd_day1_ex1_t2_1](./media/rd_day1_ex1_t2_1.png)
+
+2. Click **Launch a simulation campaign (1)** and select **Launch your own simulation (2)**.
+
+   ![rd_day1_ex1_t2_2](./media/rd_day1_ex1_t2_2.png)
+
+3. On the **Launch your own simulation** blade, select **Launch a single simulation (1)** and click **Next (2)**.
+
+   ![rd_day1_ex1_t2_3](./media/rd_day1_ex1_t2_3.png)
+
+4. Under **Select technique**, choose **Credential Harvest (1)** and click **Next (2)**.
+
+   ![rd_day1_ex1_t2_4](./media/rd_day1_ex1_t2_4.png)
+
+5. In the **Name simulation** step, enter a simulation name (e.g., `Test1`) in the **Simulation name (1)** field, and click **Next (2)**.
+
+   ![rd_day1_ex1_t2_5](./media/rd_day1_ex1_t2_5.png)
+
+6. Under **Select payload and login page**, choose **Global payloads (1)** and select a phishing payload such as **Expense report sharing - English (2)**. Click **Next (3)**.
+
+   ![rd_day1_ex1_t2_6](./media/rd_day1_ex1_t2_6.png)
+
+7. In the **Assign users** step, search for your lab user and click **Next (2)** to assign them.
+
+   ![rd_day1_ex1_t2_7](./media/rd_day1_ex1_t2_7.png)
+
+8. Select the **user from the list (1)** and confirm by clicking **Next (2)**.
+
+   ![rd_day1_ex1_t2_8](./media/rd_day1_ex1_t2_8.png)
+
+9. On the **Assign training** screen, choose **Assign training for me (1)**, select a module, and click **Next (2)**.
+
+   ![rd_day1_ex1_t2_9](./media/rd_day1_ex1_t2_9.png)
+
+10. In **Training settings**, set **Due date (1)** to 7 days and click **Next (2)**.
+
+    ![rd_day1_ex1_t2_10](./media/rd_day1_ex1_t2_10.png)
+
+11. Under **Select landing page**, choose a **login page template (1)** and click **Next (2)**.
+
+    ![rd_day1_ex1_t2_11](./media/rd_day1_ex1_t2_11.png)
+
+12. In the **End user notification** section, select **Microsoft default notification (1)** and configure:
+    - **Positive reinforcement**: Deliver during **simulation (2**)
+    - **Training reminder**: **Weekly (3)**
+    Click **Next (4)**.
+
+    ![rd_day1_ex1_t2_12](./media/rd_day1_ex1_t2_12.png)
+
+13. In the **Launch details** step, select **Launch this simulation as soon as I'm done (1)**, set **duration to 2 days (2)**, and click **Next (3)**.
+
+    ![rd_day1_ex1_t2_13](./media/rd_day1_ex1_t2_13.png)
+
+14. Review the configuration summary and click **Submit** to start the simulation.
+
+    ![rd_day1_ex1_t2_14](./media/rd_day1_ex1_t2_14.png)
+
+15. On completion, click **Done**.
+
+    ![rd_day1_ex1_t2_15](./media/rd_day1_ex1_t2_15.png)
+
+16. Verify the simulation appears in the dashboard as **In progress**.
+
+    ![rd_day1_ex1_t2_16](./media/rd_day1_ex1_t2_16.png)
+
+> **Note:** You’ve successfully launched a phishing simulation. It will monitor how users interact with suspicious emails.
+
+17. To simulate a **Malware Attack**, go back to **Attack simulation training**, click **Launch your own simulation**, and choose **Malware Attachment (1)**. Click **Next (2)**.
+
+    ![rd_day1_ex1_t2_17](./media/rd_day1_ex1_t2_17.png)
+
+18. Enter a new simulation name **`Test2`** and click **Next (2)**.
+
+    ![rd_day1_ex1_t2_18](./media/rd_day1_ex1_t2_18.png)
+
+19. Under **Payload selection**, choose a malware attachment like **HR notification on update of contract - English (2)** and click **Next (3)**.
+
+    ![rd_day1_ex1_t2_19](./media/rd_day1_ex1_t2_19.png)
+
+20. In the **End user notification** screen, select **Microsoft default notification (1)**, ensure **Deliver during simulation (2)** and **Weekly reminder (3)** are selected, and click **Next (4)**.
+
+    ![rd_day1_ex1_t2_20](./media/rd_day1_ex1_t2_20.png)
+
+21. Set the **Launch configuration (1)** to launch immediately, set duration to **2 days (2)**, and click **Next (3)**.
+
+    ![rd_day1_ex1_t2_21](./media/rd_day1_ex1_t2_21.png)
+
+22. Review the details and click **Submit** to complete the malware simulation setup.
+
+    ![rd_day1_ex1_t2_22](./media/rd_day1_ex1_t2_22.png)
+
+> **Note:** This simulation mimics a malicious file being sent via email, testing how users respond to attachment-based threats.
+
+> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:  
+> - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task.  
+> - If not, carefully read the error message and retry the step, following the instructions in the lab guide.  
+> - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.  
+<validation step="064a226a-790e-4e5f-b789-d84483110e38" />
+
