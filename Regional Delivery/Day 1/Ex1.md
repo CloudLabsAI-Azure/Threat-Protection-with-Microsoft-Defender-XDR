@@ -1,65 +1,89 @@
-## Exercise 1: Configure Threat Policies in Microsoft Defender for Office 365
+## Task 1: Configure Threat Policies in Microsoft Defender for Office 365
 
-### Task 1: Enable Defender CSPM and Configure Threat Policies
+In this task, you will enable Microsoft Defender CSPM for your environment and configure both standard and strict protection policies using Microsoft Defender XDR.
 
-In this task, you will enable Microsoft Defender CSPM for your environment and configure standard and strict threat protection policies using Microsoft Defender XDR.
-
-1. On the **Azure Portal** home page, search for **Microsoft Defender for Cloud (1)** and select it from the **results (2)**.
+1. Go to the [Azure Portal](https://portal.azure.com), and search for **Microsoft Defender for Cloud (1)**, Select it from the **results (2)**.
 
    ![rd_day1_ex1_t1_1](./media/rd_day1_ex1_t1_1.png)
 
-3. In the **Enhance your security posture by enabling Defender CSPM** dialog, click **Enable** to activate the Defender CSPM plan.
+2. When prompted, click **Enable** to activate Defender CSPM.
 
    ![rd_day1_ex1_t1_2](./media/rd_day1_ex1_t1_2.png)
 
-5. On the **Microsoft Defender for Cloud | Inventory** blade, select **Inventory (2)** under **General (1)** and confirm the Defender status is **Off (3)** for listed resources.
- 
+   > **Note:** If you don’t see the pop-up prompt, continue with the lab steps below.
+
+   > **Note:** Enabling Defender CSPM unlocks advanced posture management features such as attack path analysis and permission visibility.
+
+3. In **Microsoft Defender for Cloud**, navigate to **Inventory (2)** under **General (1)** and verify that the **Defender for Cloud** status is **Off (3)** for the listed resources.
+
    ![rd_day1_ex1_t1_3](./media/rd_day1_ex1_t1_3.png)
 
-7. In the **Management (1)** section, select **Environment settings (2)**. Expand **Azure (3)** > **Tenant Root Group (4)** and select the **subscription (5)**.
+4. Go to **Environment settings (2)** under **Management (1)**, expand **Azure (3)** → **Tenant Root Group (4)**, and select your **subscription (5)**.
 
    ![rd_day1_ex1_t1_4](./media/rd_day1_ex1_t1_4.png)
 
-9. Under **Settings**, select **Defender plans (1)**. Turn on **Foundational CSPM (2)**, **Defender CSPM (3)**, and **Servers under Cloud Workload Protection (4)**. Click **Save (5)**.
- 
+5. Under **Defender plans (1)**, turn on the following options and click **Save (5)**:
+   - **Foundational CSPM (2)**
+   - **Defender CSPM (3)**
+   - **Servers under Cloud Workload Protection (4)**
+
    ![rd_day1_ex1_t1_5](./media/rd_day1_ex1_t1_5.png)
 
-11. In the Microsoft Defender portal, expand **Email & collaboration (1)**, then go to **Policies & rules (2)**, and click **Threat policies (3)**.
-  
+6. Return to **Inventory** and confirm the **Defender for Cloud** status now shows as **On**.
+
+   > **Note:** Your Defender protection is now active for all supported workloads.
+
+7. Open the [Microsoft 365 Defender Portal](https://security.microsoft.com)
+
+8. In the left pane, go to **Email & collaboration (1)** → **Policies & rules (2)** → **Threat policies (3)**.
+
    ![rd_day1_ex1_t1_6](./media/rd_day1_ex1_t1_6.png)
 
-13. In the **Apply standard protection** wizard, select **Specific recipients (1)** and enter the user email (2). Click **Next (3)**.
-  
-   ![rd_day1_ex1_t1_7](./media/rd_day1_ex1_t1_7.png)
+9. Select **Standard Protection**, then click **Manage protection settings**.
 
-15. On the **Defender for Office 365 protection** tab, again select **Specific recipients (1)**, provide the user (2), and click **Next (3)**.
-  
-   ![rd_day1_ex1_t1_8](./media/rd_day1_ex1_t1_8.png)
+   ![rd_day1_ex1_t1_10](./media/rd_day1_ex1_t1_10.png)
 
-17. On the **Review** screen, verify Exchange Online and Defender for Office 365 policies are applied to the correct user. Click **Confirm (3)**.
-  
-   ![rd_day1_ex1_t1_9](./media/rd_day1_ex1_t1_9.png)
+10. In the protection wizard:
+    - Choose **Specific recipients (1)**  
+    - Add your **lab user (2)**  
+    - Click **Next (3)**
 
-19. On the protection profiles page, click **Manage protection settings** under **Standard protection**.
-  
+    ![rd_day1_ex1_t1_7](./media/rd_day1_ex1_t1_7.png)
+    ![rd_day1_ex1_t1_8](./media/rd_day1_ex1_t1_8.png)
+
+12. On the **Review** screen, verify the policy applies to the correct user and click **Confirm (3)**.
+
+    ![rd_day1_ex1_t1_9](./media/rd_day1_ex1_t1_9.png)
+
+    > **Note:** Standard protection includes Safe Attachments, Safe Links, and anti-phishing policies.
+
+13. Under **Strict Protection**, click **Manage protection settings**.
+
     ![rd_day1_ex1_t1_10](./media/rd_day1_ex1_t1_10.png)
 
-21. In the **Apply strict protection** wizard, select **Specific recipients (1)**, enter the user (2), and click **Next (3)**.
-  
-    ![rd_day1_ex1_t1_11](./media/rd_day1_ex1_t1_11.png)
+14. Like before:
+    - Select **Specific recipients (1)**  
+    - Add your **lab user (2)**  
+    - Click **Next (3)**
 
-23. Under **Defender for Office 365 protection**, confirm **Specific recipients (1)** is selected, user is added (2), and click **Next (3)**.
-  
+    ![rd_day1_ex1_t1_11](./media/rd_day1_ex1_t1_11.png)
     ![rd_day1_ex1_t1_12](./media/rd_day1_ex1_t1_12.png)
 
-25. On the **Impersonation protection** screen, add an external email address (1)(2), click **Add (3)**, and then click **Next (4)**.
-  
+15. Configure **Impersonation Protection** by adding:
+    - Key email addresses (1)(2), then click **Add (3)**  
+    - Click **Next (4)**
+
     ![rd_day1_ex1_t1_13](./media/rd_day1_ex1_t1_13.png)
 
-27. Add a domain to be flagged for impersonation detection (1), click **Add (2)**, and proceed by clicking **Next (3)**.
+16. Add a domain to the flag for impersonation detection:
+    - Enter the domain (1), click **Add (2)**, and click **Next (3)**
 
     ![rd_day1_ex1_t1_14](./media/rd_day1_ex1_t1_14.png)
 
-29. Confirm that **Standard protection is on** and **Strict protection is on** as shown.
- 
+17. Once completed, confirm that:
+    - **Standard protection is on**  
+    - **Strict protection is on** for selected users
+
     ![rd_day1_ex1_t1_15](./media/rd_day1_ex1_t1_15.png)
+
+    > **Note:** You have now successfully configured multi-layered threat policies for both general and high-risk users.
