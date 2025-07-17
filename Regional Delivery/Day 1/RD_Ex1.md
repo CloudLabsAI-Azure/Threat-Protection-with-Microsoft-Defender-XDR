@@ -2,7 +2,7 @@
 
 ## Overview
 
-In this exercise, you will configure threat protection policies in Microsoft Defender for Office 365 and use the Attack Simulator to mimic phishing and malware attacks. You will then explore how to analyze these simulated threats using Threat Explorer and real-time detections, gaining insights into how Defender identifies, tracks, and helps mitigate threats within your Office 365 environment.
+In this exercise, you will configure advanced threat protection policies and simulate real-world phishing and malware attacks using Microsoft Defender for Office 365. You will start by enabling Microsoft Defender CSPM and setting up both standard and strict protection policies to secure your environment. Then, using Attack Simulation Training, you’ll launch simulated phishing and malware campaigns to evaluate user susceptibility and test how well the configured policies mitigate threats. This hands-on exercise helps strengthen your organization’s security posture through layered protection and proactive user assessment.
 
 ## Objectives
 
@@ -199,8 +199,14 @@ In this task, you'll simulate phishing and malware attacks using Microsoft Defen
 <validation step="064a226a-790e-4e5f-b789-d84483110e38" />
 
 ## Review
+
 In this lab, you have completed the following tasks:
-- Comprehended the Flow Development Lifecycle
+
+- Configured standard and strict protection policies using Microsoft Defender for Office 365  
+- Enabled Microsoft Defender CSPM and verified security posture settings  
+- Simulated phishing and malware attacks using Attack Simulation Training  
+- Assessed user vulnerability and policy effectiveness through simulation results
+
 
 ### You have successfully completed the lab. Click on **Next >>** to proceed with the next Lab.
 
