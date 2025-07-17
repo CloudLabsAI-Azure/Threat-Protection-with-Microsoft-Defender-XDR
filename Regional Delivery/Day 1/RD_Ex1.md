@@ -41,7 +41,7 @@ In this task, you will enable Microsoft Defender CSPM for your environment and c
 
         ![rd_day1_ex1_t1_5](./media/rd_day1_ex1_t1_5.png)
 
-1. Return to **Inventory** and confirm the **Defender for Cloud** status now shows as **On**.
+1. Return to **Inventory (2)** under the **Genral (2)** section and confirm the **Defender for Cloud** status now shows as **On (3)**.
    ![rd_day1_ex1_t1_6](./media/cord1e1_2.png)
     > **Note:** Your Defender protection is now active for all supported workloads.
 
@@ -51,19 +51,21 @@ In this task, you will enable Microsoft Defender CSPM for your environment and c
 
    ![rd_day1_ex1_t1_6](./media/rd_day1_ex1_t1_6.png)
 
-1. Select **Standard Protection**, then click **Manage protection settings**.
+1. Under **Standard Protection**, click on **Manage protection settings**.
 
    ![rd_day1_ex1_t1_10](./media/cord1e1_1.png)
 
-1. In the protection wizard:
-    - Choose **Specific recipients (1)**  
-    - Add your **lab user (2)**  
-    - Click **Next (3)**
+1. On the **Apply Exchange Online Protection** screen, select **Specific recipients (1)**, enter the user email in the **Users** field (2), and click **Next (3)**.
 
     ![rd_day1_ex1_t1_7](./media/rd_day1_ex1_t1_7.png)
+
+1. On the **Apply Defender for Office 365 protection** screen, select **Specific recipients (1)**, enter the user email in the **Users** field (2), and click **Next (3)**.
+
     ![rd_day1_ex1_t1_8](./media/rd_day1_ex1_t1_8.png)
 
-1. On the **Review** screen, verify the policy applies to the correct user and click **Confirm (3)**.
+1. Click **Next** on the **Impersonation protection** and **Policy mode** screens until you reach the **Review** section.
+
+1. On the **Review** screen, verify that **Exchange Online Protection (1)** and **Defender for Office 365 (2)** apply to the correct user, then click **Confirm (3)**.
 
     ![rd_day1_ex1_t1_9](./media/rd_day1_ex1_t1_9.png)
 
@@ -73,30 +75,23 @@ In this task, you will enable Microsoft Defender CSPM for your environment and c
 
     ![rd_day1_ex1_t1_10](./media/rd_day1_ex1_t1_10.png)
 
-1. Like before:
-    - Select **Specific recipients (1)**  
-    - Add your **lab user (2)**  
-    - Click **Next (3)**
+1. On the **Apply Exchange Online Protection** screen, select **Specific recipients (1)**, enter the user email in the **Users** field (2), and click **Next (3)**.
 
     ![rd_day1_ex1_t1_11](./media/rd_day1_ex1_t1_11.png)
+
+1. On the **Apply Defender for Office 365 protection** screen, select **Specific recipients (1)**, enter the user email in the **Users** field (2), and click **Next (3)**.
+
     ![rd_day1_ex1_t1_12](./media/rd_day1_ex1_t1_12.png)
 
-1. Configure **Impersonation Protection** by adding:
-    - Key email addresses (1)(2), then click **Add (3)**  
-    - Click **Next (4)**
+1. Click **Next** on the **Impersonation protection** and **Policy mode** screens until you reach the **Review** section.
 
-    ![rd_day1_ex1_t1_13](./media/rd_day1_ex1_t1_13.png)
-
-1. Add a domain to the flag for impersonation detection:
-    - Enter the **domain (1)**, click **Add (2)**, and click **Next (3)**
-
-    ![rd_day1_ex1_t1_14](./media/rd_day1_ex1_t1_14.png)
+1. On the **Review** screen, verify that **Exchange Online Protection (1)** and **Defender for Office 365 (2)** apply to the correct user, then click **Confirm (3)**.
 
 1. Once completed, confirm that:
-    - **Standard protection is on**  
-    - **Strict protection is on** for selected users
+    - **Standard protection is on (1)**  
+    - **Strict protection is on (2)** for selected users
 
-    ![rd_day1_ex1_t1_15](./media/rd_day1_ex1_t1_15.png)
+        ![rd_day1_ex1_t1_15](./media/cord1e1_3.png)
 
     > **Note:** You have now successfully configured multi-layered threat policies for both general and high-risk users.
 
