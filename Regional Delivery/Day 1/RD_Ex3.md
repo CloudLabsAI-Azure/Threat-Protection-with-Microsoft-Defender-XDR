@@ -2,66 +2,85 @@
 
 ## Task 2: Investigate and Remediate Incidents in Microsoft Defender XDR
 
-In this task, you’ll investigate a phishing email, take appropriate actions, submit it to Microsoft for review, and monitor the automated investigation and alerts triggered in Microsoft Defender XDR.
+In this task, you’ll simulate a phishing incident, investigate the suspicious message using Threat Explorer, take remediation actions, submit the message to Microsoft for analysis, and review the automated investigation results.
 
-1. Use Outlook or another email client to send a test phishing message with suspicious links to your lab user.
+1. Send a test phishing email to your lab user containing suspicious links such as:
 
-   ![](./media/g25-1.png)
+   - https://youtube.com/  
+   - https://openai.com/  
 
-1. Go to the [Microsoft 365 Defender Portal](https://security.microsoft.com) Navigate to **Email & collaboration** → **Explorer**  
+   ![](./media/rd_day1_ex3_t2_1.png)
 
-1. Find and click the suspicious message titled **Test Phishing**.
+2. On the Microsoft Defender portal (https://security.microsoft.com), go to **Email & collaboration (1)** → **Explorer (2)**. Select the phishing email entry **Test Phishing (4)**.
 
-   ![](./media/g25-2.png)
+   ![](./media/rd_day1_ex3_t2_2.png)
 
-   > **Note:** It may take 2–3 minutes after the phishing email is delivered for it to appear in Threat Explorer.
+   > **Note:** It may take 2–3 minutes for the email to appear in Explorer after delivery.
 
-1. Click the message to view its details, then click **Take action** to initiate response actions.
+3. Click the message to open its details. Then click **Take action**.
 
-   ![](./media/g25-3.png)
+   ![](./media/rd_day1_ex3_t2_3.png)
 
-1. Configure the following settings:
+4. On the **Choose response actions** page:
 
-    - Enable **Show all response actions**  
-    - Choose **Move to Junk**  
-    - Submit to Microsoft for review:
-      - Select **I've confirmed it's a threat**
-      - Choose **Phish** as the category  
-    - Enable **Initiate automated investigation**
+   - **(1)** Toggle on **Show all response actions**  
+   - **(2)** Select **Move or delete**  
+   - **(3)** Choose **Junk**  
+   - **(4)** Select **Submit to Microsoft for review**  
+   - **(5)** Choose **I've confirmed it’s a threat**  
+   - **(6)** Select **Phish** as the category  
+   - **(7)** Enable **Initiate automated investigation**  
+   - Click **Next (8)**
 
-1. Click **Next** to continue.
+   ![](./media/rd_day1_ex3_t2_4.png)
 
-   ![](./media/g25-4.png)
+5. On the **Choose target entities** page, enter a name such as `report-phish (1)` and review the impacted users. Click **Next (2)**.
 
-1. Set a name like `report-phish` and confirm impacted users and actions.
+   ![](./media/rd_day1_ex3_t2_5.png)
 
-   ![](./media/g25-5.png)
+6. Navigate to **Incidents & alerts (1)** → **Alerts (2)**. Locate the alert titled **Administrative action submitted by an Administrator (3)**.
 
-1. Navigate to **Incidents & alerts** → **Alerts** and Look for the alert titled **Administrative action submitted by an Administrator**.
+   ![](./media/rd_day1_ex3_t2_6.png)
 
-   ![](./media/g25-6.png)
+7. Click the alert to open details. Then click **Manage alert**.
 
-1. Click the alert to open details, then click **Manage alert**.
+   ![](./media/rd_day1_ex3_t2_7.png)
 
-   ![](./media/g25-7.png)
+8. In the **Manage alert** panel:
 
-1. In the Manage alert pane:  
- 
-    - Set **Status** to `In progress`  
-    - Assign to your lab user  
-    - Set **Classification** to `True positive – Phishing`  
-    - Click **Save**
+   - **(1)** Set **Status** to `In progress`  
+   - **(2)** Assign to your lab user  
+   - **(3)** Set **Classification** to `True positive – Phishing`  
+   - Click **Save (4)**
 
-      ![](./media/g25-8.png)
+   ![](./media/rd_day1_ex3_t2_8.png)
 
-1. Go to **Email & collaboration** → **Investigations**.Click on the newly triggered investigation linked to your phishing test.
+9. Go to **Email & collaboration (1)** → **Investigations (2)**. Click on the latest investigation entry related to your phishing test **(3)**.
 
-    ![](./media/g25-9.png)
+   ![](./media/rd_day1_ex3_t2_9.png)
 
-1. Review the investigation graph showing the alert path, analyzed entities, and final result.
+10. Review the investigation graph which shows:
 
-   ![](./media/g25-10.png)
+    - **Alert received**  
+    - **Entities analyzed**  
+    - **Mailbox involved**  
+    - **Result**: No threats found
 
-   >**Note:** It may take **10–15 minutes** for the automated investigation to complete and display results.
+    ![](./media/rd_day1_ex3_t2_10.png)
 
-   > You've successfully investigated and responded to a phishing incident using Microsoft Defender XDR.
+    > **Note:** It may take 10–15 minutes for the automated investigation to fully complete and show results.
+
+---
+
+## Review
+
+1. You successfully simulated a phishing attack and reviewed its delivery details.  
+2. You took action using Threat Explorer, submitted the message for Microsoft analysis, and triggered an automated investigation.  
+3. You reviewed the alert, updated its classification, and confirmed the response via the investigation timeline.
+
+---
+
+## Lab Complete
+
+You’ve now explored the full remediation workflow for phishing incidents in Microsoft Defender XDR — from detection to resolution.
+
