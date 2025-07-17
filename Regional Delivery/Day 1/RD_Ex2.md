@@ -2,6 +2,8 @@
 
 In this task, you'll create a custom role in Microsoft Defender to manage access and permissions, simulate a phishing interaction, and investigate user activity using Threat Explorer.
 
+1. On a new tab in the **Microsoft Edge browser** and go to the following URL in the address bar: https://security.microsoft.com.
+
 1. On the **System > Permissions** blade in the Microsoft Defender portal, click **Create a custom role**.
 
    ![](./media/rd_day1_ex2_t1_1.png)
@@ -10,25 +12,28 @@ In this task, you'll create a custom role in Microsoft Defender to manage access
 
    ![](./media/rd_day1_ex2_t1_2.png)
 
-1. On the **Set up the basics** page, enter a role name (e.g., `Test-role`) and click **Next**.
+1. On the **Set up the basics** page, enter a role name **`Test-role` (1)** and click **Next (2)**.
 
    ![](./media/rd_day1_ex2_t1_3.png)
 
-1. On the **Permissions** screen, select **Select custom permissions (1)**.  
-   Then, under **Security data**, choose **Select all permissions (2)**.  
-   Under **Raw data**, select **Select custom permissions (3)** and check **Email & collaboration content (read) (4)**.  
-   Click **Apply (5)**.
+1. On the **Permissions** screen, do the following:
 
-   ![](./media/rd_day1_ex2_t1_4.png)
+   - Select **Select custom permissions (1)** under the main section.
+   - Under **Security data**, choose **Select all permissions (2)**.
+   - Scroll to **Raw data (Email & collaboration)** and select **Select custom permissions (3)**.
+   - Check **Email & collaboration content (read) (4)**.
+   - Click **Apply (5)** to save your selections.
+
+      ![](./media/rd_day1_ex2_t1_4.png)
 
 1. On the **Security operations** screen, select **All read and manage permissions (1)** and click **Apply (2)**.
 
    ![](./media/rd_day1_ex2_t1_5.png)
 
 1. On the **Assignments** screen, provide assignment details:
-   - Assignment name: `Test-assignment` (1)
-   - Select the lab user (e.g., `ODL_User 1781683`) (2)
-   - Choose data source: **Microsoft Defender for Office 365** (3)  
+   - Assignment name: **`Test-assignment` (1)**.
+   - Select the lab user , **`ODL_User ...` (2)**.
+   - Choose data source: **Microsoft Defender for Office 365 (3)**. 
    Click **Add (4)**.
 
    ![](./media/rd_day1_ex2_t1_6.png)
@@ -45,30 +50,38 @@ In this task, you'll create a custom role in Microsoft Defender to manage access
 
    ![](./media/rd_day1_ex2_t1_9.png)
 
-   > Note: This activity simulates a phishing attack and may trigger credential submission logs.
+   > Note: This activity simulates a phishing attack and trigger credential submission logs.
 
-1. On the **Email & collaboration > Explorer** pane, go to the **URL clicks** tab.  
-   Use time and recipient filters to locate the user’s phishing email activity.
+1. In the **Microsoft Defender portal**, do the following:
 
-   ![](./media/rd_day1_ex2_t1_10.png)
+   - Select **Email & collaboration (1)** from the left navigation pane.
+   - Click **Explorer (2)** under the Email section.
+   - In the **URL clicks** tab, select the entry for the clicked timestamp.
+   - Review the **URL (4)** that was clicked to investigate further.
 
-1. Click on the URL entry to open the full click event details.
+      ![](./media/rd_day1_ex2_t1_10.png)
+
+1. Click on the **Open url page** to open the full event details.
 
    ![](./media/rd_day1_ex2_t1_11.png)
 
    > Note: This shows the clicked URL, click metadata, and incident correlation.
 
-1. On the **Email & collaboration > Attack simulation training** blade, go to the **Simulations** tab.  
-   Select the simulation named `Test1`.
+1. In the **Microsoft Defender portal**, do the following:
 
-   ![](./media/rd_day1_ex2_t1_12.png)
+   - Select **Email & collaboration (1)** from the left navigation pane.  
+   - Click **Attack simulation training (2)**.  
+   - Navigate to the **Simulations (3)** tab.  
+   - Locate and select the simulation named **Test1 (4)** from the list.
+
+      ![](./media/rd_day1_ex2_t1_12.png)
 
 1. View the simulation report to observe the results.  
    In this example, 100% of users were compromised and 0% reported the phishing attempt.
 
    ![](./media/rd_day1_ex2_t1_13.png)
 
-1. Click the affected user to view detailed actions taken during the simulation such as reading the email, clicking the link, and submitting credentials.
+1. Click the **Affected user** to view detailed actions taken during the simulation such as reading the email, clicking the link, and submitting credentials.
 
    ![](./media/rd_day1_ex2_t1_14.png)
 
