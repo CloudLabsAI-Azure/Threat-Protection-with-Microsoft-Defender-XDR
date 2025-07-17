@@ -3,115 +3,86 @@
 - Task 1: Microsoft Defender for Cloud Apps-Configuring Cloud Discovery
 - Task 2: Discover and Analyze Shadow IT Using Cloud Discovery 
 
-## Task 1: Microsoft Defender for Cloud Apps-Configuring Cloud Discovery 
+## Task 1: Configure Cloud Discovery in Microsoft Defender for Cloud Apps
 
-1. In the Edge browser, log-in to Microsoft Defender portal using the following link: https://security.microsoft.com/ with the below username and password if prompted to sign in.
+In this task, you'll enable Microsoft Defender for Cloud Apps integration, configure app access blocking, upload snapshot traffic logs, and analyze discovered apps through the Cloud Discovery dashboard.
 
-    - **Email/Username:** <inject key="AzureAdUserEmail"></inject>
- 
-       ![Enter Your Username](./media/tr1.png)
- 
-   - **Password:** <inject key="AzureAdUserPassword"></inject>
+1. On the **Microsoft Defender portal**, select **Settings (1)** from the left navigation menu and click **Cloud Apps (2)**.
 
-       ![Enter Your Password](./media/tr2.png)
+   ![](./media/rd_day1_ex4_t1_3.png)
 
-1.  In the Microsoft Defender portal, navigate and click on **System**, then click on **Settings**.
+2. On the **Cloud apps** settings page, select **Microsoft Defender for Endpoint (1)** from the left panel, then check the box to **Enforce app access (2)**.
 
-     ![Enter Your Password](./media/corg-1-1.png)
+   ![](./media/rd_day1_ex4_t1_4.png)
 
-1.  On the **Settings** page, click on **Endpoints**.
+3. In the same portal, go to **Settings > Endpoints**, then select **Advanced features (1)**. Toggle **Microsoft Defender for Cloud Apps** to **On (2)** and click **Save preferences (3)**.
 
-     ![Enter Your Password](./media/corg-1-2.png)
+   ![](./media/rd_day1_ex4_t1_3.png)
 
-    > **Note:** In case you do not see **Defender for Endpoint**, then open a new tab in Edge browser and enter the following URL and wait for the configuration to be completed:
- 
-    > [https://security.microsoft.com/securitysettings/endpoints/integration?tid=](https://security.microsoft.com/securitysettings/endpoints/integration?tid=)
+4. In the Microsoft Defender portal, under the **Cloud apps** section, click **Cloud discovery (1)** → **Snapshot reports (2)**.
 
-     ![Enter Your Password](./media/corg-1-3.png)
+   ![](./media/rd_day1_ex4_t1_4.png)
 
-1.  On the **Endpoints** page, under the **General** section, click on **Advanced features**.
+5. On the **Snapshot reports** page, click **+ Create snapshot report**.
 
-1.  Turn on the toggle for **Microsoft Defender for Cloud Apps**, then click on the **Save preferences** button.
+   ![](./media/rd_day1_ex4_t1_5.png)
 
-    ![Enter Your Password](./media/corg-1-4.png)
+6. On the **Create new Cloud Discovery snapshot report** wizard, review the **Overview** tab and click **Next**.
 
-1. Navigate back to **Settings** and choose **Cloud Apps**
+   ![](./media/rd_day1_ex4_t1_6.png)
 
-   ![Enter Your Password](./media/tr5.png)
+7. On the **Report Details** page:
+   - Enter a report name (e.g., `Test Report`) **(1)**
+   - From the **Source** dropdown, select **Blue Coat ProxySG - Access log (W3C)** **(2)**
+   - Click **Next (3)** to proceed
 
-    > **Note:** It may take a few minutes for the **Cloud Apps** section to appear. If you don’t see it immediately, wait and refresh the page.
+   ![](./media/rd_day1_ex4_t1_7.png)
 
+8. On the **Upload Traffic Logs** screen, click **Browse...** to select the log file.
 
-1. Under Cloud Discovery, choose **Microsoft Defender for Endpoint** and enable **Enforce App Access**
+   ![](./media/rd_day1_ex4_t1_8.png)
 
-   ![Enter Your Password](./media/tr6.png)
+9. In the file picker, navigate to `C:\Lab Files`, select **bluecoat_sample.log (1)** and click **Open (2)**.
 
-1. Scroll down and under Cloud Discovery, select **Snapshot reports** .
+   ![](./media/rd_day1_ex4_t1_9.png)
 
-   ![Enter Your Password](./media/tr8.png)
+10. Click **Upload logs** to begin uploading your traffic log.
 
-1. Click on **Create Snapshot Report**
+   ![](./media/rd_day1_ex4_t1_10.png)
 
-   ![Enter Your Password](./media/tr9.png)
+11. After upload, the **Snapshot reports** page displays your report with a **Ready** status once processing completes.
 
-1. In the window that appears, click **Next**.
+   ![](./media/rd_day1_ex4_t1_11.png)
 
-   ![Enter Your Password](./media/tr11.png)
+12. Click on the completed report to open the **Cloud Discovery Dashboard**. Review:
+   - App categories  
+   - IP addresses  
+   - Users and Traffic details
 
-1. For the **Report Name** give the name as **Test Report** (1), for source click on the dropdown and select **Blue Coat ProxySG- Access log (W3C)** and click **Next** (3)
+   ![](./media/rd_day1_ex4_t1_12.png)
 
-   ![Enter Your Password](./media/tr12.png)
+13. Scroll through the dashboard to review risk levels by color-coded categories: High (red), Medium (orange), Low (yellow).
 
-1. In the Upload section, click on **Browse** and browse to C:/Lab Files and select the  **bluecoat_sample.log** file.
+   ![](./media/rd_day1_ex4_t1_13.png)
 
-   ![Enter Your Password](./media/tr14.png)
+14. Scroll further to analyze **Top users** and **Discovered apps** based on traffic volume.
 
-   ![Enter Your Password](./media/tr13.png)
+   ![](./media/rd_day1_ex4_t1_14.png)
 
-1. Once you have uploaded, click on **Upload Logs**. You will get a prompt stating that the snapshot report is being generated. Click on **CLose**.
-   
-   ![Enter Your Password](./media/tr15.png)
-   
-1. You will be navigated to the **Snapshot Reports** page and notice that your report is being processed.
+15. Under **Discovered apps**, check usage stats for apps like **Microsoft Exchange Online** and **Microsoft 365 Copilot**.
 
-1. Wait until the status turns to **Ready**. This can take upto 10 minutes.
+   ![](./media/rd_day1_ex4_t1_15.png)
 
-   ![Enter Your Password](./media/tr16.png)
+16. Review **Discovered IP addresses** and **Discovered resources** to assess shadow IT risk.
 
-1. Once it is ready, click on the Test Report and you will be able to see the detailed Dashboard in the Cloud Discovery.
+   ![](./media/rd_day1_ex4_t1_16.png)
 
-   ![Enter Your Password](./media/tr17.png)
+17. Review the **Score metric configuration** and export report if needed.
 
-## Task 2: Discover and Analyze Shadow IT Using Cloud Discovery
+   ![](./media/rd_day1_ex4_t1_17.png)
 
-1. Analyze the report for the following options:
+1. Click the **IP addresses (1)** tab to view network details tied to app usage.
 
-    - **Check the Summary Metrics:** Look at the total number of apps, users, IP addresses, and traffic volume to understand the overall cloud usage.
-    
-    - **Review App Categories**: Identify which categories (e.g., Cloud Computing, Storage, Collaboration) are using the most bandwidth and check if any unsanctioned apps are involved.
-    
-    - **Analyze Risk Levels**: Use the risk level chart to see how much traffic is coming from low, medium, or high-risk apps—focus on medium/high risk.
-    
-    - **Identify Top Users**: Check the “Top entities” section to see which users are generating the most traffic, especially to risky or unsanctioned apps.
-    
-    - **Inspect Discovered Apps**: Review the list of apps in use, their traffic volume, and verify if they are approved or need to be blocked or reviewed further.
+   ![](./media/rd_day1_ex4_t1_17.png)
 
-1. In the dashboard, navigate to **Discovered Apps** section.
-
-   ![Enter Your Password](./media/tr18.png)
-
-1. This section lists all discovered apps, showing their risk score, traffic volume, number of users, and last activity.
-
-   ![Enter Your Password](./media/tr19.png)
-
-1. Click on the elipsis next to any of the applications to mark the app as **Unsactioned**. This action labels the app as not approved for use, helping you monitor and report on its usage in the dashboard.
-
-   ![Enter Your Password](./media/tr20.png)
-
-## Review
-
-1. In this exercise, you learnt how to set up Cloud Discovery and generate a snapshot report using sample logs.
-
-1. You also learnt to analyze app usage, risk levels, and detect unsanctioned apps from the dashboard.
-
-## Click Next to continue
+> You have successfully enabled Cloud App Discovery and uploaded snapshot data for traffic analysis in Microsoft Defender for Cloud Apps.
