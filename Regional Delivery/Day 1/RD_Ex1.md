@@ -198,3 +198,10 @@ In this task, you'll simulate phishing and malware attacks using Microsoft Defen
 > - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.  
 <validation step="064a226a-790e-4e5f-b789-d84483110e38" />
 
+## Review
+In this lab, you have completed the following tasks:
+- Comprehended the Flow Development Lifecycle
+
+### You have successfully completed the lab. Click on **Next >>** to proceed with the next Lab.
+
+![](./media/cord1e1_4.png)
