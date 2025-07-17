@@ -1,8 +1,20 @@
+# Exercise 1: Configuring Threat Policies and Simulating Attacks in Microsoft Defender for Office 365
+
+## Overview
+
+In this exercise, you will configure threat protection policies in Microsoft Defender for Office 365 and use the Attack Simulator to mimic phishing and malware attacks. You will then explore how to analyze these simulated threats using Threat Explorer and real-time detections, gaining insights into how Defender identifies, tracks, and helps mitigate threats within your Office 365 environment.
+
+## Objectives
+
+- Task 1: Configure Threat Policies in Microsoft Defender for Office 365 
+- Task 2: Simulate Phishing and Malware Attacks Using Attack Simulator 
+
 ## Task 1: Configure Threat Policies in Microsoft Defender for Office 365
 
 In this task, you will enable Microsoft Defender CSPM for your environment and configure both standard and strict protection policies using Microsoft Defender XDR.
 
-1. 1. Go to the Azure Portal and search for **Microsoft Defender for Cloud (1)**, select it from the **results (2)**.
+
+1. Go to the Azure Portal and search for **Microsoft Defender for Cloud (1)**, select it from the **results (2)**.
 
    ![rd_day1_ex1_t1_1](./media/rd_day1_ex1_t1_1.png)
 
@@ -14,7 +26,7 @@ In this task, you will enable Microsoft Defender CSPM for your environment and c
 
    > **Note:** Enabling Defender CSPM unlocks advanced posture management features such as attack path analysis and permission visibility.
 
-1. In **Microsoft Defender for Cloud**, navigate to **Inventory (2)** under **General (1)** and verify that the **Defender for Cloud** status is **Off (3)** for the listed resources.
+1. In **Microsoft Defender for Cloud**, navigate to **Inventory (2)** under **General (1)** and view the **Defender for Cloud** status is **Off/On (3)** for the Virtual Machines.
 
    ![rd_day1_ex1_t1_3](./media/rd_day1_ex1_t1_3.png)
 
@@ -27,13 +39,13 @@ In this task, you will enable Microsoft Defender CSPM for your environment and c
    - **Defender CSPM (3)**
    - **Servers under Cloud Workload Protection (4)**
 
-   ![rd_day1_ex1_t1_5](./media/rd_day1_ex1_t1_5.png)
+        ![rd_day1_ex1_t1_5](./media/rd_day1_ex1_t1_5.png)
 
 1. Return to **Inventory** and confirm the **Defender for Cloud** status now shows as **On**.
+   ![rd_day1_ex1_t1_6](./media/cord1e1_2.png)
+    > **Note:** Your Defender protection is now active for all supported workloads.
 
-   > **Note:** Your Defender protection is now active for all supported workloads.
-
-1. Open the [Microsoft 365 Defender Portal](https://security.microsoft.com)
+1. On a new tab in the **Microsoft Edge** browser and go to the following URL in the address bar: [https://security.microsoft.com](https://security.microsoft.com).
 
 1. In the left pane, go to **Email & collaboration (1)** → **Policies & rules (2)** → **Threat policies (3)**.
 
@@ -41,7 +53,7 @@ In this task, you will enable Microsoft Defender CSPM for your environment and c
 
 1. Select **Standard Protection**, then click **Manage protection settings**.
 
-   ![rd_day1_ex1_t1_10](./media/rd_day1_ex1_t1_10.png)
+   ![rd_day1_ex1_t1_10](./media/cord1e1_1.png)
 
 1. In the protection wizard:
     - Choose **Specific recipients (1)**  
