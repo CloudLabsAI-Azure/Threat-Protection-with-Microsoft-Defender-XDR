@@ -290,11 +290,11 @@ In this exercise, you will explore how to secure Microsoft 365 cloud services li
 
 1. Under **Alerts**, enable **Send alert as email**, add a valid address, set daily alert limit to `5`.
 
-10. Click **Create** to save and activate the policy.
+1. Click **Create** to save and activate the policy.
 
     ![](./media/p-1-4.png)
 
-12. Simulate a download again in SharePoint, and downloading `msedge.exe`.
+1. Simulate a download again in SharePoint, and downloading `msedge.exe`.
     
     ![](./media/g-3-6.png)
 
