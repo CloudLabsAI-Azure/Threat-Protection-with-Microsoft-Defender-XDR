@@ -4,7 +4,7 @@
 
 In this task, you’ll simulate a phishing incident, investigate the suspicious message using Threat Explorer, take remediation actions, submit the message to Microsoft for analysis, and review the automated investigation results.
 
-1. Send a test phishing email to your lab user containing suspicious links such as:
+1. Send a test email to your lab user containing links such as:
 
    - https://youtube.com/  
    - https://openai.com/  
