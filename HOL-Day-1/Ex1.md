@@ -104,90 +104,90 @@ In this task, you'll simulate phishing and malware attacks using Microsoft Defen
 
    ![rd_day1_ex1_t2_1](./media/rd_day1_ex1_t2_1.png)
 
-2. On the **Create your own simulation** screen, select **Launch a single simulation (1)** and click **Continue (2)**.
+1. On the **Create your own simulation** screen, select **Launch a single simulation (1)** and click **Continue (2)**.
 
    ![rd_day1_ex1_t2_2](./media/rd_day1_ex1_t2_2.png)
 
-4. Under **Select technique**, choose **Credential Harvest (1)** and click **Next (2)**.
+1. Under **Select technique**, choose **Credential Harvest (1)** and click **Next (2)**.
 
    ![rd_day1_ex1_t2_3](./media/rd_day1_ex1_t2_3.png)
 
-4. In the **Name simulation** step, enter a simulation name as `Test1` in the **Simulation name (1)** field, and click **Next (2)**.
+1. In the **Name simulation** step, enter a simulation name as `Test1` in the **Simulation name (1)** field, and click **Next (2)**.
 
    ![rd_day1_ex1_t2_4](./media/rd_day1_ex1_t2_4.png)
 
-5. Under **Select payload and login page**, choose **Global payloads (1)** and select a phishing payload such as **Expense report sharing - English (2)**. Click **Next (3)**.
+1. Under **Select payload and login page**, choose **Global payloads (1)** and select a phishing payload such as **Expense report sharing - English (2)**. Click **Next (3)**.
 
    ![rd_day1_ex1_t2_5](./media/rd_day1_ex1_t2_5.png)
 
-6. On the **Target users** screen, select **Include only specific users and groups (1)**, click **Add users (2)**, and then click **Next (3)**.
+1. On the **Target users** screen, select **Include only specific users and groups (1)**, click **Add users (2)**, and then click **Next (3)**.
 
    ![rd_day1_ex1_t2_6](./media/rd_day1_ex1_t2_6.png)
 
-7. On the **Add users** screen, search for the **user email (1)**, select the **user (2)** from the list, and click **Add User(s) (3)**.
+1. On the **Add users** screen, search for the **user email (1)**, select the **user (2)** from the list, and click **Add User(s) (3)**.
 
    ![rd_day1_ex1_t2_7](./media/rd_day1_ex1_t2_7.png)
 
-8. On the **Target users** screen, confirm the **User** has been added and click **Next**.
+1. On the **Target users** screen, confirm the **User** has been added and click **Next**.
 
-9. On the **Assign training** screen, select **Microsoft training experience (1)**, choose **Assign training for me (2)**, set the due date to **7 days after Simulation ends (3)**, and click **Next (4)**.
+1. On the **Assign training** screen, select **Microsoft training experience (1)**, choose **Assign training for me (2)**, set the due date to **7 days after Simulation ends (3)**, and click **Next (4)**.
 
    ![rd_day1_ex1_t2_9](./media/rd_day1_ex1_t2_9.png)
 
-10. Under **Select landing page**, choose a **login page template (1)** and click **Next (2)**.
+1. Under **Select landing page**, choose a **login page template (1)** and click **Next (2)**.
 
     ![rd_day1_ex1_t2_10](./media/rd_day1_ex1_t2_10.png)
 
-11. In the **End user notification** section, select **Microsoft default notification (1)** and configure:
+1. In the **End user notification** section, select **Microsoft default notification (1)** and configure:
     - Positive reinforcement: **Deliver during simulation (2**)
     - Training reminder: **Weekly (3)**
     Click **Next (4)**.
 
         ![rd_day1_ex1_t2_11](./media/rd_day1_ex1_t2_11.png)
 
-12. In the **Launch details** step, select **Launch this simulation as soon as I'm done (1)**, set **duration to 2 days (2)**, and click **Next (3)**.
+1. In the **Launch details** step, select **Launch this simulation as soon as I'm done (1)**, set **duration to 2 days (2)**, and click **Next (3)**.
 
     ![rd_day1_ex1_t2_12](./media/rd_day1_ex1_t2_12.png)
 
-13. Review the configuration summary and click **Submit** to start the simulation.
+1. Review the configuration summary and click **Submit** to start the simulation.
 
     ![rd_day1_ex1_t2_13](./media/rd_day1_ex1_t2_13.png)
 
-14. On completion, click **Done**.
+1. On completion, click **Done**.
 
     ![rd_day1_ex1_t2_14](./media/rd_day1_ex1_t2_14.png)
 
-15. 16. Verify the simulation appears in the dashboard as **In progress**.
+1. Verify the simulation appears in the dashboard as **In progress**.
 
     ![rd_day1_ex1_t2_15](./media/rd_day1_ex1_t2_15.png)
 
-16. To simulate a **Malware Attack**, go back to **Attack simulation training**, click **Launch your own simulation**, and choose **Malware Attachment (1)**. Click **Next (2)**.
+1. To simulate a **Malware Attack**, go back to **Attack simulation training**, click **Launch your own simulation**, and choose **Malware Attachment (1)**. Click **Next (2)**.
 
     ![rd_day1_ex1_t2_16](./media/rd_day1_ex1_t2_16.png)
 
     > **Note:** You’ve successfully launched a phishing simulation. It will monitor how users interact with suspicious emails.
 
-17. Enter a new simulation name **`Test2`** and click **Next (2)**.
+1. Enter a new simulation name **`Test2`** and click **Next (2)**.
 
     ![rd_day1_ex1_t2_17](./media/rd_day1_ex1_t2_17.png)
 
-18. Under **Payload selection**, choose a malware attachment like **HR notification on update of contract - English (2)** and click **Next (3)**.
+1. Under **Payload selection**, choose a malware attachment like **HR notification on update of contract - English (2)** and click **Next (3)**.
 
     ![rd_day1_ex1_t2_18](./media/rd_day1_ex1_t2_18.png)
 
-19. In the **End user notification** screen, select **Microsoft default notification (1)**, ensure **Deliver during simulation (2)** and **Weekly reminder (3)** are selected, and click **Next (4)**.
+1. In the **End user notification** screen, select **Microsoft default notification (1)**, ensure **Deliver during simulation (2)** and **Weekly reminder (3)** are selected, and click **Next (4)**.
 
     ![rd_day1_ex1_t2_19](./media/rd_day1_ex1_t2_19.png)
 
-20. Set the **Launch configuration (1)** to launch immediately, set duration to **2 days (2)**, and click **Next (3)**.
+1. Set the **Launch configuration (1)** to launch immediately, set duration to **2 days (2)**, and click **Next (3)**.
 
     ![rd_day1_ex1_t2_20](./media/rd_day1_ex1_t2_20.png)
 
-21. On the **Select end user notification** screen, choose **Microsoft default notification (1)**, set **Deliver during simulation (2)** and **Weekly (3)** as delivery preferences, then click **Next (4)**.
+1. On the **Select end user notification** screen, choose **Microsoft default notification (1)**, set **Deliver during simulation (2)** and **Weekly (3)** as delivery preferences, then click **Next (4)**.
 
     ![rd_day1_ex1_t2_21](./media/rd_day1_ex1_t2_21.png)
 
-22. Review the details and click **Submit** to complete the malware simulation setup.
+1. Review the details and click **Submit** to complete the malware simulation setup.
 
     ![rd_day1_ex1_t2_22](./media/rd_day1_ex1_t2_22.png)
 
@@ -201,88 +201,92 @@ In this task, you'll simulate phishing and malware attacks using Microsoft Defen
 
 ## Task 3: Analyze Threats with Threat Explorer and Real-Time Detections
 
-In this task, you'll create a custom role in Microsoft Defender to manage access and permissions for specific users or groups.
+In this task, you'll create a custom role in Microsoft Defender to manage access and permissions, simulate a phishing interaction, and investigate user activity using Threat Explorer.
 
-1. In the [Microsoft 365 Defender Portal](https://security.microsoft.com), go to  **System** → **Permissions**
+1. On a new tab in the **Microsoft Edge browser** and go to the following URL in the address bar: https://security.microsoft.com.
 
-1. Click **Create a custom role**.
+1. On the **System > Permissions** blade in the Microsoft Defender portal, click **Create a custom role**.
 
-   ![](./media/gp-1-1.png)
+   ![](./media/rd_day1_ex2_t1_1.png)
 
-1. Click **Create custom role** under **Microsoft Defender XDR**.
+1. Under the **Microsoft Defender XDR** section, click **Create custom role**.
 
-   ![](./media/gp-1-2.png)
+   ![](./media/rd_day1_ex2_t1_2.png)
 
-1. Name the role (e.g., `Test-role`) and optionally add a description.Click **Next**.
+1. On the **Set up the basics** page, enter a role name **`Test-role` (1)** and click **Next (2)**.
 
-   ![](./media/gp-1-3.png)
+   ![](./media/rd_day1_ex2_t1_3.png)
 
-1. Select **Select custom permissions**, then:
+1. On the **Permissions** screen, do the following:
 
-   - Under **Security data**, choose **Select all permissions**
-   - Under **Raw data**, select custom permissions and check **Email & collaboration content (read)**
+   - Select **Select custom permissions (1)** under the main section.
+   - Under **Security data**, choose **Select all permissions (2)**.
+   - Scroll to **Raw data (Email & collaboration)** and select **Select custom permissions (3)**.
+   - Check **Email & collaboration content (read) (4)**.
+   - Click **Apply (5)** to save your selections.
 
-1. Click **Apply**.
+      ![](./media/rd_day1_ex2_t1_4.png)
 
-   ![](./media/gp-1-4.png)
+1. On the **Security operations** screen, select **All read and manage permissions (1)** and click **Apply (2)**.
 
-1. In the **Security operations** tab, choose **All read and manage permissions**, then click **Apply**.
+   ![](./media/rd_day1_ex2_t1_5.png)
 
-   ![](./media/gp-1-4-1.png)
+1. On the **Assignments** screen, provide assignment details:
+   - Assignment name: **`Test-assignment` (1)**.
+   - Select the lab user , **`ODL_User ...` (2)**.
+   - Choose data source: **Microsoft Defender for Office 365 (3)**. 
+   Click **Add (4)**.
 
-1. Name the assignment (e.g., `Test-assignment`)
-   
-1. Add your lab user (e.g., `ODL_User`)
-   
-1. For data sources, choose **Microsoft Defender for Office 365**
+   ![](./media/rd_day1_ex2_t1_6.png)
 
-1. Click **Add**.
+1. On the **Review and finish** page, verify the assigned permissions and users, then click **Submit (2)**.
 
-   ![](./media/gp-1-5.png)
+   ![](./media/rd_day1_ex2_t1_7.png)
 
-1. Check the permissions and assignments summary, then click **Submit**.
+1. Open the lab user’s mailbox and locate the phishing email titled **"File inloop Expenses Report.xlsx Has Been Shared with ODL_User"**.
 
-   ![](./media/gp-1-6.png)
+   ![](./media/rd_day1_ex2_t1_8.png)
 
-1. Open the lab user's mailbox and locate the phishing email titled **"File inloop Expenses Report.xlsx Has Been Shared with ODL_User 1781683"**
+1. Click **Open** in the email to simulate a phishing link click.
 
-   ![](./media/gt-1-1.png)
+   ![](./media/rd_day1_ex2_t1_9.png)
 
-1. Clicking **Open** simulates a phishing link click and may trigger a credential submission event.
+   > Note: This activity simulates a phishing attack and trigger credential submission logs.
 
-   ![](./media/gt-1-2.png)
+1. In the **Microsoft Defender portal**, do the following:
 
-   > **Note:** This interaction will reflect in the **simulation report** and under **URL clicks** in **Threat Explorer**.
+   - Select **Email & collaboration (1)** from the left navigation pane.
+   - Click **Explorer (2)** under the Email section.
+   - In the **URL clicks** tab, select the entry for the clicked timestamp.
+   - Review the **URL (4)** that was clicked to investigate further.
 
-1. Go to the **Microsoft 365 Defender Portal** → **Email & collaboration** → **Explorer** → **URL clicks**
+      ![](./media/rd_day1_ex2_t1_10.png)
 
-1. Filter by time and user to find the phishing email interaction.
+1. Click on the **Open url page** to open the full event details.
 
-   ![](./media/gp-2-1.png)
+   ![](./media/rd_day1_ex2_t1_11.png)
 
-1. Click on the URL entry to view detailed information.
+   > Note: This shows the clicked URL, click metadata, and incident correlation.
 
-   ![](./media/gp-2-2.png)
+1. In the **Microsoft Defender portal**, do the following:
 
-    > **Note:** This shows the full URL, click metadata, and confirms the phishing interaction.
+   - Select **Email & collaboration (1)** from the left navigation pane.  
+   - Click **Attack simulation training (2)**.  
+   - Navigate to the **Simulations (3)** tab.  
+   - Locate and select the simulation named **Test1 (4)** from the list.
 
-1. Navigate to**Email & collaboration** → **Attack simulation training** → **Simulations**
+      ![](./media/rd_day1_ex2_t1_12.png)
 
-1. Select the simulation titled `Test1`.
+1. View the simulation report to observe the results.  
+   In this example, 100% of users were compromised and 0% reported the phishing attempt.
 
-   ![](./media/gt5-3.png)
+   ![](./media/rd_day1_ex2_t1_13.png)
 
-1. The simulation report reveals that **100% of users were compromised**, and **0% reported** the email.
+1. Click the **Affected user** to view detailed actions taken during the simulation such as reading the email, clicking the link, and submitting credentials.
 
-   ![](./media/gt5-2.png)
+   ![](./media/rd_day1_ex2_t1_14.png)
 
-   > **Note:** Helps assess end-user awareness and effectiveness of security training.
-
-1. Select the user from the simulation results to see specific actions. You'll see the sequence of actions like reading the message, clicking the link, and submitting credentials.
-
-   ![](./media/gt5-1.png)
-
-   > **Note:** These insights help evaluate user behavior and response during simulated phishing attacks.
+   > Note: This data helps evaluate user behavior and identify high-risk individuals.
 
 ## Review
 
