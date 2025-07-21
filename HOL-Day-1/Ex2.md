@@ -83,119 +83,125 @@ In this task, you’ll simulate a phishing incident, investigate the suspicious 
 
 ## Task 2: Configure Anti-Phishing and Safe Links Policies
 
-1. Go to the [Microsoft 365 Defender Portal](https://security.microsoft.com) Navigate to **Email & collaboration** → **Policies & rules** → **Threat policies**  and click on **Anti-phishing** under the Policies section.
+In this task, you’ll configure Microsoft Defender anti-phishing and Safe Links policies to detect and prevent malicious emails and URLs.
 
-    ![](./media/g25-11.png)
+1. On the Microsoft Defender portal (https://security.microsoft.com), go to **Email & collaboration (1)** → **Policies & rules (2)** → click **Threat policies** → select **Anti-phishing**.
 
-1. Click **+ Create** to start configuring a custom anti-phishing policy.
+   ![](./media/rd_day1_ex2_t2_6.png)
 
-    ![](./media/g25-12.png)
+1. Click **+ Create (1)** to create a new anti-phishing policy.
 
-1. Enter a name such as `Anti-Phish` and click **Next**.
+   ![](./media/rd_day1_ex2_t2_7.png)
 
-    ![](./media/g25-13.png)
+1. Enter a name such as `Anti-Phish (1)` and click **Next (2)**.
 
-1. Add your lab user under **Users**, then click **Next**.
+   ![](./media/rd_day1_ex2_t2_8.png)
 
-    ![](./media/g25-14.png)
-   
-1. Set **Phishing email threshold** to `4 - Most Aggressive` for strict detection.(Other impersonation settings can be skipped for now.)
+1. Under **Users**, select your lab user (1), then click **Next (2)**.
 
-    ![](./media/g25-15.png)
+   ![](./media/rd_day1_ex2_t2_9.png)
 
-1. Enable all recommended options under trusted senders and spoofing intelligence and click **Next** to continue.
-    
-    -  Enable mailbox intelligence  
-    -  Enable impersonation intelligence  
-    -  Enable spoof intelligence  
+1. Set the **Phishing email threshold** to `4 - Most aggressive (1)` and click **Next (2)**.
 
-       ![](./media/g25-16.png)
+   ![](./media/rd_day1_ex2_t2_10.png)
 
-1. Set the following actions for detected spoofing and impersonation and click **Next** to continue.
+1. Enable all intelligence features:
 
-   - Move impersonated messages to **Junk Email**
-   - Honor DMARC policies:
-      - If `p=quarantine` → move to Junk
-      - If `p=reject` → quarantine
-      - If spoof intelligence triggers → move to Junk
+   - **(1)** Enable mailbox intelligence  
+   - **(2)** Enable impersonation protection  
+   - **(3)** Enable spoof intelligence  
+   - Click **Next (4)** to continue
 
-        ![](./media/g25-17.png)
+   ![](./media/rd_day1_ex2_t2_11.png)
 
-1. Go to **Email & collaboration** → **Policies & rules** → **Threat policies**.Click on **Safe Links** under the Policies section.
+1. Set spoof and impersonation actions:
 
-   ![](./media/g25-18.png)
+   - **(1)** Impersonated user → Move to Junk  
+   - **(2)** Spoof with DMARC quarantine → Move to Junk  
+   - **(3)** Spoof with DMARC reject → Quarantine  
+   - **(4)** Spoof intelligence → Move to Junk  
+   - Click **Next (5)**
 
-1. Click **+ Create**, name the policy (e.g., `Anti-Safe`), then click **Next**.
+   ![](./media/rd_day1_ex2_t2_12.png)
 
-   ![](./media/g25-19.png)
+1. Back in **Threat policies**, click **Safe Links (3)** under Policies.
 
-1. Add your lab user (e.g., `ODL_User 1777538`) under **Users** and proceed.
+   ![](./media/rd_day1_ex2_t2_13.png)
 
-   ![](./media/g25-20.png)
+1. Click **+ Create**, enter a name such as `Anti-Safe (1)` and click **Next (2)**.
 
-1. Enable all recommended protection settings. Click **Next**.
+   ![](./media/rd_day1_ex2_t2_14.png)
 
-    - Real-time URL scanning  
+1. Add the lab user (1) under **Users**, then click **Next (2)**.
+
+    ![](./media/rd_day1_ex2_t2_15.png)
+
+1. Enable all recommended URL protection settings:
+
     - Safe Links for email, Teams, and Office apps  
+    - Real-time scanning  
+    - Wait for scan before delivery  
     - Track user clicks  
-    - Wait for URL scanning before delivery  
+    - Click **Next**
 
-      ![](./media/g25-21.png)
+    ![](./media/rd_day1_ex2_t2_16.png)
 
-1. Go to **Email & collaboration** → **Policies & rules** → **Alert policy**.
+1. Go to **Email & collaboration (1)** → **Policies & rules (2)** → Click on **Alert policy (3)**.
 
-   ![](./media/tbh-1-1.png)
+    ![](./media/rd_day1_ex2_t2_17.png)
 
 1. Click **+ New Alert Policy**.
 
-   ![](./media/tbh-1-2.png)
+    ![](./media/rd_day1_ex2_t2_18.png)
 
-1. Fill in the following details and click **Next**.
-   
-    - **Name**: `Alert-Safe`
-    - **Severity**: `High`
-    - **Category**: `Threat management`
+1. Fill the following details and click **Next (4)**:
 
-       ![](./media/tbh-1-3.png)
+    - **(1)** Name: Alert-Safe  
+    - **(2)** Severity: High  
+    - **(3)** Category: Threat Management
 
-1. Set the alert logic and click **Next**.
-  
-    - **Activity**: `Detected malware in an email message`
-    - **Mail direction**: `Inbound`
-    - **Trigger**: `Every time an activity matches the rule`
+    ![](./media/rd_day1_ex2_t2_19.png)
 
-       ![](./media/tbh-1-4.png)
+1. Define the alert rule logic:
 
-1. Add the email recipient to get notified about the alert.Click **Next**
+    - **(1)** Activity: Detected malware in an email  
+    - **(2)** Mail direction: Inbound  
+    - **(3)** Trigger: Every time activity matches  
+    - Click **Next (4)**
 
-   ![](./media/tbh-1-5.png)
+    ![](./media/rd_day1_ex2_t2_20.png)
 
-1. Enable the alert immediately and click **Submit** to create the policy.
+1. Add alert recipients (1) and click **Next (2)**.
 
-   ![](./media/tbh-1-6.png)
+    ![](./media/rd_day1_ex2_t2_21.png)
 
-1. Send an email to the lab user with the following links:
+1. Choose **Yes, turn it on right away (1)** and click **Submit (2)** to create the policy.
 
-   - [https://www.amtso.org/check-desktop-phishing-page/](https://www.amtso.org/check-desktop-phishing-page/)
-   - [https://malware.wicar.org/data/eicar.com.txt](https://malware.wicar.org/data/eicar.com.txt)
+    ![](./media/rd_day1_ex2_t1_11.png)
 
-      ![](./media/tbh-1-7.png)
+1. Send a test email to the lab user with links:
 
-      > **Note:** These are safe test links designed to simulate phishing and malware detection.
+    - https://www.amtso.org/check-desktop-phishing-page/  
+    - https://malware.wicar.org/data/eicar.com.txt  
 
-1. Go to **Email & collaboration** → **Explorer** and locate the **Test-safe** email.
+    ![](./media/rd_day1_ex2_t1_12.png)
 
-   ![](./media/tbh-1-8.png)
+    > **Note:** These are legitimate safe testing links for phishing and malware simulation.
 
-1. Click **Open email entity** to inspect the detection and delivery information.
+1. Go to **Email & collaboration (1)** → **Explorer (2)** and open the test mail **Test-safe (3)**.
 
-1. Check details like quarantine status and detection technologies used.
+    ![](./media/rd_day1_ex2_t1_13.png)
 
-   ![](./media/tbh-1-9.png)
+1. Click **Open email entity (1)** and review:
 
-1. Navigate to **Investigation & response** → **Incidents**.Open the incident titled **Alert-Link**.
+    - **Original location**: Quarantine  
+    - **Detection technologies**: URL malicious reputation, mixed analysis  
 
-   ![](./media/tbh-1-10.png)
+    ![](./media/rd_day1_ex2_t1_14.png)
+
+1. Navigate to **Investigation & response (1)** → **Incidents (2)**, select incident **Alert-Link (3)** and click to view details (4).
+
+    ![](./media/rd_day1_ex2_t1_15.png)
 
    >  Dive deep into the incident: review alerts, evidence, entities involved, and the automated investigation trail.
 
