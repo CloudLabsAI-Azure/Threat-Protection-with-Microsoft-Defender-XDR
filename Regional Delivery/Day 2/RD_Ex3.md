@@ -33,7 +33,7 @@ In this task, you will simulate a Lateral Movement attack and detect it using Mi
       > **Note:** The user will be logged out of the virtual machine as part of the containment measures initiated by the Defender in response to the user's attempted lateral movement attack.
 
 
-### Task 4: Investigate Threats and User Timelines 
+### Task 2: Investigate Threats and User Timelines 
 
 In this task you will analyze using user timelines and alert details in the Defender portal.
 
@@ -49,7 +49,7 @@ In this task you will analyze using user timelines and alert details in the Defe
 
       ![](./media/E1T3S3.png)
 
-### Task 2: Integrate Defender for Identity with Microsoft 365 Defender Portal
+### Task 3: Integrate Defender for Identity with Microsoft 365 Defender Portal
 
 In this task you will enable integration to view Defender for Identity incidents in the unified Microsoft 365 Defender portal and Microsoft Sentinel.
 
@@ -72,56 +72,4 @@ In this task you will enable integration to view Defender for Identity incidents
 1. Click on **Connect incidents & alerts** and navigate back to Data connectors page and make sure that **Defender for XDR** shows as connected
 
       ![](./media/E1T4S5.png)
-
-
-### Task 5: Integrate Defender for Identity with Microsoft 365 Defender Portal
-
-In this task you will enable integration to view Defender for Identity incidents in the unified Microsoft 365 Defender portal and Microsoft Sentinel.
-
-1. Navigate to `portal.azure.com` and navigate to **Microsoft Sentinel** and select `loganalyticworkspace`.
-
-      ![](./media/E1T4S1.png)
-
-1. In the left-hand pane, click **Content hub**. 
-
-      ![](./media/Lab02-task1-contenthub1.png)
-
-1. Search for **Defender for XDR** and select it and click on **Install** and wait for the installation to be complete
-
-      ![](./media/E1T4S3.png)
-
-1. Return to the Sentinel workspace and navigate to **Data Connectors** and click on  **Defender for XDR** and select **Open connector page**.
-
-      ![](./media/E1T4S4.png)
-
-1. Click on **Connect incidents & alerts** and navigate back to Data connectors page and make sure that **Defender for XDR** shows as connected
-
-      ![](./media/E1T4S5.png)
-
-### Task 3: Review and Run Advanced Hunting Queries for Identity Signals
-
-In this task you will use advanced hunting queries in the Defender portal to detect identity-based threats.
-
-1. In the Microsoft Defender portal, click **Hunting** in the left-hand navigation pane and select **Advanced hunting** from the menu.
-
-      ![](./media/E1T5S1.png)
-
-1. In the query editor, paste the following KQL query to detect Lateral movement attacks:
-
-   ```kql
-   AlertInfo
-   | summarize AlertCount = count() by Title, DetectionSource
-   | order by AlertCount desc
-   ```
-   - Click **Run query** to execute.
-
-      ![](./media/E1T5S2.png)
-
-1. Review the results table for all the alerts, 
-
-1. Click **Save** in the top-right corner.
-   - Name the query as `Alert1`.
-   - Select **Save**.
-
-      ![](./media/E1T5S4.png)
 
