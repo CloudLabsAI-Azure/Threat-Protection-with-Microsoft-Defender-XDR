@@ -87,25 +87,25 @@ In this task, you will create a custom Anti-Phishing policy and Safe Links polic
 
 1. On the **Microsoft Defender portal**, go to **Email & collaboration (1)** > **Policies & rules (2)**. Under **Policies**, select **Anti-phishing (3)**.
 
-   ![](../media/rd_day1_ex2_t2_1.png)
+   ![](./media/rd_day1_ex2_t2_1.png)
 
-2. On the **Anti-phishing** page, click **Create (1)** to begin a new policy.
+1. On the **Anti-phishing** page, click **Create (1)** to begin a new policy.
 
-   ![](../media/rd_day1_ex2_t2_2.png)
+   ![](./media/rd_day1_ex2_t2_2.png)
 
-3. Enter the name **Anti-Phish (1)** and click **Next (2)**.
+1. Enter the name **Anti-Phish (1)** and click **Next (2)**.
 
-   ![](../media/rd_day1_ex2_t2_3.png)
+   ![](./media/rd_day1_ex2_t2_3.png)
 
-4. Under **Users, groups, and domains**, add the user **ODL User (1)** and click **Next (2)**.
+1. Under **Users, groups, and domains**, add the user **ODL User (1)** and click **Next (2)**.
 
-   ![](../media/rd_day1_ex2_t2_4.png)
+   ![](./media/rd_day1_ex2_t2_4.png)
 
-5. Set the **Phishing email threshold** to **4 - Most Aggressive** to enable maximum protection.
+1. Set the **Phishing email threshold** to **4 - Most Aggressive** to enable maximum protection.
 
-   ![](../media/rd_day1_ex2_t2_5.png)
+   ![](./media/rd_day1_ex2_t2_5.png)
 
-6. Under **Trusted senders and domains**, check the following options:
+1. Under **Trusted senders and domains**, check the following options:
 
    - **Enable mailbox intelligence (1)**
    - **Enable Intelligence for impersonation protection (2)**
@@ -113,9 +113,9 @@ In this task, you will create a custom Anti-Phishing policy and Safe Links polic
      
    Then click **Next (4)**.
 
-   ![](../media/rd_day1_ex2_t2_6.png)
+   ![](./media/rd_day1_ex2_t2_6.png)
 
-7. Under **Message actions**, configure the following:
+1. Under **Message actions**, configure the following:
 
    - If Mailbox Intelligence detects an impersonated user:  
      **Move the message to the recipients’ Junk Email folders (1)**
@@ -128,21 +128,21 @@ In this task, you will create a custom Anti-Phishing policy and Safe Links polic
      
    Click **Next (5)**.
 
-   ![](../media/rd_day1_ex2_t2_7.png)
+   ![](./media/rd_day1_ex2_t2_7.png)
 
-8. Back on the **Threat policies** page, go to **Email & collaboration (1)** > **Policies & rules (2)**, then select **Safe Links (3)**.
+1. Back on the **Threat policies** page, go to **Email & collaboration (1)** > **Policies & rules (2)**, then select **Safe Links (3)**.
 
-   ![](../media/rd_day1_ex2_t2_8.png)
+   ![](./media/rd_day1_ex2_t2_8.png)
 
-9. Enter the policy name **Anti-Safe (1)** and click **Next (2)**.
+1. Enter the policy name **Anti-Safe (1)** and click **Next (2)**.
 
-   ![](../media/rd_day1_ex2_t2_9.png)
+   ![](./media/rd_day1_ex2_t2_9.png)
 
-10. Under **Users and domains**, add the user **ODL_User 1777538 (1)** and click **Next (2)**.
+1. Under **Users and domains**, add the user **ODL_User 1777538 (1)** and click **Next (2)**.
 
-    ![](../media/rd_day1_ex2_t2_10.png)
+    ![](./media/rd_day1_ex2_t2_10.png)
 
-11. In **URL & click protection settings**, ensure all checkboxes are enabled, including:
+1. In **URL & click protection settings**, ensure all checkboxes are enabled, including:
 
     - Email Safe Links
     - URL scanning
@@ -151,17 +151,17 @@ In this task, you will create a custom Anti-Phishing policy and Safe Links polic
 
     Then click **Next**.
 
-    ![](../media/rd_day1_ex2_t2_11.png)
+    ![](./media/rd_day1_ex2_t2_11.png)
 
-12. Navigate to **Email & collaboration (1)** > **Policies & rules (2)** > **Alert policy (3)**.
+1. Navigate to **Email & collaboration (1)** > **Policies & rules (2)** > **Alert policy (3)**.
 
-    ![](../media/rd_day1_ex2_t2_12.png)
+    ![](./media/rd_day1_ex2_t2_12.png)
 
-13. On the **Alert policy** page, click **+ New Alert Policy**.
+1. On the **Alert policy** page, click **+ New Alert Policy**.
 
-    ![](../media/rd_day1_ex2_t2_13.png)
+    ![](./media/rd_day1_ex2_t2_13.png)
 
-14. Enter the following details:
+1. Enter the following details:
     
     - **Name (1):** Alert-Safe  
     - **Severity (2):** High  
@@ -169,9 +169,9 @@ In this task, you will create a custom Anti-Phishing policy and Safe Links polic
       
     Click **Next (4)**.
 
-    ![](../media/rd_day1_ex2_t2_14.png)
+    ![](./media/rd_day1_ex2_t2_14.png)
 
-15. For the activity condition, configure:
+1. For the activity condition, configure:
 
     - **Activity (1):** Detected malware in an email message  
     - **Mail direction (2):** Inbound  
@@ -179,41 +179,41 @@ In this task, you will create a custom Anti-Phishing policy and Safe Links polic
       
     Click **Next (4)**.
 
-    ![](../media/rd_day1_ex2_t2_15.png)
+    ![](./media/rd_day1_ex2_t2_15.png)
 
-16. Add the recipient's email address **(1)** and click **Next (2)**.
+1. Add the recipient's email address **(1)** and click **Next (2)**.
 
-    ![](../media/rd_day1_ex2_t2_16.png)
+    ![](./media/rd_day1_ex2_t2_16.png)
 
-17. Review the alert settings, choose **Yes, turn it on right away (1)**, and click **Submit (2)**.
+1. Review the alert settings, choose **Yes, turn it on right away (1)**, and click **Submit (2)**.
 
-    ![](../media/rd_day1_ex2_t2_17.png)
+    ![](./media/rd_day1_ex2_t2_17.png)
 
-> **Note:** Your alert policy is now active and will trigger if matching activity is detected.
+   > **Note:** Your alert policy is now active and will trigger if matching activity is detected.
 
-18. Send a test email with sample malicious links to simulate a threat:
+1. Send a test email with sample malicious links to simulate a threat:
     
     - **(1)** https://www.amtso.org/check-desktop-phishing-page/  
     - **(2)** https://malware.wicar.org/data/eicar.com.txt  
     - Click **Send (3)** to deliver the email.
 
-    ![](../media/rd_day1_ex2_t2_18.png)
+    ![](./media/rd_day1_ex2_t2_18.png)
 
-19. Navigate to **Email & collaboration (1)** > **Explorer (2)** and locate the test email **Test-safe (3)**.
+1. Navigate to **Email & collaboration (1)** > **Explorer (2)** and locate the test email **Test-safe (3)**.
 
-    ![](../media/rd_day1_ex2_t2_19.png)
+    ![](./media/rd_day1_ex2_t2_19.png)
 
-20. Click **Open email entity (1)** and verify that:
+1. Click **Open email entity (1)** and verify that:
     
     - **Original location:** Quarantine  
     - **Delivery action:** Blocked  
     - **Detection technologies:** URL malicious reputation, Mixed analysis detection  
 
-    ![](../media/rd_day1_ex2_t2_20.png)
+    ![](./media/rd_day1_ex2_t2_20.png)
 
-21. Finally, go to **Investigation & response (1)** > **Incidents (2)**. Select the alert incident **Alert-Link (3)** and click on the incident name **(4)** to investigate further.
+1. Finally, go to **Investigation & response (1)** > **Incidents (2)**. Select the alert incident **Alert-Link (3)** and click on the incident name **(4)** to investigate further.
 
-    ![](../media/rd_day1_ex2_t2_21.png)
+    ![](./media/rd_day1_ex2_t2_21.png)
 
    >  Dive deep into the incident: review alerts, evidence, entities involved, and the automated investigation trail.
 
