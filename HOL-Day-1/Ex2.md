@@ -18,7 +18,7 @@ In this task, you’ll simulate a phishing incident, investigate the suspicious 
    - https://youtube.com/  
    - https://openai.com/  
 
-   ![](./media/rd_day1_ex3_t2_1.png)
+      ![](./media/rd_day1_ex3_t2_1.png)
 
 2. On the Microsoft Defender portal (https://security.microsoft.com), go to **Email & collaboration (1)** → **Explorer (2)**. Select the phishing email entry **Test Phishing (4)**.
 
@@ -77,9 +77,9 @@ In this task, you’ll simulate a phishing incident, investigate the suspicious 
 
     ![](./media/rd_day1_ex3_t2_10.png)
 
-   >**Note:** It may take **10–15 minutes** for the automated investigation to complete and display results.
+      >**Note:** It may take **10–15 minutes** for the automated investigation to complete and display results.
 
-   > You've successfully investigated and responded to a phishing incident using Microsoft Defender XDR.
+      > You've successfully investigated and responded to a phishing incident using Microsoft Defender XDR.
 
 ## Task 2: Configure Anti-Phishing and Safe Links Policies
 
@@ -110,12 +110,11 @@ In this task, you will create a custom Anti-Phishing policy and Safe Links polic
    - **Enable mailbox intelligence (1)**
    - **Enable Intelligence for impersonation protection (2)**
    - **Enable spoof intelligence (3)**  
+   - Then click **Next (4)**. 
      
-   Then click **Next (4)**.
+      ![](./media/rd_day1_ex2_t2_6.png)
 
-   ![](./media/rd_day1_ex2_t2_6.png)
-
-1. Under **Message actions**, configure the following:
+1. Under **Message actions**, configure the following and click **Next (5)**.
 
    - If Mailbox Intelligence detects an impersonated user:  
      **Move the message to the recipients’ Junk Email folders (1)**
@@ -125,10 +124,8 @@ In this task, you will create a custom Anti-Phishing policy and Safe Links polic
      **Quarantine the message (3)**
    - For spoof detection by spoof intelligence:  
      **Move to Junk Email (4)**  
-     
-   Click **Next (5)**.
 
-   ![](./media/rd_day1_ex2_t2_7.png)
+      ![](./media/rd_day1_ex2_t2_7.png)
 
 1. Back on the **Threat policies** page, go to **Email & collaboration (1)** > **Policies & rules (2)**, then select **Safe Links (3)**.
 
@@ -138,7 +135,7 @@ In this task, you will create a custom Anti-Phishing policy and Safe Links polic
 
    ![](./media/rd_day1_ex2_t2_9.png)
 
-1. Under **Users and domains**, add the user **ODL_User 1777538 (1)** and click **Next (2)**.
+1. Under **Users and domains**, add the user **ODL_User (1)** and click **Next (2)**.
 
     ![](./media/rd_day1_ex2_t2_10.png)
 
@@ -167,19 +164,17 @@ In this task, you will create a custom Anti-Phishing policy and Safe Links polic
     - **Severity (2):** High  
     - **Category (3):** Threat management  
       
-    Click **Next (4)**.
+      Click **Next (4)**.
 
-    ![](./media/rd_day1_ex2_t2_14.png)
+      ![](./media/rd_day1_ex2_t2_14.png)
 
-1. For the activity condition, configure:
+1. For the activity condition, configure the following and click **Next (4)**.
 
     - **Activity (1):** Detected malware in an email message  
     - **Mail direction (2):** Inbound  
     - **Trigger (3):** Every time an activity matches the rule  
-      
-    Click **Next (4)**.
 
-    ![](./media/rd_day1_ex2_t2_15.png)
+      ![](./media/rd_day1_ex2_t2_15.png)
 
 1. Add the recipient's email address **(1)** and click **Next (2)**.
 
