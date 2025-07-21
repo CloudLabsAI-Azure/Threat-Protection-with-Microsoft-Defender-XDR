@@ -12,199 +12,191 @@ In this exercise, you will configure threat protection policies in Microsoft Def
 
 ## Task 1: Configure Threat Policies in Microsoft Defender for Office 365
 
-1. Go to the [Azure Portal](https://portal.azure.com), and search for **Microsoft Defender for Cloud**.
+In this task, you will enable Microsoft Defender CSPM for your environment and configure both standard and strict protection policies using Microsoft Defender XDR.
+
+
+1. Go to the Azure Portal and search for **Microsoft Defender for Cloud (1)**, select it from the **results (2)**.
+
+   ![rd_day1_ex1_t1_1](./media/rd_day1_ex1_t1_1.png)
 
 1. When prompted, click **Enable** to activate Defender CSPM.
 
-   ![](./media/gg-1-1.png)  
-   ![](./media/gg-1-2.png)
+   ![rd_day1_ex1_t1_2](./media/rd_day1_ex1_t1_2.png)
 
-   > **Note:** If you don’t see the pop-up prompt, simply continue and follow the lab guide steps as shown below.
+   > **Note:** If you don’t see the pop-up prompt, continue with the lab steps below.
 
-   >**Note:** This enables advanced posture capabilities like attack path analysis and permissions management.
+   > **Note:** Enabling Defender CSPM unlocks advanced posture management features such as attack path analysis and permission visibility.
 
-1. In **Microsoft Defender for Cloud**, navigate to **Inventory** and check if **Defender for Cloud** is **Off** for any resources.
+1. In **Microsoft Defender for Cloud**, navigate to **Inventory (2)** under **General (1)** and view the **Defender for Cloud** status is **Off/On (3)** for the Virtual Machines.
 
-   ![](./media/gg-1-2-1.png)
+   ![rd_day1_ex1_t1_3](./media/rd_day1_ex1_t1_3.png)
 
-1. Go to **Environment settings** > select your subscription.
+1. Go to **Environment settings (2)** under **Management (1)**, expand **Azure (3)** → **Tenant Root Group (4)**, and select your **subscription (5)**.
 
-   ![](./media/gg-1-3.png)
+   ![rd_day1_ex1_t1_4](./media/rd_day1_ex1_t1_4.png)
 
-1. Under **Defender plans**, turn on the following and then click **Save**.  :
+1. Under **Defender plans (1)**, turn on the following options and click **Save (5)**:
+   - **Foundational CSPM (2)**
+   - **Defender CSPM (3)**
+   - **Servers under Cloud Workload Protection (4)**
 
-   - Foundational CSPM  
-   - Defender CSPM  
-   - Servers (under CWP)   
+        ![rd_day1_ex1_t1_5](./media/rd_day1_ex1_t1_5.png)
 
-   ![](./media/gg-1-4.png)
+1. Return to **Inventory (2)** under the **Genral (2)** section and confirm the **Defender for Cloud** status now shows as **On (3)**.
+   ![rd_day1_ex1_t1_6](./media/cord1e1_2.png)
+    > **Note:** Your Defender protection is now active for all supported workloads.
 
-1. Return to **Inventory** and confirm Defender is now set to **On**.
+1. On a new tab in the **Microsoft Edge** browser and go to the following URL in the address bar: [https://security.microsoft.com](https://security.microsoft.com).
 
-   ![](./media/gg-1-5.png)
+1. In the left pane, go to **Email & collaboration (1)** → **Policies & rules (2)** → **Threat policies (3)**.
 
-   > **Note:** Your Defender protection is now active for all supported workloads.
+   ![rd_day1_ex1_t1_6](./media/rd_day1_ex1_t1_6.png)
 
-1. Open the [Microsoft 365 Defender Portal](https://security.microsoft.com)
+1. Under **Standard Protection**, click on **Manage protection settings**.
 
-1. Navigate to **Email & collaboration** → **Policies & rules** → **Threat policies**
+   ![rd_day1_ex1_t1_10](./media/cord1e1_1.png)
 
-   ![](./media/gg-2-1.png)
+1. On the **Apply Exchange Online Protection** screen, select **Specific recipients (1)**, enter the user email in the **Users** field (2), and click **Next (3)**.
 
-1. Select **Standard Protection**, then click **Manage protection settings**.
+    ![rd_day1_ex1_t1_7](./media/rd_day1_ex1_t1_7.png)
 
-1. In each section, choose **Specific recipients** and assign your lab user (`ODL_User@...`).
+1. On the **Apply Defender for Office 365 protection** screen, select **Specific recipients (1)**, enter the user email in the **Users** field (2), and click **Next (3)**.
 
-   ![](./media/gg-2-2.png)  
-   
-   ![](./media/gg-2-3.png)
+    ![rd_day1_ex1_t1_8](./media/rd_day1_ex1_t1_8.png)
 
-1. Select **Turn on the policy when finished**, then review and confirm the settings.
+1. Click **Next** on the **Impersonation protection** and **Policy mode** screens until you reach the **Review** section.
 
-   ![](./media/gg-2-4-1.png)
+1. On the **Review** screen, verify that **Exchange Online Protection (1)** and **Defender for Office 365 (2)** apply to the correct user, then click **Confirm (3)**.
 
-   > **Note:** Standard protection includes Safe Attachments, Safe Links, and anti-phishing controls.
+    ![rd_day1_ex1_t1_9](./media/rd_day1_ex1_t1_9.png)
 
-1. On the protection profile page, go to **Strict Protection** and click **Manage protection settings**.
+    > **Note:** Standard protection includes Safe Attachments, Safe Links, and anti-phishing policies.
 
-   ![](./media/gg-2-6.png)
+1. Under **Strict Protection**, click **Manage protection settings**.
 
-1. Like before, assign your lab user under **Specific recipients** for both Exchange and Defender for Office 365.
+    ![rd_day1_ex1_t1_10](./media/rd_day1_ex1_t1_10.png)
 
-   ![](./media/gg-2-7.png)  
+1. On the **Apply Exchange Online Protection** screen, select **Specific recipients (1)**, enter the user email in the **Users** field (2), and click **Next (3)**.
 
-   ![](./media/gg-2-8.png)
+    ![rd_day1_ex1_t1_11](./media/rd_day1_ex1_t1_11.png)
 
-1. Configure impersonation protection:
+1. On the **Apply Defender for Office 365 protection** screen, select **Specific recipients (1)**, enter the user email in the **Users** field (2), and click **Next (3)**.
 
-   - Add key email addresses to monitor  
-   - Add domains (e.g., `www.officenced.com`) that need protection
+    ![rd_day1_ex1_t1_12](./media/rd_day1_ex1_t1_12.png)
 
-    ![](./media/gg-2-3-1.png)  
+1. Click **Next** on the **Impersonation protection** and **Policy mode** screens until you reach the **Review** section.
 
-    ![](./media/gg-2-3-2.png)
+1. On the **Review** screen, verify that **Exchange Online Protection (1)** and **Defender for Office 365 (2)** apply to the correct user, then click **Confirm (3)**.
 
-1. Complete the wizard and confirm the configuration.
+1. Once completed, confirm that:
+    - **Standard protection is on (1)**  
+    - **Strict protection is on (2)** for selected users
 
-1. Once setup is complete, verify that:
+        ![rd_day1_ex1_t1_15](./media/cord1e1_3.png)
 
-   - **Standard protection is on**  
-   - **Strict protection is on** for selected users
-
-    ![](./media/gg-2-11.png)
-
-   > **Note:** Your threat policies are now fully configured with layered protection for both general and high-risk users.
+    > **Note:** You have now successfully configured multi-layered threat policies for both general and high-risk users.
 
 ## Task 2: Simulate Phishing and Malware Attacks Using Attack Simulator
 
 In this task, you'll simulate phishing and malware attacks using Microsoft Defender's built-in **Attack Simulation Training**. These simulations help you evaluate user vulnerability and response to social engineering techniques.
 
-1. In [Microsoft 365 Defender Portal](https://security.microsoft.com), go to:  
+1. In the **Microsoft Defender portal**, select **Email & collaboration (1)**, click **Attack simulation training (2)**, and then click **Launch your own simulation (3)**.
 
-    **Email & collaboration** → **Attack simulation training**
+   ![rd_day1_ex1_t2_1](./media/rd_day1_ex1_t2_1.png)
 
-1. Click **Launch your own simulation**.
+2. On the **Create your own simulation** screen, select **Launch a single simulation (1)** and click **Continue (2)**.
 
-   ![](./media/gg-3-1.png)
+   ![rd_day1_ex1_t2_2](./media/rd_day1_ex1_t2_2.png)
 
-1. Select **Launch a single simulation** and click **Continue**.
+4. Under **Select technique**, choose **Credential Harvest (1)** and click **Next (2)**.
 
-   ![](./media/gg-4-1.png)
+   ![rd_day1_ex1_t2_3](./media/rd_day1_ex1_t2_3.png)
 
-1. On the **Select technique** screen, choose **Credential Harvest** and click **Next**.
+4. In the **Name simulation** step, enter a simulation name as `Test1` in the **Simulation name (1)** field, and click **Next (2)**.
 
-   ![](./media/gg-4-2.png)
+   ![rd_day1_ex1_t2_4](./media/rd_day1_ex1_t2_4.png)
 
-1. Name your simulation (e.g., `Test1`) and proceed.
+5. Under **Select payload and login page**, choose **Global payloads (1)** and select a phishing payload such as **Expense report sharing - English (2)**. Click **Next (3)**.
 
-   ![](./media/gg-4-3.png)
+   ![rd_day1_ex1_t2_5](./media/rd_day1_ex1_t2_5.png)
 
-1. Select a payload such as **Expense report sharing**, then click **Next**.
+6. On the **Target users** screen, select **Include only specific users and groups (1)**, click **Add users (2)**, and then click **Next (3)**.
 
-   ![](./media/gg-4-4.png)
+   ![rd_day1_ex1_t2_6](./media/rd_day1_ex1_t2_6.png)
 
-1. Add your lab user as the target recipient.
+7. On the **Add users** screen, search for the **user email (1)**, select the **user (2)** from the list, and click **Add User(s) (3)**.
 
-   ![](./media/gg-4-5.png)  
+   ![rd_day1_ex1_t2_7](./media/rd_day1_ex1_t2_7.png)
 
-    ![](./media/gg-4-6.png)
+8. On the **Target users** screen, confirm the **User** has been added and click **Next**.
 
-1. Use default training settings:  
-   - Training assignment: **Assign training for me**  
-   - Due in: **7 days after simulation ends**
+9. On the **Assign training** screen, select **Microsoft training experience (1)**, choose **Assign training for me (2)**, set the due date to **7 days after Simulation ends (3)**, and click **Next (4)**.
 
-    ![](./media/gg-4-7.png)
-    
-    ![](./media/gg-4-8.png)
+   ![rd_day1_ex1_t2_9](./media/rd_day1_ex1_t2_9.png)
 
-1. Choose a landing page template and continue.
+10. Under **Select landing page**, choose a **login page template (1)** and click **Next (2)**.
 
-   ![](./media/gg-4-9.png)
+    ![rd_day1_ex1_t2_10](./media/rd_day1_ex1_t2_10.png)
 
-1. Set **End-user notification** to *Microsoft default notification*.  
-    Confirm:
-    - Positive reinforcement: **During simulation**  
-    - Training reminder: **Weekly**
+11. In the **End user notification** section, select **Microsoft default notification (1)** and configure:
+    - Positive reinforcement: **Deliver during simulation (2**)
+    - Training reminder: **Weekly (3)**
+    Click **Next (4)**.
 
-    ![](./media/gg-4-10.png)
+        ![rd_day1_ex1_t2_11](./media/rd_day1_ex1_t2_11.png)
 
-1. Launch immediately and set the simulation to end after 2 days.
+12. In the **Launch details** step, select **Launch this simulation as soon as I'm done (1)**, set **duration to 2 days (2)**, and click **Next (3)**.
 
-    ![](./media/gg-4-11.png)
+    ![rd_day1_ex1_t2_12](./media/rd_day1_ex1_t2_12.png)
 
-1. Review details and click **Submit** to start the simulation.
+13. Review the configuration summary and click **Submit** to start the simulation.
 
-    ![](./media/gg-4-12.png)
+    ![rd_day1_ex1_t2_13](./media/rd_day1_ex1_t2_13.png)
 
-1. After confirmation, click **Done**.
+14. On completion, click **Done**.
 
-    ![](./media/gg-4-13.png)
+    ![rd_day1_ex1_t2_14](./media/rd_day1_ex1_t2_14.png)
 
-1. You’ll see the simulation listed as **In progress**.
+15. 16. Verify the simulation appears in the dashboard as **In progress**.
 
-    ![](./media/gg-5-1.png)
+    ![rd_day1_ex1_t2_15](./media/rd_day1_ex1_t2_15.png)
 
-    > **Note:** You've successfully launched a phishing simulation that will track user interaction and response.
+16. To simulate a **Malware Attack**, go back to **Attack simulation training**, click **Launch your own simulation**, and choose **Malware Attachment (1)**. Click **Next (2)**.
 
-1. From the Attack simulation dashboard, launch another simulation.
+    ![rd_day1_ex1_t2_16](./media/rd_day1_ex1_t2_16.png)
 
-1. Choose **Malware Attachment** as the technique.
+    > **Note:** You’ve successfully launched a phishing simulation. It will monitor how users interact with suspicious emails.
 
-   ![](./media/gg-5-2.png)
+17. Enter a new simulation name **`Test2`** and click **Next (2)**.
 
-1. Name the simulation (e.g., `Test2`) and click **Next**.
+    ![rd_day1_ex1_t2_17](./media/rd_day1_ex1_t2_17.png)
 
-   ![](./media/gg-5-3.png)
+18. Under **Payload selection**, choose a malware attachment like **HR notification on update of contract - English (2)** and click **Next (3)**.
 
-1. Select a payload like **HR notification on update of contract**.
+    ![rd_day1_ex1_t2_18](./media/rd_day1_ex1_t2_18.png)
 
-   ![](./media/gkk-1-1.png)
+19. In the **End user notification** screen, select **Microsoft default notification (1)**, ensure **Deliver during simulation (2)** and **Weekly reminder (3)** are selected, and click **Next (4)**.
 
-1. Repeat the notification and training steps:
-   - Use Microsoft defaults  
-   - Deliver during simulation  
-   - Weekly reminders
+    ![rd_day1_ex1_t2_19](./media/rd_day1_ex1_t2_19.png)
 
-   ![](./media/gg-4-10.png)
+20. Set the **Launch configuration (1)** to launch immediately, set duration to **2 days (2)**, and click **Next (3)**.
 
-1. Set simulation launch to immediate and duration to 2 days.
+    ![rd_day1_ex1_t2_20](./media/rd_day1_ex1_t2_20.png)
 
-   ![](./media/gg-4-11.png)
+21. On the **Select end user notification** screen, choose **Microsoft default notification (1)**, set **Deliver during simulation (2)** and **Weekly (3)** as delivery preferences, then click **Next (4)**.
 
-1. Review the summary and submit.
+    ![rd_day1_ex1_t2_21](./media/rd_day1_ex1_t2_21.png)
 
-   ![](./media/gg-5-6.png)
+22. Review the details and click **Submit** to complete the malware simulation setup.
 
-1. Confirm the simulation has been scheduled successfully.
+    ![rd_day1_ex1_t2_22](./media/rd_day1_ex1_t2_22.png)
 
-   ![](./media/gg-5-7.png)
+> **Note:** This simulation mimics a malicious file being sent via email, testing how users respond to attachment-based threats.
 
-   >**Note:** This test mimics malware-laden email attachments and assesses user interaction with potentially harmful files.
-
-> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-> - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
-> - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-> - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
+> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:  
+> - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task.  
+> - If not, carefully read the error message and retry the step, following the instructions in the lab guide.  
+> - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.  
 <validation step="064a226a-790e-4e5f-b789-d84483110e38" />
 
 ## Task 3: Analyze Threats with Threat Explorer and Real-Time Detections
