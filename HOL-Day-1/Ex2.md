@@ -189,7 +189,7 @@ In this task, you will create a custom Anti-Phishing policy and Safe Links polic
 
     ![](../media/rd_day1_ex2_t2_17.png)
 
-> ✅ **Note:** Your alert policy is now active and will trigger if matching activity is detected.
+> **Note:** Your alert policy is now active and will trigger if matching activity is detected.
 
 18. Send a test email with sample malicious links to simulate a threat:
     
