@@ -2,7 +2,7 @@
 
 In this task, you will simulate a Lateral Movement attack and detect it using Microsoft Defender for Identity. Please note that this is a `read-only` task, as you will be logged out of your virtual machine during the attack simulation—this is a security measure enforced by Defender for Identity.
 
-1. Open **PowerShell (Admin)** and navigate to the below-mentioned directory.
+1. Open **PowerShell (Admin)** and navigate to the below mentioned directory.
 
       ```powershell
       cd C:\MimikatzLab\mimikatz-master\mimikatz-master\x64
@@ -31,7 +31,6 @@ In this task, you will simulate a Lateral Movement attack and detect it using Mi
 
       ![](./media/E1T3S3upd.png)
       > **Note:** The user will be logged out of the virtual machine as part of the containment measures initiated by the Defender in response to the user's attempted lateral movement attack.
-
 
 ### Task 2: Investigate Threats and User Timelines 
 
@@ -72,4 +71,3 @@ In this task you will enable integration to view Defender for Identity incidents
 1. Click on **Connect incidents & alerts** and navigate back to Data connectors page and make sure that **Defender for XDR** shows as connected
 
       ![](./media/E1T4S5.png)
-
