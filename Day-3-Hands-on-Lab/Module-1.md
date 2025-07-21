@@ -234,7 +234,7 @@ In this task you will analyze using user timelines and alert details in the Defe
 
       ![](./media/E1T3S2.png)
 
-1. In the user profile, click the **Timeline** tab and you will be able to see the events like `Lateral movement attacks` and `mimikatz credential theft tool` alerts
+1. In the user profile, click the **Timeline** tab to view all events and alerts.
 
       ![](./media/E1T3S3.png)
 
