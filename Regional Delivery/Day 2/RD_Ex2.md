@@ -107,8 +107,8 @@ In this task, you'll create a custom policy using App Governance in Microsoft De
 1. In the Microsoft Defender Portal, go to **Cloud Apps** → **Activity log**.
 
 1. Under the **App** filter, click on **Select apps** (3), select **Microsoft SharePoint Online**
-  
-   ![](./media/p-0-1.png)
+
+   ![](./media/p-0-1.png) 
 
    > **Note:** Once selected, all user activities performed in SharePoint—such as file uploads, downloads, edits, and access attempts—will be visible in the activity log.
 
