@@ -37,7 +37,7 @@ In this task, you will integrate Defender for Cloud Apps with Microsoft Defender
 
    ![](./media/rd_day1_ex4_t1_8.png)
 
-> ⚠️ Enabling app access enforcement helps automatically block apps marked as unsanctioned based on Defender for Endpoint insights.
+>  Enabling app access enforcement helps automatically block apps marked as unsanctioned based on Defender for Endpoint insights.
 
 1. Scroll down the left pane under **Cloud Discovery (1)** and select **Snapshot reports (2)**.
 
