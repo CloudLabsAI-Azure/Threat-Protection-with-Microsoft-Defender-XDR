@@ -68,3 +68,37 @@ In this task, you will integrate Defender for Cloud Apps with Microsoft Defender
 15. Click the report to open and analyze discovered apps, IPs, users, and traffic risk levels.
 
    ![](./media/rd_day1_ex4_t1_17.png)
+
+## Task 2: Discover and Analyze Shadow IT Using Cloud Discovery
+
+1. Analyze the report for the following options:
+
+    - **Check the Summary Metrics:** Look at the total number of apps, users, IP addresses, and traffic volume to understand the overall cloud usage.
+    
+    - **Review App Categories**: Identify which categories (e.g., Cloud Computing, Storage, Collaboration) are using the most bandwidth and check if any unsanctioned apps are involved.
+    
+    - **Analyze Risk Levels**: Use the risk level chart to see how much traffic is coming from low, medium, or high-risk apps—focus on medium/high risk.
+    
+    - **Identify Top Users**: Check the “Top entities” section to see which users are generating the most traffic, especially to risky or unsanctioned apps.
+    
+    - **Inspect Discovered Apps**: Review the list of apps in use, their traffic volume, and verify if they are approved or need to be blocked or reviewed further.
+
+1. In the dashboard, navigate to **Discovered Apps** section.
+
+   ![](./media/rd_day1_ex4_t2_1.png)
+
+1. This section lists all discovered apps, showing their risk score, traffic volume, number of users, and last activity.
+
+   ![](./media/rd_day1_ex4_t2_2.png)
+
+1. Click on the elipsis next to any of the applications to mark the app as **Unsactioned**. This action labels the app as not approved for use, helping you monitor and report on its usage in the dashboard.
+
+   ![](./media/rd_day1_ex4_t2_3.png)
+
+## Review
+
+1. In this exercise, you learnt how to set up Cloud Discovery and generate a snapshot report using sample logs.
+
+1. You also learnt to analyze app usage, risk levels, and detect unsanctioned apps from the dashboard.
+
+## Click Next to continue
