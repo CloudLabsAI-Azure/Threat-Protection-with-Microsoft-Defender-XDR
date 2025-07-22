@@ -1,3 +1,8 @@
+## Objectives
+
+- Task 1: Implement and Monitor Defender for Office 365 Secure Posture
+- Task 2: Investigate and Remediate incidents in Microsoft Defender XDR
+
 ## Task 1: Implement and Monitor Defender for Office 365 Secure Posture
 
 1. On the **Microsoft Defender portal**, select **Email & collaboration (1)** from the left navigation pane and then click on **Policies & rules (2)** under **Policies & rules**, click **Threat policies (3)**.
