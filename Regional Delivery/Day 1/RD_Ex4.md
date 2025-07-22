@@ -7,7 +7,7 @@
 
 In this task, you'll enable Microsoft Defender for Cloud Apps integration, configure app access blocking, upload snapshot traffic logs, and analyze discovered apps through the Cloud Discovery dashboard.
 
-1. On the **Microsoft Defender portal**, select **Settings (1)** from the left navigation menu and click **Cloud Apps (2)**.
+1. On the **Microsoft Defender portal**, select **Settings ** from the left navigation menu.
 
    ![](./media/rd_day1_ex4_t1_3.png)
 
