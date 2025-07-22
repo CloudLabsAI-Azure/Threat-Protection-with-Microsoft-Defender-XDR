@@ -3,7 +3,7 @@
 - Task 1: Microsoft Defender for Cloud Apps-Configuring Cloud Discovery
 - Task 2: Discover and Analyze Shadow IT Using Cloud Discovery 
 
-## Task 1: Configure Cloud Discovery in Microsoft Defender for Cloud Apps
+## Task 1: Microsoft Defender for Cloud Apps- Configuring Cloud App Discovery
 
 In this task, you will integrate Defender for Cloud Apps with Microsoft Defender for Endpoint, enable discovery of shadow IT, and analyze data using snapshot reports.
 
