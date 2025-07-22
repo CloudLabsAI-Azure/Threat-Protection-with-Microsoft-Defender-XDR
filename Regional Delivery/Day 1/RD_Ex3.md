@@ -1,3 +1,9 @@
+# Exercise 3: Implement and Monitor Secure Posture in Microsoft Defender for Office 365 and XDR
+
+## Overview
+
+In this exercise, you will implement and monitor the secure posture of your Microsoft 365 environment using built-in features in Microsoft Defender for Office 365 and Microsoft Defender XDR. You'll start by reviewing and validating preset security policies, analyzing configuration gaps using the Configuration Analyzer, enabling DKIM and tagging priority accounts. Then, you’ll simulate a phishing incident, investigate the email using Threat Explorer, take remediation actions, submit the message for analysis, and review the results of automated investigations—all from the Defender XDR portal.
+
 ## Objectives
 
 - Task 1: Implement and Monitor Defender for Office 365 Secure Posture
@@ -165,4 +171,14 @@ In this task, you’ll simulate a phishing incident, investigate the suspicious 
 
     > **Note:** It may take 10–15 minutes for the automated investigation to fully complete and show results.
 
+## Review
 
+In this lab, you have completed the following tasks:
+
+- Verified preset security policies and enabled DKIM and Priority Account protection.
+- Reviewed secure posture using Configuration Analyzer and Secure Score.
+- Simulated a phishing email and performed investigation and remediation using Defender XDR.
+
+### You have successfully completed the lab. Click on **Next >>** to proceed with the next Lab.
+
+![](./media/cord1e1_4.png)
