@@ -51,6 +51,10 @@ In this task, you will enable Microsoft Defender CSPM for your environment and c
 
    ![rd_day1_ex1_t1_6](./media/rd_day1_ex1_t1_6.png)
 
+1. On the **Threat policies** page, under **Templated policies**, click on **Preset Security Policies**.
+   
+   ![](./media/rd_day1_ex3_t1_cor1.png)
+
 1. Under **Standard Protection**, click on **Manage protection settings**.
 
    ![rd_day1_ex1_t1_10](./media/cord1e1_1.png)
