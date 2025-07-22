@@ -205,10 +205,10 @@ In this task, you'll simulate phishing and malware attacks using Microsoft Defen
 
 In this lab, you have completed the following tasks:
 
-- Configured standard and strict protection policies using Microsoft Defender for Office 365  
-- Enabled Microsoft Defender CSPM and verified security posture settings  
-- Simulated phishing and malware attacks using Attack Simulation Training  
-- Assessed user vulnerability and policy effectiveness through simulation results
+- Enabled Microsoft Defender CSPM to activate advanced posture management capabilities.
+- Configured both Standard and Strict preset security policies to protect users based on risk levels.
+- Launched phishing and malware simulations using Attack Simulation Training.
+- Evaluated user responses to simulated attacks and verified that protection policies were working as expected.
 
 
 ### You have successfully completed the lab. Click on **Next >>** to proceed with the next Lab.
