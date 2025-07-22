@@ -160,17 +160,4 @@ In this task, you’ll simulate a phishing incident, investigate the suspicious 
 
     > **Note:** It may take 10–15 minutes for the automated investigation to fully complete and show results.
 
----
-
-## Review
-
-1. You successfully simulated a phishing attack and reviewed its delivery details.  
-2. You took action using Threat Explorer, submitted the message for Microsoft analysis, and triggered an automated investigation.  
-3. You reviewed the alert, updated its classification, and confirmed the response via the investigation timeline.
-
----
-
-## Lab Complete
-
-You’ve now explored the full remediation workflow for phishing incidents in Microsoft Defender XDR — from detection to resolution.
 
