@@ -1,22 +1,24 @@
-# Day 1: Securing Collaboration with Microsoft Defender Solutions
+# Day 1: Threat Protection with Microsoft Defender XDR
 
 ### Overall Estimated Duration: 7 Hours
 
 ## Overview
 
-In this lab, you will explore how to enhance organizational security using Microsoft Defender for Office 365. You’ll configure threat protection policies, simulate phishing and malware attacks with the Attack Simulator, and analyze threats using Threat Explorer and real-time detections. The lab also covers investigating and remediating incidents in Microsoft Defender XDR, configuring anti-phishing and Safe Links policies, and implementing measures to monitor and maintain a strong security posture across Office 365.
+In this lab, you will explore how to enhance organizational security using Microsoft Defender for Office 365 and Microsoft Defender XDR. You’ll configure foundational and advanced threat protection policies, simulate phishing and malware attacks using Attack Simulation Training, and analyze threats through Threat Explorer and real-time detections. You’ll also configure Anti-Phishing and Safe Links policies, create alert rules, implement and monitor secure posture settings using Configuration Analyzer and Microsoft Secure Score, and tag priority accounts. Finally, you’ll integrate Defender for Cloud Apps with Endpoint, enable Cloud Discovery, and analyze shadow IT using snapshot reports—equipping you with the skills to detect, respond to, and manage modern cyber threats across Microsoft 365 workloads.
 
 ## Objectives
 
-- Configure Threat Policies in Microsoft Defender for Office 365 
+By the end of Day 1, you will be able to:
 
-- Simulate Phishing and Malware Attacks Using Attack Simulator 
-
-- Analyze Threats with Threat Explorer and Real-Time Detections 
-
-- Investigate and remediate Incidents in Microsoft Defender XDR 
-
-- Configure Anti-Phishing and Safe Links Policies 
+- Configure standard and strict threat protection policies using Microsoft Defender for Office 365.
+- Simulate phishing and malware attacks using Attack Simulation Training.
+- Investigate email threats and user behavior through Threat Explorer and real-time detections.
+- Create custom Anti-Phishing and Safe Links policies to defend against advanced threats.
+- Set up alert policies to monitor malicious activities in email traffic.
+- Enable and monitor secure posture features such as DKIM, Secure Score, and Priority Account Protection.
+- Investigate and remediate incidents using Microsoft Defender XDR’s incident and alert workflows.
+- Integrate Microsoft Defender for Cloud Apps with Endpoint for cloud app discovery.
+- Generate and analyze snapshot reports to detect shadow IT and unsanctioned applications.
 
 # Getting Started with the Lab
  
