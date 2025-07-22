@@ -1,3 +1,9 @@
+# Exercise 2: Analyze Threats and Configure Protection Policies in Microsoft Defender for Office 365
+
+## Overview
+
+In this exercise, you will analyze threats using Microsoft Defender for Office 365’s built-in investigation tools and configure protection policies to strengthen your organization’s email security. You'll start by creating a custom role, simulating a phishing scenario, and investigating user behavior using Threat Explorer and real-time detections. Then, you’ll create custom Anti-Phishing and Safe Links policies, set up alert rules, and simulate a threat to validate policy effectiveness and detection capabilities.
+
 ## Objectives
 
 - Task 1: Analyze Threats with Threat Explorer and Real Time Detections
@@ -225,3 +231,17 @@ In this task, you will create a custom Anti-Phishing policy and Safe Links polic
    >  Dive deep into the incident: review alerts, evidence, entities involved, and the automated investigation trail.
 
    >  You’ve now created an alert policy, triggered it with test emails, and followed the investigation trail using Defender XDR.
+
+## Review
+
+In this lab, you have completed the following tasks:
+
+- Created a custom role in Microsoft Defender to manage access and permissions.
+- Simulated a phishing interaction and investigated user activity using Threat Explorer.
+- Analyzed real-time detections and simulation reports to assess user risk.
+- Configured custom Anti-Phishing and Safe Links policies to enhance threat protection.
+- Created an alert policy and validated it by simulating a phishing and malware email.
+
+### You have successfully completed the lab. Click on **Next >>** to proceed with the next Lab.
+
+![](./media/cord1e1_4.png)
