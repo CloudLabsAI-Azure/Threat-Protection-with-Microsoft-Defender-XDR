@@ -1,3 +1,9 @@
+# Exercise 4: Discover and Analyze Shadow IT with Microsoft Defender for Cloud Apps
+
+## Overview
+
+In this exercise, you will use Microsoft Defender for Cloud Apps to uncover and analyze shadow IT activity in your organization. You’ll start by integrating Defender for Endpoint with Defender for Cloud Apps and enabling app discovery. Then, you’ll generate a snapshot report using uploaded traffic logs, explore discovered applications, assess risk levels, and identify unsanctioned apps to improve cloud visibility and control.
+
 ## Objectives
 
 - Task 1: Microsoft Defender for Cloud Apps-Configuring Cloud Discovery
@@ -97,8 +103,10 @@ In this task, you will integrate Defender for Cloud Apps with Microsoft Defender
 
 ## Review
 
-1. In this exercise, you learnt how to set up Cloud Discovery and generate a snapshot report using sample logs.
+In this lab, you have completed the following tasks:
 
-1. You also learnt to analyze app usage, risk levels, and detect unsanctioned apps from the dashboard.
+- Enabled integration between Defender for Endpoint and Defender for Cloud Apps.
+- Generated a snapshot report using traffic logs to discover cloud app usage.
+- Analyzed shadow IT activity, assessed app risk levels, and marked unsanctioned apps.
 
-## Click Next to continue
+### You have successfully completed the lab.
