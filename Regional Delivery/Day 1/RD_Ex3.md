@@ -8,6 +8,16 @@
   
    ![](./media/rd_day1_ex3_t1_cor1.png)
 
+1. Confirm that **Standard protection (1)** and **Strict protection (2)** are enabled. These policies enforce Safe Links, Safe Attachments, and tighter anti-phishing controls based on user risk levels.
+
+   ![](./media/cord1e1_3.png)
+
+   > **Standard protection** applies to all users with a baseline of spam, phishing, and malware protection.
+
+   > **Strict protection** targets VIP or high-risk users with more aggressive detection rules and enhanced ML-based scanning.
+
+   > If either toggle is **Off**, enable it to strengthen your Defender posture.
+
 1. On the **Threat policies** page, scroll to **Templated policies** and click **Configuration analyzer**.
   
    ![](./media/rd_day1_ex3_t1_2.png)
