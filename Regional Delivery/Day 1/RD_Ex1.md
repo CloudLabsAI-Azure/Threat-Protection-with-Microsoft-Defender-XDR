@@ -1,4 +1,4 @@
-# Exercise 1: Configuring Threat Policies and Simulating Attacks in Microsoft Defender for Office 365
+# Exercise 1: Configure Threat Policies and Simulate Attacks in Microsoft Defender for Office 365
 
 ## Overview
 
