@@ -1,16 +1,18 @@
-## Exercise 4: Automate Incident Response with Power Automate and Microsoft Sentinel
+## Exercise 4: Automate End-to-End Incident Response with Microsoft Defender XDR, Sentinel, Power Automate, and SharePoint
 
 ### Overview
 
-In this exercise, you'll build an automated incident response workflow by integrating Microsoft Sentinel with Power Automate and SharePoint. You’ll simulate flagged emails, trigger alerts for suspicious PowerShell usage, and build a complete automation pipeline to notify SOC teams and log incidents.
+In this exercise, you will implement an end-to-end automated incident response solution by integrating Microsoft Defender XDR, Microsoft Sentinel, Power Automate, and SharePoint. You'll begin by reviewing existing configurations for Automated Investigation and Response (AIR) and analyzing identity-based incidents with attack disruption tags. Then, you'll build a custom workflow that logs flagged Outlook emails to SharePoint, sends automated SOC notifications via a Sentinel playbook, and triggers the response pipeline using a Sentinel analytics rule—creating a unified and automated threat detection and response loop.
 
 
 ### Objectives
 
-- Create a SharePoint site and custom list to store incident logs
-- Build a Power Automate flow that logs flagged emails into SharePoint
-- Create a Microsoft Sentinel playbook to notify SOC on incident trigger
-- Configure Sentinel analytics rule to detect suspicious activity and invoke the playbook
+- Task 1: Review Automated Investigation and Response (AIR) configuration (`Read-Only`)
+- Task 2: Investigate Identity-Based Incidents and Attack Disruption Tags (`Read-Only`)  
+- Task 3: Create a SharePoint site and custom list to store incident logs  
+- Task 4: Create a Microsoft Sentinel playbook to notify SOC via email  
+- Task 5: Create an analytics rule in Sentinel to detect suspicious activity and trigger the playbook  
+- Task 6: Build a Power Automate flow to log flagged Outlook emails into SharePoint
 
 ### Task 1: Review Automated Investigation and Response (`Read-Only`)
 
@@ -374,12 +376,15 @@ In this task, you'll create a flow in Power Automate that triggers when an email
 
 ## Review
 
-In this lab, you have completed the following tasks:
+In this exercise, you completed a comprehensive automated incident response setup using Microsoft Defender XDR, Microsoft Sentinel, Power Automate, and SharePoint:
 
-- Created a SharePoint communication site and a custom list to log incident details from flagged emails.
-- Built a Power Automate flow that triggers on flagged Outlook emails and logs metadata into SharePoint.
-- Created a Microsoft Sentinel playbook using Logic Apps to notify SOC teams via email when incidents are triggered.
-- Configured a Sentinel analytics rule to detect suspicious PowerShell executions and trigger the playbook automatically.
+- Reviewed pre-configured Automated Investigation and Response (AIR) settings for identities and devices.  
+- Analyzed identity-based incidents and observed Attack Disruption and Containment tags in Defender XDR.  
+- Created a SharePoint communication site and a custom list to store metadata from flagged Outlook emails.  
+- Built a Power Automate flow to log flagged email details into the SharePoint list in real-time.  
+- Designed and configured a Microsoft Sentinel playbook using Logic Apps to notify SOC teams via email when incidents are triggered.  
+- Created a custom analytics rule in Sentinel to detect suspicious PowerShell executions and trigger the response playbook automatically.
+
+You now have a fully operational, low-touch detection-to-response workflow that logs, notifies, and remediates threats across Microsoft’s security stack.
 
 ### You have successfully completed the lab.
-
