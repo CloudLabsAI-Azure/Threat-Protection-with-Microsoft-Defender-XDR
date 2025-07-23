@@ -6,17 +6,6 @@
 
 In this lab, you will advance your threat protection capabilities by integrating Microsoft Defender for Cloud Apps, Microsoft Defender for Identity, Microsoft Sentinel, and Power Automate. You’ll start by connecting and onboarding SaaS applications to Defender for Cloud Apps and configuring session policies to detect and block risky user behaviors. Then, you’ll implement App Governance to identify high-risk OAuth applications and create custom detection policies for suspicious activity. You’ll deploy Defender for Identity sensors to domain controllers, simulate and detect identity-based attacks such as Pass-the-Hash and DC Sync, and analyze threat timelines. Finally, you’ll implement automated investigation and response (AIR) for identity threats and build incident response workflows using Microsoft Sentinel and Power Automate.
 
-## Agenda for Day 2
-
-| Exercise | Title                                                                 |
-|----------|------------------------------------------------------------------------|
-| Exercise 1 | Connect and Monitor SaaS Apps with Microsoft Defender for Cloud Apps |
-| Exercise 2 | Implement App Governance and Detect OAuth Risks                      |
-| Exercise 3 | Investigate Identity Threats with Microsoft Defender for Identity     |
-| Exercise 4 | Automate Incident Response with Microsoft Sentinel and Power Automate|
-
-> Each exercise contains multiple tasks with detailed, step-by-step guidance and annotated screenshots to help you navigate the Defender XDR ecosystem.
-
 ## Objectives
 
 By the end of Day 2, you will be able to:
