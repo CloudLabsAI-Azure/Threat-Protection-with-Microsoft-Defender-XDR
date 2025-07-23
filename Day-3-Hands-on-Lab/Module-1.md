@@ -192,6 +192,8 @@ Install the AD DS role to enable the server to function as a domain controller.
 
 In this task, you will simulate a Lateral Movement attack and detect it using Microsoft Defender for Identity. Please note that this is a `read-only` task, as you will be logged out of your virtual machine during the attack simulation—this is a security measure enforced by Defender for Identity.
 
+> **Note:** This exercise is **Read-only** because the tool used below is blocked by Microsoft Defender. If this software is used for any malicious activity, Microsoft Defender will flag the user as a threat, resulting in an automatic logout from the virtual machine. The user will not be able to log in again.
+
 1. Open **PowerShell (Admin)** and navigate to the below mentioned directory.
 
       ```powershell
