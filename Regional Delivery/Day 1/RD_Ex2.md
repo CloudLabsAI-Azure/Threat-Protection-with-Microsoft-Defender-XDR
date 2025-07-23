@@ -1,4 +1,5 @@
-# Exercise 2: Analyze Threats and Configure Protection Policies in Microsoft Defender for Office 365
+## Exercise 2: Analyze Threats and Configure Protection Policies in Microsoft Defender for Office 365
+### Estimated Duration: 60 Minutes
 
 ## Overview
 
