@@ -131,7 +131,7 @@ In this task, you will create a Microsoft Defender for Cloud Apps session policy
    - **Device | Tag | does not equal | Intune compliant, Microsoft Entra Hybrid joined**
    - **App | Manual onboarding | equals | Microsoft SharePoint Online**
 
-   ![](./media/rd_day2_ex1_t2_2.png)
+      ![](./media/rd_day2_ex1_t2_2.png)
 
 1. In the **Files matching all of the following** section, add file extension filters:
    - **Extension equals exe**
