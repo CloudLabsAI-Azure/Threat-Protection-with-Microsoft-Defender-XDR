@@ -6,11 +6,11 @@ In this exercise, you will implement App Governance and deploy Microsoft Defende
 
 ## Objectives
 
-- Task 1: Implement App Governance and Risk Detection for OAuth Apps  
+- Task 1: Implement App Governance and Risk Detection for OAuth Apps ((Read-Only)
 - Task 2: Investigate Alerts and Create Custom Detection Policies
 - Task 3: Deploy Microsoft Defender for Identity Sensor on Domain Controllers
 
-## Task 1: Implement App Governance and Risk Detection for OAuth Apps
+## Task 1: Implement App Governance and Risk Detection for OAuth Apps ((Read-Only)
 
 In this task, you'll enable App Governance, analyze high-risk OAuth apps, and create a custom detection policy to flag suspicious apps based on permissions and publisher verification.
 
