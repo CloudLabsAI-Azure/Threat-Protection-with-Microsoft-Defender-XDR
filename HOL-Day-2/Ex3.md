@@ -13,172 +13,98 @@ App Governance helps organizations:
 ## Objectives
 
 - Task 1: Enable App Governance in Microsoft Defender for Cloud Apps  
-- Task 2: Review permission summary of an onboarded OAuth app  
-- Task 3: Create a policy to detect high-risk OAuth apps  
-- Task 4: Review policy results and incidents
 
-## Task 1: Enable App Governance in Microsoft Defender for Cloud Apps
+## Task 1: Implement App Governance and Risk Detection for OAuth Apps
 
-1. Go to the [Microsoft Defender Portal](https://security.microsoft.com).
+In this task, you'll enable App Governance, analyze high-risk OAuth apps, and create a custom detection policy to flag suspicious apps based on permissions and publisher verification.
 
-1. Sign in using your administrator account.
+1. On the **Microsoft Defender portal**, go to **System (1)** > **Settings (2)** and click **Cloud Apps (3)**.
 
-1. In the left menu, select **Cloud apps**.
+   ![](./media/rdr_xdr_1.png)
 
-1. Click on **App governance** in the sub-menu.
+1. Under **App governance**, select **Service status (1)** and click **Turn on app governance (2)**.
 
-1. Under **Service status**, click on **Turn on app governance**.
-   
-   ![](./media/g-5-1.png)
+   ![](./media/rdr_xdr_2.png)
 
    > App Governance is now activated. It will begin evaluating connected OAuth apps and generating insights into their behavior and risk posture.
 
-## Task 2: Review Permission Summary of an Onboarded OAuth App
+1. On the OAuth apps page, click **Go to app governance**.
 
-1. In the [Microsoft Defender Portal](https://security.microsoft.com), go to **Cloud apps**.
+   ![](./media/rdr_xdr_3.png)
 
-1. Click on **OAuth apps**.
-   
-   ![](./media/g-5-2.png)
+   > You may be redirected to the new App Governance interface.
 
-   > You may be redirected to the new App Governance interface. If so, click **Go to app governance** to continue.
+1. In the left menu, go to **Cloud apps (1)** > **Governance log (2)** and select the **AuditLogApp (3)** from the listed apps.
 
-1. From the top menu, click **Cloud apps**, then select **Governance log**.
-   
-   ![](./media/g-5-3.png)
+   ![](./media/rdr_xdr_4.png)
 
-1. Locate and click on the OAuth app named `AuditLogApp` (or any available sample app).
+1. In the AuditLogApp details pane, select the **Permissions (1)** tab and review the permissions classified as **High privilege (2)**.
 
-   ![](./media/g-5-3.png)
-
-1. In the app’s detail pane, click the **Permissions** tab.
-
-1. Review the summary:
-   - Total permissions: 4  
-   - High privilege permissions: 3  
-   - Unused permissions: 0
-   
-   ![](./media/g-5-4.png)
+   ![](./media/rdr_xdr_5.png)
 
    > You've now reviewed an OAuth app's access level and identified potentially risky permissions that may require action.
 
-## Task 3: Create a Policy to Detect High-Risk OAuth Apps
+1. Go to the **Policies (1)** tab > select **Microsoft 365 (2)**, then click **Create policy (3)**.
 
-1. In the [Microsoft Defender Portal](https://security.microsoft.com), navigate to:  
-   **Cloud apps** → **App governance** → **Policies**.
+   ![](./media/rdr_xdr_6.png)
 
-1. Click **+ Create policy**.
+1. In the **Choose a policy template** pane, select **Custom (1)** > **Custom policy (2)** and click **Next (3)**.
+
+   ![](./media/rdr_xdr_7.png)
+
+1. Name the policy as **Detect High-Permission OAuth Apps (1)**, set **Severity to High (2)**, and click **Next (3)**.
+
+   ![](./media/rdr_xdr_8.png)
+
+1. Select **No, I’ll customize the policy (1)**, then click **Next (2)**.
+
+   ![](./media/rdr_xdr_9.png)
+
+1. Under policy scope, select **All apps (1)** and click **Next (2)**.
+
+    ![](./media/rdr_xdr_10.png)
+
+1. Configure the policy conditions:  
+    - Set **Highly privileged (1)** to **Yes (2)**  
+    - Set **Publisher verified (3)** to **No (4)**  
+    - Click **Save (5)**
+
+    ![](./media/rdr_xdr_11.png)
+
+1. In the **Set policy action** step, choose **Disable app (1)** and click **Next (2)**.
+
+    ![](./media/rdr_xdr_12.png)
+
+1. Set the policy status to **Active (1)** and click **Next (2)**.
+
+    ![](./media/rdr_xdr_13.png)
+
+1. Review the policy settings and click **Submit** to create the policy.
+
+    ![](./media/rdr_xdr_14.png)
+
+1. On the confirmation screen, click **Done** to finish.
+
+    ![](./media/rdr_xdr_15.png)
    
-   ![](./media/g-5-5.png)
-
-1. In the **Create policy** window:
-   - Category: `Custom`  
-   - Template: `Custom policy`
-
-1. Click **Next**.
-
-   ![](./media/g-5-6.png)
-
-1. Fill in the policy details:
-   - Policy Name: `Detect High-Permission OAuth Apps`  
-   - Description: `Flags apps with high-risk delegated permissions and unverified publishers`  
-   - Severity: `High`
-
-1. Click **Next**.
-
-   ![](./media/g-5-7.png)
-
-1. When prompted, select **No, I'll customize the policy** and click **Next**.
-
-   ![](./media/g-5-8.png)
-
-1. For **Scope**, select `All apps` and click **Next**.
-
-   ![](./media/g-5-9.png)
-
-1. Under **Conditions**, configure the following:
-   - Highly privileged = `Yes`  
-   - Publisher verified = `No`
-
-1. Click **Save**.
-
-   ![](./media/g-5-10.png)
-
-1. Leave **Disable app** unchecked (optional).
-
-   ![](./media/g-5-11.png)
-
-1. Set **Policy status** to `Active`.
-
-   ![](./media/g-5-12.png)
-
-1. Review the settings and click **Submit** to create the policy.
-
-   ![](./media/g-5-13.png)
-
    > The detection policy is now active and will monitor all onboarded OAuth apps for risky permissions and unverified publishers.
 
-## Task 4: Review Policy Results and Incidents
+1. Back on the **App governance** overview, click **View all apps** to analyze detected apps.
 
-1. In the [Microsoft Defender Portal](https://security.microsoft.com), navigate to:  
-   **Cloud apps** → **App governance** → **Governance log**.
+    ![](./media/rdr_xdr_16.png)
 
-   ![](./media/g-5-14.png)
+1. In the **Microsoft 365 (1)** tab, notice apps flagged with a **High (2)** privilege level.
 
-1. Look for apps that are marked:
-   - Highly privileged = `Yes`  
-   - Publisher verified = `No`
+    ![](./media/rdr_xdr_17.png)
 
-1. Click on the app (e.g., `AuditLogApp`) to open the details view.
- 
-   ![](./media/g-5-15.png)
+1. Go to **Incidents & alerts (1)** > **Incidents (2)**, and click the incident **Detect High-Permission OAuth Apps (3)**.
 
-1. In the app pane, review:
-   - Permissions tab  
-   - Activity tab  
-   - Risk indicators tab
+    ![](./media/rdr_xdr_18.png)
 
-1. Determine if the app has access to sensitive data or services like mail, calendar, or files.
+1. In the incident details pane, review the violation summary, app, and policy triggered.
 
-1. Go to the **Policies** tab and confirm the policy `Detect High-Permission OAuth Apps` is listed with **Status = Active**.
+    ![](./media/rdr_xdr_19.png)
 
-   ![](./media/g-5-16.png)
-
-1. From the left menu, navigate to:  
-   **Incidents & alerts** → **Incidents**
-
-1. Filter or search for incidents related to **OAuth apps**.
-
-1. Click any incident generated by your policy and investigate:
-   - What triggered it  
-   - Impacted user  
-   - App involved  
-   - Actions taken or recommended
-
-1. Go to:
-
-    **App governance** → **Overview** → **View all apps**
-
-1. Sort the list by the **Privilege level** column.
-
-    ![](./media/g-5-15.png)
-
-    ![](./media/g-5-16.png)
-
-1. From the left-hand menu, navigate again to **Incidents & alerts** → **Incidents** and locate the incident named `Detect High-Permission OAuth Apps`.
-
-    ![](./media/a-1-1.png)
-
-1. In the incident pane, review:
-    - Entity Name (`AuditLogApp`)  
-    - Remediation status  
-    - Verdict (Suspicious)  
-    - Incident severity (should be High)  
-    - Policy name that triggered the alert
-   
-    ![](./media/a-1-2.png)
-
-   > You've now confirmed that your detection policy is functioning, and risky OAuth apps are being flagged and investigated as part of your cloud app security posture.
 
 ## Review
 
