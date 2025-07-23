@@ -1,4 +1,4 @@
-# Day 2: Securing Access to SaaS Apps with Microsoft Defender for Cloud Apps
+# Securing Access to SaaS Apps with Microsoft Defender for Cloud Apps - Day 2
 
 ### Overall Estimated Duration: 2 Hours
 

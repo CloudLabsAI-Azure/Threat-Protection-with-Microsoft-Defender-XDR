@@ -1,4 +1,4 @@
-# Day 1: Securing Collaboration with Microsoft Defender Solutions
+# Securing Collaboration with Microsoft Defender Solutions - Day 1 
 
 ### Overall Estimated Duration: 2 Hours
 
