@@ -8,6 +8,7 @@ In this exercise, you will implement App Governance in Microsoft Defender for Cl
 
 - Task 1: Implement App Governance and Risk Detection for OAuth Apps  
 - Task 2: Investigate Alerts and Create Custom Detection Policies
+- Task 3: Deploy Microsoft Defender for Identity Sensor on Domain Controllers
 
 ## Task 1: Implement App Governance and Risk Detection for OAuth Apps
 
