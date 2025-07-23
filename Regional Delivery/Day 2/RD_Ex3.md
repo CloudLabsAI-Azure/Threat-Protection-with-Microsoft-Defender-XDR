@@ -1,4 +1,5 @@
 ## Exercise 3: Detect Identity Threats and Integrate Defender for Identity with Microsoft XDR and Sentinel
+### Estimated Duration: 60 Minutes
 
 ## Overview
 
