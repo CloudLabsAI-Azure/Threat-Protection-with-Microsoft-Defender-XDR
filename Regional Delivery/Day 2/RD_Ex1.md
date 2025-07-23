@@ -145,7 +145,7 @@ In this task, you will create a Microsoft Defender for Cloud Apps session policy
 
    ![](./media/rd_day2_ex1_t2_4.png)
 
-Now simulate the download attempt to validate the policy.
+    Now simulate the download attempt to validate the policy.
 
 1. On your desktop, right-click the **Microsoft Edge (1)** shortcut, go to **Send to (2)** and select **Documents (3)**.
 
