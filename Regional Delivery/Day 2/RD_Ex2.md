@@ -11,106 +11,90 @@ In this exercise, you will implement App Governance in Microsoft Defender for Cl
 
 ## Task 1: Implement App Governance and Risk Detection for OAuth Apps
 
-In this task, you'll create a custom policy using App Governance in Microsoft Defender for Cloud Apps to detect high-permission OAuth apps, and then verify if incidents are triggered when such apps are detected.
+In this task, you'll enable App Governance, analyze high-risk OAuth apps, and create a custom detection policy to flag suspicious apps based on permissions and publisher verification.
 
-1. In the Microsoft Defender portal, navigate to **Cloud apps** from the left-hand menu.
+1. On the **Microsoft Defender portal**, go to **System (1)** > **Settings (2)** and click **Cloud Apps (3)**.
 
-2. Select **App governance** from the submenu.
+   ![](./media/rdr_xdr_1.png)
 
-3. On the **App governance** page, select the **Policies** tab.
+1. Under **App governance**, select **Service status (1)** and click **Turn on app governance (2)**.
 
-   ![](./media/rd_day2_ex2_t1_1.png)
+   ![](./media/rdr_xdr_2.png)
 
-4. Click **+ Create policy** at the top.
+1. In the **Cloud apps** section, select **OAuth apps**.
 
-   ![](./media/rd_day2_ex2_t1_2.png)
+   ![](./media/rdr_xdr_3.png)
 
-5. On the **Create a new policy** page, choose **Custom policy** under the Custom category.
+1. On the OAuth apps page, click **Go to app governance**.
 
-6. Click **Next** to proceed.
+   ![](./media/rdr_xdr_4.png)
 
-   ![](./media/rd_day2_ex2_t1_3.png)
+1. In the left menu, go to **Cloud apps (1)** > **Governance log (2)** and select the **AuditLogApp (3)** from the listed apps.
 
-7. Provide the following policy details:
+   ![](./media/rdr_xdr_5.png)
 
-   - **Name**: `Detect High-Permission OAuth Apps`  
-   - **Description**: Flags apps with high-risk delegated permissions and unverified publishers  
-   - **Severity**: High
+1. In the AuditLogApp details pane, select the **Permissions (1)** tab and review the permissions classified as **High privilege (2)**.
 
-8. Click **Next**.
+   ![](./media/rdr_xdr_6.png)
 
-   ![](./media/rd_day2_ex2_t1_4.png)
+1. Go to the **Policies (1)** tab > select **Microsoft 365 (2)**, then click **Create policy (3)**.
 
-9. When asked to use a template, select **No, I'll customize the policy**, then click **Next**.
+   ![](./media/rdr_xdr_7.png)
 
-   ![](./media/rd_day2_ex2_t1_5.png)
+1. In the **Choose a policy template** pane, select **Custom (1)** > **Custom policy (2)** and click **Next (3)**.
 
-10. Under the **Scope** section, select **All apps** and click **Next**.
+   ![](./media/rdr_xdr_8.png)
 
-   ![](./media/rd_day2_ex2_t1_6.png)
+1. Name the policy as **Detect High-Permission OAuth Apps (1)**, set **Severity to High (2)**, and click **Next (3)**.
 
-11. In the **Conditions** page, apply the following filters:
+   ![](./media/rdr_xdr_9.png)
 
-   - **Highly privileged** = Yes  
-   - **Publisher verified** = No
+1. Select **No, I’ll customize the policy (1)**, then click **Next (2)**.
 
-12. Click **Save**.
+    ![](./media/rdr_xdr_10.png)
 
-   ![](./media/rd_day2_ex2_t1_7.png)
+1. Under policy scope, select **All apps (1)** and click **Next (2)**.
 
-13. On the **Set policy action** page, leave the **Disable app** checkbox **unchecked (1)**, then click **Next (2)**.
+    ![](./media/rdr_xdr_11.png)
 
-   ![](./media/rd_day2_ex2_t1_8.png)
+1. Configure the policy conditions:  
+    - Set **Highly privileged (1)** to **Yes (2)**  
+    - Set **Publisher verified (3)** to **No (4)**  
+    - Click **Save (5)**
 
-14. On the **Set policy status** screen, select **Active (1)** and click **Next (2)**.
+    ![](./media/rdr_xdr_12.png)
 
-   ![](./media/rd_day2_ex2_t1_9.png)
+1. In the **Set policy action** step, choose **Disable app (1)** and click **Next (2)**.
 
-15. Review the configuration and click **Submit** to create the policy.
+    ![](./media/rdr_xdr_13.png)
 
-   ![](./media/rd_day2_ex2_t1_10.png)
+1. Set the policy status to **Active (1)** and click **Next (2)**.
 
-16. When the confirmation screen appears, click **Done**.
+    ![](./media/rdr_xdr_14.png)
 
-   ![](./media/rd_day2_ex2_t1_11.png)
+1. Review the policy settings and click **Submit** to create the policy.
 
-17. Back on the **App governance** homepage, click **View all apps**.
+    ![](./media/rdr_xdr_15.png)
 
-   ![](./media/rd_day2_ex2_t1_12.png)
+1. On the confirmation screen, click **Done** to finish.
 
-18. Select the **Microsoft 365 (1)** tab and look for apps with **High** privilege level (2).
+    ![](./media/rdr_xdr_16.png)
 
-   ![](./media/rd_day2_ex2_t1_13.png)
+1. Back on the **App governance** overview, click **View all apps** to analyze detected apps.
 
-19. From the left-hand menu, go to **Incidents & alerts (1)** → **Incidents (2)**.
+    ![](./media/rdr_xdr_17.png)
 
-20. Locate the incident named **Detect High-Permission OAuth Apps (3)** and click on it.
+1. In the **Microsoft 365 (1)** tab, notice apps flagged with a **High (2)** privilege level.
 
-   ![](./media/rd_day2_ex2_t1_14.png)
+    ![](./media/rdr_xdr_18.png)
 
-21. In the incident pane, note the alert description and involved entity, e.g., `AuditLogApp`.
+1. Go to **Incidents & alerts (1)** > **Incidents (2)**, and click the incident **Detect High-Permission OAuth Apps (3)**.
 
-   ![](./media/rd_day2_ex2_t1_15.png)
+    ![](./media/rdr_xdr_19.png)
 
-22. Expand the **Alert description** and **Incident details** sections to verify:
+1. In the incident details pane, review the violation summary, app, and policy triggered.
 
-   - Entity Name  
-   - Remediation status  
-   - Verdict  
-   - Incident severity  
-   - Linked policy name
-
-   ![](./media/rd_day2_ex2_t1_16.png)
-
-23. **(MISSING STEP)**: Ideally, include a screenshot that shows the **Permissions**, **Activity**, and **Risk indicators** tabs for the flagged app, to complete the validation.
-
-   > If available, please capture a screenshot of the app detail view showing risk indicators, and permissions usage.
-
-24. **(MISSING STEP)**: Optionally validate the **Policy list** to ensure the created policy is listed as **Active** under **App Governance > Policies**.
-
-   > Screenshot needed for completeness of policy validation.
-
-25. You have now implemented a custom App Governance policy, triggered an alert, and reviewed the incident tied to risky OAuth behavior.
+    ![](./media/rdr_xdr_20.png)
 
 
 ## Task 2: Investigate Alerts and Create Custom Detection Policies
