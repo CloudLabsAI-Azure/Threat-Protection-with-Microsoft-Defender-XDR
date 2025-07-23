@@ -83,7 +83,7 @@ In this exercise, you'll build an automated incident response workflow by integr
       ![](./media/E4T2S4.png)
       > **Note:** The **Contained** tag shown below the Demouser account indicates that the user has been contained and is no longer able to access the virtual machine.
 
-### Task 1: Create a SharePoint site and custom list to store incident logs
+### Task 3: Create a SharePoint site and custom list to store incident logs
 
 In this task, you'll create a SharePoint communication site named `Incident_Logs` and set up a list called `Powershell_Logs_list`. This list will be used to log incident details such as flagged emails via Power Automate.
 
@@ -144,7 +144,7 @@ In this task, you'll create a SharePoint communication site named `Incident_Logs
 
    ![](./media/sp_gg_e4_13.png)
 
-## Task 2: Create a Microsoft Sentinel Playbook to Notify SOC
+## Task 4: Create a Microsoft Sentinel Playbook to Notify SOC
 
 In this task, you will create a Sentinel playbook named **Notify-SOC-OnPowerShellIncident** using Logic Apps. The playbook will trigger from a Sentinel incident and send an email to the SOC team containing dynamic incident details such as title, severity, status, and more.
 
@@ -214,7 +214,7 @@ In this task, you will create a Sentinel playbook named **Notify-SOC-OnPowerShel
     > **Note:** You can now link this playbook to an analytics rule as an automated response to PowerShell-based attacks or similar alerts.
 
 
-## Task 3: Create Analytics Rule and Trigger Playbook using Microsoft Sentinel
+## Task 5: Create Analytics Rule and Trigger Playbook using Microsoft Sentinel
 
 In this task, you'll configure an analytics rule in Microsoft Sentinel to detect suspicious PowerShell activity and trigger an automated playbook when an incident is created.
 
@@ -282,7 +282,7 @@ In this task, you'll configure an analytics rule in Microsoft Sentinel to detect
    ![](./media/crz_e4_g_8.png)
 
 
-### Task 4: Create a Power Automate Flow to Log Flagged Emails into SharePoint
+### Task 6: Create a Power Automate Flow to Log Flagged Emails into SharePoint
 
 In this task, you'll create a flow in Power Automate that triggers when an email is flagged in Outlook and logs its details (subject, sender, body, etc.) into the SharePoint list you created earlier.
 
