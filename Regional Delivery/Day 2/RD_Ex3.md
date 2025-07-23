@@ -1,3 +1,15 @@
+# Exercise 3: Detect Identity Threats and Integrate Defender for Identity with Microsoft XDR and Sentinel
+
+## Overview
+
+In this exercise, you will explore how Microsoft Defender for Identity detects and responds to identity-based threats. You’ll begin by simulating a lateral movement attack using a DC Sync technique and observe how Defender for Identity automatically contains the threat. Next, you’ll investigate user activity and threat timelines to analyze suspicious behavior. Finally, you’ll integrate Defender for Identity with Microsoft 365 Defender and Microsoft Sentinel to centralize alert visibility and incident correlation across your environment.
+
+## Objectives
+
+- Task 1: Simulate and Detect Lateral Movement Attacks  
+- Task 2: Investigate Identity-Based Threats and User Timelines  
+- Task 3: Integrate Defender for Identity with Microsoft Defender Portal and Microsoft Sentinel
+
 ### Task 1: Simulate and Detect Lateral Movement Attacks `(Read-Only)`
 
 In this task, you will simulate a Lateral Movement attack and detect it using Microsoft Defender for Identity. Please note that this is a `read-only` task, as you will be logged out of your virtual machine during the attack simulation—this is a security measure enforced by Defender for Identity.
@@ -71,3 +83,16 @@ In this task you will enable integration to view Defender for Identity incidents
 1. Click on **Connect incidents & alerts** and navigate back to Data connectors page and make sure that **Defender for XDR** shows as connected
 
       ![](./media/E1T4S5.png)
+
+## Review
+
+In this lab, you have completed the following tasks:
+
+- Simulated a lateral movement attack using the DC Sync technique to test Defender for Identity detection.  
+- Observed automatic threat response and containment triggered by Defender for Identity.  
+- Investigated identity-based threats using the user timeline and activity alerts.  
+- Integrated Defender for Identity with Microsoft 365 Defender and Microsoft Sentinel for centralized threat visibility.
+
+### You have successfully completed the lab. Click on **Next >>** to proceed with the next Lab.
+
+![](./media/rd_gs_1_9.png)
