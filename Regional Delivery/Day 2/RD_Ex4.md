@@ -1,4 +1,4 @@
-### Task 2: Create a SharePoint Site and List to Log Incident Details
+### Task 1: Create a SharePoint Site and List to Log Incident Details
 
 In this task, you'll create a SharePoint communication site named `Incident_Logs` and set up a list called `Powershell_Logs_list`. This list will be used to log incident details such as flagged emails via Power Automate.
 
@@ -66,7 +66,7 @@ In this task, you will create a Sentinel playbook named **Notify-SOC-OnPowerShel
 1. On the **Add an action** pane in Logic App designer, search for **Send an email (V2)** in the search box **(1)**. From the **Office 365 Outlook** connector, click **Send an email (V2) (2)**.<br>
    ![](./media/a_gg_ex4_1.png)
 
-2. In the **Send an email (V2)** configuration pane:
+1. In the **Send an email (V2)** configuration pane:
     - In the **To** field, enter the ODL user email (e.g., `odl_user_xxx@otuwa...onmicrosoft.com`) **(1)**.
     - In the **Subject** field, enter:  
       ```
@@ -75,19 +75,23 @@ In this task, you will create a Sentinel playbook named **Notify-SOC-OnPowerShel
       **(2)**<br>
    ![](./media/a_gg_ex4_2.png)
 
-3. Select the placeholder text **<Incident Title> (1)** in the **Subject** field and click the **dynamic content icon (2)** to open available variables.<br>
+1. Select the placeholder text **<Incident Title> (1)** in the **Subject** field and click the **dynamic content icon (2)** to open available variables.
+
    ![](./media/a_gg_ex4_3.png)
 
-4. In the dynamic content popup, search for **Incident Title (1)** and click **Incident Title (2)** from the Microsoft Sentinel incident list.<br>
+1. In the dynamic content popup, search for **Incident Title (1)** and click **Incident Title (2)** from the Microsoft Sentinel incident list.
+
    ![](./media/a_gg_ex4_4.png)
 
-5. Similarly, select the placeholder **<Severity> (1)** in the Subject field and click the **dynamic content icon (2)** again.<br>
+1. Similarly, select the placeholder **<Severity> (1)** in the Subject field and click the **dynamic content icon (2)** again.
+
    ![](./media/a_gg_ex4_5.png)
 
-6. Search for **Incident Severity (1)** and select **Incident Severity (2)**.<br>
+1. Search for **Incident Severity (1)** and select **Incident Severity (2)**.
+
    ![](./media/a_gg_ex4_6.png)
 
-7. In the **Body** field, begin entering the incident metadata using the following format:
+1. In the **Body** field, begin entering the incident metadata using the following format:
     ```
     Alert: Incident Title
     Severity: Incident Severity
@@ -96,25 +100,31 @@ In this task, you will create a Sentinel playbook named **Notify-SOC-OnPowerShel
     Link: Incident URL
     ```
     Then insert each of the corresponding dynamic content values.<br>
-   ![](./media/a_gg_ex4_7.png)<br>
+
+   ![](./media/a_gg_ex4_7.png)
    > **Note:** Use dynamic fields to enrich the SOC email with full visibility into the incident.
 
-8. Add **Incident Status** from dynamic content under **Status**.<br>
+1. Add **Incident Status** from dynamic content under **Status**.
+
    ![](./media/a_gg_ex4_9.png)
 
-9. Add the **Entities** field next to the Entities label.<br>
+1. Add the **Entities** field next to the Entities label.
+
    ![](./media/a_gg_ex4_10.png)
 
-10. Select and add the **Incident URL** field for the **Link** label to provide direct access to the incident in Microsoft Sentinel.<br>
+1. Select and add the **Incident URL** field for the **Link** label to provide direct access to the incident in Microsoft Sentinel.
+
     ![](./media/a_gg_ex4_11.png)
 
-11. After verifying all fields are correctly added in the **Subject** and **Body** sections, ensure the flow looks like the one shown.<br>
+1. After verifying all fields are correctly added in the **Subject** and **Body** sections, ensure the flow looks like the one shown.
+
     ![](./media/a_gg_ex4_12.png)
 
-12. On the **Logic App Designer** toolbar, click **Save (1)** to save the playbook.<br>
+1. On the **Logic App Designer** toolbar, click **Save (1)** to save the playbook.
+
     ![](./media/a_gg_ex4_13.png)
 
-13. The playbook named **Notify-SOC-OnPowerShellIncident** is now configured to notify SOC teams via email whenever a Sentinel incident is triggered.
+1. The playbook named **Notify-SOC-OnPowerShellIncident** is now configured to notify SOC teams via email whenever a Sentinel incident is triggered.
 
     > **Note:** You can now link this playbook to an analytics rule as an automated response to PowerShell-based attacks or similar alerts.
 
@@ -127,7 +137,7 @@ In this task, you'll configure an analytics rule in Microsoft Sentinel to detect
 
    ![](./media/crz_e4_g_1.png)
 
-2. On the **Analytics rule wizard**, configure the General settings:
+1. On the **Analytics rule wizard**, configure the General settings:
    - Enter **Suspicious PowerShell Execution (1)** as the rule name.
    - Set **Severity (2)** to `High`.
    - Select **Lateral Movement (3)** under MITRE ATT&CK.
@@ -136,7 +146,7 @@ In this task, you'll configure an analytics rule in Microsoft Sentinel to detect
 
    ![](./media/crz_e4_g_2.png)
 
-3. On the **Set rule logic** tab:
+1. On the **Set rule logic** tab:
    - Paste the following KQL under **Rule query (1)**:
      ```
      SecurityAlert
@@ -152,7 +162,7 @@ In this task, you'll configure an analytics rule in Microsoft Sentinel to detect
 
    ![](./media/crz_e4_g_3.png)
 
-4. Scroll down to **Query scheduling**:
+1. Scroll down to **Query scheduling**:
    - Set **Run query every (3)**: `5` Minutes
    - Set **Lookup data from the last (4)**: `6` Minutes
    - Choose **Automatically (5)** for start running
@@ -160,18 +170,18 @@ In this task, you'll configure an analytics rule in Microsoft Sentinel to detect
 
    ![](./media/crz_e4_g_4.png)
 
-5. On the **Automated response** tab, click **+ Add new** to create a new automation rule.
+1. On the **Automated response** tab, click **+ Add new** to create a new automation rule.
 
    ![](./media/crz_e4_g_5.png)
 
-6. In the **Create new automation rule** window:
+1. In the **Create new automation rule** window:
    - Set **Automation rule name (1)**: `Run Notify-SOC-OnPowerShellIncident Playbook`
    - Under **Trigger (2)**: Select `When incident is created`
    - Click **+ Add (3)** and select **Condition (And) (4)**
 
    ![](./media/crz_e4_g_6.png)
 
-7. Configure the condition and action:
+1. Configure the condition and action:
    - Set condition:
      - Property: `Title (1)`
      - Operation: `Contains (2)`
@@ -182,7 +192,7 @@ In this task, you'll configure an analytics rule in Microsoft Sentinel to detect
 
    ![](./media/crz_e4_g_7.png)
 
-8. The configured automation rule will now run the playbook when an incident title contains `PowerShell`. Once triggered, an email notification is sent with incident details including severity, entities, and incident link.
+1. The configured automation rule will now run the playbook when an incident title contains `PowerShell`. Once triggered, an email notification is sent with incident details including severity, entities, and incident link.
 
    ![](./media/crz_e4_g_8.png)
 
@@ -195,63 +205,63 @@ In this task, you'll create a flow in Power Automate that triggers when an email
 
    ![](./media/z_gg_e4_1.png)
 
-2. In the **Build an automated cloud flow** window:
+1. In the **Build an automated cloud flow** window:
    - Enter **Automate Flagged Mail** as the **Flow name (1)**.
    - Search and select **When an email is flagged (V3)** as the trigger **(2, 3)**.
    - Click **Create (4)** to proceed.
 
    ![](./media/z_gg_e4_2.png)
 
-3. On the flow canvas, click the **+ (1)** icon below the trigger to add a new action.
+1. On the flow canvas, click the **+ (1)** icon below the trigger to add a new action.
 
    ![](./media/z_gg_e4_3.png)
 
-4. In the **Add an action** pane:
+1. In the **Add an action** pane:
    - Search for **Get email (V2)** **(1)**.
    - Select **Get email (V2)** from **Office 365 Outlook** **(2)**.
 
    ![](./media/z_gg_e4_4.png)
 
-5. In the **Get email (V2)** action, under **Message Id**, click the field **(1)** and select **Insert dynamic content (2)**.
+1. In the **Get email (V2)** action, under **Message Id**, click the field **(1)** and select **Insert dynamic content (2)**.
 
    ![](./media/z_gg_e4_5.png)
 
-6. In the dynamic content pane, search for **Message Id (1)** and select the field from **When an email is flagged (V3)** **(2)**.
+1. In the dynamic content pane, search for **Message Id (1)** and select the field from **When an email is flagged (V3)** **(2)**.
 
    ![](./media/z_gg_e4_6.png)
 
-7. Verify that **Message Id** is now populated dynamically. Leave the other default values as-is.
+1. Verify that **Message Id** is now populated dynamically. Leave the other default values as-is.
 
    ![](./media/z_gg_e4_7.png)
 
-8. Click the **+ (1)** icon below the **Get email (V2)** step to add another action.
+1. Click the **+ (1)** icon below the **Get email (V2)** step to add another action.
 
    ![](./media/z_gg_e4_8.png)
 
-9. Search for **Create item (1)** and select it under **SharePoint (2)**.
+1. Search for **Create item (1)** and select it under **SharePoint (2)**.
 
    ![](./media/z_gg_e4_9.png)
 
-10. In the **Create item** action:
+1. In the **Create item** action:
     - Set **Site Address** to your SharePoint site (e.g., `Incident_Logs`) **(1)**.
     - Set **List Name** to `Powershell_Logs_list` **(2)**.
     - Expand **Advanced parameters** to view list columns **(3)**.
 
    ![](./media/z_gg_e4_10.png)
 
-11. Select the following fields to display: **Title**, **Flagged by**, **Email Body**, **Message ID**, and **Flagged Date**.
+1. Select the following fields to display: **Title**, **Flagged by**, **Email Body**, **Message ID**, and **Flagged Date**.
 
    ![](./media/z_gg_e4_11.png)
 
-12. In the **Title** field, click inside and select **Insert dynamic content (2)**.
+1. In the **Title** field, click inside and select **Insert dynamic content (2)**.
 
    ![](./media/z_gg_e4_12.png)
 
-13. From the dynamic content pane, search for **Subject** and select it from either trigger or action.
+1. From the dynamic content pane, search for **Subject** and select it from either trigger or action.
 
    ![](./media/z_gg_e4_13.png)
 
-14. Fill in the remaining fields as follows:
+1. Fill in the remaining fields as follows:
     - **Title**: `Subject`
     - **Flagged by**: `From`
     - **Email Body**: `Body`
@@ -260,18 +270,18 @@ In this task, you'll create a flow in Power Automate that triggers when an email
 
    ![](./media/z_gg_e4_14.png)
 
-> **Note:** Use the dynamic content from **Get email (V2)** wherever possible for more complete data.  
-> **Important:** The **Body** field might store raw HTML — use additional processing if formatting is needed.
+   > **Note:** Use the dynamic content from **Get email (V2)** wherever possible for more complete data.  
+   > **Important:** The **Body** field might store raw HTML — use additional processing if formatting is needed.
 
-15. Once the flow is complete, click **Save** in the top-right corner.
+1. Once the flow is complete, click **Save** in the top-right corner.
 
    ![](./media/z_gg_e4_15.png)
 
-16. Now go to your Outlook mailbox and flag an email you want to test the flow with.
+1. Now go to your Outlook mailbox and flag an email you want to test the flow with.
 
    ![](./media/z_gg_e4_16.png)
 
-17. After a few moments, go to the **Powershell_Logs_list** on your SharePoint site and verify that the email entry appears with all details logged.
+1. After a few moments, go to the **Powershell_Logs_list** on your SharePoint site and verify that the email entry appears with all details logged.
 
    ![](./media/z_gg_e4_17.png)
 
