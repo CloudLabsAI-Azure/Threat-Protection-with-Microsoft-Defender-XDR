@@ -228,5 +228,5 @@ You’ve implemented real-time monitoring and control over SaaS applications usi
 
 ### You have successfully completed the lab. Click on **Next >>** to proceed with the next Lab.
 
-![](./media/cord1e1_4.png)
+![](./media/rd_gs_1_9.png)
 
