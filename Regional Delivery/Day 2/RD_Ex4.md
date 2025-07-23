@@ -139,10 +139,9 @@ In this task, you'll create a SharePoint communication site named `Incident_Logs
 
 1. Repeat the previous steps to add the following columns:
 
-    - **Email Body** (Text)
+    - **Email Body** (Multiple lines of Text)
     - **Message ID** (Text)
     - **Flagged Date** (Date and time)
-    - **Email URL** (Hyperlink)
 
    ![](./media/sp_gg_e4_13.png)
 
