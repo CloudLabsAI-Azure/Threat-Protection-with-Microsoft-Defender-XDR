@@ -1,4 +1,18 @@
-### Task 1: Create a SharePoint Site and List to Log Incident Details
+## Exercise 4: Automate Incident Response with Power Automate and Microsoft Sentinel
+
+### Overview
+
+In this exercise, you'll build an automated incident response workflow by integrating Microsoft Sentinel with Power Automate and SharePoint. You’ll simulate flagged emails, trigger alerts for suspicious PowerShell usage, and build a complete automation pipeline to notify SOC teams and log incidents.
+
+
+### Objectives
+
+- Create a SharePoint site and custom list to store incident logs
+- Build a Power Automate flow that logs flagged emails into SharePoint
+- Create a Microsoft Sentinel playbook to notify SOC on incident trigger
+- Configure Sentinel analytics rule to detect suspicious activity and invoke the playbook
+
+### Task 1: Create a SharePoint site and custom list to store incident logs
 
 In this task, you'll create a SharePoint communication site named `Incident_Logs` and set up a list called `Powershell_Logs_list`. This list will be used to log incident details such as flagged emails via Power Automate.
 
@@ -287,4 +301,14 @@ In this task, you'll create a flow in Power Automate that triggers when an email
 
 > **Tip:** You can further extend this flow by notifying the SOC via Teams or email, or even triggering an Azure Logic App or Defender investigation.
 
+## Review
+
+In this lab, you have completed the following tasks:
+
+- Created a SharePoint communication site and a custom list to log incident details from flagged emails.
+- Built a Power Automate flow that triggers on flagged Outlook emails and logs metadata into SharePoint.
+- Created a Microsoft Sentinel playbook using Logic Apps to notify SOC teams via email when incidents are triggered.
+- Configured a Sentinel analytics rule to detect suspicious PowerShell executions and trigger the playbook automatically.
+
+### You have successfully completed the lab.
 
