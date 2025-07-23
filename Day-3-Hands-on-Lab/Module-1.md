@@ -121,9 +121,6 @@ Install the AD DS role to enable the server to function as a domain controller.
       ![](./media/E1T0S7a.png)
 
    - Use default paths for the AD DS database, logs, and SYSVOL, then click **Next**.
-
-      ![](./media/E1T0S8.png)
-
    - Review your selections, then click **Next**.
    - Wait for the prerequisites check to complete, then click **Install**.
    - Wait for the process to complete; the server will restart automatically.
