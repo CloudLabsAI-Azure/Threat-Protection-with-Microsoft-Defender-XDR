@@ -59,6 +59,134 @@ In this task, you'll create a SharePoint communication site named `Incident_Logs
 
    ![](./media/sp_gg_e4_13.png)
 
+## Task 2: Create a Microsoft Sentinel Playbook to Notify SOC
+
+In this task, you will create a Sentinel playbook named **Notify-SOC-OnPowerShellIncident** using Logic Apps. The playbook will trigger from a Sentinel incident and send an email to the SOC team containing dynamic incident details such as title, severity, status, and more.
+
+1. On the **Add an action** pane in Logic App designer, search for **Send an email (V2)** in the search box **(1)**. From the **Office 365 Outlook** connector, click **Send an email (V2) (2)**.<br>
+   ![](./media/a_gg_ex4_1.png)
+
+2. In the **Send an email (V2)** configuration pane:
+    - In the **To** field, enter the ODL user email (e.g., `odl_user_xxx@otuwa...onmicrosoft.com`) **(1)**.
+    - In the **Subject** field, enter:  
+      ```
+      [Sentinel] Incident: <Incident Title> - Severity: <Severity>
+      ```
+      **(2)**<br>
+   ![](./media/a_gg_ex4_2.png)
+
+3. Select the placeholder text **<Incident Title> (1)** in the **Subject** field and click the **dynamic content icon (2)** to open available variables.<br>
+   ![](./media/a_gg_ex4_3.png)
+
+4. In the dynamic content popup, search for **Incident Title (1)** and click **Incident Title (2)** from the Microsoft Sentinel incident list.<br>
+   ![](./media/a_gg_ex4_4.png)
+
+5. Similarly, select the placeholder **<Severity> (1)** in the Subject field and click the **dynamic content icon (2)** again.<br>
+   ![](./media/a_gg_ex4_5.png)
+
+6. Search for **Incident Severity (1)** and select **Incident Severity (2)**.<br>
+   ![](./media/a_gg_ex4_6.png)
+
+7. In the **Body** field, begin entering the incident metadata using the following format:
+    ```
+    Alert: Incident Title
+    Severity: Incident Severity
+    Status: Incident Status
+    Entities: Entities
+    Link: Incident URL
+    ```
+    Then insert each of the corresponding dynamic content values.<br>
+   ![](./media/a_gg_ex4_7.png)<br>
+   > **Note:** Use dynamic fields to enrich the SOC email with full visibility into the incident.
+
+8. Add **Incident Status** from dynamic content under **Status**.<br>
+   ![](./media/a_gg_ex4_9.png)
+
+9. Add the **Entities** field next to the Entities label.<br>
+   ![](./media/a_gg_ex4_10.png)
+
+10. Select and add the **Incident URL** field for the **Link** label to provide direct access to the incident in Microsoft Sentinel.<br>
+    ![](./media/a_gg_ex4_11.png)
+
+11. After verifying all fields are correctly added in the **Subject** and **Body** sections, ensure the flow looks like the one shown.<br>
+    ![](./media/a_gg_ex4_12.png)
+
+12. On the **Logic App Designer** toolbar, click **Save (1)** to save the playbook.<br>
+    ![](./media/a_gg_ex4_13.png)
+
+13. The playbook named **Notify-SOC-OnPowerShellIncident** is now configured to notify SOC teams via email whenever a Sentinel incident is triggered.
+
+    > **Note:** You can now link this playbook to an analytics rule as an automated response to PowerShell-based attacks or similar alerts.
+
+
+## Task 3: Create Analytics Rule and Trigger Playbook using Microsoft Sentinel
+
+In this task, you'll configure an analytics rule in Microsoft Sentinel to detect suspicious PowerShell activity and trigger an automated playbook when an incident is created.
+
+1. In the **Microsoft Sentinel** portal, under your selected workspace, go to **Configuration (1)** > **Analytics (2)** and click **+ Create (3)** > **Scheduled query rule (4)**.
+
+   ![](./media/crz_e4_g_1.png)
+
+2. On the **Analytics rule wizard**, configure the General settings:
+   - Enter **Suspicious PowerShell Execution (1)** as the rule name.
+   - Set **Severity (2)** to `High`.
+   - Select **Lateral Movement (3)** under MITRE ATT&CK.
+   - Ensure **Status (4)** is set to `Enabled`.
+   - Click **Next: Set rule logic (5)**.
+
+   ![](./media/crz_e4_g_2.png)
+
+3. On the **Set rule logic** tab:
+   - Paste the following KQL under **Rule query (1)**:
+     ```
+     SecurityAlert
+     | where TimeGenerated > ago(5m)
+     | where AlertName has "Suspicious Powershell commandline"
+     | where ProductName == "Microsoft Defender Advanced Threat Protection"
+     | where AlertSeverity != "Informational"
+         or (AlertSeverity == "Informational" and DisplayName startswith "[Test Alert]")
+     ```
+   - Under **Alert enhancement**, set **Entity mapping (2)**:
+     - Entity type: `Host`
+     - Identifier: `HostName` → `CompromisedEntity`
+
+   ![](./media/crz_e4_g_3.png)
+
+4. Scroll down to **Query scheduling**:
+   - Set **Run query every (3)**: `5` Minutes
+   - Set **Lookup data from the last (4)**: `6` Minutes
+   - Choose **Automatically (5)** for start running
+   - Click **Next: Incident settings (6)**
+
+   ![](./media/crz_e4_g_4.png)
+
+5. On the **Automated response** tab, click **+ Add new** to create a new automation rule.
+
+   ![](./media/crz_e4_g_5.png)
+
+6. In the **Create new automation rule** window:
+   - Set **Automation rule name (1)**: `Run Notify-SOC-OnPowerShellIncident Playbook`
+   - Under **Trigger (2)**: Select `When incident is created`
+   - Click **+ Add (3)** and select **Condition (And) (4)**
+
+   ![](./media/crz_e4_g_6.png)
+
+7. Configure the condition and action:
+   - Set condition:
+     - Property: `Title (1)`
+     - Operation: `Contains (2)`
+     - Value: `PowerShell (3)`
+   - Under **Actions**, select **Run playbook (4)** and choose:
+     - `Notify-SOC-OnPowerShellIncident (5)` from your `threadprotection-rg` resource group.
+   - Click **Apply (6)**
+
+   ![](./media/crz_e4_g_7.png)
+
+8. The configured automation rule will now run the playbook when an incident title contains `PowerShell`. Once triggered, an email notification is sent with incident details including severity, entities, and incident link.
+
+   ![](./media/crz_e4_g_8.png)
+
+
 ### Task 2: Create a Power Automate Flow to Log Flagged Emails into SharePoint
 
 In this task, you'll create a flow in Power Automate that triggers when an email is flagged in Outlook and logs its details (subject, sender, body, etc.) into the SharePoint list you created earlier.
