@@ -12,6 +12,77 @@ In this exercise, you'll build an automated incident response workflow by integr
 - Create a Microsoft Sentinel playbook to notify SOC on incident trigger
 - Configure Sentinel analytics rule to detect suspicious activity and invoke the playbook
 
+### Task 1: Review Automated Investigation and Response (`Read-Only`)
+
+> **Note:** In this task, we will **only review** the configuration steps. No actual deployment or configuration will be performed, as the Microsoft E5 license assigned to this lab **already includes AIR pre-configured**.
+
+1. Navigate to the Defender portal and from the left navigation pane go to **Settings** → **Endpoints**.
+
+      ![](./media/E4T1S1.png)
+
+1. Under **Permissions** select **Device groups** and click on **+ Add device group**
+
+      ![](./media/E4T1S2.png)
+
+1. Enter the following settings on the **General** tab and click on **Next**
+
+    - **Device group name:** Domain Controllers
+    - **Remediation level:** Full – remediate threats automatically
+
+      ![](./media/E4T1S3.png)
+
+1. Enter the following settings **Devices** and click on **Next**
+
+    - **Name:** svm-<inject key="DeploymentID" enableCopy="false"/>
+    - **Domain:** defenderxdr.internal
+
+      ![](./media/E4T1S4.png)
+
+1. Leave everything as default and click on **Next** in the **Preview devices** and click on **Submit**
+
+1. On the **No user groups selected** pop-up click on **Continue** and click on **Done**
+
+      ![](./media/E4T1S5.png)
+      >**Note:** You can create user groups in Entra and assign permissions to modify the device group exclusively to those groups. This approach enhances governance by restricting access to authorized users only.
+
+1. From the left navigation pane in the Defender portal go to **Settings** → **Microsoft Defender XDR**.
+
+      ![](./media/E4T1S6.png)
+
+1. Under **Automated response**, review the **Identities** tab to see available actions:
+    - Export: This option exports the list of users excluded from automated response actions
+    - Add user exclusion: This option
+
+      ![](./media/E4T1S8.png)
+
+1. Now, go to **Devices** under **Automated response** and review available actions:
+    - Device groups: You can use this to exclude device groups from automated response actions.
+    - Exclude IPs: You can configure specific IP addresses to be excluded from automated response actions.
+
+      ![](./media/E4T1S9.png)
+
+### Task 2: Incident Investigation & Automated Response Review (`Read-Only`)
+
+> **Note:** This task is **read-only**, as no lateral movement attacks were performed (in the previous exercise). As a result, no alerts will be generated. The images below are provided for **illustration purposes only**.
+
+1. From the left navigation pane in the Defender portal go to **Investigation & response** → **Incidents & alerts** →  **Identity**
+
+      ![](./media/E4T2S1.png)
+
+1. In the incidents page, review **Incident name**, **Incident id**, **Tags** etc
+
+      ![](./media/E4T2S2.png)
+
+1. Observe the tags tab, you will notice the **Lateral Movement attack** tag and **Attack Disruption** tag.
+
+      ![](./media/E4T2S3.png)
+      > **Note:** The **Attack Disruption** tag indicates that Microsoft Defender has actively contained the attack by taking actions such as disabling user accounts, blocking sign-ins, revoking access tokens, and similar measures.
+
+1. You can also view the timeline of the attack from the Users page
+
+      ![](./media/E4T2S4.png)
+      > **Note:** The **Contained** tag shown below the Demouser account indicates that the user has been contained and is no longer able to access the virtual machine.
+
 ### Task 1: Create a SharePoint site and custom list to store incident logs
 
 In this task, you'll create a SharePoint communication site named `Incident_Logs` and set up a list called `Powershell_Logs_list`. This list will be used to log incident details such as flagged emails via Power Automate.
