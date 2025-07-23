@@ -45,7 +45,7 @@ In this task, you'll create a custom role in Microsoft Defender to manage access
 
 1. On the **Assignments** screen, provide assignment details:
    - Assignment name: **`Test-assignment` (1)**.
-   - Select the lab user , **`ODL_User ...` (2)**.
+   - Select the lab user , **`ODL_User<inject key="Deployment-id" enableCopy="false"></inject>` (2)**.
    - Choose data source: **Microsoft Defender for Office 365 (3)**. 
    Click **Add (4)**.
 
