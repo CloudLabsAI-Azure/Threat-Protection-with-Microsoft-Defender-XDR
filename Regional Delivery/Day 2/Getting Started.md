@@ -1,26 +1,36 @@
-# Day 2: Threat Protection with Microsoft Defender XDR
+# Day 1: Threat Protection with Microsoft Defender XDR
 
 ### Overall Estimated Duration: 7 Hours
 
 ## Overview
 
-In this lab, you will explore how to enhance organizational security using Microsoft Defender for Office 365. You’ll configure threat protection policies, simulate phishing and malware attacks with the Attack Simulator, and analyze threats using Threat Explorer and real-time detections. The lab also covers investigating and remediating incidents in Microsoft Defender XDR, configuring anti-phishing and Safe Links policies, and implementing measures to monitor and maintain a strong security posture across Office 365.
+In this lab, you will advance your threat protection capabilities by integrating Microsoft Defender for Cloud Apps, Microsoft Defender for Identity, Microsoft Sentinel, and Power Automate. You’ll start by connecting and onboarding SaaS applications to Defender for Cloud Apps and configuring session policies to detect and block risky user behaviors. Then, you’ll implement App Governance to identify high-risk OAuth applications and create custom detection policies for suspicious activity. You’ll deploy Defender for Identity sensors to domain controllers, simulate and detect identity-based attacks such as Pass-the-Hash and DC Sync, and analyze threat timelines. Finally, you’ll implement automated investigation and response (AIR) for identity threats and build incident response workflows using Microsoft Sentinel and Power Automate.
+
+## Agenda for Day 2
+
+| Exercise | Title                                                                 |
+|----------|------------------------------------------------------------------------|
+| Exercise 1 | Connect and Monitor SaaS Apps with Microsoft Defender for Cloud Apps |
+| Exercise 2 | Implement App Governance and Detect OAuth Risks                      |
+| Exercise 3 | Investigate Identity Threats with Microsoft Defender for Identity     |
+| Exercise 4 | Automate Incident Response with Microsoft Sentinel and Power Automate|
+
+> Each exercise contains multiple tasks with detailed, step-by-step guidance and annotated screenshots to help you navigate the Defender XDR ecosystem.
 
 ## Objectives
 
-- Configure Threat Policies in Microsoft Defender for Office 365 
+By the end of Day 2, you will be able to:
 
-- Simulate Phishing and Malware Attacks Using Attack Simulator 
-
-- Analyze Threats with Threat Explorer and Real-Time Detections 
-
-- Investigate and remediate Incidents in Microsoft Defender XDR 
-
-- Configure Anti-Phishing and Safe Links Policies 
+- Onboard SaaS applications and configure session policies using Microsoft Defender for Cloud Apps.
+- Implement App Governance to detect high-risk OAuth apps and create custom detection policies.
+- Deploy Microsoft Defender for Identity sensors and investigate identity-based threats and lateral movement attacks.
+- Integrate Defender for Identity with Microsoft Defender XDR and analyze user timelines.
+- Implement automated investigation and response (AIR) for identity threats.
+- Build incident response workflows using Microsoft Sentinel and Power Automate.
 
 # Getting Started with the Lab
  
-Welcome to your Securing Collaboration with Microsoft Defender Solutions workshop! We've prepared a seamless environment for you to familiarize yourself with the Microsoft security operations analyst, you monitor, identify, investigate, and respond to threats in multi-cloud environments and related Microsoft services. Let's begin by making the most of this experience:
+Welcome to your Securing Collaboration with Microsoft Defender Solutions workshop! We've prepared a seamless environment for you to familiarize yourself with the Microsoft security operations analyst. You monitor, identify, investigate, and respond to threats in multi-cloud environments and related Microsoft services. Let's begin by making the most of this experience:
  
 ## Accessing Your Lab Environment
  
