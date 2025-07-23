@@ -1,4 +1,5 @@
-# Exercise 4: Discover and Analyze Shadow IT with Microsoft Defender for Cloud Apps
+## Exercise 4: Discover and Analyze Shadow IT with Microsoft Defender for Cloud Apps
+### Estimated Duration: 60 Minutes
 
 ## Overview
 
