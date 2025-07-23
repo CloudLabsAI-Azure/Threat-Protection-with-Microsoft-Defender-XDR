@@ -1,3 +1,14 @@
+# Exercise 1: Connect SaaS Apps and Configure Session Policies in Microsoft Defender for Cloud Apps
+
+## Overview
+
+In this exercise, you will connect and onboard a third-party SaaS application to Microsoft Defender for Cloud Apps to enable real-time monitoring and control. After onboarding, you'll configure session control policies to detect and block risky behaviors such as file downloads and suspicious user activity. These policies help enforce granular access and session control based on user context, device state, and activity risk—empowering your organization to prevent data leakage and insider threats in real time.
+
+## Objectives
+
+- Task 1: Connect and Onboard a SaaS App to Microsoft Defender for Cloud Apps  
+- Task 2: Configure Session Policies to Monitor and Block Risky Behavior
+
 ## Task 1: Connect and Onboard a SaaS App to Microsoft Defender for Cloud Apps
 
 In this task, you'll verify license assignment, enable auditing, configure Conditional Access policies, and onboard Microsoft 365 to Defender for Cloud Apps.
@@ -203,4 +214,19 @@ In this task, you’ll create a session policy in Microsoft Defender for Cloud A
 25. Verify that both **Microsoft 365** and **Microsoft Azure** show status as **Connected**.
 
     ![](./media/rd_day2_ex1_t1_23.png)
+
+## Review
+
+In this lab, you have completed the following tasks:
+
+- Connected and onboarded a third-party SaaS application to Microsoft Defender for Cloud Apps.
+- Verified successful connection through the connected apps dashboard.
+- Created session policies to detect risky behaviors such as file downloads and suspicious user activity.
+- Tested policy enforcement to ensure risky actions were blocked or monitored in real time.
+
+You’ve implemented real-time monitoring and control over SaaS applications using Defender for Cloud Apps.
+
+### You have successfully completed the lab. Click on **Next >>** to proceed with the next Lab.
+
+![](./media/cord1e1_4.png)
 
