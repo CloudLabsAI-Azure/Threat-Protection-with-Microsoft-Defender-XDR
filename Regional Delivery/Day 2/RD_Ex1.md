@@ -22,7 +22,7 @@ In this task, you'll verify license assignment, enable auditing, configure Condi
 
    ![](./media/rd_day2_ex1_t1_2.png)
 
-1. From the list of users, select the user **ODL_User 1777538 (1)**.
+1. From the list of users, select the **user** <inject key="Deployment-id" enableCopy="false"></inject>.
 
    ![](./media/rd_day2_ex1_t1_3.png)
 
@@ -42,15 +42,15 @@ In this task, you'll verify license assignment, enable auditing, configure Condi
 
    ![](./media/rd_day2_ex1_t1_7.png)
 
-1. Under the **Core** section, click on the **Audit (1)** tile.
+1. Under the **Core** section, click on the **Audit** tile.
 
    ![](./media/rd_day2_ex1_t1_8.png)
 
-1. On the **Audit** blade, click **Start recording user and admin activity (1)**.
+1. On the **Audit** blade, click **Start recording user and admin activity**.
 
    ![](./media/rd_day2_ex1_t1_9.png)
 
-1. When prompted, click **Yes (1)** to complete the organizational setup.
+1. When prompted, click **Yes** to complete the organizational setup.
 
     ![](./media/rd_day2_ex1_t1_10.png)
 
@@ -71,7 +71,8 @@ In this task, you'll verify license assignment, enable auditing, configure Condi
 
     ![](./media/rd_day2_ex1_t1_13.png)
 
-1. In the **Select users and groups** pane, search for `odl (1)`, check the box next to **ODL_User (2)**, and click **Select (3)**.
+1. In the **Select users and groups** pane, search for `<inject key="Deployment-id" enableCopy="false"></inject>
+ `, check the box next to **ODL_User (2)**, and click **Select (3)**.
 
     ![](./media/rd_day2_ex1_t1_14.png)
 
@@ -102,119 +103,99 @@ In this task, you'll verify license assignment, enable auditing, configure Condi
 
     ![](./media/rd_day2_ex1_t1_20.png)
 
-2. Under **Connected apps**, select **App Connectors (1)**.  
+1. Under **Connected apps**, select **App Connectors (1)**.  
     Check **Microsoft 365 (2)** and click **+ Connect (3)**.
 
     ![](./media/rd_day2_ex1_t1_21.png)
 
-3. On the next screen, click **Done (1)** to confirm that Microsoft 365 is connected.
+1. On the next screen, click **Done** to confirm that Microsoft 365 is connected.
 
     ![](./media/rd_day2_ex1_t1_22.png)
 
 ## Task 2: Configure Session Policies to Monitor and Block Risky Behavior
 
-In this task, you’ll create a session policy in Microsoft Defender for Cloud Apps to block file downloads for non-compliant devices.
+In this task, you will create a Microsoft Defender for Cloud Apps session policy to block downloads of risky files (e.g., `.exe`, `.apk`) from SharePoint Online for non-compliant devices.
 
-1. On the Microsoft Defender portal, select **Cloud Apps** from the left-hand menu.
-
-1. Under **Cloud Apps**, click **Policy management**.
+1. On the **Microsoft Defender portal**, navigate to **Policies (1)** under **Cloud apps**, then click **Policy management (2)**. On the **Policies** page, click **All policies (3)** at the top. Then select **Create policy (4)** and choose **Session policy (5)** from the dropdown.
 
    ![](./media/rd_day2_ex1_t2_1.png)
 
-1. On the **Policy management** page, click **+ Create policy**, then select **Session policy**.
+1. On the **Create session policy** page, set the following values:
+   - **Policy template (1)**: No template
+   - **Policy name (2)**: Block-All-Download
+   - **Policy severity (3)**: High (Red)
+   - **Category (4)**: Threat detection
+   - **Session control type (5)**: Control file download (with inspection)
+
+   In the **Activity source** section, define the following filters:
+   - **Device | Tag | does not equal | Intune compliant, Microsoft Entra Hybrid joined**
+   - **App | Manual onboarding | equals | Microsoft SharePoint Online**
 
    ![](./media/rd_day2_ex1_t2_2.png)
 
-1. On the **Apply template?** dialog box, click **Cancel (1)** to start with a blank policy.
+1. In the **Files matching all of the following** section, add file extension filters:
+   - **Extension equals exe**
+   - **OR apk (1)**
+
+   Under **Actions**, select **Block (2)**.
 
    ![](./media/rd_day2_ex1_t2_3.png)
 
-1. Configure the session policy with the following values:
-   - **Policy name**: `Block-All-Download`
-   - **Policy severity**: High  
-   - **Category**: Threat detection  
-   - **Session control type**: Control file download (with inspection)
+1. Scroll down and click **Update** to save the policy.
 
    ![](./media/rd_day2_ex1_t2_4.png)
 
-1. In the **Filters** section:
-   - Add a condition where **Device tag** `does not equal` `Intune compliant, Microsoft Entra Hybrid joined`  
-   - Add another condition where **App** `equals` `Microsoft SharePoint Online`
+Now simulate the download attempt to validate the policy.
+
+1. On your desktop, right-click the **Microsoft Edge (1)** shortcut, go to **Send to (2)** and select **Documents (3)**.
 
    ![](./media/rd_day2_ex1_t2_5.png)
 
-1. Scroll to the **Files matching all of the following** section.
-
-1. Add a condition to filter files by extension:  
-   - **Extension** → `exe`, `apk`  
-   - Under **Actions**, select **Block**
+1. Navigate to **https://portal.office.com**, open **SharePoint**, and click **Create site**.
 
    ![](./media/rd_day2_ex1_t2_6.png)
 
-1. Click **Create** to save and activate the policy.
+1. Choose **Communication site**.
 
    ![](./media/rd_day2_ex1_t2_7.png)
 
-   > **Note**: Ensure Conditional Access policy is configured to route sessions through Microsoft Defender for Cloud Apps.
-
-1. On the **Desktop**, right-click the **Microsoft Edge** shortcut, select **Send to (1)** → **Documents (2)** to copy the shortcut into your Documents folder.
+1. Provide a **Site name (1)** as "Demo" and click **Next (2)**.
 
    ![](./media/rd_day2_ex1_t2_8.png)
 
-1. Open an incognito browser window and go to `https://www.office.com`.
+1. On the **language selection** page, select **English (1)** and click **Create site (2)**.
 
-1. Sign in using your lab credentials and go to **Apps** → **SharePoint**.
+    ![](./media/rd_day2_ex1_t2_9.png)
 
-1. Click **+ Create site**.
+1. Once the site loads, click the **menu icon** on the top left to expand the navigation.
 
-   ![](./media/rd_day2_ex1_t2_9.png)
+    ![](./media/rd_day2_ex1_t2_10.png)
 
-1. On the site type selection, choose **Communication site**.
+1. In the left navigation panel, click **Documents**.
 
-   ![](./media/rd_day2_ex1_t2_10.png)
+    ![](./media/rd_day2_ex1_t2_11.png)
 
-1. Select the **Standard communication** template and click **Use template**.
+1. On the **Documents** page, click **Upload (1)** and select **Files (2)**.
 
-   ![](./media/rd_day2_ex1_t2_11.png)
+    ![](./media/rd_day2_ex1_t2_12.png)
 
-1. On the **Set language and other options** screen:
-   - Make sure **English (1)** is selected  
-   - Click **Create site (2)**
+1. In the file picker window, browse to **Documents (1)**, select the **Microsoft Edge shortcut (2)**, and click **Open (3)**.
 
-   ![](./media/rd_day2_ex1_t2_12.png)
+    ![](./media/rd_day2_ex1_t2_13.png)
 
-1. On your new **Demo** site, click the **☰ (hamburger menu) (1)**.
+1. After the upload, verify that the file **msedge.exe** appears in the list.
 
-   ![](./media/rd_day2_ex1_t2_13.png)
+    ![](./media/rd_day2_ex1_t2_14.png)
 
-1. Select **Documents** from the menu.
+1. Attempt to download the file by clicking **Download** on the preview screen.
 
-   ![](./media/rd_day2_ex1_t2_14.png)
+    ![](./media/rd_day2_ex1_t2_15.png)
 
-1. Click **Upload (1)** → **Files (2)**.
+1. A message appears saying the **Download is blocked**, confirming the session policy is working.
 
-   ![](./media/rd_day2_ex1_t2_15.png)
+    ![](./media/rd_day2_ex1_t2_16.png)
 
-1. In the **File Explorer** window, navigate to **Documents (1)**, select the **Microsoft Edge shortcut (2)**, and click **Open (3)**.
-
-   ![](./media/rd_day2_ex1_t2_16.png)
-
-1. Once the upload completes, locate and click on the **msedge.exe** file in SharePoint.
-
-   ![](./media/rd_day2_ex1_t2_17.png)
-
-1. Click the **Download** button.
-
-   ![](./media/rd_day2_ex1_t2_18.png)
-
-1. You should see a download block notification:
-   > **Download blocked** – Downloading msedge.exe is blocked by your organization’s security policy.
-
-   ![](./media/rd_day2_ex1_t2_19.png)
-
-25. Verify that both **Microsoft 365** and **Microsoft Azure** show status as **Connected**.
-
-    ![](./media/rd_day2_ex1_t1_23.png)
+   > **Note:** Session policies apply only to browser-based sessions. To block access from mobile or desktop apps, configure **Access policies** separately.
 
 ## Review
 
