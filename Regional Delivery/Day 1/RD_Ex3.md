@@ -1,4 +1,5 @@
-# Exercise 3: Implement and Monitor Secure Posture in Microsoft Defender for Office 365 and XDR
+## Exercise 3: Implement and Monitor Secure Posture in Microsoft Defender for Office 365 and XDR
+### Estimated Duration: 60 Minutes
 
 ## Overview
 
