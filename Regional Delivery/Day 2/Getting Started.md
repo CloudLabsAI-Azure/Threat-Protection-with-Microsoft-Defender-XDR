@@ -1,4 +1,4 @@
-# Threat Protection with Microsoft Defender XDR - Day 2
+# Implement Threat Protection with Microsoft Defender XDR - Day 2
 
 ### Overall Estimated Duration: 4 Hours
 
