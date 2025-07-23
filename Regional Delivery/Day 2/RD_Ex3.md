@@ -1,4 +1,4 @@
-# Exercise 3: Detect Identity Threats and Integrate Defender for Identity with Microsoft XDR and Sentinel
+## Exercise 3: Detect Identity Threats and Integrate Defender for Identity with Microsoft XDR and Sentinel
 
 ## Overview
 
@@ -6,7 +6,7 @@ In this exercise, you will explore how Microsoft Defender for Identity detects a
 
 ## Objectives
 
-- Task 1: Simulate and Detect Lateral Movement Attacks  
+- Task 1: Simulate and Detect Lateral Movement Attacks `(Read-Only)`  
 - Task 2: Investigate Identity-Based Threats and User Timelines  
 - Task 3: Integrate Defender for Identity with Microsoft Defender Portal and Microsoft Sentinel
 - Task 4: Onboard a Device
