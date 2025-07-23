@@ -1,3 +1,14 @@
+# Exercise 2: Implement App Governance and Create Custom Detection Policies in Microsoft Defender for Cloud Apps
+
+## Overview
+
+In this exercise, you will implement App Governance in Microsoft Defender for Cloud Apps to detect and investigate risky OAuth applications connected to your Microsoft 365 environment. You’ll begin by enabling the App Governance add-on and reviewing app permissions, usage patterns, and risk indicators. Then, you’ll create custom detection policies to monitor abnormal behavior, generate alerts for suspicious OAuth activity, and investigate connected apps for potential data exposure or misuse.
+
+## Objectives
+
+- Task 1: Implement App Governance and Risk Detection for OAuth Apps  
+- Task 2: Investigate Alerts and Create Custom Detection Policies
+
 ## Task 1: Implement App Governance and Risk Detection for OAuth Apps
 
 In this task, you'll create a custom policy using App Governance in Microsoft Defender for Cloud Apps to detect high-permission OAuth apps, and then verify if incidents are triggered when such apps are detected.
@@ -305,4 +316,17 @@ Install the AD DS role to enable the server to function as a domain controller.
 > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
 > - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
 <validation step="a35ecb78-8ff8-4873-9f92-37f3811cdc3f" />
+
+## Review
+
+In this lab, you have completed the following tasks:
+
+- Enabled App Governance in Microsoft Defender for Cloud Apps to monitor OAuth application activity.  
+- Reviewed permissions, usage, and risk indicators for connected third-party apps.  
+- Created custom detection policies to flag abnormal behavior such as high data access or overprivileged app activity.  
+- Investigated generated alerts to identify potential threats and took appropriate response actions.
+
+### You have successfully completed the lab. Click on **Next >>** to proceed with the next Lab.
+
+![](./media/cord1e1_4.png)
 
