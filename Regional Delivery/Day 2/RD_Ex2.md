@@ -2,7 +2,7 @@
 
 ## Overview
 
-In this exercise, you will implement App Governance in Microsoft Defender for Cloud Apps to detect and investigate risky OAuth applications connected to your Microsoft 365 environment. You’ll begin by enabling the App Governance add-on and reviewing app permissions, usage patterns, and risk indicators. Then, you’ll create custom detection policies to monitor abnormal behavior, generate alerts for suspicious OAuth activity, and investigate connected apps for potential data exposure or misuse.
+In this exercise, you will implement App Governance and deploy Microsoft Defender for Identity to strengthen your organization’s threat detection and response capabilities. First, you’ll enable App Governance to detect high-risk OAuth applications and create custom policies to flag apps with excessive permissions. Then, you'll investigate alerts, analyze user activities, and create a detection policy to monitor suspicious file downloads. Finally, you’ll install and configure the Microsoft Defender for Identity sensor on a domain controller to enable real-time monitoring of identity-based threats such as lateral movement and domain enumeration.
 
 ## Objectives
 
@@ -309,10 +309,12 @@ Install the AD DS role to enable the server to function as a domain controller.
 
 In this lab, you have completed the following tasks:
 
-- Enabled App Governance in Microsoft Defender for Cloud Apps to monitor OAuth application activity.  
-- Reviewed permissions, usage, and risk indicators for connected third-party apps.  
-- Created custom detection policies to flag abnormal behavior such as high data access or overprivileged app activity.  
-- Investigated generated alerts to identify potential threats and took appropriate response actions.
+- Enabled App Governance in Microsoft Defender for Cloud Apps to monitor and assess OAuth app risk.
+- Created a custom detection policy to identify apps with high privileges and unverified publishers.
+- Investigated alerts and user activity logs to trace suspicious downloads and policy violations.
+- Created an activity policy to detect and alert on specific file downloads from Microsoft SharePoint Online.
+- Installed and configured the Microsoft Defender for Identity sensor on a domain controller.
+- Verified sensor health and ensured identity telemetry was active in the Defender portal.
 
 ### You have successfully completed the lab. Click on **Next >>** to proceed with the next Lab.
 
