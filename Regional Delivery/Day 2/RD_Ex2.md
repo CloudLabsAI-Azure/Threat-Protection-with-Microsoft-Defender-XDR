@@ -123,8 +123,7 @@ In this task, you will explore how to enable App Governance in Microsoft Defende
 1. Click **Investigate in activity log**.
  
    ![](./media/p-1-8.png)
-
-   ![](./media/p-1-9.png
+   ![](./media/gg_p-1-9.png)
 
 1. Go to **Cloud Apps** → **Policy management**, and click **Create policy** → **Activity policy**.
 
