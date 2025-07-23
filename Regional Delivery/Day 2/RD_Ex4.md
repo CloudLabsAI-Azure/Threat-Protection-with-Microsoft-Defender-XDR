@@ -197,7 +197,7 @@ In this task, you'll configure an analytics rule in Microsoft Sentinel to detect
    ![](./media/crz_e4_g_8.png)
 
 
-### Task 2: Create a Power Automate Flow to Log Flagged Emails into SharePoint
+### Task 4: Create a Power Automate Flow to Log Flagged Emails into SharePoint
 
 In this task, you'll create a flow in Power Automate that triggers when an email is flagged in Outlook and logs its details (subject, sender, body, etc.) into the SharePoint list you created earlier.
 
