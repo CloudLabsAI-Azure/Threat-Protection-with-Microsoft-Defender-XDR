@@ -1,4 +1,5 @@
 ## Exercise 3: Detect Identity Threats and Integrate Defender for Identity with Microsoft XDR and Sentinel
+
 ### Estimated Duration: 60 Minutes
 
 ## Overview
@@ -94,7 +95,8 @@ In this task you will enable integration to view Defender for Identity incidents
 
     ![](./media/ext_gg_1.png)
 
-    > **Note:** The **Endpoints** option under **Settings** may take a few moments to appear after the initial setup.  
+    > **Note:** The **Endpoints** option under **Settings** may take a few moments to appear after the initial setup.
+
     > If you don't see it right away, wait a minute and try refreshing the page.
 
 1. Navigate to the **Onboarding** option in the Device Management section.
@@ -140,7 +142,6 @@ In this task you will enable integration to view Defender for Identity incidents
     ![](./media/ext_gg_8.png) 
 
     >**Note:** If you have completed the onboarding process and don't see devices in the Devices list after an hour, it might indicate an onboarding or connectivity problem.
-
 
 ## Review
 
