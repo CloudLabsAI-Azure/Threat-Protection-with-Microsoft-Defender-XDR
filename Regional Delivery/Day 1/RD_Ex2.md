@@ -104,7 +104,7 @@ In this task, you'll create a custom role in Microsoft Defender to manage access
 
 In this task, you will create a custom Anti-Phishing policy and Safe Links policy to enhance protection against malicious emails and phishing links. You will also simulate a phishing email and verify alerts and detections.
 
-1. On the **Microsoft Defender portal**, go to **Email & collaboration (1)** > **Policies & rules (2)**. Under **Policies**, select **Anti-phishing (3)**.
+1. On the **Microsoft Defender portal**, go to **Email & collaboration (1)** > **Policies & rules (2)** and selct **Threat Policies**. Under **Policies**, select **Anti-phishing (3)**.
 
    ![](./media/rd_day1_ex2_t2_1.png)
 
