@@ -207,7 +207,6 @@ In this lab, you have completed the following tasks:
 - Launched phishing and malware simulations using Attack Simulation Training.
 - Evaluated user responses to simulated attacks and verified that protection policies were working as expected.
 
-
 ### You have successfully completed the lab. Click on **Next >>** to proceed with the next Lab.
 
 ![](./media/rd_gs_1_9.png)
