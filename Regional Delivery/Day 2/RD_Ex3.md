@@ -46,8 +46,9 @@ In this task, you will simulate a Lateral Movement attack and detect it using Mi
      - **Lateral movement using remote logon by contained user blocked**
      - **Lateral movement using RDP blocked**
 
-      ![](./media/E1T3S3upd.png)
-      > **Note:** The user will be logged out of the virtual machine as part of the containment measures initiated by the Defender in response to the user's attempted lateral movement attack.
+       ![](./media/E1T3S3upd.png)
+
+       > **Note:** The user will be logged out of the virtual machine as part of the containment measures initiated by the Defender in response to the user's attempted lateral movement attack.
 
 ### Task 2: Investigate Threats and User Timelines 
 
