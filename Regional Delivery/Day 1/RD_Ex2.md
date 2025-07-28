@@ -126,10 +126,10 @@ In this task, you will create a custom Anti-Phishing policy and Safe Links polic
 
 1. Under **Trusted senders and domains**, check the following options:
 
-   - **Enable mailbox intelligence (1)**
-   - **Enable Intelligence for impersonation protection (2)**
-   - **Enable spoof intelligence (3)**  
-   - Then click **Next (4)**. 
+    - **Enable mailbox intelligence (1)**
+    - **Enable Intelligence for impersonation protection (2)**
+    - **Enable spoof intelligence (3)**  
+    - Then click **Next (4)**. 
      
       ![](./media/rd_day1_ex2_t2_6.png)
 
