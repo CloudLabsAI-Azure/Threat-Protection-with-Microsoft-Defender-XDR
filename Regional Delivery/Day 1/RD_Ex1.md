@@ -186,10 +186,6 @@ In this task, you'll simulate phishing and malware attacks using Microsoft Defen
 
     ![rd_day1_ex1_t2_20](./media/rd_day1_ex1_t2_20.png)
 
-1. On the **Select end user notification** screen, choose **Microsoft default notification (1)**, set **Deliver during simulation (2)** and **Weekly (3)** as delivery preferences, then click **Next (4)**.
-
-    ![rd_day1_ex1_t2_21](./media/rd_day1_ex1_t2_21.png)
-
 1. Review the details and click **Submit** to complete the malware simulation setup.
 
     ![rd_day1_ex1_t2_22](./media/rd_day1_ex1_t2_22.png)
