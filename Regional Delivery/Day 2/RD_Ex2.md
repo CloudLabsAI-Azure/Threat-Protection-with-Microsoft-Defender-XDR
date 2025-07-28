@@ -59,48 +59,48 @@ In this task, you will explore how to enable App Governance in Microsoft Defende
 
 1. Under policy scope, select **All apps (1)** and click **Next (2)**.
 
-    ![](./media/rdr_xdr_10.png)
+   ![](./media/rdr_xdr_10.png)
 
 1. Configure the policy conditions:  
     - Set **Highly privileged (1)** to **Yes (2)**  
     - Set **Publisher verified (3)** to **No (4)**  
     - Click **Save (5)**
 
-    ![](./media/rdr_xdr_11.png)
+      ![](./media/rdr_xdr_11.png)
 
 1. In the **Set policy action** step, choose **Disable app (1)** and click **Next (2)**.
 
-    ![](./media/rdr_xdr_12.png)
+   ![](./media/rdr_xdr_12.png)
 
 1. Set the policy status to **Active (1)** and click **Next (2)**.
 
-    ![](./media/rdr_xdr_13.png)
+   ![](./media/rdr_xdr_13.png)
 
 1. Review the policy settings and click **Submit** to create the policy.
 
-    ![](./media/rdr_xdr_14.png)
+   ![](./media/rdr_xdr_14.png)
 
 1. On the confirmation screen, click **Done** to finish.
 
-    ![](./media/rdr_xdr_15.png)
+   ![](./media/rdr_xdr_15.png)
    
    > The detection policy is now active and will monitor all onboarded OAuth apps for risky permissions and unverified publishers.
 
 1. Back on the **App governance** overview, click **View all apps** to analyze detected apps.
 
-    ![](./media/rdr_xdr_16.png)
+   ![](./media/rdr_xdr_16.png)
 
 1. In the **Microsoft 365 (1)** tab, notice apps flagged with a **High (2)** privilege level.
 
-    ![](./media/rdr_xdr_17.png)
+   ![](./media/rdr_xdr_17.png)
 
 1. Go to **Incidents & alerts (1)** > **Incidents (2)**, and click the incident **Detect High-Permission OAuth Apps (3)**.
 
-    ![](./media/rdr_xdr_18.png)
+   ![](./media/rdr_xdr_18.png)
 
 1. In the incident details pane, review the violation summary, app, and policy triggered.
 
-    ![](./media/rdr_xdr_19.png)
+   ![](./media/rdr_xdr_19.png)
 
 ## Task 2: Investigate Alerts and Create Custom Detection Policies
 
@@ -123,6 +123,7 @@ In this task, you will explore how to enable App Governance in Microsoft Defende
 1. Click **Investigate in activity log**.
  
    ![](./media/p-1-8.png)
+
    ![](./media/gg_p-1-9.png)
 
 1. Go to **Cloud Apps** → **Policy management**, and click **Create policy** → **Activity policy**.
@@ -140,7 +141,7 @@ In this task, you will explore how to enable App Governance in Microsoft Defende
    - **Files and folders:** `msedge.exe`  
    - **App:** `Microsoft SharePoint Online`
    
-   ![](./media/p-1-2.png)
+      ![](./media/p-1-2.png)
 
 1. Click **Edit and preview results**, review matches, then click **Save filters**.
 
@@ -150,28 +151,29 @@ In this task, you will explore how to enable App Governance in Microsoft Defende
 
 1. Click **Create** to save and activate the policy.
 
-    ![](./media/p-1-4.png)
+   ![](./media/p-1-4.png)
 
 1. Simulate a download again in SharePoint, and downloading `msedge.exe`.
     
-    ![](./media/g-3-6.png)
+   ![](./media/g-3-6.png)
 
-    ![](./media/g-3-7.png)
+   ![](./media/g-3-7.png)
 
-    ![](./media/g-3-8.png)
+   ![](./media/g-3-8.png)
 
 1. Open your Outlook email inbox and locate the alert email titled `Alert - Detect Suspicious File Download – msedge.exe`.
    
-    ![](./media/p-1-5.png)
-    > **Note:** If you do not see the alert email, wait for 5–10 minutes and refresh your inbox.
+   ![](./media/p-1-5.png)
+
+   > **Note:** If you do not see the alert email, wait for 5–10 minutes and refresh your inbox.
 
 1. In the portal, go to **Incidents & alerts** → **Alerts**, and open the alert.
    
-    ![](./media/grpg-1-3.png)
+   ![](./media/grpg-1-3.png)
 
 1. Click **Open alert page** → **view incident page**.
 
-    ![](./media/grpg-1-4.png)
+   ![](./media/grpg-1-4.png)
 
 1. Carefully review the event details:
 
@@ -182,7 +184,7 @@ In this task, you will explore how to enable App Governance in Microsoft Defende
     - Device info  
     - Triggered policy
    
-    ![](./media/grpg-1-5.png)
+      ![](./media/grpg-1-5.png)
 
 ### Task 3: Deploy Microsoft Defender for Identity Sensor on Domain Controllers
 
@@ -242,7 +244,7 @@ Install the AD DS role to enable the server to function as a domain controller.
    - Wait for the prerequisites check to complete, then click **Install**.
    - Wait for the process to complete; the server will restart automatically.
 
-   > **Note:** The VM will restart now, wait for 5 minutes and **Reconnect** to the VM.
+      > **Note:** The VM will restart now, wait for 5 minutes and **Reconnect** to the VM.
 
       ![](./media/E1T0S9.png)
 
@@ -252,7 +254,7 @@ Install the AD DS role to enable the server to function as a domain controller.
 
    * **Email/Username:** <inject key="AzureAdUserEmail"></inject>
      
-     ![](./media/login2.png)
+      ![](./media/login2.png)
 
    - Now enter the following password and click on **Sign in**.
    
@@ -316,4 +318,3 @@ In this lab, you have completed the following tasks:
 ### You have successfully completed the lab. Click on **Next >>** to proceed with the next Lab.
 
 ![](./media/rd_gs_1_9.png)
-
