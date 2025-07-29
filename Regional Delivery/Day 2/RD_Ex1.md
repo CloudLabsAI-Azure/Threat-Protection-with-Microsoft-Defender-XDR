@@ -1,4 +1,5 @@
 ## Exercise 1: Connect SaaS Apps and Configure Session Policies in Microsoft Defender for Cloud Apps
+
 ### Estimated Duration: 60 Minutes
 
 ## Overview
@@ -111,6 +112,12 @@ In this task, you'll verify license assignment, enable auditing, configure Condi
 1. On the next screen, click **Done** to confirm that Microsoft 365 is connected.
 
     ![](./media/rd_day2_ex1_t1_22.png)
+
+> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+> - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
+> - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+> - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
+<validation step="d841263c-65e4-4a6c-ab16-b57b20463af8" />
 
 ## Task 2: Configure Session Policies to Monitor and Block Risky Behavior
 
