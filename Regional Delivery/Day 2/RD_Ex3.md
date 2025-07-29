@@ -90,11 +90,11 @@ In this task you will enable integration to view Defender for Identity incidents
    - Select **East US (4)** as the Region.
    - Click **Review + Create (5)** to proceed.
 
-      ![](./media/g4_e4_11.png)
+      ![](./media/zg_ex4_1_2.png)
 
 1. After validation passes, review the workspace details and click **Create** to deploy the Log Analytics workspace.
 
-      ![](./media/g4_e4_12.png)
+      ![](./media/zg_ex4_1_3.png)
 
 1. Once the workspace is created, return to **Microsoft Sentinel**. On the Sentinel page, click **+ Create** again.
 
@@ -102,11 +102,13 @@ In this task you will enable integration to view Defender for Identity incidents
 
 1. On the **Add Microsoft Sentinel to a workspace** page, select the newly created workspace **loganalyticworkspace (1)** and click **Add (2)** to onboard it to Microsoft Sentinel.
 
-      ![](./media/g4_e4_13.png)
+      ![](./media/zg_ex4_1_4.png)
 
 1. Navigate to `portal.azure.com` and navigate to **Microsoft Sentinel** and select `loganalyticworkspace`.
 
       ![](./media/E1T4S1.png)
+
+      > **Note:** If you receive a popup saying *"Microsoft Sentinel free trial activated"*, click **OK** to continue.
 
 1. In the left-hand pane, click **Content hub**. 
 
@@ -116,21 +118,13 @@ In this task you will enable integration to view Defender for Identity incidents
 
       ![](./media/E1T4S3.png)
 
-1. Return to the Sentinel workspace and navigate to **Data Connectors** and click on  **Defender for XDR** and select **Open connector page**.
+1. In the **Microsoft Sentinel** portal, expand **Configuration (1)** in the left-hand menu and click **Automation (2)**. On the **Automation** page, scroll down and click **Configure permissions (3)** under the *Give Sentinel permissions to run playbooks* section.
 
-      ![](./media/E1T4S4.png)
+      ![](./media/zg_ex4_1_1.png)
 
-1. Click on **Connect incidents & alerts** and navigate back to Data connectors page and make sure that **Defender for XDR** shows as connected
+1. On the **Manage permissions** pane, select all resource groups including **threadprotection-rg** **1** by checking the boxes on the left. Then click **Apply 2** to grant Microsoft Sentinel permission to run playbooks in those resource groups.
 
-      ![](./media/E1T4S5.png)
-
-1. Click on **Connect incidents & alerts** and navigate back to Data connectors page and make sure that **Defender for XDR** shows as connected
-
-      ![](./media/E1T4S5.png)
-
-1. Click on **Connect incidents & alerts** and navigate back to Data connectors page and make sure that **Defender for XDR** shows as connected
-
-      ![](./media/E1T4S5.png)
+      ![](./media/zg_ex4_1_5.png)
 
 ### Task 4: Onboard a Device
 
