@@ -70,6 +70,40 @@ In this task you will analyze using user timelines and alert details in the Defe
 
 In this task you will enable integration to view Defender for Identity incidents in the unified Microsoft 365 Defender portal and Microsoft Sentinel.
 
+1. In the **Azure portal**, search for **Microsoft Sentinel (1)** in the top search bar and click **Microsoft Sentinel (2)** under the Services section.
+
+      ![](./media/g4_e4_8.png)
+
+1. On the **Microsoft Sentinel** page, click **+ Create** to start setting up a new Sentinel resource or workspace configuration.
+
+      ![](./media/g4_e4_9.png)
+
+1. On the **Add Microsoft Sentinel to a workspace** page, click **+ Create a new workspace** to begin provisioning a Log Analytics workspace for Sentinel.
+
+      ![](./media/g4_e4_10.png)
+
+1. On the **Create Log Analytics workspace** page, configure the following settings:
+
+   - Select the defualt **Subscription (1)**.
+   - Choose **threadprotection-rg (2)** as the Resource group.
+   - Enter a unique name for the workspace, **loganalyticworkspace (3)**.
+   - Select **East US (4)** as the Region.
+   - Click **Review + Create (5)** to proceed.
+
+      ![](./media/g4_e4_11.png)
+
+1. After validation passes, review the workspace details and click **Create** to deploy the Log Analytics workspace.
+
+      ![](./media/g4_e4_12.png)
+
+1. Once the workspace is created, return to **Microsoft Sentinel**. On the Sentinel page, click **+ Create** again.
+
+      ![](./media/g4_e4_9.png)
+
+1. On the **Add Microsoft Sentinel to a workspace** page, select the newly created workspace **loganalyticworkspace (1)** and click **Add (2)** to onboard it to Microsoft Sentinel.
+
+      ![](./media/g4_e4_13.png)
+
 1. Navigate to `portal.azure.com` and navigate to **Microsoft Sentinel** and select `loganalyticworkspace`.
 
       ![](./media/E1T4S1.png)
@@ -85,6 +119,14 @@ In this task you will enable integration to view Defender for Identity incidents
 1. Return to the Sentinel workspace and navigate to **Data Connectors** and click on  **Defender for XDR** and select **Open connector page**.
 
       ![](./media/E1T4S4.png)
+
+1. Click on **Connect incidents & alerts** and navigate back to Data connectors page and make sure that **Defender for XDR** shows as connected
+
+      ![](./media/E1T4S5.png)
+
+1. Click on **Connect incidents & alerts** and navigate back to Data connectors page and make sure that **Defender for XDR** shows as connected
+
+      ![](./media/E1T4S5.png)
 
 1. Click on **Connect incidents & alerts** and navigate back to Data connectors page and make sure that **Defender for XDR** shows as connected
 
