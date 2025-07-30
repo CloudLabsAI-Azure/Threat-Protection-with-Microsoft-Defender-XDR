@@ -29,10 +29,6 @@ In this task, you will enable Microsoft Defender CSPM for your environment and c
 
    > **Note:** Enabling Defender CSPM unlocks advanced posture management features such as attack path analysis and permission visibility.
 
-1. In **Microsoft Defender for Cloud**, navigate to **Inventory (2)** under **General (1)** and view the **Defender for Cloud** status is **Off/On (3)** for the Virtual Machines.
-
-   ![rd_day1_ex1_t1_3](./media/rd_day1_ex1_t1_3.png)
-
 1. Go to **Environment settings (2)** under **Management (1)**, expand **Azure (3)** → **Tenant Root Group (4)**, and select your **subscription (5)**.
 
    ![rd_day1_ex1_t1_4](./media/rd_day1_ex1_t1_4.png)
@@ -43,10 +39,6 @@ In this task, you will enable Microsoft Defender CSPM for your environment and c
    - **Servers under Cloud Workload Protection (4)**
 
         ![rd_day1_ex1_t1_5](./media/rd_day1_ex1_t1_5.png)
-
-1. Return to **Inventory (2)** under the **Genral (2)** section and confirm the **Defender for Cloud** status now shows as **On (3)**.
-   ![rd_day1_ex1_t1_6](./media/cord1e1_2.png)
-    > **Note:** Your Defender protection is now active for all supported workloads.
 
 1. On a new tab in the **Microsoft Edge** browser and go to the following URL in the address bar: [https://security.microsoft.com](https://security.microsoft.com).
 
