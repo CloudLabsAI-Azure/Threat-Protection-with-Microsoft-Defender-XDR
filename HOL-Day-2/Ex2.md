@@ -1,4 +1,5 @@
 # Exercise 2: Protecting Microsoft 365 SaaS Apps with Microsoft Defender for Cloud Apps
+
 ### Estimated Duration: 60 Minutes
 
 ## Overview
