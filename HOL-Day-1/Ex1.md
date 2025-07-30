@@ -1,4 +1,5 @@
 # Exercise 1: Configuring Threat Policies and Simulating Attacks in Microsoft Defender for Office 365
+### Estimated Duration: 60 Minutes
 
 ## Overview
 
