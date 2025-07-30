@@ -1,4 +1,4 @@
-# Securing Collaboration with Microsoft Defender Solutions - Day 1 
+# Implement Threat Protection with Microsoft Defender XDR solutions - Day 1
 
 ### Overall Estimated Duration: 2 Hours
 
