@@ -253,7 +253,7 @@ In this task, you'll configure an analytics rule in Microsoft Sentinel to detect
    - Ensure **Status (4)** is set to `Enabled`.
    - Click **Next: Set rule logic (5)**.
 
-   ![](./media/crz_e4_g_2.png)
+      ![](./media/crz_e4_g_2.png)
 
 1. On the **Set rule logic** tab:
    - Paste the following KQL under **Rule query (1)**:
@@ -301,9 +301,17 @@ In this task, you'll configure an analytics rule in Microsoft Sentinel to detect
 
       ![](./media/crz_e4_g_7.png)
 
+1. In the Windows search bar of the virtual machine, type **CMD**, and choose **Run as Administrator** from the right pane for the Command Prompt app.
+
+1. When the "User Account Control" window appears, select **Yes** to allow the app to run. 
+
+1. Paste the script by right-clicking in the **Administrator: Command Prompt** window and press **Enter** to run it. **Note:** The window closes automatically after running the script.
+
 1. The configured automation rule will now run the playbook when an incident title contains `PowerShell`. Once triggered, an email notification is sent with incident details including severity, entities, and incident link.
 
    ![](./media/crz_e4_g_8.png)
+
+   > **Note:** Wait for 5–6 minutes for the playbook to trigger after the condition is met.
 
 
 ### Task 6: Create a Power Automate Flow to Log Flagged Emails into SharePoint
@@ -386,11 +394,19 @@ In this task, you'll create a flow in Power Automate that triggers when an email
 
    ![](./media/z_gg_e4_15.png)
 
+1. In the Windows search bar of the virtual machine, type **CMD**, and choose **Run as Administrator** from the right pane for the Command Prompt app.
+
+1. When the "User Account Control" window appears, select **Yes** to allow the app to run. 
+
+1. Paste the script by right-clicking in the **Administrator: Command Prompt** window and press **Enter** to run it. **Note:** The window closes automatically after running the script.
+
 1. Now go to your Outlook mailbox and flag an email you want to test the flow with.
 
    ![](./media/z_gg_e4_16.png)
 
-1. After a few moments, go to the **Powershell_Logs_list** on your SharePoint site and verify that the email entry appears with all details logged.
+   > **Note:** Wait for 5–6 minutes for the playbook to trigger after the condition is met.
+
+1. Go to the **Powershell_Logs_list** on your SharePoint site and verify that the email entry appears with all details logged.
 
    ![](./media/z_gg_e4_17.png)
 
