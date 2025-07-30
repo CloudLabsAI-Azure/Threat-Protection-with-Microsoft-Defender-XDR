@@ -73,6 +73,10 @@ In this task you will enable integration to view Defender for Identity incidents
 
       ![](./media/g4_e4_8.png)
 
+      > **Note:** If there is **no Sentinel deployed yet**, follow the steps from **Step 2 to Step 8** to create and connect a new workspace. 
+
+      > If Sentinel is already set up, you can **skip to Step 9** and continue from there.
+
 1. On the **Microsoft Sentinel** page, click **+ Create** to start setting up a new Sentinel resource or workspace configuration.
 
       ![](./media/g4_e4_9.png)
