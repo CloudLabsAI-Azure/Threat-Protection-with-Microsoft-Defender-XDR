@@ -1,4 +1,4 @@
-# Microsoft 365 Defender for Identity and Sentinel for Advanced Threat Protection - Day 3
+# Implement Threat Protection with Microsoft Defender XDR solutions - Day 3
 
 ### Overall Estimated Duration: 4 Hours
 
