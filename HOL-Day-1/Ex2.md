@@ -1,4 +1,5 @@
 # Exercise 2: Threat Investigation and Security Posture Management with Microsoft Defender
+### Estimated Duration: 60 Minutes
 
 ## Overview
 
