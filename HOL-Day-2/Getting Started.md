@@ -1,4 +1,4 @@
-# Securing Access to SaaS Apps with Microsoft Defender for Cloud Apps - Day 2
+# Implement Threat Protection with Microsoft Defender XDR solutions - Day 1
 
 ### Overall Estimated Duration: 2 Hours
 
