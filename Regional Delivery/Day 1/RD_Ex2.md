@@ -29,19 +29,19 @@ In this task, you'll create a custom role in Microsoft Defender to manage access
 
    ![](./media/rd_day1_ex2_t1_3.png)
 
-1. On the **Permissions** screen, do the following:
-
-   - Select **Select custom permissions (1)** under the main section.
-   - Under **Security data**, choose **Select all permissions (2)**.
-   - Scroll to **Raw data (Email & collaboration)** and select **Select custom permissions (3)**.
-   - Check **Email & collaboration content (read) (4)**.
-   - Click **Apply (5)** to save your selections.
-
-      ![](./media/rd_day1_ex2_t1_4.png)
-
 1. On the **Security operations** screen, select **All read and manage permissions (1)** and click **Apply (2)**.
 
    ![](./media/rd_day1_ex2_t1_5.png)
+
+1. On the **Security posture** pane, **All read and manage permissions** **(1)**. Then click **Apply** to save the configuration **(2)**.
+
+1. On the **Authorization and settings** pane, select **All read and manage permissions** **(1)**. Then click **Apply** to save the configuration **(2)**.
+
+   ![](./media/gs_g_4.png)
+
+1. On the **Assign users and data sources** page, click **Add assignment** to assign this role to users and select the data sources they can access.
+
+   ![](./media/gs_g_6.png)
 
 1. On the **Assignments** screen, provide assignment details:
    - Assignment name: **`Test-assignment` (1)**.
@@ -49,7 +49,7 @@ In this task, you'll create a custom role in Microsoft Defender to manage access
    - Choose data source: **Microsoft Defender for Office 365 (3)**. 
    Click **Add (4)**.
 
-   ![](./media/rd_day1_ex2_t1_6.png)
+      ![](./media/rd_day1_ex2_t1_6.png)
 
 1. On the **Review and finish** page, verify the assigned permissions and users, then click **Submit (2)**.
 
@@ -223,7 +223,7 @@ In this task, you will create a custom Anti-Phishing policy and Safe Links polic
     - **Delivery action:** Blocked  
     - **Detection technologies:** URL malicious reputation, Mixed analysis detection  
 
-    ![](./media/rd_day1_ex2_t2_20.png)
+      ![](./media/rd_day1_ex2_t2_20.png)
 
 1. Finally, go to **Investigation & response (1)** > **Incidents (2)**. Select the alert incident **Alert-Link (3)** and click on the incident name **(4)** to investigate further.
 
