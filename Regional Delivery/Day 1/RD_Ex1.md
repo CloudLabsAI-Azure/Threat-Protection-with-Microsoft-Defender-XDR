@@ -153,15 +153,19 @@ In this task, you'll simulate phishing and malware attacks using Microsoft Defen
 
     ![rd_day1_ex1_t2_14](./media/rd_day1_ex1_t2_14.png)
 
-1. 16. Verify the simulation appears in the dashboard as **In progress**.
+1. Verify the simulation appears in the dashboard as **In progress**.
 
     ![rd_day1_ex1_t2_15](./media/rd_day1_ex1_t2_15.png)
+
+    > **Note:** You’ve successfully launched a phishing simulation. It will monitor how users interact with suspicious emails.
+
+1. Under **Email & collaboration**, select **Attack simulation training** **(2)**. On the **Attack simulation training** page, select the **Simulations** tab **(3)**. Click **Launch a simulation** to begin creating a new attack simulation **(4)**.
+
+    ![rd_day1_ex1_t2_16](./media/g_g_ex_1.png)
 
 1. To simulate a **Malware Attack**, go back to **Attack simulation training**, click **Launch your own simulation**, and choose **Malware Attachment (1)**. Click **Next (2)**.
 
     ![rd_day1_ex1_t2_16](./media/rd_day1_ex1_t2_16.png)
-
-    > **Note:** You’ve successfully launched a phishing simulation. It will monitor how users interact with suspicious emails.
 
 1. Enter a new simulation name **`Test2`** and click **Next (2)**.
 
