@@ -189,6 +189,8 @@ In this task, you'll simulate phishing and malware attacks using Microsoft Defen
 
 > **Note:** This simulation mimics a malicious file being sent via email, testing how users respond to attachment-based threats.
 
+> **Note:** The malware attack simulation will not appear in **Threat Explorer** because Microsoft Defender treats simulation payloads as non-malicious content. Simulated attacks are designed for training purposes and do not trigger standard detection engines or generate real threat signals within Explorer.
+
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:  
 > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task.  
 > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.  
