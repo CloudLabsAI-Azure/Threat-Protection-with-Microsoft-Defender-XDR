@@ -163,7 +163,7 @@ In this task, you'll simulate phishing and malware attacks using Microsoft Defen
 
     ![rd_day1_ex1_t2_16](./media/g_g_ex_1.png)
 
-1. To simulate a **Malware Attack**, go back to **Attack simulation training**, click **Launch your own simulation**, and choose **Malware Attachment (1)**. Click **Next (2)**.
+1. To simulate a **Malware Attack**, choose **Malware Attachment (1)**. Click **Next (2)**.
 
     ![rd_day1_ex1_t2_16](./media/rd_day1_ex1_t2_16.png)
 
