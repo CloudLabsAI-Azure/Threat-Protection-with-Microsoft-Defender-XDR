@@ -28,7 +28,7 @@ Welcome to your Securing Collaboration with Microsoft Defender Solutions worksho
  
 Once you're ready to dive in, your virtual machine and lab guide will be right at your fingertips within your web browser.
  
-![Access Your VM and Lab Guide](./media/rd_gs_1_1.png)
+![Access Your VM and Lab Guide](./media/z_gs_g_1.png)
 
 ### Virtual Machine & Lab Guide
  
@@ -56,7 +56,7 @@ Feel free to start, stop, or restart your virtual machine as needed from the **R
  
 1. On your virtual machine, click on the Azure Portal icon as shown below:
  
-    ![Launch Azure Portal](./media/rd_gs_1_5.png)
+    ![Launch Azure Portal](./media/z_gs_g_2.png)
 
 1. You'll see the **Sign into Microsoft Azure** tab. Here, enter your credentials:
  
