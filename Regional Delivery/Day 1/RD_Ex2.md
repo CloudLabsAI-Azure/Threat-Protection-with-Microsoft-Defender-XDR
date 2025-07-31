@@ -65,6 +65,10 @@ In this task, you'll create a custom role in Microsoft Defender to manage access
 
    > Note: This activity simulates a phishing attack and trigger credential submission logs.
 
+1. When the user clicks the phishing simulation link and enters their credentials, they are redirected to a training page that displays a message indicating they were phished by the security team, along with guidance to learn from the experience.
+
+   ![](./media/gs_g_9.png)
+
 1. In the **Microsoft Defender portal**, do the following:
 
    - Select **Email & collaboration (1)** from the left navigation pane.
