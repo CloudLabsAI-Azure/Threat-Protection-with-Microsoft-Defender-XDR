@@ -1,4 +1,4 @@
-# Exercise 2: Integrating Microsoft Sentinel with Microsoft 365 Defender for Threat Detection and Investigation
+# Exercise 2: Integrating Microsoft Sentinel with Microsoft Defender for Threat Detection and Investigation
 
 ### Estimated timing: 90 minutes
 ## Overview
