@@ -135,6 +135,12 @@ In this exercise, you will explore how to secure Microsoft 365 cloud services li
 
    ![](./media/22-g-2.png)
 
+   > **Note:** If you're unable to view **SharePoint Online**, open an incognito browser window and navigate to [https://www.office.com](https://www.office.com).
+   
+   > **Note:** Sign in using your lab credentials. From the left pane, go to **Apps** → **SharePoint**.
+   
+   >**Note:** Then, return to the Conditional Access page and refresh it to load the app properly.
+
 1. In the **Enterprise applications** blade, click **Microsoft Graph Command Line Tools**.
 
    ![](./media/22-g-3.png)
