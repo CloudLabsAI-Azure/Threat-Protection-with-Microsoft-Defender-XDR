@@ -273,7 +273,7 @@ In this exercise, you will explore how to secure Microsoft 365 cloud services li
  
    ![](./media/p-1-8.png)
 
-   ![](./media/p-1-9.png
+   ![](./media/p-1-9.png)
 
 1. Go to **Cloud Apps** → **Policy management**, and click **Create policy** → **Activity policy**.
 
