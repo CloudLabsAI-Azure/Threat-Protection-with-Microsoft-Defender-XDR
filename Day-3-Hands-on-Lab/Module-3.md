@@ -240,27 +240,7 @@ In this task, you will explore using notebooks in Microsoft Sentinel.
 
     ![Picture 1](./media/lab09-task04-template.png)
 
-1. Once the saving is done, select the **Launch notebook** button. This will take you to the Microsoft Azure Machine Learning Studio.
-
-     ![Picture 1](./media/lab09-task04-launch.png)
-   
-1. Select **X** if an informational window appears in the Microsoft Azure Machine Learning Studio.
-
-1. In the command bar, to the right of the **Compute instance:**  selector, select the **+** symbol to create a new compute instance. **Hint:** It might be hidden inside the ellipsis icon **(...)**.
-
-     >**Note:** You can have more screen space by hiding the Azure ML Studio left blade by selecting the 3 lines on the top left, as well as the Notebooks Files by selecting the **<<** icon.
-
-1. Type a unique name in the *Compute name* field. This will identify your compute instance.
-
-1. Scroll down, under **Virtual machine size** select the **Standard_DS11__v2**.
-
-1. Select the **Review + Create** and **Create** button at the bottom of the screen. Close any feedback window that may appear. This will take a few minutes; you will see a notification (bell icon) when it is done and the *Compute instance* left icon turns from blue to green.
-
-1. Once the compute has been created and is running, select **Authenticate**, then choose the **Python 3.8 - AzureML** kernel. **Hint**: This is shown on the right of the command bar.
-
-1. Clear all the results from the notebook by selecting the **Clear all outputs** from the command bar and following the *Getting Started* tutorial. **Hint:** This can be found by selecting the ellipsis (...) from the command bar.
-
-    >**Note:** If you cannot complete the steps above to access the Notebook, you can follow it on its GitHub viewer page instead. [Getting Started with Azure ML Notebooks and Microsoft Sentinel]  (https://nbviewer.org/github/Azure/Azure-Sentinel-Notebooks/blob/master/A%20Getting%20Started%20Guide%20For%20Azure%20Sentinel%20ML%20Notebooks.ipynb)
+    > **Note:** You explored Microsoft Sentinel notebooks, created an Azure Machine Learning workspace, and deployed a starter ML notebook template for threat analysis.
 
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
 > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
