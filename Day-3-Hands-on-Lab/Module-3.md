@@ -12,7 +12,6 @@ You are a Security Operations Analyst working at a company that implemented Micr
  - Task 1: Create a hunting query
  - Task 2: Create a NRT query rule
  - Task 3: Create a Search
- - Task 4: Explore Notebooks
 
 ### Task 1: Create a hunting query
 
@@ -205,53 +204,9 @@ In this task, you will use a Search job to look for a C2.
 
     >**Note:** If you were running the job, the restore would run for a couple of minutes and your data would be available in a new table.
 
-### Task 4: Explore Notebooks
-
-In this task, you will explore using notebooks in Microsoft Sentinel.
-
-1. In the Microsoft Sentinel Workspace, select **Notebooks** under the *Threat management* area.
-
-1. Next, you need to create an AzureML Workspace. Select **Configure Azure Machine Learning** and then select the **Create new Azure ML workspace** button in the command bar.
-
-    ![Picture 1](./media/lab09-task04-configure.png) 
-
-1. In the Subscription box, select your subscription.
-
-1. Select **Create new** for the Resource group and enter *RG-MachineLearning* for the Name and select **OK**. 
-
-1. In the Workspace details section do the following:
-
-     - Give your workspace a unique name.
-     - Leave **East US** as the default value for *Region*.
-     - Keep the default Storage account, Key vault, and Application insights information.
-     - The Container registry option can remain as **None**.
-
-1. At the bottom of the page, select **Review + Create**. When you see the *"Validation passed"* message, select **Create**. 
-
-     >**Note:** It may take a few minutes to deploy the Machine Learning workspace.
-
-1. After *Your deployment is complete* message appears, return to the Microsoft Sentinel portal.
-
-1. Select **Notebooks** again and then select the **Templates** tab from the middle command bar. 
-
-1. Select **A Getting Started Guide for Microsoft Sentinel ML** Notebooks. 
-
-1. On the right pane, scroll down and select **Create from template** button. Review the default options and then select **Save**.
-
-    ![Picture 1](./media/lab09-task04-template.png)
-
-    > **Note:** You explored Microsoft Sentinel notebooks, created an Azure Machine Learning workspace, and deployed a starter ML notebook template for threat analysis.
-
-> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-> - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
-> - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-> - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
-<validation step="d927ee10-5fb0-4847-9994-4e782fe7a28c" />
-
 ## Review
 In this lab, you have completed the following tasks:
 - We created a hunting query.
 - We created an NRT query rule.
 - We Created a Search.
-- Explored Notebooks
 
