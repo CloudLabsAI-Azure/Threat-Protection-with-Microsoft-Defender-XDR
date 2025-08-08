@@ -90,17 +90,17 @@ In this task, you will enable and configure Microsoft Defender for Cloud.
 
 1. Close the settings page by selecting the 'X' on the upper right of the page to return to the **Environment settings**. Then, click on the '>' to the left of your subscription.
 
-1. Select the Log Analytics workspace named **loganalyticworkspace** to review the available options and pricing.
+1. On the **Environment settings** pane **(1)**, expand the **Azure HOL---**, under **subscription (2)** and select the **loganalyticworkspace** resource **(3)**.
 
-    ![Picture 1](./media/Lab-02-task2-subscription.png) 
+    ![Picture 1](./media/tr_gr_1_1_1.png) 
 
-1. Select **Enable all** (to the right of Select Defender plan), and then choose **Save**. Wait for the *"Microsoft Defender plan for workspace loganalyticworkspace was saved successfully!"* notification to appear.
+1. Select **Enable all (1)** (to the right of Select Defender plan), and then choose **Save (2)**.
 
+    ![Picture 1](./media/tr_gr_1_1_2.png)
+   
     >**Note:** If the page is not being displayed, refresh your Edge browser and try again.  
 
 1. Close the Defender plans page by selecting the 'X' in the upper right corner of the page to return to the **Environment settings**.
-
-    ![Picture 1](./media/Lab-02-task2-save.png)
 
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
 > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
@@ -363,3 +363,4 @@ In this lab, you have completed the following tasks:
 - Conducted Command and Control Attack with DNS
 - Conducted Persistence Attack Detection
 - Investigated an incident
+
