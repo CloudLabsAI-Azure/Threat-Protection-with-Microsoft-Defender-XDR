@@ -84,11 +84,7 @@ In this task, you will enable and configure Microsoft Defender for Cloud.
  
     ![Picture 1](./media/Lab-02-task2-reviewplans.png) 
 
-1. Review the monitoring extensions and confirm that **Log Analytics agent/Azure Monitor agent** is **Off**. Click Continue or close the Settings & Monitoring page by selecting the 'X' on the upper right of the page.
-
-    ![Picture 1](./media/Lab-02-task2-agentoff.png) 
-
-1. Close the settings page by selecting the 'X' on the upper right of the page to return to the **Environment settings**. Then, click on the '>' to the left of your subscription.
+1. Close the settings page by selecting the **X** on the upper-right corner to return to the **Environment settings**. Then, click the **>** icon next to your subscription.
 
 1. On the **Environment settings** pane **(1)**, expand the **Azure HOL---**, under **subscription (2)** and select the **loganalyticworkspace** resource **(3)**.
 
