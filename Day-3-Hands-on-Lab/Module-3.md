@@ -1,4 +1,4 @@
-# Exercise 3: Threat Hunting using Notebooks with Microsoft Sentinel
+# Exercise 3: Threat Hunting with Microsoft Sentinel
 
 ### Estimated timing: 30 minutes
 
@@ -254,3 +254,4 @@ In this lab, you have completed the following tasks:
 - We created an NRT query rule.
 - We Created a Search.
 - Explored Notebooks
+
