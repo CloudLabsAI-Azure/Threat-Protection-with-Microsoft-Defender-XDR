@@ -45,15 +45,15 @@ In this exercise, you will onboard a device and deploy Microsoft Defender for Id
         ![](./media/t3_g_e1_2.png) 
 
 1. In the **Downloads** pop-up:  
-   - Select the **GatewayWindowsDefenderATPOnboardingPackage.zip (1)** file.  
+   - Select the **GatewayWindowsDefenderATPOnboardingPackage.zip** file.  
    - Click the folder icon to choose **Show in folder**.  
    - **Hint:** If you cannot locate the file, check the `C:\Users\admin\Downloads` directory.
 
-      ![](./media/t3_g_e1_3.png)
+       ![](./media/t3_g_e1_3.png)
 
 1. Right-click on the downloaded zip file, choose **Extract All...**, ensure that **Show extracted files when complete** is checked, and then click **Extract**.
 
-    ![](./media/lab01-task3-zipfile.png) 
+    ![](./media/t3_g_e1_4.png) 
 
 1. Right-click on the extracted file 'WindowsDefenderATPLocalOnboardingScript.cmd' and choose **Properties**. Tick the **Unblock** checkbox located in the bottom right of the Properties window, and then click **OK**.
 
@@ -71,7 +71,9 @@ In this exercise, you will onboard a device and deploy Microsoft Defender for Id
 
     ![](./media/lab01-task3-runscript.png) 
 
-1. In the Windows search bar of the virtual machine, type **CMD**, and choose **Run as Administrator** from the right pane for the Command Prompt app.
+1. In the Windows search bar of the virtual machine, type **cmd (1)**, right-click **Command Prompt (2)**, and select **Run as administrator (3)**.
+
+    ![](./media/t3_g_e1_5.png) 
 
 1. When the "User Account Control" window appears, select **Yes** to allow the app to run. 
 
