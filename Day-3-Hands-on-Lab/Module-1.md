@@ -49,7 +49,7 @@ In this exercise, you will onboard a device and deploy Microsoft Defender for Id
    - Click the folder icon to choose **Show in folder**.  
    - **Hint:** If you cannot locate the file, check the `C:\Users\admin\Downloads` directory.
 
-       ![](./media/t3_g_e1_3.png)
+      ![](./media/t3_g_e1_3.png)
 
 1. Right-click on the downloaded zip file, choose **Extract All...**, ensure that **Show extracted files when complete** is checked, and then click **Extract**.
 
