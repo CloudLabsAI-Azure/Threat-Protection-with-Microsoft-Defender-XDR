@@ -268,17 +268,23 @@ In this task you will analyze using user timelines and alert details in the Defe
 
 In this task you will enable integration to view Defender for Identity incidents in the unified Microsoft 365 Defender portal and Microsoft Sentinel.
 
-1. Navigate to `portal.azure.com` and navigate to **Microsoft Sentinel** and select `loganalyticworkspace`.
+1. Open a browser and go to the **Azure portal:** https://portal.azure.com. **Sign in** using your lab credentials.
 
-      ![](./media/E1T4S1.png)
+1. In the Azure portal search bar, type **Microsoft Sentinel (1)** and select **Microsoft Sentinel (2)** from the results.
 
-1. In the left-hand pane, click **Content hub**. 
+      ![](./media/t3_g_e1_18.png)
 
-      ![](./media/Lab02-task1-contenthub1.png)
+1. On the **Microsoft Sentinel** page, select the workspace **loganalycticworkspace**.
 
-1. Search for **Defender for XDR** and select it and click on **Install** and wait for the installation to be complete
+      ![](./media/t3_g_e1_19.png)
 
-      ![](./media/E1T4S3.png)
+1. In the left navigation pane, expand **Content management (1)** and select **Content hub (2)**.
+
+      ![](./media/t3_g_e1_20.png)
+
+1. In the search bar, type **Defender for XDR (1)**, select the checkbox next to **Microsoft Defender XDR (2)**, and click **Install (3)**.
+
+      ![](./media/t3_g_e1_21.png)
 
 1. Return to the Sentinel workspace and navigate to **Data Connectors** and click on  **Defender for XDR** and select **Open connector page**.
 
@@ -292,7 +298,7 @@ In this task you will enable integration to view Defender for Identity incidents
 
 In this task you will use advanced hunting queries in the Defender portal to detect identity-based threats.
 
-1. In the Microsoft Defender portal, click **Hunting** in the left-hand navigation pane and select **Advanced hunting** from the menu.
+1. In the **Microsoft Defender** portal, click **Hunting (1)** in the left-hand navigation pane and select **Advanced hunting (2)** from the menu.
 
       ![](./media/E1T5S1.png)
 
