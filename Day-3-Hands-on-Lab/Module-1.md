@@ -77,7 +77,11 @@ In this exercise, you will onboard a device and deploy Microsoft Defender for Id
 
 1. When the "User Account Control" window appears, select **Yes** to allow the app to run. 
 
-1. Paste the script by right-clicking in the **Administrator: Command Prompt** window and press **Enter** to run it. **Note:** The window closes automatically after running the script.
+1. Paste the script by right-clicking in the **Administrator: Command Prompt** window and press **Enter** to run it.
+
+    ![](./media/t3_g_e1_6.png) 
+
+    >**Note:** The window closes automatically after running the script.
 
 1. In the Microsoft 365 Defender portal, navigate to the left-hand menu, and under the **Assets** area, select **Devices**. If the device is not shown, proceed with the next task and return to check it later. It can take up to 60 minutes for the first device to be displayed in the portal.
 
