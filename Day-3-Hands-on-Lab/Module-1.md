@@ -1,4 +1,5 @@
 ## Exercise 1: Microsoft Defender for Identity for Advanced Threat Detection and Response
+
 ### Estimated Duration: 60 Minutes
 
 ## Overview
@@ -16,24 +17,39 @@ In this exercise, you will onboard a device and deploy Microsoft Defender for Id
 
 ### Task 1: Onboard a Device
 
+1. Open a browser and go to the Microsoft Defender portal: https://security.microsoft.com. Sign in using the lab credentials.
+
+1. If a pop-up introducing the improved security center appears after signing in, click the **X** in the top-right corner to skip the tour.
+
+    ![](./media/t3_g_e1_1.png)
+
 1. Navigate to **Settings** in the left menu bar, and then, on the Settings page, choose **Endpoints**.
 
     ![](./media/lab01-task3-settings.png)
 
     > **Note:** The **Endpoints** option under **Settings** may take a few moments to appear after the initial setup.  
+    
     > If you don't see it right away, wait a minute and try refreshing the page.
 
 1. Navigate to the **Onboarding** option in the Device Management section.
 
     >**Note:** Device onboarding can also be initiated from the **Assets** section on the left menu bar. Expand 'Assets' and choose 'Devices.' On the Device Inventory page, with 'Computers & Mobile' selected, scroll down to find the option for **Onboard devices.** Clicking on this option will direct you to the **Settings > Endpoints** page.
 
-1. In the '1. Onboard a device' section, ensure that 'Local Script (for up to 10 devices)' is visible in the Deployment method drop-down, then click the **Download onboarding package** button.
+1. On the **Endpoints** page, under **Device management:**
+      - Select **Onboarding (1)** and configure the following:  
+      - Select **Windows Server 2019, 2022, and 2025 (2)** from the operating system drop-down.  
+      - In the **Connectivity type** drop-down, select **Standard (3)**.  
+      - In the **Deployment method** drop-down, choose **Local Script (for up to 10 devices) (4)**.  
+      - Click **Download onboarding package (5)**.
 
-    ![](./media/lab01-task3-localscript.png) 
+        ![](./media/t3_g_e1_2.png) 
 
-1. In the *Downloads* pop-up, use your mouse to select the 'WindowsDefenderATPOnboardingPackage.zip' file, and then click on the folder icon for **Show in folder**. **Hint:** If you can't locate it, the file should be in the 'c:\users\admin\downloads' directory.
+1. In the **Downloads** pop-up:  
+   - Select the **GatewayWindowsDefenderATPOnboardingPackage.zip (1)** file.  
+   - Click the folder icon to choose **Show in folder**.  
+   - **Hint:** If you cannot locate the file, check the `C:\Users\admin\Downloads` directory.
 
-    ![](./media/lab01-task3-downloadspopup.png)
+       ![](./media/t3_g_e1_3.png)
 
 1. Right-click on the downloaded zip file, choose **Extract All...**, ensure that **Show extracted files when complete** is checked, and then click **Extract**.
 
