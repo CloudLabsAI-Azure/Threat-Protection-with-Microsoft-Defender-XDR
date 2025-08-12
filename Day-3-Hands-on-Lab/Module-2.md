@@ -40,23 +40,7 @@ In this exercise, you will connect the Windows security event connector, enable 
 
     ![](./media/cor_r_g_6.png)
 
-1. On the **Security Events via Legacy Agent** page, click **Open connector page**.
-
-    ![](./media/cor_r_g_6.png)
-
-1. On the **Security Events via Legacy Agent** page, click **Open connector page**.
-
-    ![](./media/cor_r_g_6.png)
-
-1. On the **Security Events via Legacy Agent** page, click **Open connector page**.
-
-    ![](./media/cor_r_g_6.png)
-
-1. On the **Security Events via Legacy Agent** page, click **Open connector page**.
-
-    ![](./media/cor_r_g_6.png)
-   
-8. In the configuration section, opt for **Install Agent on Azure Windows Virtual Machine (1)**, and then choose **Download & Install Agent for Azure Windows Virtual Machines (2)**.
+1. In the configuration section, opt for **Install Agent on Azure Windows Virtual Machine (1)**, and then choose **Download & Install Agent for Azure Windows Virtual Machines (2)**.
 
     ![](./media/t3_g_e2_7.png)
 
