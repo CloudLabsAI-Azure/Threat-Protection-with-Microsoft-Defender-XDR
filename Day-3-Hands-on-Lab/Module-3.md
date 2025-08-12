@@ -203,7 +203,7 @@ In this task, you will use a Search job to look for a C2.
 1. On the **Restoration** window, review the settings and click **Restore** to begin the process.
 
    ![](./media/ex3_g_tr_19.png)
-g
+
 1. Review the options available and then select the **Cancel** button.
 
     >**Note:** If you were running the job, the restore would run for a couple of minutes and your data would be available in a new table.
