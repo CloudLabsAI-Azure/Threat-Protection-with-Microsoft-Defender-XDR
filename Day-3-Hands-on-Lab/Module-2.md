@@ -16,45 +16,81 @@ In this exercise, you will connect the Windows security event connector, enable 
 
 ### Task 1: Connect the Windows security event connector
 
-1. In the Search bar of the Azure portal, type *Microsft Sentinel*, then select **Microsoft Sentinel**.
+1. On the **Microsoft Defender** portal, in the left navigation pane, select **Microsoft Sentinel (1)**, expand **Content management (2)**, and select **Content hub (3)**.
 
-    ![](./media/09.png) 
+    ![](./media/t3_g_e1_22.png)
 
-1. Select the pre-created Sentinel **loganalyticworkspace** from the available list.
+1. On the **Content hub** page, in the search bar, type **Windows Security Events (1)**, then select the checkbox for **Windows Security Events (2)** from the results.
 
-    ![](./media/Lab01-task2-loganalyticworkspace.png) 
+    ![](./media/cor_r_g_3.png)
 
-1. Navigate to the left menu and go to the Content Management section; there, select **Content Hub (1)**. On the Content Hub page, locate **Windows Security Events (2)**, and then **select (3)** it. Finally, click on **Install (4)**.
+1. On the **Windows Security Events** solution page, click **Install**.
 
-    ![Picture 1](./media/Lab02-task1-contenthub.png)  
+    ![](./media/cor_r_g_4.png)
 
 1. After receiving the notification of a successful installation, return to the Data Connector page and click on the refresh button to ensure that the changes take effect.
 
 1. You should observe two options: **Security Events Via Legacy Agent** and **Windows Security Event Via AMA**.
 
-1. Choose **Security Events Via Legacy Agent**, and then click on **Open Connector Page**.
+1. On the left navigation pane, expand **Configuration (1)**, select **Data connectors (2)**, and in the search bar, type **Security Events via Legacy Agent (3)**. From the results, select **Security Events via Legacy Agent (4)**.
 
-    ![Picture 1](./media/lab02-task01-events.png) 
+    ![](./media/cor_r_g_5.png)
+
+1. On the **Security Events via Legacy Agent** page, click **Open connector page**.
+
+    ![](./media/cor_r_g_6.png)
+
+1. On the **Security Events via Legacy Agent** page, click **Open connector page**.
+
+    ![](./media/cor_r_g_6.png)
+
+1. On the **Security Events via Legacy Agent** page, click **Open connector page**.
+
+    ![](./media/cor_r_g_6.png)
+
+1. On the **Security Events via Legacy Agent** page, click **Open connector page**.
+
+    ![](./media/cor_r_g_6.png)
+
+1. On the **Security Events via Legacy Agent** page, click **Open connector page**.
+
+    ![](./media/cor_r_g_6.png)
    
 8. In the configuration section, opt for **Install Agent on Azure Windows Virtual Machine (1)**, and then choose **Download & Install Agent for Azure Windows Virtual Machines (2)**.
 
-    ![Picture 1](./media/lab02-task01-installagent.png) 
+    ![](./media/t3_g_e2_7.png)
 
-9. Select the **svm-<inject key="DeploymentID" enableCopy="false" />** virtual machine and click on connect.
+9. Select the **svm-<inject key="DeploymentID" enableCopy="false" />** virtual machine.
 
-    ![Picture 1](./media/lab2-task1-svm.png) 
+    ![](./media/t3_g_e2_8.png)
+
+9. On the virtual machine page, click **Connect** to link the VM to Log Analytics.
+
+    ![](./media/t3_g_e2_9.png)
         
-10. Once **connected (1)**, select the **Virtual Machine (2)** link from the top.
+10. select the **Virtual Machine** link from the top.
 
-    ![Picture 1](./media/lab2-task1-svm1.png) 
+    ![](./media/t3_g_e2_10.png)
 
-11. On the virtual machine page select the **s2vm-<inject key="DeploymentID" enableCopy="false" />** virtual machine and click on connect. wait until get connected.
+11. On the virtual machine page select the **s2vm-<inject key="DeploymentID" enableCopy="false" />** virtual machine.
 
-    ![Picture 1](./media/lab2-task1-s2vm.png)
+    ![](./media/t3_g_e2_11.png)
 
-11. Then, come back to the Configuration and scroll down a bit. You can find **Select which events to stream**. Click on **All Events**.
+11. On the second virtual machine page, click **Connect** to link the VM to Log Analytics.
 
-    ![Picture 1](./media/lab2-task1-streamevents.png) 
+    ![](./media/t3_g_e2_12.png)
+
+10. select the **Virtual Machine** link from the top.
+
+    ![](./media/t3_g_e2_13.png)
+
+11. Verify that both virtual machines **s2vm-<inject key="DeploymentID" enableCopy="false" />** and **svm-<inject key="DeploymentID" enableCopy="false" />** display **This workspace (1)** under the **Log Analytics Connection** column, then click **Security Events via Legacy Agent (2)** in the breadcrumb to return to the connector page.
+
+    ![](./media/t3_g_e2_14.png)
+
+11. In the **Instructions** section, under **Select which events to stream**, choose **All Events (1)** and click **Apply changes (2)**.
+
+    ![](./media/t3_g_e2_15.png)
 
 12. Click on Apply Changes now. If you refresh the data connector page, you can see the status Connected for **Security Events Via Legacy Agent**.
 
@@ -64,9 +100,9 @@ In this task, you will enable and configure Microsoft Defender for Cloud.
 
 1. Go to the [Azure Portal](https://portal.azure.com), and search for **Microsoft Defender for Cloud**.
 
-1. When prompted, click **Enable** to activate Defender CSPM.
-
    ![](./media/gg-1-1.png)
+
+1. When prompted, click **Enable** to activate Defender CSPM.
      
    ![](./media/gg-1-2.png)
 
@@ -74,27 +110,25 @@ In this task, you will enable and configure Microsoft Defender for Cloud.
 
    >**Note:** This enables advanced posture capabilities like attack path analysis and permissions management.
 
-1. Go to **Environment settings** > select your subscription.
+1. In the **Microsoft Defender for Cloud** page, under **Management**, select **Environment settings (1)**, expand **Azure** and **Tenant Root Group**, then select **Subscription (2)**.
 
    ![](./media/gg-1-3.png)
 
-1. Review the Azure resources that are now protected with the Defender for Cloud plans.
+1. On the **Settings & monitoring** page, turn **On (1)** the toggle for **Foundational CSPM** and **On (2)** for **Servers** under Cloud Workload Protection, then click **Save (3)**.
 
-1. Select the **Settings & Monitoring** tab from the Settings area (next to Save).
- 
-    ![Picture 1](./media/Lab-02-task2-reviewplans.png) 
+   ![](./media/t3_g_e2_16.png)
 
-1. Close the settings page by selecting the **X** on the upper-right corner to return to the **Environment settings**. Then, click the **>** icon next to your subscription.
+1. Click **Environment settings** in the top to return to the environment settings page.
 
-1. On the **Environment settings** pane **(1)**, expand the **Azure HOL---**, under **subscription (2)** and select the **loganalyticworkspace** resource **(3)**.
+   ![](./media/t3_g_e2_17.png)
 
-    ![Picture 1](./media/tr_gr_1_1_1.png) 
+1. On the **Environment settings** page, expand **Azure (1)**, then expand **Subscription** and select **loganalycticworkspace (2)**.
 
-1. Select **Enable all (1)** (to the right of Select Defender plan), and then choose **Save (2)**.
+   ![](./media/t3_g_e2_18.png)
 
-    ![Picture 1](./media/tr_gr_1_1_2.png)
-   
-    >**Note:** If the page is not being displayed, refresh your Edge browser and try again.  
+1. On the **Select Defender plan** page, turn **On (1)** the toggles for **Foundational CSPM** and **Servers**, then click **Save (2)**.
+
+   ![](./media/t3_g_e2_19.png)
 
 1. Close the Defender plans page by selecting the 'X' in the upper right corner of the page to return to the **Environment settings**.
 
