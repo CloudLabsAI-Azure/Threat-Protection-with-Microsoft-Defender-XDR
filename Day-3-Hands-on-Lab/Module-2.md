@@ -228,19 +228,23 @@ In this task, you will create a detection for the first attack of the previous e
 
 1. Select **Logs** from the *General* section.
 
+   ![](./media/cor_r_g_7.png)
+
     >**Note:** You might see some popup after clicking on **Logs**. close all Popups by clicking on **X** Icon.
 
-1. **Run** the following statement with the *where* operator in our query to retrieve the results for the records that starts from particular EventId.
+1. In the query editor, enter the following KQL statement **(1)** and click **Run (2)** to retrieve the records that start with the specified EventId. Review the results in the table below **(3)**.
 
     ```KQL
     SecurityEvent 
     | where Activity startswith "4624" 
     ```
-    ![Lab overview.](./media/Lab06-task02-query2.png)
+   ![](./media/cor_r_g_8.png)
 
-    >**Note:** It may take **5 to 10 minutes** for the SecurityEvent data to become available after onboarding or activity generation.  
+    >**Note:** It may take **5 to 10 minutes** for the SecurityEvent data to become available after onboarding or activity generation. 
 
-1. It is important to help the Security Operations Center Analyst by providing as much context about the alert as you can. This includes projecting Entities for use in the investigation graph. **Run** the following query:
+    >**Note:** The number of output rows and values may differ depending on your environment and data availability.
+
+1. In the query editor, enter the following KQL statement **(1)** to project entities for investigation and click **Run (2)**. Review the results in the table below **(3)**.
 
     ```KQL
     SecurityEvent 
@@ -248,18 +252,22 @@ In this task, you will create a detection for the first attack of the previous e
     | extend timestamp = TimeGenerated, HostCustomEntity = Computer, AccountCustomEntity = SubjectUserName
     ```
 
-1. Now that you have a good detection rule, in the Logs window, select the **+ New alert rule** in the command bar and then select **Create Microsoft Sentinel alert**. This will create a new Scheduled rule.
+   ![](./media/cor_r_g_9.png)
+
+1. In the **Logs** window, click the ellipsis **(1)** in the command bar, select **New alert rule (2)**, and then select **Create Microsoft Sentinel alert (3)**.
    
-    >**Hint:** You might need to select the ellipsis (...) button in the command bar.
+   ![](./media/cor_r_g_11.png)
 
-1. This starts the "Analytics rule wizard". For the *General* tab type:
+1. In the **Analytics rule wizard** on the **General** tab: 
+ 
+    - Enter **Startup RegKey (1)** in the *Name* field.  
+    - Type **Startup RegKey in c:\temp (2)** in the *Description* field.  
+    - Select **High (3)** for *Severity*.  
+    - Choose **Persistence (4)** for *MITRE ATT&CK*.  
+    - Ensure *Status* is set to **Enabled (5)**.  
+    - Click **Next: Set rule logic > (6)**.  
 
-    |Setting|Value|
-    |---|---|
-    |Name|Startup RegKey|
-    |Description|Startup RegKey in c:\temp|
-    |MITRE ATT&CK|Persistence|
-    |Severity|High|
+    ![](./media/cor_r_g_12.png)
 
 1. Select **Next: Set rule logic >** button.
 
