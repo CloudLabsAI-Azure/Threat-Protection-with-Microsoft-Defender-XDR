@@ -76,6 +76,19 @@ In this task, you will create a hunting query, bookmark a result, and create a L
 
 1. In the **Name** field, enter **PowerShell Hunt (1)**, and in the **Query** field, paste the provided KQL query **(2)**.
 
+    - For the Custom query enter the following KQL statement:
+
+    ```KQL
+    let lookback = 2d; 
+    SecurityEvent 
+    | where TimeGenerated >= ago(lookback) 
+    | where EventID == 4688 and Process =~ "powershell.exe"
+    | extend PwshParam = trim(@"[^/\\]*powershell(.exe)+" , CommandLine) 
+    | project TimeGenerated, Computer, SubjectUserName, PwshParam 
+    | summarize min(TimeGenerated), count() by Computer, SubjectUserName, PwshParam 
+    | order by count_ desc nulls last 
+    ```
+
    ![](./media/t3_g_e2_22.png)
 
 1. Under **Entity mapping**, select **Host**, then set **HostName** as the identifier and **Computer (1)** as the value. Click **Create (2)** to save the hunting query.
@@ -109,70 +122,6 @@ In this task, you will create a hunting query, bookmark a result, and create a L
 1. On the **Adding bookmark(s) to an existing incident** pane, select the incident **Multi-stage i... (1)** and click **Add (2)**.
 
    ![](./media/t3_g_e2_30.png)
-
-1. In the Create hunting query window, for the *Name* enter **PowerShell Hunt**.
-
-1. For the Custom query enter the following KQL statement:
-
-    ```KQL
-    let lookback = 2d; 
-    SecurityEvent 
-    | where TimeGenerated >= ago(lookback) 
-    | where EventID == 4688 and Process =~ "powershell.exe"
-    | extend PwshParam = trim(@"[^/\\]*powershell(.exe)+" , CommandLine) 
-    | project TimeGenerated, Computer, SubjectUserName, PwshParam 
-    | summarize min(TimeGenerated), count() by Computer, SubjectUserName, PwshParam 
-    | order by count_ desc nulls last 
-    ```
-
-1. Scroll down and under *Entity mapping* select:
-   
-    - Select **+ Add new entity** under *Entity mapping*.
-    - For the *Entity type* drop-down list select **Host**.
-    - For the *Identifier* drop-down list select **HostName**.
-    - For the *Value* drop-down list select **Computer**.
-
-1. Scroll down and under *Tactics & Techniques* select **Command and Control** and then select **Create** to create the hunting query.
-
-   ![Picture 1](./media/grttr-1-2.png)
-
-1. In the Microsoft Sentinel - Hunting blade, search for the query you just created in the list, PowerShell Hunt.
-
-1. Select **PowerShell Hunt** from the list.
-
-1. Select the **View Results** button from the right pane. The KQL query will automatically run.
-
-   ![Picture 1](./media/lab9xdr6.png)
-
-1. Close the *Logs* window by selecting the **X** in the top-right of the window and select **OK** to discard the changes. 
-
-1. Right-click the **PowerShell Hunt** query and select **Add to livestream**. **Hint:** This also can be done by sliding right and selecting the ellipsis **(...)** at the end of the row to open a context menu.
-
-   ![Picture 1](./media/lab9xdr7.png)
-
-1. Review that the *Status* is now *Running*. This will be running every 30 seconds in the background, and you will receive a notification in the Azure Portal (bell icon) when a new result is found. 
-
-1. Select the **Bookmarks** tab in the middle pane.
-
-1. Select the bookmark you just created from the results list.
-
-1. On the right pane, scroll down and select the **Investigate** button. **Hint:** It might take a couple of minutes to show the investigation graph.
-
-   ![Picture 1](./media/lab9xdr8.png)
-
-1. Explore the Investigation graph. Notice the high number of *Related alerts* for *svm-<inject key="DeploymentID" enableCopy="false" />*.
-
-1. Close the *Investigation* graph window by selecting the **X** in the top-right of the window. 
-
-1. Hide the right blade by selecting the **>>** icon and then scroll right until you see the ellipsis **(...)** icon.
-
-1. Select **Add to existing incident**. All the incidents appear in the right pane.
-
-1. Select one of the incidents and then select **Add**. 
-
-    ![Picture 1](./media/addingbookmark.png) 
-
-1. Scroll left to notice that the *Severity* column is now populated with the incident's data.
 
 ### Task 2: Create a NRT query rule
 
