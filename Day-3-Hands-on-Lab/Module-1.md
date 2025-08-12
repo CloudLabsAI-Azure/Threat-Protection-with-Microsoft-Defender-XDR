@@ -273,6 +273,7 @@ In this task you will enable integration to view Defender for Identity incidents
 1. On the **Workspaces** page:
       - Select the checkbox for **loganalycticworkspace (1)**.
       - Click **Connect workspace (2)**.
+      - Click **Content hub (3)**.
 
         ![](./media/t3_g_e1_22.png)
 
