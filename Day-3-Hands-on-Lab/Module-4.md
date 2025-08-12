@@ -11,7 +11,7 @@ You're a Security Operations Analyst working at a company that implemented Micro
 - Task 2: Apply Microsoft Defender for Office 365 preset security policies
 - Task 3: Activate a Microsoft Security Rule
 - Task 4: Manage Incidents
-- Task 5: Investigate Alerts
+- Task 5: Manage Alerts
 
 ### Task 1: Create a Group 
 
@@ -101,38 +101,45 @@ You're a Security Operations Analyst working at a company that implemented Micro
 
 In this task, you will activate a Microsoft Security rule.
 
-1. In the Search bar of the Azure portal, type *Sentinel*, then select **Microsoft Sentinel**.
+1. 1. In the **Microsoft Sentinel** workspace, under **Configuration (1)**, select **Analytics (2)** then click **Create (3)** and choose **NRT query rule (4)** from the dropdown menu.
 
-1. Select the Microsoft Sentinel Workspace.
+   ![](./media/ex4_g_tr_1.png)
 
-1. Select **Analytics** from the Configuration area. By default, you will see the *Active rules*.
+1. On the **General** tab, enter **Microsoft Defender for Cloud Alerts - Custom Severity Filter (1)** in the *Name* field.  
+   - In the *Description* field, type **Custom rule to detect Defender for Cloud alerts with chosen severity levels (2)**.
+   - In the *Severity* drop-down, select **High (3)**. 
+   - Under *MITRE ATT&CK*, choose the relevant **tactics, techniques, and sub-techniques (4)**.
+   - Ensure the *Status* toggle is set to **Enabled (5)**. 
+   - Click **Next: Set rule logic (6)** to continue.
 
-1. Select the **Microsoft incident creation rule** from the dropdown + Create.
+   ![](./media/ex4_g_tr_2.png)
 
-   ![](./media/lab10-task4-analytics.png)
+1. On the **Set rule logic** tab, in the *Rule query* field, enter the following query **(1)** and click **Next: Incident settings (2)** to proceed.
 
-   >**Note**: You can choose the existing **active rule** to edit or **create** new **active rule** and then edit them by selecting the respective rule in the active rules list.
+    ```KQL 
+    SecurityAlert
+    | where ProductName in ("Microsoft Defender for Cloud", "Azure Security Center")
+    ```
 
-1. In the name column, provide name of your choice and in dropdown of **Microsoft security service** select the **Microsoft Defender for Cloud**.
+   ![](./media/ex4_g_tr_3.png)
 
-1. Select the filter by severity button as **Custom** and select all the severity levels. Select the **Next: Automated response** button and then select **Next: Review + Create** button. and click on **Save**.
+1. On the **Incident settings** page, keep everything to default and then click **Next: Automated response** to proceed.
 
-1. After creating the active rule, select it for editing. right click on rule, click the **Edit** button. 
-      
-1. Scroll down the page and under "Analytics rule logic - Filter by Severity", select the *Custom* drop-down list.
+   ![](./media/ex4_g_tr_4.png)
 
-1. Unselect **Low** for the severity level.
+1. On the **Automated response** page, click **Next: Review + create ** to proceed.
 
-1. Select the **Next: Automated response** button and then select **Next: Review** button.
+   ![](./media/ex4_g_tr_5.png)
 
-1. Review the changes made and select the **Save** button. The Analytics rule will be saved.
+1. On the **Review + create** page, click **Save** to create the analytics rule.
+
+   ![](./media/ex4_g_tr_6.png)
 
 1. Onboard the **s2vm-<inject key="DeploymentID" enableCopy="false">** using device onboard using the microsoft defender endpoint onboarding portal.
 
-   >**Note:** You can refer the **Lab01 > Task 3** to onboard the device to Microsoft Defender.
+   >**Note:** You can refer the **Lab01 > Task 1** to onboard the device to Microsoft Defender.
 
    >**Note:** Username is `demouser` and the password is the **Lab VM Admin Password**, which you can find in the **Environment** section of the lab guide.
-
 
 ### Task 4: Manage Incidents
 
@@ -144,63 +151,65 @@ In this task, you will manage the incidents in the M365 Defender portal.
 
 1. In the **Enter password** dialog box, copy and paste **Password: <inject key="AzureAdUserPassword"></inject>** and then select **Sign in**.
 
-1. From the sidebar menu, under **Incidents and Alerts** select **Alerts**. Click on the incident **[Test Alert] Suspicious Powershell commandline**.
+1. On the **Alerts** page, under **Incidents & alerts (1)**, select **Alerts (2)** and check the box next to **[Test Alert] Suspicious Powershell commandline (3)**.
+
+   ![](./media/ex4_g_tr_8.png)
 
    >**Note:** If you cannot see the **Alerts**, please wait, as updates may take 24-48 hours.
 
-1. Click on **Manage Incident** to edit the details of this incident. Don't make any change only review the details
+1. On the **[Test Alert] Suspicious Powershell commandline** page, under the **Incident** section, click on **Execution incident on multiple endpoints**.
 
-1. Here, you can edit the name of the incident, add tags, assign it to an existing group or a user, change the status, classify the incident as required, and even add comments.
+   ![](./media/ex4_g_tr_19.png)
 
-   ![Lab overview.](./media/lab10-task1-manage01.png)
+1. On the **Execution incident on multiple endpoints** page, click on **Manage incident**.
+
+   ![](./media/ex4_g_tr_15.png)
+
+1. On the **Manage incident** pane, verify the **Incident name (1)** is set to *Execution incident on multiple endpoints*, ensure **Severity (2)** is set to *High*, assign it to your user account in **Assign to (3)**, confirm the **Status (4)** is set to *Active*, and then click **Save (5)**.
+
+   ![](./media/ex4_g_tr_16.png)
+
+   >**Note:** Here, you can edit the name of the incident, add tags, assign it to an existing group or a user, change the status, classify the incident as required, and even add comments.
 
 1. In the incident, the **Attack Story** tab provides a summary of the alerts and the incident graph on how these alerts are mapped.
 
+   ![](./media/ex4_g_tr_11.png)
+
 1. You can further investigate these alerts by navigating to the **Alerts** tab.
+
+   ![](./media/ex4_g_tr_12.png)
 
 1. You can also see the devices and users affected by this incident in the **Assets** tab. You can verify that the affected device is **s2vm-<inject key="DeploymentID" enableCopy="false" />** and the user is **demouser**.
 
+   ![](./media/ex4_g_tr_13.png)
+
 1. The **Evidence & Responses** tab shows the initial evidence investigated by Microsoft Defender which includes the processes, IP addresses.
+
+   ![](./media/ex4_g_tr_14.png)
 
 1. The **Summary** tab gives us a summarized report of the incident including active alerts & their category, incident information, scope, and much more.
 
-### Task 5: Investigate Alerts
+### Task 5: Manage Alerts
 
 In this task, you will investigate and mitigate the alerts through recommendations by Microsoft Defender.
 
 1. In the Microsoft Defender portal, navigate to the **Alerts** tab from the sidebar menu.
 
-1. You can click on the alerts to view the full details. Click on the alert named **Suspicious System Network Configuration Discovery**.
+1. On the **Alerts** page, under **Incidents & alerts (1)**, select **Alerts (2)** and check the box next to **[Test Alert] Suspicious Powershell commandline (3)**.
+
+   ![](./media/ex4_g_tr_8.png)
 
 1. Click on **Maximize** to view the full alert details.
 
+   ![](./media/ex4_g_tr_20.png)
+
 1. Click on the drop-down for the first suspicious behavior to fully investigate the root cause for this activity.
 
-   ![Lab overview.](./media/lab10-task2-alerts-max01.png)
-
-1. You can see that this suspicious behavior was reported when the user ran a certain command. 
-
-1. Click on the ellipses of any of process in process tree and then select **Go Hunt**. This will redirect you to a new tab of **Advanced Hunting** where you can run the query and get the results.
-
-   ![Lab overview.](./media/lab10-task2-alerts-hunt.png)
-
-   ![Lab overview.](./media/lab10-task2-alerts-hunt01.png)
-
-1. You can also investigate the alert further by navigating back to the alerts and clicking on **Deep analysis**.
-
-   ![Lab overview.](./media/lab10-task2-alerts-deep-analysis.png)
-
-1. You will be redirected to a new tab. Click on **Submit** to get the detailed analyzed file.
-
-   ![Lab overview.](./media/lab10-task2-alerts-deep-analysis01.png)
-
-1. This process will take some time, after which you can see the deep analysis of the alert and further investigate it.
-
-   ![Lab overview.](./media/lab10-task2-alerts-deep-analysis02.png)
+   ![](./media/ex4_g_tr_21.png)
 
 1. Microsoft Defender also provides recommendations to mitigate the alerts. On the alert details page, click on the **Recommendations** tab to view all the recommendations.
 
-   ![Lab overview.](./media/lab10-task2-alerts-recommendations.png)
+   ![](./media/ex4_g_tr_23.png)
 
 ## Review
 In this lab, you have completed the following tasks:
@@ -208,4 +217,4 @@ In this lab, you have completed the following tasks:
 - Applied Microsoft Defender for Office 365 preset security policies
 - Activated a Microsoft Security Rule
 - Managed Incidents
-- Investigated Alerts
+- Manage Alerts
