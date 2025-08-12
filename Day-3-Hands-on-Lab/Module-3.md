@@ -127,20 +127,19 @@ In this task, you will create a hunting query, bookmark a result, and create a L
 
 In this task, instead of using a LiveStream, you will create a NRT analytics query rule. NRT rules run every minute and look back one minute. The benefit of NRT rules is they can use the alert and incident creation logic.
 
-1. In Microsoft Sentinel, on the left menu bar under the Configuration section, select **Analytics (1)**, and then click on **+ Create (2)** to choose **NRT query rule (3)** from dropdown.
+1. In **Microsoft Sentinel**, under **Configuration (1)** select **Analytics (2)**, then click **+ Create** and choose **NRT query rule (3)**.
 
-    ![Picture 1](./media/lab09-task2-analytics.png) 
+   ![](./media/ex3_g_tr_7.png)
 
-1. This starts the Analytics rule wizard For the General tab type:
+1. On the **General** tab:  
+    - Enter **NRT PowerShell Hunt (1)** in the **Name** field.  
+    - Enter **NRT PowerShell Hunt (2)** in the **Description** field.  
+    - Set **Severity** to **High (3)**.  
+    - Set **MITRE ATT&CK** to **Command And Control (4)**.  
+    - Ensure **Status** is set to **Enabled (5)**.  
+    - Click **Next: Set rule logic > (6)**. 
 
-    |Setting|Value|
-    |---|---|
-    |Name|**NRT PowerShell Hunt**|
-    |Description|**NRT PowerShell Hunt**|
-    |Severity|**High**|
-    |MITRE ATT&CK|**Command and Control**|
-
-1. Select **Next: Set rule logic >** button. 
+   ![](./media/ex3_g_tr_8.png) 
 
 1. For the *Rule query* enter the following KQL statement:
 
@@ -154,10 +153,6 @@ In this task, instead of using a LiveStream, you will create a NRT analytics que
     | summarize min(TimeGenerated), count() by Computer, SubjectUserName, PwshParam
     ```
 
-1. Select **View query results >** to make sure your query does not have any errors.
-
-1. Close the Logs window by selecting the **X** in the top-right of the window and select **OK** to discard the changes. 
-
 1. Under Entity mapping select:
      
     - Select **+ Add new entity** under Entity mapping.
@@ -165,34 +160,50 @@ In this task, instead of using a LiveStream, you will create a NRT analytics que
     - For the Identifier drop-down list select **HostName**.
     - For the Value drop-down list select **Computer**.
 
-1. Scroll down and select **Next: Incident settings>** button.
+   ![](./media/ex3_g_tr_9.png)
 
-1. For the *Incident settings* tab, leave the default values and select **Next: Automated response>** button.
+1. On the **Incident settings** page, keep incident creation **Enabled**, leave alert grouping **Disabled**, and click **Next: Automated response >**.
 
-1. For the Automated response tab, leave the default values and select **Next: Review + create >** button.
+   ![](./media/ex3_g_tr_10.png)
+
+1. Click **Next: Review + create >**.  
+
+   ![](./media/ex3_g_tr_11.png)
 
 1. On the Review and Create tab, select the **Save** button to create and save the new Scheduled Analytics rule.
+
+   ![](./media/ex3_g_tr_12.png)
 
 ### Task 3: Create a Search job
 
 In this task, you will use a Search job to look for a C2.
 
-1. In Microsoft Sentinel, on the left menu under General, select the **Search**. In the search box, enter **reg.exe**, and then click on **Start**.
+1. In Microsoft Defender Portal, on the **Search** page, select **Search (1)** from the left menu, enter **reg.exe (2)** in the search box, and click **Start**.
 
-    ![Picture 1](./media/lab09-task3-search.png)
+   ![](./media/ex3_g_tr_14.png)
 
-1. A new window running the query opens. Select the ellipsis icon **(...)** from the top right and then toggle the **Search job mode**.
+1. In the **Logs** window, click the ellipsis icon **(1)** at the top right and select **Search job (2)**.
 
-1. Select **Search job** button from the command bar. 
+   ![](./media/ex3_g_tr_15.png)
 
-1. Enter the name of the table as **Newtable**. The search job creates a new table with your results as soon as they arrive. The results can be consulted from the *Saved Searches* tab.
+1. On the **Run a search job** window, select **Last 24 Hours (1)**, enter **Newtable (2)** as the name, and click **Run search job (3)**.
+
+   ![](./media/ex3_g_tr_16.png)
+
+1. The query results display in the **Logs** window showing the retrieved event details.
+
+   ![](./media/ex3_g_tr_17.png)
 
 1. Close the *Logs* window by selecting the **X** in the top-right of the window and select **OK** to discard the changes. 
+
+1. On the **Newtable_SRCH** panel, click **Restore** to investigate the retrieved data.
+
+   ![](./media/ex3_g_tr_18.png)
  
-1. Select the **Restoration** tab from the command bar and then the **Restore** button.
+1. On the **Restoration** window, review the settings and click **Restore** to begin the process.
 
-1. Under *Select a table to restore*, search for and select **SecurityEvent**.
-
+   ![](./media/ex3_g_tr_19.png)
+g
 1. Review the options available and then select the **Cancel** button.
 
     >**Note:** If you were running the job, the restore would run for a couple of minutes and your data would be available in a new table.
