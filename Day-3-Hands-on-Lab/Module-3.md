@@ -202,4 +202,3 @@ In this lab, you have completed the following tasks:
 - We created a hunting query.
 - We created an NRT query rule.
 - We Created a Search.
-
