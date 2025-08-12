@@ -17,11 +17,17 @@ You are a Security Operations Analyst working at a company that implemented Micr
 
 In this task, you will create a hunting query, bookmark a result, and create a Livestream.
 
-1. In the Search bar of the Azure portal, type Sentinel, then select **Microsoft Sentinel**.
+1. In the Search bar of the Azure portal, type *Microsft Sentinel (1)*, then select **Microsoft Sentinel (2)**.
 
-1. Select your Microsoft Sentinel Workspace.
+   ![](./media/09.png)
+   
+1. Select the Microsoft Sentinel Workspace you created earlier.
 
-1. Select **Logs** from the left menu.
+1. Select **Logs** from the *General* section.
+
+   ![](./media/cor_r_g_7.png)
+
+    >**Note:** You might see some popup after clicking on **Logs**. close all Popups by clicking on **X** Icon.
 
 1. Enter the following KQL Statement in the New Query 1 space:
 
@@ -60,11 +66,49 @@ In this task, you will create a hunting query, bookmark a result, and create a L
 
 1. Close the Logs window by selecting the **X** in the top-right of the window and select **OK** to discard the changes. 
 
-1. Select your Microsoft Sentinel workspace again and select the **Hunting** page under the Threat Management area.
+1. On the **Microsoft Sentinel** page, under **Threat management (1)**, select **Hunting (2)**, then click the **Queries (3)** tab.
+
+   ![](./media/ex3_g_tr_6.png)
 
 1. Select the **Queries (1)** tab and then **+ New Query (2)** from the command bar.
 
-   ![Picture 1](./media/lab9xdr4.png)
+   ![](./media/t3_g_e2_21.png)
+
+1. In the **Name** field, enter **PowerShell Hunt (1)**, and in the **Query** field, paste the provided KQL query **(2)**.
+
+   ![](./media/t3_g_e2_22.png)
+
+1. Under **Entity mapping**, select **Host**, then set **HostName** as the identifier and **Computer (1)** as the value. Click **Create (2)** to save the hunting query.
+
+   ![](./media/t3_g_e2_23.png)
+
+1. Verify that a notification appears confirming the hunting query **'PowerShell Hunt'** was successfully created.
+
+   ![](./media/t3_g_e2_24.png)
+
+1. Confirm that the newly created hunting query **PowerShell Hunt** is now visible in the **Queries** list under Microsoft Sentinel Hunts.
+
+   ![](./media/t3_g_e2_25.png)
+
+1. On the **PowerShell Hunt** details page, review the query configuration and click **View results** to see the hunting query output.
+
+   ![](./media/t3_g_e2_26.png)
+
+1. On the **Hunting** page, select **PowerShell Hunt (1)** from the list of queries, click on the vertical ellipsis menu, and choose **Add to livestream (2)** to monitor the query in real-time.
+
+   ![](./media/t3_g_e2_27.png)
+
+1. On the **Bookmarks (1)** tab, select the checkbox for the relevant bookmark entry **(2)**, then click **Investigate (3)** to analyze the bookmarked event in detail.
+
+   ![](./media/t3_g_e2_28.png)
+
+1. On the **Bookmarks** tab, click the **More actions (1)** icon for the relevant bookmark and select **Add to existing incident (2)** from the menu.
+
+   ![](./media/t3_g_e2_29.png)
+
+1. On the **Adding bookmark(s) to an existing incident** pane, select the incident **Multi-stage i... (1)** and click **Add (2)**.
+
+   ![](./media/t3_g_e2_30.png)
 
 1. In the Create hunting query window, for the *Name* enter **PowerShell Hunt**.
 
