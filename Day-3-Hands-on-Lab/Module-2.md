@@ -267,9 +267,7 @@ In this task, you will create a detection for the first attack of the previous e
     - Ensure *Status* is set to **Enabled (5)**.  
     - Click **Next: Set rule logic > (6)**.  
 
-    ![](./media/cor_r_g_12.png)
-
-1. Select **Next: Set rule logic >** button.
+        ![](./media/cor_r_g_12.png)
 
 1. On the *Set rule logic* tab, the *Rule query* should be populated already with your KQL query, under **Alert enhancement** expand *Entity mapping* and select **+ Add New Entity**.
 
@@ -277,6 +275,10 @@ In this task, you will create a detection for the first attack of the previous e
     |:----|:----|:----|
     |Account|FullName|AccountCustomEntity|
     |Host|Hostname|HostCustomEntity|
+
+   ![](./media/cor_r_g_13.png)
+
+   ![](./media/cor_r_g_14.png)
 
 1. If **Hostname** isn't selected for *Host* Entity, select it from the drop-down list.
 
@@ -287,15 +289,19 @@ In this task, you will create a detection for the first attack of the previous e
     |Run Query every|5 minutes|
     |Lookup data from the last|1 Days|
 
+   ![](./media/cor_r_g_15.png)
+
     >**Note:** We are purposely generating many incidents for the same data. This enables the Lab to use these alerts.
 
 1. Leave the rest of the options with the defaults. Select **Next: Incident settings>** button.
 
 1. For the *Incident settings* tab, leave the default values and select **Next: Automated response >** button.
 
-1. On the *Automated response* tab, you will be able to see the Automation rule created in previous task. Leave everything as default and select  **Next: Review + Create** button.
+1. On the *Automated response* tab, leave everything as default and select  **Next: Review + Create** button.
   
 1. On the *Review and create* tab, select the **Save** button to create the new Scheduled Analytics rule.
+
+   ![](./media/cor_r_g_16.png)
 
 ### Task 6: Investigate an incident
 
