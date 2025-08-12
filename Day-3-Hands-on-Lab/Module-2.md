@@ -351,4 +351,3 @@ In this lab, you have completed the following tasks:
 - Conducted Command and Control Attack with DNS
 - Conducted Persistence Attack Detection
 - Investigated an incident
-
