@@ -299,7 +299,7 @@ In this task, you will create a detection for the first attack of the previous e
 
 1. On the *Automated response* tab, leave everything as default and select  **Next: Review + Create** button.
   
-1. On the *Review and create* tab, select the **Save** button to create the new Scheduled Analytics rule.
+1. On the **Review and create** tab, select the **Save** button to create the new Scheduled Analytics rule.
 
    ![](./media/cor_r_g_16.png)
 
