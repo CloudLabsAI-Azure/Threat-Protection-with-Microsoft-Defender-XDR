@@ -341,7 +341,7 @@ In this task, you will investigate an incident.
     - Set **Classification (5)** to **True positive - Multi staged attack**.  
     - Click **Save (6)**.
 
-    ![](./media/cor_r_g_25.png)
+        ![](./media/cor_r_g_25.png)
 
 ## Review
 In this lab, you have completed the following tasks:
