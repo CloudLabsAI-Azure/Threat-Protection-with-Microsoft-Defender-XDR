@@ -1,27 +1,43 @@
 [
   {
-    "Name": "Regional Delivery Day1",
+    "Name": "Securing Collaboration with Microsoft Defender Solutions",
     "Language": "English",
     "Files": [
       {
-        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Threat-Protection-with-Microsoft-Defender-XDR/refs/heads/main/Regional%20Delivery/Day%201/Getting%20Started.md",
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Threat-Protection-with-Microsoft-Defender-XDR/refs/heads/main/Regional-Delivery-Combined/Getting%20Started.md",
         "Order": 1
       },
       {
-        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Threat-Protection-with-Microsoft-Defender-XDR/refs/heads/main/Regional%20Delivery/Day%201/RD_Ex1.md",
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Threat-Protection-with-Microsoft-Defender-XDR/refs/heads/main/Regional-Delivery-Combined/RD1-Ex1.md",
         "Order": 2
       },
       {
-        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Threat-Protection-with-Microsoft-Defender-XDR/refs/heads/main/Regional%20Delivery/Day%201/RD_Ex2.md",
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Threat-Protection-with-Microsoft-Defender-XDR/refs/heads/main/Regional-Delivery-Combined/RD1-Ex2.md",
         "Order": 3
       },
       {
-        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Threat-Protection-with-Microsoft-Defender-XDR/refs/heads/main/Regional%20Delivery/Day%201/RD_Ex3.md",
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Threat-Protection-with-Microsoft-Defender-XDR/refs/heads/main/Regional-Delivery-Combined/RD1-Ex3.md",
         "Order": 4
       },
       {
-        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Threat-Protection-with-Microsoft-Defender-XDR/refs/heads/main/Regional%20Delivery/Day%201/RD_Ex4.md",
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Threat-Protection-with-Microsoft-Defender-XDR/refs/heads/main/Regional-Delivery-Combined/RD1-Ex4.md",
         "Order": 5
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Threat-Protection-with-Microsoft-Defender-XDR/refs/heads/main/Regional-Delivery-Combined/RD2-Ex5.md",
+        "Order": 6
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Threat-Protection-with-Microsoft-Defender-XDR/refs/heads/main/Regional-Delivery-Combined/RD2-Ex6.md",
+        "Order": 7
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Threat-Protection-with-Microsoft-Defender-XDR/refs/heads/main/Regional-Delivery-Combined/RD2-Ex7.md",
+        "Order": 8
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Threat-Protection-with-Microsoft-Defender-XDR/refs/heads/main/Regional-Delivery-Combined/RD2-Ex8.md",
+        "Order": 9
       }
     ]
   }
