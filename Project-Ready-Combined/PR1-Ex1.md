@@ -46,6 +46,12 @@ In this task, you will enable Microsoft Defender CSPM for your environment and c
 
    ![rd_day1_ex1_t1_6](./media/rd_day1_ex1_t1_6.png)
 
+1. 1. On the **Threat policies** page, under **Templated policies**, select **Preset Security Policies**.
+
+   ![rd_day1_ex1_t1_6](./media/combi_g_c_1.png)
+
+   > **Note:** If the **Learn about preset security policies** pop-up appears, click **Cancel** to close it and proceed with the lab.
+
 1. Under **Standard Protection**, click on **Manage protection settings**.
 
    ![rd_day1_ex1_t1_10](./media/cord1e1_1.png)
@@ -54,15 +60,19 @@ In this task, you will enable Microsoft Defender CSPM for your environment and c
 
     ![rd_day1_ex1_t1_7](./media/rd_day1_ex1_t1_7.png)
 
-1. On the **Apply Defender for Office 365 protection** screen, select **Specific recipients (1)**, enter the user email in the **Users** field (2), and click **Next (3)**.
+1. On the **Apply Defender for Office 365 protection** screen, select **Specific recipients (1)**, enter the user email in the **Users (2)** field, and click **Next (3)**.
 
     ![rd_day1_ex1_t1_8](./media/rd_day1_ex1_t1_8.png)
 
-1. Click **Next** on the **Impersonation protection** and **Policy mode** screens until you reach the **Review** section.
+1. On the **Impersonation protection** and **Policy mode** screens, keep all settings at their default values and click **Next** until you reach the **Review** section.
 
 1. On the **Review** screen, verify that **Exchange Online Protection (1)** and **Defender for Office 365 (2)** apply to the correct user, then click **Confirm (3)**.
 
     ![rd_day1_ex1_t1_9](./media/rd_day1_ex1_t1_9.png)
+
+1. On the **Apply standard protection** confirmation screen, verify that the policy update is successful, then click **Done**.
+
+    ![rd_day1_ex1_t1_9](./media/combi_g_c_2.png)
 
     > **Note:** Standard protection includes Safe Attachments, Safe Links, and anti-phishing policies.
 
@@ -78,29 +88,27 @@ In this task, you will enable Microsoft Defender CSPM for your environment and c
 
     ![rd_day1_ex1_t1_12](./media/rd_day1_ex1_t1_12.png)
 
-1. Click **Next** on the **Impersonation protection** and **Policy mode** screens until you reach the **Review** section.
+1. On the **Impersonation protection** and **Policy mode** screens, keep all settings at their default values and click **Next** until you reach the **Review** section.
 
 1. On the **Review** screen, verify that **Exchange Online Protection (1)** and **Defender for Office 365 (2)** apply to the correct user, then click **Confirm (3)**.
 
+    ![rd_day1_ex1_t1_12](./media/combi_g_c_3.png)
+
 1. Once completed, confirm that:
     - **Standard protection is on (1)**  
-    - **Strict protection is on (2)** for selected users
+    - **Strict protection is on (2)**
 
         ![rd_day1_ex1_t1_15](./media/cord1e1_3.png)
 
-    > **Note:** You have now successfully configured multi-layered threat policies for both general and high-risk users.
+      > **Note:** You have now successfully configured multi-layered threat policies for both general and high-risk users.
 
 ## Task 2: Simulate Phishing and Malware Attacks Using Attack Simulator
 
 In this task, you'll simulate phishing and malware attacks using Microsoft Defender's built-in **Attack Simulation Training**. These simulations help you evaluate user vulnerability and response to social engineering techniques.
 
-1. In the **Microsoft Defender portal**, select **Email & collaboration (1)**, click **Attack simulation training (2)**, and then click **Launch your own simulation (3)**.
+1. On the left navigation menu, expand **Email & collaboration (1)** and select **Attack simulation training (2)**. On the **Attack simulation training** page, select the **Simulations (3)** tab and click **Launch a simulation (4)**.
 
-   ![rd_day1_ex1_t2_1](./media/rd_day1_ex1_t2_1.png)
-
-1. On the **Create your own simulation** screen, select **Launch a single simulation (1)** and click **Continue (2)**.
-
-   ![rd_day1_ex1_t2_2](./media/rd_day1_ex1_t2_2.png)
+   ![rd_day1_ex1_t2_1](./media/combi_g_c_4.png)
 
 1. Under **Select technique**, choose **Credential Harvest (1)** and click **Next (2)**.
 
@@ -110,7 +118,7 @@ In this task, you'll simulate phishing and malware attacks using Microsoft Defen
 
    ![rd_day1_ex1_t2_4](./media/rd_day1_ex1_t2_4.png)
 
-1. Under **Select payload and login page**, choose **Global payloads (1)** and select a phishing payload such as **Expense report sharing - English (2)**. Click **Next (3)**.
+1. Under **Select payload and login page**, choose **Global payloads**, select a phishing payload from the **list (1)**, and click **Next (3)**.
 
    ![rd_day1_ex1_t2_5](./media/rd_day1_ex1_t2_5.png)
 
@@ -123,6 +131,10 @@ In this task, you'll simulate phishing and malware attacks using Microsoft Defen
    ![rd_day1_ex1_t2_7](./media/rd_day1_ex1_t2_7.png)
 
 1. On the **Target users** screen, confirm the **User** has been added and click **Next**.
+
+1. On the **Exclude users** screen, leave the option unchecked to skip excluding any users, and click **Next**.
+
+   ![rd_day1_ex1_t2_7](./media/combi_g_c_5.png)
 
 1. On the **Assign training** screen, select **Microsoft training experience (1)**, choose **Assign training for me (2)**, set the due date to **7 days after Simulation ends (3)**, and click **Next (4)**.
 
@@ -151,23 +163,49 @@ In this task, you'll simulate phishing and malware attacks using Microsoft Defen
 
     ![rd_day1_ex1_t2_14](./media/rd_day1_ex1_t2_14.png)
 
+    > **Note:** You’ve successfully launched a phishing simulation. It will monitor how users interact with suspicious emails.
+
 1. Verify the simulation appears in the dashboard as **In progress**.
 
     ![rd_day1_ex1_t2_15](./media/rd_day1_ex1_t2_15.png)
 
-1. To simulate a **Malware Attack**, go back to **Attack simulation training**, click **Launch your own simulation**, and choose **Malware Attachment (1)**. Click **Next (2)**.
+1. On the **Attack simulation training** page, select the **Simulations (1)** tab and click **Launch a simulation (2)**.
+
+    ![](./media/combi_g_c_6.png)
+
+1. To simulate a **Malware Attack**, choose **Launch your own simulation**, select **Malware Attachment (1)**, and click **Next (2)**.
 
     ![rd_day1_ex1_t2_16](./media/rd_day1_ex1_t2_16.png)
-
-    > **Note:** You’ve successfully launched a phishing simulation. It will monitor how users interact with suspicious emails.
 
 1. Enter a new simulation name **`Test2`** and click **Next (2)**.
 
     ![rd_day1_ex1_t2_17](./media/rd_day1_ex1_t2_17.png)
 
-1. Under **Payload selection**, choose a malware attachment like **HR notification on update of contract - English (2)** and click **Next (3)**.
+1. Under **Select payload and login page**, select **Global payloads (1)**, choose a malware attachment from the list and set the preferred language (2), then click **Next (3)**.
 
     ![rd_day1_ex1_t2_18](./media/rd_day1_ex1_t2_18.png)
+
+1. On the **Target users** screen, select **Include only specific users and groups (1)**, click **Add users (2)**, and then click **Next (3)**.
+
+   ![rd_day1_ex1_t2_6](./media/rd_day1_ex1_t2_6.png)
+
+1. On the **Add users** screen, search for the **user email (1)**, select the **user (2)** from the list, and click **Add User(s) (3)**.
+
+   ![rd_day1_ex1_t2_7](./media/rd_day1_ex1_t2_7.png)
+
+1. On the **Target users** screen, confirm the **User** has been added and click **Next**.
+
+1. On the **Exclude users** screen, leave the option unchecked to skip excluding any users, and click **Next**.
+
+   ![rd_day1_ex1_t2_7](./media/combi_g_c_5.png)
+
+1. On the **Assign training** screen, select **Microsoft training experience (1)**, choose **Assign training for me (2)**, set the due date to **7 days after Simulation ends (3)**, and click **Next (4)**.
+
+   ![rd_day1_ex1_t2_9](./media/rd_day1_ex1_t2_9.png)
+
+1. On the **Assign training** page, select a landing page template from the list (1) and click **Next (2)**.
+
+   ![rd_day1_ex1_t2_9](./media/combi_g_c_7.png)
 
 1. In the **End user notification** screen, select **Microsoft default notification (1)**, ensure **Deliver during simulation (2)** and **Weekly reminder (3)** are selected, and click **Next (4)**.
 
