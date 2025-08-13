@@ -14,9 +14,7 @@ In this exercise, you will explore how to secure Microsoft 365 cloud services li
 
 ## Task 1: Connect and Onboard a SaaS App to Microsoft Defender for Cloud Apps
 
-1. Open the **Microsoft Edge** browser and go to the following URL in the address bar: 
-
-   [https://portal.azure.com](https://portal.azure.com)
+1. Open the **Microsoft Edge** browser and go to the following URL in the address bar: [https://portal.azure.com](https://portal.azure.com)
 
 1. In the search bar, type **Microsoft Entra ID** and select it.
 
