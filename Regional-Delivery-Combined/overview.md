@@ -15,11 +15,11 @@ You will perform hands-on tasks that simulate real-world security events—build
 
 ## Daily Lab Modules
 
-- **Day 1 Lab** – Configuring Threat Policies and Simulating Attacks  
-  Configure Defender for Office 365, simulate phishing and malware attacks, and analyze threats using Threat Explorer and incident views.
+- **Day 1 Lab** – Implement Threat Protection with Microsoft Defender XDR
+Configure threat policies, simulate phishing and malware attacks, analyze threats with Threat Explorer, monitor secure posture, investigate incidents, and discover Shadow IT using Microsoft Defender for Cloud Apps.
 
-- **Day 2 Lab** – Investigate Incidents and Manage SaaS Threats  and Advanced Detection and Response with Sentinel and Identity
-  Investigate incidents in Defender XDR, configure Safe Links and anti-phishing policies, and use Cloud Discovery and App Governance to detect Shadow IT and risky OAuth apps.
+- **Day 2 Lab** – Advanced Threat Detection, Governance, and Automated Response
+Connect and secure SaaS apps, configure session policies, implement app governance, detect and investigate identity threats, integrate with Microsoft Sentinel, and automate incident response using playbooks, analytics rules, and Power Automate flows.
 
 Each lab module includes clear steps, a ready-to-use VM environment, and validation checkpoints to guide you through each scenario.
 
