@@ -1,4 +1,4 @@
-## Lab 8: Connect and Onboard a SaaS App to Microsoft Defender for Cloud Apps
+# Lab 8: Connect and Onboard a SaaS App to Microsoft Defender for Cloud Apps
 
 ## Overview
 
