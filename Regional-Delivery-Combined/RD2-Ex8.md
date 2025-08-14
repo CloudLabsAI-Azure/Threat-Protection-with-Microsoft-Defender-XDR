@@ -155,9 +155,9 @@ In this task, you'll create a SharePoint communication site named `Incident_Logs
 
 In this task, you will create a Sentinel playbook named **Notify-SOC-OnPowerShellIncident** using Logic Apps. The playbook will trigger from a Sentinel incident and send an email to the SOC team containing dynamic incident details such as title, severity, status, and more.
 
-1. On the **Microsoft Sentinel** page, in the left-hand menu, expand **Configuration (1)** and click **Automation (2)**. On the **Automation** page, click **Create (3)** and select **Playbook with incident trigger (4)** from the dropdown menu.
+1. On the **Microsoft Defender** page, in the left-hand menu, Under **Microsoft Sentinal** expand **Configuration (1)** and click **Automation (2)**. On the **Automation** page, click **Create (3)** and select **Playbook with incident trigger (4)** from the dropdown menu.
 
-   ![](./media/a_gg_ex4_1.png)
+   ![](./media/g_ex8_g_1.png)
 
 1. On the **Create playbook** pane, configure the following:
    - Select your **Subscription (1)**.
@@ -167,18 +167,21 @@ In this task, you will create a Sentinel playbook named **Notify-SOC-OnPowerShel
    - Select **LAW-Sentinel-Demo (5)** as the Log Analytics workspace.
    - Click **Next: Connections > (6)** to proceed.
       
-      ![](./media/a_gg_ex4_2.png)
+      ![](./media/g_ex8_g_2.png)
 
 1. On the **Connections** tab, leave the default connection settings as-is and click **Next: Review and create >**.
 
-   ![](./media/a_gg_ex4_3.png)
+   ![](./media/g_ex8_g_3.png)
 
 1. On the **Review and create** tab, verify the playbook details including subscription, resource group, name, and connection settings. Once confirmed, click **Create playbook** to deploy.
 
-   ![](./media/a_gg_ex4_4.png)
+   ![](./media/g_ex8_g_4.png)
+
+1. Review the playbook details and click **Close and go to playbook** to proceed.
+
+   ![](./media/g_ex8_g_5.png)
 
 1. After the playbook is created, go to the **Logic app designer (1)** under **Development Tools** in the left-hand menu.  In the designer view, click **Add an action (2)** below the **Microsoft Sentinel incident** trigger.
-
 
    ![](./media/a_gg_ex4_5.png)
 
@@ -248,9 +251,9 @@ In this task, you will create a Sentinel playbook named **Notify-SOC-OnPowerShel
 
 In this task, you'll configure an analytics rule in Microsoft Sentinel to detect suspicious PowerShell activity and trigger an automated playbook when an incident is created.
 
-1. In the **Microsoft Sentinel** portal, under your selected workspace, go to **Configuration (1)** > **Analytics (2)** and click **+ Create (3)** > **Scheduled query rule (4)**.
+1. In the **Microsoft Sentinel** in the Defender Portal, go to **Configuration (1)** > **Analytics (2)** and click **+ Create (3)** > **Scheduled query rule (4)**.
 
-   ![](./media/crz_e4_g_1.png)
+   ![](./media/g_ex8_g_6.png)
 
 1. On the **Analytics rule wizard**, configure the General settings:
    - Enter **Suspicious PowerShell Execution (1)** as the rule name.
@@ -259,7 +262,7 @@ In this task, you'll configure an analytics rule in Microsoft Sentinel to detect
    - Ensure **Status (4)** is set to `Enabled`.
    - Click **Next: Set rule logic (5)**.
 
-      ![](./media/crz_e4_g_2.png)
+      ![](./media/g_ex8_g_7.png)
 
 1. On the **Set rule logic** tab:
    - Paste the following KQL under **Rule query (1)**:
@@ -275,7 +278,7 @@ In this task, you'll configure an analytics rule in Microsoft Sentinel to detect
      - Entity type: `Host`
      - Identifier: `HostName` → `CompromisedEntity`
 
-         ![](./media/crz_e4_g_3.png)
+         ![](./media/g_ex8_g_8.png)
 
 1. Scroll down to **Query scheduling**:
    - Set **Run query every (3)**: `5` Minutes
@@ -283,11 +286,15 @@ In this task, you'll configure an analytics rule in Microsoft Sentinel to detect
    - Choose **Automatically (5)** for start running
    - Click **Next: Incident settings (6)**
 
-      ![](./media/crz_e4_g_4.png)
+      ![](./media/g_ex8_g_9.png)
+
+1. On the **Incident Settings** tab, click **Automated response**.
+
+      ![](./media/g_ex8_g_10.png)
 
 1. On the **Automated response** tab, click **+ Add new** to create a new automation rule.
 
-   ![](./media/crz_e4_g_5.png)
+      ![](./media/g_ex8_g_11.png)
 
 1. In the **Create new automation rule** window:
    - Set **Automation rule name (1)**: `Run Notify-SOC-OnPowerShellIncident Playbook`
