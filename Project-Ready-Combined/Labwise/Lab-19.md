@@ -1,4 +1,4 @@
-### Task 2: Enable Microsoft Defender for Cloud
+# Task 2: Enable Microsoft Defender for Cloud
 
 In this task, you will enable and configure Microsoft Defender for Cloud.
 
