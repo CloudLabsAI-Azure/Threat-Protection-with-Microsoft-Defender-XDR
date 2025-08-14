@@ -1,4 +1,4 @@
-### Task 5: Persistence Attack Detection
+# Task 5: Persistence Attack Detection
 
 In this task, you will create a detection for the first attack of the previous exercise.
 1. In the Search bar of the Azure portal, type *Microsft Sentinel (1)*, then select **Microsoft Sentinel (2)**.
