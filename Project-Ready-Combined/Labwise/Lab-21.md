@@ -1,4 +1,4 @@
-### Task 4: Command and Control Attack with DNS
+# Task 4: Command and Control Attack with DNS
 
 1. Copy and run this command to create a script that will simulate a DNS query to a C2 server:
 
