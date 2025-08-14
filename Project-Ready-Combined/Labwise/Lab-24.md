@@ -1,4 +1,4 @@
-### Task 1: Create a hunting query
+# Task 1: Create a hunting query
 
 In this task, you will create a hunting query, bookmark a result, and create a Livestream.
 
