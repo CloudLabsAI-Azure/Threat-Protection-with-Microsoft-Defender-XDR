@@ -1,6 +1,10 @@
 # Lab 17: Review and Run Advanced Hunting Queries for Identity Signals
 
-In this task you will use advanced hunting queries in the Defender portal to detect identity-based threats.
+## Overview
+
+In this lab, you will run advanced hunting queries in the Microsoft Defender portal to detect identity-based threats. Using KQL (Kusto Query Language), you will identify and analyze alerts related to lateral movement attacks.
+
+⚠ **Important Usage Guidance:** Microsoft Defender for Identity may take some time to display query results or load identity-related data. This is expected behavior. If the results do not appear after a couple of refresh attempts, proceed with the next lab and return later to check the results.
 
 1. In the **Microsoft Defender** portal, click **Hunting (1)** in the left-hand navigation pane and select **Advanced hunting (2)** from the menu.
 
@@ -25,4 +29,13 @@ In this task you will use advanced hunting queries in the Defender portal to det
 
       ![](./media/E1T5S4.png)
 
+
 ## Review
+
+In this lab, you:
+- Navigated to the **Advanced hunting** section in the Microsoft Defender portal.
+- Ran a KQL query to detect lateral movement alerts.
+- Reviewed and analyzed the query results.
+- Saved the hunting query for future use.
+
+## You have successfully completed the lab. Click on Next to Continue
