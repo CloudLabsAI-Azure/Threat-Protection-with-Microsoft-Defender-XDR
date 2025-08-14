@@ -1,5 +1,11 @@
 ## Lab 7: Discover and Analyze Shadow IT Using Cloud Discovery
 
+## Overview
+
+In this lab, you will analyze Cloud Discovery reports in Microsoft Defender for Cloud Apps to identify and address Shadow IT. You will review summary metrics, app categories, risk levels, top users, and discovered apps. You will also mark unsanctioned applications to help enforce usage policies and monitor non-approved services.
+
+> **⚠ Important Usage Guidance:** Microsoft Defender for Cloud Apps reports may take several minutes to generate and display updated data. If the results do not appear immediately, wait and refresh before continuing.
+
 1. Analyze the report for the following options:
 
     - **Check the Summary Metrics:** Look at the total number of apps, users, IP addresses, and traffic volume to understand the overall cloud usage.
@@ -23,3 +29,13 @@
 1. Click on the elipsis next to any of the applications to mark the app as **Unsactioned**. This action labels the app as not approved for use, helping you monitor and report on its usage in the dashboard.
 
    ![Enter Your Password](./media/tr20.png)
+
+## Review
+
+In this lab, you:
+- Reviewed summary metrics to understand overall cloud usage.
+- Analyzed app categories, risk levels, and top users.
+- Inspected discovered apps to identify risky or unapproved services.
+- Marked applications as unsanctioned for better monitoring and control.
+
+## You have successfully completed the lab. Click on Next to Continue
