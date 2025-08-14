@@ -1,4 +1,4 @@
-### Lab 17: Review and Run Advanced Hunting Queries for Identity Signals
+# Lab 17: Review and Run Advanced Hunting Queries for Identity Signals
 
 In this task you will use advanced hunting queries in the Defender portal to detect identity-based threats.
 
