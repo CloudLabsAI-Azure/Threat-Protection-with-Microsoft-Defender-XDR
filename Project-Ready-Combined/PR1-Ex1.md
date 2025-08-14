@@ -42,6 +42,24 @@ In this task, you will enable Microsoft Defender CSPM for your environment and c
 
 1. On a new tab in the **Microsoft Edge** browser and go to the following URL in the address bar: [https://security.microsoft.com](https://security.microsoft.com).
 
+1. On the **Microsoft Defender portal**, go to **System (1)** > **Settings (2)** and click **Cloud Apps (3)**.
+
+   ![](./media/rdr_xdr_1.png)
+
+1. Under **App governance**, select **Service status (1)** and click **Turn on app governance (2)**.
+
+   ![](./media/rdr_xdr_2.png)
+
+   > App Governance is now activated. It will begin evaluating connected OAuth apps and generating insights into their behavior and risk posture.
+
+1. On the OAuth apps page, click **Go to app governance**.
+
+   ![](./media/rdr_xdr_3.png)
+
+   > You may be redirected to the new App Governance interface.
+
+   > **Note:** It may take 3–4 hours for the Microsoft Defender portal to enable OAuth apps in App Governance. This step is performed now to prevent any delays or issues later in the lab.
+
 1. In the left pane, go to **Email & collaboration (1)** → **Policies & rules (2)** → **Threat policies (3)**.
 
    ![rd_day1_ex1_t1_6](./media/rd_day1_ex1_t1_6.png)
