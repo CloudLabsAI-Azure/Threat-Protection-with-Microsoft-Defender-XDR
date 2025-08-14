@@ -1,6 +1,10 @@
 # Lab 3: Analyze Threats with Threat Explorer and Real-Time Detections
 
-In this lab, you'll create a custom role in Microsoft Defender to manage access and permissions, simulate a phishing interaction, and investigate user activity using Threat Explorer.
+## Overview
+
+In this lab, you will use Microsoft Defender for Office 365’s Threat Explorer and real-time detections to analyze simulated phishing and malware activities. You will interact with phishing and malware simulation emails, report phishing attempts, and review simulation results. You will also investigate clicked URLs, review event details, and analyze user behavior to identify potential risks.
+
+> **⚠ Important Usage Guidance:** Microsoft Defender for Office 365 may take some time to load certain results or complete specific labs from the backend. This is expected behavior. If the data does not appear after a couple of refresh attempts, proceed with the next lab and return later to check the results.
 
 1. On a new tab in the **Microsoft Edge browser** and go to the following URL in the address bar: https://security.microsoft.com.
 
@@ -90,3 +94,13 @@ In this lab, you'll create a custom role in Microsoft Defender to manage access 
    > Note: This data helps evaluate user behavior and identify high-risk individuals.
 
 1. Navigate back to the **Simulations** tab, select the simulation named **Test2**, and view the report details for the malware attachment simulation.
+
+## Review
+
+In this lab, you:
+- Interacted with phishing and malware simulation emails.
+- Reported a phishing attempt and reviewed acknowledgment messages.
+- Investigated URL click events using Threat Explorer.
+- Viewed simulation reports to analyze user behavior and identify risks.
+
+## You have successfully completed the lab. Click on Next to Continue
