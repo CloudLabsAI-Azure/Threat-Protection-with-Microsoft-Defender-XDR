@@ -51,51 +51,9 @@ You're a Security Operations Analyst working at a company that implemented Micro
 
     ![](./media/lab10-task3-preset-policies.png)
 
-   >**Note**: If you see any popup please Close it by clicking on **X** or **Close** button.
+1. 1. Review the protection settings and ensure that both **Standard protection (1)** and **Strict protection (2)** are turned on.
 
-1. Under Standard protection, select **Manage protection settings**. Hint: If you see this option grayed out, refresh your browser using Ctrl+F5.
-
-   ![](./media/lab10-task3-std-policies.png)  
-
-   >**Note:** If you encounter a pop-up prompting you to Exchange Organizational setup, wait for 5 minutes, refresh the page, and repeat the above steps again.
-
-1. In the Apply Exchange Online Protection section, select **Specific recipients**, and under **Domains** start writing your tenant’s domain name, select it, and then select **Next**.
-
-   ![](./media/lab10-task3-std-policies01.png)
-
-1. In the Apply Defender for Office 365 protection section, apply the same configuration as the previous step and select Next. Notice that this configuration applies policies for anti-phishing, Safe Attachments, and Safe Links.
-
-   ![](./media/lab10-task3-std-policies02.png)
-
-1. In the Impersonation protection section, select **Next** until you reach to policy mode section.
-
-   ![](./media/lab10-task3-std-policies03.png)
-
-1. In the Policy mode section, make sure the **Turn on the policy when finished** radio button is selected, and then select **Next**.
-
-   ![](./media/lab10-task3-std-policies04.png)
-
-1. Read the content under Review and confirm your changes select **Confirm** to apply the changes and then select **Done** to finish.
-
-   ![](./media/lab10-task3-std-policies05.png)
-
-1. Under Strict protection, select **Manage protection settings**. Hint: Strict protection is found under “Email & Collaboration - Policies & rules - Threat policies - Preset security policies”.
-
-   ![](./media/lab10-task3-strict-policies.png)
-
-1. In the Apply Exchange Online Protection, select **Specific recipients** and under **Groups**, select your newly created group **Sg-IT**, and then select **Next**. Notice that this configuration applies policies for anti-spam, outbound spam filters, anti-malware, and anti-phishing.
-
-1. In the Apply Defender for Office 365 protection section, apply the same configuration as the previous step and select Next. Notice that this configuration applies policies for anti-phishing, Safe Attachments, and Safe Links.
-
-1. In the Impersonation protection section, select **Next** until you reach to policy mode section.
-
-1. In the Policy mode section, make sure the **Turn on the policy when finished** radio button is selected, and then select **Next**.
-
-   ![](./media/lab10-task3-strict-policies03.png)
-
-1. Read the content under Review and confirm your changes select **Confirm (1)** to apply the changes and then select **Done** to finish.
-
-   ![](./media/lab10-task3-strict-policies04.png)
+    ![](./media/cord1e1_3.png)
 
 ### Task 3: Activate a Microsoft Security Rule
 
@@ -112,7 +70,7 @@ In this task, you will activate a Microsoft Security rule.
    - Ensure the *Status* toggle is set to **Enabled (5)**. 
    - Click **Next: Set rule logic (6)** to continue.
 
-   ![](./media/ex4_g_tr_2.png)
+     ![](./media/ex4_g_tr_2.png)
 
 1. On the **Set rule logic** tab, in the *Rule query* field, enter the following query **(1)** and click **Next: Incident settings (2)** to proceed.
 
