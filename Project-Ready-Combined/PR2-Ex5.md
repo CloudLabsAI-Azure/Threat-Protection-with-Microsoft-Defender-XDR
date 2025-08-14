@@ -22,18 +22,6 @@ In this task, you'll enable App Governance, analyze high-risk OAuth apps, and cr
 
    ![](./media/rdr_xdr_1.png)
 
-1. Under **App governance**, select **Service status (1)** and click **Turn on app governance (2)**.
-
-   ![](./media/rdr_xdr_2.png)
-
-   > App Governance is now activated. It will begin evaluating connected OAuth apps and generating insights into their behavior and risk posture.
-
-1. On the OAuth apps page, click **Go to app governance**.
-
-   ![](./media/rdr_xdr_3.png)
-
-   > You may be redirected to the new App Governance interface.
-
 1. In the left menu, go to **Cloud apps (1)** > **Governance log (2)** and select the **AuditLogApp (3)** from the listed apps.
 
    ![](./media/rdr_xdr_4.png)
