@@ -1,7 +1,5 @@
 # Implement Threat Protection with Microsoft Defender XDR solutions - Day 3
 
-### Overall Estimated Duration: 4 Hours
-
 ## Overview
 
 In this lab, you will strengthen organizational security by deploying Microsoft Defender for Identity sensors on domain controllers, simulating lateral movement attacks, and investigating identity-based threats through user timelines. You’ll integrate with Microsoft 365 Defender for centralized visibility, run advanced hunting queries to analyze identity signals, and explore Microsoft Sentinel for threat detection and incident investigation. The lab also includes threat hunting using notebooks and mitigating risks using Microsoft Defender for Cloud to maintain a proactive security posture.
@@ -29,28 +27,6 @@ In this lab, you will strengthen organizational security by deploying Microsoft 
 # Getting Started with the Lab
  
 Welcome to your Microsoft 365 Defender for Identity and Sentinel for Advanced Threat Protection workshop! We've prepared a seamless environment for you to familiarize yourself with the Microsoft security operations analyst, you monitor, identify, investigate, and respond to threats in multi-cloud environments and related Microsoft services. Let's begin by making the most of this experience:
- 
-## Accessing Your Lab Environment
- 
-Once you're ready to dive in, your virtual machine and lab guide will be right at your fingertips within your web browser.
- 
-![Access Your VM and Lab Guide](./media/gst1.png)
-
-### Virtual Machine & Lab Guide
- 
-Your virtual machine is your workhorse throughout the workshop. The lab guide is your roadmap to success.
- 
-## Exploring Your Lab Resources
- 
-To get a better understanding of your lab resources and credentials, navigate to the **Environment Details** tab.
- 
-![Explore Lab Resources](./media/gst2.png)
- 
-## Utilizing the Split Window Feature
- 
-For convenience, you can open the lab guide in a separate window by selecting the **Split Window** button from the Top right corner.
- 
-![Use the Split Window Feature](./media/gst3.png)
  
 ## Managing Your Virtual Machine
  
