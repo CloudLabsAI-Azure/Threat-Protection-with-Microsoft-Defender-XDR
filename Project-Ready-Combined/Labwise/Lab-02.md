@@ -1,6 +1,10 @@
 # Lab 2: Simulate Phishing and Malware Attacks Using Attack Simulator
 
-In this lab, you'll simulate phishing and malware attacks using Microsoft Defender's built-in **Attack Simulation Training**. These simulations help you evaluate user vulnerability and response to social engineering techniques.
+## Overview
+
+In this lab, you will use Microsoft Defender for Office 365’s Attack Simulation Training to simulate phishing and malware attacks. These simulations help assess user vulnerability to credential harvesting and malicious attachments. You will configure and launch both a phishing simulation and a malware attachment simulation, assign training to targeted users, and review simulation progress in the dashboard.
+
+> **⚠ Important Usage Guidance:** Microsoft Defender for Office 365 may take some time to load certain results or complete specific labs from the backend. This is expected behavior. If the data does not appear after a couple of refresh attempts, proceed with the next lab and return later to check the results.
 
 1. On the left navigation menu, expand **Email & collaboration (1)** and select **Attack simulation training (2)**. On the **Attack simulation training** page, select the **Simulations (3)** tab and click **Launch a simulation (4)**.
 
@@ -130,6 +134,10 @@ In this lab, you'll simulate phishing and malware attacks using Microsoft Defend
 
 ## Review
 
-In this lab, you learnt how to simulate phishing and malware attacks using Microsoft Defender for Office 365's Attack Simulation Training.
+In this lab, you:
+- Launched a phishing simulation using credential harvesting.
+- Created a malware attachment simulation to test file-based threats.
+- Assigned targeted user training for simulated attacks.
+- Verified simulation progress and results in the dashboard.
 
-## You have successfully completed Lab 2, click on Next to Continue
+You have successfully completed the lab. Click on Next to Continue
