@@ -1,4 +1,4 @@
-### Task 1: Connect the Windows security event connector
+# Task 1: Connect the Windows security event connector
 
 1. On the **Microsoft Defender** portal, in the left navigation pane, select **Microsoft Sentinel (1)**, expand **Content management (2)**, and select **Content hub (3)**.
 
