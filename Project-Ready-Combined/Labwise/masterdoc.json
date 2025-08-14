@@ -32,20 +32,24 @@
         "Order": 7
       },
       {
-        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Threat-Protection-with-Microsoft-Defender-XDR/refs/heads/main/Project-Ready-Combined/Labwise/Lab-06.md",
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Threat-Protection-with-Microsoft-Defender-XDR/refs/heads/main/Project-Ready-Combined/Labwise/overview-day2.md",
         "Order": 8
       },
       {
-        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Threat-Protection-with-Microsoft-Defender-XDR/refs/heads/main/Project-Ready-Combined/Labwise/Lab-07.md",
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Threat-Protection-with-Microsoft-Defender-XDR/refs/heads/main/Project-Ready-Combined/Labwise/Lab-06.md",
         "Order": 9
       },
       {
-        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Threat-Protection-with-Microsoft-Defender-XDR/refs/heads/main/Project-Ready-Combined/Labwise/Lab-08.md",
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Threat-Protection-with-Microsoft-Defender-XDR/refs/heads/main/Project-Ready-Combined/Labwise/Lab-07.md",
         "Order": 10
       },
       {
-        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Threat-Protection-with-Microsoft-Defender-XDR/refs/heads/main/Project-Ready-Combined/Labwise/Lab-09.md",
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Threat-Protection-with-Microsoft-Defender-XDR/refs/heads/main/Project-Ready-Combined/Labwise/Lab-08.md",
         "Order": 11
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Threat-Protection-with-Microsoft-Defender-XDR/refs/heads/main/Project-Ready-Combined/Labwise/Lab-09.md",
+        "Order": 12
       },
       {
         "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Threat-Protection-with-Microsoft-Defender-XDR/refs/heads/main/Project-Ready-Combined/Labwise/Lab-10.md",
