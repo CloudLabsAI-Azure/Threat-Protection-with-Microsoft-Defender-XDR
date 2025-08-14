@@ -4,7 +4,7 @@
 
 In this lab, you will simulate a Lateral Movement attack using the Mimikatz tool and detect it through Microsoft Defender for Identity. This task is **Read-only**—running the attack will trigger Defender’s containment measures, logging you out of the virtual machine and preventing re-login for security reasons.
 
-> **⚠ Important Usage Guidance:** Because this lab uses a security-sensitive tool, Microsoft Defender will automatically flag the activity and terminate your session. You will not be able to log back into the VM after the attack simulation.
+> **⚠ Important Usage Guidance:** Microsoft Defender for Office 365 may take some time to load certain results or complete specific labs from the backend. This is expected behavior. If the data does not appear after a couple of refresh attempts, proceed with the next lab and return later to check the results.
 
 > **Note:** This exercise is **Read-only** because the tool used below is blocked by Microsoft Defender. If this software is used for any malicious activity, Microsoft Defender will flag the user as a threat, resulting in an automatic logout from the virtual machine. The user will not be able to log in again.
 
