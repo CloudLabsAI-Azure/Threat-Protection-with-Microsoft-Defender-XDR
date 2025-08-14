@@ -119,4 +119,4 @@ In this lab, you:
 - Configured Standard and Strict Preset Security Policies.
 - Applied multi-layered email protection for targeted recipients.
 
-You have successfully completed the lab and established a strong baseline of threat protection in Microsoft Defender for Office 365.
+## You have successfully completed the lab. Click on Next to Continue
