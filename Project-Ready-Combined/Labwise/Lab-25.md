@@ -1,4 +1,4 @@
-### Task 2: Create a NRT query rule
+# Task 2: Create a NRT query rule
 
 In this task, instead of using a LiveStream, you will create a NRT analytics query rule. NRT rules run every minute and look back one minute. The benefit of NRT rules is they can use the alert and incident creation logic.
 
