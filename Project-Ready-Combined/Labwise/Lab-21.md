@@ -1,5 +1,11 @@
 # Task 4: Command and Control Attack with DNS
 
+## Overview
+
+In this lab, you will simulate a Command and Control (C2) attack by running a PowerShell script that generates DNS queries to mimic beaconing activity from a compromised system. This simulated activity will produce DNS traffic logs that will be used later in the Threat Hunting lab for analysis.
+
+> **⚠ Important Usage Guidance:** This simulation is safe and will not generate harmful traffic. The script is designed to run in the background for several hours, producing minimal system load. Do not close the script window while it runs. If the script output shows DNS resolve errors, this is expected behavior.
+
 1. Copy and run this command to create a script that will simulate a DNS query to a C2 server:
 
       ```CommandPrompt
@@ -65,3 +71,13 @@
       >**Note:** You will see DNS resolve errors. This is expected.
 
       >**Important**: Do not close these windows. Let this PowerShell script run in the background. The command needs to generate log entries for some hours. You can proceed to the next task and next exercises while this script runs. The data created by this task will be used in the Threat Hunting lab later. This process will not create substantial amounts of data or processing.
+
+## Review
+
+In this lab, you:
+- Created and configured a PowerShell script to simulate DNS queries to a C2 server.
+- Executed the script to generate periodic DNS beaconing traffic.
+- Allowed the script to run in the background to produce data for later threat hunting analysis.
+- Confirmed the process ran without creating significant system load.
+
+## You have successfully completed the lab. Click on Next to Continue
