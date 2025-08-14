@@ -34,37 +34,6 @@ In this exercise, you will explore how to secure Microsoft 365 cloud services li
   
    ![](./media/g-1-4.png)
 
-1. Open another tab in the **Microsoft Edge** browser and enter the following URL in the address bar to open the **Microsoft Purview** portal:  
-   [https://purview.microsoft.com](https://purview.microsoft.com), then press **Enter**.
-
-   ![](./media/corg-1-5.png)
-
-1. If prompted, click **Switch to the new portal yourself** to access Microsoft Purview.
-  
-   ![](./media/g-1-5.png)
-
-1. On the **Welcome to the new Microsoft Purview portal** dialog box, click on the **Get started** button.
-  
-   ![](./media/corg-1-6.png)
-
-1. On the Microsoft Purview homepage, navigate and click on the **View all solutions** tile.
-  
-   ![](./media/corg-1-7.png)
-
-1. Under the **Core** section, click on the **Audit** tile.
-  
-   ![](./media/corg-1-10.png)
-
-1. Click on **Start recording user and admin activity**.
-  
-   ![](./media/corg-1-8.png)
-
-1. Click on **Start recording user and admin activity**.
-  
-   ![](./media/corg-1-9.png)
-   
-   > **Note:** This may take a few hours to activate. You may proceed with the rest of the exercise while it initializes.
-
 1. Go back to the **Azure portal** tab. In the search bar at the top, enter **Windows Azure Active Directory**, and then select it from the search results.
   
     ![](./media/g-4-1.png)
@@ -176,17 +145,17 @@ In this exercise, you will explore how to secure Microsoft 365 cloud services li
    - **Category**: `Threat detection`
    - **Session control type**: `Control file download (with inspection)`
    - **Filters**:  
-     - Device tag `does not equal` → `Intune compliant, Microsoft Entra Hybrid joined`  
-     - App `equals` → `Microsoft SharePoint Online`
+   - Device tag `does not equal` → `Intune compliant, Microsoft Entra Hybrid joined`  
+   - App `equals` → `Microsoft SharePoint Online`
 
-   ![](./media/gftix-1-1.png)
+     ![](./media/gftix-1-1.png)
    > **Note**: On the **Apply template?** dialog box, click on the **Cancel** button.
 
 1. Scroll to **Files matching all of the following** and configure the following:
    - Filter by **Extension** → `exe` OR `apk`
    - Under **Actions**, select **Block**
 
-   ![](./media/gftix-1-2.png)
+      ![](./media/gftix-1-2.png)
 
 1. Click **Create** to save and activate the policy.
 
@@ -290,7 +259,7 @@ In this exercise, you will explore how to secure Microsoft 365 cloud services li
    - **Files and folders:** `msedge.exe`  
    - **App:** `Microsoft SharePoint Online`
    
-   ![](./media/p-1-2.png)
+     ![](./media/p-1-2.png)
 
 1. Click **Edit and preview results**, review matches, then click **Save filters**.
 
@@ -332,7 +301,7 @@ In this exercise, you will explore how to secure Microsoft 365 cloud services li
     - Device info  
     - Triggered policy
    
-    ![](./media/grpg-1-5.png)
+      ![](./media/grpg-1-5.png)
 
 ## Review
 
