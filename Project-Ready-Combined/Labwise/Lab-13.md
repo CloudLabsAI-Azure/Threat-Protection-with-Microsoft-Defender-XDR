@@ -4,7 +4,7 @@
 
 In this lab, you will install and configure the Microsoft Defender for Identity sensor on a domain controller to monitor identity-based threats. You will first onboard the server to Microsoft Defender for Endpoint, promote it to a domain controller, and then deploy and activate the Defender for Identity sensor.
 
-> **⚠ Important Usage Guidance:** Sensor deployment and device visibility may take several minutes to complete. If the device or status is not visible after onboarding, proceed with the next task and return later to check the status.
+> **⚠ Important Usage Guidance:** Microsoft Defender for Office 365 may take some time to load certain results or complete specific labs from the backend. This is expected behavior. If the data does not appear after a couple of refresh attempts, proceed with the next lab and return later to check the results.
 
 Install the AD DS role to enable the server to function as a domain controller.
 
