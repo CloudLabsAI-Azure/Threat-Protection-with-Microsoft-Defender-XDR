@@ -1,4 +1,4 @@
-### Task 6: Investigate an incident
+# Task 6: Investigate an incident
 
 In this task, you will investigate an incident.
 
