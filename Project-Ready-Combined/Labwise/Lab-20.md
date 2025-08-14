@@ -1,4 +1,4 @@
-### Task 3: Persistence Attack with Registry Key Add 
+# Task 3: Persistence Attack with Registry Key Add 
 
 1. In the search of the taskbar, enter *Command*. A Command Prompt will be displayed in the search results. Right-click on the Command Prompt and select **Run as Administrator**. Select **Yes** in the User Account Control window that allows the app to run.
 
