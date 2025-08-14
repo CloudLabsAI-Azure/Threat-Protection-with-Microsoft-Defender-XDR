@@ -1,7 +1,5 @@
 # Implement Threat Protection with Microsoft Defender XDR solutions - Day 1
 
-### Overall Estimated Duration: 4 Hours
-
 ## Overview
 
 In this lab, you will explore how to enhance organizational security using Microsoft Defender for Office 365 and Microsoft Defender XDR. You’ll configure foundational and advanced threat protection policies, simulate phishing and malware attacks using Attack Simulation Training, and analyze threats through Threat Explorer and real-time detections. You’ll also configure Anti-Phishing and Safe Links policies, create alert rules, implement and monitor secure posture settings using Configuration Analyzer and Microsoft Secure Score, and tag priority accounts. Finally, you’ll integrate Defender for Cloud Apps with Endpoint, enable Cloud Discovery, and analyze shadow IT using snapshot reports—equipping you with the skills to detect, respond to, and manage modern cyber threats across Microsoft 365 workloads.
