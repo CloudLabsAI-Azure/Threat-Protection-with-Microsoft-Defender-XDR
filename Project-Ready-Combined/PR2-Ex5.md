@@ -1,4 +1,4 @@
-# Exercise 3: Implement App Governance and Risk Detection for OAuth Apps [Read Only]
+# Exercise 5: Implement App Governance and Risk Detection for OAuth Apps [Read Only]
 
 ## Overview
 
