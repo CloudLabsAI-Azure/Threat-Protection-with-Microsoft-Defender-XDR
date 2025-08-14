@@ -249,27 +249,27 @@ In this task, you'll create a custom role in Microsoft Defender to manage access
 
    ![](./media/rd_day1_ex2_t1_3.png)
 
-1. On the **Permissions** screen, do the following:
-
-   - Select **Select custom permissions (1)** under the main section.
-   - Under **Security data**, choose **Select all permissions (2)**.
-   - Scroll to **Raw data (Email & collaboration)** and select **Select custom permissions (3)**.
-   - Check **Email & collaboration content (read) (4)**.
-   - Click **Apply (5)** to save your selections.
-
-      ![](./media/rd_day1_ex2_t1_4.png)
-
 1. On the **Security operations** screen, select **All read and manage permissions (1)** and click **Apply (2)**.
 
    ![](./media/rd_day1_ex2_t1_5.png)
 
+1. On the **Security posture** pane, **All read and manage permissions** **(1)**. Then click **Apply** to save the configuration **(2)**.
+
+1. On the **Authorization and settings** pane, select **All read and manage permissions** **(1)**. Then click **Apply** to save the configuration **(2)**.
+
+   ![](./media/gs_g_4.png)
+
+1. On the **Assign users and data sources** page, click **Add assignment** to assign this role to users and select the data sources they can access.
+
+   ![](./media/gs_g_6.png)
+
 1. On the **Assignments** screen, provide assignment details:
    - Assignment name: **`Test-assignment` (1)**.
-   - Select the lab user , **`ODL_User ...` (2)**.
+   - Select the lab user , **`ODL_User<inject key="Deployment-id" enableCopy="false"></inject>` (2)**.
    - Choose data source: **Microsoft Defender for Office 365 (3)**. 
    Click **Add (4)**.
 
-   ![](./media/rd_day1_ex2_t1_6.png)
+      ![](./media/rd_day1_ex2_t1_6.png)
 
 1. On the **Review and finish** page, verify the assigned permissions and users, then click **Submit (2)**.
 
@@ -284,6 +284,10 @@ In this task, you'll create a custom role in Microsoft Defender to manage access
    ![](./media/rd_day1_ex2_t1_9.png)
 
    > Note: This activity simulates a phishing attack and trigger credential submission logs.
+
+1. When the user clicks the phishing simulation link and enters their credentials, they are redirected to a training page that displays a message indicating they were phished by the security team, along with guidance to learn from the experience.
+
+   ![](./media/gs_g_9.png)
 
 1. In the **Microsoft Defender portal**, do the following:
 
