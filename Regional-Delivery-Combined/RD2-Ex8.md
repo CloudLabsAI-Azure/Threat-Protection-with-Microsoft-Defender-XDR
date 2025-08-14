@@ -1,4 +1,4 @@
-## Exercise 4: Automate End-to-End Incident Response with Microsoft Defender XDR, Sentinel, Power Automate, and SharePoint
+## Exercise 8: Automate End-to-End Incident Response with Microsoft Defender XDR, Sentinel, Power Automate, and SharePoint
 ### Estimated Duration: 60 Minutes
 
 ### Overview
