@@ -1,6 +1,10 @@
 # Lab 17: Integrate Defender for Identity with Microsoft 365 Defender Portal
 
-In this task you will enable integration to view Defender for Identity incidents in the unified Microsoft 365 Defender portal and Microsoft Sentinel.
+## Overview
+
+In this lab, you will integrate Microsoft Defender for Identity with the Microsoft 365 Defender portal and Microsoft Sentinel. This integration allows you to view Defender for Identity incidents alongside other security events in the unified Microsoft 365 Defender portal.
+
+> **⚠ Important Usage Guidance:** After connecting the workspace, it may take several minutes for all Microsoft Sentinel settings, content, and data to appear in the Defender portal.
 
 1. Open a browser and go to the **Microsoft Defender portal**: https://security.microsoft.com. **Sign in** using your lab credentials.
 
@@ -48,3 +52,12 @@ In this task you will enable integration to view Defender for Identity incidents
 1. On the **Microsoft Defender XDR** solution page, click **Install**.
 
       ![](./media/cor_r_g_2.png)
+
+## Review
+
+In this lab, you:
+- Connected the **loganalycticworkspace** to Microsoft 365 Defender.
+- Verified and set it as the **primary workspace**.
+- Installed the **Microsoft Defender XDR** solution from the Content Hub.
+
+## You have successfully completed the lab. Click on Next to Continue
