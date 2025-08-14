@@ -6,9 +6,7 @@
 
 In this exercise, you will implement App Governance and deploy Microsoft Defender for Identity to strengthen your organization’s threat detection and response capabilities. First, you’ll enable App Governance to detect high-risk OAuth applications and create custom policies to flag apps with excessive permissions. Then, you'll investigate alerts, analyze user activities, and create a detection policy to monitor suspicious file downloads. Finally, you’ll install and configure the Microsoft Defender for Identity sensor on a domain controller to enable real-time monitoring of identity-based threats such as lateral movement and domain enumeration.
 
-> **Important Usage Guidance**
-
-> Some changes or configurations made during this lab may take a few minutes to reflect in the Microsoft Defender for Office 365 portal. This includes security recommendations, alerts, and resource status updates. If updates are not visible immediately, please allow some time and refresh the portal before proceeding.
+> **⚠ Important Usage Guidance**
 
 > Microsoft Defender for Office 365 may take some time to load certain results or complete specific tasks from the backend. This is expected behavior. If the data does not appear after a couple of refresh attempts, proceed with the next task in the lab and return later to check the results.
 
