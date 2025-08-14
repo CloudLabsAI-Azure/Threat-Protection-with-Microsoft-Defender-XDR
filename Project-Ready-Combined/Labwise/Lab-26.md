@@ -1,4 +1,4 @@
-### Task 3: Create a Search job
+# Task 3: Create a Search job
 
 In this task, you will use a Search job to look for a C2.
 
