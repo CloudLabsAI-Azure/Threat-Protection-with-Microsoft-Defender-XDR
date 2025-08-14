@@ -4,7 +4,7 @@
 
 In this lab, you will investigate alerts in Microsoft Defender for Cloud Apps, trace suspicious activities through the activity log, and create a custom detection policy to flag and respond to risky file downloads. You will simulate a detection event and verify that the system correctly triggers and notifies you via an alert email.
 
-> **⚠ Important:** Alerts may take a few minutes to appear. If you don’t see them immediately, wait and refresh before rechecking.
+> **⚠ Important Usage Guidance:** Microsoft Defender for Office 365 may take some time to load certain results or complete specific labs from the backend. This is expected behavior. If the data does not appear after a couple of refresh attempts, proceed with the next lab and return later to check the results.
 
 1. In the Microsoft Defender Portal, go to **Cloud Apps** → **Activity log**.
 
