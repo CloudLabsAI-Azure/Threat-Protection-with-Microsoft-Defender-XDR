@@ -1,6 +1,10 @@
 # Task 3: Create a Search job
 
-In this task, you will use a Search job to look for a C2.
+## Overview
+
+In this lab, you will use Microsoft Defender’s Search job capability to look for Command and Control (C2) activity. You will run a search query, create a search job for a specified time range, review the results, and explore the restoration process for retrieving historical data.
+
+> **⚠ Important Usage Guidance:** Microsoft Defender for Office 365 may take some time to load certain results or complete specific labs from the backend. This is expected behavior. If the data does not appear after a couple of refresh attempts, proceed with the next lab and return later to check the results.
 
 1. In Microsoft Defender Portal, on the **Search** page, select **Search (1)** from the left menu, enter **reg.exe (2)** in the search box, and click **Start**.
 
@@ -32,4 +36,13 @@ In this task, you will use a Search job to look for a C2.
 
     >**Note:** If you were running the job, the restore would run for a couple of minutes and your data would be available in a new table.
 
+
 ## Review
+
+In this lab, you:
+- Ran a search in Microsoft Defender for specific process activity.
+- Created a search job for the last 24 hours to retrieve C2-related data.
+- Viewed and reviewed event details from the search job results.
+- Explored the restoration process for historical data retrieval.
+
+## You have successfully completed the lab. Click on Next to Continue
