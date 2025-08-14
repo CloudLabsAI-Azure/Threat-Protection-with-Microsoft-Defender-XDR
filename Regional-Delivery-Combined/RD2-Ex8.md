@@ -5,9 +5,7 @@
 
 In this exercise, you will implement an end-to-end automated incident response solution by integrating Microsoft Defender XDR, Microsoft Sentinel, Power Automate, and SharePoint. You'll begin by reviewing existing configurations for Automated Investigation and Response (AIR) and analyzing identity-based incidents with attack disruption tags. Then, you'll build a custom workflow that logs flagged Outlook emails to SharePoint, sends automated SOC notifications via a Sentinel playbook, and triggers the response pipeline using a Sentinel analytics rule—creating a unified and automated threat detection and response loop.
 
-> **Important Usage Guidance**
-
-> Some changes or configurations made during this lab may take a few minutes to reflect in the Microsoft Defender for Office 365 portal. This includes security recommendations, alerts, and resource status updates. If updates are not visible immediately, please allow some time and refresh the portal before proceeding.
+> **⚠ Important Usage Guidance**
 
 > Microsoft Defender for Office 365 may take some time to load certain results or complete specific tasks from the backend. This is expected behavior. If the data does not appear after a couple of refresh attempts, proceed with the next task in the lab and return later to check the results.
 
