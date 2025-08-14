@@ -237,57 +237,49 @@ In this task, you'll create a custom role in Microsoft Defender to manage access
 
 1. On a new tab in the **Microsoft Edge browser** and go to the following URL in the address bar: https://security.microsoft.com.
 
-1. On the **System > Permissions** blade in the Microsoft Defender portal, click **Create a custom role**.
+1. Open a new tab, navigate to https://outlook.office.com, sign in with the lab user’s credentials, and access the mailbox.
 
-   ![](./media/rd_day1_ex2_t1_1.png)
+   > **Note:** If the **Your privacy matters** pop-up appears, click **Continue** to proceed.
 
-1. Under the **Microsoft Defender XDR** section, click **Create custom role**.
+      ![](./media/combi_g_c_8.png)
 
-   ![](./media/rd_day1_ex2_t1_2.png)
+1. In the mailbox, select the **phishing simulation email (1)** and click the **link (2)** provided in the message body to proceed.
 
-1. On the **Set up the basics** page, enter a role name **`Test-role` (1)** and click **Next (2)**.
+   ![](./media/combi_g_c_9.png)
 
-   ![](./media/rd_day1_ex2_t1_3.png)
+1. On the **Sign in** page, type any random email address (1) and click **Next (2)**.
 
-1. On the **Security operations** screen, select **All read and manage permissions (1)** and click **Apply (2)**.
+   ![](./media/combi_g_c_11.png)
 
-   ![](./media/rd_day1_ex2_t1_5.png)
+1. On the **Enter password** page, type any random password (1) and click **Sign in (2)**.
 
-1. On the **Security posture** pane, **All read and manage permissions** **(1)**. Then click **Apply** to save the configuration **(2)**.
+   ![](./media/combi_g_c_12.png)
 
-1. On the **Authorization and settings** pane, select **All read and manage permissions** **(1)**. Then click **Apply** to save the configuration **(2)**.
+1. After submitting the fake credentials, the phishing simulation results page will appear indicating that you were phished. Review the message and proceed as instructed in the lab.
 
-   ![](./media/gs_g_4.png)
+   ![](./media/combi_g_c_10.png)
 
-1. On the **Assign users and data sources** page, click **Add assignment** to assign this role to users and select the data sources they can access.
+      > Note: This activity simulates a phishing attack and trigger credential submission logs.
 
-   ![](./media/gs_g_6.png)
+1. A training assignment email is also generated for users who fall for the phishing simulation. In the mailbox, open the **Training assignment notification** email and review the details.
 
-1. On the **Assignments** screen, provide assignment details:
-   - Assignment name: **`Test-assignment` (1)**.
-   - Select the lab user , **`ODL_User<inject key="Deployment-id" enableCopy="false"></inject>` (2)**.
-   - Choose data source: **Microsoft Defender for Office 365 (3)**. 
-   Click **Add (4)**.
+   ![](./media/combi_g_c_13.png)
 
-      ![](./media/rd_day1_ex2_t1_6.png)
+1. In the mailbox, select the malware attachment simulation email to view its contents.
 
-1. On the **Review and finish** page, verify the assigned permissions and users, then click **Submit (2)**.
+   ![](./media/combi_g_c_14.png)
 
-   ![](./media/rd_day1_ex2_t1_7.png)
+1. With the malware attachment simulation email open, click the **More actions (1)** menu, select **Report (2)**, and then click **Report phishing (3)**.
 
-1. Open the lab user’s mailbox and locate the phishing email titled **"File inloop Expenses Report.xlsx Has Been Shared with ODL_User"**.
+   ![](./media/combi_g_c_15.png)
 
-   ![](./media/rd_day1_ex2_t1_8.png)
+1. In the **Report phishing** confirmation dialog, click **Report** to submit the phishing report.
 
-1. Click **Open** in the email to simulate a phishing link click.
+   ![](./media/combi_g_c_16.png)
 
-   ![](./media/rd_day1_ex2_t1_9.png)
+1. After reporting the phishing email, a confirmation message will be sent to your mailbox. Open the **Thank you for reporting a phish!** email to review the acknowledgment.
 
-   > Note: This activity simulates a phishing attack and trigger credential submission logs.
-
-1. When the user clicks the phishing simulation link and enters their credentials, they are redirected to a training page that displays a message indicating they were phished by the security team, along with guidance to learn from the experience.
-
-   ![](./media/gs_g_9.png)
+   ![](./media/combi_g_c_17.png)
 
 1. In the **Microsoft Defender portal**, do the following:
 
@@ -297,6 +289,12 @@ In this task, you'll create a custom role in Microsoft Defender to manage access
    - Review the **URL (4)** that was clicked to investigate further.
 
       ![](./media/rd_day1_ex2_t1_10.png)
+
+   > **Note:** Sometimes the Microsoft Defender portal can take 1–2 hours for initial backend data to load. If refreshing the page doesn’t display results, check back later.
+
+      ![](./media/combi_g_c_18.png)
+   
+   > **Note:** If no data appears after waiting and refreshing, skip ahead to step 14 to continue with the lab.
 
 1. Click on the **Open url page** to open the full event details.
 
@@ -323,6 +321,8 @@ In this task, you'll create a custom role in Microsoft Defender to manage access
    ![](./media/rd_day1_ex2_t1_14.png)
 
    > Note: This data helps evaluate user behavior and identify high-risk individuals.
+
+1. Navigate back to the **Simulations** tab, select the simulation named **Test2**, and view the report details for the malware attachment simulation.
 
 ## Review
 
