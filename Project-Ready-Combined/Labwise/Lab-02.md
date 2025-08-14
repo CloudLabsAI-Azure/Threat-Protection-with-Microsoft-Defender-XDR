@@ -140,4 +140,4 @@ In this lab, you:
 - Assigned targeted user training for simulated attacks.
 - Verified simulation progress and results in the dashboard.
 
-You have successfully completed the lab. Click on Next to Continue
+## You have successfully completed the lab. Click on Next to Continue
