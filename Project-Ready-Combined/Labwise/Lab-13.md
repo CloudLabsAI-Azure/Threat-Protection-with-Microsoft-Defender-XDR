@@ -1,6 +1,10 @@
 # Lab-14: Deploy Microsoft Defender for Identity Sensor on Domain Controllers
 
-In this task you will install and configure the Defender for Identity sensor on a domain controller to monitor identity-based threats.
+## Overview
+
+In this lab, you will install and configure the Microsoft Defender for Identity sensor on a domain controller to monitor identity-based threats. You will first onboard the server to Microsoft Defender for Endpoint, promote it to a domain controller, and then deploy and activate the Defender for Identity sensor.
+
+> **⚠ Important Usage Guidance:** Sensor deployment and device visibility may take several minutes to complete. If the device or status is not visible after onboarding, proceed with the next task and return later to check the status.
 
 Install the AD DS role to enable the server to function as a domain controller.
 
@@ -192,3 +196,13 @@ Install the AD DS role to enable the server to function as a domain controller.
 > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
 > - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
 <validation step="a35ecb78-8ff8-4873-9f92-37f3811cdc3f" />
+
+## Review
+
+In this lab, you:
+- Onboarded the Windows Server to Microsoft Defender for Endpoint using the local script deployment method.
+- Promoted the server to a domain controller with Active Directory Domain Services.
+- Installed the Microsoft Defender for Identity sensor using the downloaded installer and access key.
+- Verified that the sensor status changed to **Running** in the Defender for Identity portal.
+
+## You have successfully completed the lab. Click on Next to Continue
