@@ -1,6 +1,10 @@
 # Task 2: Enable Microsoft Defender for Cloud
 
-In this task, you will enable and configure Microsoft Defender for Cloud.
+## Overview
+
+In this task, you will enable and configure Microsoft Defender for Cloud to provide enhanced cloud security posture management (CSPM) and workload protection for your Azure environment.
+
+⚠ **Important Usage Guidance:** It may take several minutes for Microsoft Defender for Cloud to reflect the updated plan status after enabling the services. If the toggles do not immediately show as “On” or the subscription status does not update, proceed with the lab and return later to verify.
 
 1. Go to the [Azure Portal](https://portal.azure.com), and search for **Microsoft Defender for Cloud**.
 
@@ -41,3 +45,13 @@ In this task, you will enable and configure Microsoft Defender for Cloud.
 > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
 > - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
 <validation step="ea9784ef-a103-41e0-859f-f673a96cf886" />
+
+## Review
+
+In this task, you:
+- Enabled Microsoft Defender CSPM for the subscription.
+- Activated **Servers** protection under Cloud Workload Protection.
+- Configured Defender plans at both the subscription and Log Analytics workspace levels.
+- Saved and applied the updated security settings for your environment.
+
+## You have successfully completed the task. Click on Next to Continue
