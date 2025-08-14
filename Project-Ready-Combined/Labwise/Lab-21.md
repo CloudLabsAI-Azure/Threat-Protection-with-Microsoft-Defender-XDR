@@ -4,7 +4,7 @@
 
 In this lab, you will simulate a Command and Control (C2) attack by running a PowerShell script that generates DNS queries to mimic beaconing activity from a compromised system. This simulated activity will produce DNS traffic logs that will be used later in the Threat Hunting lab for analysis.
 
-> **⚠ Important Usage Guidance:** This simulation is safe and will not generate harmful traffic. The script is designed to run in the background for several hours, producing minimal system load. Do not close the script window while it runs. If the script output shows DNS resolve errors, this is expected behavior.
+> **⚠ Important Usage Guidance:** Microsoft Defender for Office 365 may take some time to load certain results or complete specific labs from the backend. This is expected behavior. If the data does not appear after a couple of refresh attempts, proceed with the next lab and return later to check the results.
 
 1. Copy and run this command to create a script that will simulate a DNS query to a C2 server:
 
