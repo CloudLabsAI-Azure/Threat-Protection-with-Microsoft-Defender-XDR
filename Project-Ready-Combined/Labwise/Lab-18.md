@@ -1,3 +1,17 @@
+## Overview
+
+In this lab, you will connect the **Windows Security Events** data connector in Microsoft Sentinel. This integration allows Sentinel to collect and analyze Windows security event logs from virtual machines for threat detection and investigation.
+
+⚠ **Important Usage Guidance:** Microsoft Sentinel connectors may take some time to display a “Connected” status or start receiving event data after configuration. This is expected behavior. If the connection status does not update after a few minutes, proceed with the next lab and check back later.
+
+# Task 1: Connect the Windows Security Event Connector
+
+1. On the **Microsoft Defender** portal, in the left navigation pane:
+   - Select **Microsoft Sentinel (1)**.
+   - Expand **Content management (2)** and select **Content hub (3)**.
+
+    ![](./media/t3_g_e1_22.png)
+
 # Task 1: Connect the Windows security event connector
 
 1. On the **Microsoft Defender** portal, in the left navigation pane, select **Microsoft Sentinel (1)**, expand **Content management (2)**, and select **Content hub (3)**.
@@ -61,3 +75,13 @@
     ![](./media/t3_g_e2_15.png)
 
 12. Click on Apply Changes now. If you refresh the data connector page, you can see the status Connected for **Security Events Via Legacy Agent**.
+
+## Review
+
+In this lab, you:
+- Installed the **Windows Security Events** solution from the Content Hub.
+- Connected Azure Windows virtual machines to Log Analytics.
+- Configured the **Security Events via Legacy Agent** connector to stream all security events.
+- Verified the successful connection of both virtual machines in the data connector status.
+
+## You have successfully completed the lab. Click on Next to Continue
