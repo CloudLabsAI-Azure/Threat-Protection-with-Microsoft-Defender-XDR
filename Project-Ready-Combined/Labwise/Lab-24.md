@@ -1,6 +1,10 @@
 # Task 1: Create a hunting query
 
-In this task, you will create a hunting query, bookmark a result, and create a Livestream.
+## Overview
+
+In this lab, you will use Microsoft Sentinel to create a hunting query that identifies suspicious PowerShell activity in your environment. You will bookmark a relevant result, configure entity mapping, save the hunting query, and set it up to run in real-time using Livestream. You will also link the bookmarked event to an existing incident for further investigation.
+
+> **⚠ Important Usage Guidance:** Microsoft Defender for Office 365 may take some time to load certain results or complete specific labs from the backend. This is expected behavior. If the data does not appear after a couple of refresh attempts, proceed with the next lab and return later to check the results.
 
 1. In the Search bar of the Azure portal, type *Microsft Sentinel (1)*, then select **Microsoft Sentinel (2)**.
 
@@ -107,3 +111,13 @@ In this task, you will create a hunting query, bookmark a result, and create a L
 1. On the **Adding bookmark(s) to an existing incident** pane, select the incident **Multi-stage i... (1)** and click **Add (2)**.
 
    ![](./media/t3_g_e2_30.png)
+
+## Review
+
+In this lab, you:
+- Ran a KQL query in Microsoft Sentinel to identify suspicious PowerShell executions.
+- Created and saved a hunting query with entity mapping for hosts.
+- Bookmarked a relevant result and mapped it to an existing incident.
+- Added the hunting query to Livestream for real-time monitoring.
+
+## You have successfully completed the lab. Click on Next to Continue
