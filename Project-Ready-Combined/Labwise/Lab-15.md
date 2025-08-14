@@ -1,4 +1,4 @@
-### Lab 16: Investigate Threats and User Timelines 
+# Lab 16: Investigate Threats and User Timelines 
 
 In this task you will analyze using user timelines and alert details in the Defender portal.
 
