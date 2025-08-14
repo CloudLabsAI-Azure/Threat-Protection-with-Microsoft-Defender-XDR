@@ -4,8 +4,7 @@
 
 In this lab, you will connect and onboard a SaaS application—Microsoft 365—to Microsoft Defender for Cloud Apps. You will configure Conditional Access App Control policies in Microsoft Entra ID, enable file monitoring, and connect Microsoft 365 through the App Connectors page. This ensures visibility into user activity, enforces session controls, and enhances data security for your SaaS environment.
 
-> **⚠ Important Usage Guidance:** SaaS app connection and Conditional Access policy propagation may take several minutes to complete. If the connected status or app list does not update immediately, wait and refresh before proceeding.
-
+> **⚠ Important Usage Guidance:** Microsoft Defender for Office 365 may take some time to load certain results or complete specific labs from the backend. This is expected behavior. If the data does not appear after a couple of refresh attempts, proceed with the next lab and return later to check the results.
 
 1. Open the **Microsoft Edge** browser and go to the following URL in the address bar: 
 
