@@ -1,5 +1,11 @@
 # Task 3: Persistence Attack with Registry Key Add 
 
+## Overview
+
+In this lab, you will simulate two attack techniques—**Persistence** via registry key modification and **Command and Control (C2)** via DNS queries—and then configure Microsoft Sentinel to detect the persistence activity. You will execute commands to create persistence in the Windows registry, run a DNS-based PowerShell script that mimics C2 traffic, and build an analytics rule to detect suspicious logon activity.
+
+⚠ **Important Usage Guidance:** Some analytics rules and log queries may take several minutes to populate results in Microsoft Sentinel after the activity is performed. This is expected. If the data does not appear immediately, continue with the next task and return later to review the generated alerts.
+
 1. In the search of the taskbar, enter *Command*. A Command Prompt will be displayed in the search results. Right-click on the Command Prompt and select **Run as Administrator**. Select **Yes** in the User Account Control window that allows the app to run.
 
 1. In the Command Prompt, create a Temp folder in the root directory. Remember to press Enter after the last row:
@@ -180,4 +186,14 @@ In this task, you will create a detection for the first attack of the previous e
 1. On the **Review and create** tab, select the **Save** button to create the new Scheduled Analytics rule.
 
    ![](./media/cor_r_g_16.png)
-   
+
+## Review
+
+In this lab, you:
+- Created a persistence mechanism by adding a startup registry key.
+- Simulated a Command and Control (C2) attack using a DNS-based PowerShell script.
+- Queried Security Events in Microsoft Sentinel to identify logon activity.
+- Created and configured a scheduled analytics rule to detect persistence via registry modification.
+- Mapped entities for investigation and configured alert generation.
+
+## You have successfully completed the lab. Click on Next to Continue
