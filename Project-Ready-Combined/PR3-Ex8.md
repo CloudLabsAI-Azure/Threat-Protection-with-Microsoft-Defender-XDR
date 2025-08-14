@@ -1,4 +1,4 @@
-# Exercise 3: Threat Hunting with Microsoft Sentinel
+# Exercise 8: Threat Hunting with Microsoft Sentinel
 
 ### Estimated timing: 30 minutes
 
