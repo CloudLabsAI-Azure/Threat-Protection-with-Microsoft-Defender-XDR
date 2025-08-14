@@ -1,4 +1,4 @@
-## Lab 9: Configure Session Policies to Monitor and Block Risky Behavior
+# Lab 9: Configure Session Policies to Monitor and Block Risky Behavior
 
 ## Overview
 
