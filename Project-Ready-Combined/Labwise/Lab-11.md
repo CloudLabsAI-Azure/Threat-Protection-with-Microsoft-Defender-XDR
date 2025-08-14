@@ -95,4 +95,4 @@ In this lab, you:
 - Configured the policy to send alert notifications by email.
 - Simulated a download to trigger the alert and verified the alert details in Microsoft Defender.
 
-## You have successfully completed the lab. Click on Next to Continue
+## Day 1 Completed Successfully
