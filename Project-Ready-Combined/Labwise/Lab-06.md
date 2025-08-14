@@ -1,4 +1,4 @@
-## Lab 7: Microsoft Defender for Cloud Apps-Configuring Cloud Discovery 
+# Lab 7: Microsoft Defender for Cloud Apps-Configuring Cloud Discovery 
 
 1. In the Edge browser, log-in to Microsoft Defender portal using the following link: https://security.microsoft.com/ with the below username and password if prompted to sign in.
 
