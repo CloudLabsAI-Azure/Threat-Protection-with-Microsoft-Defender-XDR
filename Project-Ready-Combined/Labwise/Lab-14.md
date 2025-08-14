@@ -1,4 +1,4 @@
-### Lab 15: Simulate and Detect Lateral Movement Attacks `(Read-Only)`
+# Lab 15: Simulate and Detect Lateral Movement Attacks `(Read-Only)`
 
 In this task, you will simulate a Lateral Movement attack and detect it using Microsoft Defender for Identity. Please note that this is a `read-only` task, as you will be logged out of your virtual machine during the attack simulation—this is a security measure enforced by Defender for Identity.
 
