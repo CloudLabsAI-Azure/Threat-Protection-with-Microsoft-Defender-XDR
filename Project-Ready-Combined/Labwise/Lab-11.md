@@ -1,5 +1,11 @@
 ## Lab 11: Investigate Alerts and Create Custom Detection Policies
 
+## Overview
+
+In this lab, you will investigate alerts in Microsoft Defender for Cloud Apps, trace suspicious activities through the activity log, and create a custom detection policy to flag and respond to risky file downloads. You will simulate a detection event and verify that the system correctly triggers and notifies you via an alert email.
+
+> **⚠ Important:** Alerts may take a few minutes to appear. If you don’t see them immediately, wait and refresh before rechecking.
+
 1. In the Microsoft Defender Portal, go to **Cloud Apps** → **Activity log**.
 
 1. Under the **App** filter, click on **Select apps** (3), select **Microsoft SharePoint Online**
@@ -80,3 +86,13 @@
     - Triggered policy
    
       ![](./media/grpg-1-5.png)
+
+## Review
+
+In this lab, you:
+- Investigated the **Block-All-Download** alert and traced related activities in the activity log.
+- Created a custom activity policy to detect suspicious downloads of `msedge.exe` from SharePoint Online.
+- Configured the policy to send alert notifications by email.
+- Simulated a download to trigger the alert and verified the alert details in Microsoft Defender.
+
+## You have successfully completed the lab. Click on Next to Continue
