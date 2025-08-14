@@ -4,7 +4,7 @@
 
 In this lab, you will integrate Microsoft Defender for Identity with the Microsoft 365 Defender portal and Microsoft Sentinel. This integration allows you to view Defender for Identity incidents alongside other security events in the unified Microsoft 365 Defender portal.
 
-> **⚠ Important Usage Guidance:** After connecting the workspace, it may take several minutes for all Microsoft Sentinel settings, content, and data to appear in the Defender portal.
+> **⚠ Important Usage Guidance:** Microsoft Defender for Office 365 may take some time to load certain results or complete specific labs from the backend. This is expected behavior. If the data does not appear after a couple of refresh attempts, proceed with the next lab and return later to check the results.
 
 1. Open a browser and go to the **Microsoft Defender portal**: https://security.microsoft.com. **Sign in** using your lab credentials.
 
