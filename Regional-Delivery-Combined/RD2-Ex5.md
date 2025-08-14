@@ -1,4 +1,4 @@
-## Exercise 1: Connect SaaS Apps and Configure Session Policies in Microsoft Defender for Cloud Apps
+## Exercise 5: Connect SaaS Apps and Configure Session Policies in Microsoft Defender for Cloud Apps
 
 ### Estimated Duration: 60 Minutes
 
