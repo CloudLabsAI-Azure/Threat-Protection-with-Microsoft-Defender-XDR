@@ -1,4 +1,4 @@
-## Lab 10: Implement App Governance and Risk Detection for OAuth Apps
+# Lab 10: Implement App Governance and Risk Detection for OAuth Apps
 
 ## Overview
 
