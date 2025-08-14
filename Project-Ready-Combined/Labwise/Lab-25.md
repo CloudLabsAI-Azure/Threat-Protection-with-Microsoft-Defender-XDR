@@ -1,6 +1,10 @@
 # Task 2: Create a NRT query rule
 
-In this task, instead of using a LiveStream, you will create a NRT analytics query rule. NRT rules run every minute and look back one minute. The benefit of NRT rules is they can use the alert and incident creation logic.
+## Overview
+
+In this lab, you will create a Near Real-Time (NRT) analytics query rule in Microsoft Sentinel to detect suspicious PowerShell activity. NRT rules run every minute and look back one minute, enabling near real-time detection and automated incident creation. You will configure the rule’s logic, map entities, and enable incident creation for faster threat response.
+
+> **⚠ Important Usage Guidance:** Microsoft Defender for Office 365 may take some time to load certain results or complete specific labs from the backend. This is expected behavior. If the data does not appear after a couple of refresh attempts, proceed with the next lab and return later to check the results.
 
 1. In **Microsoft Sentinel**, under **Configuration (1)** select **Analytics (2)**, then click **+ Create** and choose **NRT query rule (3)**.
 
@@ -48,3 +52,14 @@ In this task, instead of using a LiveStream, you will create a NRT analytics que
 1. On the Review and Create tab, select the **Save** button to create and save the new Scheduled Analytics rule.
 
    ![](./media/ex3_g_tr_12.png)
+
+## Review
+
+In this lab, you:
+- Created an NRT analytics query rule in Microsoft Sentinel.
+- Configured the rule’s name, severity, MITRE ATT&CK mapping, and status.
+- Added a KQL query to detect suspicious PowerShell executions.
+- Mapped host entity information for improved investigation context.
+- Enabled incident creation for automated detection and response.
+
+## You have successfully completed the lab. Click on Next to Continue
