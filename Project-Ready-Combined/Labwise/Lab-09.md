@@ -4,7 +4,7 @@
 
 In this lab, you will configure a Session Policy in Microsoft Defender for Cloud Apps to monitor and block risky behavior. The policy will target non-compliant devices and prevent downloads of high-risk file types from Microsoft SharePoint Online. You will validate the configuration by attempting to download a blocked executable file, ensuring that the session policy enforcement works as intended.
 
-> **⚠ Important Usage Guidance:** Conditional Access and session policies may take several minutes to apply. If policy enforcement does not trigger immediately, wait and retry the action in a new browser session or incognito mode.
+> **⚠ Important Usage Guidance:** Microsoft Defender for Office 365 may take some time to load certain results or complete specific labs from the backend. This is expected behavior. If the data does not appear after a couple of refresh attempts, proceed with the next lab and return later to check the results.
 
 1. In Microsoft Defender portal go to **Cloud Apps** → **Policy management**.
 
