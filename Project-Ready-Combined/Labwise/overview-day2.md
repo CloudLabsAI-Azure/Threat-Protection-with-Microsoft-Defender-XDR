@@ -1,34 +1,45 @@
-# Hands-on Labs - Day 1
+# Hands-on Labs – Day 2
 
-# Build Agents with Copilot Studio
+# Manage SaaS Threats and Advanced Detection with Microsoft Defender for Cloud Apps
 
 ### Estimated Duration: 4 Hours
 
 ## Overview
 
-In this lab, you'll explore how Microsoft 365 Copilot and Copilot Studio can be used to enhance employee experience through AI-driven creativity and automation. You will begin by experimenting with the Image Generator feature powered by Microsoft Designer to create visually engaging content from simple text prompts. The lab then guides you through leveraging Microsoft 365 Copilot to streamline employee transitions—identifying internal candidates, creating transition plans, and generating communication materials. Additionally, you'll use Copilot Studio to automate onboarding workflows, build training resources, and implement performance tracking. Finally, you'll explore the Awards and Recognition agent to create a structured process for acknowledging employee achievements, fostering a culture of engagement and growth within the organization.
+In this lab, you will work with Microsoft Defender for Cloud Apps to configure cloud discovery, onboard SaaS applications, and apply advanced detection policies. You will start by enabling Cloud Discovery integration with Microsoft Defender for Endpoint, uploading and analyzing snapshot reports, and identifying unsanctioned applications to address Shadow IT risks. You will then connect and onboard a Microsoft 365 SaaS app, configure Conditional Access App Control, and enable file monitoring for sensitive data protection.
 
-## Objective
+Next, you will implement session policies to control risky behavior, such as blocking downloads of executable files from non-compliant devices. You will also enable App Governance to monitor OAuth applications, create custom detection policies to identify high-risk apps with unverified publishers, and investigate resulting alerts and incidents. By the end, you will have hands-on experience in detecting, analyzing, and controlling risky cloud application behavior in a Microsoft 365 environment.
+
+## Objectives
 
 By the end of this lab, you will be able to:
 
-- **Explore Copilot Studio Agent Builder**: Leverage AI-powered tools to effortlessly generate compelling visuals from natural language prompts using Microsoft 365 Copilot and Designer.
-- **Build HR Assistant Agent with Copilot Studio**: Leverage Microsoft 365 Copilot and Copilot Studio to streamline HR processes by quickly screening candidates, scheduling interviews, developing training materials, collecting feedback, and conducting performance reviews.
-- **Incorporate actions in HR Agent**: Create an agent in Copilot Studio to assist employees in submitting detailed and well-documented nomination forms through Microsoft 365 Copilot.
-- **Enabling Autonomous Capabilities in Microsoft Copilot Studio for HR Activities**: Use Microsoft Copilot Studio to generate nomination summaries and efficiently view both recognitions and submitted nominations.
+- **Enable Cloud Discovery Integration**: Connect Microsoft Defender for Endpoint with Defender for Cloud Apps to collect app usage data.
+- **Analyze Shadow IT**: Review snapshot reports to identify high-risk, unsanctioned, and unapproved applications.
+- **Onboard SaaS Applications**: Connect Microsoft 365 to Defender for Cloud Apps and configure Conditional Access App Control policies.
+- **Enable File Monitoring**: Track and protect sensitive files in connected cloud applications.
+- **Configure Session Policies**: Block risky file downloads from specific cloud apps and enforce session control.
+- **Implement App Governance**: Enable governance logging, assess OAuth app permissions, and create detection policies for high-risk apps.
+- **Investigate Incidents**: Review triggered policies, violations, and incidents in Microsoft Defender for Cloud Apps.
 
 ## Prerequisites
 
 Participants should have:
 
-- Basic understanding of Microsoft 365 ecosystem and its applications.
-- Familiarity with Microsoft 365 Copilot and its interface.
-- Experience with creating prompts for AI-generated content.
-- Knowledge of workflow automation using Copilot Studio or Power Platform tools.
-- Ability to navigate and manage employee-related processes like onboarding and performance tracking.
-- Understanding of HR practices such as internal mobility, recognition, and employee engagement.
+- Familiarity with Microsoft 365 security and compliance capabilities.
+- Understanding of Microsoft Defender for Endpoint and Defender for Cloud Apps.
+- Access to the lab-provided Microsoft 365 tenant and administrative permissions.
+- Basic knowledge of Conditional Access, SaaS onboarding, and security policy configuration.
+- Awareness of Shadow IT risks, OAuth application security, and file governance.
 
 ## Explanation of Components
 
-- **M365 Copilot**: M365 Copilot brings the power of AI to Word, Excel, PowerPoint, Outlook, and Teams to boost productivity and creativity.
-- **Copilot Studio**: Copilot Studio empowers you to build, customize, and manage your own AI copilots tailored to your business needs.
+- **Microsoft Defender for Cloud Apps**: A cloud access security broker (CASB) that provides visibility, control, and protection for SaaS applications.
+- **Cloud Discovery**: A feature that collects and analyzes app usage data to detect unsanctioned or high-risk apps in the organization.
+- **Snapshot Reports**: Manually uploaded log files from firewalls or proxies that generate a one-time analysis of discovered apps.
+- **Conditional Access App Control**: Integration with Microsoft Entra Conditional Access to control and monitor sessions for connected cloud apps.
+- **File Monitoring**: Capability to track file activity, classify sensitive content, and enforce data protection policies in connected apps.
+- **Session Policies**: Real-time controls applied to user sessions, such as blocking downloads or restricting access based on device compliance.
+- **App Governance**: Advanced monitoring for OAuth applications to detect risky permissions, unverified publishers, and unusual activity.
+- **Detection Policies**: Custom rules to automatically identify and respond to high-risk behaviors or configurations in cloud apps.
+
