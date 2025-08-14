@@ -1,3 +1,4 @@
+
 # Exercise 3: Configuring Cloud Discovery in Microsoft Defender for Cloud Apps to Detect Shadow IT
 
 ### Estimated Duration: 60 Minutes
