@@ -1,5 +1,11 @@
 ## Lab 9: Configure Session Policies to Monitor and Block Risky Behavior
 
+## Overview
+
+In this lab, you will configure a Session Policy in Microsoft Defender for Cloud Apps to monitor and block risky behavior. The policy will target non-compliant devices and prevent downloads of high-risk file types from Microsoft SharePoint Online. You will validate the configuration by attempting to download a blocked executable file, ensuring that the session policy enforcement works as intended.
+
+> **⚠ Important Usage Guidance:** Conditional Access and session policies may take several minutes to apply. If policy enforcement does not trigger immediately, wait and retry the action in a new browser session or incognito mode.
+
 1. In Microsoft Defender portal go to **Cloud Apps** → **Policy management**.
 
 1. On the **Policy management** page, in the **All policies** section click on **+ Create policy**, then select **Session policy**.
@@ -87,3 +93,14 @@
     **"Download blocked – Downloading msedge.exe is blocked by your organization’s security policy."**
   
     ![](./media/g-3-9.png)
+
+
+## Review
+
+In this lab, you:
+- Created a high-severity Session Policy in Microsoft Defender for Cloud Apps.
+- Configured filters to target non-compliant devices accessing Microsoft SharePoint Online.
+- Set file inspection rules to block downloads of specific file types such as `.exe` and `.apk`.
+- Validated the policy by attempting to download a blocked executable and confirming that it was successfully blocked.
+
+## You have successfully completed the lab. Click on Next to Continue
