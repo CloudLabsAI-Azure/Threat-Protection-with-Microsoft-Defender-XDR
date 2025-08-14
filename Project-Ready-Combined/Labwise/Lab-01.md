@@ -2,7 +2,9 @@
 
 # Lab 1: Configure Threat Policies in Microsoft Defender for Office 365
 
-In this lab, you will enable Microsoft Defender CSPM for your environment and configure both standard and strict protection policies using Microsoft Defender XDR.
+## Overview
+
+In this lab, you will configure threat protection in Microsoft Defender for Office 365. You will enable Microsoft Defender Cloud Security Posture Management (CSPM) and activate App Governance to monitor OAuth apps. You will then set up both Standard and Strict Preset Security Policies for specific recipients, providing layered protection with Safe Attachments, Safe Links, and anti-phishing measures.
 
 > **⚠ Important Usage Guidance:** Microsoft Defender for Office 365 may take some time to load certain results or complete specific labs from the backend. This is expected behavior. If the data does not appear after a couple of refresh attempts, proceed with the next lab and return later to check the results.
 
@@ -111,6 +113,10 @@ In this lab, you will enable Microsoft Defender CSPM for your environment and co
 
 ## Review
 
-In this lab, you learnt how to configure threat policies and simulate phishing and malware attacks using Microsoft Defender for Office 365.
+In this lab, you:
+- Enabled Microsoft Defender CSPM.
+- Activated App Governance for OAuth app monitoring.
+- Configured Standard and Strict Preset Security Policies.
+- Applied multi-layered email protection for targeted recipients.
 
-## You have successfully completed Lab 1, click on Next to Continue
+You have successfully completed the lab and established a strong baseline of threat protection in Microsoft Defender for Office 365.
