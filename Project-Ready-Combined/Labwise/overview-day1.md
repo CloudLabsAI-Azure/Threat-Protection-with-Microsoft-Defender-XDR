@@ -21,7 +21,7 @@ By the end of this lab, you will be able to:
 
 Participants should have:
 
-- Basic understanding of Microsoft 365 ecosystem and its applications.
+- Basic understanding of the Microsoft 365 ecosystem and its applications.
 - Familiarity with Microsoft 365 Copilot and its interface.
 - Experience with creating prompts for AI-generated content.
 - Knowledge of workflow automation using Copilot Studio or Power Platform tools.
