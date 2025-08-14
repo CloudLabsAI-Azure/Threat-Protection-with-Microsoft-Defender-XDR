@@ -1,30 +1,34 @@
-# Implement Threat Protection with Microsoft Defender XDR solutions - Day 1
+# Implement Threat Protection with Microsoft Defender XDR solutions - Day 3
 
-### Overall Estimated Duration: 2 Hours
+### Overall Estimated Duration: 4 Hours
 
 ## Overview
 
-In this lab, you will explore how to enhance organizational security using Microsoft Defender for Office 365. You’ll configure threat protection policies, simulate phishing and malware attacks with the Attack Simulator, and analyze threats using Threat Explorer and real-time detections. The lab also covers investigating and remediating incidents in Microsoft Defender XDR, configuring anti-phishing and Safe Links policies, and implementing measures to monitor and maintain a strong security posture across Office 365.
+In this lab, you will strengthen organizational security by deploying Microsoft Defender for Identity sensors on domain controllers, simulating lateral movement attacks, and investigating identity-based threats through user timelines. You’ll integrate with Microsoft 365 Defender for centralized visibility, run advanced hunting queries to analyze identity signals, and explore Microsoft Sentinel for threat detection and incident investigation. The lab also includes threat hunting using notebooks and mitigating risks using Microsoft Defender for Cloud to maintain a proactive security posture.
 
 ## Objectives
 
-- Configure Threat Policies in Microsoft Defender for Office 365 
+- Configure Microsoft Defender for Identity 
 
-- Simulate Phishing and Malware Attacks Using Attack Simulator 
+- Investigate Identity-Based Threats and User Timelines 
 
-- Analyze Threats with Threat Explorer and Real-Time Detections 
+- Integrating Microsoft Defender for Cloud and Simulating Threat Detection Scenarios
+
+- Conduct attacks and Create Detections
 
 - Investigate and remediate Incidents in Microsoft Defender XDR 
 
-- Configure Anti-Phishing and Safe Links Policies 
+- Threat Hunting using Notebooks with Microsoft Sentinel 
+
+- Mitigate threats using Microsoft Defender for Cloud 
 
 ## Architecture Diagram
 
- ![Access Your VM and Lab Guide](./media/arch1.png)
+ ![Access Your VM and Lab Guide](./media/arch3.png)
 
 # Getting Started with the Lab
  
-Welcome to your Securing Collaboration with Microsoft Defender Solutions workshop! We've prepared a seamless environment for you to familiarize yourself with the Microsoft security operations analyst, you monitor, identify, investigate, and respond to threats in multi-cloud environments and related Microsoft services. Let's begin by making the most of this experience:
+Welcome to your Microsoft 365 Defender for Identity and Sentinel for Advanced Threat Protection workshop! We've prepared a seamless environment for you to familiarize yourself with the Microsoft security operations analyst, you monitor, identify, investigate, and respond to threats in multi-cloud environments and related Microsoft services. Let's begin by making the most of this experience:
  
 ## Accessing Your Lab Environment
  
