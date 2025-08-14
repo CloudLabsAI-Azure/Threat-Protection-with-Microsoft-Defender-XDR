@@ -250,7 +250,7 @@ In this task, you'll simulate phishing and malware attacks using Microsoft Defen
 > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task.  
 > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.  
 > - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.  
-<validation step="064a226a-790e-4e5f-b789-d84483110e38" />
+<validation step="eb927b6a-3f37-4714-9622-000f458f8bac" />
 
 ## Review
 
