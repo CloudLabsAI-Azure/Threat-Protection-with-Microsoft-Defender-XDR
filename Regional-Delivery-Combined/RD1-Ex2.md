@@ -114,9 +114,13 @@ In this task, you'll create a custom role in Microsoft Defender to manage access
 
 In this task, you will create a custom Anti-Phishing policy and Safe Links policy to enhance protection against malicious emails and phishing links. You will also simulate a phishing email and verify alerts and detections.
 
-1. On the **Microsoft Defender portal**, go to **Email & collaboration (1)** > **Policies & rules (2)** and selct **Threat Policies**. Under **Policies**, select **Anti-phishing (3)**.
+1. On the **Microsoft Defender portal**, go to **Email & collaboration (1)** → **Policies & rules (2)** → **Threat policies (3)**.
 
-   ![](./media/rd_day1_ex2_t2_1.png)
+   ![](./media/rd_day1_ex1_t1_6.png)
+
+1. On the **Threat policies** page, under **Policies**, select **Anti-phishing**.
+
+   ![](./media/g_r_e2_2_5.png)
 
 1. On the **Anti-phishing** page, click **Create (1)** to begin a new policy.
 
@@ -136,10 +140,10 @@ In this task, you will create a custom Anti-Phishing policy and Safe Links polic
 
 1. Under **Trusted senders and domains**, check the following options:
 
-    - **Enable mailbox intelligence (1)**
-    - **Enable Intelligence for impersonation protection (2)**
-    - **Enable spoof intelligence (3)**  
-    - Then click **Next (4)**. 
+   - **Enable mailbox intelligence (1)**
+   - **Enable Intelligence for impersonation protection (2)**
+   - **Enable spoof intelligence (3)**  
+   - Then click **Next (4)**. 
      
       ![](./media/rd_day1_ex2_t2_6.png)
 
@@ -234,14 +238,6 @@ In this task, you will create a custom Anti-Phishing policy and Safe Links polic
     - **Detection technologies:** URL malicious reputation, Mixed analysis detection  
 
       ![](./media/rd_day1_ex2_t2_20.png)
-
-1. Finally, go to **Investigation & response (1)** > **Incidents (2)**. Select the alert incident **Alert-Link (3)** and click on the incident name **(4)** to investigate further.
-
-    ![](./media/rd_day1_ex2_t2_21.png)
-
-   >  Dive deep into the incident: review alerts, evidence, entities involved, and the automated investigation trail.
-
-   >  You’ve now created an alert policy, triggered it with test emails, and followed the investigation trail using Defender XDR.
 
 ## Review
 
