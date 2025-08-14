@@ -1,6 +1,11 @@
 # Task 5: Persistence Attack Detection
 
-In this task, you will create a detection for the first attack of the previous exercise.
+## Overview
+
+In this lab, you will use Microsoft Sentinel to create a detection rule for persistence attacks based on SecurityEvent logs. You will query for specific Event IDs related to logon activities, map entities for investigation, and configure a scheduled analytics rule to detect suspicious persistence techniques. This detection will help generate alerts for potential malicious activity, which can be used in later investigations.
+
+> **⚠ Important Usage Guidance:** Microsoft Defender for Office 365 may take some time to load certain results or complete specific labs from the backend. This is expected behavior. If the data does not appear after a couple of refresh attempts, proceed with the next lab and return later to check the results.
+
 1. In the Search bar of the Azure portal, type *Microsft Sentinel (1)*, then select **Microsoft Sentinel (2)**.
 
    ![](./media/09.png)
@@ -83,3 +88,13 @@ In this task, you will create a detection for the first attack of the previous e
 1. On the **Review and create** tab, select the **Save** button to create the new Scheduled Analytics rule.
 
    ![](./media/cor_r_g_16.png)
+
+## Review
+
+In this lab, you:
+- Queried SecurityEvent logs in Microsoft Sentinel for specific Event IDs.
+- Mapped account and host entities for better incident investigation.
+- Created a high-severity analytics rule to detect persistence activity.
+- Scheduled the rule to run at regular intervals for continuous monitoring.
+
+## You have successfully completed the lab. Click on Next to Continue
