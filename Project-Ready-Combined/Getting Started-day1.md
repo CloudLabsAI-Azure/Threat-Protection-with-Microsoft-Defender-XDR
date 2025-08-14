@@ -1,7 +1,5 @@
 # Implement Threat Protection with Microsoft Defender XDR solutions - Day 1
 
-### Overall Estimated Duration: 2 Hours
-
 ## Overview
 
 In this lab, you will explore how to enhance organizational security using Microsoft Defender for Office 365. You’ll configure threat protection policies, simulate phishing and malware attacks with the Attack Simulator, and analyze threats using Threat Explorer and real-time detections. The lab also covers investigating and remediating incidents in Microsoft Defender XDR, configuring anti-phishing and Safe Links policies, and implementing measures to monitor and maintain a strong security posture across Office 365.
