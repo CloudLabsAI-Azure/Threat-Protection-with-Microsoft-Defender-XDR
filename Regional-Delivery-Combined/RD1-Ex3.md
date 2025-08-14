@@ -1,4 +1,5 @@
 ## Exercise 3: Implement and Monitor Secure Posture in Microsoft Defender for Office 365 and XDR
+
 ### Estimated Duration: 60 Minutes
 
 ## Overview
@@ -134,7 +135,7 @@ In this task, you’ll simulate a phishing incident, investigate the suspicious 
    - **(7)** Enable **Initiate automated investigation**  
    - Click **Next (8)**
 
-   ![](./media/rd_day1_ex3_t2_4.png)
+      ![](./media/rd_day1_ex3_t2_4.png)
 
 1. On the **Choose target entities** page, enter a name such as `report-phish (1)` and review the impacted users. Click **Next (2)**.
 
@@ -155,7 +156,7 @@ In this task, you’ll simulate a phishing incident, investigate the suspicious 
    - **(3)** Set **Classification** to `True positive – Phishing`  
    - Click **Save (4)**
 
-   ![](./media/rd_day1_ex3_t2_8.png)
+     ![](./media/rd_day1_ex3_t2_8.png)
 
 1. Go to **Email & collaboration (1)** → **Investigations (2)**. Click on the latest investigation entry related to your phishing test **(3)**.
 
@@ -168,7 +169,7 @@ In this task, you’ll simulate a phishing incident, investigate the suspicious 
     - **Mailbox involved**  
     - **Result**: No threats found
 
-    ![](./media/rd_day1_ex3_t2_10.png)
+      ![](./media/rd_day1_ex3_t2_10.png)
 
     > **Note:** It may take 10–15 minutes for the automated investigation to fully complete and show results.
 
