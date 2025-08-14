@@ -80,7 +80,7 @@ In this exercise, you will explore how to secure Microsoft 365 cloud services li
   
     ![](./media/corg-1-20.png)
 
-1. Go back to the **Microsoft Defender portal** tab and select **Settings** from the left-sided menu.
+1. Go back to the **Microsoft Defender portal** tab and select **Settings** from the left-sided menu and select **Cloud apps**.
 
 1. Navigate to the **Information Protection** section and select **Files**.
 
@@ -236,9 +236,9 @@ In this exercise, you will explore how to secure Microsoft 365 cloud services li
 
    > **Note:** Once selected, all user activities performed in SharePoint—such as file uploads, downloads, edits, and access attempts—will be visible in the activity log.
 
-1. Go to **Incidents & alerts** → **Alerts**, and look for `Block-All-Download`.
+1. 1. In the **Microsoft Defender portal**, navigate to **Incidents & alerts (1)**, select **Email & collaboration alerts (2)**, and locate the alert named **Block-All-Download (3)**.
 
-   ![](./media/grpg-1-3.png)
+   ![](./media/ex4_g_r_1.png)
 
 1. Click the alert, then select **Open alert page**.
    
