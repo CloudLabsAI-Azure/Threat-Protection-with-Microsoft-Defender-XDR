@@ -4,7 +4,7 @@
 
 In this task, you will enable and configure Microsoft Defender for Cloud to provide enhanced cloud security posture management (CSPM) and workload protection for your Azure environment.
 
-⚠ **Important Usage Guidance:** It may take several minutes for Microsoft Defender for Cloud to reflect the updated plan status after enabling the services. If the toggles do not immediately show as “On” or the subscription status does not update, proceed with the lab and return later to verify.
+> **⚠ Important Usage Guidance:** Microsoft Defender for Office 365 may take some time to load certain results or complete specific labs from the backend. This is expected behavior. If the data does not appear after a couple of refresh attempts, proceed with the next lab and return later to check the results.
 
 1. Go to the [Azure Portal](https://portal.azure.com), and search for **Microsoft Defender for Cloud**.
 
