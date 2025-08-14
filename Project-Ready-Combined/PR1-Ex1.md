@@ -1,10 +1,12 @@
-# Exercise 1: Configuring Threat Policies and Simulating Attacks in Microsoft Defender for Office 365
+# **Day-01**
+
+# Lab 01: Configuring Threat Policies and Simulating Attacks in Microsoft Defender for Office 365
 
 ### Estimated Duration: 60 Minutes
 
 ## Overview
 
-In this exercise, you will configure threat protection policies in Microsoft Defender for Office 365 and use the Attack Simulator to mimic phishing and malware attacks. You will then explore how to analyze these simulated threats using Threat Explorer and real-time detections, gaining insights into how Defender identifies, tracks, and helps mitigate threats within your Office 365 environment.
+In this lab, you will configure threat protection policies in Microsoft Defender for Office 365 and use the Attack Simulator to mimic phishing and malware attacks. You will then explore how to analyze these simulated threats using Threat Explorer and real-time detections, gaining insights into how Defender identifies, tracks, and helps mitigate threats within your Office 365 environment.
 
 > **⚠ Important Usage Guidance**
 
@@ -68,7 +70,7 @@ In this task, you will enable Microsoft Defender CSPM for your environment and c
 
    ![rd_day1_ex1_t1_6](./media/rd_day1_ex1_t1_6.png)
 
-1. 1. On the **Threat policies** page, under **Templated policies**, select **Preset Security Policies**.
+1. On the **Threat policies** page, under **Templated policies**, select **Preset Security Policies**.
 
    ![rd_day1_ex1_t1_6](./media/combi_g_c_1.png)
 
