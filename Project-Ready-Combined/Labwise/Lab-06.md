@@ -1,3 +1,5 @@
+# **Day-02**
+
 # Lab 7: Microsoft Defender for Cloud Apps-Configuring Cloud Discovery 
 
 ## Overview
