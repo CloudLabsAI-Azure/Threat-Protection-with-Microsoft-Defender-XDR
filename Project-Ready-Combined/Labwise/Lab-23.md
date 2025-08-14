@@ -1,6 +1,10 @@
 # Task 6: Investigate an incident
 
-In this task, you will investigate an incident.
+## Overview
+
+In this lab, you will investigate a security incident in the Microsoft Defender portal. You will review incident details, explore the attack story, analyze associated assets and evidence, and update incident properties to reflect your findings. This process will help you understand the sequence of events, impacted resources, and appropriate response actions.
+
+> **⚠ Important Usage Guidance:** Microsoft Defender for Office 365 may take some time to load certain results or complete specific labs from the backend. This is expected behavior. If the data does not appear after a couple of refresh attempts, proceed with the next lab and return later to check the results.
 
 1. On the **Microsoft Defender portal**, under **Investigation & response**, select **Incidents & alerts (1)**, then select **Incidents (2)**, and from the list click the incident named **Startup RegKey (3)** to open its details.
 
@@ -39,3 +43,11 @@ In this task, you will investigate an incident.
         ![](./media/cor_r_g_25.png)
 
 ## Review
+
+In this lab, you:
+- Accessed the Microsoft Defender portal to locate and open a specific incident.
+- Reviewed the incident attack story to understand the event sequence.
+- Analyzed related assets, evidence, and response actions.
+- Updated incident severity, tags, assignment, status, and classification.
+
+## You have successfully completed the lab. Click on Next to Continue
