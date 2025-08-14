@@ -1,4 +1,4 @@
-## Exercise 2: Implement App Governance and Create Custom Detection Policies in Microsoft Defender for Cloud Apps
+## Exercise 6: Implement App Governance and Create Custom Detection Policies in Microsoft Defender for Cloud Apps
 
 ### Estimated Duration: 60 Minutes
 
