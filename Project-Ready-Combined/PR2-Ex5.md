@@ -18,11 +18,7 @@ App Governance helps organizations:
 
 In this task, you'll enable App Governance, analyze high-risk OAuth apps, and create a custom detection policy to flag suspicious apps based on permissions and publisher verification.
 
-1. On the **Microsoft Defender portal**, go to **System (1)** > **Settings (2)** and click **Cloud Apps (3)**.
-
-   ![](./media/rdr_xdr_1.png)
-
-1. In the left menu, go to **Cloud apps (1)** > **Governance log (2)** and select the **AuditLogApp (3)** from the listed apps.
+1. On the **Microsoft Defender portal**, in the left menu, go to **Cloud apps (1)** > **Governance log (2)** and select the **AuditLogApp (3)** from the listed apps.
 
    ![](./media/rdr_xdr_4.png)
 
