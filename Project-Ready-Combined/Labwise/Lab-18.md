@@ -2,7 +2,7 @@
 
 In this lab, you will connect the **Windows Security Events** data connector in Microsoft Sentinel. This integration allows Sentinel to collect and analyze Windows security event logs from virtual machines for threat detection and investigation.
 
-⚠ **Important Usage Guidance:** Microsoft Sentinel connectors may take some time to display a “Connected” status or start receiving event data after configuration. This is expected behavior. If the connection status does not update after a few minutes, proceed with the next lab and check back later.
+> **⚠ Important Usage Guidance:** Microsoft Defender for Office 365 may take some time to load certain results or complete specific labs from the backend. This is expected behavior. If the data does not appear after a couple of refresh attempts, proceed with the next lab and return later to check the results.
 
 # Task 1: Connect the Windows Security Event Connector
 
