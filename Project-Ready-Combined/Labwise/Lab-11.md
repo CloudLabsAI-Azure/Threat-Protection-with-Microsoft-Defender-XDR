@@ -1,4 +1,4 @@
-## Lab 11: Investigate Alerts and Create Custom Detection Policies
+# Lab 11: Investigate Alerts and Create Custom Detection Policies
 
 ## Overview
 
