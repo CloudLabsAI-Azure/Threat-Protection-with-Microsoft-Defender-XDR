@@ -64,7 +64,7 @@ In this task, you will enable Microsoft Defender CSPM for your environment and c
 
    > You may be redirected to the new App Governance interface.
 
-   > **Note:** It may take 3–4 hours for the Microsoft Defender portal to enable OAuth apps in App Governance. This step is performed now to prevent any delays or issues later in the lab.
+   > **Note:** It may take 3–4 hours for the Microsoft Defender portal to enable OAuth apps in App Governance.
 
 1. In the left pane, go to **Email & collaboration (1)** → **Policies & rules (2)** → **Threat policies (3)**.
 
