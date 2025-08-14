@@ -1,4 +1,4 @@
-## Exercise 1: Microsoft Defender for Identity for Advanced Threat Detection and Response
+## Exercise 6: Microsoft Defender for Identity for Advanced Threat Detection and Response
 
 ### Estimated Duration: 60 Minutes
 
