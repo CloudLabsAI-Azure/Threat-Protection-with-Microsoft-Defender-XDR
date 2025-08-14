@@ -6,9 +6,7 @@
 
 In this exercise, you will investigate and remediate security incidents using Microsoft Defender XDR, gaining hands-on experience with incident timelines and response actions. You will also configure anti-phishing and Safe Links policies to protect users from malicious emails and links. Finally, you will implement and monitor security posture settings in Defender for Office 365 to ensure ongoing protection and compliance across your organization.
 
-> **Important Usage Guidance**
-
-> Some changes or configurations made during this lab may take a few minutes to reflect in the Microsoft Defender for Office 365 portal. This includes security recommendations, alerts, and resource status updates. If updates are not visible immediately, please allow some time and refresh the portal before proceeding.
+> **⚠ Important Usage Guidance**
 
 > Microsoft Defender for Office 365 may take some time to load certain results or complete specific tasks from the backend. This is expected behavior. If the data does not appear after a couple of refresh attempts, proceed with the next task in the lab and return later to check the results.
 
@@ -234,4 +232,4 @@ In this task, you will create a custom Anti-Phishing policy and Safe Links polic
 1. In this exercise, you learnt how to investigate and respond to security incidents using Microsoft Defender XDR.  
 2. You also configured anti-phishing and Safe Links policies and monitored Defender for Office 365 to strengthen overall security posture.
 
-## Congratulations! You have successfully completed the Lab.
+## Congratulations! You have successfully completed Day 1 Labs.
