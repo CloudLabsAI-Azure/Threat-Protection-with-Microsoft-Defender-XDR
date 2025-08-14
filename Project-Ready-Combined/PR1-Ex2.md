@@ -15,6 +15,8 @@ In this exercise, you will investigate and remediate security incidents using Mi
 
 In this task, you’ll simulate a phishing incident, investigate the suspicious message using Threat Explorer, take remediation actions, submit the message to Microsoft for analysis, and review the automated investigation results.
 
+1. Open a new tab in the **Microsoft Edge** browser, go to https://outlook.office.com, and sign in with the lab user’s credentials.
+
 1. Send a test email to your lab user containing links such as:
 
    - https://youtube.com/  
@@ -22,7 +24,11 @@ In this task, you’ll simulate a phishing incident, investigate the suspicious 
 
       ![](./media/rd_day1_ex3_t2_1.png)
 
-2. On the Microsoft Defender portal (https://security.microsoft.com), go to **Email & collaboration (1)** → **Explorer (2)**. Select the phishing email entry **Test Phishing (4)**.
+1. In the mailbox, verify that the test email with the links has been received and open it to view the contents.
+
+   ![](./media/g_r_e2_2_1.png)
+
+1. On the Microsoft Defender portal (https://security.microsoft.com), go to **Email & collaboration (1)** → **Explorer (2)**. Select the phishing email entry **Test Phishing (4)**.
 
    ![](./media/rd_day1_ex3_t2_2.png)
 
@@ -40,12 +46,17 @@ In this task, you’ll simulate a phishing incident, investigate the suspicious 
    - **(4)** Select **Submit to Microsoft for review**  
    - **(5)** Choose **I've confirmed it’s a threat**  
    - **(6)** Select **Phish** as the category  
-   - **(7)** Enable **Initiate automated investigation**  
-   - Click **Next (8)**
+   - Click **Cancel** to skip creating a block rule.
+   - **(7)** Enable **Initiate automated investigation** and choose **investigate mail**  
+   - Select **Propose remediation (8)**.  
+   - Choose **Create new (9)** to create a new remediation for approval. 
+   - Click **Next (10)**
 
-   ![](./media/rd_day1_ex3_t2_4.png)
+      ![](./media/g_r_e2_2_2.png)
 
-5. On the **Choose target entities** page, enter a name such as `report-phish (1)` and review the impacted users. Click **Next (2)**.
+      ![](./media/g_r_e2_2_3.png)    
+
+5. On the **Choose target entities** page, enter a name such as `report-phish (1)` and review the impacted users. Click **Next (2)** and click on **Submit**.
 
    ![](./media/rd_day1_ex3_t2_5.png)
 
@@ -64,7 +75,7 @@ In this task, you’ll simulate a phishing incident, investigate the suspicious 
    - **(3)** Set **Classification** to `True positive – Phishing`  
    - Click **Save (4)**
 
-   ![](./media/rd_day1_ex3_t2_8.png)
+     ![](./media/rd_day1_ex3_t2_8.png)
 
 9. Go to **Email & collaboration (1)** → **Investigations (2)**. Click on the latest investigation entry related to your phishing test **(3)**.
 
@@ -77,7 +88,7 @@ In this task, you’ll simulate a phishing incident, investigate the suspicious 
     - **Mailbox involved**  
     - **Result**: No threats found
 
-    ![](./media/rd_day1_ex3_t2_10.png)
+      ![](./media/rd_day1_ex3_t2_10.png)
 
       >**Note:** It may take **10–15 minutes** for the automated investigation to complete and display results.
 
@@ -87,9 +98,13 @@ In this task, you’ll simulate a phishing incident, investigate the suspicious 
 
 In this task, you will create a custom Anti-Phishing policy and Safe Links policy to enhance protection against malicious emails and phishing links. You will also simulate a phishing email and verify alerts and detections.
 
-1. On the **Microsoft Defender portal**, go to **Email & collaboration (1)** > **Policies & rules (2)**. Under **Policies**, select **Anti-phishing (3)**.
+1. On the **Microsoft Defender portal**, go to **Email & collaboration (1)** → **Policies & rules (2)** → **Threat policies (3)**.
 
-   ![](./media/rd_day1_ex2_t2_1.png)
+   ![](./media/rd_day1_ex1_t1_6.png)
+
+1. On the **Threat policies** page, under **Policies**, select **Anti-phishing**.
+
+   ![](./media/g_r_e2_2_5.png)
 
 1. On the **Anti-phishing** page, click **Create (1)** to begin a new policy.
 
@@ -206,15 +221,7 @@ In this task, you will create a custom Anti-Phishing policy and Safe Links polic
     - **Delivery action:** Blocked  
     - **Detection technologies:** URL malicious reputation, Mixed analysis detection  
 
-    ![](./media/rd_day1_ex2_t2_20.png)
-
-1. Finally, go to **Investigation & response (1)** > **Incidents (2)**. Select the alert incident **Alert-Link (3)** and click on the incident name **(4)** to investigate further.
-
-    ![](./media/rd_day1_ex2_t2_21.png)
-
-   >  Dive deep into the incident: review alerts, evidence, entities involved, and the automated investigation trail.
-
-   >  You’ve now created an alert policy, triggered it with test emails, and followed the investigation trail using Defender XDR.
+      ![](./media/rd_day1_ex2_t2_20.png)
 
 ## Review
 
