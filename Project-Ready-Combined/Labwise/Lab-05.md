@@ -139,4 +139,4 @@ In this lab, you:
 - Set up an alert policy to detect malware in inbound email.
 - Simulated a phishing email and verified detections and alerts.
 
-## You have successfully completed the lab. Click on Next to Continue
+## Day 1 Completed Successfully
