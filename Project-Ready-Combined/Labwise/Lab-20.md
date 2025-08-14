@@ -4,7 +4,7 @@
 
 In this lab, you will simulate two attack techniques—**Persistence** via registry key modification and **Command and Control (C2)** via DNS queries—and then configure Microsoft Sentinel to detect the persistence activity. You will execute commands to create persistence in the Windows registry, run a DNS-based PowerShell script that mimics C2 traffic, and build an analytics rule to detect suspicious logon activity.
 
-⚠ **Important Usage Guidance:** Some analytics rules and log queries may take several minutes to populate results in Microsoft Sentinel after the activity is performed. This is expected. If the data does not appear immediately, continue with the next task and return later to review the generated alerts.
+> **⚠ Important Usage Guidance:** Microsoft Defender for Office 365 may take some time to load certain results or complete specific labs from the backend. This is expected behavior. If the data does not appear after a couple of refresh attempts, proceed with the next lab and return later to check the results.
 
 1. In the search of the taskbar, enter *Command*. A Command Prompt will be displayed in the search results. Right-click on the Command Prompt and select **Run as Administrator**. Select **Yes** in the User Account Control window that allows the app to run.
 
