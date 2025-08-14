@@ -1,4 +1,4 @@
-## Lab 7: Discover and Analyze Shadow IT Using Cloud Discovery
+# Lab 7: Discover and Analyze Shadow IT Using Cloud Discovery
 
 ## Overview
 
