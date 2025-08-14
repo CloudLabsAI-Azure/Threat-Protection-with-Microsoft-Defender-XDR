@@ -1,4 +1,4 @@
-# Exercise 4: Mitigate threats using Microsoft 365 Defender 
+# Exercise 9: Mitigate threats using Microsoft 365 Defender 
 
 ### Estimated timing: 60 minutes
 ## Overview
