@@ -6,28 +6,39 @@ In this lab, you will strengthen your organization's security posture by enablin
 
 > **⚠ Important Usage Guidance:** Microsoft Defender for Office 365 may take some time to load certain results or complete specific labs from the backend. This is expected behavior. If the data does not appear after a couple of refresh attempts, proceed with the next lab and return later to check the results.
 
-1. Go to the Azure Portal and search for **Microsoft Defender for Cloud (1)**, select it from the **results (2)**.
+1. Go to the [Azure Portal](https://portal.azure.com), and search for **Microsoft Defender for Cloud**.
 
-   ![rd_day1_ex1_t1_1](./media/rd_day1_ex1_t1_1.png)
+   ![](./media/gg-1-1.png)
 
 1. When prompted, click **Enable** to activate Defender CSPM.
+     
+   ![](./media/gg-1-2.png)
 
-   ![rd_day1_ex1_t1_2](./media/rd_day1_ex1_t1_2.png)
+   > **Note:** If you don’t see the pop-up prompt, simply continue and follow the lab guide steps as shown below.
 
-   > **Note:** If you don’t see the pop-up prompt, continue with the lab steps below.
+   >**Note:** This enables advanced posture capabilities like attack path analysis and permissions management.
 
-   > **Note:** Enabling Defender CSPM unlocks advanced posture management features such as attack path analysis and permission visibility.
+1. In the **Microsoft Defender for Cloud** page, under **Management**, select **Environment settings (1)**, expand **Azure** and **Tenant Root Group**, then select **Subscription (2)**.
 
-1. Go to **Environment settings (2)** under **Management (1)**, expand **Azure (3)** → **Tenant Root Group (4)**, and select your **subscription (5)**.
+   ![](./media/gg-1-3.png)
 
-   ![rd_day1_ex1_t1_4](./media/rd_day1_ex1_t1_4.png)
+1. On the **Settings & monitoring** page, turn **On (1)** the toggle for **Foundational CSPM** and **On (2)** for **Servers** under Cloud Workload Protection, then click **Save (3)**.
 
-1. Under **Defender plans (1)**, turn on the following options and click **Save (5)**:
-   - **Foundational CSPM (2)**
-   - **Defender CSPM (3)**
-   - **Servers under Cloud Workload Protection (4)**
+   ![](./media/t3_g_e2_16.png)
 
-        ![rd_day1_ex1_t1_5](./media/rd_day1_ex1_t1_5.png)
+1. Click **Environment settings** in the top to return to the environment settings page.
+
+   ![](./media/t3_g_e2_17.png)
+
+1. On the **Environment settings** page, expand **Azure (1)**, then expand **Subscription** and select **loganalycticworkspace (2)**.
+
+   ![](./media/t3_g_e2_18.png)
+
+1. On the **Select Defender plan** page, turn **On (1)** the toggles for **Foundational CSPM** and **Servers**, then click **Save (2)**.
+
+   ![](./media/t3_g_e2_19.png)
+
+1. Close the Defender plans page by selecting the 'X' in the upper right corner of the page to return to the **Environment settings**.
 
 1. On a new tab in the **Microsoft Edge** browser, go to [https://security.microsoft.com](https://security.microsoft.com).
 
