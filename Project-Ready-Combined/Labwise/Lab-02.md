@@ -1,8 +1,6 @@
 # Lab 2: Simulate Phishing and Malware Attacks Using Attack Simulator
 
-## Overview
-
-In this lab, you will use Microsoft Defender for Office 365’s Attack Simulation Training to simulate phishing and malware attacks. These simulations help assess user vulnerability to credential harvesting and malicious attachments. You will configure and launch both a phishing simulation and a malware attachment simulation, assign training to targeted users, and review simulation progress in the dashboard.
+In this lab, you will leverage Microsoft Defender for Office 365’s Attack Simulation Training to evaluate organizational resilience against phishing and malware threats. You will configure and launch two types of simulations: a credential harvesting phishing attack and a malware attachment attack. The lab guides you through targeting specific users, assigning security awareness training, and monitoring simulation outcomes using the dashboard. By completing these exercises, you will gain hands-on experience in threat simulation and user training workflows.
 
 > **⚠ Important Usage Guidance:** Microsoft Defender for Office 365 may take some time to load certain results or complete specific labs from the backend. This is expected behavior. If the data does not appear after a couple of refresh attempts, proceed with the next lab and return later to check the results.
 
@@ -45,8 +43,8 @@ In this lab, you will use Microsoft Defender for Office 365’s Attack Simulatio
     ![rd_day1_ex1_t2_10](./media/rd_day1_ex1_t2_10.png)
 
 1. In the **End user notification** section, select **Microsoft default notification (1)** and configure:
-    - Positive reinforcement: **Deliver during simulation (2**)
-    - Training reminder: **Weekly (3)**
+    - Positive reinforcement: **Deliver during simulation (2)** 
+    - Training reminder: **Weekly (3)** 
     Click **Next (4)**.
 
         ![rd_day1_ex1_t2_11](./media/rd_day1_ex1_t2_11.png)
@@ -135,9 +133,9 @@ In this lab, you will use Microsoft Defender for Office 365’s Attack Simulatio
 ## Review
 
 In this lab, you:
-- Launched a phishing simulation using credential harvesting.
-- Created a malware attachment simulation to test file-based threats.
-- Assigned targeted user training for simulated attacks.
-- Verified simulation progress and results in the dashboard.
+- Configured and launched a phishing simulation targeting credential harvesting.
+- Set up a malware attachment simulation to assess user response to file-based threats.
+- Assigned targeted security training to users involved in the simulations.
+- Monitored simulation status and user interactions in the Attack Simulation Training dashboard.
 
 ## You have successfully completed the lab. Click on Next to Continue

@@ -1,50 +1,28 @@
-# Lab 15: Simulate and Detect Lateral Movement Attacks `(Read-Only)`
+# Lab 14: Investigate Threats and User Timelines 
 
-## Overview
-
-In this lab, you will simulate a Lateral Movement attack using the Mimikatz tool and detect it through Microsoft Defender for Identity. This task is **Read-only**—running the attack will trigger Defender’s containment measures, logging you out of the virtual machine and preventing re-login for security reasons.
+In this lab, you will investigate a specific user’s activity by using the **Timeline** feature in Microsoft Defender. You will search for a user account, access their profile page, and review all recorded events and alerts to understand recent actions and potential threats.
 
 > **⚠ Important Usage Guidance:** Microsoft Defender for Office 365 may take some time to load certain results or complete specific labs from the backend. This is expected behavior. If the data does not appear after a couple of refresh attempts, proceed with the next lab and return later to check the results.
 
-> **Note:** This exercise is **Read-only** because the tool used below is blocked by Microsoft Defender. If this software is used for any malicious activity, Microsoft Defender will flag the user as a threat, resulting in an automatic logout from the virtual machine. The user will not be able to log in again.
+In this task you will analyze using user timelines and alert details in the Defender portal.
 
-1. Open **PowerShell (Admin)** and navigate to the below mentioned directory.
+1. In the Microsoft Defender portal, in the search bar, type `demouser` and select it.
 
-      ```powershell
-      cd C:\MimikatzLab\mimikatz-master\mimikatz-master\x64
-      ```
-1. In the same PowerShell session, run the below command to run the mimikatz application
+      ![](./media/E1T3S1.png)
 
-     ```powershell
-     mimikatz.exe 
-     ```
+1. Click on **Go to user page**
 
-1. Simulate a DC Sync attack and extract the credentials of the krbtgt account.
+      ![](./media/E1T3S2.png)
 
-      ```shell
-      lsadump::dcsync /domain:yourdomain.com /user:krbtgt
-      ```
+1. In the user profile, click the **Timeline** tab to view all events and alerts.
 
-1. Now you can check your alerts in the Microsoft Defender portal, navigate to **Incidents & alerts** in the left-hand navigation pane.
-
-      ![](./media/E1T3S3upd1.png)
-
-1. Click **Alerts** to view the alerts queue.
-
-1. You will find alerts with the below names
-     - **Lateral movement using remote logon by contained user blocked**
-     - **Lateral movement using RDP blocked**
-
-       ![](./media/E1T3S3upd.png)
-
-      > **Note:** The user will be logged out of the virtual machine as part of the containment measures initiated by the Defender in response to the user's attempted lateral movement attack.
+      ![](./media/E1T3S3.png)
 
 ## Review
 
 In this lab, you:
-- Launched the Mimikatz tool from PowerShell (Admin) to simulate a DC Sync attack.
-- Attempted to extract the credentials of the `krbtgt` account.
-- Observed automatic containment measures initiated by Microsoft Defender for Identity.
-- Verified alerts in the Microsoft Defender portal for blocked lateral movement attempts via remote logon and RDP.
+- Searched for a specific user (`demouser`) in the Microsoft Defender portal.
+- Accessed the user profile page to view detailed account information.
+- Reviewed the **Timeline** tab to analyze events and alerts related to the user.
 
 ## You have successfully completed the lab. Click on Next to Continue

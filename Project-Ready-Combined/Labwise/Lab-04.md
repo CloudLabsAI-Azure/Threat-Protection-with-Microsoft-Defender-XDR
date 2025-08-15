@@ -1,8 +1,6 @@
 # Lab 4: Investigate and Remediate Incidents in Microsoft Defender XDR
 
-## Overview
-
-In this lab, you will investigate and remediate a simulated phishing incident in Microsoft Defender XDR. You will analyze a suspicious email using Threat Explorer, take remediation actions such as moving the message to Junk and submitting it to Microsoft for review, and initiate an automated investigation. You will also review generated alerts, update their status and classification, and analyze the investigation graph to understand the scope and results of the incident.
+In this lab, you will simulate a phishing scenario and use Microsoft Defender XDR to investigate and remediate the incident. You will analyze a suspicious email with Threat Explorer, perform remediation actions such as moving the message to Junk and submitting it to Microsoft for review, and trigger an automated investigation. You will also review and manage related alerts, update their status and classification, and examine the investigation graph to understand the incident's scope and resolution.
 
 > **⚠ Important Usage Guidance:** Microsoft Defender for Office 365 may take some time to load certain results or complete specific labs from the backend. This is expected behavior. If the data does not appear after a couple of refresh attempts, proceed with the next lab and return later to check the results.
 
@@ -25,11 +23,11 @@ In this lab, you will investigate and remediate a simulated phishing incident in
 
    > **Note:** It may take 2–3 minutes for the email to appear in Explorer after delivery.
 
-3. Click the message to open its details. Then click **Take action**.
+1. Click the message to open its details. Then click **Take action**.
 
    ![](./media/rd_day1_ex3_t2_3.png)
 
-4. On the **Choose response actions** page:
+1. On the **Choose response actions** page:
 
    - **(1)** Toggle on **Show all response actions**  
    - **(2)** Select **Move or delete**  
@@ -47,19 +45,19 @@ In this lab, you will investigate and remediate a simulated phishing incident in
 
       ![](./media/g_r_e2_2_3.png)    
 
-5. On the **Choose target entities** page, enter a name such as `report-phish (1)` and review the impacted users. Click **Next (2)** and click on **Submit**.
+1. On the **Choose target entities** page, enter a name such as `report-phish (1)` and review the impacted users. Click **Next (2)** and click on **Submit**.
 
    ![](./media/rd_day1_ex3_t2_5.png)
 
-6. Navigate to **Incidents & alerts (1)** → **Alerts (2)**. Locate the alert titled **Administrative action submitted by an Administrator (3)**.
+1. Navigate to **Incidents & alerts (1)** → **Alerts (2)**. Locate the alert titled **Administrative action submitted by an Administrator (3)**.
 
    ![](./media/rd_day1_ex3_t2_6.png)
 
-7. Click the alert to open details. Then click **Manage alert**.
+1. Click the alert to open details. Then click **Manage alert**.
 
    ![](./media/rd_day1_ex3_t2_7.png)
 
-8. In the **Manage alert** panel:
+1. In the **Manage alert** panel:
 
    - **(1)** Set **Status** to `In progress`  
    - **(2)** Assign to your lab user  
@@ -68,11 +66,11 @@ In this lab, you will investigate and remediate a simulated phishing incident in
 
      ![](./media/rd_day1_ex3_t2_8.png)
 
-9. Go to **Email & collaboration (1)** → **Investigations (2)**. Click on the latest investigation entry related to your phishing test **(3)**.
+1. Go to **Email & collaboration (1)** → **Investigations (2)**. Click on the latest investigation entry related to your phishing test **(3)**.
 
    ![](./media/rd_day1_ex3_t2_9.png)
 
-10. Review the investigation graph which shows:
+1. Review the investigation graph which shows:
 
     - **Alert received**  
     - **Entities analyzed**  
@@ -81,14 +79,16 @@ In this lab, you will investigate and remediate a simulated phishing incident in
 
       ![](./media/rd_day1_ex3_t2_10.png)
 
-      >**Note:** It may take **10–15 minutes** for the automated investigation to complete and display results.
+      > **Note:** It may take **10–15 minutes** for the automated investigation to complete and display results.
 
-   ## Review
+## Review
 
 In this lab, you:
-- Investigated a simulated phishing email using Threat Explorer.
-- Applied remediation actions and submitted the message to Microsoft for review.
-- Initiated and monitored an automated investigation.
-- Reviewed related alerts, updated status, and classified incidents.
+- Simulated a phishing email and verified its delivery.
+- Investigated the email using Threat Explorer in Microsoft Defender XDR.
+- Executed remediation actions, including moving the message to Junk and submitting it for review.
+- Initiated and tracked an automated investigation.
+- Managed and classified related alerts, updating their status.
+- Analyzed the investigation graph to confirm the scope and resolution of the incident.
 
 ## You have successfully completed the lab. Click on Next to Continue

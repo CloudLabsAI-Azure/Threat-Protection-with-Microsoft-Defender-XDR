@@ -1,8 +1,6 @@
 # Lab 3: Analyze Threats with Threat Explorer and Real-Time Detections
 
-## Overview
-
-In this lab, you will use Microsoft Defender for Office 365’s Threat Explorer and real-time detections to analyze simulated phishing and malware activities. You will interact with phishing and malware simulation emails, report phishing attempts, and review simulation results. You will also investigate clicked URLs, review event details, and analyze user behavior to identify potential risks.
+In this lab, you will leverage Microsoft Defender for Office 365 to investigate simulated phishing and malware scenarios using Threat Explorer and real-time detection features. You will interact with simulation emails, report suspicious messages, and analyze security events. The lab guides you through reviewing phishing and malware simulation results, investigating user actions such as credential submission and URL clicks, and assessing user risk based on simulation outcomes.
 
 > **⚠ Important Usage Guidance:** Microsoft Defender for Office 365 may take some time to load certain results or complete specific labs from the backend. This is expected behavior. If the data does not appear after a couple of refresh attempts, proceed with the next lab and return later to check the results.
 
@@ -12,7 +10,7 @@ In this lab, you will use Microsoft Defender for Office 365’s Threat Explorer 
 
    > **Note:** If the **Your privacy matters** pop-up appears, click **Continue** to proceed.
 
-      ![](./media/combi_g_c_8.png)
+   ![](./media/combi_g_c_8.png)
 
 1. In the mailbox, select the **phishing simulation email (1)** and click the **link (2)** provided in the message body to proceed.
 
@@ -30,7 +28,7 @@ In this lab, you will use Microsoft Defender for Office 365’s Threat Explorer 
 
    ![](./media/combi_g_c_10.png)
 
-      > Note: This activity simulates a phishing attack and trigger credential submission logs.
+   > Note: This activity simulates a phishing attack and triggers credential submission logs.
 
 1. A training assignment email is also generated for users who fall for the phishing simulation. In the mailbox, open the **Training assignment notification** email and review the details.
 
@@ -59,12 +57,12 @@ In this lab, you will use Microsoft Defender for Office 365’s Threat Explorer 
    - In the **URL clicks** tab, select the entry for the clicked timestamp.
    - Review the **URL (4)** that was clicked to investigate further.
 
-      ![](./media/rd_day1_ex2_t1_10.png)
+   ![](./media/rd_day1_ex2_t1_10.png)
 
    > **Note:** Sometimes the Microsoft Defender portal can take 1–2 hours for initial backend data to load. If refreshing the page doesn’t display results, check back later.
 
-      ![](./media/combi_g_c_18.png)
-   
+   ![](./media/combi_g_c_18.png)
+
    > **Note:** If no data appears after waiting and refreshing, skip ahead to step 14 to continue with the lab.
 
 1. Click on the **Open url page** to open the full event details.
@@ -75,12 +73,12 @@ In this lab, you will use Microsoft Defender for Office 365’s Threat Explorer 
 
 1. In the **Microsoft Defender portal**, do the following:
 
-   - Select **Email & collaboration (1)** from the left navigation pane.  
-   - Click **Attack simulation training (2)**.  
-   - Navigate to the **Simulations (3)** tab.  
+   - Select **Email & collaboration (1)** from the left navigation pane.
+   - Click **Attack simulation training (2)**.
+   - Navigate to the **Simulations (3)** tab.
    - Locate and select the simulation named **Test1 (4)** from the list.
 
-      ![](./media/rd_day1_ex2_t1_12.png)
+   ![](./media/rd_day1_ex2_t1_12.png)
 
 1. View the simulation report to observe the results.  
    In this example, 100% of users were compromised and 0% reported the phishing attempt.
@@ -98,9 +96,9 @@ In this lab, you will use Microsoft Defender for Office 365’s Threat Explorer 
 ## Review
 
 In this lab, you:
-- Interacted with phishing and malware simulation emails.
-- Reported a phishing attempt and reviewed acknowledgment messages.
-- Investigated URL click events using Threat Explorer.
-- Viewed simulation reports to analyze user behavior and identify risks.
+- Explored phishing and malware simulation emails in a user mailbox.
+- Reported a phishing attempt and verified the acknowledgment response.
+- Used Threat Explorer to investigate URL click events and review related security details.
+- Examined simulation reports to assess user actions and identify potential risks.
 
 ## You have successfully completed the lab. Click on Next to Continue

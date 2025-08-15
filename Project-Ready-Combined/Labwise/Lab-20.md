@@ -1,199 +1,153 @@
-# Task 3: Persistence Attack with Registry Key Add 
+# Lab 20: Mitigate threats using Microsoft Defender 
 
-## Overview
-
-In this lab, you will simulate two attack techniques—**Persistence** via registry key modification and **Command and Control (C2)** via DNS queries—and then configure Microsoft Sentinel to detect the persistence activity. You will execute commands to create persistence in the Windows registry, run a DNS-based PowerShell script that mimics C2 traffic, and build an analytics rule to detect suspicious logon activity.
+You're a Security Operations Analyst working at a company that implemented Microsoft Defender XDR solutions. You need to see the alerts in an incident to see the incident's full impact do a root cause investigation and mitigate these alerts using M365 Defender tools.
 
 > **⚠ Important Usage Guidance:** Microsoft Defender for Office 365 may take some time to load certain results or complete specific labs from the backend. This is expected behavior. If the data does not appear after a couple of refresh attempts, proceed with the next lab and return later to check the results.
 
-1. In the search of the taskbar, enter *Command*. A Command Prompt will be displayed in the search results. Right-click on the Command Prompt and select **Run as Administrator**. Select **Yes** in the User Account Control window that allows the app to run.
+1. In the Search bar of the Azure portal, search and select **Microsoft Entra ID**.
 
-1. In the Command Prompt, create a Temp folder in the root directory. Remember to press Enter after the last row:
+1. Select **Groups** and then click on **New group**.
 
-    ```CommandPrompt
-    cd \
-    mkdir temp
-    cd temp
-    ```
-
-    >**Note**: If there is any error on temp directory already exists, please perform the next steps.  
-   
-1. Copy and run this command to simulate program persistence:
-
-    ```CommandPrompt
-    REG ADD "HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Run" /V "SOC Test" /t REG_SZ /F /D "C:\temp\startup.bat"
-    ```
-
-   > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-   - If you receive a success message, you can proceed to the next task.
-   - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-   - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
- 
-   <validation step="4308381b-c9df-4237-b612-a6aa4f974757" />
-
-
-### Task 4: Command and Control Attack with DNS
-
-1. Copy and run this command to create a script that will simulate a DNS query to a C2 server:
-
-      ```CommandPrompt
-      notepad c2.ps1
-      ```
-
-1. Select **Yes** to create a new file and copy the following PowerShell script into *c2.ps1*.
-
-      >**Note:** Pasting into the virtual machine file might not show the full script length. Make sure the script matches the instructions within the *c2.ps1* file.
-
-      ```PowerShell
-      param(
-        [string]$Domain = "microsoft.com",
-        [string]$Subdomain = "subdomain",
-        [string]$Sub2domain = "sub2domain",
-        [string]$Sub3domain = "sub3domain",
-        [string]$QueryType = "TXT",
-        [int]$C2Interval = 8,
-        [int]$C2Jitter = 20,
-        [int]$RunTime = 240
-    )
-    $RunStart = Get-Date
-    $RunEnd = $RunStart.addminutes($RunTime)
-    $x2 = 1
-    $x3 = 1 
-    Do {
-        $TimeNow = Get-Date
-        Resolve-DnsName -type $QueryType $Subdomain".$(Get-Random -Minimum 1 -Maximum 999999)."$Domain -QuickTimeout
-        if ($x2 -eq 3 )
-        {
-            Resolve-DnsName -type $QueryType $Sub2domain".$(Get-Random -Minimum 1 -Maximum 999999)."$Domain -QuickTimeout
-            $x2 = 1
-        }
-        else
-        {
-            $x2 = $x2 + 1
-        }    
-        if ($x3 -eq 7 )
-        {
-            Resolve-DnsName -type $QueryType $Sub3domain".$(Get-Random -Minimum 1 -Maximum 999999)."$Domain -QuickTimeout
-            $x3 = 1
-        }
-        else
-        {
-            $x3 = $x3 + 1
-        }
-        $Jitter = ((Get-Random -Minimum -$C2Jitter -Maximum $C2Jitter) / 100 + 1) +$C2Interval
-        Start-Sleep -Seconds $Jitter
-    }
-    Until ($TimeNow -ge $RunEnd)
-    ```
-
-1. In the Notepad menu, select **File** and then **Save**. 
-
-1. Go back to the Command Prompt window, enter the following command and press Enter.
-
-      ```CommandPrompt
-      Start PowerShell.exe -file c2.ps1
-      ```
-    
-      ![Lab overview.](./media/cmd.png)
-   
-      >**Note:** You will see DNS resolve errors. This is expected.
-
-      >**Important**: Do not close these windows. Let this PowerShell script run in the background. The command needs to generate log entries for some hours. You can proceed to the next task and next exercises while this script runs. The data created by this task will be used in the Threat Hunting lab later. This process will not create substantial amounts of data or processing.
-
-
-### Task 5: Persistence Attack Detection
-
-In this task, you will create a detection for the first attack of the previous exercise.
-1. In the Search bar of the Azure portal, type *Microsft Sentinel (1)*, then select **Microsoft Sentinel (2)**.
-
-   ![](./media/09.png)
-   
-1. Select the Microsoft Sentinel Workspace you created earlier.
-
-1. Select **Logs** from the *General* section.
-
-   ![](./media/cor_r_g_7.png)
-
-    >**Note:** You might see some popup after clicking on **Logs**. close all Popups by clicking on **X** Icon.
-
-1. In the query editor, enter the following KQL statement **(1)** and click **Run (2)** to retrieve the records that start with the specified EventId. Review the results in the table below **(3)**.
-
-    ```KQL
-    SecurityEvent 
-    | where Activity startswith "4624" 
-    ```
-   ![](./media/cor_r_g_8.png)
-
-    >**Note:** It may take **5 to 10 minutes** for the SecurityEvent data to become available after onboarding or activity generation. 
-
-    >**Note:** The number of output rows and values may differ depending on your environment and data availability.
-
-1. In the query editor, enter the following KQL statement **(1)** to project entities for investigation and click **Run (2)**. Review the results in the table below **(3)**.
-
-    ```KQL
-    SecurityEvent 
-    | where Activity startswith "4624" 
-    | extend timestamp = TimeGenerated, HostCustomEntity = Computer, AccountCustomEntity = SubjectUserName
-    ```
-
-   ![](./media/cor_r_g_9.png)
-
-1. In the **Logs** window, click the ellipsis **(1)** in the command bar, select **New alert rule (2)**, and then select **Create Microsoft Sentinel alert (3)**.
-   
-   ![](./media/cor_r_g_11.png)
-
-1. In the **Analytics rule wizard** on the **General** tab: 
- 
-    - Enter **Startup RegKey (1)** in the *Name* field.  
-    - Type **Startup RegKey in c:\temp (2)** in the *Description* field.  
-    - Select **High (3)** for *Severity*.  
-    - Choose **Persistence (4)** for *MITRE ATT&CK*.  
-    - Ensure *Status* is set to **Enabled (5)**.  
-    - Click **Next: Set rule logic > (6)**.  
-
-        ![](./media/cor_r_g_12.png)
-
-1. On the *Set rule logic* tab, the *Rule query* should be populated already with your KQL query, under **Alert enhancement** expand *Entity mapping* and select **+ Add New Entity**.
-
-    |Entity|Identifier|Data Field|
-    |:----|:----|:----|
-    |Account|FullName|AccountCustomEntity|
-    |Host|Hostname|HostCustomEntity|
-
-   ![](./media/cor_r_g_13.png)
-
-   ![](./media/cor_r_g_14.png)
-
-1. If **Hostname** isn't selected for *Host* Entity, select it from the drop-down list.
-
-1. For *Query scheduling* set the following:
+1. Enter the below details for the New group page:
 
     |Setting|Value|
     |---|---|
-    |Run Query every|5 minutes|
-    |Lookup data from the last|1 Days|
+    |Group Type| **Microsoft 365** |
+    |Group Name| **Sg-IT** |
+    |Microsoft Entra roles can be assigned to the group| **Yes** |
 
-   ![](./media/cor_r_g_15.png)
+1. Click on **No owners selected** and select the **<inject key="AzureAdUserEmail"></inject>** from the list and then click on **select**.
 
-    >**Note:** We are purposely generating many incidents for the same data. This enables the Lab to use these alerts.
+1. Click on **No members selected** and select the **<inject key="AzureAdUserEmail"></inject>** from the list and then click on **select**.
 
-1. Leave the rest of the options with the defaults. Select **Next: Incident settings>** button.
+   >**Note**: Make sure you have selected **Group type** as **Microsoft 365**.
 
-1. For the *Incident settings* tab, leave the default values and select **Next: Automated response >** button.
+    > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+    > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
+    > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+    > - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
+    <validation step="30cfb72e-0901-4620-b8fe-28639d0c2966" />
 
-1. On the *Automated response* tab, leave everything as default and select  **Next: Review + Create** button.
-  
-1. On the **Review and create** tab, select the **Save** button to create the new Scheduled Analytics rule.
+1. If you are not already at the Microsoft 365 Defender portal in your browser, go to (https://security.microsoft.com) and log in with the **Tenant Email** credentials.
 
-   ![](./media/cor_r_g_16.png)
+1. From the navigation menu, under Email & Collaboration area, select **Policies & rules** (1) and select **Threat policies** (2).
+
+      ![](./media/lab10-task3-threat-policies.png)
+
+1. On the Threat policies dashboard, select **Preset Security Policies**.
+
+    ![](./media/lab10-task3-preset-policies.png)
+
+1. Review the protection settings and ensure that both **Standard protection (1)** and **Strict protection (2)** are turned on.
+
+    ![](./media/cord1e1_3.png)
+
+1. In the **Microsoft Sentinel** workspace, under **Configuration (1)**, select **Analytics (2)** then click **Create (3)** and choose **NRT query rule (4)** from the dropdown menu.
+
+   ![](./media/ex4_g_tr_1.png)
+
+1. On the **General** tab, enter **Microsoft Defender for Cloud Alerts - Custom Severity Filter (1)** in the *Name* field.  
+   - In the *Description* field, type **Custom rule to detect Defender for Cloud alerts with chosen severity levels (2)**.
+   - In the *Severity* drop-down, select **High (3)**. 
+   - Under *MITRE ATT&CK*, choose the relevant **tactics, techniques, and sub-techniques (4)**.
+   - Ensure the *Status* toggle is set to **Enabled (5)**. 
+   - Click **Next: Set rule logic (6)** to continue.
+
+     ![](./media/ex4_g_tr_2.png)
+
+1. On the **Set rule logic** tab, in the *Rule query* field, enter the following query **(1)** and click **Next: Incident settings (2)** to proceed.
+
+    ```KQL 
+    SecurityAlert
+    | where ProductName in ("Microsoft Defender for Cloud", "Azure Security Center")
+    ```
+
+   ![](./media/ex4_g_tr_3.png)
+
+1. On the **Incident settings** page, keep everything to default and then click **Next: Automated response** to proceed.
+
+   ![](./media/ex4_g_tr_4.png)
+
+1. On the **Automated response** page, click **Next: Review + create ** to proceed.
+
+   ![](./media/ex4_g_tr_5.png)
+
+1. On the **Review + create** page, click **Save** to create the analytics rule.
+
+   ![](./media/ex4_g_tr_6.png)
+
+1. Onboard the **s2vm-<inject key="DeploymentID" enableCopy="false">** using device onboard using the microsoft defender endpoint onboarding portal.
+
+   >**Note:** You can refer the **Lab01 > Task 1** to onboard the device to Microsoft Defender.
+
+   >**Note:** Username is `demouser` and the password is the **Lab VM Admin Password**, which you can find in the **Environment** section of the lab guide.
+
+1. If you are not already at the Microsoft 365 Defender portal in your Microsoft Edge browser, go to (https://security.microsoft.com). 
+
+1. In the **Sign in** dialog box, copy and paste **Email/Username: <inject key="AzureAdUserEmail"></inject>** and then select Next.
+
+1. In the **Enter password** dialog box, copy and paste **Password: <inject key="AzureAdUserPassword"></inject>** and then select **Sign in**.
+
+1. On the **Alerts** page, under **Incidents & alerts (1)**, select **Alerts (2)** and check the box next to **[Test Alert] Suspicious Powershell commandline (3)**.
+
+   ![](./media/ex4_g_tr_8.png)
+
+   >**Note:** If you cannot see the **Alerts**, please wait, as updates may take 24-48 hours.
+
+1. On the **[Test Alert] Suspicious Powershell commandline** page, under the **Incident** section, click on **Execution incident on multiple endpoints**.
+
+   ![](./media/ex4_g_tr_19.png)
+
+1. On the **Execution incident on multiple endpoints** page, click on **Manage incident**.
+
+   ![](./media/ex4_g_tr_15.png)
+
+1. On the **Manage incident** pane, verify the **Incident name (1)** is set to *Execution incident on multiple endpoints*, ensure **Severity (2)** is set to *High*, assign it to your user account in **Assign to (3)**, confirm the **Status (4)** is set to *Active*, and then click **Save (5)**.
+
+   ![](./media/ex4_g_tr_16.png)
+
+   >**Note:** Here, you can edit the name of the incident, add tags, assign it to an existing group or a user, change the status, classify the incident as required, and even add comments.
+
+1. In the incident, the **Attack Story** tab provides a summary of the alerts and the incident graph on how these alerts are mapped.
+
+   ![](./media/ex4_g_tr_11.png)
+
+1. You can further investigate these alerts by navigating to the **Alerts** tab.
+
+   ![](./media/ex4_g_tr_12.png)
+
+1. You can also see the devices and users affected by this incident in the **Assets** tab. You can verify that the affected device is **s2vm-<inject key="DeploymentID" enableCopy="false" />** and the user is **demouser**.
+
+   ![](./media/ex4_g_tr_13.png)
+
+1. The **Evidence & Responses** tab shows the initial evidence investigated by Microsoft Defender which includes the processes, IP addresses.
+
+   ![](./media/ex4_g_tr_14.png)
+
+1. The **Summary** tab gives us a summarized report of the incident including active alerts & their category, incident information, scope, and much more.
+
+1. In the Microsoft Defender portal, navigate to the **Alerts** tab from the sidebar menu.
+
+1. On the **Alerts** page, under **Incidents & alerts (1)**, select **Alerts (2)** and check the box next to **[Test Alert] Suspicious Powershell commandline (3)**.
+
+   ![](./media/ex4_g_tr_8.png)
+
+1. Click on **Maximize** to view the full alert details.
+
+   ![](./media/ex4_g_tr_20.png)
+
+1. Click on the drop-down for the first suspicious behavior to fully investigate the root cause for this activity.
+
+   ![](./media/ex4_g_tr_21.png)
+
+1. Microsoft Defender also provides recommendations to mitigate the alerts. On the alert details page, click on the **Recommendations** tab to view all the recommendations.
+
+   ![](./media/ex4_g_tr_23.png)
 
 ## Review
-
-In this lab, you:
-- Created a persistence mechanism by adding a startup registry key.
-- Simulated a Command and Control (C2) attack using a DNS-based PowerShell script.
-- Queried Security Events in Microsoft Sentinel to identify logon activity.
-- Created and configured a scheduled analytics rule to detect persistence via registry modification.
-- Mapped entities for investigation and configured alert generation.
-
-## You have successfully completed the lab. Click on Next to Continue
+In this lab, you have completed the following tasks:
+- Created a Group
+- Applied Microsoft Defender for Office 365 preset security policies
+- Activated a Microsoft Security Rule
+- Managed Incidents
+- Manage Alerts
