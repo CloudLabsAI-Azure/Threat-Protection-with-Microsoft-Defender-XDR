@@ -1,3 +1,5 @@
+# **Day-03**
+
 # Lab 18: Conduct attacks, Create Detections, Investigate an Incident  
 
 In this lab, you will simulate two attack techniques—**Persistence** via registry key modification and **Command and Control (C2)** via DNS queries—and then configure Microsoft Sentinel to detect the persistence activity. You will execute commands to create persistence in the Windows registry, run a DNS-based PowerShell script that mimics C2 traffic, and build an analytics rule to detect suspicious logon activity.
