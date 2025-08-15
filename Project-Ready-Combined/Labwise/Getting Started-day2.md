@@ -1,4 +1,4 @@
-# Implement Threat Protection with Microsoft Defender XDR solutions - Day 2
+# Implement Threat Protection with Microsoft Defender XDR solutions - Day 02
 
 ## Overview
 
