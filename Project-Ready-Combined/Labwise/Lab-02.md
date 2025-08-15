@@ -123,12 +123,11 @@ In this lab, you will leverage Microsoft Defender for Office 365’s Attack Simu
 
 > **Note:** This simulation mimics a malicious file being sent via email, testing how users respond to attachment-based threats.
 
-> **Congratulations** on completing the lab! Now, it's time to validate it. Here are the steps:  
-> - Hit the Validate button for the corresponding lab. If you receive a success message, you can proceed to the next lab.  
-> - If not, carefully read the error message and retry the step, following the instructions in the lab guide.  
-> - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.  
-<validation step="064a226a-790e-4e5f-b789-d84483110e38" />
-
+> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+> - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
+> - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+> - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
+<validation step="3f938600-7932-4cf8-b5df-bf46aa2e4331" />
 
 ## Review
 
