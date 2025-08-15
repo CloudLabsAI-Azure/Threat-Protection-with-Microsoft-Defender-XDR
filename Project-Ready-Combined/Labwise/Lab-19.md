@@ -1,6 +1,6 @@
 # Lab 19: Threat Hunting using Notebooks with Microsoft Sentinel  
 
-In this lab, you will use Microsoft Sentinel to proactively hunt for suspicious PowerShell activity in your environment. You will create and run a KQL hunting query, bookmark notable results, configure entity mapping, and save the hunting query for future use. You will also set up real-time monitoring using Livestream, link bookmarked events to existing incidents for investigation, create an NRT (Near Real-Time) analytics rule to automate detection, and perform a search job in Microsoft Defender to further analyze related activity.
+In this lab, you will leverage Microsoft Sentinel to proactively hunt for suspicious PowerShell activity across your environment. You will build and execute KQL queries to identify potential threats, bookmark notable findings, and configure entity mapping for deeper investigation. The lab guides you through saving hunting queries for future use, setting up real-time monitoring with Livestream, associating bookmarks with incidents, automating detection using NRT analytics rules, and performing search jobs in Microsoft Defender to further analyze and restore relevant data.
 
 #### **Create a hunting query**
 
@@ -198,11 +198,11 @@ In this lab, you will use Microsoft Sentinel to proactively hunt for suspicious 
 ## Review
 
 In this lab, you:
-- Created and executed a KQL hunting query in Microsoft Sentinel to detect suspicious PowerShell activity.
-- Bookmarked significant results and mapped entities for enhanced investigation.
+- Built and ran a KQL hunting query in Microsoft Sentinel to detect suspicious PowerShell activity.
+- Bookmarked important results and mapped entities for investigation.
 - Saved the hunting query and enabled real-time monitoring with Livestream.
-- Linked bookmarked events to existing incidents for deeper analysis.
-- Built an NRT analytics rule to automate detection of PowerShell threats.
-- Performed a search job in Microsoft Defender to investigate related events and practiced restoring data for further review.
+- Linked bookmarks to existing incidents for further analysis.
+- Created an NRT analytics rule to automate PowerShell threat detection.
+- Used Microsoft Defender to perform search jobs and practiced restoring data for deeper review.
 
 ## You have successfully completed the lab. Click on Next to Continue

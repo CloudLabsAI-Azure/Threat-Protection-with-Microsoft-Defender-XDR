@@ -1,34 +1,44 @@
-# Hands-on Labs - Day 1
+# Hands-on Labs – Day 3
 
-# Build Agents with Copilot Studio
+# Attack Simulation, Threat Hunting, and Mitigation with Microsoft Defender XDR & Sentinel
 
 ### Estimated Duration: 4 Hours
 
 ## Overview
 
-In this lab, you'll explore how Microsoft 365 Copilot and Copilot Studio can be used to enhance employee experience through AI-driven creativity and automation. You will begin by experimenting with the Image Generator feature powered by Microsoft Designer to create visually engaging content from simple text prompts. The lab then guides you through leveraging Microsoft 365 Copilot to streamline employee transitions—identifying internal candidates, creating transition plans, and generating communication materials. Additionally, you'll use Copilot Studio to automate onboarding workflows, build training resources, and implement performance tracking. Finally, you'll explore the Awards and Recognition agent to create a structured process for acknowledging employee achievements, fostering a culture of engagement and growth within the organization.
+In this lab, you will simulate real-world attack techniques, detect and investigate incidents, hunt for threats, and mitigate risks using Microsoft Defender XDR and Microsoft Sentinel. You will begin by performing persistence and command-and-control (C2) attacks on a Windows system, generating registry-based persistence and DNS-based C2 traffic. You will then use Microsoft Sentinel to detect these attacks, configure analytics rules, and investigate incidents.
 
-## Objective
+Next, you will leverage Microsoft Sentinel's hunting capabilities to proactively search for suspicious PowerShell activity, bookmark findings, and automate detection with NRT analytics rules. You will also use Microsoft Defender to perform search jobs and restore relevant data for deeper analysis.
+
+Finally, you will mitigate threats by managing incidents and alerts in Microsoft Defender XDR, applying preset security policies, and investigating the full impact of incidents. By the end of these labs, you will have hands-on experience in simulating attacks, detecting and investigating threats, hunting for malicious activity, and mitigating risks in a Microsoft 365 environment.
+
+## Objectives
 
 By the end of this lab, you will be able to:
 
-- **Explore Copilot Studio Agent Builder**: Leverage AI-powered tools to effortlessly generate compelling visuals from natural language prompts using Microsoft 365 Copilot and Designer.
-- **Build HR Assistant Agent with Copilot Studio**: Leverage Microsoft 365 Copilot and Copilot Studio to streamline HR processes by quickly screening candidates, scheduling interviews, developing training materials, collecting feedback, and conducting performance reviews.
-- **Incorporate actions in HR Agent**: Create an agent in Copilot Studio to assist employees in submitting detailed and well-documented nomination forms through Microsoft 365 Copilot.
-- **Enabling Autonomous Capabilities in Microsoft Copilot Studio for HR Activities**: Use Microsoft Copilot Studio to generate nomination summaries and efficiently view both recognitions and submitted nominations.
+- **Simulate Persistence and C2 Attacks**: Create registry-based persistence and generate DNS-based command-and-control traffic.
+- **Detect and Investigate Incidents**: Use Microsoft Sentinel to query security events, configure analytics rules, and investigate incidents.
+- **Threat Hunting**: Build and execute KQL hunting queries, bookmark findings, and automate detection using NRT analytics rules.
+- **Search and Restore Data**: Use Microsoft Defender to perform search jobs and restore relevant data for investigation.
+- **Mitigate Threats**: Manage incidents and alerts, apply security policies, and investigate the root cause using Microsoft Defender XDR.
 
 ## Prerequisites
 
 Participants should have:
 
-- Basic understanding of Microsoft 365 ecosystem and its applications.
-- Familiarity with Microsoft 365 Copilot and its interface.
-- Experience with creating prompts for AI-generated content.
-- Knowledge of workflow automation using Copilot Studio or Power Platform tools.
-- Ability to navigate and manage employee-related processes like onboarding and performance tracking.
-- Understanding of HR practices such as internal mobility, recognition, and employee engagement.
+- Familiarity with Microsoft 365 security and compliance capabilities.
+- Understanding of Microsoft Defender XDR and Microsoft Sentinel.
+- Access to the lab-provided Microsoft 365 tenant and administrative permissions.
+- Basic knowledge of KQL, incident management, and security policy configuration.
+- Awareness of attack techniques, threat hunting, and incident response.
 
 ## Explanation of Components
 
-- **M365 Copilot**: M365 Copilot brings the power of AI to Word, Excel, PowerPoint, Outlook, and Teams to boost productivity and creativity.
-- **Copilot Studio**: Copilot Studio empowers you to build, customize, and manage your own AI copilots tailored to your business needs.
+- **Microsoft Defender XDR**: An integrated security suite for detecting, investigating, and responding to threats across endpoints, identities, email, and cloud apps.
+- **Microsoft Sentinel**: A cloud-native SIEM and SOAR solution for proactive threat detection, hunting, and automated response.
+- **Attack Simulation**: Hands-on steps to simulate persistence (registry modification) and command-and-control (DNS queries) attacks.
+- **Analytics Rules**: Custom rules in Sentinel to detect suspicious activity and generate incidents.
+- **Threat Hunting**: Building and running KQL queries to proactively search for threats and bookmark notable findings.
+- **Incident Investigation**: Reviewing incidents, mapping entities, and analyzing evidence in Defender and Sentinel.
+- **Mitigation**: Managing incidents and alerts, applying security recommendations, and restoring data for deeper analysis.
+
