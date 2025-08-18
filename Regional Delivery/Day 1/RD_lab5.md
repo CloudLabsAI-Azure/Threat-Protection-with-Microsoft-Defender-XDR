@@ -97,8 +97,6 @@
 In this lab, you have completed the following tasks:
 
 - Verified preset security policies and enabled DKIM and Priority Account protection.
-- Reviewed secure posture using Configuration Analyzer and Secure Score.
-- Simulated a phishing email and performed investigation and remediation using Defender XDR.
 
 ### You have successfully completed the lab. Click on **Next >>** to proceed with the next Lab.
 
