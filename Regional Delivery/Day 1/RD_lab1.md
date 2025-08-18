@@ -1,12 +1,8 @@
 ## Task 1: Configure Threat Policies in Microsoft Defender for Office 365
 
-### Estimated Duration: 60 Minutes
+### Estimated Duration: 30 Minutes
 
 ## Overview
-
-In this exercise, you will configure advanced threat protection policies and simulate real-world phishing and malware attacks using Microsoft Defender for Office 365. You’ll start by enabling Microsoft Defender CSPM and setting up both standard and strict preset security policies to protect your users. Then, using Attack Simulation Training, you'll launch credential harvest and malware attachment campaigns to evaluate user susceptibility and validate the effectiveness of your protection settings.
-
-## Objectives
 
 In this task, you will enable Microsoft Defender CSPM for your environment and configure both standard and strict protection policies using Microsoft Defender XDR.
 
@@ -93,8 +89,6 @@ In this lab, you have completed the following tasks:
 
 - Enabled Microsoft Defender CSPM to activate advanced posture management capabilities.
 - Configured both Standard and Strict preset security policies to protect users based on risk levels.
-- Launched phishing and malware simulations using Attack Simulation Training.
-- Evaluated user responses to simulated attacks and verified that protection policies were working as expected.
 
 ### You have successfully completed the lab. Click on **Next >>** to proceed with the next Lab.
 
