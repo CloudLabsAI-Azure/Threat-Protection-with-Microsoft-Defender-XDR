@@ -2,7 +2,7 @@
 
 In this task you will analyze using user timelines and alert details in the Defender portal.
 
-### Estimated Duration: 20 Minutes
+### Estimated Duration: 10 Minutes
 
 1. In the Microsoft Defender portal, in the search bar, type `demouser` and select it.
 
