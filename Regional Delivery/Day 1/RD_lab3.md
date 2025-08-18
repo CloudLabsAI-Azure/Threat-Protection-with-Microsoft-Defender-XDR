@@ -1,10 +1,8 @@
 ## Task 3: Analyze Threats with Threat Explorer and Real-Time Detections
 
-### Estimated Duration: 30 Minutes
-
-## Overview
-
 In this task, you'll create a custom role in Microsoft Defender to manage access and permissions, simulate a phishing interaction, and investigate user activity using Threat Explorer.
+
+### Estimated Duration: 30 Minutes
 
 1. On a new tab in the **Microsoft Edge browser** and go to the following URL in the address bar: https://security.microsoft.com.
 
