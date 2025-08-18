@@ -139,9 +139,6 @@ In this task, you will create a custom Anti-Phishing policy and Safe Links polic
 
 In this lab, you have completed the following tasks:
 
-- Created a custom role in Microsoft Defender to manage access and permissions.
-- Simulated a phishing interaction and investigated user activity using Threat Explorer.
-- Analyzed real-time detections and simulation reports to assess user risk.
 - Configured custom Anti-Phishing and Safe Links policies to enhance threat protection.
 - Created an alert policy and validated it by simulating a phishing and malware email.
 
