@@ -1,4 +1,4 @@
-## Task 1: Analyze Threats with Threat Explorer and Real-Time Detections
+## Task 3: Analyze Threats with Threat Explorer and Real-Time Detections
 
 ### Estimated Duration: 30 Minutes
 
