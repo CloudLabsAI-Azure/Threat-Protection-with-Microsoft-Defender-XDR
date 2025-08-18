@@ -1,10 +1,8 @@
 ## Task 4: Configure Anti-Phishing and Safe Links Policies
 
-### Estimated Duration: 30 Minutes
-
-## Overview
-
 In this task, you will create a custom Anti-Phishing policy and Safe Links policy to enhance protection against malicious emails and phishing links. You will also simulate a phishing email and verify alerts and detections.
+
+### Estimated Duration: 30 Minutes
 
 1. On the **Microsoft Defender portal**, go to **Email & collaboration (1)** > **Policies & rules (2)** and selct **Threat Policies**. Under **Policies**, select **Anti-phishing (3)**.
 
