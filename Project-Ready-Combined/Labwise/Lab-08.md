@@ -66,23 +66,7 @@ In this lab, you will connect and onboard a SaaS application—Microsoft 365—t
 
 1. Go back to the **Microsoft Defender portal** tab and select **Settings** from the left-sided menu and select **Cloud apps**.
 
-1. Navigate to the **Information Protection** section and select **Files**.
-
-1. Select the checkbox beside **Enable file monitoring**, then click on the **Save** button.
-  
-    ![Enable File Monitoring](./media/corg-1-21.png)
-
-    ![Save File Monitoring](./media/corg-1-22.png)
-
-1. Under the **Connected apps** section, click on **App Connectors**. On the **App connectors** page, select the checkbox beside **Microsoft 365**, then click on **+ Connect Microsoft Azure instance**.
-  
-    ![App Connectors](./media/corg-1-23.png)
-
-1. Click **Connect Microsoft 365** and complete the authentication.
-
-1. After successful connection, you will see the confirmation message: **“Great, Microsoft 365 is connected.”** Click **Done**.
- 
-    ![Connection Confirmation](./media/g-1-11.png)
+    ![Enable Policy](./media/g-1-7.png)
 
 1. On the **App Connectors** page, verify that Microsoft 365 and Microsoft Azure show **Connected** status.
   
