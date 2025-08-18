@@ -106,3 +106,14 @@ In this task, you'll simulate phishing and malware attacks using Microsoft Defen
 > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.  
 > - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.  
 <validation step="a3ccf157-db5b-463e-b7cc-1a3b175c2f84" />
+
+## Review
+
+In this lab, you have completed the following tasks:
+
+- Launched phishing and malware simulations using Attack Simulation Training.
+- Evaluated user responses to simulated attacks and verified that protection policies were working as expected.
+
+### You have successfully completed the lab. Click on **Next >>** to proceed with the next Lab.
+
+![](./media/rd_gs_1_9.png)
