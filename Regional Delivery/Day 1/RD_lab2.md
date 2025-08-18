@@ -1,5 +1,9 @@
 ## Task 2: Simulate Phishing and Malware Attacks Using Attack Simulator
 
+### Estimated Duration: 30 Minutes
+
+## Overview
+
 In this task, you'll simulate phishing and malware attacks using Microsoft Defender's built-in **Attack Simulation Training**. These simulations help you evaluate user vulnerability and response to social engineering techniques.
 
 1. In the **Microsoft Defender portal**, select **Email & collaboration (1)**, click **Attack simulation training (2)**, and then click **Launch your own simulation (3)**.
