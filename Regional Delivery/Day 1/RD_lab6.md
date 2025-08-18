@@ -69,3 +69,14 @@ In this task, you’ll simulate a phishing incident, investigate the suspicious 
     ![](./media/rd_day1_ex3_t2_10.png)
 
     > **Note:** It may take 10–15 minutes for the automated investigation to fully complete and show results.
+
+## Review
+
+In this lab, you have completed the following tasks:
+
+- Reviewed secure posture using Configuration Analyzer and Secure Score.
+- Simulated a phishing email and performed investigation and remediation using Defender XDR.
+
+### You have successfully completed the lab. Click on **Next >>** to proceed with the next Lab.
+
+![](./media/rd_gs_1_9.png)
