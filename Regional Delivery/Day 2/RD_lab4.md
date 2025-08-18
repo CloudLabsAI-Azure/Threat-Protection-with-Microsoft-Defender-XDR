@@ -1,6 +1,6 @@
 ## Task 4: Investigate Alerts and Create Custom Detection Policies
 
-### Estimated Duration: 15 Minutes
+### Estimated Duration: 25 Minutes
 
 1. In the Microsoft Defender Portal, go to **Cloud Apps** → **Activity log**.
 
