@@ -1,10 +1,8 @@
 ## Task 1: Configure Threat Policies in Microsoft Defender for Office 365
 
-### Estimated Duration: 30 Minutes
-
-## Overview
-
 In this task, you will enable Microsoft Defender CSPM for your environment and configure both standard and strict protection policies using Microsoft Defender XDR.
+
+### Estimated Duration: 30 Minutes
 
 1. Go to the Azure Portal and search for **Microsoft Defender for Cloud (1)**, select it from the **results (2)**.
 
