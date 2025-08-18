@@ -96,7 +96,7 @@ In this lab, you will connect and onboard a SaaS application—Microsoft 365—t
 
    ![New Policy for App](./media/22-g-5.png)
 
-> **Note:** After completing this configuration, go back and repeat steps **17–24** from Task 1 to ensure your Conditional Access App Control policy is correctly applied to **Microsoft Graph Command Line Tools** as well.
+> **Note:** After completing this configuration, go back and repeat steps **9–17** from Task 1 to ensure your Conditional Access App Control policy is correctly applied to **Microsoft Graph Command Line Tools** as well.
 
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
 > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
