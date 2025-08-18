@@ -1,5 +1,7 @@
 ## Task 8: Discover and Analyze Shadow IT Using Cloud Discovery
 
+### Estimated Duration: 30 Minutes
+
 1. Analyze the report for the following options:
 
     - **Check the Summary Metrics:** Look at the total number of apps, users, IP addresses, and traffic volume to understand the overall cloud usage.
