@@ -28,7 +28,7 @@ In this lab, you will simulate two common attack techniques: **Persistence** thr
 > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
 > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
 > - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
-<validation step="4308381b-c9df-4237-b612-a6aa4f974757" />
+<validation step="7a86bc7d-f385-4cc6-8d0d-b4e5f08bdf80" />
 
 #### **Command and Control Attack with DNS**
 
