@@ -1,4 +1,4 @@
-## Task 3: Integrate Defender for Identity with Microsoft 365 Defender Portal
+## Lab 08: Integrate Defender for Identity with Microsoft 365 Defender Portal
 
 In this task you will enable integration to view Defender for Identity incidents in the unified Microsoft 365 Defender portal and Microsoft Sentinel.
 

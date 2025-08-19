@@ -1,4 +1,4 @@
-## Task 4: Investigate Alerts and Create Custom Detection Policies
+# Lab 04: Investigate Alerts and Create Custom Detection Policies
 
 ### Estimated Duration: 25 Minutes
 

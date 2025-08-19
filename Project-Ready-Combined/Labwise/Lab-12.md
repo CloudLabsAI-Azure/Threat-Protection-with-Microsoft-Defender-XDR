@@ -8,6 +8,40 @@ In this lab, you will install and configure the Microsoft Defender for Identity 
 
 Install the AD DS role to enable the server to function as a domain controller.
 
+1. Go to the [Azure Portal](https://portal.azure.com), and search for **Microsoft Defender for Cloud**.
+
+   ![](./media/gg-1-1.png)
+
+1. When prompted, click **Enable** to activate Defender CSPM followed by **Accept**.
+
+   ![](./media/gg-1-2.png)
+
+   > **Note:** If you don’t see the pop-up prompt, simply continue and follow the lab guide steps as shown below.
+
+   >**Note:** This enables advanced posture capabilities like attack path analysis and permissions management.
+
+1. In the **Microsoft Defender for Cloud** page, under **Management**, select **Environment settings (1)**, scroll down, expand **Azure** and **Tenant Root Group**, then select **Subscription (2)**.
+
+   ![](./media/gg-1-3.png)
+
+1. On the **Settings & monitoring** page, turn **On (1)** the toggle for **Foundational CSPM** and **On (2)** for **Servers** under Cloud Workload Protection, then click **Save (3)**.
+
+   ![](./media/t3_g_e2_16.png)
+
+1. Click **Environment settings** in the top to return to the environment settings page.
+
+   ![](./media/t3_g_e2_17.png)
+
+1. On the **Environment settings** page, expand **Azure (1)**, then expand **Subscription** and select **loganalycticworkspace (2)**.
+
+   ![](./media/t3_g_e2_18.png)
+
+1. On the **Select Defender plan** page, turn **On (1)** the toggles for **Foundational CSPM** and **Servers**, then click **Save (2)**.
+
+   ![](./media/t3_g_e2_19.png)
+
+1. Close the Defender plans page by selecting the 'X' in the upper right corner of the page to return to the **Environment settings**.
+
 1. Open a browser and go to the Microsoft Defender portal: https://security.microsoft.com. Sign in using the lab credentials.
 
 1. If a pop-up introducing the improved security center appears after signing in, click the **X** in the top-right corner to skip the tour.
@@ -32,7 +66,7 @@ Install the AD DS role to enable the server to function as a domain controller.
    - In the **Deployment method** drop-down, choose **Local Script (for up to 10 devices) (4)**.  
    - Click **Download onboarding package (5)**.
 
-   ![](./media/t3_g_e1_2.png) 
+      ![](./media/t3_g_e1_2.png) 
 
 1. In the **Downloads** pop-up:  
    - Select the **GatewayWindowsDefenderATPOnboardingPackage.zip** file.  

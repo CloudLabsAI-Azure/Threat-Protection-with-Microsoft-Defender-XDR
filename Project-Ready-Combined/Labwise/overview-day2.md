@@ -12,15 +12,14 @@ Next, you will implement session policies to control risky behavior, such as blo
 
 ## Objectives
 
-By the end of this lab, you will be able to:
+In **Day 2**, you will be able to:
 
-- **Enable Cloud Discovery Integration**: Connect Microsoft Defender for Endpoint with Defender for Cloud Apps to collect app usage data.
-- **Analyze Shadow IT**: Review snapshot reports to identify high-risk, unsanctioned, and unapproved applications.
-- **Onboard SaaS Applications**: Connect Microsoft 365 to Defender for Cloud Apps and configure Conditional Access App Control policies.
-- **Enable File Monitoring**: Track and protect sensitive files in connected cloud applications.
-- **Configure Session Policies**: Block risky file downloads from specific cloud apps and enforce session control.
-- **Implement App Governance**: Enable governance logging, assess OAuth app permissions, and create detection policies for high-risk apps.
-- **Investigate Incidents**: Review triggered policies, violations, and incidents in Microsoft Defender for Cloud Apps.
+- **Lab 6:** Microsoft Defender for Cloud Apps-Configuring Cloud Discovery 
+- **Lab 7:** Discover and Analyze Shadow IT Using Cloud Discovery
+- **Lab 8:** Connect and Onboard a SaaS App to Microsoft Defender for Cloud Apps
+- **Lab 9:** Investigate and Remediate Incidents in Microsoft Defender XDR
+- **Lab 10:** Implement App Governance and Risk Detection for OAuth Apps
+- **Lab 11:** Investigate Alerts and Create Custom Detection Policies
 
 ## Prerequisites
 

@@ -1,4 +1,4 @@
-## Task 7: Investigate Threats and User Timelines 
+# Lab 07: Investigate Threats and User Timelines 
 
 In this task you will analyze using user timelines and alert details in the Defender portal.
 

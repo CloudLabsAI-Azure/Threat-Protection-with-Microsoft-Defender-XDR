@@ -1,6 +1,6 @@
 # Hands-on Labs – Day 1
 
-# Implement Threat Protection with Microsoft Defender XDR
+## Implement Threat Protection with Microsoft Defender XDR Solutions
 
 ### Estimated Duration: 4 Hours
 
@@ -12,14 +12,13 @@ Next, you will analyze threats using Threat Explorer and real-time detections, r
 
 ## Objectives
 
-By the end of this lab, you will be able to:
+In **Day 1**, you will be able to:
 
-- **Enable and Configure Microsoft Defender CSPM**: Activate CSPM features and Defender plans to enhance posture management and visibility.
-- **Apply Standard and Strict Preset Security Policies**: Protect specific recipients with multi-layered email security policies in Microsoft Defender for Office 365.
-- **Simulate Phishing and Malware Attacks**: Launch credential harvesting and malicious attachment simulations to evaluate user behavior.
-- **Analyze Threat Activity with Threat Explorer**: Investigate phishing simulation data, URL clicks, and malware activity in real-time.
-- **Investigate and Remediate Security Incidents**: Use Microsoft Defender XDR to investigate incidents, take remediation actions, and initiate automated investigations.
-- **Create Anti-Phishing and Safe Links Policies**: Configure targeted protection rules for phishing and malicious links, and create alert policies for detection events.
+- **Lab 1:** Configure Threat Policies in Microsoft Defender for Office 365
+- **Lab 2:** Simulate Phishing and Malware Attacks Using Attack Simulator
+- **Lab 3:** Analyze Threats with Threat Explorer and Real-Time Detections
+- **Lab 4:** Investigate and Remediate Incidents in Microsoft Defender XDR
+- **Lab 5:** Configure Anti-Phishing and Safe Links Policies
 
 ## Prerequisites
 

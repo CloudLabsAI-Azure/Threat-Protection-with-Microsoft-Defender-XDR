@@ -1,4 +1,4 @@
-## Task 2: Configure Session Policies to Monitor and Block Risky Behavior
+# Lab 02: Configure Session Policies to Monitor and Block Risky Behavior
 
 In this task, you will create a Microsoft Defender for Cloud Apps session policy to block downloads of risky files (e.g., `.exe`, `.apk`) from SharePoint Online for non-compliant devices.
 
