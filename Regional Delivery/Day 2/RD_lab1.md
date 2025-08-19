@@ -1,4 +1,4 @@
-# Day-01
+# Day-02
 
 # Lab 01: Connect and Onboard a SaaS App to Microsoft Defender for Cloud Apps
 
