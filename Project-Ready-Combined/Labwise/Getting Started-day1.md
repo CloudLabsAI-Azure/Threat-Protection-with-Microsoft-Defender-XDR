@@ -30,7 +30,7 @@ Welcome to your Securing Collaboration with Microsoft Defender Solutions worksho
  
 Once you're ready to dive in, your virtual machine and lab guide will be right at your fingertips within your web browser.
  
-![Access Your VM and Lab Guide](./media/gst1.png)
+![Access Your VM and Lab Guide](./media/cor_gs_r_1.png)
 
 ### Virtual Machine & Lab Guide
  
@@ -40,25 +40,25 @@ Your virtual machine is your workhorse throughout the workshop. The lab guide is
  
 To get a better understanding of your lab resources and credentials, navigate to the **Environment Details** tab.
  
-![Explore Lab Resources](./media/gst2.png)
+![Explore Lab Resources](./media/cor_gs_r_3.png)
  
 ## Utilizing the Split Window Feature
  
 For convenience, you can open the lab guide in a separate window by selecting the **Split Window** button from the Top right corner.
  
-![Use the Split Window Feature](./media/gst3.png)
+![Use the Split Window Feature](./media/cor_gs_r_6.png)
  
 ## Managing Your Virtual Machine
  
 Feel free to start, stop, or restart your virtual machine as needed from the **Resources** tab. Your experience is in your hands!
  
-![Manage Your Virtual Machine](./media/gst4.png)
+![Manage Your Virtual Machine](./media/cor_gs_r_4.png)
 
 ## Let's Get Started with Azure Portal
  
 1. On your virtual machine, click on the Azure Portal icon as shown below:
  
-    ![Launch Azure Portal](./media/gst5.png)
+    ![Launch Azure Portal](./media/cor_gs_r_2.png)
 
 2. You'll see the **Sign into Microsoft Azure** tab. Here, enter your credentials:
  
