@@ -24,9 +24,7 @@ In this lab, you will configure Microsoft Defender for Cloud Apps to enable Clou
 
      ![Enter Your Password](./media/corg-1-2.png)
 
-    > **Note:** In case you do not see **Defender for Endpoint**, then open a new tab in Edge browser and enter the following URL and wait for the configuration to be completed:
- 
-    > [https://security.microsoft.com/securitysettings/endpoints/integration?tid=](https://security.microsoft.com/securitysettings/endpoints/integration?tid=)
+    > **Note:** In case you do not see **Defender for Endpoint**, then open a new tab in Edge browser and enter the following URL and wait for the configuration to be completed: [https://security.microsoft.com/securitysettings/endpoints/integration?tid=](https://security.microsoft.com/securitysettings/endpoints/integration?tid=)
 
      ![Enter Your Password](./media/corg-1-3.png)
 
@@ -39,7 +37,6 @@ In this lab, you will configure Microsoft Defender for Cloud Apps to enable Clou
 1. Navigate back to **Settings** and choose **Cloud Apps**
 
    ![Enter Your Password](./media/tr5.png)
-
     > **Note:** It may take a few minutes for the **Cloud Apps** section to appear. If you don’t see it immediately, wait and refresh the page.
 
 
@@ -75,14 +72,14 @@ In this lab, you will configure Microsoft Defender for Cloud Apps to enable Clou
    
 1. You will be navigated to the **Snapshot Reports** page and notice that your report is being processed.
 
-1. Wait until the status turns to **Ready**. This can take upto 10 minutes.
+1. Wait until the status changes to **Ready**. This usually takes about 10 minutes but may take up to 24 hours.
 
    ![Enter Your Password](./media/tr16.png)
 
 1. Once it is ready, click on the Test Report and you will be able to see the detailed Dashboard in the Cloud Discovery.
 
    ![Enter Your Password](./media/tr17.png)
-
+   > **Note:** If the report does not load, proceed to Lab-08 and come back later to perform Lab-07.
 ## Review
 
 In this lab, you:

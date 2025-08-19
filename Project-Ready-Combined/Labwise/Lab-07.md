@@ -4,6 +4,8 @@ In this lab, you will analyze Cloud Discovery reports in Microsoft Defender for 
 
 > **⚠ Important Usage Guidance:** Microsoft Defender for Office 365 may take some time to load certain results or complete specific labs from the backend. This is expected behavior. If the data does not appear after a couple of refresh attempts, proceed with the next lab and return later to check the results.
 
+> **Note:** Proceed to Lab 8, if the Discovery is not complete
+
 1. Analyze the report for the following options:
 
     - **Check the Summary Metrics:** Look at the total number of apps, users, IP addresses, and traffic volume to understand the overall cloud usage.

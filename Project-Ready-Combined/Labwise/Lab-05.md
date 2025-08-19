@@ -54,22 +54,22 @@ In this lab, you will configure custom Anti-Phishing and Safe Links policies in 
 
    ![](./media/rd_day1_ex2_t2_8.png)
 
-1. Enter the policy name **Anti-Safe (1)** and click **Next (2)**.
+1. Click on **Create** and enter the policy name as **Anti-Safe (1)** and click **Next (2)**.
 
    ![](./media/rd_day1_ex2_t2_9.png)
 
-1. Under **Users and domains**, add the user **ODL_User (1)** and click **Next (2)**.
+1. Under **Users and domains**, add the user **<inject key="AzureAdUserEmail"></inject> (1)** and click **Next (2)**.
 
     ![](./media/rd_day1_ex2_t2_10.png)
 
-1. In **URL & click protection settings**, ensure all checkboxes are enabled, including:
+1. Click on **Next** in Notification section and click on **Submit** followed by **Done**.
+
+1. In **URL & click protection settings**, ensure all the below mentioned checkboxes are enabled, then click **Next**.
 
     - Email Safe Links
     - URL scanning
     - Teams and Office 365 apps protection
     - Click tracking  
-
-    Then click **Next**.
 
     ![](./media/rd_day1_ex2_t2_11.png)
 
@@ -81,13 +81,11 @@ In this lab, you will configure custom Anti-Phishing and Safe Links policies in 
 
     ![](./media/rd_day1_ex2_t2_13.png)
 
-1. Enter the following details:
+1. Enter the following details and click **Next (4)**:
     
     - **Name (1):** Alert-Safe  
     - **Severity (2):** High  
     - **Category (3):** Threat management  
-      
-      Click **Next (4)**.
 
       ![](./media/rd_day1_ex2_t2_14.png)
 
@@ -103,21 +101,29 @@ In this lab, you will configure custom Anti-Phishing and Safe Links policies in 
 
     ![](./media/rd_day1_ex2_t2_16.png)
 
-1. Review the alert settings, choose **Yes, turn it on right away (1)**, and click **Submit (2)**.
+1. Review the alert settings, choose **Yes, turn it on right away (1)**, and click **Submit (2)** and click on **Done** once the policy has been created.
 
     ![](./media/rd_day1_ex2_t2_17.png)
 
    > **Note:** Your alert policy is now active and will trigger if matching activity is detected.
 
-1. Send a test email with sample malicious links to simulate a threat:
-    
-    - **(1)** https://www.amtso.org/check-desktop-phishing-page/  
-    - **(2)** https://malware.wicar.org/data/eicar.com.txt  
-    - Click **Send (3)** to deliver the email.
+1. Navigate back to Outlook tab and send a new test email with sample malicious links to simulate a threat to **<inject key="AzureAdUserEmail"></inject>**
+
+   ```
+   https://www.amtso.org/check-desktop-phishing-page/ 
+   ```
+
+   ``` 
+   https://malware.wicar.org/data/eicar.com.txt  
+   ```   
+   
+   - Set the **Subject** to `Test-Safe`
+
+   -  Click **Send (3)** to deliver the email.
 
     ![](./media/rd_day1_ex2_t2_18.png)
 
-1. Navigate to **Email & collaboration (1)** > **Explorer (2)** and locate the test email **Test-safe (3)**.
+1. Navigate back to Defnder portal and select **Email & collaboration (1)** > **Explorer (2)** and locate the test email **Test-Safe (3)**.
 
     ![](./media/rd_day1_ex2_t2_19.png)
 
@@ -137,4 +143,4 @@ In this lab, you:
 - Set up an alert policy to detect malware in inbound email.
 - Simulated a phishing email and verified detections and alerts.
 
-## Day 1 Completed Successfully
+## You have successfully completed Day 1.

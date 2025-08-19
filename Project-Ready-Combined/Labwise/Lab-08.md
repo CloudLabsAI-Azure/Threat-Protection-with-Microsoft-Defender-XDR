@@ -4,43 +4,45 @@ In this lab, you will connect and onboard a SaaS application—Microsoft 365—t
 
 > **⚠ Important Usage Guidance:** Microsoft Defender for Office 365 may take some time to load certain results or complete specific labs from the backend. This is expected behavior. If the data does not appear after a couple of refresh attempts, proceed with the next lab and return later to check the results.
 
-1. Open the **Microsoft Edge** browser and go to the following URL in the address bar: 
+1. Navigate to Azure portal from the below link 
 
-   [https://portal.azure.com](https://portal.azure.com)
+    ```
+    https://portal.azure.com
+    ```
 
 1. In the search bar, type **Microsoft Entra ID** and select it.
 
    ![Microsoft Entra ID Search](./media/g-1-1.png)
 
-1. In the **Overview** pane, select **Users** under the **Manage** section.
+1. In the **Overview** pane, select **Users (1)** under the **Manage (2)** section.
   
    ![Users Overview](./media/g-1-2.png)
 
-1. From the list of users, click on your assigned user (`ODL_User******`).
+1. From the list of users, click on **<inject key="AzureAdUserEmail"></inject>**
   
    ![Select Assigned User](./media/g-1-3.png)
 
-1. In the user blade, click on **Licenses** and ensure **Microsoft 365 E5 (no Teams)** or an equivalent license is assigned and active.
+1. In the user blade, click on **Licenses** and ensure **Microsoft 365 E5 (no Teams)** license is assigned and active.
   
    ![Check License](./media/g-1-4.png)
-
+  
 1. Go back to the **Azure portal** tab. In the search bar at the top, enter **Windows Azure Active Directory**, and then select it from the search results.
   
     ![Windows Azure Active Directory Search](./media/g-4-1.png)
 
-1. On the **Windows Azure Active Directory** page, click on **Security**, then select **Conditional Access**, and on the Conditional Access page, click on **+ New policy**.
+1. On the **Windows Azure Active Directory** page, click on **Security (1)**, then select **Conditional Access (2)**, and on the Conditional Access page, click on **+ New policy (3)**.
   
     ![Conditional Access New Policy](./media/corg-1-14.png)
 
 1. Name the policy: `MCAS – M365 Session Control`.
 
-1. Under the **Assignments** section, click on **Users**, then select the **Select users and groups** radio button.
+1. Under the **Assignments** section, under **Users**, select the **Specific users included (1)** option.
 
-1. Check the box beside **Users and groups**, then click on **0 users and groups selected**.
+1. Select the **Select users and groups (3)** radio button and check the box beside **Users and groups (4)**, then click on **0 users and groups selected (5)**.
   
     ![Select Users and Groups](./media/corg-1-15.png)
 
-1. In the **Select users and groups** window, search for your lab user (`ODL_User`), check the box beside the user, and click **Select**.
+1. In the **Select users and groups** window, search for **<inject key="AzureAdUserEmail"></inject> (1)**, check the box (2)beside the user, and click **Select (3)**.
   
     ![Select Lab User](./media/corg-1-16.png)
 
@@ -48,33 +50,34 @@ In this lab, you will connect and onboard a SaaS application—Microsoft 365—t
   
     ![User Listed](./media/corg-1-17.png)
 
-1. Under **Assignments > Target resources**, click on the **0 resource included** link and ensure the radio button beside **Select resources** is selected.
+1. Under **Assignments > Target resources**, click on the **0 resource included (1)** link and ensure the radio button beside **Select resources (3)** is selected.
 
-1. Click on **Windows Azure Active Directory**, then in the **Select** pane, check the box for **Office 365**, and click **Select**.
+1. Click on **Windows Azure Active Directory (4)**, then in the **Select** pane, check the box for **Office 365 (5)**, and click **Select (6)**.
   
     ![Select Office 365 Resource](./media/corg-1-18.png)
 
-1. Under **Access controls > Session**, click on the **0 controls selected** link.
+1. Under **Access controls > Session**, click on the **0 controls selected (1)** link.
 
-1. In the Session pane, check the box for **Use Conditional Access App Control**, ensure **Use custom policy** is selected from the dropdown, then click **Select**.
+1. In the Session pane, check the box for **Use Conditional Access App Control (2)**, ensure **Use custom policy (3)** is selected from the dropdown, then click **Select (4)**.
   
     ![Conditional Access App Control](./media/corg-1-19.png)
 
-1. Scroll down, toggle **Enable policy** to **On**, and click **Create**.
+1. Scroll down, toggle **Enable policy** to **On (1)**, and click **Create (2)**.
   
     ![Enable Policy](./media/corg-1-20.png)
 
-1. Go back to the **Microsoft Defender portal** tab and select **Settings** from the left-sided menu and select **Cloud apps**.
+1. Go back to the **Microsoft Defender portal** tab and select **Settings (1)** from the left-sided menu and select **Cloud apps (2)**.
 
     ![Enable Policy](./media/g-1-7.png)
 
 1. On the **App Connectors** page, verify that Microsoft 365 and Microsoft Azure show **Connected** status.
   
     ![Connected Status](./media/g-1-12.png)
+    > **Note:** If you're unable to view **Connected** status for Microsoft Azure, then select **+ Connect an app** and connect to Microsoft Azure.
 
-1. Under **Connected apps**, select **Conditional Access App Control apps**.
+1. Under **Connected apps (1)**, select **Conditional Access App Control apps (2)**.
 
-1. Locate and click the ellipsis (**⋮**) next to **Microsoft SharePoint Online – General**, then choose **View settings in Microsoft Entra ID**.
+1. Locate and click the ellipsis (**⋮**) **3** next to **Microsoft SharePoint Online – General**, then choose **View settings in Microsoft Entra ID (4)**.
 
    ![Ellipsis for SharePoint Online](./media/22-g-2.png)
 
@@ -96,7 +99,7 @@ In this lab, you will connect and onboard a SaaS application—Microsoft 365—t
 
    ![New Policy for App](./media/22-g-5.png)
 
-> **Note:** After completing this configuration, go back and repeat steps **9–17** from Task 1 to ensure your Conditional Access App Control policy is correctly applied to **Microsoft Graph Command Line Tools** as well.
+1. Repeat steps **9–17** to ensure your Conditional Access App Control policy is correctly applied to **Microsoft Graph Command Line Tools**
 
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
 > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
