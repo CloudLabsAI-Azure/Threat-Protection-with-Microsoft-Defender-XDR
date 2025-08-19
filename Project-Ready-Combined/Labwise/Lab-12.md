@@ -227,7 +227,7 @@ Install the AD DS role to enable the server to function as a domain controller.
 > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
 > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
 > - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
-<validation step="a35ecb78-8ff8-4873-9f92-37f3811cdc3f" />
+<validation step="2937821b-3849-4374-b4aa-9a26fe39fa2e" />
 
 ## Review
 
