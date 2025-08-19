@@ -1,4 +1,4 @@
-# Hands-on Labs – Day 2
+# Hands-on Labs – Day 02
 
 # Manage SaaS Threats and Advanced Detection with Microsoft Defender for Cloud Apps
 
