@@ -79,13 +79,13 @@ Click the **A↕ icon (1)** next to the timer to adjust the zoom level for the e
  
    - **Email/Username:** <inject key="AzureAdUserEmail"></inject>
  
-     ![Enter Your Username](../media/gst6.png)
+     ![Enter Your Username](../media/rd_gs_1_6.png)
  
 3. Next, provide your password:
  
    - **Password:** <inject key="AzureAdUserPassword"></inject>
  
-     ![Enter Your Password](../media/gst7.png)
+     ![Enter Your Password](../media/rd_gs_1_7.png)
 
 1. If you see the pop-up Stay Signed in?, select No.
 
