@@ -1,4 +1,4 @@
-## Task 6: Investigate and Remediate Incidents in Microsoft Defender XDR
+# Lab 06: Investigate and Remediate Incidents in Microsoft Defender XDR
 
 In this task, you’ll simulate a phishing incident, investigate the suspicious message using Threat Explorer, take remediation actions, submit the message to Microsoft for analysis, and review the automated investigation results.
 
