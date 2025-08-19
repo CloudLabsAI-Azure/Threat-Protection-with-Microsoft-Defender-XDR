@@ -78,7 +78,7 @@ In this lab, you will integrate the **Windows Security Events** data connector w
 > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
 > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
 > - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
-<validation step="ea9784ef-a103-41e0-859f-f673a96cf886" />
+<validation step="4f8dc929-664c-4941-9c1a-30159d8ca39c" />
 
 ## Review
 
