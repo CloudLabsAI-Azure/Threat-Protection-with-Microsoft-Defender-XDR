@@ -14,7 +14,7 @@ Finally, you will mitigate threats by managing incidents and alerts in Microsoft
 
 ## Objectives
 
-In **Day 1**, you will be able to:
+In **Day 3**, you will be able to:
 
 - **Lab 1:** Configure Threat Policies in Microsoft Defender for Office 365
 - **Lab 2:** Simulate Phishing and Malware Attacks Using Attack Simulator
