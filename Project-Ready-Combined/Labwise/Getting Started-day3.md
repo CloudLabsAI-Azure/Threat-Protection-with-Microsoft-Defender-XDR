@@ -1,5 +1,7 @@
 # Implement Threat Protection with Microsoft Defender XDR solutions - Day 03
 
+### Overall Estimated Duration: 4 Hours
+
 ## Overview
 
 In this lab, you will strengthen organizational security by deploying Microsoft Defender for Identity sensors on domain controllers, simulating lateral movement attacks, and investigating identity-based threats through user timelines. You’ll integrate with Microsoft 365 Defender for centralized visibility, run advanced hunting queries to analyze identity signals, and explore Microsoft Sentinel for threat detection and incident investigation. The lab also includes threat hunting using notebooks and mitigating risks using Microsoft Defender for Cloud to maintain a proactive security posture.
