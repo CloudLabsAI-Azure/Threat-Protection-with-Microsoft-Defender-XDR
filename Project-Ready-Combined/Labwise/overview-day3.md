@@ -14,13 +14,13 @@ Finally, you will mitigate threats by managing incidents and alerts in Microsoft
 
 ## Objectives
 
-By the end of this lab, you will be able to:
+In **Day 1**, you will be able to:
 
-- **Simulate Persistence and C2 Attacks**: Create registry-based persistence and generate DNS-based command-and-control traffic.
-- **Detect and Investigate Incidents**: Use Microsoft Sentinel to query security events, configure analytics rules, and investigate incidents.
-- **Threat Hunting**: Build and execute KQL hunting queries, bookmark findings, and automate detection using NRT analytics rules.
-- **Search and Restore Data**: Use Microsoft Defender to perform search jobs and restore relevant data for investigation.
-- **Mitigate Threats**: Manage incidents and alerts, apply security policies, and investigate the root cause using Microsoft Defender XDR.
+- **Lab 1:** Configure Threat Policies in Microsoft Defender for Office 365
+- **Lab 2:** Simulate Phishing and Malware Attacks Using Attack Simulator
+- **Lab 3:** Analyze Threats with Threat Explorer and Real-Time Detections
+- **Lab 4:** Investigate and Remediate Incidents in Microsoft Defender XDR
+- **Lab 5:** Configure Anti-Phishing and Safe Links Policies
 
 ## Prerequisites
 
@@ -41,4 +41,3 @@ Participants should have:
 - **Threat Hunting**: Building and running KQL queries to proactively search for threats and bookmark notable findings.
 - **Incident Investigation**: Reviewing incidents, mapping entities, and analyzing evidence in Defender and Sentinel.
 - **Mitigation**: Managing incidents and alerts, applying security recommendations, and restoring data for deeper analysis.
-

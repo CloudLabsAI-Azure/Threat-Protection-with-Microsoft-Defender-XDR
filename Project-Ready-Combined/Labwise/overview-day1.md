@@ -1,6 +1,6 @@
 # Hands-on Labs – Day 1
 
-# Implement Threat Protection with Microsoft Defender XDR
+## Implement Threat Protection with Microsoft Defender XDR Solutions
 
 ### Estimated Duration: 4 Hours
 
