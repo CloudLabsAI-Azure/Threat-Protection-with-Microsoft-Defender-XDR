@@ -1,4 +1,4 @@
-## Task 3: Implement App Governance and Risk Detection for OAuth Apps (`Read-Only`)
+# Lab 03: Implement App Governance and Risk Detection for OAuth Apps (`Read-Only`)
 
 In this task, you will explore how to enable App Governance in Microsoft Defender XDR and configure a custom detection policy to flag high-risk OAuth apps based on their permissions and publisher status. This is a **read-only task** because, after turning on App Governance, it can take **4–5 hours** for connected OAuth apps to appear and be fully evaluated by the system.
 
