@@ -1,4 +1,4 @@
-## Task 7: Microsoft Defender for Cloud Apps-Configuring Cloud Discovery
+# Lab 07: Microsoft Defender for Cloud Apps-Configuring Cloud Discovery
 
 In this task, you will integrate Defender for Cloud Apps with Microsoft Defender for Endpoint, enable discovery of shadow IT, and analyze data using snapshot reports.
 
