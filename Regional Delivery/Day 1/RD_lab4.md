@@ -1,4 +1,4 @@
-## Task 4: Configure Anti-Phishing and Safe Links Policies
+# Lab 04: Configure Anti-Phishing and Safe Links Policies
 
 In this task, you will create a custom Anti-Phishing policy and Safe Links policy to enhance protection against malicious emails and phishing links. You will also simulate a phishing email and verify alerts and detections.
 
