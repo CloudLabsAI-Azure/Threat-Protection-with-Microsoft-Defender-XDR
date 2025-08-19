@@ -132,7 +132,7 @@ In this lab, you will connect and onboard a SaaS application—Microsoft 365—t
 > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
 > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
 > - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
-<validation step="9f057433-ff07-464c-8cdf-ff250fa5f83c" />
+<validation step="890a657f-5cb7-4058-8b54-ad4281993974" />
 
 ## Review
 
