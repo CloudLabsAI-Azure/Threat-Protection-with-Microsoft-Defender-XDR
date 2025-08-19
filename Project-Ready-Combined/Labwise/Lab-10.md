@@ -4,6 +4,8 @@ In this lab, you will implement App Governance in Microsoft Defender for Cloud A
 
 > **⚠ Important Usage Guidance:** Microsoft Defender for Office 365 may take some time to load certain results or complete specific labs from the backend. This is expected behavior. If the data does not appear after a couple of refresh attempts, proceed with the next lab and return later to check the results.
 
+1. On a new tab in the **Microsoft Edge** browser, go to [https://security.microsoft.com](https://security.microsoft.com).
+
 1. On the **Microsoft Defender portal**, in the left menu, go to **Cloud apps (1)** > **Governance log (2)** and select the **AuditLogApp (3)** from the listed apps.
 
    ![](./media/rdr_xdr_4.png)
@@ -13,6 +15,24 @@ In this lab, you will implement App Governance in Microsoft Defender for Cloud A
    ![](./media/rdr_xdr_5.png)
 
    > You've now reviewed an OAuth app's access level and identified potentially risky permissions that may require action.
+
+1. On the **Microsoft Defender portal**, go to **System (1)** > **Settings (2)** and click **Cloud Apps (3)**.
+
+   ![](./media/rdr_xdr_1.png)
+
+1. Under **App governance**, select **Service status (1)** and click **Turn on app governance (2)**.
+
+   ![](./media/rdr_xdr_2.png)
+
+   > App Governance is now activated. It will begin evaluating connected OAuth apps and generating insights into their behavior and risk posture.
+
+1. On the OAuth apps page, click **Go to app governance**.
+
+   ![](./media/rdr_xdr_3.png)
+
+   > You may be redirected to the new App Governance interface.
+
+   > **Note:** It may take 5 hours for the Microsoft Defender portal to enable OAuth apps in App Governance. Continue with the next step in the lab and check the status later. 
 
 3. Go to the **Policies (1)** tab > select **Microsoft 365 (2)**, then click **Create policy (3)**.
 
