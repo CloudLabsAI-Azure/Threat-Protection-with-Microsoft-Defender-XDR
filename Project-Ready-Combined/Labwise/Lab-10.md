@@ -26,11 +26,11 @@ In this lab, you will implement App Governance in Microsoft Defender for Cloud A
 
 1. On the **Microsoft Defender portal**, in the left menu, go to **Cloud apps (1)** > **App governance (2)** and select any app, such as **Microsoft Graph Comm... (3)**, from the listed apps.
 
-   ![](./media/cor-tg-1.png)
+   ![](./media/corr_t_f_1.png)
 
 1. In the AuditLogApp details pane, select the **Permissions (1)** tab and review the permissions classified as **High privilege (2)**.
 
-   ![](./media/cor-tg-2.png)
+   ![](./media/corr_t_f_2.png)
 
    > You've now reviewed an OAuth app's access level and identified potentially risky permissions that may require action.
 
