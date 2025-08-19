@@ -1,4 +1,6 @@
-## Task 1: Connect and Onboard a SaaS App to Microsoft Defender for Cloud Apps
+# Day-01
+
+# Lab 01: Connect and Onboard a SaaS App to Microsoft Defender for Cloud Apps
 
 In this task, you'll verify license assignment, enable auditing, configure Conditional Access policies, and onboard Microsoft 365 to Defender for Cloud Apps.
 
