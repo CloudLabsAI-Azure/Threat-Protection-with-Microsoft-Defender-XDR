@@ -1,4 +1,4 @@
-## Task 2: Simulate Phishing and Malware Attacks Using Attack Simulator
+# Lab 02: Simulate Phishing and Malware Attacks Using Attack Simulator
 
 In this task, you'll simulate phishing and malware attacks using Microsoft Defender's built-in **Attack Simulation Training**. These simulations help you evaluate user vulnerability and response to social engineering techniques.
 
