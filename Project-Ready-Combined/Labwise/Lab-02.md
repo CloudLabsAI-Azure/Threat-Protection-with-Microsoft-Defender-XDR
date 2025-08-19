@@ -129,7 +129,7 @@ In this lab, you will leverage Microsoft Defender for Office 365’s Attack Simu
 > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
 > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
 > - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
-<validation step="3f938600-7932-4cf8-b5df-bf46aa2e4331" />
+<validation step="ee7ace77-b2c8-4c3f-90dc-d40ebe835cdd" />
 
 ## Review
 
