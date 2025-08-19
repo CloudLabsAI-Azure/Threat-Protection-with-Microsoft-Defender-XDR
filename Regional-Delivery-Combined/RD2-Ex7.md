@@ -111,23 +111,19 @@ In this task you will enable integration to view Defender for Identity incidents
 
       ![](./media/zg_ex4_1_4.png)
 
-1. Navigate to `portal.azure.com` and navigate to **Microsoft Sentinel** and select `loganalyticworkspace`.
+1. Navigate to `https://security.microsoft.com`. In the **Microsoft Defender** portal, expand **Content management (1)** under the **Microsoft Sentinel** section, and then click **Content hub (2)**.
 
-      ![](./media/E1T4S1.png)
+      ![](./media/cor_gg_t_2.png)
 
-      > **Note:** If you receive a popup saying *"Microsoft Sentinel free trial activated"*, click **OK** to continue.
+1. On the **Content hub** page, search for **Defender for XDR (1)**, select **Microsoft Defender XDR (2)** from the results, and then click **Install (3)** to add the solution. 
 
-1. In the left-hand pane, click **Content hub**. 
+      ![](./media/cor_gg_t_3.png)
 
-      ![](./media/Lab02-task1-contenthub1.png)
+      ![](./media/cor_gg_t_4.png)
 
-1. Search for **Defender for XDR** and select it and click on **Install** and wait for the installation to be complete
+1. In the **Microsoft Sentinel** section, expand **Configuration (1)**, select **Automation (2)**, and then click **Configure permissions (3)**. 
 
-      ![](./media/E1T4S3.png)
-
-1. In the **Microsoft Sentinel** portal, expand **Configuration (1)** in the left-hand menu and click **Automation (2)**. On the **Automation** page, scroll down and click **Configure permissions (3)** under the *Give Sentinel permissions to run playbooks* section.
-
-      ![](./media/zg_ex4_1_1.png)
+      ![](./media/cor_gg_t_1.png)
 
 1. On the **Manage permissions** pane, select all resource groups including **threadprotection-rg** **1** by checking the boxes on the left. Then click **Apply 2** to grant Microsoft Sentinel permission to run playbooks in those resource groups.
 

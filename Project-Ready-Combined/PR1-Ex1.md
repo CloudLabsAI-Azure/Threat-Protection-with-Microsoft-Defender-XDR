@@ -66,6 +66,42 @@ In this task, you will enable Microsoft Defender CSPM for your environment and c
 
    > **Note:** It may take 3–4 hours for the Microsoft Defender portal to enable OAuth apps in App Governance.
 
+1. In the **Microsoft Defender** portal, select **Settings (1)** from the left navigation pane, and then click **Cloud Apps (2)** from the list on the **Settings** page.  
+
+   ![rd_day1_ex1_t1_6](./media/g-1-7.png)
+
+1. On the **Cloud apps** settings page, expand **Information Protection (1)**, select **Files (2)**, check **Enable file monitoring (3)**, and then click **Save (4)**.
+
+   ![rd_day1_ex1_t1_6](./media/g-1-8.png)
+
+1. On the **Cloud apps** settings page, expand **Connected apps (1)**, select **App Connectors (2)**, click **Connect an app (3)**, and then choose **Microsoft 365** from the list.  
+
+   ![rd_day1_ex1_t1_6](./media/g-1-9.png)
+
+1. On the **Select Microsoft 365 components** page, ensure all components are checked, and then click **Connect Microsoft 365**.  
+
+   ![rd_day1_ex1_t1_6](./media/g-1-10.png)
+
+1. On the confirmation page, once the connection is established, click **Done** to complete the Microsoft 365 connector setup. 
+
+   ![rd_day1_ex1_t1_6](./media/g-1-11.png)
+
+1. Under the **Connected apps** section, click on **App Connectors**. On the **App connectors** page, select the checkbox beside **Microsoft 365**, then click on **+ Connect Microsoft Azure instance**.
+  
+    ![](./media/corg-1-23.png)
+
+1. Click **Connect Microsoft 365** and complete the authentication.
+
+1. After successful connection, you will see the confirmation message: **“Great, Microsoft 365 is connected.”**, Click **Done**
+ 
+    ![](./media/g-1-11.png)
+
+1. On the **App Connectors** page, verify that Microsoft 365 and Microsoft Azure shows **Connected** status.
+  
+    ![](./media/g-1-12.png)
+
+   > **Note:** It may take **2–4 hours** for the SaaS app to fully connect and display data. Kindly proceed with the next step in the lab and return later to verify the connection status.
+
 1. In the left pane, go to **Email & collaboration (1)** → **Policies & rules (2)** → **Threat policies (3)**.
 
    ![rd_day1_ex1_t1_6](./media/rd_day1_ex1_t1_6.png)
