@@ -24,7 +24,7 @@ In this task, you will simulate a Lateral Movement attack and detect it using Mi
 
 1. Now you can check your alerts in the Microsoft Defender portal, navigate to **Incidents & alerts** in the left-hand navigation pane.
 
-   ![](./media/E1T3S3upd1.png)
+   ![](../media/E1T3S3upd1.png)
 
 1. Click **Alerts** to view the alerts queue.
 
@@ -33,7 +33,7 @@ In this task, you will simulate a Lateral Movement attack and detect it using Mi
    - **Lateral movement using remote logon by contained user blocked**
    - **Lateral movement using RDP blocked**
 
-       ![](./media/E1T3S3upd.png)
+       ![](../media/E1T3S3upd.png)
 
        > **Note:** The user will be logged out of the virtual machine as part of the containment measures initiated by the Defender in response to the user's attempted lateral movement attack.
 
@@ -45,4 +45,4 @@ In this lab, you have completed the following tasks:
 
 ### You have successfully completed the lab. Click on **Next >>** to proceed with the next Lab.
 
-![](./media/rd_gs_1_9.png)
+![](../media/rd_gs_1_9.png)
