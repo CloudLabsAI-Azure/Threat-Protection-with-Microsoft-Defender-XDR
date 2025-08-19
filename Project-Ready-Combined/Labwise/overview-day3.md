@@ -1,6 +1,6 @@
 # Hands-on Labs – Day 3
 
-# Attack Simulation, Threat Hunting, and Mitigation with Microsoft Defender XDR & Sentinel
+## Attack Simulation, Threat Hunting, and Mitigation with Microsoft Defender XDR & Sentinel
 
 ### Estimated Duration: 4 Hours
 
@@ -16,11 +16,18 @@ Finally, you will mitigate threats by managing incidents and alerts in Microsoft
 
 In **Day 3**, you will be able to:
 
-- **Lab 1:** Configure Threat Policies in Microsoft Defender for Office 365
-- **Lab 2:** Simulate Phishing and Malware Attacks Using Attack Simulator
-- **Lab 3:** Analyze Threats with Threat Explorer and Real-Time Detections
-- **Lab 4:** Investigate and Remediate Incidents in Microsoft Defender XDR
-- **Lab 5:** Configure Anti-Phishing and Safe Links Policies
+- **Lab 12:** Deploy Microsoft Defender for Identity Sensor on Domain Controllers
+- **Lab 13:** Simulate and Detect Lateral Movement Attacks
+- **Lab 14:** Investigate Threats and User Timelines 
+- **Lab 15:** Integrate Defender for Identity with Microsoft 365 Defender Portal
+- **Lab 16:** Review and Run Advanced Hunting Queries for Identity Signals
+- **Lab 17:** Review and explore Sentinel workspace 
+- **Lab 18:** Lab 18: Conduct attacks, Create Detections, Investigate an Incident
+- **Lab 19:** Threat Hunting using Notebooks with Microsoft Sentinel
+- **Lab 20:** Mitigate threats using Microsoft Defender
+- **Lab 21:** Command and Control Attack with DNS
+- **Lab 22:** Persistence Attack Detection
+- **Lab 23:** Investigate an incident
 
 ## Prerequisites
 
