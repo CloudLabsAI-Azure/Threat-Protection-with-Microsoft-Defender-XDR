@@ -41,7 +41,7 @@ In this lab, you will investigate alerts in Microsoft Defender for Cloud Apps, t
    - **Files and folders:** `msedge.exe`
    - **App:** `Microsoft SharePoint Online`
 
-   ![](./media/p-1-2.png)
+      ![](./media/p-1-2.png)
 
 1. Click **Edit and preview results**, review matches, then click **Save filters**.
 
@@ -84,7 +84,7 @@ In this lab, you will investigate alerts in Microsoft Defender for Cloud Apps, t
    - Device info
    - Triggered policy
 
-   ![](./media/grpg-1-5.png)
+      ![](./media/grpg-1-5.png)
 
 ## Review
 
