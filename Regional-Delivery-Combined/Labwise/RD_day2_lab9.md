@@ -4,7 +4,7 @@
 
 In this task, you'll verify license assignment, enable auditing, configure Conditional Access policies, and onboard Microsoft 365 to Defender for Cloud Apps.
 
-1. In the Edge browser, log-in to Microsoft Defender portal using the following link: https://security.microsoft.com/ with the below username and password if prompted to sign in.
+1. In the Edge browser, log-in to Microsoft Defender portal using the following link: https://portal.azure.com/ with the below username and password if prompted to sign in.
 
     - **Email/Username:** <inject key="AzureAdUserEmail"></inject>
  
@@ -117,3 +117,14 @@ In this task, you'll verify license assignment, enable auditing, configure Condi
 > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
 > - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
 <validation step="d841263c-65e4-4a6c-ab16-b57b20463af8" />
+
+## Review
+
+In this lab, you have completed the following tasks:
+
+- Connected and onboarded a third-party SaaS application to Microsoft Defender for Cloud Apps.
+- Verified successful connection through the connected apps dashboard.
+
+### You have successfully completed the lab. Click on **Next >>** to proceed with the next Lab.
+
+![](../media/rd_gs_1_9.png)
