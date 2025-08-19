@@ -4,8 +4,6 @@ In this lab, you will leverage Microsoft Defender for Office 365 to investigate 
 
 > **⚠ Important Usage Guidance:** Microsoft Defender for Office 365 may take some time to load certain results or complete specific labs from the backend. This is expected behavior. If the data does not appear after a couple of refresh attempts, proceed with the next lab and return later to check the results.
 
-1. On a new tab in the **Microsoft Edge browser** and go to the following URL in the address bar: https://security.microsoft.com.
-
 1. Open a new tab, navigate to https://outlook.office.com, sign in with the lab user’s credentials, and access the mailbox.
 
    > **Note:** If the **Your privacy matters** pop-up appears, click **Continue** to proceed.
@@ -50,7 +48,7 @@ In this lab, you will leverage Microsoft Defender for Office 365 to investigate 
 
    ![](./media/combi_g_c_17.png)
 
-1. In the **Microsoft Defender portal**, do the following:
+1. Navigate back to **Microsoft Defender portal** and perform the following steps:
 
    - Select **Email & collaboration (1)** from the left navigation pane.
    - Click **Explorer (2)** under the Email section.

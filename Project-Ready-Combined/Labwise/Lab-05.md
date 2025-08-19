@@ -20,7 +20,7 @@ In this lab, you will configure custom Anti-Phishing and Safe Links policies in 
 
    ![](./media/rd_day1_ex2_t2_3.png)
 
-1. Under **Users, groups, and domains**, add the user **ODL User (1)** and click **Next (2)**.
+1. Under **Users, groups, and domains**, add the user **<inject key="AzureAdUserEmail"></inject> (1)** and click **Next (2)**.
 
    ![](./media/rd_day1_ex2_t2_4.png)
 
@@ -37,16 +37,16 @@ In this lab, you will configure custom Anti-Phishing and Safe Links policies in 
      
       ![](./media/rd_day1_ex2_t2_6.png)
 
-1. Under **Message actions**, configure the following and click **Next (5)**.
+1. Under **Message actions**, configure the following and click **Next (5)** followed by **Submit**.
 
    - If Mailbox Intelligence detects an impersonated user:  
      **Move the message to the recipients’ Junk Email folders (1)**
    - For spoof messages with DMARC policy = quarantine:  
-     **Move to Junk Email (2)**
+     **Move the message to the recipients’ Junk Email folders (2)**
    - For spoof messages with DMARC policy = reject:  
      **Quarantine the message (3)**
    - For spoof detection by spoof intelligence:  
-     **Move to Junk Email (4)**  
+     **Move the message to the recipients’ Junk Email folders (4)**  
 
       ![](./media/rd_day1_ex2_t2_7.png)
 

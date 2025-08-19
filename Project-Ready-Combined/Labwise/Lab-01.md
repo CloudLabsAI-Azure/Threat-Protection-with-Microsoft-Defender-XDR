@@ -10,15 +10,15 @@ In this lab, you will strengthen your organization's security posture by enablin
 
    ![](./media/gg-1-1.png)
 
-1. When prompted, click **Enable** to activate Defender CSPM.
-     
+1. When prompted, click **Enable** to activate Defender CSPM followed by **Accept**.
+
    ![](./media/gg-1-2.png)
 
    > **Note:** If you don’t see the pop-up prompt, simply continue and follow the lab guide steps as shown below.
 
    >**Note:** This enables advanced posture capabilities like attack path analysis and permissions management.
 
-1. In the **Microsoft Defender for Cloud** page, under **Management**, select **Environment settings (1)**, expand **Azure** and **Tenant Root Group**, then select **Subscription (2)**.
+1. In the **Microsoft Defender for Cloud** page, under **Management**, select **Environment settings (1)**, scroll down, expand **Azure** and **Tenant Root Group**, then select **Subscription (2)**.
 
    ![](./media/gg-1-3.png)
 
@@ -58,7 +58,7 @@ In this lab, you will strengthen your organization's security posture by enablin
 
    > You may be redirected to the new App Governance interface.
 
-   > **Note:** It may take 3–4 hours for the Microsoft Defender portal to enable OAuth apps in App Governance.
+   > **Note:** It may take 10 hours for the Microsoft Defender portal to enable OAuth apps in App Governance.
 
 1. In the left pane, go to **Email & collaboration (1)** → **Policies & rules (2)** → **Threat policies (3)**.
 
@@ -74,11 +74,11 @@ In this lab, you will strengthen your organization's security posture by enablin
 
    ![rd_day1_ex1_t1_10](./media/cord1e1_1.png)
 
-1. On the **Apply Exchange Online Protection** screen, select **Specific recipients (1)**, enter the user email in the **Users** field (2), and click **Next (3)**.
+1. On the **Apply Exchange Online Protection** screen, select **Specific recipients (1)**, enter and select **<inject key="AzureAdUserEmail"></inject>** in the **Users** field (2), and click **Next (3)**.
 
    ![rd_day1_ex1_t1_7](./media/rd_day1_ex1_t1_7.png)
 
-1. On the **Apply Defender for Office 365 protection** screen, select **Specific recipients (1)**, enter the user email in the **Users (2)** field, and click **Next (3)**.
+1. On the **Apply Defender for Office 365 protection** screen, select **Specific recipients (1)**, enter and select **<inject key="AzureAdUserEmail"></inject>** in the **Users (2)** field, and click **Next (3)**.
 
    ![rd_day1_ex1_t1_8](./media/rd_day1_ex1_t1_8.png)
 
@@ -98,11 +98,11 @@ In this lab, you will strengthen your organization's security posture by enablin
 
    ![rd_day1_ex1_t1_10](./media/rd_day1_ex1_t1_10.png)
 
-1. On the **Apply Exchange Online Protection** screen, select **Specific recipients (1)**, enter the user email in the **Users** field (2), and click **Next (3)**.
+1. On the **Apply Exchange Online Protection** screen, select **Specific recipients (1)**, enter and select **<inject key="AzureAdUserEmail"></inject>** in the **Users** field (2), and click **Next (3)**.
 
    ![rd_day1_ex1_t1_11](./media/rd_day1_ex1_t1_11.png)
 
-1. On the **Apply Defender for Office 365 protection** screen, select **Specific recipients (1)**, enter the user email in the **Users** field (2), and click **Next (3)**.
+1. On the **Apply Defender for Office 365 protection** screen, select **Specific recipients (1)**, enter and select **<inject key="AzureAdUserEmail"></inject>** in the **Users (2)** field, and click **Next (3)**.
 
    ![rd_day1_ex1_t1_12](./media/rd_day1_ex1_t1_12.png)
 

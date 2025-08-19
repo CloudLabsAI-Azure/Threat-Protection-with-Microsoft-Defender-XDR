@@ -7,6 +7,9 @@ In this lab, you will leverage Microsoft Defender for Office 365’s Attack Simu
 1. On the left navigation menu, expand **Email & collaboration (1)** and select **Attack simulation training (2)**. On the **Attack simulation training** page, select the **Simulations (3)** tab and click **Launch a simulation (4)**.
 
    ![rd_day1_ex1_t2_1](./media/combi_g_c_4.png)
+    > **Note:** You can use the Attack Simulator to create realistic phishing simulations that help train users to recognize and report suspicious emails.
+
+    > **Note:** Click on `X` to close the Pop-up that may appear    
 
 1. Under **Select technique**, choose **Credential Harvest (1)** and click **Next (2)**.
 
@@ -16,7 +19,7 @@ In this lab, you will leverage Microsoft Defender for Office 365’s Attack Simu
 
    ![rd_day1_ex1_t2_4](./media/rd_day1_ex1_t2_4.png)
 
-1. Under **Select payload and login page**, choose **Global payloads**, select a phishing payload from the **list (1)**, and click **Next (3)**.
+1. Under **Select payload and login page**, choose **Global payloads**, select **Expense report sharing (1)** phishing payload from the list, and click **Next (3)**.
 
    ![rd_day1_ex1_t2_5](./media/rd_day1_ex1_t2_5.png)
 
@@ -24,7 +27,7 @@ In this lab, you will leverage Microsoft Defender for Office 365’s Attack Simu
 
    ![rd_day1_ex1_t2_6](./media/rd_day1_ex1_t2_6.png)
 
-1. On the **Add users** screen, search for the **user email (1)**, select the **user (2)** from the list, and click **Add User(s) (3)**.
+1. On the **Add users** screen, search for **<inject key="AzureAdUserEmail"></inject>** **(1)**, select the **user (2)** from the list, and click **Add User(s) (3)**.
 
    ![rd_day1_ex1_t2_7](./media/rd_day1_ex1_t2_7.png)
 
@@ -42,9 +45,9 @@ In this lab, you will leverage Microsoft Defender for Office 365’s Attack Simu
 
     ![rd_day1_ex1_t2_10](./media/rd_day1_ex1_t2_10.png)
 
-1. In the **End user notification** section, select **Microsoft default notification (1)** and configure:
-    - Positive reinforcement: **Deliver during simulation (2)** 
-    - Training reminder: **Weekly (3)** 
+1. In the **End user notification** section, select **Microsoft default notification (1)** and configure the Delivery preferences to:
+    - Microsoft default positive reinforcement notification: **Deliver during simulation (2)** 
+    - Microsoft default training reminder notification: **Weekly (3)** 
     Click **Next (4)**.
 
         ![rd_day1_ex1_t2_11](./media/rd_day1_ex1_t2_11.png)
@@ -79,7 +82,7 @@ In this lab, you will leverage Microsoft Defender for Office 365’s Attack Simu
 
     ![rd_day1_ex1_t2_17](./media/rd_day1_ex1_t2_17.png)
 
-1. Under **Select payload and login page**, select **Global payloads (1)**, choose a malware attachment from the list and set the preferred language (2), then click **Next (3)**.
+1. Under **Select payload and login page**, select **Global payloads (1)**, choose **HR notification on update of contract** from the list and set the preferred language to **English (2)**, then click **Next (3)**.
 
     ![rd_day1_ex1_t2_18](./media/rd_day1_ex1_t2_18.png)
 
@@ -87,7 +90,7 @@ In this lab, you will leverage Microsoft Defender for Office 365’s Attack Simu
 
    ![rd_day1_ex1_t2_6](./media/rd_day1_ex1_t2_6.png)
 
-1. On the **Add users** screen, search for the **user email (1)**, select the **user (2)** from the list, and click **Add User(s) (3)**.
+1. On the **Add users** screen, search **<inject key="AzureAdUserEmail"></inject>**, select the **user (2)** from the list, and click **Add User(s) (3)**.
 
    ![rd_day1_ex1_t2_7](./media/rd_day1_ex1_t2_7.png)
 
@@ -105,17 +108,16 @@ In this lab, you will leverage Microsoft Defender for Office 365’s Attack Simu
 
    ![rd_day1_ex1_t2_9](./media/combi_g_c_7.png)
 
-1. In the **End user notification** screen, select **Microsoft default notification (1)**, ensure **Deliver during simulation (2)** and **Weekly reminder (3)** are selected, and click **Next (4)**.
+1. In the **End user notification** section, select **Microsoft default notification (1)** and configure the Delivery preferences to:
+    - Microsoft default positive reinforcement notification: **Deliver during simulation (2)** 
+    - Microsoft default training reminder notification: **Weekly (3)** 
+    Click **Next (4)**.
 
     ![rd_day1_ex1_t2_19](./media/rd_day1_ex1_t2_19.png)
 
 1. Set the **Launch configuration (1)** to launch immediately, set duration to **2 days (2)**, and click **Next (3)**.
 
     ![rd_day1_ex1_t2_20](./media/rd_day1_ex1_t2_20.png)
-
-1. On the **Select end user notification** screen, choose **Microsoft default notification (1)**, set **Deliver during simulation (2)** and **Weekly (3)** as delivery preferences, then click **Next (4)**.
-
-    ![rd_day1_ex1_t2_21](./media/rd_day1_ex1_t2_21.png)
 
 1. Review the details and click **Submit** to complete the malware simulation setup.
 

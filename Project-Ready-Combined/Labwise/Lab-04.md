@@ -4,12 +4,12 @@ In this lab, you will simulate a phishing scenario and use Microsoft Defender XD
 
 > **⚠ Important Usage Guidance:** Microsoft Defender for Office 365 may take some time to load certain results or complete specific labs from the backend. This is expected behavior. If the data does not appear after a couple of refresh attempts, proceed with the next lab and return later to check the results.
 
-1. Open a new tab in the **Microsoft Edge** browser, go to https://outlook.office.com, and sign in with the lab user’s credentials.
+1. Navigate back to https://outlook.office.com tab and send a new email to **<inject key="AzureAdUserEmail"></inject>** with the below links, set the Subject to `Phishing-Test`.
 
-1. Send a test email to your lab user containing links such as:
-
-   - https://youtube.com/  
-   - https://openai.com/  
+   ```
+   https://youtube.com/  
+   https://openai.com/  
+   ```
 
       ![](./media/rd_day1_ex3_t2_1.png)
 
@@ -57,12 +57,11 @@ In this lab, you will simulate a phishing scenario and use Microsoft Defender XD
 
    ![](./media/rd_day1_ex3_t2_7.png)
 
-1. In the **Manage alert** panel:
+1. In the **Manage alert** panel enter the below details and click **Save (4)** and close the panel.
 
-   - **(1)** Set **Status** to `In progress`  
-   - **(2)** Assign to your lab user  
-   - **(3)** Set **Classification** to `True positive – Phishing`  
-   - Click **Save (4)**
+   - Set **Status** to `In progress` **(1)**
+   - Assign to me (<inject key="AzureAdUserEmail"></inject>) **(2)**
+   - Set **Classification** to `True positive – Phishing` **(3)** 
 
      ![](./media/rd_day1_ex3_t2_8.png)
 
@@ -79,7 +78,7 @@ In this lab, you will simulate a phishing scenario and use Microsoft Defender XD
 
       ![](./media/rd_day1_ex3_t2_10.png)
 
-      > **Note:** It may take **10–15 minutes** for the automated investigation to complete and display results.
+      > **Note:** It may take **60 minutes** for the automated investigation to complete and display results, you can proceed to the next lab, and check back later.
 
 ## Review
 
