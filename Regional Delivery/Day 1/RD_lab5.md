@@ -1,4 +1,4 @@
-## Task 5: Implement and Monitor Defender for Office 365 Secure Posture
+# Lab 05: Implement and Monitor Defender for Office 365 Secure Posture
 
 ### Estimated Duration: 30 Minutes
 
