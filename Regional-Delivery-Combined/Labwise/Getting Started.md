@@ -135,6 +135,6 @@ Now you're all set to explore the powerful world of technology. Feel free to rea
 
 Now, click on **Next** from the lower right corner to move on to the next page.
  
-  ![Start Your Azure Journey](../media/gst9.png)
+![](../media/rd_gs_1_9.png)
 
 ### Happy learning!
