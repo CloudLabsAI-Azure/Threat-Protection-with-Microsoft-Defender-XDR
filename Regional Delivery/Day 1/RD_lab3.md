@@ -1,4 +1,4 @@
-## Task 3: Analyze Threats with Threat Explorer and Real-Time Detections
+# Lab 03: Analyze Threats with Threat Explorer and Real-Time Detections
 
 In this task, you'll create a custom role in Microsoft Defender to manage access and permissions, simulate a phishing interaction, and investigate user activity using Threat Explorer.
 
