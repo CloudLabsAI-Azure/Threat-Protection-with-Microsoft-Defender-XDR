@@ -1,4 +1,4 @@
-## Task 5: Deploy Microsoft Defender for Identity Sensor on Domain Controllers
+# Lab 05: Deploy Microsoft Defender for Identity Sensor on Domain Controllers
 
 In this task you will install and configure the Defender for Identity sensor on a domain controller to monitor identity-based threats.
 
