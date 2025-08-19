@@ -18,7 +18,7 @@ In this lab, you will create a Near Real-Time (NRT) analytics query rule in Micr
     - Ensure **Status** is set to **Enabled (5)**.  
     - Click **Next: Set rule logic > (6)**. 
 
-   ![](./media/ex3_g_tr_8.png) 
+      ![](./media/ex3_g_tr_8.png) 
 
 1. For the *Rule query* enter the following KQL statement:
 
@@ -39,7 +39,7 @@ In this lab, you will create a Near Real-Time (NRT) analytics query rule in Micr
     - For the Identifier drop-down list select **HostName**.
     - For the Value drop-down list select **Computer**.
 
-   ![](./media/ex3_g_tr_9.png)
+      ![](./media/ex3_g_tr_9.png)
 
 1. On the **Incident settings** page, keep incident creation **Enabled**, leave alert grouping **Disabled**, and click **Next: Automated response >**.
 
