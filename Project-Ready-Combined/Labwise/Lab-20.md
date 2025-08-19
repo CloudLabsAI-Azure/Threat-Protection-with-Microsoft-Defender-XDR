@@ -26,7 +26,7 @@ You're a Security Operations Analyst working at a company that implemented Micro
 > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
 > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
 > - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
-<validation step="30cfb72e-0901-4620-b8fe-28639d0c2966" />
+<validation step="ffc25b02-f538-4cd8-ac33-bbd281929ecd" />
 
 1. If you are not already at the Microsoft 365 Defender portal in your browser, go to (https://security.microsoft.com) and log in with the **Tenant Email** credentials.
 
