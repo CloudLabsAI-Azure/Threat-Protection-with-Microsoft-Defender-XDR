@@ -38,7 +38,7 @@ Your virtual machine is your workhorse throughout the workshop. The lab guide is
  
 ## Exploring Your Lab Resources
  
-To get a better understanding of your lab resources and credentials, navigate to the **Environment Details** tab.
+To get a better understanding of your lab resources and credentials, navigate to the **Environment** tab.
  
 ![Explore Lab Resources](./media/cor_gs_r_3.png)
  
@@ -56,13 +56,13 @@ On the **Resources (1)** tab, you can manage your virtual machines. Under the **
 
 ## Lab Guide Zoom In/Zoom Out
  
-Click the **A↕ icon (1)** next to the timer to adjust the zoom level for the environment page. From the drop-down menu, select the desired **percentage (2)**.
+Click the **A↕ icon (1)** next to the timer to adjust the zoom level for the environment page. From the drop-down menu, select the desired **Percentage (2)**.
 
 ![](./media/cor_gs_r_5.png)
 
 ## Let's Get Started with Azure Portal
  
-1. On your virtual machine, click on the Azure Portal icon as shown below:
+1. On your virtual machine desktop, double-click the **Azure Portal** shortcut (Microsoft Edge browser) to open the Azure portal.
  
     ![Launch Azure Portal](./media/cor_gs_r_2.png)
 
