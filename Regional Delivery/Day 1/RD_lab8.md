@@ -1,4 +1,4 @@
-## Task 8: Discover and Analyze Shadow IT Using Cloud Discovery
+# Lab 08: Discover and Analyze Shadow IT Using Cloud Discovery
 
 ### Estimated Duration: 30 Minutes
 
