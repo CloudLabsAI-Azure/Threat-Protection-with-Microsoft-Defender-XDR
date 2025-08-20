@@ -10,7 +10,9 @@ In this lab, you will work with Microsoft Defender for Cloud Apps to configure c
 
 Next, you will implement session policies to control risky behavior, such as blocking downloads of executable files from non-compliant devices. You will also enable App Governance to monitor OAuth applications, create custom detection policies to identify high-risk apps with unverified publishers, and investigate resulting alerts and incidents. By the end, you will have hands-on experience in detecting, analyzing, and controlling risky cloud application behavior in a Microsoft 365 environment.
 
-## Objectives
+## Objective
+
+In **Day-2** of this workshop you will learn how to:
 
 - Microsoft Defender for Cloud Apps-Configuring Cloud Discovery
 - Discover and Analyze Shadow IT Using Cloud Discovery
@@ -40,3 +42,8 @@ Participants should have:
 - **App Governance**: Advanced monitoring for OAuth applications to detect risky permissions, unverified publishers, and unusual activity.
 - **Detection Policies**: Custom rules to automatically identify and respond to high-risk behaviors or configurations in cloud apps.
 
+Now, click on **Next** from the lower right corner to move on to the next page.
+ 
+  ![Start Your Azure Journey](../media/rd_gs_1_9.png)
+
+### Happy learning!

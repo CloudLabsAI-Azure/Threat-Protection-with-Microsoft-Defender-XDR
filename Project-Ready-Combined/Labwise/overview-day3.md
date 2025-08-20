@@ -12,7 +12,9 @@ Next, you will leverage Microsoft Sentinel's hunting capabilities to proactively
 
 Finally, you will mitigate threats by managing incidents and alerts in Microsoft Defender XDR, applying preset security policies, and investigating the full impact of incidents. By the end of these labs, you will have hands-on experience in simulating attacks, detecting and investigating threats, hunting for malicious activity, and mitigating risks in a Microsoft 365 environment.
 
-## Objectives
+## Objective
+
+In **Day-3** of this workshop you will learn how to:
 
 - Deploy Microsoft Defender for Identity Sensor on Domain Controllers
 - Simulate and Detect Lateral Movement Attacks
@@ -46,3 +48,9 @@ Participants should have:
 - **Threat Hunting**: Building and running KQL queries to proactively search for threats and bookmark notable findings.
 - **Incident Investigation**: Reviewing incidents, mapping entities, and analyzing evidence in Defender and Sentinel.
 - **Mitigation**: Managing incidents and alerts, applying security recommendations, and restoring data for deeper analysis.
+
+Now, click on **Next** from the lower right corner to move on to the next page.
+ 
+  ![Start Your Azure Journey](../media/rd_gs_1_9.png)
+
+### Happy learning!

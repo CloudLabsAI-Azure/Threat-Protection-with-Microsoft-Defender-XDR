@@ -1,11 +1,12 @@
 # Implement Threat Protection with Microsoft Defender XDR solutions
 
-### Overall Estimated Duration: 12 Hours
-
 ## Overview
 This hands-on workshop provides practical experience in Microsoft Defender XDR, Defender for Office 365, and Defender for Cloud Apps. Participants will configure multi-layered threat protection policies, simulate phishing and malware attacks, analyze real-time threats, onboard and secure Microsoft 365 SaaS applications, and implement app governance for OAuth-based third-party apps. The labs also guide you through investigating and remediating security incidents, creating custom detection policies, and setting up proactive monitoring to strengthen security posture and maintain compliance.
 
 ## Objectives
+
+In this workshop, you will learn how to:
+
 - Configure and manage threat protection policies in Microsoft Defender XDR and Defender for Office 365.
 - Simulate phishing and malware attacks and analyze threats using Threat Explorer and real-time detections.
 - Investigate and remediate security incidents, configure anti-phishing and Safe Links policies, and manage security posture settings.
@@ -17,18 +18,18 @@ This hands-on workshop provides practical experience in Microsoft Defender XDR, 
 ## Day-by-Day Breakdown:
 
 ### **Day 1**
-In this hands-on lab, you will configure threat protection policies in Microsoft Defender XDR and Defender for Office 365, simulate phishing and malware attacks, and analyze threats using Threat Explorer. Investigate and remediate security incidents, configure anti-phishing and Safe Links policies, and manage security posture settings.
+In these hands-on labs, you will configure threat protection policies in Microsoft Defender XDR and Defender for Office 365, simulate phishing and malware attacks, and analyze threats using Threat Explorer. Investigate and remediate security incidents, configure anti-phishing and Safe Links policies, and manage security posture settings.
 
 ### **Day 2**
-In this hands-on lab, you will detect and analyze Shadow IT using Cloud Discovery in Defender for Cloud Apps. Onboard and protect Microsoft 365 SaaS applications, configure session and activity policies, and implement app governance for OAuth-based third-party apps. Enable and configure App Governance to monitor risky OAuth apps and create custom detection policies.
+In these hands-on labs, you will detect and analyze Shadow IT using Cloud Discovery in Defender for Cloud Apps. Onboard and protect Microsoft 365 SaaS applications, configure session and activity policies, and implement app governance for OAuth-based third-party apps. Enable and configure App Governance to monitor risky OAuth apps and create custom detection policies.
 
 ### **Day 3**
-In this hands-on lab, you will onboard devices and deploy Defender for Identity sensors, simulate and detect lateral movement attacks, integrate Defender for Identity with Microsoft 365 Defender Portal, and run advanced hunting queries. Integrate Microsoft Sentinel with Defender for Cloud, conduct persistence and command-and-control attack simulations, create hunting queries and analytics rules, and manage incidents and alerts.
+In these hands-on labs, you will onboard devices and deploy Defender for Identity sensors, simulate and detect lateral movement attacks, integrate Defender for Identity with Microsoft 365 Defender Portal, and run advanced hunting queries. Integrate Microsoft Sentinel with Defender for Cloud, conduct persistence and command-and-control attack simulations, create hunting queries and analytics rules, and manage incidents and alerts.
 
 
 ## Getting Started with the Lab
  
-Welcome to your Implement Threat Protection with Microsoft Defender XDR solutions workshop! We've prepared a seamless environment for you to familiarize yourself with the Microsoft security operations analyst, you monitor, identify, investigate, and respond to threats in multi-cloud environments and related Microsoft services. Let's begin by making the most of this experience:
+Welcome to **Implement Threat Protection with Microsoft Defender XDR solutions** workshop! We've prepared a seamless environment for you to familiarize yourself with the Microsoft security operations analyst, you monitor, identify, investigate, and respond to threats in multi-cloud environments and related Microsoft services. Let's begin by making the most of this experience:
  
 ## Accessing Your Lab Environment
  

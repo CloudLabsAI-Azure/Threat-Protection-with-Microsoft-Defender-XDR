@@ -10,7 +10,9 @@ In this lab, you will explore Microsoft Defender for Office 365 and Microsoft De
 
 Next, you will analyze threats using Threat Explorer and real-time detections, reviewing user activity and simulation outcomes. You will also investigate and remediate incidents through automated investigation workflows and manual response actions. Finally, you will create and test custom Anti-Phishing and Safe Links policies, along with alert rules, to enhance ongoing email and link protection.
 
-## Objectives
+## Objective
+
+In **Day-1** of this workshop you will learn how to:
 
 - Configure Threat Policies in Microsoft Defender for Office 365
 - Simulate Phishing and Malware Attacks Using Attack Simulator
@@ -37,3 +39,8 @@ Participants should have:
 - **Threat Explorer**: A real-time threat analysis tool that provides visibility into malicious emails, URLs, and attachments in your Microsoft 365 environment.
 - **Anti-Phishing and Safe Links Policies**: Policy configurations that detect and block malicious senders, domains, and URLs, ensuring safe email and link handling.
 
+Now, click on **Next** from the lower right corner to move on to the next page.
+ 
+  ![Start Your Azure Journey](../media/rd_gs_1_9.png)
+
+### Happy learning!

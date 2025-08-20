@@ -91,7 +91,7 @@ In this lab, you will simulate a Lateral Movement attack using the Mimikatz tool
       lsadump::dcsync /domain:defenderxdr.internal /user:krbtgt
       ```
 
-      > **Note:** If you see an error message indicating that the command failed, it is due to antivirus, perform the below steps and then run **step 16**again
+      > **Note:** If you see an error message indicating that the command failed, it is due to antivirus, perform the below steps and then run **step 16** again
 
       > 1. Navigate to Windows Security and click on **Virus & threat protection**.
       ![image](./media/attack1n1.png)
