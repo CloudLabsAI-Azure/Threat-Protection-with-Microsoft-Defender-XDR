@@ -44,7 +44,7 @@ In this lab, you will investigate a security incident in the Microsoft Defender 
 
 ## Review
 
-In this lab, you:
+In this lab, you have completed the following:
 
 - Reviewed the incident attack story to understand the event sequence.
 - Analyzed related assets, evidence, and response actions.

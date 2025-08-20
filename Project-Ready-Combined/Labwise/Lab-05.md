@@ -137,7 +137,7 @@ In this lab, you will configure custom Anti-Phishing and Safe Links policies in 
 
 ## Review
 
-In this lab, you:
+In this lab, you have completed the following:
 
 - Configured a custom **Anti-Phishing policy** with aggressive detection settings.  
 - Created a **Safe Links policy** for email, Teams, and Office 365 apps.  

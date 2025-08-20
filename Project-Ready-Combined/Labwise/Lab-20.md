@@ -146,7 +146,8 @@ You're a Security Operations Analyst working at a company that implemented Micro
 
 ## Review
 
-In this lab, you have completed the following tasks:
+In this lab, you have completed the following:
+
 - Created a Group
 - Applied Microsoft Defender for Office 365 preset security policies
 - Activated a Microsoft Security Rule

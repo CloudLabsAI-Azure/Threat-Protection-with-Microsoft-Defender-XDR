@@ -83,7 +83,7 @@ In this lab, you will configure Microsoft Defender for Cloud Apps to enable Clou
 
 ## Review
 
-In this lab, you:
+In this lab, you have completed the following:
 
 - Enabled the **Microsoft Defender for Cloud Apps** integration in Microsoft Defender for Endpoint.  
 - Configured **Cloud Discovery** and enabled **Enforce App Access**.  

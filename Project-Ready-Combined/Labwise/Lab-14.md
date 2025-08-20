@@ -20,7 +20,7 @@ In this task you will analyze using user timelines and alert details in the Defe
 
 ## Review
 
-In this lab, you:
+In this lab, you have completed the following:
 
 - Searched for the user account **`demouser`** in the Microsoft Defender portal.  
 - Accessed the **user profile page** to view account details.  

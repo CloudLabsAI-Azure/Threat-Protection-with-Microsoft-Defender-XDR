@@ -233,7 +233,7 @@ Install the AD DS role to enable the server to function as a domain controller.
 
 ## Review
 
-In this lab, you:
+In this lab, you have completed the following:
 
 - Onboarded a Windows Server to **Microsoft Defender for Endpoint** using the local script method.  
 - Promoted the server to a **domain controller** with Active Directory Domain Services.  

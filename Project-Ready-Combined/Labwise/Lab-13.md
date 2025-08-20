@@ -121,7 +121,7 @@ In this lab, you will simulate a Lateral Movement attack using the Mimikatz tool
 
 ## Review
 
-In this lab, you:
+In this lab, you have completed the following:
 
 - Used the **Mimikatz tool** in PowerShell (Admin) to simulate a **DC Sync attack**.  
 - Attempted to extract credentials of the **krbtgt account**.  

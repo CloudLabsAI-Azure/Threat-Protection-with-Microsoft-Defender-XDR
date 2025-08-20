@@ -70,7 +70,7 @@ In this lab, you will strengthen your organization's security posture by enablin
 
 ## Review
 
-In this lab, you:
+In this lab, you have completed the following:
 
 - Configured the **Standard Preset Security Policy** for specific recipients, applying Exchange Online Protection and Defender for Office 365 features.
 - Configured the **Strict Preset Security Policy** for the same recipients, adding an additional protection layer.

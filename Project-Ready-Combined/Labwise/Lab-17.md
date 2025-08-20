@@ -80,7 +80,7 @@ In this lab, you will integrate the **Windows Security Events** data connector w
 
 ## Review
 
-In this lab, you:
+In this lab, you have completed the following:
 
 - Installed the **Windows Security Events** solution from the Content Hub.  
 - Connected Azure Windows virtual machines to **Log Analytics**.  

@@ -223,7 +223,8 @@ In this lab, you will simulate two common attack techniques: **Persistence** thr
 
 ## Review
 
-In this lab, you:
+In this lab, you have completed the following:
+
 - Simulated a persistence attack by adding a startup registry key.
 - Created and executed a PowerShell script to mimic DNS-based C2 activity.
 - Queried and analyzed Security Events in Microsoft Sentinel using KQL.

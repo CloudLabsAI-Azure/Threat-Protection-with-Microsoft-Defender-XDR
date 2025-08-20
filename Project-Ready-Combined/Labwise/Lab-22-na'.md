@@ -91,7 +91,7 @@ In this lab, you will use Microsoft Sentinel to create a detection rule for pers
 
 ## Review
 
-In this lab, you:
+In this lab, you have completed the following:
 
 - Queried SecurityEvent logs in Microsoft Sentinel for specific Event IDs.
 - Mapped account and host entities for better incident investigation.

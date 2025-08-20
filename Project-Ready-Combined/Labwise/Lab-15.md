@@ -55,7 +55,7 @@ In this lab, you will integrate Microsoft Defender for Identity with the Microso
 
 ## Review
 
-In this lab, you:
+In this lab, you have completed the following:
 
 - Connected the **loganalycticworkspace** to Microsoft 365 Defender.  
 - Verified and set it as the **primary workspace**.  

@@ -38,7 +38,7 @@ In this lab, you will use Microsoft Defender’s Search job capability to look f
 
 ## Review
 
-In this lab, you:
+In this lab, you have completed the following:
 
 - Ran a search in Microsoft Defender for specific process activity.
 - Created a search job for the last 24 hours to retrieve C2-related data.

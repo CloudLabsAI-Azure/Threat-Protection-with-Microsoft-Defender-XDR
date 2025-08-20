@@ -103,7 +103,7 @@ In this lab, you will implement App Governance in Microsoft Defender for Cloud A
 
 ## Review
 
-In this lab, you:
+In this lab, you have completed the following:
 
 - Reviewed **OAuth app permissions** and identified high-privilege access.  
 - Created a **custom detection policy** targeting unverified publishers and elevated permissions.  

@@ -55,7 +55,7 @@ In this lab, you will create a Near Real-Time (NRT) analytics query rule in Micr
 
 ## Review
 
-In this lab, you:
+In this lab, you have completed the following:
 
 - Created an NRT analytics query rule in Microsoft Sentinel.
 - Configured the rule’s name, severity, MITRE ATT&CK mapping, and status.

@@ -32,7 +32,7 @@ In this lab, you will analyze Cloud Discovery reports in Microsoft Defender for 
 
 ## Review
 
-In this lab, you:
+In this lab, you have completed the following:
 
 - Reviewed **summary metrics** to understand overall cloud usage.  
 - Analyzed **app categories, risk levels, and top users** to identify risky patterns.  

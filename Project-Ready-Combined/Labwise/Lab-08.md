@@ -136,7 +136,7 @@ In this lab, you will connect and onboard a SaaS application—Microsoft 365—t
 
 ## Review
 
-In this lab, you:
+In this lab, you have completed the following:
 
 - Verified that the lab user had the required **Microsoft 365 E5 license**.  
 - Configured a **Conditional Access policy** with session controls for Microsoft 365.  

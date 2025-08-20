@@ -29,7 +29,7 @@ In this lab, you will run advanced hunting queries in the Microsoft Defender por
 
 ## Review
 
-In this lab, you:
+In this lab, you have completed the following:
 
 - Opened the **Advanced hunting** section in the Microsoft Defender portal.  
 - Executed a **KQL query** to detect identity-related alerts.  

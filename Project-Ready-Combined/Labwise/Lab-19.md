@@ -203,7 +203,7 @@ In this lab, you will leverage Microsoft Sentinel to proactively hunt for suspic
 
 ## Review
 
-In this lab, you:
+In this lab, you have completed the following:
 
 - Built and ran a KQL hunting query in Microsoft Sentinel to detect suspicious PowerShell activity.
 - Bookmarked important results and mapped entities for investigation.

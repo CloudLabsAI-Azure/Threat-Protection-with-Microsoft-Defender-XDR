@@ -82,7 +82,7 @@ In this lab, you will simulate a phishing scenario and use Microsoft Defender XD
 
 ## Review
 
-In this lab, you:
+In this lab, you have completed the following:
 
 - Simulated a phishing email and verified its delivery.  
 - Investigated the suspicious email using **Threat Explorer** in Microsoft Defender XDR.  

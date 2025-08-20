@@ -93,7 +93,7 @@ In this lab, you will leverage Microsoft Defender for Office 365 to investigate 
 
 ## Review
 
-In this lab, you:
+In this lab, you have completed the following:
 
 - Explored phishing and malware simulation emails in the user mailbox.  
 - Reported a phishing simulation email and verified the acknowledgment response.  

@@ -88,7 +88,7 @@ In this lab, you will investigate alerts in Microsoft Defender for Cloud Apps, t
 
 ## Review
 
-In this lab, you:
+In this lab, you have completed the following:
 
 - Investigated the **Block-All-Download** alert and traced related activities in the **activity log**.  
 - Created a **custom activity policy** to detect suspicious downloads of `msedge.exe` from SharePoint Online.  

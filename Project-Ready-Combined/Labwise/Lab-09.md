@@ -115,7 +115,7 @@ In this lab, you will configure a Session Policy in Microsoft Defender for Cloud
 
 ## Review
 
-In this lab, you:
+In this lab, you have completed the following:
 
 - Created a **high-severity Session Policy** in Microsoft Defender for Cloud Apps.  
 - Configured filters to target **non-compliant devices** accessing Microsoft SharePoint Online.  
