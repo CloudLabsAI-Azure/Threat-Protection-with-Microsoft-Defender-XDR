@@ -26,3 +26,5 @@ In this lab, you:
 - Reviewed the **Timeline** tab to analyze events and alerts related to the user.
 
 ## You have successfully completed the lab. Click on Next to Continue
+
+  ![Start Your Azure Journey](./media/rd_gs_1_9.png)
