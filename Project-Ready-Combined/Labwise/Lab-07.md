@@ -39,3 +39,5 @@ In this lab, you:
 - Marked applications as unsanctioned for better monitoring and control.
 
 ## You have successfully completed the lab. Click on Next to Continue
+
+  ![Start Your Azure Journey](./media/rd_gs_1_9.png)
