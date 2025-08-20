@@ -151,3 +151,7 @@ In this lab, you have completed the following tasks:
 - Activated a Microsoft Security Rule
 - Managed Incidents
 - Manage Alerts
+
+## You have successfully completed the lab. Click on Next to Continue
+
+  ![Start Your Azure Journey](./media/rd_gs_1_9.png)
