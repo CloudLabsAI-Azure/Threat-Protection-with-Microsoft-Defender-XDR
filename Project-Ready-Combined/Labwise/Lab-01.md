@@ -77,3 +77,5 @@ In this lab, you:
 - Applied multi-layered email and collaboration protection to specific users, ensuring robust defense against threats.
 
 ## You have successfully completed the lab. Click on Next to Continue
+
+  ![Start Your Azure Journey](./media/rd_gs_1_9.png)
