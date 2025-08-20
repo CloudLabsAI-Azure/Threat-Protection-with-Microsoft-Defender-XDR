@@ -8,17 +8,12 @@ This lab provides hands-on experience with Microsoft Defender for Cloud Apps to 
 
 ## Objectives
 
-- Microsoft Defender for Cloud Apps-Configuring Cloud Discovery 
-
-- Discover and Analyze Shadow IT Using Cloud Discovery 
-
-- Connect and onboard a SaaS App to Defender for Cloud Apps 
-
-- Configure Session Policies to Monitor and Block Risky Behavior 
-
-- Implement App Governance and Risk Detection for OAuth Apps 
-
-- Investigate Alerts and Create Custom Detection Policies 
+- Microsoft Defender for Cloud Apps-Configuring Cloud Discovery
+- Discover and Analyze Shadow IT Using Cloud Discovery
+- Connect and Onboard a SaaS App to Microsoft Defender for Cloud Apps
+- Investigate and Remediate Incidents in Microsoft Defender XDR
+- Implement App Governance and Risk Detection for OAuth Apps
+- Investigate Alerts and Create Custom Detection Policies
 
 ## Architecture Diagram
 

@@ -1,6 +1,6 @@
 # Lab 4: Configure Anti-Phishing and Safe Links Policies
 
-In this task, you will create a custom Anti-Phishing policy and Safe Links policy to enhance protection against malicious emails and phishing links. You will also simulate a phishing email and verify alerts and detections.
+In this lab, you will create a custom Anti-Phishing policy and Safe Links policy to enhance protection against malicious emails and phishing links. You will also simulate a phishing email and verify alerts and detections.
 
 1. On the **Microsoft Defender portal**, go to **Email & collaboration (1)** → **Policies & rules (2)** → **Threat policies (3)**.
 
@@ -129,7 +129,7 @@ In this task, you will create a custom Anti-Phishing policy and Safe Links polic
 
 ## Review
 
-In this lab, you have completed the following tasks:
+In this lab, you have completed the following:
 
 - Created a custom role in Microsoft Defender to manage access and permissions.
 - Simulated a phishing interaction and investigated user activity using Threat Explorer.

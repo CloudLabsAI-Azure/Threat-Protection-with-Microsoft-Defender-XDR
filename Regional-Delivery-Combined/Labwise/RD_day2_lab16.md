@@ -1,6 +1,6 @@
 # Lab 16: Integrate Defender for Identity with Microsoft 365 Defender Portal
 
-In this task you will enable integration to view Defender for Identity incidents in the unified Microsoft 365 Defender portal and Microsoft Sentinel.
+In this lab you will enable integration to view Defender for Identity incidents in the unified Microsoft 365 Defender portal and Microsoft Sentinel.
 
 1. In the **Azure portal**, search for **Microsoft Sentinel (1)** in the top search bar and click **Microsoft Sentinel (2)** under the Services section.
 
@@ -60,7 +60,7 @@ In this task you will enable integration to view Defender for Identity incidents
 
 ## Review
 
-In this lab, you have completed the following tasks:
+In this lab, you have completed the following:
 
 - Integrated Defender for Identity with Microsoft 365 Defender and Microsoft Sentinel for centralized threat visibility.
 

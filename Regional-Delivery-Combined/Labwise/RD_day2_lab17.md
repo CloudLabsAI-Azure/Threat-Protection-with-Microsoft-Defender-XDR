@@ -1,4 +1,4 @@
-# Lab 17: Review Automated Investigation and Response (`Read-Only`)
+# Lab 17: Review Automated Investigation and Response 
 
 > **Note:** In this task, we will **only review** the configuration steps. No actual deployment or configuration will be performed, as the Microsoft E5 license assigned to this lab **already includes AIR pre-configured**.
 
@@ -52,7 +52,7 @@
 
 ## Review
 
-In this exercise, you completed a comprehensive automated incident response setup using Microsoft Defender XDR, Microsoft Sentinel, Power Automate, and SharePoint:
+In this lab, you have completed the following:
 
 - Reviewed pre-configured Automated Investigation and Response (AIR) settings for identities and devices.  
 

@@ -1,6 +1,6 @@
 ## Lab 6: Microsoft Defender for Cloud Apps- Configuring Cloud App Discovery
 
-In this task, you will integrate Defender for Cloud Apps with Microsoft Defender for Endpoint, enable discovery of shadow IT, and analyze data using snapshot reports.
+In this lab, you will integrate Defender for Cloud Apps with Microsoft Defender for Endpoint, enable discovery of shadow IT, and analyze data using snapshot reports.
 
 1. On the **Microsoft Defender portal**, select **System (1)** and click **Settings (2)**.
 
@@ -65,7 +65,7 @@ In this task, you will integrate Defender for Cloud Apps with Microsoft Defender
 
 ## Review
 
-In this lab, you have completed the following tasks:
+In this lab, you have completed the following:
 
 - Enabled integration between Defender for Endpoint and Defender for Cloud Apps.
 

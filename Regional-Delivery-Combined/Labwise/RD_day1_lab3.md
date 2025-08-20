@@ -1,6 +1,6 @@
 # Lab 3: Analyze Threats with Threat Explorer and Real-Time Detections
 
-In this task, you'll create a custom role in Microsoft Defender to manage access and permissions, simulate a phishing interaction, and investigate user activity using Threat Explorer.
+In this lab, you'll create a custom role in Microsoft Defender to manage access and permissions, simulate a phishing interaction, and investigate user activity using Threat Explorer.
 
 1. On a new tab in the **Microsoft Edge browser** and go to the following URL in the address bar: https://security.microsoft.com.
 
@@ -93,7 +93,7 @@ In this task, you'll create a custom role in Microsoft Defender to manage access
 
 ## Review
 
-In this lab, you have completed the following tasks:
+In this lab, you have completed the following:
 
 - Created a custom role in Microsoft Defender to manage access and permissions.
 - Simulated a phishing interaction and investigated user activity using Threat Explorer.

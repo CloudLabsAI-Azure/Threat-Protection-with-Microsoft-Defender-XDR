@@ -2,7 +2,7 @@
 
 # Lab 1: Configure Threat Policies in Microsoft Defender for Office 365
 
-In this task, you will enable Microsoft Defender CSPM for your environment and configure both standard and strict protection policies using Microsoft Defender XDR.
+In this lab, you will enable Microsoft Defender CSPM for your environment and configure both standard and strict protection policies using Microsoft Defender XDR.
 
 1. Go to the Azure Portal and search for **Microsoft Defender for Cloud (1)**, select it from the **results (2)**.
 
@@ -109,7 +109,7 @@ In this task, you will enable Microsoft Defender CSPM for your environment and c
 
 ## Review
 
-In this lab, you have completed the following tasks:
+In this lab, you have completed the following:
 
 - Enabled Microsoft Defender CSPM to activate advanced posture management capabilities.
 - Configured both Standard and Strict preset security policies to protect users based on risk levels.

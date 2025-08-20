@@ -1,6 +1,6 @@
-# Task 13: Deploy Microsoft Defender for Identity Sensor on Domain Controllers
+# Lab 13: Deploy Microsoft Defender for Identity Sensor on Domain Controllers
 
-In this task you will install and configure the Defender for Identity sensor on a domain controller to monitor identity-based threats.
+In this lab you will install and configure the Defender for Identity sensor on a domain controller to monitor identity-based threats.
 
 Install the AD DS role to enable the server to function as a domain controller.
 
@@ -112,7 +112,7 @@ Install the AD DS role to enable the server to function as a domain controller.
 
 ## Review
 
-In this lab, you have completed the following tasks:
+In this lab, you have completed the following:
 
 - Verified sensor health and ensured identity telemetry was active in the Defender portal.
 

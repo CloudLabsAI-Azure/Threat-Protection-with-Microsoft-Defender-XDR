@@ -8,15 +8,11 @@ In this lab, you will explore how to enhance organizational security using Micro
 
 ## Objectives
 
-- Configure Threat Policies in Microsoft Defender for Office 365 
-
-- Simulate Phishing and Malware Attacks Using Attack Simulator 
-
-- Analyze Threats with Threat Explorer and Real-Time Detections 
-
-- Investigate and remediate Incidents in Microsoft Defender XDR 
-
-- Configure Anti-Phishing and Safe Links Policies 
+- Configure Threat Policies in Microsoft Defender for Office 365
+- Simulate Phishing and Malware Attacks Using Attack Simulator
+- Analyze Threats with Threat Explorer and Real-Time Detections
+- Investigate and Remediate Incidents in Microsoft Defender XDR
+- Configure Anti-Phishing and Safe Links Policies
 
 ## Architecture Diagram
 

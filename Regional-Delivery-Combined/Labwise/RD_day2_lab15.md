@@ -1,6 +1,6 @@
 # Lab 15: Investigate Threats and User Timelines 
 
-In this task you will analyze using user timelines and alert details in the Defender portal.
+In this lab you will analyze using user timelines and alert details in the Defender portal.
 
 1. In the Microsoft Defender portal, in the search bar, type `demouser` and select it.
 
@@ -16,7 +16,7 @@ In this task you will analyze using user timelines and alert details in the Defe
 
 ## Review
 
-In this lab, you have completed the following tasks:
+In this lab, you have completed the following:
 
 - Investigated identity-based threats using the user timeline and activity alerts.  
 

@@ -1,6 +1,6 @@
 # Lab 10: Configure Session Policies to Monitor and Block Risky Behavior
 
-In this task, you will create a Microsoft Defender for Cloud Apps session policy to block downloads of risky files (e.g., `.exe`, `.apk`) from SharePoint Online for non-compliant devices.
+In this lab, you will create a Microsoft Defender for Cloud Apps session policy to block downloads of risky files (e.g., `.exe`, `.apk`) from SharePoint Online for non-compliant devices.
 
 1. On the **Microsoft Defender portal**, navigate to **Policies (1)** under **Cloud apps**, then click **Policy management (2)**. On the **Policies** page, click **All policies (3)** at the top. Then select **Create policy (4)** and choose **Session policy (5)** from the dropdown.
 
@@ -85,7 +85,7 @@ In this task, you will create a Microsoft Defender for Cloud Apps session policy
 
 ## Review
 
-In this lab, you have completed the following tasks:
+In this lab, you have completed the following:
 
 - Created session policies to detect risky behaviors such as file downloads and suspicious user activity.
 - Tested policy enforcement to ensure risky actions were blocked or monitored in real time.

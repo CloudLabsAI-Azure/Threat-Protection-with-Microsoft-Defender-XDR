@@ -6,8 +6,6 @@ In this lab, you will simulate a Lateral Movement attack using the Mimikatz tool
 
 > **⚠ Important Usage Guidance:** Microsoft Defender for Office 365 may take some time to load certain results or complete specific labs from the backend. This is expected behavior. If the data does not appear after a couple of refresh attempts, proceed with the next lab and return later to check the results..
 
-#### **Disable Windows Defender and Antivirus**
-
 1. In Azure portal, Search for **Virtual machines (1)** and select **Virtual machines (2)**.
 
       ![VMrdp](./media/vm.png)
@@ -75,13 +73,11 @@ In this lab, you will simulate a Lateral Movement attack using the Mimikatz tool
 
       ![image](./media/attack13.png)
 
-1. Open **PowerShell (Admin)** and navigate to the below mentioned directory.
+1. Navigate to the below mentioned directory in Powershell.
 
       ```powershell
       cd mimikatz\x64
       ```
-
-      ![image](./media/attack1.png)
 
 1. In the same PowerShell session, run the below command to run the mimikatz application
 
@@ -95,7 +91,7 @@ In this lab, you will simulate a Lateral Movement attack using the Mimikatz tool
       lsadump::dcsync /domain:defenderxdr.internal /user:krbtgt
       ```
 
-      > **Note:** If you see an error message indicating that the command failed, it is due to antivirus,
+      > **Note:** If you see an error message indicating that the command failed, it is due to antivirus, perform the below steps and then run **step 16**again
 
       > 1. Navigate to Windows Security and click on **Virus & threat protection**.
       ![image](./media/attack1n1.png)

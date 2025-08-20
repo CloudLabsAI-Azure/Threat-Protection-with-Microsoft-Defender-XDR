@@ -1,6 +1,6 @@
-# Lab 11: Implement App Governance and Risk Detection for OAuth Apps (`Read-Only`)
+# Lab 11: Implement App Governance and Risk Detection for OAuth Apps
 
-In this task, you will explore how to enable App Governance in Microsoft Defender XDR and configure a custom detection policy to flag high-risk OAuth apps based on their permissions and publisher status. This is a **read-only task** because, after turning on App Governance, it can take **4–5 hours** for connected OAuth apps to appear and be fully evaluated by the system.
+In this lab, you will explore how to enable App Governance in Microsoft Defender XDR and configure a custom detection policy to flag high-risk OAuth apps based on their permissions and publisher status.
 
 1. On the **Microsoft Defender portal**, go to **System (1)** > **Settings (2)** and click **Cloud Apps (3)**.
 
@@ -91,7 +91,7 @@ In this task, you will explore how to enable App Governance in Microsoft Defende
 
 ## Review
 
-In this lab, you have completed the following tasks:
+In this lab, you have completed the following:
 
 - Enabled App Governance in Microsoft Defender for Cloud Apps to monitor and assess OAuth app risk.
 - Created a custom detection policy to identify apps with high privileges and unverified publishers.

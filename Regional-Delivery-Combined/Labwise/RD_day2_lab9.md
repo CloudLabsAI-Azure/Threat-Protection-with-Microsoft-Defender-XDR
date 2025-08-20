@@ -1,8 +1,8 @@
 # Day 2
 
-## Task 9: Connect and Onboard a SaaS App to Microsoft Defender for Cloud Apps
+## Lab 9: Connect and Onboard a SaaS App to Microsoft Defender for Cloud Apps
 
-In this task, you'll verify license assignment, enable auditing, configure Conditional Access policies, and onboard Microsoft 365 to Defender for Cloud Apps.
+In this tab, you'll verify license assignment, enable auditing, configure Conditional Access policies, and onboard Microsoft 365 to Defender for Cloud Apps.
 
 1. In the Edge browser, log-in to Microsoft Defender portal using the following link: https://portal.azure.com/ with the below username and password if prompted to sign in.
 
@@ -112,15 +112,15 @@ In this task, you'll verify license assignment, enable auditing, configure Condi
 
     ![](../media/rd_day2_ex1_t1_22.png)
 
-> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-> - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
+> **Congratulations** on completing the lab! Now, it's time to validate it. Here are the steps:
+> - Hit the Validate button for the corresponding lab. If you receive a success message, you can proceed to the next lab. 
 > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
 > - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
 <validation step="d841263c-65e4-4a6c-ab16-b57b20463af8" />
 
 ## Review
 
-In this lab, you have completed the following tasks:
+In this lab, you have completed the following:
 
 - Connected and onboarded a third-party SaaS application to Microsoft Defender for Cloud Apps.
 - Verified successful connection through the connected apps dashboard.

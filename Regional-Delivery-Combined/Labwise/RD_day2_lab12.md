@@ -84,7 +84,7 @@
 
 ## Review
 
-In this lab, you have completed the following tasks:
+In this lab, you have completed the following:
 
 - Investigated alerts and user activity logs to trace suspicious downloads and policy violations.
 - Created an activity policy to detect and alert on specific file downloads from Microsoft SharePoint Online.

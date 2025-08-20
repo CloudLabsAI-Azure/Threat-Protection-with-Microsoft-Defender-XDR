@@ -8,19 +8,18 @@ In this lab, you will strengthen organizational security by deploying Microsoft 
 
 ## Objectives
 
-- Configure Microsoft Defender for Identity 
-
-- Investigate Identity-Based Threats and User Timelines 
-
-- Integrating Microsoft Defender for Cloud and Simulating Threat Detection Scenarios
-
-- Conduct attacks and Create Detections
-
-- Investigate and remediate Incidents in Microsoft Defender XDR 
-
-- Threat Hunting using Notebooks with Microsoft Sentinel 
-
-- Mitigate threats using Microsoft Defender for Cloud 
+- Deploy Microsoft Defender for Identity Sensor on Domain Controllers
+- Simulate and Detect Lateral Movement Attacks
+- Investigate Threats and User Timelines 
+- Integrate Defender for Identity with Microsoft 365 Defender Portal
+- Review and Run Advanced Hunting Queries for Identity Signals
+- Review and explore Sentinel workspace 
+- Conduct attacks, Create Detections, Investigate an Incident
+- Threat Hunting using Notebooks with Microsoft Sentinel
+- Mitigate threats using Microsoft Defender
+- Command and Control Attack with DNS
+- Persistence Attack Detection
+- Investigate an incident
 
 ## Architecture Diagram
 

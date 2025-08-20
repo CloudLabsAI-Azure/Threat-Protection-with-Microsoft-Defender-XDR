@@ -4,19 +4,19 @@ In this lab, you will configure a Session Policy in Microsoft Defender for Cloud
 
 > **⚠ Important Usage Guidance:** Microsoft Defender for Office 365 may take some time to load certain results or complete specific labs from the backend. This is expected behavior. If the data does not appear after a couple of refresh attempts, proceed with the next lab and return later to check the results.
 
-1. In Microsoft Defender portal go to **Cloud Apps** → **Policy** → **Policy management** from the left pane.
+1. In Microsoft Defender portal go to **Cloud Apps** → **Policy (1)** → **Policy management (2)** from the left pane.
 
-1. On the **Policy management** page, in the **All policies** section click on **+ Create policy**, then select **Session policy**.
+1. On the **Policy management** page, in the **All policies (3)** section click on **+ Create policy (4)**, then select **Session policy (5)**.
   
    ![Create Session Policy](./media/corg-1-24.png)
 
 1. Configure the policy settings:
-   - **Policy template**: `No template`
-   - **Policy name**: `Block-All-Download`
-   - **Policy severity**: Choose high (red)
-   - **Category**: `Threat detection`
-   - **Session control type**: `Control file download (with inspection)`
-   - **Activities matching all of the following**:  
+   - **Policy template**: `No template` **(1)**
+   - **Policy name**: `Block-All-Download` **(2)**
+   - **Policy severity**: Choose high (red) **(3)**
+   - **Category**: `Threat detection` **(4)**
+   - **Session control type**: `Control file download (with inspection)` **(5)**
+   - **Activities matching all of the following** **(6)**:  
      - `Device`, `tag`, `does not equal` → `Intune compliant, Microsoft Entra Hybrid joined`  
      - `App`, `Manual onboarding`, `equals` → `Microsoft SharePoint Online`
 
@@ -36,7 +36,7 @@ In this lab, you will configure a Session Policy in Microsoft Defender for Cloud
 
    > **Note**: Ensure your Conditional Access policy is routing sessions through Microsoft Defender for Cloud.
 
-1. Right-click the **Microsoft Edge** shortcut on the **Desktop**, select **Send to (2)** → **Documents (3)** to send a copy of the shortcut to the Documents folder.
+1. Right-click the **Microsoft Edge (1)** shortcut on the **Desktop**, select **Send to (2)** → **Documents (3)** to send a copy of the shortcut to the Documents folder.
 
    ![Send Shortcut to Documents](./media/tgs-1-3.png)
 

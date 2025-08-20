@@ -1,8 +1,8 @@
 # Lab 18: Automate Response with Power Automate and Microsoft Sentinel
 
-### Task 1: Create a SharePoint site and custom list to store incident logs
+In this lab, you will create a SharePoint communication site named Incident_Logs with a list called Powershell_Logs_list to log incident details. You will then build a Power Automate flow that records flagged Outlook emails into this list. In Microsoft Sentinel, you will configure an analytics rule to detect suspicious PowerShell activity and link it to a playbook named Notify-SOC-OnPowerShellIncident, which uses Logic Apps to automatically notify the SOC team by email with dynamic incident details such as title, severity, and status.
 
-In this task, you'll create a SharePoint communication site named `Incident_Logs` and set up a list called `Powershell_Logs_list`. This list will be used to log incident details such as flagged emails via Power Automate.
+#### **Create a SharePoint site and custom list to store incident logs**
 
 1. On the **SharePoint home page**, click **Create site** from the top menu.
 
@@ -60,9 +60,7 @@ In this task, you'll create a SharePoint communication site named `Incident_Logs
 
       ![](../media/sp_gg_e4_13.png)
 
-## Task 2: Create a Microsoft Sentinel Playbook to Notify SOC
-
-In this task, you will create a Sentinel playbook named **Notify-SOC-OnPowerShellIncident** using Logic Apps. The playbook will trigger from a Sentinel incident and send an email to the SOC team containing dynamic incident details such as title, severity, status, and more.
+#### **Create a Microsoft Sentinel Playbook to Notify SOC**
 
 1. On the **Microsoft Defender** page, in the left-hand menu, Under **Microsoft Sentinal** expand **Configuration (1)** and click **Automation (2)**. On the **Automation** page, click **Create (3)** and select **Playbook with incident trigger (4)** from the dropdown menu.
 
@@ -156,9 +154,7 @@ In this task, you will create a Sentinel playbook named **Notify-SOC-OnPowerShel
     > **Note:** You can now link this playbook to an analytics rule as an automated response to PowerShell-based attacks or similar alerts.
 
 
-## Task 3: Create Analytics Rule and Trigger Playbook using Microsoft Sentinel
-
-In this task, you'll configure an analytics rule in Microsoft Sentinel to detect suspicious PowerShell activity and trigger an automated playbook when an incident is created.
+#### **Create Analytics Rule and Trigger Playbook using Microsoft Sentinel**
 
 1. In the **Microsoft Sentinel** in the Defender Portal, go to **Configuration (1)** > **Analytics (2)** and click **+ Create (3)** > **Scheduled query rule (4)**.
 
@@ -236,9 +232,7 @@ In this task, you'll configure an analytics rule in Microsoft Sentinel to detect
    > **Note:** Wait for 5–6 minutes for the playbook to trigger after the condition is met.
 
 
-### Task 4: Create a Power Automate Flow to Log Flagged Emails into SharePoint
-
-In this task, you'll create a flow in Power Automate that triggers when an email is flagged in Outlook and logs its details (subject, sender, body, etc.) into the SharePoint list you created earlier.
+#### **Create a Power Automate Flow to Log Flagged Emails into SharePoint**
 
 1. On the **Power Automate portal**, click **Create (1)** in the left menu and select **Automated cloud flow (2)**.
 
@@ -334,15 +328,15 @@ In this task, you'll create a flow in Power Automate that triggers when an email
 
    > **Tip:** You can further extend this flow by notifying the SOC via Teams or email, or even triggering an Azure Logic App or Defender investigation.
 
-> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-> - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
+> **Congratulations** on completing the Lab! Now, it's time to validate it. Here are the steps:
+> - Hit the Validate button for the corresponding lab. If you receive a success message, you can proceed to the next lab. 
 > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
 > - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
 <validation step="94eca9d3-0a24-4b20-8a82-95818f1fac73" />
 
 ## Review
 
-In this exercise, you completed a comprehensive automated incident response setup using Microsoft Defender XDR, Microsoft Sentinel, Power Automate, and SharePoint:
+In this lab, you have completed the following:
  
 - Created a SharePoint communication site and a custom list to store metadata from flagged Outlook emails.  
 - Built a Power Automate flow to log flagged email details into the SharePoint list in real-time.  

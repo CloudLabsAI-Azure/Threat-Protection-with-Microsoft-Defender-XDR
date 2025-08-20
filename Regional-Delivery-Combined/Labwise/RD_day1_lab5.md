@@ -92,7 +92,7 @@
 
 ## Review
 
-In this lab, you have completed the following tasks:
+In this lab, you have completed the following:
 
 - Verified preset security policies and enabled DKIM and Priority Account protection.
 - Reviewed secure posture using Configuration Analyzer and Secure Score.

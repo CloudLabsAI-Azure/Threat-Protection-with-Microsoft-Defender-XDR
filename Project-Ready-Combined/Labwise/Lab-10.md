@@ -24,7 +24,7 @@ In this lab, you will implement App Governance in Microsoft Defender for Cloud A
 
 1. On a new tab in the **Microsoft Edge** browser, go to [https://security.microsoft.com](https://security.microsoft.com).
 
-1. On the **Microsoft Defender portal**, in the left menu, go to **Cloud apps (1)** > **App governance (2)** and select any app, such as **Microsoft Graph Comm... (3)**, from the listed apps.
+1. On the **Microsoft Defender portal**, in the left menu, go to **Cloud apps (1)** > **App governance (2)**, scroll down and select any app, such as **Microsoft Graph Command Line Tools (3)**, from the listed apps.
 
    ![](./media/corr_t_f_1.png)
 
@@ -34,7 +34,7 @@ In this lab, you will implement App Governance in Microsoft Defender for Cloud A
 
    > You've now reviewed an OAuth app's access level and identified potentially risky permissions that may require action.
 
-1. Go to the **Policies (1)** tab > select **Microsoft 365 (2)**, then click **Create policy (3)**.
+1. Close the pane, and go to the **Policies (1)** tab > select **Microsoft 365 (2)**, then click **Create policy (3)** under *Regulate app use*
 
    ![](./media/rdr_xdr_6.png)
 
@@ -54,16 +54,20 @@ In this lab, you will implement App Governance in Microsoft Defender for Cloud A
 
    ![](./media/rdr_xdr_10.png)
 
-1. Configure the policy conditions:  
+1. On the *Set policy scope and conditions*, click on **Edit conditions**.
+
+   ![](./media/conditions.png)
+
+1. Configure the policy conditions delete the **existing condition** and add the following condition by clicking on **+ Add condition**
    - Set **Highly privileged (1)** to **Yes (2)**  
    - Set **Publisher verified (3)** to **No (4)**  
    - Click **Save (5)**
 
    ![](./media/rdr_xdr_11.png)
 
-1. In the **Set policy action** step, choose **Disable app (1)** and click **Next (2)**.
+1. In the **Set policy action** step, check the **Disable app (1)** checkbox and click **Next (2)**.
 
-   ![](./media/rdr_xdr_12.png)
+   ![](./media/rdr_xdr_12upd.png)
 
 1. Set the policy status to **Active (1)** and click **Next (2)**.
 
@@ -79,19 +83,19 @@ In this lab, you will implement App Governance in Microsoft Defender for Cloud A
 
    > The detection policy is now active and will monitor all onboarded OAuth apps for risky permissions and unverified publishers.
 
-1. Back on the **App governance** overview, click **View all apps** to analyze detected apps.
+1. Navigate back to the **App governance** overview page and click **View all apps** to analyze detected apps.
 
-   ![](./media/rdr_xdr_16.png)
+   ![](./media/rdr_xdr_16upd.png)
 
 1. In the **Microsoft 365 (1)** tab, notice apps flagged with a **High (2)** privilege level.
 
-   ![](./media/rdr_xdr_17.png)
+   ![](./media/rdr_xdr_17upd.png)
 
 1. Go to **Incidents & alerts (1)** > **Incidents (2)**, and click the incident **Detect High-Permission OAuth Apps (3)**.
 
    ![](./media/rdr_xdr_18.png)
 
-1. In the incident details pane, review the violation summary, app, and policy triggered.
+1. In the incident details pane, review the violation summary, app, and policy triggered and close the pane.
 
    ![](./media/rdr_xdr_19.png)
 

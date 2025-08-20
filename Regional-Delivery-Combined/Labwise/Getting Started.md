@@ -1,4 +1,4 @@
-# Implement Threat Protection with Microsoft Defender XDR solutions - Day 1
+# Implement Threat Protection with Microsoft Defender XDR solutions
 
 ## Overview
 
@@ -33,7 +33,7 @@ In this hands-on lab, you will enhance threat protection by integrating Microsof
 
 # Getting Started with the Lab
  
-Welcome to your Securing Collaboration with Microsoft Defender Solutions workshop! We've prepared a seamless environment for you to familiarize yourself with the Microsoft security operations analyst, you monitor, identify, investigate, and respond to threats in multi-cloud environments and related Microsoft services. Let's begin by making the most of this experience:
+Welcome to Implement Threat Protection with Microsoft Defender XDR solutions workshop! We've prepared a seamless environment for you to familiarize yourself with the Microsoft security operations analyst, you monitor, identify, investigate, and respond to threats in multi-cloud environments and related Microsoft services. Let's begin by making the most of this experience:
  
 ## Accessing Your Lab Environment
  
@@ -123,7 +123,8 @@ Click the **A↕ icon (1)** next to the timer to adjust the zoom level for the e
 
 1. Now, click on the **Next** from the lower right corner to move to the next page.
    
-### Support Contact
+### **Support Contact**
+
 The CloudLabs support team is available 24/7, 365 days a year, via email and live chat to ensure seamless assistance at any time. We offer dedicated support channels tailored specifically for both learners and instructors, ensuring that all your needs are promptly and efficiently addressed.
  
 Learner Support Contacts:

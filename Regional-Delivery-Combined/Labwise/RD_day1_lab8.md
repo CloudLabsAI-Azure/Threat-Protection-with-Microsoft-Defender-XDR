@@ -26,7 +26,7 @@
 
 ## Review
 
-In this lab, you have completed the following tasks:
+In this lab, you have completed the following:
 
 - Enabled integration between Defender for Endpoint and Defender for Cloud Apps.
 - Generated a snapshot report using traffic logs to discover cloud app usage.
