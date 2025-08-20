@@ -61,3 +61,5 @@ In this lab, you:
 - Installed the **Microsoft Defender XDR** solution from the Content Hub.
 
 ## You have successfully completed the lab. Click on Next to Continue
+
+  ![Start Your Azure Journey](./media/rd_gs_1_9.png)
