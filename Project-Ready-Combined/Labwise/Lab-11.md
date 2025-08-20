@@ -95,3 +95,5 @@ In this lab, you:
 - Simulated a download to trigger the alert and verified the alert details in Microsoft Defender.
 
 ## Day 1 Completed Successfully
+
+  ![Start Your Azure Journey](./media/rd_gs_1_9.png)
