@@ -94,6 +94,4 @@ In this lab, you:
 - Configured the policy to send alert notifications by email.
 - Simulated a download to trigger the alert and verified the alert details in Microsoft Defender.
 
-## Day 1 Completed Successfully
-
-  ![Start Your Azure Journey](./media/rd_gs_1_9.png)
+## You have successfully completed Day 2.
