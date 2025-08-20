@@ -4,7 +4,7 @@ In this lab, you will configure a Session Policy in Microsoft Defender for Cloud
 
 > **⚠ Important Usage Guidance:** Microsoft Defender for Office 365 may take some time to load certain results or complete specific labs from the backend. This is expected behavior. If the data does not appear after a couple of refresh attempts, proceed with the next lab and return later to check the results.
 
-1. In Microsoft Defender portal go to **Cloud Apps** → **Policy management**.
+1. In Microsoft Defender portal go to **Cloud Apps** → **Policy** → **Policy management** from the left pane.
 
 1. On the **Policy management** page, in the **All policies** section click on **+ Create policy**, then select **Session policy**.
   
@@ -16,15 +16,16 @@ In this lab, you will configure a Session Policy in Microsoft Defender for Cloud
    - **Policy severity**: Choose high (red)
    - **Category**: `Threat detection`
    - **Session control type**: `Control file download (with inspection)`
-   - **Filters**:  
-     - Device tag `does not equal` → `Intune compliant, Microsoft Entra Hybrid joined`  
-     - App `equals` → `Microsoft SharePoint Online`
+   - **Activities matching all of the following**:  
+     - `Device`, `tag`, `does not equal` → `Intune compliant, Microsoft Entra Hybrid joined`  
+     - `App`, `Manual onboarding`, `equals` → `Microsoft SharePoint Online`
 
        ![Policy Filters](./media/gftix-1-1.png)
    > **Note**: On the **Apply template?** dialog box, click on the **Cancel** button.
 
 1. Scroll to **Files matching all of the following** and configure the following:
-   - Filter by **Extension** → `exe` OR `apk`
+   - `Extension`, `equals`, `exe` 
+   - Click on **+** next to **exe** and add OR `apk` in the text box
    - Under **Actions**, select **Block**
 
       ![File Extension Block](./media/gftix-1-2.png)
@@ -39,9 +40,25 @@ In this lab, you will configure a Session Policy in Microsoft Defender for Cloud
 
    ![Send Shortcut to Documents](./media/tgs-1-3.png)
 
-1. Open an incognito browser and go to https://www.office.com.
+1. Open the Edge browser, open **New InPrivate window** and go to https://www.office.com.
 
-1. Sign in using your lab credentials and from the left pane, go to **Apps** → **SharePoint**.
+1. Click on **Sign in** from the top right corner from home page of Office.com
+
+   ![Create Site](./media/signinoffice.png)
+
+1. Enter the Username and Password in the SignIn prompt:
+
+   - **Email/Username:** <inject key="AzureAdUserEmail"></inject>
+   - **Password:** <inject key="AzureAdUserPassword"></inject>
+
+1. From the left pane, go to **Apps (1)** → **SharePoint (2)**.
+
+   ![Create Site](./media/sharepoint1.png)
+   > **Note:** If you see a redirect to *Access to Microsoft SharePoint Online is monitored*, click on **Continue to Microsoft SharePoint Online**
+
+1. On *Sign in with your work account*, click on **Continue with current profile**
+
+   ![Create Site](./media/sharepoint2.png)
 
 1. Click on **+ Create site**.
 
@@ -53,11 +70,13 @@ In this lab, you will configure a Session Policy in Microsoft Defender for Cloud
 
 1. Click **Standard communication (template)** and then select **Use template**.
 
-1. Enter the **Site name** as `Demo` or any name of your choice, then click on the **Next** button.
+   ![Create Site](./media/sharepoint3.png)
+
+1. Enter the **Site name** as `Demo (1)` or any name of your choice, then click on the **Next (2)** button.
 
    ![Site Name](./media/corg-1-27.png)
 
-1. Under the **Select a language** field, ensure that **English** is selected, then click on the **Create site** button.
+1. Under the **Select a language** field, ensure that **English (1)** is selected, then click on the **Create site (2)** button.
 
    ![Select Language](./media/corg-1-28.png)
 
@@ -73,7 +92,7 @@ In this lab, you will configure a Session Policy in Microsoft Defender for Cloud
 
    ![Upload Files](./media/corg-1-31.png)
 
-1. Navigate and click on **Documents**, then select **Microsoft Edge** application. Now, click on the **Open** button.
+1. Navigate and click on **Documents (1)**, then select **Microsoft Edge (2)** application. Now, click on the **Open (3)** button.
 
    ![Select Microsoft Edge Application](./media/corg-1-32.png)
    
@@ -92,6 +111,7 @@ In this lab, you will configure a Session Policy in Microsoft Defender for Cloud
   
     ![Download Blocked Message](./media/g-3-9.png)
 
+1. Click on **Close** and close the InPrivate window.
 
 ## Review
 

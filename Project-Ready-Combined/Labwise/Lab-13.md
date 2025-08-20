@@ -105,7 +105,7 @@ In this lab, you will simulate a Lateral Movement attack using the Mimikatz tool
 
 1. Once this command executes, Microsoft Defender’s attack disruption feature will log the user out of the Virtual Machine and prevent them from logging back in. It may take about 10-15 minutes to log out, please wait
 
-1. Now you can check your alerts in the Microsoft Defender portal, navigate to **Incidents & alerts** in the left-hand navigation pane.
+1. Now, go back to **svm-<inject key="DeploymentID" enableCopy="false"/>** virtual machine and check your alerts in the Microsoft Defender portal, navigate to **Incidents & alerts** in the left-hand navigation pane.
 
       ![](./media/E1T3S3upd1.png)
 
