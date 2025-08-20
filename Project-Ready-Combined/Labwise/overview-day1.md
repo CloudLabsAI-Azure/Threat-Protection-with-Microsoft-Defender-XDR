@@ -12,13 +12,11 @@ Next, you will analyze threats using Threat Explorer and real-time detections, r
 
 ## Objectives
 
-In **Day 1**, you will be able to:
-
-- **Lab 1:** Configure Threat Policies in Microsoft Defender for Office 365
-- **Lab 2:** Simulate Phishing and Malware Attacks Using Attack Simulator
-- **Lab 3:** Analyze Threats with Threat Explorer and Real-Time Detections
-- **Lab 4:** Investigate and Remediate Incidents in Microsoft Defender XDR
-- **Lab 5:** Configure Anti-Phishing and Safe Links Policies
+- Configure Threat Policies in Microsoft Defender for Office 365
+- Simulate Phishing and Malware Attacks Using Attack Simulator
+- Analyze Threats with Threat Explorer and Real-Time Detections
+- Investigate and Remediate Incidents in Microsoft Defender XDR
+- Configure Anti-Phishing and Safe Links Policies
 
 ## Prerequisites
 

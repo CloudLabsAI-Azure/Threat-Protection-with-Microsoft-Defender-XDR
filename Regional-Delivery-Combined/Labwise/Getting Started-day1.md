@@ -16,8 +16,10 @@ In this lab, you will explore how to enhance organizational security using Micro
 - Integrate Microsoft Defender for Cloud Apps with Endpoint for cloud app discovery.
 - Generate and analyze snapshot reports to detect shadow IT and unsanctioned applications.
 
+
+
 Now, click on **Next** from the lower right corner to move on to the next page.
  
-  ![Start Your Azure Journey](./media/gst9.png)
+  ![Start Your Azure Journey](./media/rd_gs_1_9.png)
 
 ### Happy learning!

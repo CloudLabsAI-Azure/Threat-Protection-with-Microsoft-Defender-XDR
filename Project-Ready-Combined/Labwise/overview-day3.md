@@ -14,20 +14,18 @@ Finally, you will mitigate threats by managing incidents and alerts in Microsoft
 
 ## Objectives
 
-In **Day 3**, you will be able to:
-
-- **Lab 12:** Deploy Microsoft Defender for Identity Sensor on Domain Controllers
-- **Lab 13:** Simulate and Detect Lateral Movement Attacks
-- **Lab 14:** Investigate Threats and User Timelines 
-- **Lab 15:** Integrate Defender for Identity with Microsoft 365 Defender Portal
-- **Lab 16:** Review and Run Advanced Hunting Queries for Identity Signals
-- **Lab 17:** Review and explore Sentinel workspace 
-- **Lab 18:** Lab 18: Conduct attacks, Create Detections, Investigate an Incident
-- **Lab 19:** Threat Hunting using Notebooks with Microsoft Sentinel
-- **Lab 20:** Mitigate threats using Microsoft Defender
-- **Lab 21:** Command and Control Attack with DNS
-- **Lab 22:** Persistence Attack Detection
-- **Lab 23:** Investigate an incident
+- Deploy Microsoft Defender for Identity Sensor on Domain Controllers
+- Simulate and Detect Lateral Movement Attacks
+- Investigate Threats and User Timelines 
+- Integrate Defender for Identity with Microsoft 365 Defender Portal
+- Review and Run Advanced Hunting Queries for Identity Signals
+- Review and explore Sentinel workspace 
+- Conduct attacks, Create Detections, Investigate an Incident
+- Threat Hunting using Notebooks with Microsoft Sentinel
+- Mitigate threats using Microsoft Defender
+- Command and Control Attack with DNS
+- Persistence Attack Detection
+- Investigate an incident
 
 ## Prerequisites
 

@@ -12,14 +12,12 @@ Next, you will implement session policies to control risky behavior, such as blo
 
 ## Objectives
 
-In **Day 2**, you will be able to:
-
-- **Lab 6:** Microsoft Defender for Cloud Apps-Configuring Cloud Discovery 
-- **Lab 7:** Discover and Analyze Shadow IT Using Cloud Discovery
-- **Lab 8:** Connect and Onboard a SaaS App to Microsoft Defender for Cloud Apps
-- **Lab 9:** Investigate and Remediate Incidents in Microsoft Defender XDR
-- **Lab 10:** Implement App Governance and Risk Detection for OAuth Apps
-- **Lab 11:** Investigate Alerts and Create Custom Detection Policies
+- Microsoft Defender for Cloud Apps-Configuring Cloud Discovery
+- Discover and Analyze Shadow IT Using Cloud Discovery
+- Connect and Onboard a SaaS App to Microsoft Defender for Cloud Apps
+- Investigate and Remediate Incidents in Microsoft Defender XDR
+- Implement App Governance and Risk Detection for OAuth Apps
+- Investigate Alerts and Create Custom Detection Policies
 
 ## Prerequisites
 
