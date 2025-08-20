@@ -91,3 +91,5 @@ In this lab, you:
 - Analyzed the investigation graph to confirm the scope and resolution of the incident.
 
 ## You have successfully completed the lab. Click on Next to Continue
+
+  ![Start Your Azure Journey](./media/rd_gs_1_9.png)
