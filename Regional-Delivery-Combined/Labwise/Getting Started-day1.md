@@ -16,7 +16,26 @@ In this lab, you will explore how to enhance organizational security using Micro
 - Integrate Microsoft Defender for Cloud Apps with Endpoint for cloud app discovery.
 - Generate and analyze snapshot reports to detect shadow IT and unsanctioned applications.
 
+## Prerequisites
 
+Participants should have:
+
+- Familiarity with Microsoft 365 security and compliance capabilities.
+- Understanding of Microsoft Defender for Endpoint and Defender for Cloud Apps.
+- Access to the lab-provided Microsoft 365 tenant and administrative permissions.
+- Basic knowledge of Conditional Access, SaaS onboarding, and security policy configuration.
+- Awareness of Shadow IT risks, OAuth application security, and file governance.
+
+## Explanation of Components
+
+* **Microsoft Defender for Cloud Apps**: A cloud access security broker (CASB) that provides visibility, control, and protection for SaaS applications.
+* **Cloud Discovery**: A feature that collects and analyzes app usage data to detect unsanctioned or high-risk apps in the organization.
+* **Snapshot Reports**: Manually uploaded log files from firewalls or proxies that generate a one-time analysis of discovered apps.
+* **Conditional Access App Control**: Integration with Microsoft Entra Conditional Access to control and monitor sessions for connected cloud apps.
+* **File Monitoring**: Capability to track file activity, classify sensitive content, and enforce data protection policies in connected apps.
+* **Session Policies**: Real-time controls applied to user sessions, such as blocking downloads or restricting access based on device compliance.
+* **App Governance**: Advanced monitoring for OAuth applications to detect risky permissions, unverified publishers, and unusual activity.
+* **Detection Policies**: Custom rules to automatically identify and respond to high-risk behaviors or configurations in cloud apps.
 
 Now, click on **Next** from the lower right corner to move on to the next page.
  
