@@ -14,15 +14,15 @@
 
 1. In the dashboard, navigate to **Discovered Apps** section.
 
-   ![](./media/rd_day1_ex4_t2_1.png)
+   ![](../media/rd_day1_ex4_t2_1.png)
 
 1. This section lists all discovered apps, showing their risk score, traffic volume, number of users, and last activity.
 
-   ![](./media/rd_day1_ex4_t2_2.png)
+   ![](../media/rd_day1_ex4_t2_2.png)
 
 1. Click on the elipsis next to any of the applications to mark the app as **Unsactioned**. This action labels the app as not approved for use, helping you monitor and report on its usage in the dashboard.
 
-   ![](./media/rd_day1_ex4_t2_3.png)
+   ![](../media/rd_day1_ex4_t2_3.png)
 
 ## Review
 
