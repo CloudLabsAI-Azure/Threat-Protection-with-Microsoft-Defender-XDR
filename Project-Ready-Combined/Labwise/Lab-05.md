@@ -71,7 +71,7 @@ In this lab, you will configure custom Anti-Phishing and Safe Links policies in 
     - Teams and Office 365 apps protection
     - Click tracking  
 
-    ![](./media/rd_day1_ex2_t2_11.png)
+      ![](./media/rd_day1_ex2_t2_11.png)
 
 1. Navigate to **Email & collaboration (1)** > **Policies & rules (2)** > **Alert policy (3)**.
 
@@ -121,7 +121,7 @@ In this lab, you will configure custom Anti-Phishing and Safe Links policies in 
 
    -  Click **Send (3)** to deliver the email.
 
-    ![](./media/rd_day1_ex2_t2_18.png)
+      ![](./media/rd_day1_ex2_t2_18.png)
 
 1. Navigate back to Defnder portal and select **Email & collaboration (1)** > **Explorer (2)** and locate the test email **Test-Safe (3)**.
 

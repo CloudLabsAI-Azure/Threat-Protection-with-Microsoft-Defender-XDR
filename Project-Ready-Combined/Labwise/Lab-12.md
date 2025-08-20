@@ -73,7 +73,7 @@ Install the AD DS role to enable the server to function as a domain controller.
    - Click the folder icon to choose **Show in folder**.  
    - **Hint:** If you cannot locate the file, check the `C:\Users\admin\Downloads` directory.
 
-   ![](./media/t3_g_e1_3.png)
+      ![](./media/t3_g_e1_3.png)
 
 1. Right-click on the downloaded zip file, choose **Extract All...**, ensure that **Show extracted files when complete** is checked, and then click **Extract**.
 
@@ -124,12 +124,12 @@ Install the AD DS role to enable the server to function as a domain controller.
 1. Configure the Wizard:
    - Select **Role-based or feature-based installation (1)**, then click **Next (2)**.
 
-   ![](./media/t3_g_e1_7.png)
+      ![](./media/t3_g_e1_7.png)
 
    - Choose your **Select a server from the server pool**, then click **Next**.
    - In the "Server Roles" list, check **Active Directory Domain Services (1)** then click **Next (2)**.
 
-   ![](./media/t3_g_e1_8.png)
+      ![](./media/t3_g_e1_8.png)
 
    - When prompted, click **Add Features** to include required tools, then click **Next**.
    - **Skip** the **Features** page by clicking **Next**.
@@ -137,7 +137,7 @@ Install the AD DS role to enable the server to function as a domain controller.
    - Review your selections and click **Install**.
    - Wait for the installation to complete and click on **Close**.
 
-   ![](./media/E1T0S4.png)
+      ![](./media/E1T0S4.png)
 
    > **Note:** Do not close Server Manager after installation; the next step begins from there.
 
@@ -154,25 +154,25 @@ Install the AD DS role to enable the server to function as a domain controller.
    - Ensure **Domain Name System (DNS) server** is checked.
    - Enter a **Directory Services Restore Mode (DSRM)** password:  `P@ssw0rd123!` **(3)**, then click **Next (4)**.
 
-   ![](./media/E1T0S7.png)
+      ![](./media/E1T0S7.png)
 
    - Ignore DNS delegation warnings, click on **Next**.
 
-   ![](./media/t3_g_e1_11.png)
+      ![](./media/t3_g_e1_11.png)
 
    - Accept the default **NetBIOS domain name** `DEFENDERXDR`, then click **Next**.
 
-   ![](./media/E1T0S7a.png)
+      ![](./media/E1T0S7a.png)
 
    - Use default **paths** for the AD DS database, logs, and SYSVOL, then click **Next**.
    - Review your selections, then click **Next**.
    - Wait for the prerequisites check to complete, then click **Install**.
 
-   ![](./media/t3_g_e1_12.png)
+      ![](./media/t3_g_e1_12.png)
 
    - Wait for the process to complete; the server will restart automatically.
 
-   > **Note:** The VM will restart now, wait for 5 minutes and **Reconnect** to the VM.
+      > **Note:** The VM will restart now, wait for 5 minutes and **Reconnect** to the VM.
 
    ![](./media/E1T0S9.png)
 

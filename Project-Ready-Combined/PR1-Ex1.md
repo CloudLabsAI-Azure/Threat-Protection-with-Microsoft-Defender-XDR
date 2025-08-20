@@ -283,7 +283,7 @@ In this task, you'll simulate phishing and malware attacks using Microsoft Defen
 
     ![rd_day1_ex1_t2_22](./media/rd_day1_ex1_t2_22.png)
 
-> **Note:** This simulation mimics a malicious file being sent via email, testing how users respond to attachment-based threats.
+   > **Note:** This simulation mimics a malicious file being sent via email, testing how users respond to attachment-based threats.
 
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:  
 > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task.  

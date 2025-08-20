@@ -11,7 +11,7 @@ In this lab, you will integrate Microsoft Defender for Identity with the Microso
    - Click **Connect workspace (2)**.
    - Click **Content hub (3)**.
 
-   ![](./media/t3_g_e1_22.png)
+      ![](./media/t3_g_e1_22.png)
 
 1. On the **Workspaces** page, select the checkbox for **loganalycticworkspace (1)** and click **Connect workspace (2)**.
 

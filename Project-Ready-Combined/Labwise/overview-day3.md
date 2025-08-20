@@ -1,4 +1,4 @@
-# Hands-on Labs – Day 3
+# Hands-on Labs – Day 03
 
 ## Attack Simulation, Threat Hunting, and Mitigation with Microsoft Defender XDR & Sentinel
 

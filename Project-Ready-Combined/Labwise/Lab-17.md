@@ -10,7 +10,7 @@ In this lab, you will integrate the **Windows Security Events** data connector w
    - Select **Microsoft Sentinel (1)**.
    - Expand **Content management (2)** and select **Content hub (3)**.
 
-   ![](./media/t3_g_e1_22.png)
+      ![](./media/t3_g_e1_22.png)
 
 1. On the **Microsoft Defender** portal, in the left navigation pane, select **Microsoft Sentinel (1)**, expand **Content management (2)**, and select **Content hub (3)**.
 

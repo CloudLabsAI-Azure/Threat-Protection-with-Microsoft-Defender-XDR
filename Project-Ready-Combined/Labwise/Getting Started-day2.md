@@ -1,5 +1,7 @@
 # Implement Threat Protection with Microsoft Defender XDR solutions - Day 02
 
+### Overall Estimated Duration: 4 Hours
+
 ## Overview
 
 This lab provides hands-on experience with Microsoft Defender for Cloud Apps to detect and manage Shadow IT. You will configure Cloud Discovery, onboard SaaS apps, set session policies, and implement app governance for OAuth apps. Additionally, you’ll learn to investigate alerts and create custom detection policies to enhance cloud security.
