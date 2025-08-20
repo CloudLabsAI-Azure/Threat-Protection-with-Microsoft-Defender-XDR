@@ -17,7 +17,7 @@ In this lab, you will run advanced hunting queries in the Microsoft Defender por
    ```
    - Click **Run query** to execute.
 
-   ![](./media/E1T5S2.png)
+      ![](./media/E1T5S2.png)
 
 1. Review the results table for all the alerts.
 
@@ -25,7 +25,7 @@ In this lab, you will run advanced hunting queries in the Microsoft Defender por
    - Name the query as `Alert1`.
    - Select **Save**.
 
-   ![](./media/E1T5S4.png)
+      ![](./media/E1T5S4.png)
 
 ## Review
 
