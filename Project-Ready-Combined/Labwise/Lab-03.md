@@ -55,13 +55,13 @@ In this lab, you will leverage Microsoft Defender for Office 365 to investigate 
    - In the **URL clicks** tab, select the entry for the clicked timestamp.
    - Review the **URL (4)** that was clicked to investigate further.
 
-   ![](./media/rd_day1_ex2_t1_10.png)
+      ![](./media/rd_day1_ex2_t1_10.png)
 
-   > **Note:** Sometimes the Microsoft Defender portal can take 1–2 hours for initial backend data to load. If refreshing the page doesn’t display results, check back later.
+      > **Note:** Sometimes the Microsoft Defender portal can take 1–2 hours for initial backend data to load. If refreshing the page doesn’t display results, check back later.
 
-   ![](./media/combi_g_c_18.png)
+      ![](./media/combi_g_c_18.png)
 
-   > **Note:** If no data appears after waiting and refreshing, skip ahead to step 14 to continue with the lab.
+      > **Note:** If no data appears after waiting and refreshing, skip ahead to step 14 to continue with the lab.
 
 1. Click on the **Open url page** to open the full event details.
 
@@ -76,7 +76,7 @@ In this lab, you will leverage Microsoft Defender for Office 365 to investigate 
    - Navigate to the **Simulations (3)** tab.
    - Locate and select the simulation named **Test1 (4)** from the list.
 
-   ![](./media/rd_day1_ex2_t1_12.png)
+      ![](./media/rd_day1_ex2_t1_12.png)
 
 1. View the simulation report to observe the results.  
    In this example, 100% of users were compromised and 0% reported the phishing attempt.
