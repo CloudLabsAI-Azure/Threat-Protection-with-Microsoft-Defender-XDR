@@ -55,3 +55,5 @@ In this task, you:
 - Saved and applied the updated security settings for your environment.
 
 ## You have successfully completed the task. Click on Next to Continue
+
+  ![Start Your Azure Journey](./media/rd_gs_1_9.png)
