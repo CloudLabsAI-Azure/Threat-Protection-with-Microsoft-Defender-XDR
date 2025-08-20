@@ -122,3 +122,5 @@ In this lab, you:
 - Validated the policy by attempting to download a blocked executable and confirming that it was successfully blocked.
 
 ## You have successfully completed the lab. Click on Next to Continue
+
+  ![Start Your Azure Journey](./media/rd_gs_1_9.png)
