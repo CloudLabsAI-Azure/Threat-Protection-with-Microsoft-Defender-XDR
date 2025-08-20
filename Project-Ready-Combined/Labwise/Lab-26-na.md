@@ -45,4 +45,4 @@ In this lab, you have completed the following:
 - Viewed and reviewed event details from the search job results.
 - Explored the restoration process for historical data retrieval.
 
-## You have successfully completed the lab. Click on Next to Continue
+## You have successfully completed Day 3.
