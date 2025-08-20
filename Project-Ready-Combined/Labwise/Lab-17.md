@@ -87,3 +87,5 @@ In this lab, you:
 - Verified the successful connection of both virtual machines in the data connector status.
 
 ## You have successfully completed the lab. Click on Next to Continue
+
+  ![Start Your Azure Journey](./media/rd_gs_1_9.png)
