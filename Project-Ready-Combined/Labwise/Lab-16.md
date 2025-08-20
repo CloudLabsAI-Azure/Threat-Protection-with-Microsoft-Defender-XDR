@@ -36,3 +36,5 @@ In this lab, you:
 - Saved the hunting query for future use.
 
 ## You have successfully completed the lab. Click on Next to Continue
+
+  ![Start Your Azure Journey](./media/rd_gs_1_9.png)
