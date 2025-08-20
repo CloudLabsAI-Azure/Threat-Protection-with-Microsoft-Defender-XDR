@@ -110,3 +110,5 @@ In this lab, you:
 - Verified flagged apps in App Governance and reviewed related incidents in the Microsoft Defender portal.
 
 ## You have successfully completed the lab. Click on Next to Continue
+
+  ![Start Your Azure Journey](./media/rd_gs_1_9.png)
