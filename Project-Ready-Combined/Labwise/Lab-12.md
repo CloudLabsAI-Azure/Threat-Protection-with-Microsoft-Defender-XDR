@@ -240,3 +240,5 @@ In this lab, you:
 - Verified that the sensor status changed to **Running** in the Defender for Identity portal.
 
 ## You have successfully completed the lab. Click on Next to Continue
+
+  ![Start Your Azure Journey](./media/rd_gs_1_9.png)
