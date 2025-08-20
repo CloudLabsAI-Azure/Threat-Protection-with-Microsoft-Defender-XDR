@@ -140,3 +140,5 @@ In this lab, you:
 - Monitored simulation status and user interactions in the Attack Simulation Training dashboard.
 
 ## You have successfully completed the lab. Click on Next to Continue
+
+   ![Start Your Azure Journey](./media/rd_gs_1_9.png)
