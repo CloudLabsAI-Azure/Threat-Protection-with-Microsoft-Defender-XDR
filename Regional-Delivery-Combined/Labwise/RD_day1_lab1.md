@@ -1,4 +1,4 @@
-# Day-01
+# **Day-01**
 
 # Lab 1: Configure Threat Policies in Microsoft Defender for Office 365
 

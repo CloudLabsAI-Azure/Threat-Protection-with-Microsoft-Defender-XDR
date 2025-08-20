@@ -1,5 +1,7 @@
 # Lab 8: Discover and Analyze Shadow IT Using Cloud Discovery
 
+In this lab, you will integrate Defender for Cloud Apps with Microsoft Defender for Endpoint, enable discovery of shadow IT, and analyze data using snapshot reports.
+
 1. Analyze the report for the following options:
 
     - **Check the Summary Metrics:** Look at the total number of apps, users, IP addresses, and traffic volume to understand the overall cloud usage.

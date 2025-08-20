@@ -9,6 +9,7 @@ In this lab, you will integrate Defender for Cloud Apps with Microsoft Defender 
 1. On the **Settings** page, click **Endpoints (2)** under the **Settings (1)** category.
 
    ![](../media/rd_day1_ex4_t1_4.png)
+   > **Note:** If you donot see the Endpoints option, you can directly navigate to Endpoints portal by going to the below mentioned link [https://security.microsoft.com/securitysettings/endpoints/integration](https://security.microsoft.com/securitysettings/endpoints/integration).
 
 1. If prompted with a loading screen, wait for the workspace setup to complete.
 

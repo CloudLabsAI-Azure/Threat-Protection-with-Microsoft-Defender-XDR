@@ -1,4 +1,5 @@
-# Implement Threat Protection with Microsoft Defender XDR solutions - Day 2
+# Hands-on Labs – Day 02
+## Implement Threat Protection with Microsoft Defender XDR solutions
 
 ## Overview
 
