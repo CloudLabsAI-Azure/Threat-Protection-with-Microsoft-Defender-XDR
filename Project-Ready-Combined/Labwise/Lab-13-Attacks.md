@@ -50,8 +50,6 @@ In this lab, you will simulate a Lateral Movement attack using the Mimikatz tool
 
 1. Open **PowerShell (Administrator)** from Windows search.
 
-      ![image](./media/attack2.png)
-
 1. Run the following command to create a folder named `Tools` and add it as an exclusion in Microsoft Defender so that files inside this folder are not scanned.
 
       ```shell
@@ -109,7 +107,7 @@ In this lab, you will simulate a Lateral Movement attack using the Mimikatz tool
 
        ![](./media/E1T3S3upd.png)
 
-      > **Note:** The user will be logged out of the virtual machine as part of the containment measures initiated by the Defender in response to the user's attempted lateral movement attack.
+            > **Note:** The user will be logged out of the virtual machine as part of the containment measures initiated by the Defender in response to the user's attempted lateral movement attack.
 
 ## Review
 
