@@ -36,10 +36,10 @@ In this lab, you will use Microsoft Defender’s Search job capability to look f
 
     >**Note:** If you were running the job, the restore would run for a couple of minutes and your data would be available in a new table.
 
-
 ## Review
 
 In this lab, you:
+
 - Ran a search in Microsoft Defender for specific process activity.
 - Created a search job for the last 24 hours to retrieve C2-related data.
 - Viewed and reviewed event details from the search job results.

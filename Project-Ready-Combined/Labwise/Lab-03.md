@@ -94,10 +94,11 @@ In this lab, you will leverage Microsoft Defender for Office 365 to investigate 
 ## Review
 
 In this lab, you:
-- Explored phishing and malware simulation emails in a user mailbox.
-- Reported a phishing attempt and verified the acknowledgment response.
-- Used Threat Explorer to investigate URL click events and review related security details.
-- Examined simulation reports to assess user actions and identify potential risks.
+
+- Explored phishing and malware simulation emails in the user mailbox.  
+- Reported a phishing simulation email and verified the acknowledgment response.  
+- Investigated URL click events using **Threat Explorer** to review detailed security data.  
+- Analyzed simulation reports to assess user actions and identify high-risk users. 
 
 ## You have successfully completed the lab. Click on Next to Continue
 

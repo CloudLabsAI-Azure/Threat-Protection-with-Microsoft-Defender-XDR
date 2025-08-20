@@ -81,10 +81,11 @@ In this lab, you will integrate the **Windows Security Events** data connector w
 ## Review
 
 In this lab, you:
-- Installed the **Windows Security Events** solution from the Content Hub.
-- Connected Azure Windows virtual machines to Log Analytics.
-- Configured the **Security Events via Legacy Agent** connector to stream all security events.
-- Verified the successful connection of both virtual machines in the data connector status.
+
+- Installed the **Windows Security Events** solution from the Content Hub.  
+- Connected Azure Windows virtual machines to **Log Analytics**.  
+- Configured the **Security Events via Legacy Agent** connector to stream all events.  
+- Verified that both virtual machines showed as **Connected** in the data connector status.
 
 ## You have successfully completed the lab. Click on Next to Continue
 

@@ -48,11 +48,12 @@ In this task, you will enable and configure Microsoft Defender for Cloud to prov
 
 ## Review
 
-In this task, you:
+In this lab, you:
+
 - Enabled Microsoft Defender CSPM for the subscription.
-- Activated **Servers** protection under Cloud Workload Protection.
+- Turned on **Servers** protection under Cloud Workload Protection.
 - Configured Defender plans at both the subscription and Log Analytics workspace levels.
-- Saved and applied the updated security settings for your environment.
+- Saved and applied the updated security settings.
 
 ## You have successfully completed the task. Click on Next to Continue
 

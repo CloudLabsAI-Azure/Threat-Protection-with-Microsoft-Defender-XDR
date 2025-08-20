@@ -134,10 +134,12 @@ In this lab, you will leverage Microsoft Defender for Office 365’s Attack Simu
 ## Review
 
 In this lab, you:
-- Configured and launched a phishing simulation targeting credential harvesting.
-- Set up a malware attachment simulation to assess user response to file-based threats.
-- Assigned targeted security training to users involved in the simulations.
-- Monitored simulation status and user interactions in the Attack Simulation Training dashboard.
+
+- Configured and launched a **phishing simulation** using the Credential Harvest technique.  
+- Configured and launched a **malware attachment simulation** to test user response to file-based threats.  
+- Assigned targeted **security awareness training** to users participating in the simulations.  
+- Verified simulation progress and monitored user interactions in the **Attack Simulation Training** dashboard.  
+
 
 ## You have successfully completed the lab. Click on Next to Continue
 

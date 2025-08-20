@@ -145,6 +145,7 @@ You're a Security Operations Analyst working at a company that implemented Micro
    ![](./media/ex4_g_tr_23.png)
 
 ## Review
+
 In this lab, you have completed the following tasks:
 - Created a Group
 - Applied Microsoft Defender for Office 365 preset security policies

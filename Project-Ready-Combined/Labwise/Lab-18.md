@@ -224,12 +224,12 @@ In this lab, you will simulate two common attack techniques: **Persistence** thr
 ## Review
 
 In this lab, you:
-- Simulated persistence by adding a startup registry key.
+- Simulated a persistence attack by adding a startup registry key.
 - Created and executed a PowerShell script to mimic DNS-based C2 activity.
-- Queried and analyzed Security Events in Microsoft Sentinel.
-- Built and configured a scheduled analytics rule to detect registry-based persistence.
-- Mapped relevant entities for investigation and generated alerts.
-- Investigated incidents and reviewed evidence in the Microsoft Defender portal.
+- Queried and analyzed Security Events in Microsoft Sentinel using KQL.
+- Configured a scheduled analytics rule to detect registry-based persistence.
+- Mapped entities for investigation and generated alerts.
+- Investigated an incident, reviewed evidence, and managed incident properties in the Microsoft Defender portal.
 
 ## You have successfully completed the lab. Click on Next to Continue
 

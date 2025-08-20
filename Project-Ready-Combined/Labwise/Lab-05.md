@@ -138,9 +138,10 @@ In this lab, you will configure custom Anti-Phishing and Safe Links policies in 
 ## Review
 
 In this lab, you:
-- Created a custom Anti-Phishing policy with aggressive detection settings.
-- Configured a Safe Links policy for email, Teams, and Office 365 apps.
-- Set up an alert policy to detect malware in inbound email.
-- Simulated a phishing email and verified detections and alerts.
+
+- Configured a custom **Anti-Phishing policy** with aggressive detection settings.  
+- Created a **Safe Links policy** for email, Teams, and Office 365 apps.  
+- Set up an **alert policy** to detect malware in inbound email.  
+- Simulated a phishing email and verified that detections and alerts were successfully triggered. 
 
 ## You have successfully completed Day 1.

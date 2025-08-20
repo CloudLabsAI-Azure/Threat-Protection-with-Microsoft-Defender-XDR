@@ -122,10 +122,11 @@ In this lab, you will simulate a Lateral Movement attack using the Mimikatz tool
 ## Review
 
 In this lab, you:
-- Launched the Mimikatz tool from PowerShell (Admin) to simulate a DC Sync attack.
-- Attempted to extract the credentials of the `krbtgt` account.
-- Observed automatic containment measures initiated by Microsoft Defender for Identity.
-- Verified alerts in the Microsoft Defender portal for blocked lateral movement attempts via remote logon and RDP.
+
+- Used the **Mimikatz tool** in PowerShell (Admin) to simulate a **DC Sync attack**.  
+- Attempted to extract credentials of the **krbtgt account**.  
+- Observed **automatic containment measures** triggered by Microsoft Defender for Identity.  
+- Verified generated alerts in the Defender portal for **blocked lateral movement attempts** via remote logon and RDP. 
 
 ## You have successfully completed the lab. Click on Next to Continue
 

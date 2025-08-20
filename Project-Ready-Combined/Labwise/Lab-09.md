@@ -116,10 +116,11 @@ In this lab, you will configure a Session Policy in Microsoft Defender for Cloud
 ## Review
 
 In this lab, you:
-- Created a high-severity Session Policy in Microsoft Defender for Cloud Apps.
-- Configured filters to target non-compliant devices accessing Microsoft SharePoint Online.
-- Set file inspection rules to block downloads of specific file types such as `.exe` and `.apk`.
-- Validated the policy by attempting to download a blocked executable and confirming that it was successfully blocked.
+
+- Created a **high-severity Session Policy** in Microsoft Defender for Cloud Apps.  
+- Configured filters to target **non-compliant devices** accessing Microsoft SharePoint Online.  
+- Defined file inspection rules to **block downloads of .exe and .apk files**.  
+- Validated the policy by attempting to download an executable and confirmed it was successfully blocked.
 
 ## You have successfully completed the lab. Click on Next to Continue
 

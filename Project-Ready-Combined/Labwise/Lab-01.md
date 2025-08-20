@@ -71,10 +71,10 @@ In this lab, you will strengthen your organization's security posture by enablin
 ## Review
 
 In this lab, you:
-- Enabled Microsoft Defender CSPM to enhance cloud security posture management.
-- Activated App Governance for monitoring and managing OAuth app risks.
-- Configured both Standard and Strict Preset Security Policies in Microsoft Defender for Office 365.
-- Applied multi-layered email and collaboration protection to specific users, ensuring robust defense against threats.
+
+- Configured the **Standard Preset Security Policy** for specific recipients, applying Exchange Online Protection and Defender for Office 365 features.
+- Configured the **Strict Preset Security Policy** for the same recipients, adding an additional protection layer.
+- Verified that both **Standard** and **Strict Protection** were successfully applied to ensure multi-layered email and collaboration security.
 
 ## You have successfully completed the lab. Click on Next to Continue
 

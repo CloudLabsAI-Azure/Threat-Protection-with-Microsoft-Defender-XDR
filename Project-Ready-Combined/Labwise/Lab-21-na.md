@@ -75,6 +75,7 @@ In this lab, you will simulate a Command and Control (C2) attack by running a Po
 ## Review
 
 In this lab, you:
+
 - Created and configured a PowerShell script to simulate DNS queries to a C2 server.
 - Executed the script to generate periodic DNS beaconing traffic.
 - Allowed the script to run in the background to produce data for later threat hunting analysis.

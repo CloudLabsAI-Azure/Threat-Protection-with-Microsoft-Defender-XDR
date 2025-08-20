@@ -80,13 +80,15 @@ In this lab, you will configure Microsoft Defender for Cloud Apps to enable Clou
 
    ![Enter Your Password](./media/tr17.png)
    > **Note:** If the report does not load, proceed to Lab-08 and come back later to perform Lab-07.
+
 ## Review
 
 In this lab, you:
-- Enabled the Microsoft Defender for Cloud Apps feature in Microsoft Defender for Endpoint.
-- Configured Cloud Discovery with Enforce App Access.
-- Created and uploaded a snapshot report from Blue Coat Proxy logs.
-- Viewed and analyzed the generated Cloud Discovery dashboard.
+
+- Enabled the **Microsoft Defender for Cloud Apps** integration in Microsoft Defender for Endpoint.  
+- Configured **Cloud Discovery** and enabled **Enforce App Access**.  
+- Created and uploaded a **snapshot report** using Blue Coat Proxy logs.  
+- Viewed and analyzed the **Cloud Discovery dashboard** to review discovered apps.  
 
 ## You have successfully completed the lab. Click on Next to Continue
 

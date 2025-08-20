@@ -83,12 +83,13 @@ In this lab, you will simulate a phishing scenario and use Microsoft Defender XD
 ## Review
 
 In this lab, you:
-- Simulated a phishing email and verified its delivery.
-- Investigated the email using Threat Explorer in Microsoft Defender XDR.
-- Executed remediation actions, including moving the message to Junk and submitting it for review.
-- Initiated and tracked an automated investigation.
-- Managed and classified related alerts, updating their status.
-- Analyzed the investigation graph to confirm the scope and resolution of the incident.
+
+- Simulated a phishing email and verified its delivery.  
+- Investigated the suspicious email using **Threat Explorer** in Microsoft Defender XDR.  
+- Performed remediation actions, including moving the message to Junk and submitting it to Microsoft for review.  
+- Initiated an automated investigation with proposed remediation.  
+- Managed and classified the related alert by updating its status and ownership.  
+- Reviewed the investigation graph to confirm the scope and outcome of the incident.  
 
 ## You have successfully completed the lab. Click on Next to Continue
 

@@ -56,9 +56,10 @@ In this lab, you will integrate Microsoft Defender for Identity with the Microso
 ## Review
 
 In this lab, you:
-- Connected the **loganalycticworkspace** to Microsoft 365 Defender.
-- Verified and set it as the **primary workspace**.
-- Installed the **Microsoft Defender XDR** solution from the Content Hub.
+
+- Connected the **loganalycticworkspace** to Microsoft 365 Defender.  
+- Verified and set it as the **primary workspace**.  
+- Installed the **Microsoft Defender XDR solution** from the Content Hub.  
 
 ## You have successfully completed the lab. Click on Next to Continue
 

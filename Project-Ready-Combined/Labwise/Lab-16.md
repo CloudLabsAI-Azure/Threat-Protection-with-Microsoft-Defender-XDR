@@ -30,10 +30,11 @@ In this lab, you will run advanced hunting queries in the Microsoft Defender por
 ## Review
 
 In this lab, you:
-- Navigated to the **Advanced hunting** section in the Microsoft Defender portal.
-- Ran a KQL query to detect alerts.
-- Reviewed and analyzed the query results.
-- Saved the hunting query for future use.
+
+- Opened the **Advanced hunting** section in the Microsoft Defender portal.  
+- Executed a **KQL query** to detect identity-related alerts.  
+- Reviewed and analyzed the query results.  
+- Saved the hunting query for future use.  
 
 ## You have successfully completed the lab. Click on Next to Continue
 

@@ -234,10 +234,11 @@ Install the AD DS role to enable the server to function as a domain controller.
 ## Review
 
 In this lab, you:
-- Onboarded the Windows Server to Microsoft Defender for Endpoint using the local script deployment method.
-- Promoted the server to a domain controller with Active Directory Domain Services.
-- Installed the Microsoft Defender for Identity sensor using the downloaded installer and access key.
-- Verified that the sensor status changed to **Running** in the Defender for Identity portal.
+
+- Onboarded a Windows Server to **Microsoft Defender for Endpoint** using the local script method.  
+- Promoted the server to a **domain controller** with Active Directory Domain Services.  
+- Installed the **Defender for Identity sensor** using the downloaded installer and access key.  
+- Verified that the sensor status showed **Running** in the Defender for Identity portal.
 
 ## You have successfully completed the lab. Click on Next to Continue
 

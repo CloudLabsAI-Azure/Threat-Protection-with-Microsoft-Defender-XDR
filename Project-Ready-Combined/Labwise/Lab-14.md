@@ -21,9 +21,10 @@ In this task you will analyze using user timelines and alert details in the Defe
 ## Review
 
 In this lab, you:
-- Searched for a specific user (`demouser`) in the Microsoft Defender portal.
-- Accessed the user profile page to view detailed account information.
-- Reviewed the **Timeline** tab to analyze events and alerts related to the user.
+
+- Searched for the user account **`demouser`** in the Microsoft Defender portal.  
+- Accessed the **user profile page** to view account details.  
+- Reviewed the **Timeline** tab to analyze events and alerts associated with the user.  
 
 ## You have successfully completed the lab. Click on Next to Continue
 

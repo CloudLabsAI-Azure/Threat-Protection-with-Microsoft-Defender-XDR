@@ -137,11 +137,12 @@ In this lab, you will connect and onboard a SaaS application—Microsoft 365—t
 ## Review
 
 In this lab, you:
-- Verified that the assigned user has the correct Microsoft 365 E5 license.
-- Configured a Conditional Access policy with session controls for Microsoft 365.
-- Enabled file monitoring in Microsoft Defender for Cloud Apps.
-- Connected Microsoft 365 via App Connectors and confirmed the connection status.
-- Applied Conditional Access App Control to specific apps such as SharePoint Online.
+
+- Verified that the lab user had the required **Microsoft 365 E5 license**.  
+- Configured a **Conditional Access policy** with session controls for Microsoft 365.  
+- Enabled **file monitoring** in Microsoft Defender for Cloud Apps.  
+- Connected Microsoft 365 through **App Connectors** and confirmed its status.  
+- Applied **Conditional Access App Control** to apps such as SharePoint Online.  
 
 ## You have successfully completed the lab. Click on Next to Continue
 

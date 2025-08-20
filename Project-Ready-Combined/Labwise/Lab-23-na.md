@@ -45,7 +45,7 @@ In this lab, you will investigate a security incident in the Microsoft Defender 
 ## Review
 
 In this lab, you:
-- Accessed the Microsoft Defender portal to locate and open a specific incident.
+
 - Reviewed the incident attack story to understand the event sequence.
 - Analyzed related assets, evidence, and response actions.
 - Updated incident severity, tags, assignment, status, and classification.

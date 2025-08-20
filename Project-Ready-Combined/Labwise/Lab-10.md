@@ -104,10 +104,11 @@ In this lab, you will implement App Governance in Microsoft Defender for Cloud A
 ## Review
 
 In this lab, you:
-- Reviewed permissions for an OAuth app and identified high-privilege access.
-- Created a custom detection policy for apps with elevated permissions and unverified publishers.
-- Configured the policy to automatically disable risky OAuth apps.
-- Verified flagged apps in App Governance and reviewed related incidents in the Microsoft Defender portal.
+
+- Reviewed **OAuth app permissions** and identified high-privilege access.  
+- Created a **custom detection policy** targeting unverified publishers and elevated permissions.  
+- Configured the policy to automatically **disable risky OAuth apps**.  
+- Verified flagged apps in **App Governance** and reviewed related incidents in the Microsoft Defender portal.  
 
 ## You have successfully completed the lab. Click on Next to Continue
 

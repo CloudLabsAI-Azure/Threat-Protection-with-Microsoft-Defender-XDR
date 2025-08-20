@@ -33,10 +33,11 @@ In this lab, you will analyze Cloud Discovery reports in Microsoft Defender for 
 ## Review
 
 In this lab, you:
-- Reviewed summary metrics to understand overall cloud usage.
-- Analyzed app categories, risk levels, and top users.
-- Inspected discovered apps to identify risky or unapproved services.
-- Marked applications as unsanctioned for better monitoring and control.
+
+- Reviewed **summary metrics** to understand overall cloud usage.  
+- Analyzed **app categories, risk levels, and top users** to identify risky patterns.  
+- Inspected **discovered apps** to evaluate traffic volume and risk.  
+- Marked applications as **unsanctioned** to enforce policies and monitor usage.  
 
 ## You have successfully completed the lab. Click on Next to Continue
 
