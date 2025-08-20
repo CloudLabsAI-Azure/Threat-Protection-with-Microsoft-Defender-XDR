@@ -144,3 +144,5 @@ In this lab, you:
 - Applied Conditional Access App Control to specific apps such as SharePoint Online.
 
 ## You have successfully completed the lab. Click on Next to Continue
+
+  ![Start Your Azure Journey](./media/rd_gs_1_9.png)
