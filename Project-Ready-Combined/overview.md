@@ -42,4 +42,4 @@ Each lab module includes clear steps, a ready-to-use VM environment, and validat
 
 Every lab includes built-in validation steps. Be sure to follow the instructions to validate your progress and get full credit for completing the exercise.
 
-Enjoy your lab experience—and empower your security operations with Microsoft Defender XDR and Sentinel!
+Enjoy your lab experience—and empower your security operations with Microsoft Defender XDR!

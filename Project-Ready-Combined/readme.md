@@ -24,7 +24,7 @@ In this hands-on lab, you will detect and analyze Shadow IT using Cloud Discover
 In this hands-on lab, you will onboard devices and deploy Defender for Identity sensors, simulate and detect lateral movement attacks, integrate Defender for Identity with Microsoft 365 Defender Portal, and run advanced hunting queries. Integrate Microsoft Sentinel with Defender for Cloud, conduct persistence and command-and-control attack simulations, create hunting queries and analytics rules, and manage incidents and alerts.
 
 
-# Getting Started with the Lab
+## Getting Started with the Lab
  
 Welcome to your Implement Threat Protection with Microsoft Defender XDR solutions workshop! We've prepared a seamless environment for you to familiarize yourself with the Microsoft security operations analyst, you monitor, identify, investigate, and respond to threats in multi-cloud environments and related Microsoft services. Let's begin by making the most of this experience:
  
@@ -34,7 +34,7 @@ Once you're ready to dive in, your virtual machine and lab guide will be right a
  
 ![Access Your VM and Lab Guide](./media/gst1.png)
 
-### Virtual Machine & Lab Guide
+## Virtual Machine & Lab Guide
  
 Your virtual machine is your workhorse throughout the workshop. The lab guide is your roadmap to success.
  

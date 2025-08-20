@@ -31,7 +31,7 @@ In this hands-on lab, you will strengthen organizational security with Microsoft
 
 In this hands-on lab, you will enhance threat protection by integrating Microsoft Defender for Cloud Apps, Defender for Identity, Microsoft Sentinel, and Power Automate. You’ll onboard SaaS applications, configure session policies to detect risky behavior, and implement App Governance for high-risk OAuth apps. You’ll deploy Defender for Identity sensors to detect attacks like Pass-the-Hash and DC Sync, analyze threat timelines, and apply automated investigation and response (AIR). Finally, you’ll build incident response workflows using Sentinel and Power Automate
 
-# Getting Started with the Lab
+## Getting Started with the Lab
  
 Welcome to Implement Threat Protection with Microsoft Defender XDR solutions workshop! We've prepared a seamless environment for you to familiarize yourself with the Microsoft security operations analyst, you monitor, identify, investigate, and respond to threats in multi-cloud environments and related Microsoft services. Let's begin by making the most of this experience:
  
@@ -41,26 +41,26 @@ Once you're ready to dive in, your virtual machine and lab guide will be right a
  
 ![Access Your VM and Lab Guide](../media/cor_gs_r_1.png)
 
-### Virtual Machine & Lab Guide
+## Virtual Machine & Lab Guide
  
 Your virtual machine is your workhorse throughout the workshop. The lab guide is your roadmap to success.
- 
+
 ## Exploring Your Lab Resources
- 
+
 To get a better understanding of your lab resources and credentials, navigate to the **Environment** tab.
  
 ![Explore Lab Resources](../media/cor_gs_r_3.png)
- 
-## Utilizing the Split Window Feature
- 
+
+## **Utilizing the Split Window Feature***
+
 For convenience, you can open the lab guide in a separate window by selecting the **Split Window** button from the Top right corner.
  
 ![Use the Split Window Feature](../media/cor_gs_r_6.png)
- 
+
 ## Managing Your Virtual Machine
- 
-On the **Resources (1)** tab, you can manage your virtual machines. Under the **Actions (2)** column, use the buttons to start, stop, restart, or open your VM as needed.  
- 
+
+On the **Resources (1)** tab, you can manage your virtual machines. Under the **Actions (2)** column, use the buttons to start, stop, restart, or open your VM as needed.
+
 ![Manage Your Virtual Machine](../media/cor_gs_r_4.png)
 
 ## Lab Guide Zoom In/Zoom Out
@@ -70,7 +70,7 @@ Click the **A↕ icon (1)** next to the timer to adjust the zoom level for the e
 ![](../media/cor_gs_r_5.png)
 
 ## Let's Get Started with Azure Portal
- 
+
 1. On your virtual machine desktop, double-click the **Azure Portal** shortcut (Microsoft Edge browser) to open the Azure portal.
  
     ![Launch Azure Portal](../media/cor_gs_r_2.png)
