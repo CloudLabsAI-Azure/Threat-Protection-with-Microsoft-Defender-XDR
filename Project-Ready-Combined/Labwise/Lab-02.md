@@ -113,7 +113,7 @@ In this lab, you will leverage Microsoft Defender for Office 365’s Attack Simu
     - Microsoft default training reminder notification: **Weekly (3)** 
     Click **Next (4)**.
 
-    ![rd_day1_ex1_t2_19](./media/rd_day1_ex1_t2_19.png)
+        ![rd_day1_ex1_t2_19](./media/rd_day1_ex1_t2_19.png)
 
 1. Set the **Launch configuration (1)** to launch immediately, set duration to **2 days (2)**, and click **Next (3)**.
 
