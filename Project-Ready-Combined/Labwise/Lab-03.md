@@ -100,3 +100,5 @@ In this lab, you:
 - Examined simulation reports to assess user actions and identify potential risks.
 
 ## You have successfully completed the lab. Click on Next to Continue
+
+  ![Start Your Azure Journey](./media/rd_gs_1_9.png)
