@@ -20,7 +20,7 @@ In this lab, you will configure a Session Policy in Microsoft Defender for Cloud
      - Device tag `does not equal` → `Intune compliant, Microsoft Entra Hybrid joined`  
      - App `equals` → `Microsoft SharePoint Online`
 
-     ![Policy Filters](./media/gftix-1-1.png)
+         ![Policy Filters](./media/gftix-1-1.png)
    > **Note**: On the **Apply template?** dialog box, click on the **Cancel** button.
 
 1. Scroll to **Files matching all of the following** and configure the following:
