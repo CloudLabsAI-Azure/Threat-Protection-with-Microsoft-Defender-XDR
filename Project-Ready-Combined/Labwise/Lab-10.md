@@ -59,7 +59,7 @@ In this lab, you will implement App Governance in Microsoft Defender for Cloud A
    - Set **Publisher verified (3)** to **No (4)**  
    - Click **Save (5)**
 
-   ![](./media/rdr_xdr_11.png)
+      ![](./media/rdr_xdr_11.png)
 
 1. In the **Set policy action** step, choose **Disable app (1)** and click **Next (2)**.
 
