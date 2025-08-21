@@ -213,15 +213,15 @@ Install the AD DS role to enable the server to function as a domain controller.
 1. On the Setup wizard follow the below steps:
    - Choose the language and click **Next**.
 
-   ![](./media/t3_g_e1_15.png)
+      ![](./media/t3_g_e1_15.png)
 
    - Enter the **Access key (1)** copied earlier and click **Install (2)**.
 
-   ![](./media/t3_g_e1_16.png)
+      ![](./media/t3_g_e1_16.png)
 
    - Wait for the installation to complete and click **Finish**.
 
-   ![](./media/t3_g_e1_17.png)
+      ![](./media/t3_g_e1_17.png)
 
 1. Return to the Microsoft Defender portal, go to **Settings** > **Identities** > **Sensors**, find the sensor for `defenderxdr.internal`, and verify that the **Status** shows **Running** within 5–10 minutes.
 
