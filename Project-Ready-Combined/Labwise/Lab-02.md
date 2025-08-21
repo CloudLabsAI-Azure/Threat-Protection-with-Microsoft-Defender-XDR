@@ -41,7 +41,7 @@ In this lab, you will leverage Microsoft Defender for Office 365’s Attack Simu
 
    ![rd_day1_ex1_t2_9](./media/rd_day1_ex1_t2_9.png)
 
-1. Under **Select landing page**, choose a **login page template (1)** and click **Next (2)**.
+1. Under **Select landing page**, choose a **Landing Page template (1)** and click **Next (2)**.
 
     ![rd_day1_ex1_t2_10](./media/rd_day1_ex1_t2_10.png)
 

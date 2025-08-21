@@ -37,8 +37,8 @@ In this lab, you will configure Microsoft Defender for Cloud Apps to enable Clou
 1. Navigate back to **Settings** and choose **Cloud Apps**
 
    ![Enter Your Password](./media/tr5.png)
-    > **Note:** It may take a few minutes for the **Cloud Apps** section to appear. If you don’t see it immediately, wait and refresh the page.
 
+    > **Note:** It may take a few minutes for the **Cloud Apps** section to appear. If you don’t see it immediately, wait and refresh the page.
 
 1. Under Cloud Discovery, choose **Microsoft Defender for Endpoint** and enable **Enforce App Access**
 
@@ -79,7 +79,10 @@ In this lab, you will configure Microsoft Defender for Cloud Apps to enable Clou
 1. Once it is ready, click on the Test Report and you will be able to see the detailed Dashboard in the Cloud Discovery.
 
    ![Enter Your Password](./media/tr17.png)
+
    > **Note:** If the report does not load, proceed to Lab-08 and come back later to perform Lab-07.
+
+1. Remain on the current browser page and proceed to the next exercise, **Lab 7**, in the lab guide.
 
 ## Review
 

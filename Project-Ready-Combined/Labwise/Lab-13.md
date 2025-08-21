@@ -14,6 +14,8 @@ In this lab, you will simulate a Lateral Movement attack using the Mimikatz tool
    
       ![VMrdp](./media/xdr26.png)
 
+1. If the virtual machine is not running, click on **Start** to power it on. Wait until the status changes.
+
 1. At the beginning of the virtual machine page, click on **Connect (1)**, and from the drop-down select **Connect (2)**.
 
       ![VMrdp](./media/xdr27.png)

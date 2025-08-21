@@ -73,6 +73,8 @@ In this lab, you will configure custom Anti-Phishing and Safe Links policies in 
 
       ![](./media/rd_day1_ex2_t2_11.png)
 
+1. Click **Done** to complete the policy creation.
+
 1. Navigate to **Email & collaboration (1)** > **Policies & rules (2)** > **Alert policy (3)**.
 
     ![](./media/rd_day1_ex2_t2_12.png)

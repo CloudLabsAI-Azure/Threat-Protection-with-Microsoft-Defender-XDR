@@ -49,7 +49,7 @@ You're a Security Operations Analyst working at a company that implemented Micro
 1. On the **General** tab, enter **Microsoft Defender for Cloud Alerts - Custom Severity Filter (1)** in the *Name* field.  
    - In the *Description* field, type **Custom rule to detect Defender for Cloud alerts with chosen severity levels (2)**.
    - In the *Severity* drop-down, select **High (3)**. 
-   - Under *MITRE ATT&CK*, choose the relevant **tactics, techniques, and sub-techniques (4)**.
+   - Under **MITRE ATT&CK**, leave the default value as it is **(4)**.
    - Ensure the *Status* toggle is set to **Enabled (5)**. 
    - Click **Next: Set rule logic (6)** to continue.
 

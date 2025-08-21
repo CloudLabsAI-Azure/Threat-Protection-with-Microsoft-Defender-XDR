@@ -13,11 +13,13 @@ In this lab, you will integrate Microsoft Defender for Identity with the Microso
 
       ![](./media/t3_g_e1_22.png)
 
+      > **Note:** If the workspace is not already connected, the process may take up to 10 minutes to complete.
+
+      > **Note:** If you are already able to see the **Content hub** load, it means the workspace is already connected. In that case, you can skip directly to step 10.
+
 1. On the **Workspaces** page, select the checkbox for **loganalycticworkspace (1)** and click **Connect workspace (2)**.
 
    ![](./media/t3_g_e1_23.png)
-
-   > **Note:** If you are already able to see the **Content hub** load, it means the workspace is already connected. In that case, you can skip directly to step 10.
 
 1. On the **Choose a workspace** page, select the checkbox for **loganalycticworkspace (1)** and click **Next (2)**
 

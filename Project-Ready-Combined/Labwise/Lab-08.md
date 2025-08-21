@@ -90,9 +90,9 @@ In this lab, you will connect and onboard a SaaS application—Microsoft 365—t
   
     ![](./media/corg-1-23.png)
 
-1. Click **Connect Microsoft 365** and complete the authentication.
+1. Click Connect Microsoft Azure and complete the authentication.
 
-1. After successful connection, you will see the confirmation message: **“Great, Microsoft 365 is connected.”**, Click **Done**
+1. After successful connection, you will see the confirmation message: **“Great, Microsoft Azure is connected.”**, Click **Done**
  
     ![](./media/g-1-11.png)
 
