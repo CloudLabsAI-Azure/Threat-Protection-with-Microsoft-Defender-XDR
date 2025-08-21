@@ -112,6 +112,10 @@ In this lab, you will simulate two common attack techniques: **Persistence** thr
 
     >**Note:** You might see some popup after clicking on **Logs**. close all Popups by clicking on **X** Icon.
 
+1. On the **Logs** page, click **Simple mode (1)** and select **KQL mode (2)**.
+
+   ![](./media/corr_t_f_6.png)
+
 1. In the query editor, enter the following KQL statement **(1)** and click **Run (2)** to retrieve the records that start with the specified EventId. Review the results in the table below **(3)**.
 
     ```KQL

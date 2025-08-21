@@ -195,12 +195,6 @@ In this lab, you will leverage Microsoft Sentinel to proactively hunt for suspic
 
     >**Note:** If you were running the job, the restore would run for a couple of minutes and your data would be available in a new table.
 
-> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-> - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
-> - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-> - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
-<validation step="d927ee10-5fb0-4847-9994-4e782fe7a28c" />
-
 ## Review
 
 In this lab, you have completed the following:

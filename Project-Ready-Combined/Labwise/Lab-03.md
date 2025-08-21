@@ -76,7 +76,7 @@ In this lab, you will leverage Microsoft Defender for Office 365 to investigate 
    - Navigate to the **Simulations (3)** tab.
    - Locate and select the simulation named **Test1 (4)** from the list.
 
-   ![](./media/rd_day1_ex2_t1_12.png)
+      ![](./media/rd_day1_ex2_t1_12.png)
 
 1. View the simulation report to observe the results.  
    In this example, 100% of users were compromised and 0% reported the phishing attempt.

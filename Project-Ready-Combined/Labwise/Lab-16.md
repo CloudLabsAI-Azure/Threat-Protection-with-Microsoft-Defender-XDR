@@ -6,7 +6,7 @@ In this lab, you will run advanced hunting queries in the Microsoft Defender por
 
 1. In the **Microsoft Defender** portal, click **Hunting (1)** in the left-hand navigation pane and select **Advanced hunting (2)** from the menu.
 
-   ![](./media/E1T5S1.png)
+   ![](./media/corr_t_f_7.png)
 
 1. In the query editor, paste the following KQL query to detect Lateral movement attacks:
 

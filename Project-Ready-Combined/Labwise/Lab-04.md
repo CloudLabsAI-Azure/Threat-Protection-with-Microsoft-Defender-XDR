@@ -29,22 +29,19 @@ In this lab, you will simulate a phishing scenario and use Microsoft Defender XD
 
 1. On the **Choose response actions** page:
 
-   - **(1)** Toggle on **Show all response actions**  
-   - **(2)** Select **Move or delete**  
-   - **(3)** Choose **Junk**  
-   - **(4)** Select **Submit to Microsoft for review**  
-   - **(5)** Choose **I've confirmed it’s a threat**  
-   - **(6)** Select **Phish** as the category  
-   - Click **Cancel** to skip creating a block rule.
-   - **(7)** Enable **Initiate automated investigation** and choose **investigate mail**  
-   - Select **Propose remediation (8)**.  
-   - Choose **Create new (9)** to create a new remediation for approval. 
-   - Click **Next (10)**
+   - Toggle on **Show all response actions** **(1)** 
+   - Select **Move or delete** **(2)** 
+   - Choose **Junk** **(3)**  
+   - Select **Submit to Microsoft for review** **(4)**  
+   - Choose **I've confirmed it’s a threat** **(5)**   
+   - Select **Phish** as the category **(6)** 
+   - **Cancel** to skip creating a block rule.
+   - Enable **Initiate automated investigation** **(7)** 
+   - Choose **investigate mail** **(8)** 
+   - Click **Next (9)**
 
-      ![](./media/g_r_e2_2_2.png)
-
-      ![](./media/g_r_e2_2_3.png)    
-
+      ![](./media/corr_t_f_5.png)
+   
 1. On the **Choose target entities** page, enter a name such as `report-phish (1)` and review the impacted users. Click **Next (2)** and click on **Submit**.
 
    ![](./media/rd_day1_ex3_t2_5.png)

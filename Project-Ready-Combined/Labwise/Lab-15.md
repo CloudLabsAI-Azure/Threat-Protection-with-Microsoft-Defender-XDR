@@ -6,12 +6,7 @@ In this lab, you will integrate Microsoft Defender for Identity with the Microso
 
 1. Open a browser and go to the **Microsoft Defender portal**: https://security.microsoft.com. **Sign in** using your lab credentials.
 
-1. On the **Workspaces** page:
-   - Select the checkbox for **loganalycticworkspace (1)**.
-   - Click **Connect workspace (2)**.
-   - Click **Content hub (3)**.
-
-      ![](./media/t3_g_e1_22.png)
+1. In the Microsoft Defender portal, select **Microsoft Sentinel** from the left navigation menu. Expand any one of the options under Microsoft Sentinel and check if the workspace status is displayed.  
 
       > **Note:** If the workspace is not already connected, the process may take up to 10 minutes to complete.
 

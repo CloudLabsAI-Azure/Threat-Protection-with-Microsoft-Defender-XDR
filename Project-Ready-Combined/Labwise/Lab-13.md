@@ -6,6 +6,19 @@ In this lab, you will simulate a Lateral Movement attack using the Mimikatz tool
 
 > **⚠ Important Usage Guidance:** Microsoft Defender for Office 365 may take some time to load certain results or complete specific labs from the backend. This is expected behavior. If the data does not appear after a couple of refresh attempts, proceed with the next lab and return later to check the results..
 
+### **Prerequisite Setup on svm2**
+
+Before starting this lab, go to **Lab 12: Deploy Microsoft Defender for Identity Sensor on Domain Controllers** and perform **steps 9 to 38** on the **svm2** virtual machine.  
+
+This will:  
+
+- Onboard svm2 to **Microsoft Defender for Endpoint**  
+- Promote svm2 as a **Domain Controller** (`defenderxdr.internal`)  
+- Install and activate the **Microsoft Defender for Identity sensor**  
+- Verify that the sensor status shows **Running** in the Defender for Identity portal  
+
+> **Note:** This setup is required before you can proceed with the hunting queries in Microsoft Sentinel.
+
 1. In Azure portal, Search for **Virtual machines (1)** and select **Virtual machines (2)**.
 
       ![VMrdp](./media/vm.png)
