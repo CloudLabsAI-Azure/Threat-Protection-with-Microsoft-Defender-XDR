@@ -1,5 +1,7 @@
 # Lab 18: Conduct attacks, Create Detections, Investigate an Incident  
 
+## Overview
+
 In this lab, you will simulate two common attack techniques: **Persistence** through Windows registry modification and **Command and Control (C2)** using DNS queries. You will perform hands-on steps to create a registry-based persistence mechanism, execute a PowerShell script that mimics C2 traffic, and use Microsoft Sentinel to detect and investigate suspicious activity. The lab guides you through configuring analytics rules, mapping entities, and investigating incidents generated from these simulated attacks.
 
 #### **Persistence Attack with Registry Key Add**

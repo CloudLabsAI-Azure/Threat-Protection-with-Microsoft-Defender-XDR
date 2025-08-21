@@ -1,5 +1,7 @@
 # Lab 7: Discover and Analyze Shadow IT Using Cloud Discovery
 
+## Overview
+
 In this lab, you will analyze Cloud Discovery reports in Microsoft Defender for Cloud Apps to identify and address Shadow IT. You will review summary metrics, app categories, risk levels, top users, and discovered apps. You will also mark unsanctioned applications to help enforce usage policies and monitor non-approved services.
 
 > **⚠ Important Usage Guidance:** Microsoft Defender for Office 365 may take some time to load certain results or complete specific labs from the backend. This is expected behavior. If the data does not appear after a couple of refresh attempts, proceed with the next lab and return later to check the results.

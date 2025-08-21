@@ -1,5 +1,7 @@
 # Lab 5: Configure Anti-Phishing and Safe Links Policies
 
+## Overview
+
 In this lab, you will configure custom Anti-Phishing and Safe Links policies in Microsoft Defender for Office 365 to protect against malicious emails and phishing links. You will also create an alert policy to detect malware in inbound email and simulate a phishing scenario to verify that the policies and alerts work as expected.
 
 > **⚠ Important Usage Guidance:** Microsoft Defender for Office 365 may take some time to load certain results or complete specific labs from the backend. This is expected behavior. If the data does not appear after a couple of refresh attempts, proceed with the next lab and return later to check the results.

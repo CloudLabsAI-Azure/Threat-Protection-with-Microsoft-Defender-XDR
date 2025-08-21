@@ -1,5 +1,7 @@
 # Lab 10: Implement App Governance and Risk Detection for OAuth Apps
 
+## Overview
+
 In this lab, you will implement App Governance in Microsoft Defender for Cloud Apps to detect and mitigate risks from OAuth applications. You will review high-risk apps with elevated permissions, create a custom detection policy targeting unverified publishers and highly privileged permissions, and configure automated remediation actions such as disabling risky apps.
 
 > **⚠ Important Usage Guidance:** Microsoft Defender for Office 365 may take some time to load certain results or complete specific labs from the backend. This is expected behavior. If the data does not appear after a couple of refresh attempts, proceed with the next lab and return later to check the results.

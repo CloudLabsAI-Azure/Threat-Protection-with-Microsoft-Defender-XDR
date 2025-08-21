@@ -1,5 +1,7 @@
 # Lab 14: Investigate Threats and User Timelines 
 
+## Overview
+
 In this lab, you will investigate a specific user’s activity by using the **Timeline** feature in Microsoft Defender. You will search for a user account, access their profile page, and review all recorded events and alerts to understand recent actions and potential threats.
 
 > **⚠ Important Usage Guidance:** Microsoft Defender for Office 365 may take some time to load certain results or complete specific labs from the backend. This is expected behavior. If the data does not appear after a couple of refresh attempts, proceed with the next lab and return later to check the results.

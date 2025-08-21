@@ -1,5 +1,7 @@
 # Lab 3: Analyze Threats with Threat Explorer and Real-Time Detections
 
+## Overview
+
 In this lab, you will leverage Microsoft Defender for Office 365 to investigate simulated phishing and malware scenarios using Threat Explorer and real-time detection features. You will interact with simulation emails, report suspicious messages, and analyze security events. The lab guides you through reviewing phishing and malware simulation results, investigating user actions such as credential submission and URL clicks, and assessing user risk based on simulation outcomes.
 
 > **⚠ Important Usage Guidance:** Microsoft Defender for Office 365 may take some time to load certain results or complete specific labs from the backend. This is expected behavior. If the data does not appear after a couple of refresh attempts, proceed with the next lab and return later to check the results.

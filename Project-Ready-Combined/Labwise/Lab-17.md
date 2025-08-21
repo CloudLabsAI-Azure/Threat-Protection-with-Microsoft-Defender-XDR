@@ -1,5 +1,7 @@
 # Lab 17: Review and explore Sentinel workspace  
 
+## Overview
+
 In this lab, you will integrate the **Windows Security Events** data connector with Microsoft Sentinel. By completing this setup, Microsoft Sentinel will automatically collect and analyze Windows security event logs from your Azure virtual machines, enabling advanced threat detection and investigation.
 
 > **⚠ Important Usage Guidance:** Microsoft Defender for Office 365 may take some time to load certain results or complete specific labs from the backend. This is expected behavior. If the data does not appear after a couple of refresh attempts, proceed with the next lab and return later to check the results.

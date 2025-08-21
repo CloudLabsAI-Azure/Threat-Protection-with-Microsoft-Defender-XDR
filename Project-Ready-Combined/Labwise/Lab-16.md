@@ -1,5 +1,7 @@
 # Lab 16: Review and Run Advanced Hunting Queries for Identity Signals
 
+## Overview
+
 In this lab, you will run advanced hunting queries in the Microsoft Defender portal to detect identity-based threats. Using KQL (Kusto Query Language), you will identify and analyze alerts related to lateral movement attacks.
 
 > **⚠ Important Usage Guidance:** Microsoft Defender for Office 365 may take some time to load certain results or complete specific labs from the backend. This is expected behavior. If the data does not appear after a couple of refresh attempts, proceed with the next lab and return later to check the results.

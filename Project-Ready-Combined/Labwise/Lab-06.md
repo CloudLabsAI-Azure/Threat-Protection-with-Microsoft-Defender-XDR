@@ -2,6 +2,8 @@
 
 # Lab 6: Microsoft Defender for Cloud Apps-Configuring Cloud Discovery 
 
+## Overview
+
 In this lab, you will configure Microsoft Defender for Cloud Apps to enable Cloud Discovery. You will integrate Microsoft Defender for Endpoint, enable the Cloud Apps advanced feature, and configure the Enforce App Access setting. You will then generate and upload a snapshot report from proxy logs to analyze discovered apps in your environment using the Cloud Discovery dashboard.
 
 > **⚠ Important Usage Guidance:** Microsoft Defender for Office 365 may take some time to load certain results or complete specific labs from the backend. This is expected behavior. If the data does not appear after a couple of refresh attempts, proceed with the next lab and return later to check the results.

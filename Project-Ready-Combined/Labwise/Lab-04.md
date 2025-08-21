@@ -1,5 +1,7 @@
 # Lab 4: Investigate and Remediate Incidents in Microsoft Defender XDR
 
+## Overview
+
 In this lab, you will simulate a phishing scenario and use Microsoft Defender XDR to investigate and remediate the incident. You will analyze a suspicious email with Threat Explorer, perform remediation actions such as moving the message to Junk and submitting it to Microsoft for review, and trigger an automated investigation. You will also review and manage related alerts, update their status and classification, and examine the investigation graph to understand the incident's scope and resolution.
 
 > **⚠ Important Usage Guidance:** Microsoft Defender for Office 365 may take some time to load certain results or complete specific labs from the backend. This is expected behavior. If the data does not appear after a couple of refresh attempts, proceed with the next lab and return later to check the results.
