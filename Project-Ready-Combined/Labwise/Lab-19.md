@@ -1,4 +1,4 @@
-# Lab 19: Threat Hunting using Notebooks with Microsoft Sentinel  
+# Lab 19: Threat Hunting using Microsoft Sentinel  
 
 In this lab, you will leverage Microsoft Sentinel to proactively hunt for suspicious PowerShell activity across your environment. You will build and execute KQL queries to identify potential threats, bookmark notable findings, and configure entity mapping for deeper investigation. The lab guides you through saving hunting queries for future use, setting up real-time monitoring with Livestream, associating bookmarks with incidents, automating detection using NRT analytics rules, and performing search jobs in Microsoft Defender to further analyze and restore relevant data.
 
