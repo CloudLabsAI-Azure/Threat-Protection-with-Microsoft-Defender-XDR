@@ -14,48 +14,44 @@ In this lab, you will investigate alerts in Microsoft Defender for Cloud Apps, t
 
    > **Note:** Once selected, all user activities performed in SharePoint—such as file uploads, downloads, edits, and access attempts—will be visible in the activity log.
 
-1. In the **Microsoft Defender portal**, navigate to **Incidents & alerts (1)**, select **Email & collaboration alerts (2)**, and locate the alert named **Block-All-Download (3)**.
+1. In the **Microsoft Defender portal**, navigate to **Incidents & alerts (1)**, select **Alerts (2)**, and locate the alert named **Block-All-Download (3)**.
 
-   ![](./media/ex4_g_r_1.png)
+   ![](./media/ex4_g_r_1upd.png)
 
-1. Click the alert, then select **Open alert page**.
-
-   ![](./media/p-1-7.png)
-
-1. Click **Investigate in activity log**.
+1. Click on **Investigate in activity log** and you will be redirected to the activity log page.
 
    ![](./media/p-1-8.png)
 
+1. Click on **Download file: file msedge.exe** activity to view its details.
+
    ![](./media/p-1-9.png)
 
-1. Go to **Cloud Apps** → **Policy management**, and click **Create policy** → **Activity policy**.
+1. From the left pane, navigate to **Cloud Apps** → **Policy management (1)**, and click **Create policy (2)** → **Activity policy (3)**.
 
    ![](./media/p-1-1.png)
 
-1. Configure the following:
+1. Configure the following and click **Edit and preview results (7)**:
 
-   - **Policy template:** `No template`
-   - **Policy name:** `Detect Suspicious File Download – msedge.exe`
-   - **Severity:** `High`
-   - **Category:** `Threat detection`
-   - **Act on:** `Single activity`
-   - **Activity type:** `Download file`
-   - **Files and folders:** `msedge.exe`
-   - **App:** `Microsoft SharePoint Online`
+   - **Policy template:** `No template` **(1)**
+   - **Policy name:** `Detect Suspicious File Download – msedge.exe` **(2)**
+   - **Severity:** `High` **(3)**
+   - **Category:** `Threat detection` **(4)**
+   - **Act on:** `Single activity` **(5)**
+   - **Activity type**, `equals`, `Download file` **(6)**
+   - **Files and folders**    `Name`, `equals`, `msedge.exe` **(6)**
+   - **App:**,`equals`, `Microsoft SharePoint Online` **(6)**
 
       ![](./media/p-1-2.png)
 
-1. Click **Edit and preview results**, review matches, then click **Save filters**.
+1. Review matches in Select activity filters, then click **Save filters**.
 
    ![](./media/p-1-3.png)
 
-1. Under **Alerts**, enable **Send alert as email**, add a valid address, set daily alert limit to `5`.
-
-1. Click **Create** to save and activate the policy.
+1. Under **Alerts**, enable **Send alert as email (1)**, add **<inject key="AzureAdUserEmail"></inject>** **(2)** as the user email, set daily alert limit to `5` and click **Create (3)** to save and activate the policy.
 
    ![](./media/p-1-4.png)
 
-1. Simulate a download again in SharePoint, and downloading `msedge.exe`.
+1. Now, navigate back to SharePoint page, and simulate a download of `msedge.exe`.
 
    ![](./media/g-3-6.png)
 
