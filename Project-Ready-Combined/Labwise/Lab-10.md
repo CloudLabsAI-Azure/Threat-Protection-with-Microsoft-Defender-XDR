@@ -99,7 +99,7 @@ In this lab, you will implement App Governance in Microsoft Defender for Cloud A
 
 1. In the incident details pane, review the violation summary, app, and policy triggered and close the pane.
 
-   ![](./media/rdr_xdr_19.png)
+   ![](./media/iss-fix-1.png)
 
 > **Note:** After creating and applying the detection policy, it may take up to **3 hours** for the related incident to be generated and appear in the **Incidents** list. If the incident is not visible immediately, continue with the lab and check back later. 
 
