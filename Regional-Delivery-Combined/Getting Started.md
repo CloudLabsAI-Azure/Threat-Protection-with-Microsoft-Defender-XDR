@@ -39,7 +39,7 @@ Welcome to Implement Threat Protection with Microsoft Defender XDR solutions wor
  
 Once you're ready to dive in, your virtual machine and lab guide will be right at your fingertips within your web browser.
  
-![Access Your VM and Lab Guide](../media/cor_gs_r_1.png)
+![Access Your VM and Lab Guide](./media/cor_gs_r_1.png)
 
 ## Virtual Machine & Lab Guide
  
@@ -49,43 +49,43 @@ Your virtual machine is your workhorse throughout the workshop. The lab guide is
 
 To get a better understanding of your lab resources and credentials, navigate to the **Environment** tab.
  
-![Explore Lab Resources](../media/cor_gs_r_3.png)
+![Explore Lab Resources](./media/cor_gs_r_3.png)
 
 ## **Utilizing the Split Window Feature***
 
 For convenience, you can open the lab guide in a separate window by selecting the **Split Window** button from the Top right corner.
  
-![Use the Split Window Feature](../media/cor_gs_r_6.png)
+![Use the Split Window Feature](./media/cor_gs_r_6.png)
 
 ## Managing Your Virtual Machine
 
 On the **Resources (1)** tab, you can manage your virtual machines. Under the **Actions (2)** column, use the buttons to start, stop, restart, or open your VM as needed.
 
-![Manage Your Virtual Machine](../media/cor_gs_r_4.png)
+![Manage Your Virtual Machine](./media/cor_gs_r_4.png)
 
 ## Lab Guide Zoom In/Zoom Out
  
 Click the **A↕ icon (1)** next to the timer to adjust the zoom level for the environment page. From the drop-down menu, select the desired **Percentage (2)**.
 
-![](../media/cor_gs_r_5.png)
+![](./media/cor_gs_r_5.png)
 
 ## Let's Get Started with Azure Portal
 
 1. On your virtual machine desktop, double-click the **Azure Portal** shortcut (Microsoft Edge browser) to open the Azure portal.
  
-    ![Launch Azure Portal](../media/cor_gs_r_2.png)
+    ![Launch Azure Portal](./media/cor_gs_r_2.png)
 
 2. You'll see the **Sign into Microsoft Azure** tab. Here, enter your credentials:
  
    - **Email/Username:** <inject key="AzureAdUserEmail"></inject>
  
-     ![Enter Your Username](../media/rd_gs_1_6.png)
+     ![Enter Your Username](./media/rd_gs_1_6.png)
  
 3. Next, provide your password:
  
    - **Password:** <inject key="AzureAdUserPassword"></inject>
  
-     ![Enter Your Password](../media/rd_gs_1_7.png)
+     ![Enter Your Password](./media/rd_gs_1_7.png)
 
 1. If you see the pop-up Stay Signed in?, select No.
 
@@ -136,6 +136,6 @@ Now you're all set to explore the powerful world of technology. Feel free to rea
 
 Now, click on **Next** from the lower right corner to move on to the next page.
  
-![](../media/rd_gs_1_9.png)
+![](./media/rd_gs_1_9.png)
 
 ### Happy learning!
