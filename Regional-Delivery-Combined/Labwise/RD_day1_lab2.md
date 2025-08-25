@@ -1,139 +1,139 @@
-# Lab 2: Simulate Phishing and Malware Attacks Using Attack Simulator
+# Laboratorio 2: Simular Ataques de Phishing y Malware con el Simulador de Ataques
 
-In this lab, you'll simulate phishing and malware attacks using Microsoft Defender's built-in **Attack Simulation Training**. These simulations help you evaluate user vulnerability and response to social engineering techniques.
+En este laboratorio, simulará ataques de phishing y malware con el **Entrenamiento de Simulación de Ataques** integrado en Microsoft Defender. Estas simulaciones le ayudarán a evaluar la vulnerabilidad del usuario y su respuesta a las técnicas de ingeniería social.
 
-1. On the left navigation menu, expand **Email & collaboration (1)** and select **Attack simulation training (2)**. On the **Attack simulation training** page, select the **Simulations (3)** tab and click **Launch a simulation (4)**.
+1. En el menú de navegación izquierdo, expanda **Colaboración y correo electrónico (1)** y seleccione **Entrenamiento de simulación de ataque (2)**. En la página **Entrenamiento de simulación de ataque**, seleccione la pestaña **Simulaciones (3)** y haga clic en **Iniciar una simulación (4)**.
 
    ![rd_day1_ex1_t2_1](../media/combi_g_c_4.png)
 
-1. Under **Select technique**, choose **Credential Harvest (1)** and click **Next (2)**.
+1. En **Seleccionar técnica**, elija **Cosecha de credenciales (1)** y haga clic en **Siguiente (2)**.
 
    ![rd_day1_ex1_t2_3](../media/rd_day1_ex1_t2_3.png)
 
-1. In the **Name simulation** step, enter a simulation name as `Test1` in the **Simulation name (1)** field, and click **Next (2)**.
+1. En el paso **Simulación de nombres**, ingrese el nombre de la simulación `Test1` en el campo **Nombre de la simulación (1)** y haga clic en **Siguiente (2)**.
 
    ![rd_day1_ex1_t2_4](../media/rd_day1_ex1_t2_4.png)
 
-1. Under **Select payload and login page**, choose **Global payloads**, select a phishing payload from the **list (1)**, and click **Next (3)**.
+1. En **Seleccione la carga y la página de inicio de sesión**, elija **Cargas globales**, seleccione una carga (payload) de phishing de la **lista (1)**, y haga clic en **Siguiente (3)**.
 
    ![rd_day1_ex1_t2_5](../media/rd_day1_ex1_t2_5.png)
 
-1. On the **Target users** screen, select **Include only specific users and groups (1)**, click **Add users (2)**, and then click **Next (3)**.
+1. En la pantalla **Usuarios de destino**, seleccione **Incluir solo usuarios y grupos específicos (1)**, haga clic en **Agregar usuarios (2)** y luego haga clic en **Siguiente (3)**.
 
    ![rd_day1_ex1_t2_6](../media/rd_day1_ex1_t2_6.png)
 
-1. On the **Add users** screen, search for the **user email (1)**, select the **user (2)** from the list, and click **Add User(s) (3)**.
+1. En la pantalla **Agregar usuarios**, busque el **correo electrónico del usuario**, seleccione el **usuario (2)** de la lista, y haga clic en **Agregar 1 usuario(s) (3)**.
 
    ![rd_day1_ex1_t2_7](../media/rd_day1_ex1_t2_7.png)
 
-1. On the **Target users** screen, confirm the **User** has been added and click **Next**.
+1. En la pantalla **Usuarios de destino**, confirme que el **Usuario** se ha añadido y haga clic en **Siguiente**.
 
-1. On the **Exclude users** screen, leave the option unchecked to skip excluding any users, and click **Next**.
+1. En la pantalla **Excluir usuarios**, deje la opción deshabilitada para no excluir usuarios y haga clic en **Siguiente**.
 
    ![rd_day1_ex1_t2_7](../media/combi_g_c_5.png)
 
-1. On the **Assign training** screen, select **Microsoft training experience (1)**, choose **Assign training for me (2)**, set the due date to **7 days after Simulation ends (3)**, and click **Next (4)**.
+1. En la pantalla **Asignar formación**, seleccione **Experiencia de entrenamiento de Microsoft (1)**, elija **Asginar entrenamiento para mí (2)**, establezca la fecha límite en **7 días tras finalizar la simulación (3)**, y haga clic en **Siguiente (4)**.
 
    ![rd_day1_ex1_t2_9](../media/rd_day1_ex1_t2_9.png)
 
-1. Under **Select landing page**, choose a **login page template (1)** and click **Next (2)**.
+1. En **Seleccionar página de aterrizaje**, seleccione **Usar páginas de aterrizaje de la biblioteca (1)**, elija una **plantilla de aterrizaje global (2)** y haga clic en **Siguiente (3)**.
 
     ![rd_day1_ex1_t2_10](../media/rd_day1_ex1_t2_10.png)
 
-1. In the **End user notification** section, select **Microsoft default notification (1)** and configure:
-    - Positive reinforcement: **Deliver during simulation (2**)
-    - Training reminder: **Weekly (3)**
-    Click **Next (4)**.
+1. En la sección **Seleccionar notificación de usuario final**, seleccione **Notificación predeterminada de Microsoft (1)** y configure:
+    - Notificación de refuerzo positivo: **Entregar durante la simulación (2**)
+    - Notificación de recordatorio de formación: **Semanalmente (3)**
+    Haga clic en **Siguiente (4)**.
 
         ![rd_day1_ex1_t2_11](../media/rd_day1_ex1_t2_11.png)
 
-1. In the **Launch details** step, select **Launch this simulation as soon as I'm done (1)**, set **duration to 2 days (2)**, and click **Next (3)**.
+1. En el paso **Detalles de inicio**, seleccione **Iniciar esta simulación tan pronto como haya terminado (1)**, establezca **duración en 2 días (2)**, y haga clic en **Siguiente (3)**.
 
     ![rd_day1_ex1_t2_12](../media/rd_day1_ex1_t2_12.png)
 
-1. Review the configuration summary and click **Submit** to start the simulation.
+1. Revise el resumen de configuración y haga clic en **Enviar** para iniciar la simulación.
 
     ![rd_day1_ex1_t2_13](../media/rd_day1_ex1_t2_13.png)
 
-1. On completion, click **Done**.
+1. Al finalizar, haga clic en **Listo**.
 
     ![rd_day1_ex1_t2_14](../media/rd_day1_ex1_t2_14.png)
 
-    > **Note:** You’ve successfully launched a phishing simulation. It will monitor how users interact with suspicious emails.
+    > **Nota:** Ha iniciado correctamente una simulación de phishing. Ésta supervisará cómo interactúan los usuarios con correos electrónicos sospechosos.
 
-1. Verify the simulation appears in the dashboard as **In progress**.
+1. Verifique que la simulación aparezca en el panel como **En curso**.
 
     ![rd_day1_ex1_t2_15](../media/rd_day1_ex1_t2_15.png)
 
-1. On the **Attack simulation training** page, select the **Simulations (1)** tab and click **Launch a simulation (2)**.
+1. En la página **Entrenamiento de simulación de ataque**, seleccione la pestaña **Simulaciones (1)** y haga clic en **Iniciar una simulación (2)**.
 
     ![](../media/combi_g_c_6.png)
 
-1. To simulate a **Malware Attack**, choose **Launch your own simulation**, select **Malware Attachment (1)**, and click **Next (2)**.
+1. Para simular un **Ataque de Malware**, seleccione **Datos adjuntos de malware (1)**, y haga clic en **Siguiente (2)**.
 
     ![rd_day1_ex1_t2_16](../media/rd_day1_ex1_t2_16.png)
 
-1. Enter a new simulation name **`Test2`** and click **Next (2)**.
+1. Ingrese un nuevo nombre de simulación **`Test2`** y haga clic en **Siguiente (2)**.
 
     ![rd_day1_ex1_t2_17](../media/rd_day1_ex1_t2_17.png)
 
-1. Under **Select payload and login page**, select **Global payloads (1)**, choose a malware attachment from the list and set the preferred language (2), then click **Next (3)**.
+1. En **Seleccione la carga y la página de inicio de sesión**, seleccione **Cargas globales (1)**, elija un archivo adjunto de malware de la lista y configure el idioma preferido (2), luego haga clic en **Siguiente (3)**.
 
     ![rd_day1_ex1_t2_18](../media/rd_day1_ex1_t2_18.png)
 
-1. On the **Target users** screen, select **Include only specific users and groups (1)**, click **Add users (2)**, and then click **Next (3)**.
+1. En la pantalla **Usuarios de destino**, seleccione **Incluir solo usuarios y grupos específicos (1)**, haga clic en **Agregar usuarios (2)** y luego haga clic en **Siguiente (3)**.
 
    ![rd_day1_ex1_t2_6](../media/rd_day1_ex1_t2_6.png)
 
-1. On the **Add users** screen, search for the **user email (1)**, select the **user (2)** from the list, and click **Add User(s) (3)**.
+1. En la pantalla **Agregar usuarios**, busque el **correo electrónico del usuario**, seleccione el **usuario (2)** de la lista, y haga clic en **Agregar 1 usuario(s) (3)**.
 
    ![rd_day1_ex1_t2_7](../media/rd_day1_ex1_t2_7.png)
 
-1. On the **Target users** screen, confirm the **User** has been added and click **Next**.
+1. En la pantalla **Usuarios de destino**, confirme que el **Usuario** se ha añadido y haga clic en **Siguiente**.
 
-1. On the **Exclude users** screen, leave the option unchecked to skip excluding any users, and click **Next**.
+1. En la pantalla **Excluir usuarios**, deje la opción deshabilitada para no excluir usuarios y haga clic en **Siguiente**.
 
    ![rd_day1_ex1_t2_7](../media/combi_g_c_5.png)
 
-1. On the **Assign training** screen, select **Microsoft training experience (1)**, choose **Assign training for me (2)**, set the due date to **7 days after Simulation ends (3)**, and click **Next (4)**.
+1. En la pantalla **Asignar formación**, seleccione **Experiencia de entrenamiento de Microsoft (1)**, elija **Asginar entrenamiento para mí (2)**, establezca la fecha límite en **7 días tras finalizar la simulación (3)**, y haga clic en **Siguiente (4)**.
 
    ![rd_day1_ex1_t2_9](../media/rd_day1_ex1_t2_9.png)
 
-1. On the **Assign training** page, select a landing page template from the list (1) and click **Next (2)**.
+1. En la página **Asignar formación**, seleccione una plantilla de página de aterrizaje de la lista (1) y haga clic en **Siguiente (2)**.
 
    ![rd_day1_ex1_t2_9](../media/combi_g_c_7.png)
 
-1. In the **End user notification** screen, select **Microsoft default notification (1)**, ensure **Deliver during simulation (2)** and **Weekly reminder (3)** are selected, and click **Next (4)**.
+1. En la pantalla **End user notification**, seleccione **Microsoft default notification (1)**, asegúrese de que **Deliver during simulation (2)** y **Weekly reminder (3)** estén seleccionados y haga clic en **Siguiente (4)**.
 
     ![rd_day1_ex1_t2_19](../media/rd_day1_ex1_t2_19.png)
 
-1. Set the **Launch configuration (1)** to launch immediately, set duration to **2 days (2)**, and click **Next (3)**.
+1. Establezca la **Launch configuration (1)** para que se inicie inmediatamente, establezca la duración en **2 días (2)** y haga clic en **Siguiente (3)**.
 
     ![rd_day1_ex1_t2_20](../media/rd_day1_ex1_t2_20.png)
 
-1. On the **Select end user notification** screen, choose **Microsoft default notification (1)**, set **Deliver during simulation (2)** and **Weekly (3)** as delivery preferences, then click **Next (4)**.
+1. En la pantalla **Seleccionar notificación de usuario final**, elija **Notificación predeterminada de Microsoft (1)**, establezca **Entregar durante la simulación (2)** y **Semanalmente (3)** como preferencias de entrega y haga clic en **Siguiente (4)**.
 
     ![rd_day1_ex1_t2_21](../media/rd_day1_ex1_t2_21.png)
 
-1. Review the details and click **Submit** to complete the malware simulation setup.
+1. Revise los detalles y haga clic en **Enviar** para completar la configuración de la simulación de malware.
 
     ![rd_day1_ex1_t2_22](../media/rd_day1_ex1_t2_22.png)
 
-> **Note:** This simulation mimics a malicious file being sent via email, testing how users respond to attachment-based threats.
+> **Nota:** Esta simulación simula el envío de un archivo malicioso por correo electrónico para comprobar cómo responden los usuarios a las amenazas en archivos adjuntos.
 
-> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:  
-> - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task.  
-> - If not, carefully read the error message and retry the step, following the instructions in the lab guide.  
-> - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.  
+> **¡Felicitaciones** por completar la tarea! Ahora es el momento de validarla. Estos son los pasos:
+> - Presione el botón Validar de la tarea correspondiente. Si recibe un mensaje de éxito, puede continuar con la siguiente tarea. 
+- De lo contrario, lea atentamente el mensaje de error y vuelva a intentar el paso, siguiendo las instrucciones de la guía del laboratorio.
+- Si necesita ayuda, contáctenos en cloudlabs-support@spektrasystems.com. Estamos disponibles las 24 horas, los 7 días de la semana.  
 <validation step="eb927b6a-3f37-4714-9622-000f458f8bac" />
 
-## Review
+## Revisión
 
-In this lab, you have completed the following tasks:
+En este laboratorio, ha completado las siguientes tareas:
 
-- Launched phishing and malware simulations using Attack Simulation Training.
-- Evaluated user responses to simulated attacks and verified that protection policies were working as expected.
+- Lanzó simulaciones de phishing y malware mediante el Entrenamiento de Simulación de Ataques.
+- Evaluó las respuestas de los usuarios a los ataques simulados y verificó que las directivas de protección funcionaban según lo previsto.
 
-### You have successfully completed the lab. Click on **Next >>** to proceed with the next Lab.
+### Ha completado el Laboratorio con éxito. Haga clic en **Siguiente >>** para continuar con el siguiente Laboratorio.
 
 ![](../media/rd_gs_1_9.png)
