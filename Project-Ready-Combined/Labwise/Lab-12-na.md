@@ -1,1 +1,0 @@
-13.Automate Response with Power Automate and Microsoft Sentinel  
