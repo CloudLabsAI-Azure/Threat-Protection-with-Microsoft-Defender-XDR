@@ -1,119 +1,119 @@
-# **Day-01**
+# **Día-01**
 
-# Lab 1: Configure Threat Policies in Microsoft Defender for Office 365
+# Laboratorio 1: Configurar Directivas de Amenazas en Microsoft Defender para Office 365
 
-In this lab, you will enable Microsoft Defender CSPM for your environment and configure both standard and strict protection policies using Microsoft Defender XDR.
+En este laboratorio, habilitará Microsoft Defender CSPM para su entorno y configurará directivas de protección estándar y estrictas con Microsoft Defender XDR.
 
-1. Go to the Azure Portal and search for **Microsoft Defender for Cloud (1)**, select it from the **results (2)**.
+1. Vaya al Portal de Azure, busque **Microsoft Defender for Cloud (1)** y selecciónelo de los **resultados (2)**.
 
    ![rd_day1_ex1_t1_1](../media/rd_day1_ex1_t1_1.png)
 
-1. When prompted, click **Enable** to activate Defender CSPM.
+1. Cuando se le solicite, haga clic en **Habilitar (Enable)** para activar Defender CSPM.
 
    ![rd_day1_ex1_t1_2](../media/rd_day1_ex1_t1_2.png)
 
-   > **Note:** If you don’t see the pop-up prompt, continue with the lab steps below.
+   > **Nota:** Si no ve la ventana emergente, continúe con los pasos del laboratorio mostrados a continuación.
 
-   > **Note:** Enabling Defender CSPM unlocks advanced posture management features such as attack path analysis and permission visibility.
+   > **Nota:** Habilitar Defender CSPM desbloquea funciones avanzadas de gestión de la postura, tales como el análisis de la ruta de acceso del ataque y la visibilidad de permisos.
 
-1. Go to **Environment settings (2)** under **Management (1)**, expand **Azure (3)** → **Tenant Root Group (4)**, and select your **subscription (5)**.
+1. Vaya a **Configuración del entorno (2)** en **Administración (1)**, expanda **Azure (3)** → **Tenant Root Group (4)**, y seleccione su **suscripción (5)**.
 
    ![rd_day1_ex1_t1_4](../media/rd_day1_ex1_t1_4.png)
 
-1. Under **Defender plans (1)**, turn on the following options and click **Save (5)**:
-   - **Foundational CSPM (2)**
+1. En **Planes de Defender (1)**, active las siguientes opciones y haga clic en **Guardar (5)**:
+   - **CSPM Fundamental (2)**
    - **Defender CSPM (3)**
-   - **Servers under Cloud Workload Protection (4)**
+   - **Servers en Protección de cargas de trabajo en la nube (4)**
 
         ![rd_day1_ex1_t1_5](../media/rd_day1_ex1_t1_5.png)
 
-1. On a new tab in the **Microsoft Edge** browser and go to the following URL in the address bar: [https://security.microsoft.com](https://security.microsoft.com).
+1. En una nueva pestaña del navegador **Microsoft Edge**, acceda a la siguiente URL en la barra de direcciones:: [https://security.microsoft.com](https://security.microsoft.com).
 
-1. On the **Microsoft Defender portal**, go to **System (1)** > **Settings (2)** and click **Cloud Apps (3)**.
+1. En el **portal de Microsoft Defender**, vaya a **Sistema (1)** > **Configuración (2)** y haga clic en **Aplicaciones en la nube (3)**.
 
    ![](../media/rdr_xdr_1.png)
 
-1. Under **App governance**, select **Service status (1)** and click **Turn on app governance (2)**.
+1. En **Gobernanza de aplicaciones**, seleccione **Estado del servicio (1)** y haga clic en **Activar la gobernanza de aplicaciones (2)**.
 
    ![](../media/rdr_xdr_2.png)
 
-   > App Governance is now activated. It will begin evaluating connected OAuth apps and generating insights into their behavior and risk posture.
+   > La Gobernanza de Aplicaciones ya está activada. Comenzará a evaluar las aplicaciones OAuth conectadas y a generar información sobre su comportamiento y posición de riesgo.
 
-1. On the OAuth apps page, click **Go to app governance**.
+1. En la página de aplicaciones OAuth, haga clic en **Ir a gobernanza de aplicaciones**.
 
    ![](../media/rdr_xdr_3.png)
 
-   > You may be redirected to the new App Governance interface.
+   > Es posible que se le redirija a la nueva interfaz de Gobernanza de Aplicaciones.
 
-   > **Note:** It may take 3–4 hours for the Microsoft Defender portal to enable OAuth apps in App Governance. This step is performed now to prevent any delays or issues later in the lab.
+   > **Nota:** El portal de Microsoft Defender puede tardar de 3 a 4 horas en habilitar las aplicaciones OAuth en Gobernanza de Aplicaciones. Este paso se realiza ahora para evitar retrasos o problemas posteriores en el laboratorio. 
 
-1. In the left pane, go to **Email & collaboration (1)** → **Policies & rules (2)** → **Threat policies (3)**.
+1. En el panel izquierdo, vaya a **Colaboración y correo electrónico (1)** → **Reglas y directivas (2)** → **Directivas de amenazas (3)**.
 
    ![rd_day1_ex1_t1_6](../media/rd_day1_ex1_t1_6.png)
 
-1. 1. On the **Threat policies** page, under **Templated policies**, select **Preset Security Policies**.
+1. En la página **Directivas de amenazas**, en **Directivas con plantilla**, seleccione **Restablecer directivas de seguridad**.
 
    ![rd_day1_ex1_t1_6](../media/combi_g_c_1.png)
 
-   > **Note:** If the **Learn about preset security policies** pop-up appears, click **Cancel** to close it and proceed with the lab.
+   > **Nota:** Si aparece la ventana emergente **Aprender sobre Restablecer directivas de seguridad**, haga clic en **Cancelar** para cerrarla y continuar con el laboratorio.
 
-1. Under **Standard Protection**, click on **Manage protection settings**.
+1. En **Protección estándar**, haga clic en **Administrar la configuración de protección**.
 
    ![rd_day1_ex1_t1_10](../media/cord1e1_1.png)
 
-1. On the **Apply Exchange Online Protection** screen, select **Specific recipients (1)**, enter the user email in the **Users** field (2), and click **Next (3)**.
+1. En la pantalla **Aplicar Exchange Online Protection**, seleccione **Destinatarios específicos (1)**, introduzca el correo electrónico del usuario en el campo **Usuarios** (2), selecciónelo de la lista y haga clic en **Siguiente (3)**.
 
     ![rd_day1_ex1_t1_7](../media/rd_day1_ex1_t1_7.png)
 
-1. On the **Apply Defender for Office 365 protection** screen, select **Specific recipients (1)**, enter the user email in the **Users (2)** field, and click **Next (3)**.
+1. En la pantalla **Aplicar la protección de Defender para Office 365**, seleccione **Destinatarios específicos (1)**, introduzca el correo electrónico del usuario en el campo **Usuarios (2)**, selecciónelo de la lista y haga clic en **Siguiente (3)**.
 
     ![rd_day1_ex1_t1_8](../media/rd_day1_ex1_t1_8.png)
 
-1. On the **Impersonation protection** and **Policy mode** screens, keep all settings at their default values and click **Next** until you reach the **Review** section.
+1. En las pantallas **Protección de suplantación** y **Modo de directiva**, mantenga todas las configuraciones con sus valores predeterminados y haga clic en **Siguiente** hasta llegar a la sección **Revisar**.
 
-1. On the **Review** screen, verify that **Exchange Online Protection (1)** and **Defender for Office 365 (2)** apply to the correct user, then click **Confirm (3)**.
+1. En la pantalla **Revisar**, verifique que **Exchange Online Protection (1)** y **Defender para Office 365 (2)** se apliquen al usuario correcto y luego haga clic en **Confirmar (3)**.
 
     ![rd_day1_ex1_t1_9](../media/rd_day1_ex1_t1_9.png)
 
-1. On the **Apply standard protection** confirmation screen, verify that the policy update is successful, then click **Done**.
+1. En la pantalla de confirmación **Aplicar protección estándar**, verifique que la actualización de la directiva se haya realizado correctamente y haga clic en **Listo**.
 
     ![rd_day1_ex1_t1_9](../media/combi_g_c_2.png)
 
-    > **Note:** Standard protection includes Safe Attachments, Safe Links, and anti-phishing policies.
+    > **Nota:** La protección estándar incluye Datos Adjuntos Seguros (Safe Attachments), Vínculos Seguros (Safe Links) y directivas anti-phishing. 
 
-1. Under **Strict Protection**, click **Manage protection settings**.
+1. En **Protección estricta**, haga clic en **Administrar la configuración de protección**.
 
     ![rd_day1_ex1_t1_10](../media/rd_day1_ex1_t1_10.png)
 
-1. On the **Apply Exchange Online Protection** screen, select **Specific recipients (1)**, enter the user email in the **Users** field (2), and click **Next (3)**.
+1. En la pantalla **Aplicar Exchange Online Protection**, seleccione **Destinatarios específicos (1)**, introduzca el correo electrónico del usuario en el campo **Usuarios** (2) y haga clic en **Siguiente (3)**.
 
     ![rd_day1_ex1_t1_11](../media/rd_day1_ex1_t1_11.png)
 
-1. On the **Apply Defender for Office 365 protection** screen, select **Specific recipients (1)**, enter the user email in the **Users** field (2), and click **Next (3)**.
+1. En la pantalla **Aplicar la protección de Defender para Office 365**, seleccione **Destinatarios específicos (1)**, introduzca el correo electrónico del usuario en el campo **Usuarios** (2) y haga clic en **Siguiente (3)**.
 
     ![rd_day1_ex1_t1_12](../media/rd_day1_ex1_t1_12.png)
 
-1. On the **Impersonation protection** and **Policy mode** screens, keep all settings at their default values and click **Next** until you reach the **Review** section.
+1. En las pantallas **Protección de suplantación** y **Modo de directiva**, mantenga todas las configuraciones con sus valores predeterminados y haga clic en **Siguiente** hasta llegar a la sección **Revisar**.
 
-1. On the **Review** screen, verify that **Exchange Online Protection (1)** and **Defender for Office 365 (2)** apply to the correct user, then click **Confirm (3)**.
+1. En la pantalla **Revisar**, verifique que **Exchange Online Protection (1)** y **Defender para Office 365 (2)** se apliquen al usuario correcto y luego haga clic en **Confirmar (3)**.
 
     ![rd_day1_ex1_t1_12](../media/combi_g_c_3.png)
 
-1. Once completed, confirm that:
-    - **Standard protection is on (1)**  
-    - **Strict protection is on (2)**
+1. Una vez completado, confirme que:
+    - **La protección estándar está activada (1)**  
+    - **La protección estricta está activada (2)**
 
         ![rd_day1_ex1_t1_15](../media/cord1e1_3.png)
 
-      > **Note:** You have now successfully configured multi-layered threat policies for both general and high-risk users.
+      > **Nota:** Ahora ha configurado con éxito las directivas de amenazas multicapa para usuarios generales y de alto riesgo. 
 
-## Review
+## Revisión
 
-In this lab, you have completed the following:
+En este laboratorio, ha completado lo siguiente:
 
-- Enabled Microsoft Defender CSPM to activate advanced posture management capabilities.
-- Configured both Standard and Strict preset security policies to protect users based on risk levels.
+- Habilitó Microsoft Defender CSPM para activar las funciones avanzadas de administración de la posición.
+- Configuró las directivas de seguridad predefinidas Estándar y Estricta para proteger a los usuarios según sus niveles de riesgo.
 
-### You have successfully completed the lab. Click on **Next >>** to proceed with the next Lab.
+### Ha completado el Laboratorio con éxito. Haga clic en **Siguiente >>** para continuar con el siguiente Laboratorio.
 
 ![](../media/rd_gs_1_9.png)
