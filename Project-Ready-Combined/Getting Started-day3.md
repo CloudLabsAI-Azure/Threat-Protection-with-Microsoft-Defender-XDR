@@ -1,4 +1,6 @@
-# Implement Threat Protection with Microsoft Defender XDR solutions - Day 3
+# Implement Threat Protection with Microsoft Defender XDR solutions - Day 03
+
+### Overall Estimated Duration: 4 Hours
 
 ## Overview
 
@@ -6,19 +8,18 @@ In this lab, you will strengthen organizational security by deploying Microsoft 
 
 ## Objectives
 
-- Configure Microsoft Defender for Identity 
-
-- Investigate Identity-Based Threats and User Timelines 
-
-- Integrating Microsoft Defender for Cloud and Simulating Threat Detection Scenarios
-
-- Conduct attacks and Create Detections
-
-- Investigate and remediate Incidents in Microsoft Defender XDR 
-
-- Threat Hunting using Notebooks with Microsoft Sentinel 
-
-- Mitigate threats using Microsoft Defender for Cloud 
+- Deploy Microsoft Defender for Identity Sensor on Domain Controllers
+- Simulate and Detect Lateral Movement Attacks
+- Investigate Threats and User Timelines 
+- Integrate Defender for Identity with Microsoft 365 Defender Portal
+- Review and Run Advanced Hunting Queries for Identity Signals
+- Review and explore Sentinel workspace 
+- Conduct attacks, Create Detections, Investigate an Incident
+- Threat Hunting using Notebooks with Microsoft Sentinel
+- Mitigate threats using Microsoft Defender
+- Command and Control Attack with DNS
+- Persistence Attack Detection
+- Investigate an incident
 
 ## Architecture Diagram
 
@@ -30,15 +31,15 @@ Welcome to your Microsoft 365 Defender for Identity and Sentinel for Advanced Th
  
 ## Managing Your Virtual Machine
  
-Feel free to start, stop, or restart your virtual machine as needed from the **Resources** tab. Your experience is in your hands!
+On the **Resources (1)** tab, you can manage your virtual machines. Under the **Actions (2)** column, use the buttons to start, stop, restart, or open your VM as needed.  
  
-![Manage Your Virtual Machine](./media/gst4.png)
+![Manage Your Virtual Machine](./media/cor_gs_r_4.png)
 
 ## Let's Get Started with Azure Portal
  
-1. On your virtual machine, click on the Azure Portal icon as shown below:
+1. On your virtual machine desktop, double-click the **Azure Portal** shortcut (Microsoft Edge browser) to open the Azure portal.
  
-    ![Launch Azure Portal](./media/gst5.png)
+    ![Launch Azure Portal](./media/cor_gs_r_2.png)
 
 2. You'll see the **Sign into Microsoft Azure** tab. Here, enter your credentials:
  
@@ -52,15 +53,17 @@ Feel free to start, stop, or restart your virtual machine as needed from the **R
  
      ![Enter Your Password](./media/gst7.png)
 
-1. If you see the pop-up **Action Required**, click **Ask Later**.
+1. If you see the pop-up Stay Signed in?, select No.
 
-    ![Action Required](./media/gst8.png) 
- 
-4. If prompted to stay signed in, you can click **No**.
+   > **NOTE**: If prompted with MFA, and Ask Later option is not available please follow the steps highlighted under - [Steps to Proceed with MFA Setup if Ask Later Option is Not Visible](#steps-to-proceed-with-mfa-setup-if-ask-later-option-is-not-visible)
 
-5. If a **Welcome to Microsoft Azure** pop-up window appears, simply click **Cancel** to skip the tour.
+1. If you see the pop-up **You have free Azure Advisor recommendations!**, close the window to continue the lab.
 
-## Steps to Proceed with MFA Setup if "Ask Later" Option is Not Visible
+1. If a Welcome to **Microsoft Azure** popup window appears, select **Maybe Later** to skip the tour.
+
+## Steps to Proceed with MFA Setup if Ask Later Option is Not Visible
+
+   > **Note:** Continue with the exercises if MFA is already enabled or the option is unavailable.
 
 1. At the **"More information required"** prompt, select **Next**.
 
@@ -79,24 +82,25 @@ Feel free to start, stop, or restart your virtual machine as needed from the **R
 1. After scanning, click **Next** to proceed.
 
 1. On your phone, enter the number shown on your computer screen in the Authenticator app and select **Next**.
+       
+1. If prompted to stay signed in, you can click **No**.
 
-1. If prompted to stay signed in, you can click "No."
+1. If a **Welcome to Microsoft Azure** popup window appears, click **Cancel** to skip the tour.
 
-1. If a **Welcome to Microsoft Azure** pop-up window appears, simply click "Maybe Later" to skip the tour.
-
-1. If a **Welcome to Microsoft Azure** pop-up window appears, simply click **Cancel** to skip the tour.
+1. Now, click on the **Next** from the lower right corner to move to the next page.
+   
+### Support Contact
+The CloudLabs support team is available 24/7, 365 days a year, via email and live chat to ensure seamless assistance at any time. We offer dedicated support channels tailored specifically for both learners and instructors, ensuring that all your needs are promptly and efficiently addressed.
  
-1. Click **Next** from the bottom right corner to embark on your Lab journey!
+Learner Support Contacts:
  
-     ![Start Your Azure Journey](./media/gst9.png)
+- Email Support: cloudlabs-support@spektrasystems.com
+- Live Chat Support: https://cloudlabs.ai/labs-support
 
 Now you're all set to explore the powerful world of technology. Feel free to reach out if you have any questions along the way. Enjoy your workshop!
 
-## Support Contact
+Now, click on **Next** from the lower right corner to move on to the next page.
+ 
+  ![Start Your Azure Journey](./media/gst9.png)
 
-The CloudLabs support team is available 24/7, 365 days a year, via email and live chat to ensure seamless assistance at any time. We offer dedicated support channels tailored specifically for both learners and instructors, ensuring that all your needs are promptly and efficiently addressed.
-
-Learner Support Contacts:
-
-- Email Support: cloudlabs-support@spektrasystems.com
-- Live Chat Support: https://cloudlabs.ai/labs-support
+### Happy learning!
