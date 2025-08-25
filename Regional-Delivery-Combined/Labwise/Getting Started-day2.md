@@ -1,51 +1,51 @@
-# Hands-on Labs – Day 02
-## Implement Threat Protection with Microsoft Defender XDR solutions
+# Laboratorios Prácticos – Día 02
+## Implementar la Protección Contra Amenazas con las Soluciones Microsoft Defender XDR
 
-## Overview
+## Descripción General
 
-In this lab, you will advance your threat protection capabilities by integrating Microsoft Defender for Cloud Apps, Microsoft Defender for Identity, Microsoft Sentinel, and Power Automate. You’ll start by connecting and onboarding SaaS applications to Defender for Cloud Apps and configuring session policies to detect and block risky user behaviors. Then, you’ll implement App Governance to identify high-risk OAuth applications and create custom detection policies for suspicious activity. You’ll deploy Defender for Identity sensors to domain controllers, simulate and detect identity-based attacks such as Pass-the-Hash and DC Sync, and analyze threat timelines. Finally, you’ll implement automated investigation and response (AIR) for identity threats and build incident response workflows using Microsoft Sentinel and Power Automate.
+En este laboratorio, mejorará sus capacidades de protección contra amenazas mediante la integración de Microsoft Defender for Cloud Apps, Microsoft Defender for Identity, Microsoft Sentinel y Power Automate. Comenzará conectando e integrando aplicaciones SaaS a Defender for Cloud Apps y configurando directivas de sesión para detectar y bloquear comportamientos de usuario de riesgo. A continuación, implementará la Gobernanza de Aplicaciones para identificar aplicaciones OAuth de alto riesgo y creará directivas de detección personalizadas para actividades sospechosas. Implementará sensores de Defender for Identity en controladores de dominio, simulará y detectará ataques basados ​​en la identidad, como Pass-the-Hash y DC Sync, y analizará líneas de tiempo de amenazas. Finalmente, implementará Investigación y Respuesta Automatizadas (AIR) para amenazas de identidad y creará flujos de trabajo de respuesta a incidentes con Microsoft Sentinel y Power Automate.
 
-## Objectives
+## Objetivos
 
-- Onboard SaaS applications and configure session policies using Microsoft Defender for Cloud Apps.
-- Implement App Governance to detect high-risk OAuth apps and create custom detection policies.
-- Deploy Microsoft Defender for Identity sensors and investigate identity-based threats and lateral movement attacks.
-- Integrate Defender for Identity with Microsoft Defender XDR and analyze user timelines.
-- Implement automated investigation and response (AIR) for identity threats.
-- Build incident response workflows using Microsoft Sentinel and Power Automate.
+- Integrar aplicaciones SaaS y configurar directivas de sesión con Microsoft Defender for Cloud Apps.
+- Implementar Gobernanza de Aplicaciones para detectar aplicaciones OAuth de alto riesgo y crear directivas de detección personalizadas.
+- Implementar sensores de Microsoft Defender for Identity e investigar amenazas basadas en la identidad y ataques de movimiento lateral.
+- Integrar Defender for Identity con Microsoft Defender XDR y analizar las líneas de tiempo de los usuarios.
+- Implementar Investigación y Respuesta Automatizadas (AIR) para amenazas a la identidad.
+- Crear flujos de trabajo de respuesta a incidentes con Microsoft Sentinel y Power Automate.
 
-## Prerequisites
+## Requisitos previos
 
-Participants should have:
+Los participantes deberían contar con:
 
-- Familiarity with Microsoft 365 security and compliance capabilities.
-- Understanding of Microsoft Defender for Endpoint and Defender for Cloud Apps.
-- Access to the lab-provided Microsoft 365 tenant and administrative permissions.
-- Basic knowledge of Conditional Access, SaaS onboarding, and security policy configuration.
-- Awareness of Shadow IT risks, OAuth application security, and file governance.
-- Basic knowledge of KQL, incident management, and security policy configuration.
-- Awareness of attack techniques, threat hunting, and incident response.
+- Familiaridad con las funcionalidades de seguridad y cumplimiento de Microsoft 365.
+- Conocimiento de Microsoft Defender para Punto de Conexión (Endpoint) y Defender for Cloud Apps.
+- Acceso a los permisos administrativos y de inquilino de Microsoft 365 proporcionados por el laboratorio.
+- Conocimientos básicos de Acceso Condicional, incorporación de SaaS y configuración de directivas de seguridad.
+- Conocimiento de los riesgos de TI en la Sombra (Shadow IT), seguridad de aplicaciones OAuth y gobernanza de archivos.
+- Conocimientos básicos de KQL, gestión de incidentes y configuración de directivas de seguridad.
+- Conocimiento de técnicas de ataque, búsqueda de amenazas y respuesta a incidentes.
 
-## Explanation of Components
+## Explicación de Componentes
 
-* **Microsoft Defender for Cloud Apps**: A cloud access security broker (CASB) that provides visibility, control, and protection for SaaS applications.
-* **Cloud Discovery**: A feature that collects and analyzes app usage data to detect unsanctioned or high-risk apps in the organization.
-* **Snapshot Reports**: Manually uploaded log files from firewalls or proxies that generate a one-time analysis of discovered apps.
-* **Conditional Access App Control**: Integration with Microsoft Entra Conditional Access to control and monitor sessions for connected cloud apps.
-* **File Monitoring**: Capability to track file activity, classify sensitive content, and enforce data protection policies in connected apps.
-* **Session Policies**: Real-time controls applied to user sessions, such as blocking downloads or restricting access based on device compliance.
-* **App Governance**: Advanced monitoring for OAuth applications to detect risky permissions, unverified publishers, and unusual activity.
-* **Detection Policies**: Custom rules to automatically identify and respond to high-risk behaviors or configurations in cloud apps.
-* **Microsoft Defender XDR**: An integrated security suite for detecting, investigating, and responding to threats across endpoints, identities, email, and cloud apps.
-* **Microsoft Sentinel**: A cloud-native SIEM and SOAR solution for proactive threat detection, hunting, and automated response.
-* **Attack Simulation**: Hands-on steps to simulate persistence (registry modification) and command-and-control (DNS queries) attacks.
-* **Analytics Rules**: Custom rules in Sentinel to detect suspicious activity and generate incidents.
-* **Threat Hunting**: Building and running KQL queries to proactively search for threats and bookmark notable findings.
-* **Incident Investigation**: Reviewing incidents, mapping entities, and analyzing evidence in Defender and Sentinel.
-* **Mitigation**: Managing incidents and alerts, applying security recommendations, and restoring data for deeper analysis.
+* **Microsoft Defender for Cloud Apps**: Un agente de seguridad de acceso a la nube (CASB) que proporciona visibilidad, control y protección para aplicaciones SaaS.
+* **Cloud Discovery**: Una función que recopila y analiza datos de uso de las aplicaciones para detectar aplicaciones no autorizadas o de alto riesgo en la organización.
+* **Informes de Instantáneas**: Archivos de registro cargados manualmente desde firewalls o servidores proxy que generan un análisis único de las aplicaciones detectadas.
+* **Control de Aplicaciones con Acceso Condicional**: Integración con el Acceso Condicional de Microsoft Entra (Microsoft Entra Conditional Access) para controlar y supervisar las sesiones de las aplicaciones conectadas en la nube.
+* **Supervisión de Archivos**: Capacidad para rastrear la actividad de los archivos, clasificar contenido confidencial y aplicar directivas de protección de datos en las aplicaciones conectadas.
+* **Directivas de Sesión**: Controles en tiempo real aplicados a las sesiones de usuario, como el bloqueo de descargas o la restricción del acceso en función del cumplimiento de los dispositivos.
+* **Gobernanza de Aplicaciones**: Supervisión avanzada de aplicaciones OAuth para detectar permisos de riesgo, publicadores no verificados y actividad inusual. 
+* **Directivas de Detección**: Reglas personalizadas para identificar y responder automáticamente a comportamientos o configuraciones de alto riesgo en aplicaciones en la nube.
+* **Microsoft Defender XDR**: Una suite de seguridad integrada para detectar, investigar y responder a amenazas en puntos de conexión, identidades, correo electrónico y aplicaciones en la nube.
+* **Microsoft Sentinel**: Una solución SIEM y SOAR de nube nativa para la detección proactiva de amenazas, búsqueda y respuesta automatizada.
+* **Simulación de Ataques**: Pasos prácticos para simular ataques de persistencia (modificación del registro) y de comando y control (consultas DNS).
+* **Reglas de Análisis**: Reglas personalizadas en Sentinel para detectar actividad sospechosa y generar incidentes.
+* **Búsqueda de Amenazas**: Creación y ejecución de consultas KQL para buscar amenazas de forma proactiva y marcar los hallazgos más relevantes.
+* **Investigación de Incidentes**: Revisión de incidentes, mapeo de entidades y análisis de evidencia en Defender y Sentinel.
+* **Mitigación**: Gestión de incidentes y alertas, aplicación de recomendaciones de seguridad y restauración de datos para un análisis más profundo.
 
-Now, click on **Next** from the lower right corner to move on to the next page.
+Ahora, haga clic en **Siguiente** en la esquina inferior derecha para pasar a la siguiente página.
  
-  ![Start Your Azure Journey](../media/rd_gs_1_9.png)
+  ![Comience su Experiencia con Azure](../media/rd_gs_1_9.png)
 
-### Happy learning!
+### ¡Feliz aprendizaje!
