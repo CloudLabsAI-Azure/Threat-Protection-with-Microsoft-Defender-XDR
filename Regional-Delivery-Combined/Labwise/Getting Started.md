@@ -1,141 +1,141 @@
-# Implement Threat Protection with Microsoft Defender XDR solutions
+# Implementar la Protección Contra Amenazas con las Soluciones Microsoft Defender XDR
 
-## Overview
+## Descripción General
 
-In this lab, you will enhance organizational security by leveraging Microsoft Defender for Office 365, Microsoft Defender XDR, Microsoft Defender for Cloud Apps, and Microsoft Defender for Identity. You’ll begin by configuring foundational and advanced threat protection policies, including Anti-Phishing and Safe Links, while also creating alert rules and tagging priority accounts. Using Attack Simulation Training, you’ll simulate phishing and malware attacks to understand how threats target users and analyze results through Threat Explorer and real-time detections. To strengthen secure posture, you’ll implement and monitor settings using Configuration Analyzer and Microsoft Secure Score, ensuring alignment with best practices.
+En este laboratorio, mejorará la seguridad de su organización aprovechando Microsoft Defender para Office 365, Microsoft Defender XDR, Microsoft Defender for Cloud Apps y Microsoft Defender for Identity. Comenzará configurando directivas de protección contra amenazas básicas y avanzadas, como Anti-Phishing y Vínculos Seguros (Safe Links), a la vez que creará reglas de alerta y etiquetará cuentas prioritarias. Mediante el entrenamiento de simulación de ataques, simulará ataques de phishing y malware para comprender cómo las amenazas atacan a los usuarios y analizará los resultados mediante el Explorador de Amenazas (Threat Explorer) y detecciones en tiempo real. Para fortalecer la seguridad, implementará y supervisará la configuración con Analizador de Configuración (Configuration Analyzer) y Puntuación de Seguridad de Microsoft (Microsoft Secure Score), garantizando la conformidad con las prácticas recomendadas.
 
-You will then expand your threat protection capabilities by integrating Defender for Cloud Apps, Sentinel, and Power Automate. This includes connecting and onboarding SaaS applications, enabling Cloud Discovery, and generating snapshot reports to analyze shadow IT. You’ll configure session and detection policies to identify risky behaviors, implement App Governance to monitor high-risk OAuth applications, and investigate suspicious activity. By deploying Defender for Identity sensors to domain controllers, you’ll simulate identity-based attacks such as Pass-the-Hash and DC Sync, analyze threat timelines, and implement Automated Investigation and Response (AIR) for identity threats.
+A continuación, ampliará sus capacidades de protección contra amenazas integrando Defender for Cloud Apps, Sentinel y Power Automate. Esto incluye la conexión e integración de aplicaciones SaaS, la habilitación de Cloud Discovery y la generación de informes de instantáneas para analizar las TI en la Sombra (Shadow IT). Configurará directivas de sesión y detección para identificar comportamientos de riesgo, implementará Gobernanza de Aplicaciones para supervisar aplicaciones OAuth de alto riesgo e investigará actividades sospechosas. Al implementar sensores de Defender for Identity en controladores de dominio, simulará ataques basados ​​en identidad, como Pass-the-Hash y DC Sync, analizará líneas de tiempo de amenazas e implementará Investigación y Respuesta Automatizadas (AIR) para amenazas de identidad.
 
-Finally, you’ll integrate Microsoft Sentinel for advanced incident detection and response, creating workflows with Power Automate to streamline remediation. Through these hands-on exercises, you’ll gain practical skills to detect, respond to, and manage modern cyber threats across Microsoft 365 workloads—building a comprehensive defense strategy that spans email, identity, applications, endpoints, and cloud services.
+Finalmente, integrará Microsoft Sentinel para la detección y respuesta avanzadas a incidentes, creando flujos de trabajo con Power Automate para agilizar la remediación. Mediante estos ejercicios prácticos, adquirirá habilidades prácticas para detectar, responder y gestionar ciberamenazas modernas en las cargas de trabajo de Microsoft 365, creando una estrategia de defensa integral que abarca correo electrónico, identidad, aplicaciones, puntos de conexión y servicios en la nube.
 
-## Objectives
+## Objetivos
 
-- Configure standard and strict threat protection policies in Microsoft Defender for Office 365.
-- Simulate phishing and malware attacks using Attack Simulation Training and analyze results.
-- Investigate threats with Threat Explorer, real-time detections, and incident workflows in Microsoft Defender XDR.
-- Create and manage Anti-Phishing, Safe Links, and alert policies to defend against advanced threats.
-- Enable and monitor secure posture settings with DKIM, Secure Score, and Priority Account Protection.
-- Integrate Microsoft Defender for Cloud Apps with Endpoint to enable cloud app discovery.
-- Generate snapshot reports to analyze shadow IT and onboard SaaS apps with session policies.
-- Implement App Governance to detect risky OAuth apps and configure custom detection policies.
-- Deploy Microsoft Defender for Identity sensors to detect identity-based threats and lateral movement.
-- Integrate with Microsoft Sentinel and Power Automate to enable AIR and automated incident response workflows.
+- Configurar directivas de protección contra amenazas estándar y estrictas en Microsoft Defender para Office 365.
+- Simular ataques de phishing y malware con el Entrenamiento de Simulación de Ataques y analizar los resultados.
+- Investigar amenazas con el Explorador de Amenazas (Threat Explorer), detecciones en tiempo real y flujos de trabajo de incidentes en Microsoft Defender XDR.
+- Crear y administrar directivas de Anti-Phishing, Vínculos Seguros (Safe Links) y alertas para defenderse de amenazas avanzadas.
+- Habilitar y supervisar la configuración de la posición segura con DKIM, Puntuación de Seguridad (Secure Score) y Protección de Cuentas Prioritarias (Priority Account Protection).
+- Integrar Microsoft Defender for Cloud Apps con Punto de Conexión (Endpoint) para habilitar la detección de aplicaciones en la nube.
+- Generar informes de instantáneas para analizar TI en la Sombra (Shadow IT) e integrar aplicaciones SaaS con directivas de sesión.
+- Implementar la Gobernanza de Aplicaciones para detectar aplicaciones OAuth de riesgo y configurar directivas de detección personalizadas.
+- Implementar sensores de Microsoft Defender for Identity para detectar amenazas basadas en la identidad y movimiento lateral.
+- Integrar con Microsoft Sentinel y Power Automate para habilitar AIR y flujos de trabajo automatizados de respuesta a incidentes.
 
-## Day-by-Day Breakdown:
+## Desglose Diario:
 
-### Day 1
+### Día 1
 
-In this hands-on lab, you will strengthen organizational security with Microsoft Defender for Office 365 and Microsoft Defender XDR. You’ll configure standard and advanced protection policies, simulate phishing and malware attacks, and investigate threats using Threat Explorer and real-time detections. You’ll set up Anti-Phishing, Safe Links, and alert policies, while monitoring posture with Secure Score and priority account protection. Finally, you’ll integrate Defender for Cloud Apps with Endpoint, enable Cloud Discovery, and analyze shadow IT using snapshot reports.
+En este laboratorio práctico, reforzará la seguridad de su organización con Microsoft Defender para Office 365 y Microsoft Defender XDR. Configurará directivas de protección estándar y avanzadas, simulará ataques de phishing y malware, e investigará amenazas mediante el Explorador de Amenazas (Threat Explorer) y detecciones en tiempo real. Configurará Anti-Phishing, Vínculos Seguros (Safe Links) y directivas de alerta, a la vez que supervisará la posición con Puntuación de Seguridad (Secure Score) y protección de cuentas prioritarias (priority account protection). Finalmente, integrará Defender para Cloud Apps con Punto de Conexión (Endpoint), habilitará Cloud Discovery y analizará TI en la Sombra (shadow IT) mediante informes de instantáneas.
 
-### Day 2 
+### Día 2 
 
-In this hands-on lab, you will enhance threat protection by integrating Microsoft Defender for Cloud Apps, Defender for Identity, Microsoft Sentinel, and Power Automate. You’ll onboard SaaS applications, configure session policies to detect risky behavior, and implement App Governance for high-risk OAuth apps. You’ll deploy Defender for Identity sensors to detect attacks like Pass-the-Hash and DC Sync, analyze threat timelines, and apply automated investigation and response (AIR). Finally, you’ll build incident response workflows using Sentinel and Power Automate
+En este laboratorio práctico, mejorará la protección contra amenazas integrando Microsoft Defender for Cloud Apps, Defender for Identity, Microsoft Sentinel y Power Automate. Integrará aplicaciones SaaS, configurará directivas de sesión para detectar comportamientos de riesgo e implementará Gobernanza de Aplicaciones para aplicaciones OAuth de alto riesgo. Implementará sensores de Defender for Identity para detectar ataques como Pass-the-Hash y DC Sync, analizará líneas de tiempos de amenazas y aplicará Investigación y Respuesta Automatizadas (AIR). Finalmente, creará flujos de trabajo de respuesta a incidentes con Sentinel y Power Automate.
 
-## Getting Started with the Lab
+## Comenzando con el Laboratorio
+
+¡Bienvenido al taller Implementar la Protección Contra Amenazas con las Soluciones Microsoft Defender XDR! Hemos preparado un entorno optimizado para que se familiarice con el analista de operaciones de seguridad de Microsoft. Podrá supervisar, identificar, investigar y responder a las amenazas en entornos multinube y los servicios relacionados de Microsoft. Comencemos por aprovechar al máximo esta experiencia:
+
+## Accediendo a Su Ambiente de Laboratorio
  
-Welcome to Implement Threat Protection with Microsoft Defender XDR solutions workshop! We've prepared a seamless environment for you to familiarize yourself with the Microsoft security operations analyst, you monitor, identify, investigate, and respond to threats in multi-cloud environments and related Microsoft services. Let's begin by making the most of this experience:
+Una vez que esté listo para comenzar, su máquina virtual y la guía de laboratorio estarán a su disposición en su navegador web.
  
-## Accessing Your Lab Environment
+![Accediendo a Su MV y Guía de Laboratorio](../media/cor_gs_r_1.png)
+
+## Máquina Virtual & Guía de Laboratorio
  
-Once you're ready to dive in, your virtual machine and lab guide will be right at your fingertips within your web browser.
+Su máquina virtual es su herramienta principal durante todo el taller. La guía de laboratorio es su hoja de ruta hacia el éxito.
+
+## Explorando Sus Recursos de Laboratorio
+
+Para comprender mejor los recursos y credenciales de su laboratorio, diríjase a la pestaña **Ambiente**.
  
-![Access Your VM and Lab Guide](../media/cor_gs_r_1.png)
+![Explore Recursos de Laboratorio](../media/cor_gs_r_3.png)
 
-## Virtual Machine & Lab Guide
+## **Utilizando la Función de Ventana Dividida***
+
+Para mayor comodidad, puede abrir la guía de laboratorio en una ventana independiente seleccionando el botón **Ventana Dividida** en la esquina superior derecha.
  
-Your virtual machine is your workhorse throughout the workshop. The lab guide is your roadmap to success.
+![Use la Función de Ventana Dividida](../media/cor_gs_r_6.png)
 
-## Exploring Your Lab Resources
+## Administrando Su Máquina Virtual
 
-To get a better understanding of your lab resources and credentials, navigate to the **Environment** tab.
+En la pestaña **Recursos (1)**, puede administrar sus máquinas virtuales. En la columna **Acciones (2)**, use los botones para iniciar, detener, reiniciar o abrir su máquina virtual según sea necesario.
+
+![Administre Su Máquina Virtual](../media/cor_gs_r_4.png)
+
+## Guía de laboratorio: Acercar/Alejar
  
-![Explore Lab Resources](../media/cor_gs_r_3.png)
-
-## **Utilizing the Split Window Feature***
-
-For convenience, you can open the lab guide in a separate window by selecting the **Split Window** button from the Top right corner.
- 
-![Use the Split Window Feature](../media/cor_gs_r_6.png)
-
-## Managing Your Virtual Machine
-
-On the **Resources (1)** tab, you can manage your virtual machines. Under the **Actions (2)** column, use the buttons to start, stop, restart, or open your VM as needed.
-
-![Manage Your Virtual Machine](../media/cor_gs_r_4.png)
-
-## Lab Guide Zoom In/Zoom Out
- 
-Click the **A↕ icon (1)** next to the timer to adjust the zoom level for the environment page. From the drop-down menu, select the desired **Percentage (2)**.
+Haga clic en el ícono **A↕ (1)** junto al temporizador para ajustar el nivel de ampliación de la página del ambiente. En el menú desplegable, seleccione el **Porcentaje (2)** deseado.
 
 ![](../media/cor_gs_r_5.png)
 
-## Let's Get Started with Azure Portal
+## Comencemos con el Portal de Azure
 
-1. On your virtual machine desktop, double-click the **Azure Portal** shortcut (Microsoft Edge browser) to open the Azure portal.
+1. En el escritorio de su máquina virtual, haga doble clic en el acceso directo del **Portal de Azure** (explorador Microsoft Edge) para abrir el Portal de Azure.
  
-    ![Launch Azure Portal](../media/cor_gs_r_2.png)
+    ![Iniciar el Portal de Azure](../media/cor_gs_r_2.png)
 
-2. You'll see the **Sign into Microsoft Azure** tab. Here, enter your credentials:
+2. Verá la pestaña **Iniciar sesión en Microsoft Azure**. Aquí, ingrese sus credenciales:
  
-   - **Email/Username:** <inject key="AzureAdUserEmail"></inject>
+   - **Correo electrónico/Nombre de usuarip:** <inject key="AzureAdUserEmail"></inject>
  
-     ![Enter Your Username](../media/rd_gs_1_6.png)
+     ![Ingrese Su Nombre de Usuario](../media/rd_gs_1_6.png)
  
-3. Next, provide your password:
+3. A continuación, introduzca su contraseña:
  
-   - **Password:** <inject key="AzureAdUserPassword"></inject>
+   - **Contraseña:** <inject key="AzureAdUserPassword"></inject>
  
-     ![Enter Your Password](../media/rd_gs_1_7.png)
+     ![Ingrese Su Contraseña](../media/rd_gs_1_7.png)
 
-1. If you see the pop-up Stay Signed in?, select No.
+1. Si ve la ventana emergente ¿Permanecer conectado?, seleccione No.
 
-   > **NOTE**: If prompted with MFA, and Ask Later option is not available please follow the steps highlighted under - [Steps to Proceed with MFA Setup if Ask Later Option is Not Visible](#steps-to-proceed-with-mfa-setup-if-ask-later-option-is-not-visible)
+   > **NOTA**: Si se le solicita MFA y la opción Preguntar más tarde no está disponible, siga los pasos resaltados en - [Pasos para continuar con la configuracion de MFA si la opcion Preguntar mas tarde no esta visible](#pasos-para-continuar-con-la-configuracion-de-mfa-si-la-opcion-preguntar-mas-tarde-no-esta-visible)
 
-1. If you see the pop-up **You have free Azure Advisor recommendations!**, close the window to continue the lab.
+1. Si ve la ventana emergente **¡Tiene recomendaciones gratuitas de Azure Advisor!**, cierre la ventana para continuar con el laboratorio.
 
-1. If a Welcome to **Microsoft Azure** popup window appears, select **Maybe Later** to skip the tour.
+1. Si aparece la ventana emergente Bienvenido a **Microsoft Azure**, seleccione **Quizás más tarde** para omitir la visita guiada.
 
-## Steps to Proceed with MFA Setup if Ask Later Option is Not Visible
+## Pasos para continuar con la configuracion de MFA si la opcion Preguntar mas tarde no esta visible
 
-   > **Note:** Continue with the exercises if MFA is already enabled or the option is unavailable.
+   > **Nota:** Continúe con los ejercicios si MFA ya está habilitado o la opción no está disponible.
 
-1. At the **"More information required"** prompt, select **Next**.
+1. En el mensaje **"Se requiere más información"**, seleccione **Siguiente**.
 
-1. On the **"Keep your account secure"** page, select **Next** twice.
+1. En la página **"Mantenga su cuenta segura"**, seleccione **Siguiente** dos veces.
 
-1. **Note:** If you don’t have the Microsoft Authenticator app installed on your mobile device:
+1. **Nota:** Si no tiene la aplicación Microsoft Authenticator instalada en su dispositivo móvil:
 
-   - Open **Google Play Store** (Android) or **App Store** (iOS).
-   - Search for **Microsoft Authenticator** and tap **Install**.
-   - Open the **Microsoft Authenticator** app, select **Add account**, then choose **Work or school account**.
+   - Abra **Google Play Store** (Android) o **App Store** (iOS).
+   - Busque **Microsoft Authenticator** y pulse **Instalar**.
+   - Abra la aplicación **Microsoft Authenticator**, seleccione **Añadir cuenta** y, a continuación, elija **Cuenta profesional o educativa**.
 
-1. A **QR code** will be displayed on your computer screen.
+1. Se mostrará un **código QR** en la pantalla de su computadora.
 
-1. In the Authenticator app, select **Scan a QR code** and scan the code displayed on your screen.
+1. En la aplicación Authenticator, seleccione **Escanear un código QR** y escanee el código que aparece en la pantalla.
 
-1. After scanning, click **Next** to proceed.
+1. Después de escanearlo, presione **Siguiente** para continuar.
 
-1. On your phone, enter the number shown on your computer screen in the Authenticator app and select **Next**.
+1. En su teléfono, introduzca el número que aparece en la pantalla de su computadora en la aplicación Authenticator y seleccione **Siguiente**.
        
-1. If prompted to stay signed in, you can click **No**.
+1. Si se le pide que mantenga la sesión iniciada, puede presionar **No**.
 
-1. If a **Welcome to Microsoft Azure** popup window appears, click **Cancel** to skip the tour.
+1. Si aparece una ventana emergente de **Bienvenido a Microsoft Azure**, presione **Cancelar** para omitir la visita guiada.
 
-1. Now, click on the **Next** from the lower right corner to move to the next page.
+1. Ahora, haga clic en **Siguiente** en la esquina inferior derecha para pasar a la página siguiente.
    
-### **Support Contact**
+### **Contacto de Soporte**
 
-The CloudLabs support team is available 24/7, 365 days a year, via email and live chat to ensure seamless assistance at any time. We offer dedicated support channels tailored specifically for both learners and instructors, ensuring that all your needs are promptly and efficiently addressed.
+El equipo de soporte de CloudLabs está disponible las 24 horas, los 7 días de la semana, los 365 días del año, por correo electrónico y chat en vivo para garantizar una asistencia fluida en cualquier momento. Ofrecemos canales de soporte dedicados, diseñados específicamente para estudiantes e instructores, para garantizar que todas sus necesidades se atiendan de forma rápida y eficiente.
  
-Learner Support Contacts:
+Contactos de Soporte para Estudiantes:
  
-- Email Support: cloudlabs-support@spektrasystems.com
-- Live Chat Support: https://cloudlabs.ai/labs-support
+- Soporte por Correo Electrónico: cloudlabs-support@spektrasystems.com
+- Soporte por Chat en Vivo: https://cloudlabs.ai/labs-support
 
-Now you're all set to explore the powerful world of technology. Feel free to reach out if you have any questions along the way. Enjoy your workshop!
+Ahora está listo para explorar el poderoso mundo de la tecnología. No dude en contactarnos si tiene alguna pregunta durante el proceso. ¡Disfrute del taller!
 
-Now, click on **Next** from the lower right corner to move on to the next page.
+Ahora, haga clic en **Siguiente** en la esquina inferior derecha para pasar a la siguiente página.
  
 ![](../media/rd_gs_1_9.png)
 
-### Happy learning!
+### ¡Feliz aprendizaje!
