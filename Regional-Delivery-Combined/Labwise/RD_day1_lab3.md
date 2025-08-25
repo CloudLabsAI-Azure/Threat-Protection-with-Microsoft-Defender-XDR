@@ -1,104 +1,104 @@
-# Lab 3: Analyze Threats with Threat Explorer and Real-Time Detections
+# Laboratorio 3: Analizar Amenazas con el Explorador de Amenazas y Detecciones en Tiempo Real
 
-In this lab, you'll create a custom role in Microsoft Defender to manage access and permissions, simulate a phishing interaction, and investigate user activity using Threat Explorer.
+En este laboratorio, creará un rol personalizado en Microsoft Defender para administrar el acceso y los permisos, simular una interacción de phishing e investigar la actividad del usuario con el Explorador de Amenazas.
 
-1. On a new tab in the **Microsoft Edge browser** and go to the following URL in the address bar: https://security.microsoft.com.
+1. En una nueva pestaña del explorador **Microsoft Edge**, acceda a la siguiente URL en la barra de direcciones: https://security.microsoft.com.
 
-1. Open a new tab, navigate to https://outlook.office.com, sign in with the lab user’s credentials, and access the mailbox.
+1. Abra una nueva pestaña, navegue a https://outlook.office.com, inicie sesión con las credenciales del usuario del laboratorio y acceda al buzón.
 
-   > **Note:** If the **Your privacy matters** pop-up appears, click **Continue** to proceed.
+   > **Nota:** Si aparece la ventana emergente **La privacidad importa**, haga clic en **Continuar**.
 
       ![](../media/combi_g_c_8.png)
 
-1. In the mailbox, select the **phishing simulation email (1)** and click the **link (2)** provided in the message body to proceed.
+1. En el buzón, seleccione el **correo electrónico de simulación de phishing (1)** y haga clic en el **enlace (2)** que aparece en el cuerpo del mensaje para continuar.
 
    ![](../media/combi_g_c_9.png)
 
-1. On the **Sign in** page, type any random email address (1) and click **Next (2)**.
+1. En la página **Sign in**, escriba cualquier dirección de correo electrónico (1) y haga clic en **Next (2)**.
 
    ![](../media/combi_g_c_11.png)
 
-1. On the **Enter password** page, type any random password (1) and click **Sign in (2)**.
+1. En la página **Enter password**, escriba cualquier contraseña (1) y haga clic en **Sign in (2)**.
 
    ![](../media/combi_g_c_12.png)
 
-1. After submitting the fake credentials, the phishing simulation results page will appear indicating that you were phished. Review the message and proceed as instructed in the lab.
+1. Tras enviar las credenciales falsas, aparecerá la página de resultados de la simulación de phishing, indicando que ha sido víctima de phishing. Revise el mensaje y proceda según las instrucciones del laboratorio.
 
    ![](../media/combi_g_c_10.png)
 
-      > Note: This activity simulates a phishing attack and trigger credential submission logs.
+      > Nota: Esta actividad simula un ataque de phishing y activa los registros de envío de credenciales.
 
-1. A training assignment email is also generated for users who fall for the phishing simulation. In the mailbox, open the **Training assignment notification** email and review the details.
+1. También se genera un correo electrónico con la tarea de capacitación para los usuarios que caen en la simulación de phishing. En el buzón, abra el correo electrónico **Training assignment notification** y revise los detalles.
 
    ![](../media/combi_g_c_13.png)
 
-1. In the mailbox, select the malware attachment simulation email to view its contents.
+1. En el buzón, seleccione el correo electrónico con el archivo adjunto de simulación de malware para ver su contenido.
 
    ![](../media/combi_g_c_14.png)
 
-1. With the malware attachment simulation email open, click the **More actions (1)** menu, select **Report (2)**, and then click **Report phishing (3)**.
+1. Con el correo electrónico de simulación de malware adjunto abierto, haga clic en el menú **Más acciones (1)**, seleccione **Denunciar (2)** y, a continuación, haga clic en **Informar sobre phishing (3)**.
 
    ![](../media/combi_g_c_15.png)
 
-1. In the **Report phishing** confirmation dialog, click **Report** to submit the phishing report.
+1. En el cuadro de diálogo de confirmación **Informar sobre phishing**, haga clic en **Informe** para enviar el informe de phishing.
 
    ![](../media/combi_g_c_16.png)
 
-1. After reporting the phishing email, a confirmation message will be sent to your mailbox. Open the **Thank you for reporting a phish!** email to review the acknowledgment.
+1. Tras informar del correo electrónico de phishing, recibirá un mensaje de confirmación en su buzón. Abra el correo electrónico **Thank you for reporting a phish!** para revisar la confirmación.
 
    ![](../media/combi_g_c_17.png)
 
-1. In the **Microsoft Defender portal**, do the following:
+1. En el **portal de Microsoft Defender**, realice lo siguiente:
 
-   - Select **Email & collaboration (1)** from the left navigation pane.
-   - Click **Explorer (2)** under the Email section.
-   - In the **URL clicks** tab, select the entry for the clicked timestamp.
-   - Review the **URL (4)** that was clicked to investigate further.
+   - Seleccione **Colaboración y correo electrónico (1)** en el panel de navegación izquierdo.
+   - Haga clic en **Explorador (2)** en la sección Email.
+   - En la pestaña **Clics en la dirección URL**, seleccione **(3)** la entrada para la marca de tiempo del clic.
+   - Revise la **URL (4)** en la que se hizo clic para investigar más a fondo.
 
       ![](../media/rd_day1_ex2_t1_10.png)
 
-   > **Note:** Sometimes the Microsoft Defender portal can take 1–2 hours for initial backend data to load. If refreshing the page doesn’t display results, check back later.
+   > **Nota:** En ocasiones, el portal de Microsoft Defender puede tardar entre 1 y 2 horas en cargar los datos iniciales del backend. Si al actualizar la página no se muestran los resultados, vuelva a consultarla más tarde.
 
       ![](../media/combi_g_c_18.png)
    
-   > **Note:** If no data appears after waiting and refreshing, skip ahead to step 14 to continue with the lab.
+   > **Nota:** Si no aparecen datos después de esperar y actualizar, vaya al paso 14 para continuar con el laboratorio.
 
-1. Click on the **Open url page** to open the full event details.
+1. Haga clic en **Abrir la página de dirección URL** para ver los detalles completos del evento.
 
    ![](../media/rd_day1_ex2_t1_11.png)
 
-   > Note: This shows the clicked URL, click metadata, and incident correlation.
+   > Nota: Esto muestra la URL en la que se hizo clic, los metadatos de clic y la correlación del incidente.
 
-1. In the **Microsoft Defender portal**, do the following:
+1. En el **portal de Microsoft Defender**, realice lo siguiente:
 
-   - Select **Email & collaboration (1)** from the left navigation pane.  
-   - Click **Attack simulation training (2)**.  
-   - Navigate to the **Simulations (3)** tab.  
-   - Locate and select the simulation named **Test1 (4)** from the list.
+   - Seleccione **Colaboración y correo electrónico (1)** en el panel de navegación izquierdo.
+   - Haga clic en **Entrenamiento de simulación de ataque (2)**.  
+   - Navegue a la pestaña **Simulaciones (3)**.  
+   - Localice y seleccione la simulación llamada **Test1 (4)** de la lista.
 
       ![](../media/rd_day1_ex2_t1_12.png)
 
-1. View the simulation report to observe the results.  
-   In this example, 100% of users were compromised and 0% reported the phishing attempt.
+1. Consulte el informe de la simulación para observar los resultados.  
+   En este ejemplo, el 100 % de los usuarios se vieron comprometidos y el 0 % reportó el intento de phishing.
 
    ![](../media/rd_day1_ex2_t1_13.png)
 
-1. Click the **Affected user** to view detailed actions taken during the simulation such as reading the email, clicking the link, and submitting credentials.
+1. Haga clic en **Ver usuarios en peligro** para ver las acciones detalladas realizadas durante la simulación, como leer el correo electrónico, hacer clic en el enlace y enviar las credenciales.
 
    ![](../media/rd_day1_ex2_t1_14.png)
 
-   > Note: This data helps evaluate user behavior and identify high-risk individuals.
+   > Nota: Estos datos ayudan a evaluar el comportamiento del usuario e identificar a los individuos de alto riesgo.
 
-1. Navigate back to the **Simulations** tab, select the simulation named **Test2**, and view the report details for the malware attachment simulation.
+1. Regrese a la pestaña **Simulaciones**, seleccione la simulación llamada **Test2**, y consulte los detalles del informe de simulación del archivo adjunto de malware.
 
-## Review
+## Revisión
 
-In this lab, you have completed the following:
+En este laboratorio, ha completado lo siguiente:
 
-- Created a custom role in Microsoft Defender to manage access and permissions.
-- Simulated a phishing interaction and investigated user activity using Threat Explorer.
-- Analyzed real-time detections and simulation reports to assess user risk.
+- Creó un rol personalizado en Microsoft Defender para administrar el acceso y los permisos.
+- Simuló una interacción de phishing e investigó la actividad del usuario con el Explorador de Amenazas.
+- Analizó las detecciones en tiempo real e informes de simulación para evaluar el riesgo del usuario.
 
-### You have successfully completed the lab. Click on **Next >>** to proceed with the next Lab.
+### Ha completado el Laboratorio con éxito. Haga clic en **Siguiente >>** para continuar con el siguiente Laboratorio.
 
 ![](../media/rd_gs_1_9.png)
