@@ -1,113 +1,117 @@
-# Lab 4: Configure Anti-Phishing and Safe Links Policies
+# Laboratorio 4: Configurar Directivas Antiphishing y de Vínculos Seguros
 
-In this lab, you will create a custom Anti-Phishing policy and Safe Links policy to enhance protection against malicious emails and phishing links. You will also simulate a phishing email and verify alerts and detections.
+En este laboratorio, creará una directiva Anti-Phishing personalizada y una directiva de Vínculos Seguros (Safe Links) para mejorar la protección contra correos electrónicos maliciosos y enlaces de phishing. También simulará un correo electrónico de phishing y verificará las alertas y detecciones.
 
-1. On the **Microsoft Defender portal**, go to **Email & collaboration (1)** → **Policies & rules (2)** → **Threat policies (3)**.
+1. En el **portal de Microsoft Defender**, vaya a **Colaboración y correo electrónico (1)** → **Reglas y directivas (2)** → **Directivas de amenazas (3)**.
 
    ![](../media/rd_day1_ex1_t1_6.png)
 
-1. On the **Threat policies** page, under **Policies**, select **Anti-phishing**.
+1. En la página **Directivas de amenazas**, en **Directivas**, seleccione **Protección contra phishing**.
 
    ![](../media/g_r_e2_2_5.png)
 
-1. On the **Anti-phishing** page, click **Create (1)** to begin a new policy.
+1. En la página **Protección contra phishing**, haga clic en **Crear (1)** para crear una nueva directiva.
 
    ![](../media/rd_day1_ex2_t2_2.png)
 
-1. Enter the name **Anti-Phish (1)** and click **Next (2)**.
+1. Ingrese el nombre **Anti-Phish (1)** y haga clic en **Siguiente (2)**.
 
    ![](../media/rd_day1_ex2_t2_3.png)
 
-1. Under **Users, groups, and domains**, add the user **ODL User (1)** and click **Next (2)**.
+1. En **Usuarios, grupos y dominios**, agregue el usuario **ODL User (1)** y haga clic en **Siguiente (2)**.
 
    ![](../media/rd_day1_ex2_t2_4.png)
 
-1. Set the **Phishing email threshold** to **4 - Most Aggressive** to enable maximum protection.
+1. Establezca el **Umbral de correo electrónico de phishing** en **4 - El más agresivo** para activar la máxima protección.
 
    ![](../media/rd_day1_ex2_t2_5.png)
 
-1. Under **Trusted senders and domains**, check the following options:
+1. En **Agregar dominios y remitentes de confianza**, marque las siguientes opciones:
 
-   - **Enable mailbox intelligence (1)**
-   - **Enable Intelligence for impersonation protection (2)**
-   - **Enable spoof intelligence (3)**  
-   - Then click **Next (4)**. 
+   - **Habilitar la inteligencia de buzones (1)**
+   - **Habilitar la inteligencia para la protección contra la suplantación de identidad (2)**
+   - **Habilitar la inteligencia contra la suplantación de identidad (3)**  
+   - Luego haga clic en **Siguiente (4)**. 
      
       ![](../media/rd_day1_ex2_t2_6.png)
 
-1. Under **Message actions**, configure the following and click **Next (5)**.
+1. En **Acciones en mensajes**, configure lo siguiente y haga clic en **Siguiente (5)**.
 
-   - If Mailbox Intelligence detects an impersonated user:  
-     **Move the message to the recipients’ Junk Email folders (1)**
-   - For spoof messages with DMARC policy = quarantine:  
-     **Move to Junk Email (2)**
-   - For spoof messages with DMARC policy = reject:  
-     **Quarantine the message (3)**
-   - For spoof detection by spoof intelligence:  
-     **Move to Junk Email (4)**  
+   - Si la inteligencia de buzones detecta un usuario suplantado:  
+     **Mover el mensaje a las carpetas de correo no deseado de los destinatarios (1)**
+   - Si el mensaje se detecta como suplantación de identidad y la directiva DMARC se establece como p=quarantine:  
+     **Mover el mensaje a las carpetas de correo no deseado de los destinatarios (2)**
+   - Si el mensaje se detecta como suplantación de identidad y la directiva DMARC se establece como p=reject:  
+     **Poner en cuarentena el mensaje (3)**
+   - Si el mensaje se detecta como suplantación de identidad por la inteligencia de suplantación de identidad:  
+     **Mover el mensaje a las carpetas de correo no deseado de los destinatarios (4)**  
 
       ![](../media/rd_day1_ex2_t2_7.png)
 
-1. Back on the **Threat policies** page, go to **Email & collaboration (1)** > **Policies & rules (2)**, then select **Safe Links (3)**.
+1. De vuelta en la página **Directivas de amenazas**, vaya a **Colaboración y correo electrónico (1)** > **Reglas y directivas (2)** y seleccione **Vínculos seguros (3)**. Haga clic en **Crear**.
 
    ![](../media/rd_day1_ex2_t2_8.png)
 
-1. Enter the policy name **Anti-Safe (1)** and click **Next (2)**.
+   ![](../media/rd_day1_ex2_t2_82.png)
+
+1. Ingrese el nombre de la directiva **Anti-Safe (1)** y haga clic en **Siguiente (2)**.
 
    ![](../media/rd_day1_ex2_t2_9.png)
 
-1. Under **Users and domains**, add the user **ODL_User (1)** and click **Next (2)**.
+1. En **Usuarios y dominios**, agregue al usuario **ODL_User (1)** y haga clic en **Siguiente (2)**.
 
     ![](../media/rd_day1_ex2_t2_10.png)
 
-1. In **URL & click protection settings**, ensure all checkboxes are enabled, including:
+1. En **Configuración de protección de direcciones URL y clics**, asegúrese de que todas las casillas estén activadas, incluyendo:
 
-    - Email Safe Links
-    - URL scanning
-    - Teams and Office 365 apps protection
-    - Click tracking  
+    - Vínculos seguros en correo electrónico
+    - Análisis de URL
+    - Protección de Teams y Aplicaciones de Office 365 
+    - Realizar un seguimiento de los clics de usuario 
 
-    Then click **Next**.
+    Luego haga clic en **Siguiente**.
 
     ![](../media/rd_day1_ex2_t2_11.png)
 
-1. Navigate to **Email & collaboration (1)** > **Policies & rules (2)** > **Alert policy (3)**.
+    ![](../media/rd_day1_ex2_t2_112.png)
+
+1. Navegue a **Colaboración y correo electrónico (1)** > **Reglas y directivas (2)** > **Directiva de alerta (3)**.
 
     ![](../media/rd_day1_ex2_t2_12.png)
 
-1. On the **Alert policy** page, click **+ New Alert Policy**.
+1. En la página **Directiva de alerta**, haga clic en **+ Nueva directiva de alerta**.
 
     ![](../media/rd_day1_ex2_t2_13.png)
 
-1. Enter the following details:
+1. Ingrese los siguientes detalles:
     
-    - **Name (1):** Alert-Safe  
-    - **Severity (2):** High  
-    - **Category (3):** Threat management  
+    - **Nombre (1):** Alert-Safe  
+    - **Gravedad (2):** High  
+    - **Categoría (3):** Threat management  
       
-      Click **Next (4)**.
+      Haga clic en **Siguiente (4)**.
 
       ![](../media/rd_day1_ex2_t2_14.png)
 
-1. For the activity condition, configure the following and click **Next (4)**.
+1. Para la condición de la actividad, configure lo siguiente y haga clic en **Siguiente (4)**.
 
-    - **Activity (1):** Detected malware in an email message  
-    - **Mail direction (2):** Inbound  
-    - **Trigger (3):** Every time an activity matches the rule  
+    - **La actividad es (1):** Se ha detectado malware en un mensaje
+    - **Correo: La dirección de correo es (2):** Entrante
+    - **¿Cómo quiere que se active la alerta? (3):** Cada vez que una actividad coincide con la regla  
 
       ![](../media/rd_day1_ex2_t2_15.png)
 
-1. Add the recipient's email address **(1)** and click **Next (2)**.
+1. Agregue la dirección de correo electrónico del destinatario **(1)** y haga clic en **Siguiente (2)**.
 
     ![](../media/rd_day1_ex2_t2_16.png)
 
-1. Review the alert settings, choose **Yes, turn it on right away (1)**, and click **Submit (2)**.
+1. Revise la configuración de alertas, elija **Sí, deseo activarla inmediatamente (1)**, y haga clic en **Enviar (2)**.
 
     ![](../media/rd_day1_ex2_t2_17.png)
 
-   > **Note:** Your alert policy is now active and will trigger if matching activity is detected.
+   > **Nota:** Su directiva de alertas ahora está activa y se desencadenará si se detecta actividad coincidente.
 
-1. Send a test email with sample malicious links to simulate a threat:
+1. Envíe un correo electrónico de prueba con enlaces maliciosos de ejemplo para simular una amenaza:
     
     - **(1)** https://www.amtso.org/check-desktop-phishing-page/  
     - **(2)** https://malware.wicar.org/data/eicar.com.txt  
@@ -115,28 +119,28 @@ In this lab, you will create a custom Anti-Phishing policy and Safe Links policy
 
     ![](../media/rd_day1_ex2_t2_18.png)
 
-1. Navigate to **Email & collaboration (1)** > **Explorer (2)** and locate the test email **Test-safe (3)**.
+1. Navegue a **Colaboración y correo electrónico (1)** > **Explorador (2)** y localice el correo electrónico de prueba **Test-safe (3)**.
 
     ![](../media/rd_day1_ex2_t2_19.png)
 
-1. Click **Open email entity (1)** and verify that:
+1. Haga clic en **Abrir entidad de correo electrónico (1)** y verifique que:
     
-    - **Original location:** Quarantine  
-    - **Delivery action:** Blocked  
-    - **Detection technologies:** URL malicious reputation, Mixed analysis detection  
+    - **Ubicación original:** Cuarentena
+    - **Acción de entrega:** Bloqueado  
+    - **Tecnologías de detección:** Reputación de URL malintencionada, Detección de análisis mixto
 
       ![](../media/rd_day1_ex2_t2_20.png)
 
-## Review
+## Revisión
 
-In this lab, you have completed the following:
+En este laboratorio, ha completado lo siguiente:
 
-- Created a custom role in Microsoft Defender to manage access and permissions.
-- Simulated a phishing interaction and investigated user activity using Threat Explorer.
-- Analyzed real-time detections and simulation reports to assess user risk.
-- Configured custom Anti-Phishing and Safe Links policies to enhance threat protection.
-- Created an alert policy and validated it by simulating a phishing and malware email.
+- Creó un rol personalizado en Microsoft Defender para administrar el acceso y los permisos.
+- Simuló una interacción de phishing e investigó la actividad del usuario con el Explorador de Amenazas.
+- Analizó detecciones en tiempo real e informes de simulación para evaluar el riesgo del usuario.
+- Configuró directivas personalizadas de Anti-Phishing y Vínculos Seguros (Safe Links) para mejorar la protección contra amenazas.
+- Creó una directiva de alertas y la validó mediante la simulación de un correo electrónico de phishing y malware.
 
-### You have successfully completed the lab. Click on **Next >>** to proceed with the next Lab.
+### Ha completado el laboratorio con éxito. Haga clic en **Siguiente >>** para continuar con el siguiente laboratorio.
 
 ![](../media/rd_gs_1_9.png)
