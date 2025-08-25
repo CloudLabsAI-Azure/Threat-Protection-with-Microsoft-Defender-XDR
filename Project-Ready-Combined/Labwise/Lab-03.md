@@ -50,26 +50,23 @@ In this lab, you will leverage Microsoft Defender for Office 365 to investigate 
 
    ![](./media/combi_g_c_17.png)
 
-1. Navigate back to **Microsoft Defender portal** and perform the following steps:
+1. On the **Explorer (1)** page under **Email & collaboration**, select **All email (2)** from the available filters.
 
-   - Select **Email & collaboration (1)** from the left navigation pane.
-   - Click **Explorer (2)** under the Email section.
-   - In the **URL clicks** tab, select the entry for the clicked timestamp.
-   - Review the **URL (4)** that was clicked to investigate further.
+   - Click on the **Top URLs (3)** tab.
+   - Review the list of **URLs** that were blocked, junked, or delivered.
 
-      ![](./media/rd_day1_ex2_t1_10.png)
+      ![](./media/iss-fix-3.png)
 
       > **Note:** Sometimes the Microsoft Defender portal can take 1–2 hours for initial backend data to load. If refreshing the page doesn’t display results, check back later.
 
-      ![](./media/combi_g_c_18.png)
-
       > **Note:** If no data appears after waiting and refreshing, skip ahead to step 14 to continue with the lab.
 
-1. Click on the **Open url page** to open the full event details.
+2. Select one of the listed URLs to open its details page.
 
-   ![](./media/rd_day1_ex2_t1_11.png)
+   - Review the **Threat intelligence verdict** and **active alerts** associated with the URL.
+   - Expand **Domain Details** to check the registrant and domain information.
 
-   > Note: This shows the clicked URL, click metadata, and incident correlation.
+      ![](./media/iss-fix-4.png)
 
 1. In the **Microsoft Defender portal**, do the following:
 
