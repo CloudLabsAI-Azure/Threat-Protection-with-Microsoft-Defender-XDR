@@ -1,79 +1,79 @@
-# Lab 6: Investigate and Remediate Incidents in Microsoft Defender XDR
+# Laboratorio 6: Investigar y Remediar Incidentes en Microsoft Defender XDR
 
-In this lab, you’ll simulate a phishing incident, investigate the suspicious message using Threat Explorer, take remediation actions, submit the message to Microsoft for analysis, and review the automated investigation results.
+En este laboratorio, simulará un incidente de phishing, investigará el mensaje sospechoso con el Explorador de Amenazas, tomará medidas correctivas, enviará el mensaje a Microsoft para su análisis y revisará los resultados de la investigación automatizada.
 
-1. Send a test email to your lab user containing links such as:
+1. Envíe un correo electrónico de prueba a su usuario de laboratorio que contenga enlaces como:
 
    - https://youtube.com/  
    - https://openai.com/  
 
    ![](../media/rd_day1_ex3_t2_1.png)
 
-1. On the Microsoft Defender portal (https://security.microsoft.com), go to **Email & collaboration (1)** → **Explorer (2)**. Select the phishing email entry **Test Phishing (4)**.
+1. En el portal de Microsoft Defender (https://security.microsoft.com), vaya a **Colaboración y correo electrónico (1)** → **Explorador (2)**. Seleccione la entrada de correo electrónico de phishing **Test Phishing (4)**.
 
    ![](../media/rd_day1_ex3_t2_2.png)
 
-   > **Note:** It may take 2–3 minutes for the email to appear in Explorer after delivery.
+   > **Nota:** El correo electrónico puede tardar de 2 a 3 minutos en aparecer en el Explorador tras su entrega. 
 
-1. Click the message to open its details. Then click **Take action**.
+1. Haga clic en el mensaje para abrir sus detalles. A continuación, haga clic en **Realizar acción**.
 
    ![](../media/rd_day1_ex3_t2_3.png)
 
-1. On the **Choose response actions** page:
+1. En la página **Elegir acciones de respuesta**:
 
-   - **(1)** Toggle on **Show all response actions**  
-   - **(2)** Select **Move or delete**  
-   - **(3)** Choose **Junk**  
-   - **(4)** Select **Submit to Microsoft for review**  
-   - **(5)** Choose **I've confirmed it’s a threat**  
-   - **(6)** Select **Phish** as the category  
-   - **(7)** Enable **Initiate automated investigation**  
-   - Click **Next (8)**
+   - **(1)** Active **Mostrar todas las acciones de respuesta**. 
+   - **(2)** Seleccione **Mover o eliminar**.
+   - **(3)** Elija **Correo no deseado**.
+   - **(4)** Seleccione **Enviar a Microsoft para su revisión**.
+   - **(5)** Elija **He confirmado que se trata de una amenaza**.
+   - **(6)** Seleccione **Cebo (Phish)** como la categoría.  
+   - **(7)** Habilite **Iniciar investigación automatizada**.  
+   - Haga clic en **Siguiente (8)**
 
       ![](../media/rd_day1_ex3_t2_4.png)
 
-1. On the **Choose target entities** page, enter a name such as `report-phish (1)` and review the impacted users. Click **Next (2)**.
+1. En la página **Elegir entidades de destino**, introduzca un nombre como `report-phish (1)` y revise los usuarios afectados. Haga clic en **Siguiente (2)**.
 
    ![](../media/rd_day1_ex3_t2_5.png)
 
-1. Navigate to **Incidents & alerts (1)** → **Alerts (2)**. Locate the alert titled **Administrative action submitted by an Administrator (3)**.
+1. Navegue a **Incidentes y alertas (1)** → **Alertas (2)**. Localice la alerta titulada **Administrative action submitted by an Administrator (3)**.
 
    ![](../media/rd_day1_ex3_t2_6.png)
 
-1. Click the alert to open details. Then click **Manage alert**.
+1. Haga clic en la alerta para abrir los detalles. Luego, haga clic en **Administrar alerta**.
 
    ![](../media/rd_day1_ex3_t2_7.png)
 
-1. In the **Manage alert** panel:
+1. En el panel **Administrar alerta**:
 
-   - **(1)** Set **Status** to `In progress`  
-   - **(2)** Assign to your lab user  
-   - **(3)** Set **Classification** to `True positive – Phishing`  
-   - Click **Save (4)**
+   - **(1)** Establezca **Estado** en `En curso`.  
+   - **(2)** Asigne a su usuario de laboratorio.
+   - **(3)** Establezca **Clasificación** en `True positive – Phishing`  
+   - Haga clic en **Guardar (4)**
 
      ![](../media/rd_day1_ex3_t2_8.png)
 
-1. Go to **Email & collaboration (1)** → **Investigations (2)**. Click on the latest investigation entry related to your phishing test **(3)**.
+1. Vaya a **Colaboración y correo electrónico (1)** → **Investigaciones (2)**. Haga clic en la última entrada de investigación relacionada con su prueba de phishing **(3)**.
 
    ![](../media/rd_day1_ex3_t2_9.png)
 
-1. Review the investigation graph which shows:
+1. Revise el gráfico de investigación que muestra:
 
-    - **Alert received**  
-    - **Entities analyzed**  
-    - **Mailbox involved**  
-    - **Result**: No threats found
+    - **Alerta recibida**  
+    - **Entidades analizadas**  
+    - **Buzón**  
+    - **Resultado**: No se encontraron amenazas
 
       ![](../media/rd_day1_ex3_t2_10.png)
 
-    > **Note:** It may take 10–15 minutes for the automated investigation to fully complete and show results.
+    > **Nota:** La investigación automatizada puede tardar entre 10 y 15 minutos en completarse totalmente y mostrar los resultados.
 
-## Review
+## Revisión
 
-In this lab, you have completed the following:
+En este laboratorio, ha completado lo siguiente:
 
-- Simulated a phishing email and performed investigation and remediation using Defender XDR.
+- Simuló un correo electrónico de phishing y realizó una investigación y una corrección utilizando Defender XDR.
 
-### You have successfully completed the lab. Click on **Next >>** to proceed with the next Lab.
+### Ha completado el Laboratorio con éxito. Haga clic en **Siguiente >>** para continuar con el siguiente Laboratorio..
 
 ![](../media/rd_gs_1_9.png)
